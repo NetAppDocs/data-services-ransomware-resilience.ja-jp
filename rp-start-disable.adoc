@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: rp-start-disable.html 
+keywords: bluexp, ransomware protection, netapp, disable protection 
+summary: NetApp Ransomware Resilience を使用したくなくなった場合は、ライセンスを期限切れにすることができます。 
+---
+= NetAppランサムウェア耐性を無効にする
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience を使用したくなくなった場合は、ライセンスを期限切れにすることができます。使用しなくなったポリシーを無効にすることもできます。
+
+
+
+== ランサムウェア耐性を無効にする
+
+サブスクリプションまたはライセンスの有効期限が切れると、Ransomware Resilience はサブスクリプションまたはライセンスを必要とする機能を自動的に無効にします。
+
+ライセンスの有効期限が切れた後でも実行できる操作の詳細については、link:rp-start-licenses.html["ランサムウェア耐性ライセンスを設定する"] 。
+
+
+
+== 保護ポリシーを無効にする
+
+ワークロードに適用されている保護ポリシーの使用を停止する場合は、System Manager、API 呼び出し、または CLI を使用して無効にすることができます。
+
+FPolicy とバックアップ ポリシーを含まない別のポリシーを適用することで、Ransomware Resilience でこれらを無効にすることができます。保護ポリシーの設定手順については、link:rp-use-protect.html["ランサムウェア攻撃からワークロードを保護する"] 。
+
+
+TIP: スナップショット ポリシーを無効にしないことをお勧めします。

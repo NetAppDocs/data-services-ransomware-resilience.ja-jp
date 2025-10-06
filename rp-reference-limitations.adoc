@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: rp-reference-limitations.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
+summary: 既知の制限事項では、この製品リリースでサポートされていないプラットフォーム、デバイス、または機能が特定されます。 
+---
+= NetApp Ransomware Resilienceの既知の制限
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+今回のリリースでサポートされていない、または今回のリリースでは正常に機能しないプラットフォーム、デバイス、機能が記載されています。これらの制限事項をよく確認してください。
+
+
+
+== 準備訓練のリセットオプションの問題
+
+ランサムウェア攻撃対策ドリル用にONTAP 9.11.1 ボリュームを選択すると、Ransomware Resilience によってアラートが送信されます。  「ボリュームへのクローン」オプションを使用してデータを回復し、ドリルをリセットすると、リセット操作は失敗します。
+
+
+
+== Amazon FSx for NetApp ONTAP の制限
+
+Amazon FSx for NetApp ONTAPシステムは、Ransomware Resilience でサポートされています。このシステムには次の制限が適用されます。
+
+* Fsx for ONTAPではバックアップ ポリシーはサポートされていません。この環境では、バックアップにAmazon FSxを使用してバックアップ操作を実行する必要があります。  Ransomware Resilience を使用してこれらのワークロードを復元できます。
+* 復元操作はスナップショットからのみ実行されます。
+

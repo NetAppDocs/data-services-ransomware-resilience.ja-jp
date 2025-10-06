@@ -1,0 +1,31 @@
+= 即応訓練報告書
+:allow-uri-read: 
+
+
+
+
+=== 即応訓練報告書
+
+このリリースでは、ランサムウェア攻撃の準備訓練レポートを確認できるようになりました。準備ドリルを使用すると、新しく作成されたサンプル ワークロードに対するランサムウェア攻撃をシミュレートできます。次に、シミュレートされた攻撃を調査し、サンプルのワークロードを回復します。この機能は、アラート通知、対応、および回復プロセスをテストすることで、実際のランサムウェア攻撃が発生した場合に備えて準備ができていることを確認するのに役立ちます。
+
+詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["ランサムウェア攻撃への備えの訓練を実施する"] 。
+
+
+
+=== 新しいロールベースのアクセス制御のロールと権限
+
+以前は、ユーザーの責任に基づいて役割と権限を割り当てることができました。これにより、 BlueXP ransomware protectionへのユーザー アクセスを管理するのに役立ちました。このリリースでは、権限が更新されたBlueXP ransomware protectionに固有の 2 つの新しいロールが追加されました。新しい役割は次のとおりです。
+
+* ランサムウェア保護管理者
+* ランサムウェア保護ビューア
+
+
+権限の詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["BlueXP ransomware protection機能へのロールベースのアクセス"] 。
+
+
+
+=== 支払いの改善
+
+このリリースには、支払いプロセスに対するいくつかの改善が含まれています。
+
+詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["ライセンスと支払いオプションを設定する"] 。

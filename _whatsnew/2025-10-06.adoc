@@ -1,0 +1,31 @@
+= BlueXP ransomware protectionはNetAppランサムウェア耐性に変わりました
+:allow-uri-read: 
+
+
+
+
+=== BlueXP ransomware protectionはNetAppランサムウェア耐性に変わりました
+
+BlueXPランサムウェア レプリケーションの名前がNetApp Ransomware Resilience に変更されました。
+
+
+
+=== BlueXPはNetAppコンソールになりました
+
+BlueXP は、データ インフラストラクチャの管理における役割をより適切に反映するために、名前が変更され、再設計されました。
+
+NetAppコンソールは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのストレージとデータ サービスの集中管理を提供し、リアルタイムの分析情報、ワークフローの高速化、管理の簡素化を実現します。
+
+変更内容の詳細については、 https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetAppコンソールのリリースノート"] 。
+
+
+
+=== データ侵害保護
+
+
+
+=== シーム
+
+
+
+=== クリーンな復元環境

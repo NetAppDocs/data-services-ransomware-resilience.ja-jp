@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: rp-start-quick-start.html 
+keywords: get started, ransomware protection, quick start, resilience, quickstart 
+summary: わずか数ステップでNetApp Ransomware Resilience を開始できます。 
+---
+= NetAppランサムウェア耐性のクイックスタート
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience を開始するために必要な手順の概要を以下に示します。各ステップ内のリンクをクリックすると、詳細情報を提供するページに移動します。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"]前提条件を確認する
+[role="quick-margin-para"]
+link:rp-start-prerequisites.html["システムがこれらの要件を満たしていることを確認してください"] 。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2"]ランサムウェア耐性を設定する
+[role="quick-margin-list"]
+* link:rp-start-setup.html["NetApp StorageGRID、Amazon Web Services、Google Cloud Platform、または Microsoft Azure をバックアップ先として準備します。"] 。
+* link:rp-start-setup.html["コンソールエージェントを構成する"] 。
+* link:rp-start-licenses.html["ライセンスの設定"] 。
+* link:rp-start-discover.html["コンソールでワークロードを検出する"] 。
+* link:rp-start-setup.html["バックアップ先を設定する"] 。
+* link:rp-start-setup.html["オプションで脅威検出を有効にする"] 。
+* link:rp-start-simulate.html["オプションとして、ランサムウェア攻撃準備訓練を実施する"] 。
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三つ"]次は何?
+[role="quick-margin-para"]
+ランサムウェア耐性を設定したら、次に行うことは次のとおりです。
+
+[role="quick-margin-list"]
+* link:rp-use-dashboard.html["ダッシュボードでワークロード保護の健全性を表示する"] 。
+* link:rp-use-protect.html["ワークロードを保護する"] 。
+* link:rp-use-alert.html["潜在的なランサムウェア攻撃の検出に対応する"] 。
+* link:rp-use-recover.html["攻撃からの回復（インシデントが中和された後）"] 。
+

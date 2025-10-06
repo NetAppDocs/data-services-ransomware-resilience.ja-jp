@@ -1,0 +1,52 @@
+---
+indexpage:
+  title: NetAppランサムウェア耐性ドキュメント
+  summary: NetApp Ransomware Resilience は、ランサムウェアの保護、検出、および回復のためのオーケストレーション サービスです。ランサムウェア耐性は、
+    NetAppコンソール組織全体のオンプレミス NAS ストレージおよび Amazon Web Services のCloud Volumes ONTAP (NFS
+    および CIFS プロトコルを使用) 上の Oracle、MySQL、VM データストア、ファイル共有のアプリケーションベースのワークロードを保護し、Amazon
+    Web Services (AWS) クラウド ストレージまたはNetApp StorageGRIDにデータをバックアップします。
+  keywords: bluexp, ransomware, anti-ransomware, cyber attack, netapp, ontap, amazon
+    web services, aws, storagegrid, protection, resilience
+  lead: NetApp Ransomware Resilience は、ランサムウェアの保護、検出、および回復のためのオーケストレーション サービスです。ランサムウェア耐性は、コンソール組織全体のオンプレミス
+    NAS ストレージおよび Amazon Web Services のCloud Volumes ONTAP (NFS および CIFS プロトコルを使用)
+    上の Oracle、MySQL、VM データストア、ファイル共有のアプリケーションベースのワークロードを保護し、データを Amazon Web Services
+    (AWS) クラウド ストレージまたはNetApp StorageGRIDにバックアップします。
+  tiles:
+  - title: 始めましょう
+    links:
+    - title: ランサムウェア耐性について学ぶ
+      url: "/concept-ransomware-resilience.html"
+    - title: ランサムウェア耐性の新機能
+      url: "/whats-new.html"
+    - title: 前提条件
+      url: "/rp-start-prerequisites.html"
+    - title: クイック スタート
+      url: "/rp-start-quick-start.html"
+    - title: バックアップ先を設定し、脅威検出を有効にする
+      url: "/rp-use-settings.html"
+    - title: ランサムウェア攻撃をシミュレートする
+      url: "/rp-start-simulate.html"
+  - title: ランサムウェア耐性を活用する
+    links:
+    - title: ランサムウェア耐性の概要を使用する
+      url: "/rp-use-overview.html"
+    - title: ワークロードを発見する
+      url: "/rp-start-discover.html"
+    - title: ダッシュボードを使用してワークロードの健全性を表示する
+      url: "/rp-use-dashboard.html"
+    - title: ワークロードを保護する
+      url: "/rp-use-protect.html"
+    - title: NetApp Data Classificationで個人を特定できる情報をスキャン
+      url: "/rp-use-protect-classify.html"
+    - title: 検出されたアラートに応答する
+      url: "/rp-use-alert.html"
+    - title: 攻撃からの回復
+      url: "/rp-use-recover.html"
+  - title: ブログとコミュニティ
+    links:
+    - title: NetAppコンソール
+      url: https://www.netapp.com/console
+    - title: NetAppデータサービス
+      url: https://www.netapp.com/data-services/
+    - title: NetAppコミュニティ
+      url: https://community.netapp.com/

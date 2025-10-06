@@ -1,0 +1,48 @@
+---
+sidebar: sidebar 
+permalink: rp-start-login.html 
+keywords: bluexp login, ransomware protection, cyber attack, log in, access 
+summary: NetAppコンソールからNetApp Ransomware Resilience を開始します。 
+---
+= NetAppランサムウェア耐性にアクセス
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetAppコンソールからNetApp Ransomware Resilience にログインします。
+
+コンソールにログインするには、 NetAppサポート サイトの認証情報を使用するか、電子メールとパスワードを使用してNetAppクラウド ログインにサインアップすることができます。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["ログインについて詳しくはこちら"^] 。
+
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア レジリエンス管理者、またはランサムウェア レジリエンス ビューアーのロールが必要です。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスに対するBlueXPのアクセスロールについて学ぶ"^] 。
+
+.手順
+. ウェブブラウザを開いてlink:https://console.netapp.com/["コンソール"^]。
++
+コンソールのログイン ページが表示されます。
+
+. コンソールにログインします。
+. コンソールの左側のナビゲーションから、*保護* > *ランサムウェア耐性*を選択します。
++
+このサービスに初めてログインする場合は、ランディング ページが表示されます。
+
++
+
+NOTE: コンソール エージェントがない場合、またはこのサービス用のエージェントではない場合は、コンソール エージェントを展開する必要があります。link:rp-start-setup.html["コンソールエージェントの設定方法を学ぶ"] 。
+
++
+image:screen-landing.png["ランサムウェア耐性ランディング ページのスクリーンショット。"]
+
++
+それ以外の場合は、ランサムウェア耐性ダッシュボードが表示されます。
+
++
+image:screen-dashboard.png["ランサムウェア耐性ダッシュボードのスクリーンショット"]
+
+. まだ行っていない場合は、[*ワークロードの検出*] オプションを選択します。
++
+。 link:rp-start-discover.html["ワークロードの検出"] 。
+
+

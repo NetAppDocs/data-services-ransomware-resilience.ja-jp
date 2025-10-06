@@ -1,0 +1,34 @@
+= Amazon FSx for NetApp ONTAPのサポート
+:allow-uri-read: 
+
+
+
+
+=== Amazon FSx for NetApp ONTAPのサポート
+
+このリリースでは、Amazon FSx for NetApp ONTAPがサポートされます。この機能は、BlueXP ransomware protectionを使用して FSx for ONTAPワークロードを保護するのに役立ちます。
+
+FSx for ONTAP は、クラウドでNetApp ONTAPストレージのパワーを提供する、完全に管理されたサービスです。ネイティブ AWS サービスの俊敏性と拡張性を備え、オンプレミスで使用するのと同じ機能、パフォーマンス、管理機能を提供します。
+
+BlueXP ransomware protectionワークフローに次の変更が加えられました。
+
+* 検出には、FSx for ONTAP 9.15 作業環境のワークロードが含まれます。
+* [保護] タブには、FSx for ONTAP環境のワークロードが表示されます。この環境では、FSx for ONTAPバックアップ サービスを使用してバックアップ操作を実行する必要があります。  BlueXP ransomware protectionスナップショットを使用してこれらのワークロードを復元できます。
++
+
+TIP: FSx for ONTAPで実行されているワークロードのバックアップ ポリシーは、 BlueXPでは設定できません。  Amazon FSx for NetApp ONTAPで設定されている既存のバックアップポリシーは変更されません。
+
+* アラート インシデントには、新しい FSx for ONTAP作業環境が表示されます。
+
+
+詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["BlueXP ransomware protectionと動作環境について学ぶ"] 。
+
+サポートされているオプションの詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["BlueXP ransomware protectionの制限"] 。
+
+
+
+=== BlueXPアクセスロールが必要
+
+BlueXP ransomware protectionを表示、検出、または管理するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア保護管理者、またはランサムウェア保護閲覧者のいずれかのアクセス ロールが必要です。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスに対するBlueXPのアクセスロールについて学ぶ"^] 。

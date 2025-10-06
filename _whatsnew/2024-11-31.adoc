@@ -1,0 +1,28 @@
+= Data Infrastructure Insightsストレージワークロードセキュリティを使用して異常なユーザー行動を検出する
+:allow-uri-read: 
+
+
+
+
+=== Data Infrastructure Insightsストレージワークロードセキュリティを使用して異常なユーザー行動を検出する
+
+このリリースでは、 Data Infrastructure Insights Storage Workload Security を使用して、ストレージ ワークロード内の異常なユーザー動作を検出できます。この機能は、潜在的なセキュリティ脅威を特定し、悪意のある可能性のあるユーザーをブロックしてデータを保護するのに役立ちます。
+
+詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["検出されたランサムウェアアラートに応答する"] 。
+
+Data Infrastructure Insights Storage Workload Security を使用して異常なユーザー動作を検出する前に、 BlueXP ransomware protectionの*設定* オプションを使用してオプションを構成する必要があります。
+
+参照 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["BlueXP ransomware protection設定を構成する"]。
+
+
+
+=== 検出して保護するワークロードを選択する
+
+このリリースでは、次のことが可能になりました。
+
+* 各コネクタ内で、ワークロードを検出する作業環境を選択します。環境内の特定のワークロードを保護し、他のワークロードは保護しない場合は、この機能が役立つ可能性があります。
+* ワークロードの検出中に、コネクタごとにワークロードの自動検出を有効にすることができます。この機能を使用すると、保護するワークロードを選択できます。
+* 以前に選択した作業環境に対して新しく作成されたワークロードを検出します。
+
+
+参照 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["ワークロードを発見する"]。

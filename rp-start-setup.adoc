@@ -1,0 +1,74 @@
+---
+sidebar: sidebar 
+permalink: rp-start-setup.html 
+keywords: bluexp, ransomware protection, aws, azure 
+summary: Ransomware Resilience を使用するには、いくつかの手順を実行して設定します。 
+---
+= NetAppランサムウェア耐性を設定する
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience を簡単に導入できます。始める前に、link:rp-start-prerequisites.html["前提条件"]環境の準備ができていることを確認します。
+
+
+
+== バックアップ先を準備する
+
+次のいずれかのバックアップ先を準備します。
+
+* NetAppStorageGRID
+* Amazon Web Services
+* Google Cloud Platform
+* Microsoft Azure
+
+
+バックアップ先自体でオプションを構成した後、後で Ransomware Resilience でバックアップ先として構成します。ランサムウェア耐性におけるバックアップ先の設定方法の詳細については、以下を参照してください。link:rp-use-settings.html["バックアップ先を設定する"] 。
+
+
+
+=== StorageGRIDをバックアップ先として準備する
+
+StorageGRIDをバックアップ先として使用する場合は、 https://docs.netapp.com/us-en/storagegrid-117/index.html["StorageGRIDドキュメント"^] StorageGRIDの詳細については、こちらをご覧ください。
+
+
+
+=== AWSをバックアップ先として準備する
+
+* AWS にアカウントを設定します。
+* 設定 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["AWS 権限"^]AWS で。
+
+
+コンソールでAWSストレージを管理する方法の詳細については、以下を参照してください。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Amazon S3バケットを管理する"^] 。
+
+
+
+=== Azure をバックアップ先として準備する
+
+* Azure でアカウントを設定します。
+* 設定 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Azure のアクセス許可"^]Azure で。
+
+
+コンソールでAzureストレージを管理する方法の詳細については、以下を参照してください。 https://docs.netapp.com/us-en/bluexp-blob-storage/task-view-azure-blob-storage.html["Azure ストレージ アカウントを管理する"^] 。
+
+
+
+== NetAppコンソールをセットアップする
+
+次のステップは、コンソールとランサムウェア耐性を設定することです。
+
+レビュー https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html["標準モードのコンソール要件"^]。
+
+
+
+=== コンソールエージェントを作成する
+
+このサービスを試用または使用するには、 NetApp の営業担当者にお問い合わせください。その後、コンソール エージェントを使用すると、ランサムウェア耐性のための適切な機能が含まれるようになります。
+
+ランサムウェア耐性を使用してコンソールエージェントを作成するには、コンソールエージェントを作成する権限を持つコンソール組織管理者に連絡し、説明されているドキュメントを参照してください。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コンソールエージェントを作成する方法"^] 。
+
+
+NOTE: コンソール エージェントが複数ある場合、Ransomware Resilience は、コンソールに現在表示されているエージェント以外のすべてのコンソール エージェントにわたってデータをスキャンします。このサービスは、この組織に関連付けられているすべてのプロジェクトとすべてのコンソール エージェントを検出します。

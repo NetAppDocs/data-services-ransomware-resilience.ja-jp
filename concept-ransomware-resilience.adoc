@@ -1,0 +1,219 @@
+---
+sidebar: sidebar 
+permalink: concept-ransomware-resilience.html 
+keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, ransomware attack, detect, recover, cyberstorage, cyberattack, cybersecurity, protection, bluexp, netapp, role-based access control, rbac 
+summary: ランサムウェア耐性を使用すると、サイバーセキュリティに関する関連情報を表示し、組織がサイバー攻撃に対してどの程度耐性があるかを評価できます。また、データをより安全にするためのアラートと修復手順のリストも提供されます。 
+---
+= NetAppのランサムウェア耐性について学ぶ
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ランサムウェア攻撃によりデータへのアクセスがブロックされ、攻撃者はデータの解放や暗号化の解除と引き換えに身代金を要求する可能性があります。 IDC によれば、ランサムウェアの被害者が複数のランサムウェア攻撃を受けることは珍しくありません。この攻撃により、1 日から数週間にわたりデータへのアクセスが中断される可能性があります。
+
+NetApp Ransomware Resilience は、ランサムウェア攻撃からデータを保護します。ランサムウェア耐性では、オンプレミスの NAS ストレージ (NFS および CIFS プロトコルを使用) と SAN ストレージ (FC、iSCSI、NVMe) 上の Oracle、MySQL、VM データストア、ファイル共有のアプリケーションベースのワークロード、および NetApp コンソール全体のCloud Volumes ONTAP for Amazon Web Services、 Cloud Volumes ONTAP for Google Cloud、 Cloud Volumes ONTAP for Microsoft Azure、 Amazon FSx for NetApp ONTAP のNetAppが利用できます。  Amazon Web Services、Google Cloud、Microsoft Azure クラウド ストレージ、 NetApp StorageGRIDにデータをバックアップできます。
+
+
+
+== データ層におけるランサムウェア耐性
+
+セキュリティ体制は通常、さまざまなサイバー脅威から保護するために複数の防御層を網羅します。
+
+* *最外層*: これは、ファイアウォール、侵入検知システム、仮想プライベート ネットワークを使用してネットワーク境界を保護する最初の防御線です。
+* *ネットワーク セキュリティ*: このレイヤーは、ネットワークのセグメンテーション、トラフィックの監視、暗号化を基盤として構築されます。
+* *ID セキュリティ*: 認証方法、アクセス制御、ID 管理を使用して、承認されたユーザーのみが機密リソースにアクセスできるようにします。
+* *アプリケーション セキュリティ*: 安全なコーディング プラクティス、セキュリティ テスト、ランタイム アプリケーションの自己保護を使用してソフトウェア アプリケーションを保護します。
+* *データ セキュリティ*: データ保護、バックアップ、および回復戦略によりデータを保護します。ランサムウェア耐性はこの層で動作します。
+
+
+image:concept-security-layer-diagram.png["セキュリティ層図"]
+
+
+
+== ランサムウェア耐性でできること
+
+ランサムウェア耐性は、複数のNetAppテクノロジーをフル活用することで、ストレージ管理者、データ セキュリティ管理者、またはセキュリティ運用エンジニアが次の目標を達成できるようにします。
+
+* NetAppコンソール、プロジェクト、コンソール エージェント全体で、 NetAppオンプレミス NAS (NFS または CIFS) および SAN (FC、iSCSI、NVMe) システム内のすべてのアプリケーションベース、ファイル共有、または VMware 管理のワークロードを *識別* します。ランサムウェア耐性は、データの優先度を分類し、ランサムウェア耐性の向上に関する推奨事項を提供します。
+* データのバックアップ、スナップショット コピー、ランサムウェア保護戦略を有効にして、ワークロードを*保護*します。
+* ランサムウェア攻撃の可能性がある異常を*検出*します。脚注:[攻撃が検出されない可能性もありますが、当社の調査によると、 NetApp のテクノロジにより、特定のファイル暗号化ベースのランサムウェア攻撃を高いレベルで検出できることがわかっています。]
+* 不正なコピーや悪意によるコピーの削除ができないようにロックされた、改ざん防止のNetApp ONTAPスナップショットを自動的に開始することで、潜在的なランサムウェア攻撃に*対応*します。バックアップ データは変更不可能なまま、ソースと宛先の両方でランサムウェア攻撃からエンドツーエンドで保護されます。
+* 複数のNetAppテクノロジーをオーケストレーションすることで、ワークロードの稼働時間を短縮し、ワークロードを *回復* します。特定のボリュームを回復することを選択できます。  Ransomware Resilience では、最適なオプションに関する推奨事項が提供されます。
+* *管理*: ランサムウェア保護戦略を実装し、結果を監視します。
+
+
+image:diagram-rp-features-phases3.png["ランサムウェア耐性戦略（識別、保護、検出、対応、回復）を示す図"]
+
+
+
+== ランサムウェア耐性を使用するメリット
+
+ランサムウェア耐性には次のような利点があります。
+
+* ワークロードと既存のスナップショットおよびバックアップ スケジュールを検出し、それらの相対的な重要度をランク付けします。
+* ランサムウェア保護の態勢を評価し、わかりやすいダッシュボードに表示します。
+* 検出と保護態勢の分析に基づいて、次のステップに関する推奨事項を提供します。
+* ワンクリック アクセスで AI/ML 主導のデータ保護推奨事項を適用します。
+* MySQL、Oracle、VMware データストア、ファイル共有などの主要なアプリケーションベースのワークロード内のデータを保護します。
+* AI テクノロジーを使用して、プライマリ ストレージ上のデータに対するランサムウェア攻撃をリアルタイムで検出します。
+* 検出された潜在的な攻撃に応じて、スナップショット コピーを作成し、異常なアクティビティに関するアラートを開始することで、自動アクションを開始します。
+* RPO ポリシーを満たすようにキュレートされたリカバリを適用します。  Ransomware Resilience は、 NetApp Backup and Recovery (旧称 Cloud Backup) やSnapCenterなどの複数のNetAppリカバリ サービスを使用して、ランサムウェア インシデントからのリカバリを調整します。
+* ロールベースのアクセス制御 (RBAC) を使用して、機能と操作へのアクセスを管理します。
+
+
+
+
+== 料金
+
+NetApp は、Ransomware Resilience の試用版の使用に対して料金を請求しません。
+
+
+NOTE: 2024 年 10 月のリリースでは、Ransomware Resilience の新規展開に 30 日間の無料トライアルが提供されます。以前、Ransomware Resilience は 90 日間の無料トライアルを提供していました。すでに 90 日間の無料トライアルに登録している場合は、そのトライアルは 90 日間有効です。
+
+バックアップとリカバリとランサムウェア耐性の両方をお持ちの場合、両方の製品で保護されている共通データについては、ランサムウェア耐性に対してのみ課金されます。
+
+ライセンスまたは PayGo サブスクリプションを購入した後、ランサムウェア検出ポリシー (Autonomous Ransomware Protection) が有効になっている (Ransomware Resilience によって検出または設定された) ワークロードと、少なくとも 1 つのスナップショットまたはバックアップ ポリシーがある場合、Ransomware Resilience によってそのワークロードは「保護済み」に分類され、購入した容量または PayGo サブスクリプションに対してカウントされます。バックアップ ポリシーまたはスナップショット ポリシーがあっても、検出ポリシーなしでワークロードが検出された場合は、「危険」と分類され、購入した容量にはカウントされません。
+
+保護されたワークロードは、90 日間の試用期間が終了した後、購入した容量またはサブスクリプションに対してカウントされます。ランサムウェア耐性は、効率化前の保護されたワークロードに関連付けられたデータに対して GB 単位で課金されます。
+
+
+
+== ライセンス
+
+Ransomware Resilience では、無料トライアル、従量課金制サブスクリプション、独自のライセンスの使用など、さまざまなライセンス プランを使用できます。
+
+Ransomware Resilience にはNetApp ONTAP One ライセンスが必要です。
+
+Ransomware Resilience ライセンスには、追加のNetApp製品は含まれません。  Ransomware Resilience では、ライセンスがなくてもバックアップとリカバリを使用できます。
+
+異常なユーザー行動を検出するために、Ransomware Resilience は、悪意のあるファイル アクティビティを検出するONTAP内の機械学習 (ML) モデルであるNetApp Autonomous Ransomware Protection を使用します。このモデルは、Ransomware Resilience ライセンスに含まれています。さらに、 Data Infrastructure Insights (旧称Cloud Insights) Workload Security (ライセンスが必要) を使用して、ユーザーの行動を調査し、特定のユーザーのさらなるアクティビティをブロックすることもできます。
+
+詳細については、 link:rp-start-licenses.html["ライセンスの設定"] 。
+
+
+
+== NetAppコンソール
+
+Ransomware Resilience はNetAppコンソールからアクセスできます。
+
+NetAppコンソールは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのNetAppストレージとデータ サービスの集中管理を提供します。NetAppデータ サービスにアクセスして使用するには、コンソールが必要です。管理インターフェースとして、1 つのインターフェースから多数のストレージ リソースを管理できます。コンソール管理者は、企業内のすべてのシステムのストレージとサービスへのアクセスを制御できます。
+
+NetAppコンソールの使用を開始するためにライセンスやサブスクリプションは必要ありません。ストレージ システムまたはNetAppデータ サービスへの接続を確保するためにクラウドにコンソール エージェントを展開する必要がある場合にのみ料金が発生します。ただし、コンソールからアクセスできる一部のNetAppデータ サービスは、ライセンスまたはサブスクリプションベースです。
+
+詳細はこちらlink:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["NetAppコンソール"^]。
+
+
+
+== ランサムウェア耐性の仕組み
+
+Ransomware Resilience は、 NetApp Backup and Recovery を使用してファイル共有ワークロードのスナップショットおよびバックアップ ポリシーを検出して設定し、 SnapCenterまたはSnapCenter for VMware を使用してアプリケーションおよび VM ワークロードのスナップショットおよびバックアップ ポリシーを検出して設定します。さらに、Ransomware Resilience は、バックアップとリカバリ、およびSnapCenter / SnapCenter for VMware を使用して、ファイルとワークロードの整合性のあるリカバリを実行します。
+
+image:diagram-rp-architecture-preview3.png["ランサムウェア耐性アーキテクチャを示す図"]
+
+[cols="15,65a"]
+|===
+| 特徴 | 説明 
+
+
+| *識別する*  a| 
+* コンソールに接続されているすべての顧客のオンプレミス NAS (NFS および CIFS プロトコル)、SAN (FC、iSCSI、NVMe)、およびCloud Volumes ONTAPデータを検索します。
+* ONTAPおよびSnapCenterサービス API から顧客データを識別し、ワークロードに関連付けます。詳細はこちら https://docs.netapp.com/us-en/ontap-family/["ONTAP"^]そして https://docs.netapp.com/us-en/snapcenter/index.html["SnapCenterソフトウェア"^]。
+* 各ボリュームのNetAppスナップショット コピーとバックアップ ポリシーの現在の保護レベルと、オンボックス検出機能を検出します。ランサムウェア耐性は、バックアップとリカバリ、 ONTAPサービス、および Autonomous Ransomware Protection ( ONTAPのバージョンに応じて ARP または ARP/AI)、FPolicy、バックアップ ポリシー、スナップショット ポリシーなどのNetAppテクノロジーを使用して、この保護態勢をワークロードに関連付けます。詳細はこちら https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自律型ランサムウェア対策"^]、 https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["NetAppバックアップとリカバリ"^] 、 そして https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
+* 自動的に検出された保護レベルに基づいて各ワークロードにビジネス優先度を割り当て、ビジネス優先度に基づいてワークロードの保護ポリシーを推奨します。ワークロードの優先順位は、ワークロードに関連付けられた各ボリュームにすでに適用されているスナップショット頻度に基づいています。
+
+
+
+
+| *守る*  a| 
+* ワークロードをアクティブに監視し、識別された各ワークロードにポリシーを適用して、バックアップとリカバリ、 SnapCenter、およびONTAP API の使用を調整します。
+
+
+
+
+| *検出する*  a| 
+* 潜在的に異常な暗号化とアクティビティを検出する統合機械学習 (ML) モデルを使用して、潜在的な攻撃を検出します。
+* プライマリ ストレージ内の潜在的なランサムウェア攻撃を検出することから始まり、追加の自動スナップショット コピーを取得して最も近いデータ復元ポイントを作成することで異常なアクティビティに対応する、二重層検出を提供します。ランサムウェア耐性は、主要なワークロードのパフォーマンスに影響を与えることなく、より深く掘り下げて潜在的な攻撃をより正確に特定する機能を提供します。
+* ONTAP、Autonomous Ransomware Protection（ ONTAPのバージョンに応じて ARP または ARP/AI）、 Data Infrastructure Insights （旧称Cloud Insights）、Workload Security、および FPolicy テクノロジーを使用して、攻撃の疑いのある特定のファイルを特定し、関連するワークロードにマッピングします。
+
+
+
+
+| *応答する*  a| 
+* ファイル アクティビティ、ユーザー アクティビティ、エントロピーなどの関連データを表示し、攻撃に関するフォレンジック レビューを完了するのに役立ちます。
+* ONTAP、Autonomous Ransomware Protection ( ONTAPのバージョンに応じて ARP または ARP/AI)、FPolicy などのNetApp のテクノロジと製品を使用して、クイック スナップショット コピーを開始します。
+
+
+
+
+| *回復する*  a| 
+* バックアップとリカバリ、 ONTAP、自律型ランサムウェア保護 ( ONTAPのバージョンに応じて ARP または ARP/AI)、および FPolicy のテクノロジとサービスを使用して、最適なスナップショットまたはバックアップを決定し、最適な RPA (実際の復旧ポイント) を推奨します。
+* VM、ファイル共有、ブロック ストレージ、データベースなどのワークロードのリカバリをアプリケーションの一貫性を保ちながらオーケストレーションします。
+
+
+
+
+| *統治*  a| 
+* ランサムウェア対策戦略を割り当てる
+* 結果を監視するのに役立ちます。
+
+
+|===
+
+
+== サポートされているバックアップターゲット、システム、ワークロードデータソース
+
+Ransomware Resilience は、次のバックアップ ターゲット、システム、およびデータ ソースをサポートします。
+
+*サポートされているバックアップ対象*
+
+* Amazon Web Services（AWS）S3
+* Google Cloud Platform
+* Microsoft Azure ブロブ
+* NetAppStorageGRID
+
+
+*サポートされているシステム*
+
+* ONTAPバージョン 9.11.1 以降を搭載したオンプレミスのONTAP NAS (NFS および CIFS プロトコルを使用)
+* ONTAPバージョン 9.17.1 以降を搭載したオンプレミスのONTAP SAN (FC、iSCSI、NVMe プロトコルを使用)
+* AWS 用のCloud Volumes ONTAP 9.11.1 以上（NFS および CIFS プロトコルを使用）
+* Google Cloud Platform 用のCloud Volumes ONTAP 9.11.1 以上（NFS および CIFS プロトコルを使用）
+* Microsoft Azure 用のCloud Volumes ONTAP 9.12.1 以上 (NFS および CIFS プロトコルを使用)
+* AWS、Google Cloud Platform、Microsoft Azure 向けのCloud Volumes ONTAP 9.17.1 以上（FC、iSCSI、NVMe プロトコルを使用）
+* Amazon FSx for NetApp ONTAP は、自律型ランサムウェア保護 (ARP であり、ARP/AI ではありません) を使用します。
++
+
+NOTE: ARP/AI にはONTAP 9.16 以上が必要です。
+
+
+
+
+NOTE: 以下はサポートされていません: FlexGroupボリューム、9.11.1 より前のONTAPバージョン、マウント ポイント ボリューム、マウント パス ボリューム、オフライン ボリューム、およびデータ保護 (DP) ボリューム。
+
+*サポートされているワークロード データ ソース*
+
+ランサムウェア耐性は、プライマリ データ ボリューム上の次のアプリケーション ベースのワークロードを保護します。
+
+* NetAppファイル共有
+* ブロックストレージ
+* VMwareデータストア
+* データベース（MySQL および Oracle）
+* 近日中にさらに追加予定
+
+
+さらに、 SnapCenterまたはSnapCenter for VMware を使用している場合は、それらの製品でサポートされているすべてのワークロードも Ransomware Resilience で識別されます。ランサムウェア耐性は、ワークロードの一貫性を保ちながらこれらを保護し、回復することができます。
+
+
+
+== ランサムウェア対策に役立つ用語
+
+ランサムウェア対策に関連するいくつかの用語を理解しておくと役立つかもしれません。
+
+* *保護*: ランサムウェア耐性における保護とは、保護ポリシーを使用して、スナップショットと不変のバックアップが別のセキュリティ ドメインに定期的に実行されるようにすることを意味します。
+* *ワークロード*: ランサムウェア耐性のワークロードには、MySQL または Oracle データベース、VMware データストア、ファイル共有が含まれる場合があります。
+

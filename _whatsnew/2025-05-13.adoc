@@ -1,0 +1,15 @@
+= BlueXP ransomware protectionにおけるサポートされていない作業環境の報告
+:allow-uri-read: 
+
+
+
+
+=== BlueXP ransomware protectionにおけるサポートされていない作業環境の報告
+
+検出ワークフロー中に、サポートされているワークロードまたはサポートされていないワークロードにマウスを移動すると、 BlueXP ransomware protectionによって詳細が報告されます。これにより、一部のワークロードがBlueXP ransomware protectionサービスによって検出されない理由を理解するのに役立ちます。
+
+サービスが作業環境をサポートしない理由は多数あります。たとえば、作業環境のONTAPバージョンが必要なバージョンよりも低い可能性があります。サポートされていない作業環境にマウスを移動すると、ツールヒントに理由が表示されます。
+
+初期検出中にサポートされていない作業環境を表示でき、結果をダウンロードすることもできます。設定ページの *ワークロード検出* オプションから検出結果を表示することもできます。
+
+詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["BlueXP ransomware protectionでワークロードを発見"] 。

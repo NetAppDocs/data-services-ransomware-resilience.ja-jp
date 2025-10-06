@@ -1,0 +1,66 @@
+---
+settings:
+  name: NetApp Ransomware Resilience
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: ja-jp,us-en,de-de,es-es,fr-fr,it-it,pt-br,ko-kr,zh-cn,zh-tw
+sidebar:
+  entries:
+  - title: NetAppランサムウェア耐性ドキュメント
+    url: "/index.html"
+  - title: リリース ノート
+    entries:
+    - title: ランサムウェア耐性の新機能
+      url: "/whats-new.html"
+    - title: 既知の制限事項
+      url: "/rp-reference-limitations.html"
+  - title: 始めましょう
+    entries:
+    - title: ランサムウェア耐性について学ぶ
+      url: "/concept-ransomware-resilience.html"
+    - title: 前提条件
+      url: "/rp-start-prerequisites.html"
+    - title: クイック スタート
+      url: "/rp-start-quick-start.html"
+    - title: ランサムウェア耐性を設定する
+      url: "/rp-start-setup.html"
+    - title: ランサムウェア耐性にアクセス
+      url: "/rp-start-login.html"
+    - title: ライセンスの設定
+      url: "/rp-start-licenses.html"
+    - title: ワークロードを発見する
+      url: "/rp-start-discover.html"
+    - title: 準備訓練でランサムウェア攻撃をシミュレートする
+      url: "/rp-start-simulate.html"
+    - title: 設定でバックアップ、脅威検出、攻撃シミュレーションを構成する
+      url: "/rp-use-settings.html"
+  - title: ランサムウェア耐性を活用する
+    entries:
+    - title: ランサムウェア耐性の概要を使用する
+      url: "/rp-use-overview.html"
+    - title: ダッシュボードを使用してワークロードの健全性を表示する
+      url: "/rp-use-dashboard.html"
+    - title: ワークロードを保護する
+      entries:
+      - title: ランサムウェア対策戦略でワークロードを保護する
+        url: "/rp-use-protect.html"
+      - title: 個人を特定できるデータをスキャンする
+        url: "/rp-use-protect-classify.html"
+    - title: 検出されたアラートに応答する
+      url: "/rp-use-alert.html"
+    - title: ランサムウェア攻撃からの回復
+      url: "/rp-use-recover.html"
+    - title: レポートをダウンロード
+      url: "/rp-use-reports.html"
+  - section: support
+  - title: FAQ
+    url: "/rp-start-faq.html"
+  - title: 法律上の表示
+    url: "/legal-notices.html"
+product-family:
+  name: NetApp Data Services
+  repo: data-services-family

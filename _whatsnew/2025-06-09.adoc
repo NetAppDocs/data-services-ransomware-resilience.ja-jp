@@ -1,0 +1,31 @@
+= ランディングページの更新
+:allow-uri-read: 
+
+
+
+
+=== ランディングページの更新
+
+このリリースには、BlueXP ransomware protectionのランディング ページの更新が含まれており、無料トライアルの開始と検出が容易になります。
+
+
+
+=== 準備訓練の最新情報
+
+以前は、新しいサンプル ワークロードに対する攻撃をシミュレートすることで、ランサムウェア対策訓練を実行できました。この機能を使用すると、シミュレートされた攻撃を調査し、ワークロードを回復できます。この機能を使用して、アラート通知、応答、および回復をテストします。必要に応じてこれらのドリルを実行し、スケジュールを設定します。
+
+このリリースでは、 BlueXP ransomware protectionダッシュボードの新しいボタンを使用して、テスト ワークロードでランサムウェア準備ドリルを実行できるようになりました。これにより、制御された環境内でランサムウェア攻撃のシミュレート、その影響の調査、ワークロードの効率的な回復が容易になります。
+
+NFS ワークロードに加えて、CIFS (SMB) ワークロードでも準備ドリルを実行できるようになりました。
+
+詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["ランサムウェア攻撃への備えの訓練を実施する"] 。
+
+
+
+=== BlueXP classificationの更新を有効にする
+
+BlueXP ransomware protectionサービス内でBlueXP classificationを使用する前に、 BlueXP classificationを有効にしてデータをスキャンする必要があります。データを分類すると、セキュリティ リスクを増大させる可能性のある個人を特定できる情報 (PII) を見つけるのに役立ちます。
+
+BlueXP ransomware protection内から、ファイル共有ワークロードにBlueXP classificationを展開できます。 *プライバシー露出*列で、*露出の特定*オプションを選択します。分類サービスを有効にしている場合、このアクションによって露出が識別されます。それ以外の場合、このリリースでは、ダイアログ ボックスにBlueXP classificationを展開するオプションが表示されます。 *デプロイ* を選択すると、 BlueXP classificationサービスのランディング ページに移動し、そのサービスをデプロイできます。W
+
+詳細については、 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["クラウドでBlueXP classificationを展開"^] BlueXP ransomware protection内でサービスを利用するには、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html["BlueXP classificationで個人を特定できる情報をスキャン"] 。
