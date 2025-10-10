@@ -24,7 +24,7 @@ Ransomware Resilience には、数ステップでアクティブ化できる新�
 
 ストレージ層での ARP による暗号化検出とは異なり、ユーザー動作の異常の検出は、Ransomware Resilience SaaS サービスで FPolicy イベントを収集することによって行われます。
 
-詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.htm["不審なユーザーアクティビティの検出を有効にする"]そしてlink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["異常なユーザー行動を表示する"]。
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["不審なユーザーアクティビティの検出を有効にする"]そしてlink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["異常なユーザー行動を表示する"]。
 
 
 

@@ -1831,7 +1831,6 @@
   <block id="287f419ab9030dae6e341b7917dea7b9" category="paragraph">ストレージ層での ARP による暗号化検出とは異なり、ユーザー動作の異常の検出は、Ransomware Resilience SaaS サービスで FPolicy イベントを収集することによって行われます。</block>
   <block id="666c1c8dca9ff6ef210c57f04d6e84e8" category="inline-link-macro">不審なユーザーアクティビティの検出を有効にする</block>
   <block id="8d2203d70c1b051af0b7ad506cc40474" category="inline-link-macro">異常なユーザー行動を表示する</block>
-  <block id="b270269f4d3564626c9860f0f29f2992" category="paragraph">詳細については、<block ref="58d7e66449e28231f244d38ab02cc3e1" category="inline-link-macro-rx"></block>そして<block ref="f451eade5eddedc7b8e2af13d9e54fd3" category="inline-link-macro-rx"></block>。</block>
   <block id="289ddf7ba01fbf8f514dbc2d06a7bf67" category="section-title">追加の不審なユーザーアクティビティの検出</block>
   <block id="c59946b2a21d389710dcd9b9ad5f618d" category="paragraph">データ侵害の検出に加えて、Ransomware Resilience は、観察された疑わしいユーザー アクティビティに基づいて次の種類のアラートも検出します。</block>
   <block id="9f149be55d2ace2f4ef86d2125660c4c" category="list-text">**データ破壊 - 潜在的な攻撃** - ファイルの削除数が過去の標準を超えると、潜在的な攻撃の重大度を示すアラートが作成されます。</block>
@@ -2031,4 +2030,5 @@
   <block id="77d6960ddc4ee40e26fd963e6e1f6e68" category="paragraph">回復プロセスが強化されました。これで、ワークロードのボリュームごとに、またはすべてのボリュームを回復できるようになりました。<block ref="2db5667b5f183f51656a41f32740d8f2" category="inline-link-rx"></block> 。</block>
   <block id="0c59fa3b4bea70fe5377775600bed707" category="sidebar">NetApp Ransomware Resilience は、オンプレミスおよびクラウド ストレージにおけるランサムウェアの脅威からアプリケーション ワークロードとファイル共有を保護、検出し、リカバリをサポートします。  Oracle、MySQL、VM データストア、NAS ストレージなどのプラットフォームをサポートする Ransomware Resilience は、安全なバックアップとリカバリを可能にし、組織が重要なデータを保護し、ビジネスの継続性を維持するのに役立ちます。</block>
   <block id="e65f6e4b1867bfedf08120cb1ab99c24" category="sidebar">不審なユーザーアクティビティの検出を構成する</block>
+  <block id="75ae81fb1b2b27cbdbd5ba2b48014fe5" category="paragraph">詳細については、<block ref="4fc0d3ac39798f24cded583e594e4abe" category="inline-link-macro-rx"></block>そして<block ref="f451eade5eddedc7b8e2af13d9e54fd3" category="inline-link-macro-rx"></block>。</block>
 </blocks>
