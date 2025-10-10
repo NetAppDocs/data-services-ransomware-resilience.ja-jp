@@ -39,20 +39,20 @@ StorageGRIDをバックアップ先として使用する場合は、 https://doc
 === AWSをバックアップ先として準備する
 
 * AWS にアカウントを設定します。
-* 設定 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["AWS 権限"^]AWS で。
+* 設定 https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["AWS 権限"^]AWS で。
 
 
-コンソールでAWSストレージを管理する方法の詳細については、以下を参照してください。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Amazon S3バケットを管理する"^] 。
+コンソールでAWSストレージを管理する方法の詳細については、以下を参照してください。 https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Amazon S3バケットを管理する"^] 。
 
 
 
 === Azure をバックアップ先として準備する
 
 * Azure でアカウントを設定します。
-* 設定 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["Azure のアクセス許可"^]Azure で。
+* 設定 https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["Azure のアクセス許可"^]Azure で。
 
 
-コンソールでAzureストレージを管理する方法の詳細については、以下を参照してください。 https://docs.netapp.com/us-en/bluexp-blob-storage/task-view-azure-blob-storage.html["Azure ストレージ アカウントを管理する"^] 。
+コンソールでAzureストレージを管理する方法の詳細については、以下を参照してください。 https://docs.netapp.com/us-en/storage-management-blob-storage/task-view-azure-blob-storage.html["Azure ストレージ アカウントを管理する"^] 。
 
 
 
@@ -60,7 +60,7 @@ StorageGRIDをバックアップ先として使用する場合は、 https://doc
 
 次のステップは、コンソールとランサムウェア耐性を設定することです。
 
-レビュー https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html["標準モードのコンソール要件"^]。
+レビュー https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-standard-mode.html["標準モードのコンソール要件"^]。
 
 
 

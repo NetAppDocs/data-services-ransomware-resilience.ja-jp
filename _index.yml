@@ -1,16 +1,14 @@
 ---
 indexpage:
   title: NetAppランサムウェア耐性ドキュメント
-  summary: NetApp Ransomware Resilience は、ランサムウェアの保護、検出、および回復のためのオーケストレーション サービスです。ランサムウェア耐性は、
-    NetAppコンソール組織全体のオンプレミス NAS ストレージおよび Amazon Web Services のCloud Volumes ONTAP (NFS
-    および CIFS プロトコルを使用) 上の Oracle、MySQL、VM データストア、ファイル共有のアプリケーションベースのワークロードを保護し、Amazon
-    Web Services (AWS) クラウド ストレージまたはNetApp StorageGRIDにデータをバックアップします。
+  summary: NetApp Ransomware Resilience は、オンプレミスおよびクラウド ストレージにおけるランサムウェアの脅威からアプリケーション
+    ワークロードとファイル共有を保護、検出し、リカバリをサポートします。  Oracle、MySQL、VM データストア、NAS ストレージなどのプラットフォームをサポートする
+    Ransomware Resilience は、安全なバックアップとリカバリを可能にし、組織が重要なデータを保護し、ビジネスの継続性を維持するのに役立ちます。
   keywords: bluexp, ransomware, anti-ransomware, cyber attack, netapp, ontap, amazon
     web services, aws, storagegrid, protection, resilience
-  lead: NetApp Ransomware Resilience は、ランサムウェアの保護、検出、および回復のためのオーケストレーション サービスです。ランサムウェア耐性は、コンソール組織全体のオンプレミス
-    NAS ストレージおよび Amazon Web Services のCloud Volumes ONTAP (NFS および CIFS プロトコルを使用)
-    上の Oracle、MySQL、VM データストア、ファイル共有のアプリケーションベースのワークロードを保護し、データを Amazon Web Services
-    (AWS) クラウド ストレージまたはNetApp StorageGRIDにバックアップします。
+  lead: NetApp Ransomware Resilience は、オンプレミスおよびクラウド ストレージにおけるランサムウェアの脅威からアプリケーション
+    ワークロードとファイル共有を保護、検出し、リカバリをサポートします。  Oracle、MySQL、VM データストア、NAS ストレージなどのプラットフォームをサポートする
+    Ransomware Resilience は、安全なバックアップとリカバリを可能にし、組織が重要なデータを保護し、ビジネスの継続性を維持するのに役立ちます。
   tiles:
   - title: 始めましょう
     links:

@@ -91,7 +91,7 @@ Ransomware Resilience にはNetApp ONTAP One ライセンスが必要です。
 
 Ransomware Resilience ライセンスには、追加のNetApp製品は含まれません。  Ransomware Resilience では、ライセンスがなくてもバックアップとリカバリを使用できます。
 
-異常なユーザー行動を検出するために、Ransomware Resilience は、悪意のあるファイル アクティビティを検出するONTAP内の機械学習 (ML) モデルであるNetApp Autonomous Ransomware Protection を使用します。このモデルは、Ransomware Resilience ライセンスに含まれています。さらに、 Data Infrastructure Insights (旧称Cloud Insights) Workload Security (ライセンスが必要) を使用して、ユーザーの行動を調査し、特定のユーザーのさらなるアクティビティをブロックすることもできます。
+異常なユーザー行動を検出するために、Ransomware Resilience は、悪意のあるファイル アクティビティを検出するONTAP内の機械学習 (ML) モデルであるNetApp Autonomous Ransomware Protection を使用します。このモデルは、Ransomware Resilience ライセンスに含まれています。
 
 詳細については、 link:rp-start-licenses.html["ライセンスの設定"] 。
 
@@ -105,7 +105,7 @@ NetAppコンソールは、オンプレミスとクラウド環境全体にわ�
 
 NetAppコンソールの使用を開始するためにライセンスやサブスクリプションは必要ありません。ストレージ システムまたはNetAppデータ サービスへの接続を確保するためにクラウドにコンソール エージェントを展開する必要がある場合にのみ料金が発生します。ただし、コンソールからアクセスできる一部のNetAppデータ サービスは、ライセンスまたはサブスクリプションベースです。
 
-詳細はこちらlink:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["NetAppコンソール"^]。
+詳細はこちらlink:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetAppコンソール"^]。
 
 
 
@@ -123,7 +123,7 @@ image:diagram-rp-architecture-preview3.png["ランサムウェア耐性アーキ
 | *識別する*  a| 
 * コンソールに接続されているすべての顧客のオンプレミス NAS (NFS および CIFS プロトコル)、SAN (FC、iSCSI、NVMe)、およびCloud Volumes ONTAPデータを検索します。
 * ONTAPおよびSnapCenterサービス API から顧客データを識別し、ワークロードに関連付けます。詳細はこちら https://docs.netapp.com/us-en/ontap-family/["ONTAP"^]そして https://docs.netapp.com/us-en/snapcenter/index.html["SnapCenterソフトウェア"^]。
-* 各ボリュームのNetAppスナップショット コピーとバックアップ ポリシーの現在の保護レベルと、オンボックス検出機能を検出します。ランサムウェア耐性は、バックアップとリカバリ、 ONTAPサービス、および Autonomous Ransomware Protection ( ONTAPのバージョンに応じて ARP または ARP/AI)、FPolicy、バックアップ ポリシー、スナップショット ポリシーなどのNetAppテクノロジーを使用して、この保護態勢をワークロードに関連付けます。詳細はこちら https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自律型ランサムウェア対策"^]、 https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["NetAppバックアップとリカバリ"^] 、 そして https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
+* 各ボリュームのNetAppスナップショット コピーとバックアップ ポリシーの現在の保護レベルと、オンボックス検出機能を検出します。ランサムウェア耐性は、バックアップとリカバリ、 ONTAPサービス、および Autonomous Ransomware Protection ( ONTAPのバージョンに応じて ARP または ARP/AI)、FPolicy、バックアップ ポリシー、スナップショット ポリシーなどのNetAppテクノロジーを使用して、この保護態勢をワークロードに関連付けます。詳細はこちら https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自律型ランサムウェア対策"^]、 https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["NetAppバックアップとリカバリ"^] 、 そして https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
 * 自動的に検出された保護レベルに基づいて各ワークロードにビジネス優先度を割り当て、ビジネス優先度に基づいてワークロードの保護ポリシーを推奨します。ワークロードの優先順位は、ワークロードに関連付けられた各ボリュームにすでに適用されているスナップショット頻度に基づいています。
 
 
@@ -138,7 +138,7 @@ image:diagram-rp-architecture-preview3.png["ランサムウェア耐性アーキ
 | *検出する*  a| 
 * 潜在的に異常な暗号化とアクティビティを検出する統合機械学習 (ML) モデルを使用して、潜在的な攻撃を検出します。
 * プライマリ ストレージ内の潜在的なランサムウェア攻撃を検出することから始まり、追加の自動スナップショット コピーを取得して最も近いデータ復元ポイントを作成することで異常なアクティビティに対応する、二重層検出を提供します。ランサムウェア耐性は、主要なワークロードのパフォーマンスに影響を与えることなく、より深く掘り下げて潜在的な攻撃をより正確に特定する機能を提供します。
-* ONTAP、Autonomous Ransomware Protection（ ONTAPのバージョンに応じて ARP または ARP/AI）、 Data Infrastructure Insights （旧称Cloud Insights）、Workload Security、および FPolicy テクノロジーを使用して、攻撃の疑いのある特定のファイルを特定し、関連するワークロードにマッピングします。
+* ONTAP、Autonomous Ransomware Protection（ ONTAPのバージョンに応じて ARP または ARP/AI）、および FPolicy テクノロジーを使用して、攻撃の対象となる特定の疑わしいファイルを特定し、関連するワークロードにマッピングします。
 
 
 

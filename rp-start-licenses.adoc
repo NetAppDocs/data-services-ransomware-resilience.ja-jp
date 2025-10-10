@@ -14,7 +14,7 @@ summary: ライセンスを設定して、NeApp Ransomware Resilience の使用�
 [role="lead"]
 NetApp Ransomware Resilience では、さまざまなライセンス プランを使用できます。
 
-このタスクを実行するには、組織管理者、フォルダー管理者、またはプロジェクト管理者のロールが必要です。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["コンソールアクセスロールについて学ぶ"^] 。
+このタスクを実行するには、組織管理者、フォルダー管理者、またはプロジェクト管理者のロールが必要です。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["コンソールアクセスロールについて学ぶ"^] 。
 
 *ライセンスの種類* 次のライセンスの種類を使用できます。
 
@@ -40,11 +40,6 @@ Ransomware Resilience ライセンスには、追加のNetApp製品は含まれ�
 
 
 NOTE: バックアップとリカバリとランサムウェア耐性の両方をお持ちの場合、両方の製品で保護されている共通データについては、ランサムウェア耐性に対してのみ課金されます。
-
-Data Infrastructure Insights Workload Security を使用すると、異常なユーザー動作を表示できます。これには、Data Infrastructure Insights Workload Security のライセンスが必要であり、Ransomware Resilience でそれを有効にする必要があります。データインフラストラクチャインサイトワークロードセキュリティの概要については、 https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["ワークロードセキュリティについて"^]
-
-
-TIP: Data Infrastructure Insights Workload Security のライセンスを所有しておらず、Ransomware Resilience で有効にしていない場合、異常なユーザー動作の情報は表示されません。
 
 
 
@@ -73,7 +68,7 @@ image:screen-landing.png["ランサムウェア耐性のランディングペー
 
 . 他のサービス用のコネクタをまだ追加していない場合は、追加します。
 +
-コンソールエージェントを追加するには、 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コンソールエージェントについて学ぶ"^] 。
+コンソールエージェントを追加するには、 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["コンソールエージェントについて学ぶ"^] 。
 
 . コンソール エージェントを設定すると、ランサムウェア耐性ランディング ページで、コンソール エージェントを追加するためのボタンがワークロードを検出するためのボタンに変わります。  *ワークロードの検出から開始*を選択します。
 . 無料トライアルの情報を確認するには、右上のドロップダウン オプションを選択します。
@@ -121,9 +116,6 @@ image:screen-license-dw-add-license.png["ライセンスの追加ページのス
 +
 ** サブスクリプション情報を表示するには、[*サブスクリプション*] を選択します。
 ** BYOL ライセンスを表示するには、*データ サービス ライセンス* を選択します。
-+
-image:screen-dw-data-services-license.png["ライセンスとサブスクリプションのスクリーンショット。"]
-
 
 
 . ランサムウェア耐性に戻ります。コンソールの左側のナビゲーションから、*保護* > *ランサムウェア耐性*を選択します。
@@ -166,9 +158,6 @@ image:screen-license-dw-add-license.png["ライセンスの追加ページのス
 +
 ** サブスクリプション情報を表示するには、[*サブスクリプション*] を選択します。
 ** BYOL ライセンスを表示するには、*データ サービス ライセンス* を選択します。
-+
-image:screen-dw-data-services-license.png["データサービスライセンスページ"]
-
 
 
 . ランサムウェア耐性に戻ります。コンソールの左側のナビゲーションから、*保護* > *ランサムウェア耐性*を選択します。
@@ -195,7 +184,7 @@ image:screen-license-payment-methods3.png["ランサムウェア耐性支払い�
 
 . [お支払い方法] ページで、Google Cloud Platform Marketplace の [*サブスクライブ*] を選択します。
 . Google Cloud Platform Marketplace で、[*Subscribe*] を選択します。
-. Google Cloud Platform Marketplace を使用して、* NetApp Intelligent Services* と *Ransomware Resilience* をサブスクライブします。image:screen-license-payments-gcp2.png["Google Cloud Marketplace サブスクリプション ページのスクリーンショット。"]
+. Google Cloud Platform Marketplace を使用して、* NetApp Intelligent Services* と *Ransomware Resilience* をサブスクライブします。
 . Ransomware Resilience に戻ると、登録したことを示すメッセージが表示されます。
 +
 
@@ -211,9 +200,6 @@ image:screen-license-dw-add-license.png["ライセンスの追加ページのス
 +
 ** サブスクリプション情報を表示するには、[*サブスクリプション*] を選択します。
 ** BYOL ライセンスを表示するには、*データ サービス ライセンス* を選択します。
-+
-image:screen-dw-data-services-license.png["ライセンスとサブスクリプション ページのスクリーンショット。"]
-
 
 
 . ランサムウェア耐性に戻ります。コンソールの左側のナビゲーションから、*保護* > *ランサムウェア耐性*を選択します。
@@ -246,7 +232,7 @@ image:screen-license-dw-add-license.png["ライセンスの追加ページのス
 +
 ** コンソール ライセンスのシリアル番号があり、NSS アカウントがわかっている場合は、[*シリアル番号を入力*] オプションを選択し、その情報を入力します。
 +
-NetAppサポートサイトのアカウントがドロップダウンリストから選択できない場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["NSSアカウントをコンソールに追加する"^] 。
+NetAppサポートサイトのアカウントがドロップダウンリストから選択できない場合は、 https://docs.netapp.com/us-en/console-setup-admin/task-adding-nss-accounts.html["NSSアカウントをコンソールに追加する"^] 。
 
 ** zvondolr ライセンス ファイル (ダーク サイトにインストールする場合に必要) がある場合は、[ライセンス ファイルのアップロード] オプションを選択し、プロンプトに従ってファイルを添付します。
 
@@ -264,7 +250,7 @@ NetAppサポートサイトのアカウントがドロップダウンリスト�
 ライセンスの有効期限が近づいている場合、またはライセンス容量が制限に達した場合は、Ransomware Resilience UI で通知されます。期限が切れる前に Ransomware Resilience ライセンスを更新すれば、スキャンしたデータへのアクセスが中断されることはありません。
 
 
-TIP: このメッセージはライセンスとサブスクリプションにも表示されます。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center["通知設定"] 。
+TIP: このメッセージはLicenses and subscriptionsにも表示されます。 https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center["通知設定"] 。
 
 .手順
 . ライセンスの更新をリクエストするには、サポートに電子メールを送信できます。

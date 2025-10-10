@@ -8,7 +8,7 @@
 
 このリリースでは、ランサムウェア攻撃をシミュレートして、ランサムウェアアラートへの対応をテストします。この機能は、アラート通知、対応、および回復プロセスをテストすることで、実際のランサムウェア攻撃が発生した場合に備えて準備ができていることを確認するのに役立ちます。
 
-詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["ランサムウェア攻撃への備えの訓練を実施する"] 。
+詳細については、 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html["ランサムウェア攻撃への備えの訓練を実施する"] 。
 
 
 
@@ -21,7 +21,7 @@
 * これらの検出プロセスは、検出プロセス中に最初に実行することも、設定オプション内で実行することもできます。
 
 
-詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["以前に選択した作業環境に対して新しく作成されたワークロードを検出する"]そして https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["設定オプションで機能を設定する"]。
+詳細については、 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html["以前に選択した作業環境に対して新しく作成されたワークロードを検出する"]そして https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["設定オプションで機能を設定する"]。
 
 
 
@@ -29,4 +29,4 @@
 
 このリリースでは、ファイル拡張子を大幅に変更しなくても、ワークロードで高度な暗号化が検出された場合にアラートを表示できます。この機能は、 ONTAP Autonomous Ransomware Protection (ARP) AI を使用し、ランサムウェア攻撃のリスクがあるワークロードを特定するのに役立ちます。この機能を使用して、拡張子の変更の有無にかかわらず、影響を受けるファイルのリスト全体をダウンロードします。
 
-詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["検出されたランサムウェアアラートに応答する"] 。
+詳細については、 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["検出されたランサムウェアアラートに応答する"] 。

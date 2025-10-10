@@ -21,9 +21,9 @@ TIP: FSx for ONTAPで実行されているワークロードのバックアッ�
 * アラート インシデントには、新しい FSx for ONTAP作業環境が表示されます。
 
 
-詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["BlueXP ransomware protectionと動作環境について学ぶ"] 。
+詳細については、 https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["BlueXP ransomware protectionと動作環境について学ぶ"] 。
 
-サポートされているオプションの詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html["BlueXP ransomware protectionの制限"] 。
+サポートされているオプションの詳細については、 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["BlueXP ransomware protectionの制限"] 。
 
 
 
@@ -31,4 +31,4 @@ TIP: FSx for ONTAPで実行されているワークロードのバックアッ�
 
 BlueXP ransomware protectionを表示、検出、または管理するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア保護管理者、またはランサムウェア保護閲覧者のいずれかのアクセス ロールが必要です。
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスに対するBlueXPのアクセスロールについて学ぶ"^] 。
+https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスに対するBlueXPのアクセスロールについて学ぶ"^] 。

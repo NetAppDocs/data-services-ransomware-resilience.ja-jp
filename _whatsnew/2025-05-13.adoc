@@ -12,4 +12,4 @@
 
 初期検出中にサポートされていない作業環境を表示でき、結果をダウンロードすることもできます。設定ページの *ワークロード検出* オプションから検出結果を表示することもできます。
 
-詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html["BlueXP ransomware protectionでワークロードを発見"] 。
+詳細については、 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html["BlueXP ransomware protectionでワークロードを発見"] 。

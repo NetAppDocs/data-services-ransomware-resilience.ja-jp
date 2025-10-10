@@ -8,7 +8,7 @@
 
 このリリースには、BlueXP ransomware protectionにおける SAN ワークロードのサポートが含まれています。  NFS および CIFS ワークロードに加えて、SAN ワークロードも保護できるようになりました。
 
-詳細については、 link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-prerequisites.html["BlueXP ransomware protectionの前提条件"] 。
+詳細については、 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-prerequisites.html["BlueXP ransomware protectionの前提条件"] 。
 
 
 
@@ -16,7 +16,7 @@
 
 このリリースでは、 SnapCenterやBlueXP backup and recoveryなどの他のNetAppツールからのスナップショットおよびバックアップ ポリシーを使用したワークロードの構成プロセスが改善されています。以前のリリースでは、 BlueXP ransomware protectionは他のツールからのポリシーを検出し、検出ポリシーの変更のみが可能でした。このリリースでは、スナップショットおよびバックアップ ポリシーをBlueXP ransomware protectionポリシーに置き換えたり、他のツールのポリシーを引き続き使用したりできるようになりました。
 
-詳細については、link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html["ワークロードを保護する"] 。
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["ワークロードを保護する"] 。
 
 
 
@@ -28,4 +28,4 @@ BlueXP ransomware protectionが攻撃の可能性を検出すると、 BlueXP通
 
 BlueXP ransomware protectionでセキュリティおよびイベント管理 (SIEM) システムを構成した場合、サービスはアラートの詳細を SIEM システムに送信します。
 
-詳細については、link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html["検出されたランサムウェアアラートを処理する"] 。
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html["検出されたランサムウェアアラートを処理する"] 。

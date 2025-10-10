@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-use-settings.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination 
-summary: バックアップ先、脅威の検出、Ransomware Resilience のData Infrastructure Insights Workload Security への接続など、いくつかのオプションを構成できます。 
+summary: 設定ページでは、バックアップ先や脅威の検出など、いくつかのオプションを設定できます。 
 ---
 = NetApp Ransomware Resilienceで保護設定を構成する
 :hardbreaks:
@@ -12,15 +12,15 @@ summary: バックアップ先、脅威の検出、Ransomware Resilience のData
 
 
 [role="lead"]
-*設定* オプションにアクセスすることで、バックアップ先を構成したり、外部のセキュリティおよびイベント管理 (SIEM) システムへデータを送信したり、攻撃準備ドリルを実施したり、ワークロード検出を構成したり、 Data Infrastructure Insights Workload Security への接続を構成したりすることができます。
+*設定* オプションにアクセスして、バックアップ先を構成したり、外部のセキュリティおよびイベント管理 (SIEM) システムへデータを送信したり、攻撃準備訓練を実施したり、ワークロード検出を構成したり、疑わしいユーザー アクティビティの検出を構成したりすることができます。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
 
 *設定ページで何ができますか?*  「設定」ページからは、次の操作を実行できます。
 
 * 準備訓練を実施してランサムウェア攻撃をシミュレートし、シミュレートされたランサムウェアアラートに応答します。詳細については、 link:rp-start-simulate.html["ランサムウェア攻撃への備えの訓練を実施する"] 。
 * ワークロード検出を構成します。
-* ランサムウェアアラートで疑わしいユーザー情報を表示するには、Data Infrastructure Insights Workload Security への接続を構成します。
+* 疑わしいユーザー アクティビティのレポートを構成します。
 * バックアップ先を追加します。
 * 脅威の分析と検出のために、セキュリティおよびイベント管理システム (SIEM) を接続します。脅威検出を有効にすると、脅威分析のためにデータが自動的に SIEM に送信されます。
 
@@ -63,35 +63,11 @@ summary: バックアップ先、脅威の検出、Ransomware Resilience のData
 
 
 
-== Data Infrastructure Insights Workload Security に接続して、疑わしい異常なユーザー行動を確認します。
+== 不審なユーザーアクティビティ
 
-Ransomware Resilience で異常なユーザー行動の疑いの詳細を表示するには、まず、 Data Infrastructure Insightsワークロード セキュリティ システムへの接続を構成する必要があります。
+ユーザー アクティビティ カードでは、疑わしいユーザー アクティビティを検出するために必要なユーザー アクティビティ エージェントを作成および管理できます。
 
-
-
-=== Data Infrastructure Insightsワークロード セキュリティ システムから API アクセス トークンを取得します。
-
-Data Infrastructure Insightsワークロード セキュリティ システムから API アクセス トークンを取得します。
-
-. Data Infrastructure Insightsワークロード セキュリティ システムにログインします。
-. 左側のナビゲーションから、*管理者* > *API アクセス* を選択します。
-+
-image:../media/screen-alerts-ci-api-access-token.png["Data Infrastructure Insightsのワークロード セキュリティの API アクセス ページ"]
-
-. API アクセス トークンを作成するか、既存のトークンを使用します。
-. API アクセス トークンをコピーします。
-
-
-
-
-=== Data Infrastructure Insightsワークロードセキュリティに接続
-
-. 「ランサムウェア耐性設定」メニューから、「*ワークロード セキュリティ接続*」タイルを見つけます。
-. *接続*を選択します。
-. データ インフラストラクチャ ワークロード セキュリティ UI の URL を入力します。
-. ワークロード セキュリティへのアクセスを提供する API アクセス トークンを入力します。
-. *接続*を選択します。
-
+詳細については、以下を参照してください。 link:suspicious-user-activity.html["不審なユーザーアクティビティ"] 。
 
 
 
@@ -169,7 +145,7 @@ image:screen-settings-backup-destinations-list2.png["バックアップ先ペー
 
 AWS をバックアップ先として設定するには、次の情報を入力します。
 
-コンソールでAWSストレージを管理する方法の詳細については、以下を参照してください。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html["Amazon S3バケットを管理する"^] 。
+コンソールでAWSストレージを管理する方法の詳細については、以下を参照してください。 https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html["Amazon S3バケットを管理する"^] 。
 
 .手順
 . *設定 > バックアップ先* ページで、*追加* を選択します。
@@ -185,7 +161,7 @@ image:screen-settings-backup-destination.png["バックアップ先ページ"]
 *** 新しいバケットを作成するか、コンソールに既にバケットが存在する場合は既存のバケットを選択するか、バックアップを保存する独自のバケットを用意します。
 *** AWS 認証情報の AWS アカウント、リージョン、アクセスキー、シークレットキー
 +
-https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["独自のバケットを使用する場合は、「S3バケットの追加」を参照してください。"^] 。
+https://docs.netapp.com/us-en/storage-management-s3-storage/task-add-s3-bucket.html["独自のバケットを使用する場合は、「S3バケットの追加」を参照してください。"^] 。
 
 
 
@@ -228,7 +204,7 @@ image:screen-settings-backup-destinations-list2.png["バックアップ先ペー
 
 Google Cloud Platform (GCP) をバックアップ先として設定するには、次の情報を入力します。
 
-コンソールでGCPストレージを管理する方法の詳細については、以下を参照してください。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html["Google Cloud のコンソール エージェントのインストール オプション"^] 。
+コンソールでGCPストレージを管理する方法の詳細については、以下を参照してください。 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["Google Cloud のコンソール エージェントのインストール オプション"^] 。
 
 .手順
 . *設定 > バックアップ先* ページで、*追加* を選択します。
@@ -269,7 +245,7 @@ image:screen-settings-backup-destination-gcp.png["バックアップ先ページ
 
 Azure をバックアップ先として設定するには、次の情報を入力します。
 
-コンソールでAzure資格情報とマーケットプレイスサブスクリプションを管理する方法の詳細については、以下を参照してください。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html["Azure 資格情報とマーケットプレイスのサブスクリプションを管理する"^] 。
+コンソールでAzure資格情報とマーケットプレイスサブスクリプションを管理する方法の詳細については、以下を参照してください。 https://docs.netapp.com/us-en/console-setup-admin/task-adding-azure-accounts.html["Azure 資格情報とマーケットプレイスのサブスクリプションを管理する"^] 。
 
 .手順
 . *設定 > バックアップ先* ページで、*追加* を選択します。
@@ -285,7 +261,7 @@ image:screen-settings-backup-destination.png["バックアップ先ページ"]
 *** 新しいストレージ アカウントを作成するか、コンソールに既に存在する場合は既存のアカウントを選択するか、バックアップを保存する独自のストレージ アカウントを使用します。
 *** Azure 資格情報の Azure サブスクリプション、リージョン、リソース グループ
 +
-https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["独自のストレージ アカウントを使用する場合は、「Azure Blob ストレージ アカウントの追加」を参照してください。"^] 。
+https://docs.netapp.com/us-en/storage-management-blob-storage/task-add-blob-storage.html["独自のストレージ アカウントを使用する場合は、「Azure Blob ストレージ アカウントの追加」を参照してください。"^] 。
 
 
 
@@ -468,7 +444,7 @@ TIP: これは先ほど作成したカスタム ロールです。
 . *アクセスの割り当て先* フィールドで、*ユーザー、グループ、またはサービス プリンシパル* を選択します。
 . *メンバーを選択*を選択します。次に、「*Ransomware Resilience Sentinel Configurator*」を選択します。
 . *次へ*を選択します。
-. *ユーザーが実行できること* フィールドで、*特権管理者ロール (所有者、UAA、RBAC) を除くすべてのロールの割り当てをユーザーに許可する (推奨)* を選択します。
+. *ユーザーが実行できる操作* フィールドで、*特権管理者ロール (所有者、UAA、RBAC) を除くすべてのロールの割り当てをユーザーに許可する (推奨)* を選択します。
 . *次へ*を選択します。
 . 権限を割り当てるには、[*確認して割り当て*] を選択します。
 

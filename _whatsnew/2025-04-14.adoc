@@ -8,7 +8,7 @@
 
 このリリースでは、ランサムウェア攻撃の準備訓練レポートを確認できるようになりました。準備ドリルを使用すると、新しく作成されたサンプル ワークロードに対するランサムウェア攻撃をシミュレートできます。次に、シミュレートされた攻撃を調査し、サンプルのワークロードを回復します。この機能は、アラート通知、対応、および回復プロセスをテストすることで、実際のランサムウェア攻撃が発生した場合に備えて準備ができていることを確認するのに役立ちます。
 
-詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html["ランサムウェア攻撃への備えの訓練を実施する"] 。
+詳細については、 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html["ランサムウェア攻撃への備えの訓練を実施する"] 。
 
 
 
@@ -20,7 +20,7 @@
 * ランサムウェア保護ビューア
 
 
-権限の詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["BlueXP ransomware protection機能へのロールベースのアクセス"] 。
+権限の詳細については、 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["BlueXP ransomware protection機能へのロールベースのアクセス"] 。
 
 
 
@@ -28,4 +28,4 @@
 
 このリリースには、支払いプロセスに対するいくつかの改善が含まれています。
 
-詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html["ライセンスと支払いオプションを設定する"] 。
+詳細については、 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licenses.html["ライセンスと支払いオプションを設定する"] 。

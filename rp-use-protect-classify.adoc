@@ -11,32 +11,30 @@ summary: NetApp Data Classification を使用してデータのセキュリテ�
 [role="lead"]
 NetApp Ransomware Resilience では、 NetApp Data Classification を使用して、ファイル共有ワークロード内のデータをスキャンおよび分類できます。データを分類すると、データセットに個人を特定できる情報 (PII) が含まれているかどうかを判断するのに役立ちますが、これによりセキュリティ リスクが増大する可能性があります。データ分類はコンソールのコア コンポーネントであり、追加費用なしで利用できます。
 
-link:https://docs.netapp.com/us-en/bluexp-classification/["データ分類"^]AI 駆動型の自然言語処理を利用してコンテキスト データの分析と分類を行い、データに関する実用的な分析情報を提供することで、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の加速を実現します。
+link:https://docs.netapp.com/us-en/data-services-data-classification/["データ分類"^]AI 駆動型の自然言語処理を利用してコンテキスト データの分析と分類を行い、データに関する実用的な分析情報を提供することで、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の加速を実現します。
 
 
 TIP: このプロセスはワークロードの重要性に影響を与え、適切な保護が確保されるようにするのに役立ちます。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
 
 
 
 == データ分類でプライバシーの露出を特定する
 
-ランサムウェア耐性におけるデータ分類を使用する前に、link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["データ分類を有効にしてデータをスキャンする"^] 。
+ランサムウェア耐性におけるデータ分類を使用する前に、link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["データ分類を有効にしてデータをスキャンする"^] 。
 
 ランサムウェア耐性の保護ページ内でデータ分類を展開できます。プライバシーの露出を特定するには、手順に従ってください。  **[露出を特定]** を選択すると、データ分類をまだ展開していない場合は、ダイアログが表示され、データ分類を有効にできます。
 
-image:classification-deploy.png["分類の展開のスクリーンショット"]
-
 データ分類の詳細については、以下を参照してください。
 
-* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["データ分類について学ぶ"^]
-* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["個人データのカテゴリ"^]
-* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["組織内に保存されているデータを調査する"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["データ分類について学ぶ"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html["個人データのカテゴリ"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["組織内に保存されているデータを調査する"^]
 
 
 .開始する前に
-ランサムウェア耐性におけるPIIデータのスキャンは、以下の場合に利用可能です。link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html["展開されたデータ分類"^] 。データ分類はコンソールの一部として追加料金なしで利用でき、オンプレミスまたは顧客のクラウドに導入できます。
+ランサムウェア耐性におけるPIIデータのスキャンは、以下の場合に利用可能です。link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["展開されたデータ分類"^] 。データ分類はコンソールの一部として追加料金なしで利用でき、オンプレミスまたは顧客のクラウドに導入できます。
 
 .手順
 . ランサムウェア耐性メニューから、*保護*を選択します。
@@ -115,7 +113,7 @@ image:screen-protection-workload-details-privacy-exposure.png["プライバシ�
 
 データ分類の詳細については、データ分類のドキュメントを参照してください。
 
-* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["データ分類について学ぶ"^]
-* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["個人データのカテゴリ"^]
-* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["組織内に保存されているデータを調査する"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["データ分類について学ぶ"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html["個人データのカテゴリ"^]
+* https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["組織内に保存されているデータを調査する"^]
 

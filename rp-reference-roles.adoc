@@ -20,7 +20,7 @@ NetApp Ransomware Resilience は、ロールを使用して、各ユーザーの
 * *ランサムウェア耐性ビューア*: NetAppワークロード データの表示、アラート データの表示、リカバリ データのダウンロード、レポートのダウンロードを行います。
 
 
-これらのロールは、コンソール サービスや、データ保護、ワークロード管理などのその他のサービスへのアクセスを制御するコンソール プラットフォーム ロールに加えて提供されます。すべてのコンソールプラットフォームロールの詳細については、 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["セットアップと管理に関するドキュメント"^] 。
+これらのロールは、コンソール サービスや、データ保護、ワークロード管理などのその他のサービスへのアクセスを制御するコンソール プラットフォーム ロールに加えて提供されます。すべてのコンソールプラットフォームロールの詳細については、 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["セットアップと管理に関するドキュメント"^] 。
 
 次の表は、各 Ransomware Resilience ロールが実行できるアクションを示しています。
 

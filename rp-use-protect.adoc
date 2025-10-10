@@ -14,7 +14,7 @@ summary: NetApp Ransomware Resilience でワークロードにポリシーを割
 [role="lead"]
 NetApp Ransomware Resilience でワークロード一貫性保護を有効にするか、ランサムウェア保護戦略を作成することにより、ランサムウェア攻撃からワークロードを保護できます。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
 
 
 
@@ -22,7 +22,7 @@ NetApp Ransomware Resilience でワークロード一貫性保護を有効にす
 
 ランサムウェア保護戦略には、検出ポリシーと保護ポリシーの両方が含まれます。
 
-* **検出ポリシー** はランサムウェアの脅威を検出し、オプションで疑わしいファイル拡張子をブロックします。
+* **検出ポリシー** ランサムウェアの脅威を検出します
 * **保護ポリシー** には、スナップショット ポリシーとバックアップ ポリシーが含まれます。保護戦略には検出およびスナップショット ポリシーが必要です。バックアップ ポリシーはオプションです。
 +
 ワークロードを保護するために他のNetApp製品を使用している場合、Ransomware Resilience はそれらを検出し、次のいずれかのオプションを提供します。
@@ -35,7 +35,7 @@ NetApp Ransomware Resilience でワークロード一貫性保護を有効にす
 
 
 
-TIP: データ資産の管理と保護を強化するために、link:#group-file-shares-for-easier-protection["グループファイル共有"] 1 つの戦略の下でボリュームをまとめて保護します。
+TIP: データ資産の管理と保護を強化するために、link:#create-a-protection-group["グループファイル共有"] 1 つの戦略の下でボリュームをまとめて保護します。
 
 
 
@@ -140,6 +140,9 @@ TIP: ランサムウェア耐性で保護が有効になっている場合、ラ
 
 ワークロードの重要度に合わせて、次のランサムウェア耐性定義済みポリシーのいずれかを選択できます。
 
+
+NOTE: **暗号化ユーザー拡張** ポリシーは、疑わしいユーザーの動作の検出をサポートする唯一の定義済みポリシーです。
+
 [cols="10,15a,20,15,15,15"]
 |===
 | ポリシーレベル | Snapshot | 頻度 | 保持期間（日数） | スナップショットコピーの数 | スナップショットコピーの合計最大数 
@@ -203,6 +206,26 @@ TIP: ランサムウェア耐性で保護が有効になっている場合、ラ
 | 毎月  a| 
 30日ごと
 | 60 | 2 | 93 
+
+
+.4+| *暗号化ユーザー拡張機能*  a| 
+15分ごと
+| 30分ごと | 3 | 72 | 93 
+
+
+| 日次  a| 
+1日ごと
+| 14 | 14 | 93 
+
+
+| 週次  a| 
+1週間ごと
+| 35 | 5 | 93 
+
+
+| 毎月  a| 
+30日ごと
+| 60 | 2 | 93 
 |===
 
 
@@ -216,8 +239,8 @@ TIP: ランサムウェア耐性で保護が有効になっている場合、ラ
 
 バックアップとリカバリを使用してSnapCenterまたはSnapCenter Plug-in for VMware vSphereを登録する方法については、次の情報を参照してください。
 
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapcenter-server.html["SnapCenter Serverソフトウェアの登録"^]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapCenter-plug-in-for-vmware-vsphere.html["SnapCenter Plug-in for VMware vSphereを登録する"^]
+* https://docs.netapp.com/us-en/data-services-backup-recovery/task-register-snapcenter-server.html["SnapCenter Serverソフトウェアの登録"^]
+* https://docs.netapp.com/us-en/data-services-backup-recovery/task-register-snapCenter-plug-in-for-vmware-vsphere.html["SnapCenter Plug-in for VMware vSphereを登録する"^]
 
 
 .手順
@@ -266,7 +289,7 @@ TIP: ランサムウェア耐性で保護が有効になっている場合、ラ
 検出ポリシーは、他の製品で管理されているポリシーを変更するものではありません。
 
 +
-検出ポリシーは、他のサービスですでに有効になっている場合、自律ランサムウェア保護と FPolicy 保護を有効にします。詳細はこちらlink:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自律型ランサムウェア対策"^]、link:https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["バックアップとリカバリ"^] 、 そしてlink:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
+検出ポリシーは、他のサービスですでに有効になっている場合、自律ランサムウェア保護と FPolicy 保護を有効にします。詳細はこちらlink:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自律型ランサムウェア対策"^]、link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["バックアップとリカバリ"^] 、 そしてlink:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
 
 
 
@@ -287,9 +310,6 @@ TIP: ランサムウェア耐性で保護が有効になっている場合、ラ
 image:screen-protection.png["戦略管理ページ"]
 
 . [保護] ページでワークロードを選択し、[保護] を選択します。
-+
-image:screen-protection-strategy-list.png["戦略を管理する"]
-
 . ランサムウェア保護戦略ページで、[*追加*] を選択します。
 +
 image:screen-protection-strategy-add.png["スナップショットセクションを表示する戦略ページを追加します"]
@@ -361,9 +381,14 @@ image:screen-protection.png["戦略管理ページ"]
 . Ransomware Resilience は、アクティブなSnapCenterまたはバックアップとリカバリ ポリシーが存在しているかどうかを検出します。
 . 既存のバックアップとリカバリまたはSnapCenterポリシーをそのままにして、_検出_ ポリシーのみを適用するには、[**既存のポリシーを置き換える**] ボックスをオフのままにします。
 . SnapCenterポリシーの詳細を表示するには、*下矢印*を選択します。
+. 必要な検出設定を選択してください: *暗号化検出* *疑わしいユーザー行動の検出* *疑わしいファイル拡張子のブロック*
+. **次へ**を選択します。
+. 検出設定として*不審なユーザー行動の検出*を選択した場合は、ユーザーアクティビティエージェントまたはlink:suspicious-user-activity.html#add-a-user-activity-agent["または作成する"]。
 +
-検出ポリシーを選択し、[**保護**] を選択します。
+ユーザー アクティビティ エージェントは新しいデータ コレクターをホストします。  Ransomware Resilience は、データ コレクターを自動的に作成し、ユーザー アクティビティ イベントを Ransomware Resilience に送信して、異常なユーザー動作を検出します。
 
+. **次へ**を選択します。
+. 選択内容を確認します。検出を有効にするには、[**作成**] を選択します。
 . [保護] ページで、**検出ステータス** を確認して、検出がアクティブであることを確認します。
 
 
@@ -382,6 +407,10 @@ image:screen-protection.png["戦略管理ページ"]
 . Ransomware Resilience は、アクティブなバックアップとリカバリ、またはSnapCenterポリシーが既に存在するかどうかを検出します。既存のバックアップとリカバリまたはSnapCenterポリシーを置き換えるには、[**既存のポリシーを置き換える**] ボックスを選択します。ボックスを選択すると、Ransomware Resilience によって検出ポリシーのリストが検出ポリシーに置き換えられます。
 . 保護ポリシーを選択します。保護ポリシーが存在しない場合は、[**追加**] を選択して新しいポリシーを作成します。ポリシーの作成方法については、以下を参照してください。<<steps,保護ポリシーを作成する>> 。  **次へ**を選択します。
 . バックアップ先を選択するか、新しいバックアップ先を作成します。  **次へ**を選択します。
++
+.. 保護戦略にユーザー行動の検出が含まれている場合は、環境内でユーザー アクティビティ エージェントを選択して、新しいデータ コレクターをホストします。  Ransomware Resilience は、データ コレクターを自動的に作成し、ユーザー アクティビティ イベントを Ransomware Resilience に送信して、異常なユーザー動作を検出します。
+
+
 . 新しい保護戦略を確認し、[**保護**] を選択して適用します。
 . [保護] ページで、**検出ステータス** を確認して、検出がアクティブであることを確認します。
 
@@ -403,11 +432,11 @@ image:screen-protection.png["戦略管理ページ"]
 
 
 
-== ファイル共有をグループ化して保護を容易にする
+== 保護グループを作成する
 
 保護グループ内のファイル共有をグループ化すると、データ資産の保護が容易になります。  Ransomware Resilience では、各ボリュームを個別に保護するのではなく、グループ内のすべてのボリュームを同時に保護できます。
 
-保護ステータスに関係なく (つまり、保護されていないグループと保護されているグループ)、グループを作成できます。保護グループに保護ポリシーを追加すると、 SnapCenterおよびNetApp Backup and Recovery によって管理されるポリシーを含む既存のポリシーが新しい保護ポリシーに置き換えられます。
+保護ステータスに関係なく (つまり、保護されていないグループと保護されているグループ)、グループを作成できます。保護グループに保護ポリシーを追加すると、 SnapCenterおよびNetApp Backup and Recoveryによって管理されるポリシーを含む既存のポリシーが新しい保護ポリシーに置き換えられます。
 
 .手順
 . ランサムウェア耐性メニューから、*保護*を選択します。
@@ -432,10 +461,14 @@ TIP: ワークロードの詳細を表示するには、右にスクロールし
 +
 image:screen-protection-groups-policy.png["保護グループの追加 - ポリシーページ"]
 
-. このグループの保護を管理するポリシーを選択します。
-. *次へ*を選択します。
+. このグループの保護を管理するポリシーを選択します。確認するには、[次へ] を選択します。
++
+.. バックアップ ポリシーを構成する必要がある場合は、いずれかを選択して [**次へ**] を選択します。
+.. 検出ポリシーにユーザー行動の検出が含まれている場合は、使用するデータ コレクターを選択し、[**次へ**] をクリックします。
+
+
 . 保護グループの選択内容を確認します。
-. *追加*を選択します。
+. 保護グループの作成を完了するには、[*追加*] を選択します。
 
 
 
@@ -502,7 +535,7 @@ image:screen-protection-groups-more-workloads.png["保護グループの詳細�
 
 ワークロードは、戦略のリストから、または特定の戦略を編集しているときに表示できます。
 
-.戦略リストを表示する手順
+.戦略を表示する手順
 . ランサムウェア耐性メニューから、*保護*を選択します。
 . [保護] ページで、[保護戦略の管理] を選択します。
 +

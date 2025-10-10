@@ -78,7 +78,7 @@ TIP: 設定ページで Ransomware Resilience にセキュリティおよびイ�
 
 アラートには、ランサムウェア耐性ダッシュボードまたは「アラート」タブからアクセスできます。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア レジリエンス管理者、またはランサムウェア レジリエンス ビューアーのロールが必要です。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスに対するBlueXPのアクセスロールについて学ぶ"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア レジリエンス管理者、またはランサムウェア レジリエンス ビューアーのロールが必要です。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスに対するBlueXPのアクセスロールについて学ぶ"^] 。
 
 .手順
 . ランサムウェア耐性ダッシュボードで、[アラート] ペインを確認します。
@@ -107,7 +107,7 @@ Ransomware Resilience は潜在的な攻撃を検出すると、サブスクリ�
 ランサムウェア耐性アラートの電子メール通知を受信できます。この機能を使用すると、アラート、その重大度、影響を受けるリソースに関する情報を常に把握できます。
 
 
-TIP: メール通知を購読するには、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["メール通知設定を設定する"^] 。
+TIP: メール通知を購読するには、 https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["メール通知設定を設定する"^] 。
 
 . Ransomware Resilience で、[*設定*] ページに移動します。
 . *通知*の下で、電子メール通知設定を見つけます。
@@ -117,7 +117,7 @@ TIP: メール通知を購読するには、 https://docs.netapp.com/us-en/bluex
 
 新しいアラートが生成されると、電子メール通知が届くようになります。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア レジリエンス管理者、またはランサムウェア レジリエンス ビューアーのロールが必要です。 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスに対するBlueXPのアクセスロールについて学ぶ"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア レジリエンス管理者、またはランサムウェア レジリエンス ビューアーのロールが必要です。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスに対するBlueXPのアクセスロールについて学ぶ"^] 。
 
 .手順
 . メールを表示します。
@@ -140,30 +140,16 @@ TIP: メール通知を購読するには、 https://docs.netapp.com/us-en/bluex
 
 == 悪意のあるアクティビティや異常なユーザー行動を検出する
 
-「アラート」タブを見ると、悪意のあるアクティビティがあるかどうかを確認できます。
+[アラート] タブを見ると、悪意のあるアクティビティや異常なユーザー動作があるかどうかを確認できます。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+ユーザー レベルの検出を表示するには、ユーザー アクティビティ エージェントを構成し、ユーザー動作検出機能を備えた保護ポリシーを有効にする必要があります。ユーザー行動検出が有効になっている場合、アラート ダッシュボードに *不審なユーザー* 列が表示されます。ユーザー行動検出が有効になっていない場合は表示されません。不審なユーザーの検出を有効にするには、link:suspicious-user-activity.html["不審なユーザーアクティビティ"] 。
 
-*どのような詳細が表示されますか?*表示される詳細は、アラートがどのようにトリガーされたかによって異なります。
 
-* ONTAPの Autonomous Ransomware Protection 機能によってトリガーされます。これは、ボリューム内のファイルの動作に基づいて悪意のあるアクティビティを検出します。
-* Data Infrastructure Insightsワークロード セキュリティによってトリガーされます。これには、Data Infrastructure Insights Workload security のライセンスが必要であり、Ransomware Resilience でそれを有効にする必要があります。この機能は、ストレージ ワークロード内での異常なユーザー行動を検出し、そのユーザーによる今後のアクセスをブロックできるようにします。
-+
-Ransomware Resilience でワークロード セキュリティを有効にするには、[設定] ページに移動し、[ワークロード セキュリティ接続] オプションを選択します。
-
-+
-Data Infrastructure Insightsワークロードセキュリティの概要については、 https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html["ワークロードセキュリティについて"^] 。
+NOTE: NetApp Data Infrastructure Insights (DII) Workload Security を使用している場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用することをお勧めします。 Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナントの間にペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。
 
 
 
-
-TIP: Data Infrastructure Workload Security のライセンスを所有しておらず、Ransomware Resilience で有効にしていない場合、異常なユーザー動作の情報は表示されません。
-
-悪意のあるアクティビティが発生すると、アラートが生成され、自動スナップショットが取得されます。
-
-
-
-=== Autonomous Ransomware Protection からの悪意のあるアクティビティのみを表示します
+=== 悪意のあるアクティビティを表示する
 
 Autonomous Ransomware Protection が Ransomware Resilience でアラートをトリガーすると、次の詳細を表示できます。
 
@@ -189,44 +175,16 @@ image:screen-alerts-incidents3.png["アラートインシデントページ"]
 
 
 
-=== Data Infrastructure Insightsワークロード セキュリティで異常なユーザー行動を表示する
+=== 異常なユーザー行動を表示する
 
-Data Infrastructure Insights Workload security が Ransomware Resilience でアラートをトリガーした場合、疑わしいユーザーを表示し、ユーザーをブロックし、 Data Infrastructure Insights Workload security で直接ユーザー アクティビティを調査できます。
-
-
-TIP: これらの機能は、Autonomous Ransomware Protection からのみ利用できる詳細情報に追加されるものです。
-
-.開始する前に
-このオプションには、 Data Infrastructure Insights Workload security のライセンスが必要であり、Ransomware Resilience でそれを有効にする必要があります。
-
-Ransomware Resilience でワークロード セキュリティを有効にするには、次の手順を実行します。
-
-. *設定*ページに移動します。
-. *Workload Security 接続* オプションを選択します。
-+
-詳細については、 link:rp-use-settings.html["ランサムウェア耐性設定を構成する"] 。
-
-
+異常なユーザー行動を表示するように疑わしいユーザー検出を設定している場合は、ユーザーレベルのデータを表示し、特定のユーザーをブロックできます。疑わしいユーザーの設定を有効にするには、link:rp-use-settings.html["ランサムウェア耐性設定を構成する"] 。
 
 .手順
 . ランサムウェア耐性メニューから、*アラート*を選択します。
 . アラートを選択します。
 . アラート内のインシデントを確認します。
-+
-image:screenshot-alerts.png["アラートページのスクリーンショット。"]
+. コンソールによって監視されている環境内で、疑わしいユーザーによるさらなるアクセスをブロックするには、ユーザー名の下の [*ブロック*] を選択します。
 
-. コンソールによって監視されている環境内で、疑わしいユーザーによるさらなるアクセスをブロックするには、[*ユーザーをブロック*] リンクを選択します。
-. アラートまたはアラート内のインシデントを調査します。
-+
-.. Data Infrastructure Insights のワークロード セキュリティでアラートをさらに調査するには、*ワークロード セキュリティで調査* リンクを選択します。
-.. インシデントの詳細を確認するには、インシデントを選択します。
-
-
-
-
-Data Infrastructure Insights Workload Security が新しいタブで開きます。
-
-+image:screen-alerts-incidents-diiws-diiwspage.png["ワークロードセキュリティの調査"]
 
 
 
@@ -234,7 +192,7 @@ Data Infrastructure Insights Workload Security が新しいタブで開きます
 
 攻撃を阻止した後、データの準備ができたことをストレージ管理者に通知し、リカバリを開始できるようにします。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
 
 .手順
 . ランサムウェア耐性メニューから、*アラート*を選択します。
@@ -258,7 +216,7 @@ image:screen-alerts-incidents3.png["アラートインシデントページ"]
 
 == 潜在的な攻撃ではないインシデントを無視する
 
-インシデントを確認した後、そのインシデントが潜在的な攻撃であるかどうかを判断する必要があります。前述の条件が満たされない場合は、却下される可能性があります。
+インシデントを確認した後、そのインシデントが潜在的な攻撃であるかどうかを判断する必要があります。実際の脅威ではない場合は無視できます。
 
 誤検知を無視するか、すぐにデータを回復することを決定できます。アラートを無視すると、Ransomware Resilience はこの動作を学習し、通常の操作と関連付けて、そのような動作に対して再度アラートを開始しなくなります。
 
@@ -267,7 +225,7 @@ image:screen-alerts-incidents3.png["アラートインシデントページ"]
 
 CAUTION: アラートを無視した場合、そのステータスを他のステータスに戻すことはできず、この変更を元に戻すこともできません。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
 
 .手順
 . ランサムウェア耐性メニューから、*アラート*を選択します。
@@ -304,7 +262,7 @@ image:screen-alerts-status-edit.png["アラート編集ステータスページ"
 
 アプリケーション ワークロードをファイル レベルで復元する前に、影響を受けるファイルの一覧を表示できます。影響を受けるファイルのリストをダウンロードするには、「アラート」ページにアクセスしてください。次に、「回復」ページを使用してリストをアップロードし、復元するファイルを選択します。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
 
 .手順
 影響を受けるファイルのリストを取得するには、「アラート」ページを使用します。

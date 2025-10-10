@@ -35,7 +35,7 @@ Ransomware Resilience を開始するには、最初のランディング ペー
 
 *Ransomware Resilience は、標準モード、制限モード、プライベートモードで利用できますか?*現時点では、ランサムウェア耐性は標準モードでのみ利用可能です。今後もご期待ください。
 
-NetAppデータサービス全体にわたるこれらのモードの説明については、 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["NetAppコンソールの展開モード"^] 。
+NetAppデータサービス全体にわたるこれらのモードの説明については、 https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["NetAppコンソールの展開モード"^] 。
 
 
 
@@ -43,7 +43,7 @@ NetAppデータサービス全体にわたるこれらのモードの説明に�
 
 *ランサムウェア耐性 URL とは何ですか?*ブラウザで次のように入力します https://console.netapp.com/["https://console.netapp.com/ransomware-resilience"^]コンソールにアクセスします。
 
-*アクセス権限はどのように処理されますか?*https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+*アクセス権限はどのように処理されますか?*https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
 
 *どのデバイスの解像度が最適ですか?*Ransomware Resilience に推奨されるデバイス解像度は 1920x1080 以上です。
 

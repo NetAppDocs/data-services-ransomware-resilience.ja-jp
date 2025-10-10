@@ -6,14 +6,39 @@
 
 === BlueXP ransomware protectionはNetAppランサムウェア耐性に変わりました
 
-BlueXPランサムウェア レプリケーションの名前がNetApp Ransomware Resilience に変更されました。
+BlueXP ransomware protectionサービスの名前がNetApp Ransomware Resilienceに変更されました。
 
 
 
 === BlueXPはNetAppコンソールになりました
 
-BlueXP は、データ インフラストラクチャの管理における役割をより適切に反映するために、名前が変更され、再設計されました。
-
 NetAppコンソールは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのストレージとデータ サービスの集中管理を提供し、リアルタイムの分析情報、ワークフローの高速化、管理の簡素化を実現します。
 
-変更内容の詳細については、 https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetAppコンソールのリリースノート"] 。
+変更内容の詳細については、 https://docs.netapp.com/us-en/console-relnotes/index.html["NetAppコンソールのリリースノート"] 。
+
+
+
+=== データ侵害検出
+
+Ransomware Resilience には、数ステップでアクティブ化できる新しい検出メカニズムが含まれており、データ侵害の早期指標として異常なユーザー読み取りを検出します。ランサムウェア耐性は、過去のデータから予想される通常の動作のプロファイルである履歴ベースラインを作成することにより、ユーザーの読み取りイベントを収集および分析します。新しいユーザーのアクティビティがこの確立された標準から大幅に逸脱すると (予期しない読み取りの急増と疑わしい読み取りパターンの組み合わせなど)、アラートが生成されます。  Ransomware Resilience には、疑わしい読み取りパターンを検出する AI モデルが含まれています。
+
+ストレージ層での ARP による暗号化検出とは異なり、ユーザー動作の異常の検出は、Ransomware Resilience SaaS サービスで FPolicy イベントを収集することによって行われます。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.htm["不審なユーザーアクティビティの検出を有効にする"]そしてlink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["異常なユーザー行動を表示する"]。
+
+
+
+==== 追加の不審なユーザーアクティビティの検出
+
+データ侵害の検出に加えて、Ransomware Resilience は、観察された疑わしいユーザー アクティビティに基づいて次の種類のアラートも検出します。
+
+* **データ破壊 - 潜在的な攻撃** - ファイルの削除数が過去の標準を超えると、潜在的な攻撃の重大度を示すアラートが作成されます。
+* **疑わしいユーザー行動 - 潜在的な攻撃** - ランサムウェア攻撃に類似したシーケンスでの読み取り、名前変更、削除操作が観察された場合、潜在的な攻撃の重大度を持つアラートが作成されます。
+* **疑わしいユーザー行動 - 警告** - ファイルアクティビティ（読み取り、削除、名前変更など）の合計数が過去の標準を超えると、警告の重大度を持つアラートが作成されます。
+
+
+
+
+==== データ侵害検出のための新しいユーザーロール
+
+疑わしいユーザー アクティビティのアラートを管理するために、Ransomware Resilience では、ユーザーのファイル アクティビティなどの機密データへのきめ細かなアクセスを提供する 2 つの新しいロールが導入されました。詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["NetAppランサムウェア耐性ロールベースアクセス"] 。

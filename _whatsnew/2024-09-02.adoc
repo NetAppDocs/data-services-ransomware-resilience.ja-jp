@@ -16,7 +16,7 @@ BlueXP ransomware protectionは、 NetApp Digital Advisorからクラスター�
 
 このリリースでは、バックアップ先を Google Cloud Platform バケットに設定できます。以前は、バックアップ先を追加できるのはNetApp StorageGRID、Amazon Web Services、Microsoft Azure のみでした。
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html["BlueXP ransomware protection設定の構成について詳しくは、こちらをご覧ください。"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["BlueXP ransomware protection設定の構成について詳しくは、こちらをご覧ください。"] 。
 
 
 
@@ -24,7 +24,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[
 
 このサービスでは、ストレージ保護のために、Google Cloud Platform 用のCloud Volumes ONTAP をサポートするようになりました。以前は、このサービスはオンプレミスの NAS に加えて、Amazon Web Services および Microsoft Azure 向けのCloud Volumes ONTAPのみをサポートしていました。
 
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html["BlueXP ransomware protectionとサポートされているデータソース、バックアップ先、作業環境について学びます"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["BlueXP ransomware protectionとサポートされているデータソース、バックアップ先、作業環境について学びます"] 。
 
 
 
@@ -32,4 +32,4 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-pr
 
 ロールベースのアクセス制御 (RBAC) を使用して、特定のアクティビティへのアクセスを制限できるようになりました。  BlueXP ransomware protectionでは、 BlueXPの 2 つのロール ( BlueXPアカウント管理者と非アカウント管理者 (閲覧者)) を使用します。
 
-各ロールが実行できるアクションの詳細については、 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html["ロールベースのアクセス制御権限"] 。
+各ロールが実行できるアクションの詳細については、 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["ロールベースのアクセス制御権限"] 。

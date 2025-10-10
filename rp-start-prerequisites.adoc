@@ -14,7 +14,7 @@ summary: 環境、ネットワーク アクセス、ログイン、Web ブラウ
 [role="lead"]
 運用環境、ログイン、ネットワーク アクセス、Web ブラウザの準備状況を確認して、 NetApp Ransomware Resilience を開始してください。
 
-Ransomware Resilience を使用するには、前提条件を満たす必要があります。
+Ransomware Resilience を使用するには、次の前提条件を満たす必要があります。
 
 
 
@@ -32,7 +32,7 @@ NOTE: SAN ワークロードは、 ONTAP 9.17.1 以降でのみサポートさ�
 
 ** オンプレミスのONTAPクラスターまたは AWS または Azure クラウドのCloud Volumes ONTAP がコンソールにまだオンボードされていない場合は、コンソール エージェントが必要です。
 +
-参照 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コンソールエージェントの設定方法を学ぶ"]そして https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["標準コンソール要件"^]。
+参照 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["コンソールエージェントの設定方法を学ぶ"]そして https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["標準コンソール要件"^]。
 
 +
 
@@ -53,7 +53,7 @@ NOTE: 単一のコンソール組織に複数のコンソール エージェン�
 NOTE: Ransomware Resilience の一般リリースには、プレビュー リリースとは異なり、 NetApp Autonomous Ransomware Protection テクノロジーのライセンスが含まれています。参照 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自律型ランサムウェア対策 - 概要"^]詳細については。
 
 +
-ライセンスの詳細については、link:concept-ransomware-protection.html["ランサムウェア耐性について学ぶ"] 。
+ライセンスの詳細については、link:concept-ransomware-resilience.html["ランサムウェア耐性について学ぶ"] 。
 
 * 保護構成（自律型ランサムウェア保護の有効化など）を適用するには、Ransomware Resilience にONTAPクラスターに対する管理者権限が必要です。  ONTAPクラスタは、 ONTAPクラスタ管理者のユーザー認証情報のみを使用してオンボードされている必要があります。
 * ONTAPクラスタが非管理者ユーザの認証情報を使用してコンソールにすでにオンボードされている場合は、このページで説明されているように、 ONTAPクラスタにログインして、非管理者ユーザの権限を必要な権限に更新する必要があります。
@@ -65,7 +65,7 @@ NOTE: Ransomware Resilience の一般リリースには、プレビュー リリ
 
 * バックアップ ターゲットおよびアクセス権限セット用のNetApp StorageGRID、AWS S3、Azure Blob、または Google Cloud Platform のアカウント。
 +
-参照 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["AWS、Azure、またはS3の権限リスト"^]詳細については。
+参照 https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["AWS、Azure、またはS3の権限リスト"^]詳細については。
 
 * システムでNetApp Backup and Recovery を有効にする必要はありません。
 +

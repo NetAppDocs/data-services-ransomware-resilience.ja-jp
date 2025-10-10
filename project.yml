@@ -38,6 +38,8 @@ sidebar:
       url: "/rp-start-simulate.html"
     - title: 設定でバックアップ、脅威検出、攻撃シミュレーションを構成する
       url: "/rp-use-settings.html"
+    - title: 不審なユーザーアクティビティの検出を構成する
+      url: "/suspicious-user-activity.html"
   - title: ランサムウェア耐性を活用する
     entries:
     - title: ランサムウェア耐性の概要を使用する
