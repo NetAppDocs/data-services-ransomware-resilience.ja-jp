@@ -2,4 +2,4 @@
 :allow-uri-read: 
 
 
-*必要なコンソール ロール* このタスクを実行するには、ランサムウェア耐性ユーザー ビヘイビアー管理者ロールが必要です。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+*必要なコンソール ロール* このタスクを実行するには、ランサムウェア耐性ユーザー ビヘイビアー管理者ロールが必要です。ランサムウェア耐性管理者ロールではこのタスクを実行できません。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。

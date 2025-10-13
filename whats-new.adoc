@@ -42,6 +42,9 @@ Ransomware Resilience には、数ステップでアクティブ化できる新�
 
 ストレージ層での ARP による暗号化検出とは異なり、ユーザー動作の異常の検出は、Ransomware Resilience SaaS サービスで FPolicy イベントを収集することによって行われます。
 
+
+IMPORTANT: 新しいlink:#new-user-roles-for-data-breach-detection["ランサムウェア耐性ユーザー行動管理者およびランサムウェア耐性ユーザー行動閲覧者"]疑わしいユーザー行動の検出設定にアクセスするロール。
+
 詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["不審なユーザーアクティビティの検出を有効にする"]そしてlink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior["異常なユーザー行動を表示する"]。
 
 
@@ -59,7 +62,11 @@ Ransomware Resilience には、数ステップでアクティブ化できる新�
 
 ==== データ侵害検出のための新しいユーザーロール
 
-疑わしいユーザー アクティビティのアラートを管理するために、Ransomware Resilience では、ユーザーのファイル アクティビティなどの機密データへのきめ細かなアクセスを提供する 2 つの新しいロールが導入されました。詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["NetAppランサムウェア耐性ロールベースアクセス"] 。
+疑わしいユーザー アクティビティのアラートを管理するために、Ransomware Resilience では、コンソール組織管理者が疑わしいユーザー アクティビティの検出へのアクセスを許可するための 2 つの新しいロール (Ransomware Resilience ユーザー ビヘイビア管理者と Ransomware Resilience ユーザー ビヘイビア閲覧者) を導入しました。
+
+疑わしいユーザーの行動設定を構成するには、ユーザー行動管理者である必要があります。ランサムウェア耐性管理者ロールは、疑わしいユーザーの行動設定の構成ではサポートされていません。
+
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetAppランサムウェア耐性ロールベースアクセス"^] 。
 
 
 

@@ -2,4 +2,4 @@
 :allow-uri-read: 
 
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア レジリエンス管理者、またはランサムウェア レジリエンス ビューアーのロールが必要です。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスに対するBlueXPのアクセスロールについて学ぶ"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア レジリエンス管理者、またはランサムウェア レジリエンス ビューアーのロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。

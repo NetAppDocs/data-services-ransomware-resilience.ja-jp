@@ -32,7 +32,7 @@ NFS および CIFS (SMB) ワークロードで準備ドリルを実行できま�
 * 別のテストワークロード名を入力する場合
 
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
 .手順
 . NetApp Ransomware Resilience メニューから、右上にある *準備ドリルの実行* ボタンを選択します。
@@ -67,7 +67,7 @@ TIP: 準備ドリルの構成は、後で [設定] ページを使用して編�
 
 準備ドリルを構成したら、ドリルを開始できます。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
 準備ドリルを開始すると、Ransomware Resilience は学習モードをスキップし、アクティブ モードでドリルを開始します。ワークロードの検出ステータスはアクティブです。
 
@@ -96,7 +96,7 @@ NOTE: ドリルが開始された後は、準備ドリルの構成を編集す�
 
 準備訓練アラートに応答して準備状況をテストします。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
 .手順
 . ランサムウェア耐性メニューから、*アラート*を選択します。
@@ -141,7 +141,7 @@ image:screen-alerts-readiness-incidents2.png["準備訓練の警告を表示す�
 
 準備ドリルアラートを確認した後、必要に応じてテストのワークロードを復元します。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
 .手順
 . アラートの詳細ページに戻ります。
@@ -202,7 +202,7 @@ IMPORTANT: 攻撃を却下した後は、元に戻すことはできません。
 
 準備訓練が完了したら、訓練に関するレポートを確認して保存することをお勧めします。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア レジリエンス管理者、またはランサムウェア レジリエンス ビューアーのロールが必要です。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスに対するBlueXPのアクセスロールについて学ぶ"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア レジリエンス管理者、またはランサムウェア レジリエンス ビューアーのロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
 .手順
 . ランサムウェア耐性メニューから、*レポート*を選択します。

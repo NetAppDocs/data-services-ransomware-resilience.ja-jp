@@ -78,7 +78,7 @@ TIP: 設定ページで Ransomware Resilience にセキュリティおよびイ�
 
 アラートには、ランサムウェア耐性ダッシュボードまたは「アラート」タブからアクセスできます。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア レジリエンス管理者、またはランサムウェア レジリエンス ビューアーのロールが必要です。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスに対するBlueXPのアクセスロールについて学ぶ"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア レジリエンス管理者、またはランサムウェア レジリエンス ビューアーのロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
 .手順
 . ランサムウェア耐性ダッシュボードで、[アラート] ペインを確認します。
@@ -117,7 +117,7 @@ TIP: メール通知を購読するには、 https://docs.netapp.com/us-en/conso
 
 新しいアラートが生成されると、電子メール通知が届くようになります。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア レジリエンス管理者、またはランサムウェア レジリエンス ビューアーのロールが必要です。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスに対するBlueXPのアクセスロールについて学ぶ"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア レジリエンス管理者、またはランサムウェア レジリエンス ビューアーのロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
 .手順
 . メールを表示します。
@@ -192,7 +192,7 @@ image:screen-alerts-incidents3.png["アラートインシデントページ"]
 
 攻撃を阻止した後、データの準備ができたことをストレージ管理者に通知し、リカバリを開始できるようにします。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
 .手順
 . ランサムウェア耐性メニューから、*アラート*を選択します。
@@ -225,7 +225,7 @@ image:screen-alerts-incidents3.png["アラートインシデントページ"]
 
 CAUTION: アラートを無視した場合、そのステータスを他のステータスに戻すことはできず、この変更を元に戻すこともできません。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
 .手順
 . ランサムウェア耐性メニューから、*アラート*を選択します。
@@ -262,7 +262,7 @@ image:screen-alerts-status-edit.png["アラート編集ステータスページ"
 
 アプリケーション ワークロードをファイル レベルで復元する前に、影響を受けるファイルの一覧を表示できます。影響を受けるファイルのリストをダウンロードするには、「アラート」ページにアクセスしてください。次に、「回復」ページを使用してリストをアップロードし、復元するファイルを選択します。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
 .手順
 影響を受けるファイルのリストを取得するには、「アラート」ページを使用します。

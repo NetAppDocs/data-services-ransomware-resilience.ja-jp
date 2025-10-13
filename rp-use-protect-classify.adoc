@@ -16,7 +16,7 @@ link:https://docs.netapp.com/us-en/data-services-data-classification/["データ
 
 TIP: このプロセスはワークロードの重要性に影響を与え、適切な保護が確保されるようにするのに役立ちます。
 
-*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
 
 
