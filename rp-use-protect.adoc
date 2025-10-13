@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-use-protect.html 
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware 
-summary: NetApp Ransomware Resilience でワークロードにポリシーを割り当てることで、ランサムウェア攻撃からワークロードを保護できます。 
+summary: NetApp Ransomware Resilienceでワークロードにポリシーを割り当てることで、ランサムウェア攻撃からワークロードを保護できます。 
 ---
-= NetAppランサムウェア耐性保護戦略でワークロードを保護する
+= NetApp Ransomware Resilience保護戦略でワークロードを保護する
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: NetApp Ransomware Resilience でワークロードにポリシーを割
 
 
 [role="lead"]
-NetApp Ransomware Resilience でワークロード一貫性保護を有効にするか、ランサムウェア保護戦略を作成することにより、ランサムウェア攻撃からワークロードを保護できます。
+NetApp Ransomware Resilienceでワークロード一貫性保護を有効にするか、ランサムウェア保護戦略を作成することにより、ランサムウェア攻撃からワークロードを保護できます。
 
 *必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
@@ -43,7 +43,7 @@ TIP: データ資産の管理と保護を強化するために、link:#create-a-
 
 ランサムウェア耐性以外にも、次のサービスを使用して保護を管理できます。
 
-* ファイル共有、VM ファイル共有向けのNetAppバックアップおよびリカバリ
+* ファイル共有、VM ファイル共有向けのNetApp Backup and Recovery
 * VMデータストア用のSnapCenter for VMware
 * Oracle および MySQL 向けSnapCenter
 
@@ -247,8 +247,8 @@ NOTE: **暗号化ユーザー拡張** ポリシーは、疑わしいユーザー
 . ランサムウェア耐性メニューから、*ダッシュボード*を選択します。
 . [推奨事項] ペインで、次のいずれかの推奨事項を見つけて、[確認して修正] を選択します。
 +
-** 利用可能なSnapCenter ServerをNetAppコンソールに登録する
-** 利用可能なSnapCenter Plug-in for VMware vSphere (SCV) をNetAppコンソールに登録します。
+** 利用可能なSnapCenter ServerをNetApp Consoleに登録する
+** 利用可能なSnapCenter Plug-in for VMware vSphere (SCV) をNetApp Consoleに登録します。
 
 
 . 情報に従って、バックアップとリカバリを使用してSnapCenterまたはSnapCenter Plug-in for VMware vSphereに登録します。
@@ -385,7 +385,7 @@ image:screen-protection.png["戦略管理ページ"]
 . **次へ**を選択します。
 . 検出設定として*不審なユーザー行動の検出*を選択した場合は、ユーザーアクティビティエージェントまたはlink:suspicious-user-activity.html#add-a-user-activity-agent["または作成する"]。
 +
-ユーザー アクティビティ エージェントは新しいデータ コレクターをホストします。  Ransomware Resilience は、データ コレクターを自動的に作成し、ユーザー アクティビティ イベントを Ransomware Resilience に送信して、異常なユーザー動作を検出します。
+ユーザー アクティビティ エージェントは新しいデータ コレクターをホストします。Ransomware Resilience は、データ コレクターを自動的に作成し、ユーザー アクティビティ イベントを Ransomware Resilience に送信して、異常なユーザー動作を検出します。
 
 . **次へ**を選択します。
 . 選択内容を確認します。検出を有効にするには、[**作成**] を選択します。
@@ -405,10 +405,10 @@ image:screen-protection.png["戦略管理ページ"]
 
 . [保護] ページでワークロードを選択し、[保護] を選択します。
 . Ransomware Resilience は、アクティブなバックアップとリカバリ、またはSnapCenterポリシーが既に存在するかどうかを検出します。既存のバックアップとリカバリまたはSnapCenterポリシーを置き換えるには、[**既存のポリシーを置き換える**] ボックスを選択します。ボックスを選択すると、Ransomware Resilience によって検出ポリシーのリストが検出ポリシーに置き換えられます。
-. 保護ポリシーを選択します。保護ポリシーが存在しない場合は、[**追加**] を選択して新しいポリシーを作成します。ポリシーの作成方法については、以下を参照してください。<<steps,保護ポリシーを作成する>> 。  **次へ**を選択します。
-. バックアップ先を選択するか、新しいバックアップ先を作成します。  **次へ**を選択します。
+. 保護ポリシーを選択します。保護ポリシーが存在しない場合は、[**追加**] を選択して新しいポリシーを作成します。ポリシーの作成方法については、以下を参照してください。<<steps,保護ポリシーを作成する>> 。**次へ**を選択します。
+. バックアップ先を選択するか、新しいバックアップ先を作成します。**次へ**を選択します。
 +
-.. 保護戦略にユーザー行動の検出が含まれている場合は、環境内でユーザー アクティビティ エージェントを選択して、新しいデータ コレクターをホストします。  Ransomware Resilience は、データ コレクターを自動的に作成し、ユーザー アクティビティ イベントを Ransomware Resilience に送信して、異常なユーザー動作を検出します。
+.. 保護戦略にユーザー行動の検出が含まれている場合は、環境内でユーザー アクティビティ エージェントを選択して、新しいデータ コレクターをホストします。Ransomware Resilience は、データ コレクターを自動的に作成し、ユーザー アクティビティ イベントを Ransomware Resilience に送信して、異常なユーザー動作を検出します。
 
 
 . 新しい保護戦略を確認し、[**保護**] を選択して適用します。

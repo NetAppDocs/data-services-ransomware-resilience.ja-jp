@@ -6,7 +6,7 @@
 
 === SANワークロードのサポート
 
-このリリースには、BlueXP ransomware protectionにおける SAN ワークロードのサポートが含まれています。  NFS および CIFS ワークロードに加えて、SAN ワークロードも保護できるようになりました。
+このリリースには、BlueXP ransomware protectionにおける SAN ワークロードのサポートが含まれています。NFS および CIFS ワークロードに加えて、SAN ワークロードも保護できるようになりました。
 
 詳細については、 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-prerequisites.html["BlueXP ransomware protectionの前提条件"] 。
 

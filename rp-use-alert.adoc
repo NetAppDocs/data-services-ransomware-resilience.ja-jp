@@ -4,7 +4,7 @@ permalink: rp-use-alert.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert 
 summary: ランサムウェア レジリエンスが攻撃の可能性を検出すると、ランサムウェア レジリエンス ダッシュボードに潜在的な攻撃を示すアラートが表示されます。この時点で、「ランサムウェア耐性アラート」タブで潜在的なリスクを確認する必要があります。 
 ---
-= NetApp Ransomware Resilience で検出されたランサムウェアアラートを処理する
+= NetApp Ransomware Resilienceで検出されたランサムウェアアラートを処理する
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -145,7 +145,7 @@ TIP: メール通知を購読するには、 https://docs.netapp.com/us-en/conso
 ユーザー レベルの検出を表示するには、ユーザー アクティビティ エージェントを構成し、ユーザー動作検出機能を備えた保護ポリシーを有効にする必要があります。ユーザー行動検出が有効になっている場合、アラート ダッシュボードに *不審なユーザー* 列が表示されます。ユーザー行動検出が有効になっていない場合は表示されません。不審なユーザーの検出を有効にするには、link:suspicious-user-activity.html["不審なユーザーアクティビティ"] 。
 
 
-NOTE: NetApp Data Infrastructure Insights (DII) Workload Security を使用している場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用することをお勧めします。 Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナントの間にペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。
+NOTE: NetApp Data Infrastructure Insights (DII) Workload Security を使用している場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用することをお勧めします。Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナントの間にペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。
 
 
 
@@ -164,7 +164,7 @@ Autonomous Ransomware Protection が Ransomware Resilience でアラートをト
 NOTE: これらの詳細は、NAS ワークロードで表示できます。  SAN 環境では、エントロピー データのみが利用可能です。
 
 .手順
-. ランサムウェア耐性メニューから、*アラート*を選択します。
+. ランサムウェア耐性メニューから、「アラート」を選択します。
 . アラートを選択します。
 . アラート内のインシデントを確認します。
 +
@@ -180,7 +180,7 @@ image:screen-alerts-incidents3.png["アラートインシデントページ"]
 異常なユーザー行動を表示するように疑わしいユーザー検出を設定している場合は、ユーザーレベルのデータを表示し、特定のユーザーをブロックできます。疑わしいユーザーの設定を有効にするには、link:rp-use-settings.html["ランサムウェア耐性設定を構成する"] 。
 
 .手順
-. ランサムウェア耐性メニューから、*アラート*を選択します。
+. ランサムウェア耐性メニューから、「アラート」を選択します。
 . アラートを選択します。
 . アラート内のインシデントを確認します。
 . コンソールによって監視されている環境内で、疑わしいユーザーによるさらなるアクセスをブロックするには、ユーザー名の下の [*ブロック*] を選択します。
@@ -195,11 +195,11 @@ image:screen-alerts-incidents3.png["アラートインシデントページ"]
 *必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
 .手順
-. ランサムウェア耐性メニューから、*アラート*を選択します。
+. ランサムウェア耐性メニューから、「アラート」を選択します。
 +
 image:screen-alerts.png["アラートページ"]
 
-. 「アラート」ページでアラートを選択します。
+. 「アラート」ページで、アラートを選択します。
 . アラート内のインシデントを確認します。
 +
 image:screen-alerts-incidents3.png["アラートインシデントページ"]
@@ -228,11 +228,11 @@ CAUTION: アラートを無視した場合、そのステータスを他のス�
 *必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
 .手順
-. ランサムウェア耐性メニューから、*アラート*を選択します。
+. ランサムウェア耐性メニューから、「アラート」を選択します。
 +
 image:screen-alerts.png["アラートページ"]
 
-. 「アラート」ページでアラートを選択します。
+. 「アラート」ページで、アラートを選択します。
 +
 image:screen-alerts-incidents3.png["アラートインシデントページ"]
 
@@ -270,7 +270,7 @@ image:screen-alerts-status-edit.png["アラート編集ステータスページ"
 
 TIP: ボリュームに複数のアラートがある場合は、アラートごとに影響を受けるファイルの CSV リストをダウンロードする必要がある場合があります。
 
-. ランサムウェア耐性メニューから、*アラート*を選択します。
+. ランサムウェア耐性メニューから、「アラート」を選択します。
 . [アラート] ページで、結果をワークロード別に並べ替えて、復元するアプリケーション ワークロードのアラートを表示します。
 . そのワークロードのアラートのリストから、アラートを選択します。
 . そのアラートに対して、単一のインシデントを選択します。

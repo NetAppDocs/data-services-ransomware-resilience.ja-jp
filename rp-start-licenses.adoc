@@ -12,7 +12,7 @@ summary: ライセンスを設定して、NeApp Ransomware Resilience の使用�
 
 
 [role="lead"]
-NetApp Ransomware Resilience では、さまざまなライセンス プランを使用できます。
+NetApp Ransomware Resilienceでは、さまざまなライセンス プランを使用できます。
 
 このタスクを実行するには、組織管理者、フォルダー管理者、またはプロジェクト管理者のロールが必要です。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["コンソールアクセスロールについて学ぶ"^] 。
 
@@ -23,7 +23,7 @@ NetApp Ransomware Resilience では、さまざまなライセンス プラン�
 * BYOL (Bring Your Own License) は、 NetApp の営業担当者から取得したNetAppライセンス ファイル (NLF) です。ライセンス シリアル番号を使用して、コンソールで BYOL をアクティブ化できます。
 
 
-BYOL を設定するか、PAYGO サブスクリプションを購入すると、コンソールの [ライセンスとサブスクリプション] セクションでライセンスを確認できます。
+BYOL を設定するか、PAYGO サブスクリプションを購入すると、コンソールの[Licenses and subscriptions]セクションでライセンスを確認できます。
 
 無料トライアルが終了した後、またはライセンスやサブスクリプションの有効期限が切れた後でも、Ransomware Resilience で次の操作を実行できます。
 
@@ -36,7 +36,7 @@ BYOL を設定するか、PAYGO サブスクリプションを購入すると、
 
 == その他のライセンス
 
-Ransomware Resilience ライセンスには、追加のNetApp製品は含まれません。  Ransomware Resilience では、ライセンスがなくてもNetApp Backup and Recovery を使用できます。
+Ransomware Resilience ライセンスには、追加のNetApp製品は含まれません。  Ransomware Resilience では、ライセンスがなくてもNetApp Backup and Recoveryを使用できます。
 
 
 NOTE: バックアップとリカバリとランサムウェア耐性の両方をお持ちの場合、両方の製品で保護されている共通データについては、ランサムウェア耐性に対してのみ課金されます。
@@ -59,7 +59,7 @@ NOTE: 2024 年 10 月のリリースでは、Ransomware Resilience の新規展�
 .手順
 . アクセス https://console.netapp.com/["コンソール"^]。
 . コンソールにログインします。
-. NetAppコンソールから、*保護* > *ランサムウェア耐性* を選択します。
+. NetApp Consoleから、*保護* > *ランサムウェア耐性* を選択します。
 +
 このサービスに初めてログインする場合は、ランディング ページが表示されます。
 
@@ -98,7 +98,7 @@ image:screen-license-payment-methods3.png["ランサムウェア耐性支払い�
 
 
 
-. お支払い方法ページで、*Amazon Web Services* の *サブスクライブ* を選択します。
+. [支払い方法] ページで、*Amazon Web Services* の *サブスクライブ* を選択します。
 . AWS Marketplace で、[購入オプションを表示] を選択します。
 . AWS Marketplace を使用して、* NetApp Intelligent Services* と *Ransomware Resilience* をサブスクライブします。
 . Ransomware Resilience に戻ると、登録したことを示すメッセージが表示されます。
@@ -111,8 +111,8 @@ NOTE: Ransomware Resilience のシリアル番号が記載され、Ransomware Re
 +
 image:screen-license-dw-add-license.png["ライセンスの追加ページのスクリーンショット。"]
 
-. [ライセンスの追加] ページで、[シリアル番号を入力] を選択し、送信された電子メールに記載されているシリアル番号を入力して、[ライセンスの追加] を選択します。
-. ライセンスの詳細を表示するには、コンソールの左側のナビゲーションから、*管理* > *ライセンスとサブスクリプション*を選択します。
+. [ライセンスの追加] ページで、[*シリアル番号を入力*] を選択し、送信された電子メールに記載されているシリアル番号を入力して、[*ライセンスの追加*] を選択します。
+. ライセンスの詳細を表示するには、コンソールの左側のナビゲーションから [*管理*] > [*Licenses and subscriptions*] を選択します。
 +
 ** サブスクリプション情報を表示するには、[*サブスクリプション*] を選択します。
 ** BYOL ライセンスを表示するには、*データ サービス ライセンス* を選択します。
@@ -149,12 +149,12 @@ image:screen-license-payment-methods3.png["ランサムウェア耐性支払い�
 NOTE: Ransomware Resilience のシリアル番号が記載され、Ransomware Resilience が Azure Marketplace でサブスクライブされていることを示す電子メールが送信されます。
 
 . ランサムウェア耐性支払い方法ページに戻ります。
-. ライセンスを追加するには、「ライセンスの追加」を選択します。
+. ライセンスを追加するには、「*ライセンスの追加*」を選択します。
 +
 image:screen-license-dw-add-license.png["ライセンスの追加ページのスクリーンショット。"]
 
 . 「ライセンスの追加」ページで、「*シリアル番号を入力*」を選択し、送信された電子メールに記載されているシリアル番号を入力します。  *ライセンスの追加*を選択します。
-. ライセンスとサブスクリプションでライセンスの詳細を表示するには、コンソールの左側のナビゲーションから、*ガバナンス* > *ライセンスとサブスクリプション* を選択します。
+. Licenses and subscriptionsでライセンスの詳細を表示するには、コンソールの左側のナビゲーションから、*ガバナンス* > *Licenses and subscriptions*を選択します。
 +
 ** サブスクリプション情報を表示するには、[*サブスクリプション*] を選択します。
 ** BYOL ライセンスを表示するには、*データ サービス ライセンス* を選択します。
@@ -195,8 +195,8 @@ NOTE: Ransomware Resilience のシリアル番号が記載され、Ransomware Re
 +
 image:screen-license-dw-add-license.png["ライセンスの追加ページのスクリーンショット。"]
 
-. ライセンスの追加ページで、*シリアル番号を入力*を選択します。送信されたメールに記載されているシリアル番号を入力してください。  *ライセンスの追加*を選択します。
-. ライセンスの詳細を表示するには、コンソールの左側のナビゲーションから、*ガバナンス* > *ライセンスとサブスクリプション*を選択します。
+. 「ライセンスの追加」ページで、「*シリアル番号を入力*」を選択します。送信されたメールに記載されているシリアル番号を入力してください。  *ライセンスの追加*を選択します。
+. ライセンスの詳細を表示するには、コンソールの左側のナビゲーションから、*ガバナンス* > *Licenses and subscriptions*を選択します。
 +
 ** サブスクリプション情報を表示するには、[*サブスクリプション*] を選択します。
 ** BYOL ライセンスを表示するには、*データ サービス ライセンス* を選択します。
@@ -216,7 +216,7 @@ image:screen-license-dw-add-license.png["ライセンスの追加ページのス
 
 *コンソールにライセンスファイルを追加する*
 
-NetApp の営業担当者から Ransomware Resilience ライセンスを購入したら、Ransomware Resilience のシリアル番号とNetAppサポート サイト (NSS) のアカウント情報を入力してライセンスをアクティブ化します。
+NetApp の営業担当者から Ransomware Resilience ライセンスを購入した後、Ransomware Resilience のシリアル番号とNetAppサポート サイト (NSS) のアカウント情報を入力してライセンスをアクティブ化します。
 
 .開始する前に
 Ransomware Resilience のシリアル番号が必要です。この番号は販売注文書から探すか、アカウント チームに問い合わせて確認してください。
@@ -241,7 +241,7 @@ NetAppサポートサイトのアカウントがドロップダウンリスト�
 
 
 .結果
-「ライセンスとサブスクリプション」ページには、Ransomware Resilience にライセンスがあることが表示されます。
+「Licenses and subscriptions」ページには、Ransomware Resilience にライセンスがあることが表示されます。
 
 
 
@@ -260,7 +260,7 @@ TIP: このメッセージはLicenses and subscriptionsにも表示されます�
 . コンソールがライセンスを自動的に更新できない場合は、ライセンス ファイルを手動でアップロードする必要があります。
 +
 .. ライセンス ファイルは、 NetAppサポート サイトから入手できます。
-.. コンソールで、**管理** > **ライセンスとサブスクリプション** を選択します。
+.. コンソールで、**管理** > **Licenses and subscriptions** を選択します。
 .. *データ サービス ライセンス* タブを選択し、更新するシリアル番号の *アクション...* アイコンを選択して、*ライセンスの更新* を選択します。
 
 

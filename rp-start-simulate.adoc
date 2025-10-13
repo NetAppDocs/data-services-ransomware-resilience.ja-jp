@@ -35,7 +35,7 @@ NFS および CIFS (SMB) ワークロードで準備ドリルを実行できま�
 *必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
 .手順
-. NetApp Ransomware Resilience メニューから、右上にある *準備ドリルの実行* ボタンを選択します。
+. NetApp Ransomware Resilienceメニューから、右上にある *準備ドリルの実行* ボタンを選択します。
 +
 image:screen-dashboard.png["準備ドリル実行ボタンが表示されているダッシュボードページ"]
 
@@ -44,7 +44,7 @@ image:screen-dashboard.png["準備ドリル実行ボタンが表示されてい�
 コンソールに準備ドリルの構成ページが表示されます。
 
 +
-image:screen-settings-alert-drill-configure.png["準備訓練ページを構成する"]
+image:screen-settings-alert-drill-configure.png["準備訓練ページの設定"]
 
 . 次の手順を実行します。
 +
@@ -59,7 +59,7 @@ image:screen-settings-alert-drill-configure.png["準備訓練ページを構成�
 
 
 
-TIP: 準備ドリルの構成は、後で [設定] ページを使用して編集できます。
+TIP: 準備ドリルの構成は、後で設定ページを使用して編集できます。
 
 
 
@@ -92,14 +92,14 @@ NOTE: ドリルが開始された後は、準備ドリルの構成を編集す�
 
 
 
-== 即応訓練警報に応答する
+== 即応訓練の警報に応答する
 
 準備訓練アラートに応答して準備状況をテストします。
 
 *必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
 .手順
-. ランサムウェア耐性メニューから、*アラート*を選択します。
+. ランサムウェア耐性メニューから、「アラート」を選択します。
 +
 コンソールにアラート ページが表示されます。アラート ID 列の ID の横に「準備ドリル」が表示されます。
 

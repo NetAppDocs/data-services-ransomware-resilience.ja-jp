@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-start-prerequisites.html 
 keywords: bluexp ransomware protection, ransomware protection prerequisites, resilience 
-summary: 環境、ネットワーク アクセス、ログイン、Web ブラウザーのサポートを確認して、 NetApp Ransomware Resilience を開始してください。 
+summary: 環境、ネットワーク アクセス、ログイン、Web ブラウザーのサポートを確認して、 NetApp Ransomware Resilienceを開始してください。 
 ---
-= NetAppランサムウェア耐性の前提条件
+= NetApp Ransomware Resilienceの前提条件
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,15 +12,15 @@ summary: 環境、ネットワーク アクセス、ログイン、Web ブラウ
 
 
 [role="lead"]
-運用環境、ログイン、ネットワーク アクセス、Web ブラウザの準備状況を確認して、 NetApp Ransomware Resilience を開始してください。
+運用環境、ログイン、ネットワーク アクセス、Web ブラウザの準備状況を確認して、 NetApp Ransomware Resilienceを開始してください。
 
 Ransomware Resilience を使用するには、次の前提条件を満たす必要があります。
 
 
 
-== NetAppコンソール
+== NetApp Console
 
-* リソースを検出するための組織管理者権限を持つNetAppコンソール ユーザー アカウント。
+* リソースを検出するための組織管理者権限を持つNetApp Consoleユーザー アカウント。
 * オンプレミスのONTAPクラスターまたは AWS または Azure のCloud Volumes ONTAPに接続するアクティブなコンソールエージェントが少なくとも 1 つあるコンソール組織。
 * コンソールエージェントには、 `cloudmanager-ransomware-protection`アクティブな状態のコンテナ。
 * NetAppオンプレミスONTAPクラスターまたは AWS または Azure のCloud Volumes ONTAP を備えた少なくとも 1 つのコンソール システム。  Ransomware Resilience は、NAS (NFS および SMB) と SAN (iSCSI、FC、NVMe) の両方のプロトコルをサポートします。
@@ -56,7 +56,7 @@ NOTE: Ransomware Resilience の一般リリースには、プレビュー リリ
 ライセンスの詳細については、link:concept-ransomware-resilience.html["ランサムウェア耐性について学ぶ"] 。
 
 * 保護構成（自律型ランサムウェア保護の有効化など）を適用するには、Ransomware Resilience にONTAPクラスターに対する管理者権限が必要です。  ONTAPクラスタは、 ONTAPクラスタ管理者のユーザー認証情報のみを使用してオンボードされている必要があります。
-* ONTAPクラスタが非管理者ユーザの認証情報を使用してコンソールにすでにオンボードされている場合は、このページで説明されているように、 ONTAPクラスタにログインして、非管理者ユーザの権限を必要な権限に更新する必要があります。
+* ONTAPクラスタが非管理者ユーザの認証情報を使用してコンソールにすでにオンボードされている場合は、このページで説明されているように、 ONTAPクラスタにログインして、非管理者ユーザの権限を必要な権限で更新する必要があります。
 
 
 
@@ -69,7 +69,7 @@ NOTE: Ransomware Resilience の一般リリースには、プレビュー リリ
 
 * システムでNetApp Backup and Recovery を有効にする必要はありません。
 +
-Ransomware Resilience は、設定オプションを通じてバックアップ先を構成するのに役立ちます。見るlink:rp-use-settings.html["設定を構成する"] 。
+Ransomware Resilience は、設定オプションを通じてバックアップの保存先を構成するのに役立ちます。見るlink:rp-use-settings.html["設定を構成する"] 。
 
 
 

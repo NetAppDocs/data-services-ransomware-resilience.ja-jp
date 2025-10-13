@@ -4,7 +4,7 @@ permalink: rp-reference-roles.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account 
 summary: NetApp Ransomware Resilience は、ロールを使用して、各ユーザーの特定の機能およびアクションへのアクセスを制御します。 
 ---
-= NetAppランサムウェア耐性ロールベースアクセス
+= NetApp Ransomware Resilienceロールベースアクセス
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

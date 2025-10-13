@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-start-quick-start.html 
 keywords: get started, ransomware protection, quick start, resilience, quickstart 
-summary: わずか数ステップでNetApp Ransomware Resilience を開始できます。 
+summary: わずか数ステップでNetApp Ransomware Resilienceを開始できます。 
 ---
-= NetAppランサムウェア耐性のクイックスタート
+= NetApp Ransomware Resilienceのクイックスタート
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: わずか数ステップでNetApp Ransomware Resilience を開始でき
 
 
 [role="lead"]
-NetApp Ransomware Resilience を開始するために必要な手順の概要を以下に示します。各ステップ内のリンクをクリックすると、詳細情報を提供するページに移動します。
+NetApp Ransomware Resilienceを開始するために必要な手順の概要を以下に示します。各ステップ内のリンクをクリックすると、詳細情報を提供するページに移動します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"]前提条件を確認する
 [role="quick-margin-para"]

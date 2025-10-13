@@ -16,7 +16,7 @@ BlueXP ransomware protectionワークフローに次の変更が加えられま�
 * [保護] タブには、FSx for ONTAP環境のワークロードが表示されます。この環境では、FSx for ONTAPバックアップ サービスを使用してバックアップ操作を実行する必要があります。  BlueXP ransomware protectionスナップショットを使用してこれらのワークロードを復元できます。
 +
 
-TIP: FSx for ONTAPで実行されているワークロードのバックアップ ポリシーは、 BlueXPでは設定できません。  Amazon FSx for NetApp ONTAPで設定されている既存のバックアップポリシーは変更されません。
+TIP: FSx for ONTAPで実行されているワークロードのバックアップ ポリシーは、 BlueXPでは設定できません。  Amazon FSx for NetApp ONTAPに設定されている既存のバックアップポリシーは変更されません。
 
 * アラート インシデントには、新しい FSx for ONTAP作業環境が表示されます。
 

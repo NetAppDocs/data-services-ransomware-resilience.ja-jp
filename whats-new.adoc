@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP, netapp' 
-summary: NetApp Ransomware Resilience の新機能について学びます。 
+summary: NetApp Ransomware Resilienceの新機能についてご確認ください。 
 ---
-= NetAppランサムウェア耐性の新機能
+= NetApp Ransomware Resilienceの新機能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp Ransomware Resilience の新機能について学びます。
 
 
 [role="lead"]
-NetApp Ransomware Resilience の新機能について学びます。
+NetApp Ransomware Resilienceの新機能についてご確認ください。
 
 
 
@@ -22,23 +22,23 @@ NetApp Ransomware Resilience の新機能について学びます。
 
 
 
-=== BlueXP ransomware protectionはNetAppランサムウェア耐性に変わりました
+=== BlueXP ransomware protectionはNetApp Ransomware Resilienceました
 
 BlueXP ransomware protectionサービスの名前がNetApp Ransomware Resilienceに変更されました。
 
 
 
-=== BlueXPはNetAppコンソールになりました
+=== BlueXPはNetApp Consoleになりました
 
-NetAppコンソールは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのストレージとデータ サービスの集中管理を提供し、リアルタイムの分析情報、ワークフローの高速化、管理の簡素化を実現します。
+NetApp Consoleは、オンプレミスとクラウド環境全体にわたるエンタープライズ グレードのストレージとデータ サービスの集中管理を提供し、リアルタイムの分析情報、ワークフローの高速化、管理の簡素化を実現します。
 
-変更内容の詳細については、 https://docs.netapp.com/us-en/console-relnotes/index.html["NetAppコンソールのリリースノート"] 。
+変更内容の詳細については、 https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp Consoleのリリースノート"] 。
 
 
 
 === データ侵害検出
 
-Ransomware Resilience には、数ステップでアクティブ化できる新しい検出メカニズムが含まれており、データ侵害の早期指標として異常なユーザー読み取りを検出します。ランサムウェア耐性は、過去のデータから予想される通常の動作のプロファイルである履歴ベースラインを作成することにより、ユーザーの読み取りイベントを収集および分析します。新しいユーザーのアクティビティがこの確立された標準から大幅に逸脱すると (予期しない読み取りの急増と疑わしい読み取りパターンの組み合わせなど)、アラートが生成されます。  Ransomware Resilience には、疑わしい読み取りパターンを検出する AI モデルが含まれています。
+Ransomware Resilience には、数ステップでアクティブ化できる新しい検出メカニズムが含まれており、データ侵害の早期指標として異常なユーザー読み取りを検出します。ランサムウェア耐性は、過去のデータから予想される通常の動作のプロファイルである履歴ベースラインを作成することにより、ユーザーの読み取りイベントを収集および分析します。新しいユーザーのアクティビティがこの確立された標準から大幅に逸脱すると (予期しない読み取りの急増と疑わしい読み取りパターンの組み合わせなど)、アラートが生成されます。Ransomware Resilience には、疑わしい読み取りパターンを検出する AI モデルが含まれています。
 
 ストレージ層での ARP による暗号化検出とは異なり、ユーザー動作の異常の検出は、Ransomware Resilience SaaS サービスで FPolicy イベントを収集することによって行われます。
 
@@ -66,7 +66,7 @@ IMPORTANT: 新しいlink:#new-user-roles-for-data-breach-detection["ランサム
 
 疑わしいユーザーの行動設定を構成するには、ユーザー行動管理者である必要があります。ランサムウェア耐性管理者ロールは、疑わしいユーザーの行動設定の構成ではサポートされていません。
 
-詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetAppランサムウェア耐性ロールベースアクセス"^] 。
+詳細については、以下を参照してください。 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Ransomware Resilienceロールベースアクセス"^] 。
 
 
 
@@ -82,7 +82,7 @@ IMPORTANT: 新しいlink:#new-user-roles-for-data-breach-detection["ランサム
 
 === SANワークロードのサポート
 
-このリリースには、BlueXP ransomware protectionにおける SAN ワークロードのサポートが含まれています。  NFS および CIFS ワークロードに加えて、SAN ワークロードも保護できるようになりました。
+このリリースには、BlueXP ransomware protectionにおける SAN ワークロードのサポートが含まれています。NFS および CIFS ワークロードに加えて、SAN ワークロードも保護できるようになりました。
 
 詳細については、 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-prerequisites.html["BlueXP ransomware protectionの前提条件"] 。
 
@@ -172,7 +172,7 @@ BlueXP ransomware protectionワークフローに次の変更が加えられま�
 * [保護] タブには、FSx for ONTAP環境のワークロードが表示されます。この環境では、FSx for ONTAPバックアップ サービスを使用してバックアップ操作を実行する必要があります。  BlueXP ransomware protectionスナップショットを使用してこれらのワークロードを復元できます。
 +
 
-TIP: FSx for ONTAPで実行されているワークロードのバックアップ ポリシーは、 BlueXPでは設定できません。  Amazon FSx for NetApp ONTAPで設定されている既存のバックアップポリシーは変更されません。
+TIP: FSx for ONTAPで実行されているワークロードのバックアップ ポリシーは、 BlueXPでは設定できません。  Amazon FSx for NetApp ONTAPに設定されている既存のバックアップポリシーは変更されません。
 
 * アラート インシデントには、新しい FSx for ONTAP作業環境が表示されます。
 
@@ -274,7 +274,7 @@ Data Infrastructure Insights Storage Workload Security を使用して異常な�
 
 === 検出して保護するワークロードを選択する
 
-このリリースでは、次のことが可能になりました。
+このリリースでは、次のことが可能になります。
 
 * 各コネクタ内で、ワークロードを検出する作業環境を選択します。環境内の特定のワークロードを保護し、他のワークロードは保護しない場合は、この機能が役立つ可能性があります。
 * ワークロードの検出中に、コネクタごとにワークロードの自動検出を有効にすることができます。この機能を使用すると、保護するワークロードを選択できます。
@@ -297,7 +297,7 @@ BlueXP ransomware protectionにおける PII データのスキャンは、 Blue
 
 参照 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["BlueXP ransomware protection設定を構成する"]。
 
-スキャンを開始するには、[保護] ページで、[プライバシーの露出] 列の [*露出を特定*] をクリックします。
+スキャンを開始するには、[保護] ページで、[プライバシーの露出] 列の [*露出を識別*] をクリックします。
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect-classify.html["BlueXP classificationで個人を特定できる機密データをスキャン"] 。
 

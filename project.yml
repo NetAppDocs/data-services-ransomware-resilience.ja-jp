@@ -10,7 +10,7 @@ settings:
   langs: ja-jp,us-en,de-de,es-es,fr-fr,it-it,pt-br,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: NetAppランサムウェア耐性ドキュメント
+  - title: NetApp Ransomware Resilienceドキュメント
     url: "/index.html"
   - title: リリース ノート
     entries:
@@ -34,7 +34,7 @@ sidebar:
       url: "/rp-start-licenses.html"
     - title: ワークロードを発見する
       url: "/rp-start-discover.html"
-    - title: 準備訓練でランサムウェア攻撃をシミュレートする
+    - title: ランサムウェア攻撃を準備訓練でシミュレートする
       url: "/rp-start-simulate.html"
     - title: 設定でバックアップ、脅威検出、攻撃シミュレーションを構成する
       url: "/rp-use-settings.html"

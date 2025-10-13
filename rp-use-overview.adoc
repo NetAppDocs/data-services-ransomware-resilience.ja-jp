@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-use-overview.html 
 keywords: ransomware protection, ransomware protection, detect ransomware attacks, recover from ransomware attack 
-summary: NetApp Ransomware Resilience を使用すると、ワークロードの健全性を確認し、ワークロードを保護できます。 
+summary: NetApp Ransomware Resilienceを使用すると、ワークロードの健全性を表示し、ワークロードを保護できます。 
 ---
-= NetAppのランサムウェア耐性を活用する
+= NetApp Ransomware Resilienceを活用する
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: NetApp Ransomware Resilience を使用すると、ワークロードの
 
 
 [role="lead"]
-NetApp Ransomware Resilience を使用すると、ワークロードの健全性を確認し、ワークロードを保護できます。
+NetApp Ransomware Resilienceを使用すると、ワークロードの健全性を確認し、ワークロードを保護できます。
 
 * link:rp-start-discover.html["ランサムウェア耐性におけるワークロードの検出"] 。
 * link:rp-use-dashboard.html["ダッシュボードから保護とワークロードの健全性を表示する"] 。
@@ -23,7 +23,7 @@ NetApp Ransomware Resilience を使用すると、ワークロードの健全性
 * link:rp-use-protect.html["ワークロードを保護する"]：
 +
 ** ランサムウェア保護戦略をワークロードに割り当てます。
-** 将来のランサムウェア攻撃を防ぐために、アプリケーションの保護を強化します。
+** 将来のランサムウェア攻撃を防ぐためにアプリケーション保護を強化します。
 ** 保護戦略を作成、変更、または削除します。
 
 

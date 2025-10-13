@@ -1,13 +1,13 @@
 ---
 indexpage:
-  title: NetAppランサムウェア耐性ドキュメント
+  title: NetApp Ransomware Resilienceドキュメント
   summary: NetApp Ransomware Resilience は、オンプレミスおよびクラウド ストレージにおけるランサムウェアの脅威からアプリケーション
-    ワークロードとファイル共有を保護、検出し、リカバリをサポートします。  Oracle、MySQL、VM データストア、NAS ストレージなどのプラットフォームをサポートする
+    ワークロードとファイル共有を保護、検出し、リカバリをサポートします。Oracle、MySQL、VM データストア、NAS ストレージなどのプラットフォームをサポートする
     Ransomware Resilience は、安全なバックアップとリカバリを可能にし、組織が重要なデータを保護し、ビジネスの継続性を維持するのに役立ちます。
   keywords: bluexp, ransomware, anti-ransomware, cyber attack, netapp, ontap, amazon
     web services, aws, storagegrid, protection, resilience
   lead: NetApp Ransomware Resilience は、オンプレミスおよびクラウド ストレージにおけるランサムウェアの脅威からアプリケーション
-    ワークロードとファイル共有を保護、検出し、リカバリをサポートします。  Oracle、MySQL、VM データストア、NAS ストレージなどのプラットフォームをサポートする
+    ワークロードとファイル共有を保護、検出し、リカバリをサポートします。Oracle、MySQL、VM データストア、NAS ストレージなどのプラットフォームをサポートする
     Ransomware Resilience は、安全なバックアップとリカバリを可能にし、組織が重要なデータを保護し、ビジネスの継続性を維持するのに役立ちます。
   tiles:
   - title: 始めましょう
@@ -42,9 +42,9 @@ indexpage:
       url: "/rp-use-recover.html"
   - title: ブログとコミュニティ
     links:
-    - title: NetAppコンソール
+    - title: NetApp Console
       url: https://www.netapp.com/console
-    - title: NetAppデータサービス
+    - title: NetApp Data Services
       url: https://www.netapp.com/data-services/
     - title: NetAppコミュニティ
       url: https://community.netapp.com/

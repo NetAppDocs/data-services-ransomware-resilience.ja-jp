@@ -12,7 +12,7 @@ BlueXP ransomware protectionにおける PII データのスキャンは、 Blue
 
 参照 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["BlueXP ransomware protection設定を構成する"]。
 
-スキャンを開始するには、[保護] ページで、[プライバシーの露出] 列の [*露出を特定*] をクリックします。
+スキャンを開始するには、[保護] ページで、[プライバシーの露出] 列の [*露出を識別*] をクリックします。
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect-classify.html["BlueXP classificationで個人を特定できる機密データをスキャン"] 。
 

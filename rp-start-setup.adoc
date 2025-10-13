@@ -4,7 +4,7 @@ permalink: rp-start-setup.html
 keywords: bluexp, ransomware protection, aws, azure 
 summary: Ransomware Resilience を使用するには、いくつかの手順を実行して設定します。 
 ---
-= NetAppランサムウェア耐性を設定する
+= NetApp Ransomware Resilienceを設定する
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -56,7 +56,7 @@ StorageGRIDをバックアップ先として使用する場合は、 https://doc
 
 
 
-== NetAppコンソールをセットアップする
+== NetApp Consoleをセットアップする
 
 次のステップは、コンソールとランサムウェア耐性を設定することです。
 

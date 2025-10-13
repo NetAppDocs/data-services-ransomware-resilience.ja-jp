@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-start-faq.html 
 keywords: ransomware protection faq, ransomware protection frequently asked questions 
-summary: NetApp Ransomware Resilience に関するよくある質問への回答をご覧ください。 
+summary: NetApp Ransomware Resilienceに関するよくある質問への回答をご覧ください。 
 ---
-= NetAppランサムウェア耐性に関するよくある質問
+= NetApp Ransomware Resilienceに関するよくある質問
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,7 +12,7 @@ summary: NetApp Ransomware Resilience に関するよくある質問への回答
 
 
 [role="lead"]
-この FAQ は、 NetApp Ransomware Resilience に関する質問への簡単な回答を探している場合に役立ちます。
+この FAQ は、NetApp Ransomware Resilienceに関する質問への簡単な回答を探している場合に役立ちます。
 
 
 
@@ -23,11 +23,11 @@ summary: NetApp Ransomware Resilience に関するよくある質問への回答
 次のライセンス タイプを使用できます。
 
 * 30 日間の無料トライアルにサインアップしてください。
-* Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace、Microsoft Azure Marketplace で、 NetApp Intelligent Services および Ransomware Resilience の従量課金制 (PAYGO) サブスクリプションを購入します。
+* Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace、Microsoft Azure Marketplace で、 NetApp Intelligent Servicesおよび Ransomware Resilience の従量課金制 (PAYGO) サブスクリプションを購入します。
 * BYOL (Bring Your Own License) は、 NetApp の営業担当者から取得したNetAppライセンス ファイル (NLF) です。ライセンス シリアル番号を使用して、コンソールのライセンスとサブスクリプション セクションで BYOL をアクティブ化できます。
 
 
-*ランサムウェア耐性を有効にするにはどうすればいいですか?*ランサムウェア耐性には有効化は必要ありません。  NetAppコンソールから Ransomware Resilience にアクセスできます。
+*ランサムウェア耐性を有効にするにはどうすればいいですか?*ランサムウェア耐性には有効化は必要ありません。  NetApp Consoleから Ransomware Resilience にアクセスできます。
 
 開始するには、サインアップするか、 NetApp の営業担当者に連絡してこのサービスを試す必要があります。その後、コンソール エージェントを使用すると、ランサムウェア耐性のための適切な機能が含まれるようになります。
 
@@ -35,7 +35,7 @@ Ransomware Resilience を開始するには、最初のランディング ペー
 
 *Ransomware Resilience は、標準モード、制限モード、プライベートモードで利用できますか?*現時点では、ランサムウェア耐性は標準モードでのみ利用可能です。今後もご期待ください。
 
-NetAppデータサービス全体にわたるこれらのモードの説明については、 https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["NetAppコンソールの展開モード"^] 。
+NetAppデータサービス全体にわたるこれらのモードの説明については、 https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["NetApp Consoleの展開モード"^] 。
 
 
 
@@ -45,9 +45,9 @@ NetAppデータサービス全体にわたるこれらのモードの説明に�
 
 *アクセス権限はどのように処理されますか?*https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["すべてのサービスのコンソールアクセスロールについて学習します"^] 。
 
-*どのデバイスの解像度が最適ですか?*Ransomware Resilience に推奨されるデバイス解像度は 1920x1080 以上です。
+*どのデバイスの解像度が最適ですか?*  Ransomware Resilience に推奨されるデバイス解像度は 1920x1080 以上です。
 
-*どのブラウザを使用すればよいですか?*任意の最新ブラウザ。
+*どのブラウザを使用すればよいですか?*最新のブラウザであればどれでも。
 
 
 
@@ -57,7 +57,7 @@ NetAppデータサービス全体にわたるこれらのモードの説明に�
 
 *Ransomware Resilience を使用してポリシーを設定した場合、今後の変更はこのサービスでのみ行う必要がありますか?*ランサムウェア耐性からポリシーの変更を行うことをお勧めします。
 
-*Ransomware Resilience は、 NetApp Backup and Recovery およびSnapCenterとどのように連携しますか?*
+*Ransomware Resilience は、NetApp Backup and RecoveryおよびSnapCenterとどのように連携しますか?*
 
 Ransomware Resilience では、次の製品とサービスを使用します。
 
@@ -125,7 +125,7 @@ Ransomware Resilience は、Oracle、MySQL、ファイル共有、ブロック �
 
 はい、Backup and Recovery またはSnapCenterで管理されているワークロードがある場合、それらの製品によって管理されているポリシーは Ransomware Resilience に取り込まれます。
 
-* NetApp Backup and Recovery やSnapCenterから引き継がれたポリシーを変更できますか?*
+* NetApp Backup and RecoveryやSnapCenterから引き継がれたポリシーを変更できますか?*
 
 いいえ、Ransomware Resilience から Backup and Recovery またはSnapCenterによって管理されるポリシーを変更することはできません。これらのポリシーに対する変更は、Backup and Recovery またはSnapCenterで管理します。
 

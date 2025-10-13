@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: rp-use-reports.html 
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
-summary: NetApp Ransomware Resilience を使用すると、保護、アラート、リカバリの詳細を示すレポートをダウンロードし、CSV ファイルとして保存できます。 
+summary: NetApp Ransomware Resilienceを使用すると、保護、アラート、リカバリの詳細を示すレポートをダウンロードし、CSV ファイルとして保存できます。 
 ---
-= NetApp Ransomware Resilience のレポートをダウンロード
+= NetApp Ransomware Resilienceのレポートをダウンロード
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -19,7 +19,7 @@ TIP: ファイルをダウンロードする前に、データを更新する必
 
 *必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア レジリエンス管理者、またはランサムウェア レジリエンス ビューアーのロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
-*ダウンロードできるデータは何ですか?*メイン メニュー オプションのいずれかからファイルをダウンロードできます。
+*どのようなデータをダウンロードできますか?*メイン メニュー オプションのいずれかからファイルをダウンロードできます。
 
 * *保護*: 保護されているワークロードとリスクのあるワークロードの合計数など、すべてのワークロードのステータスと詳細が含まれます。
 * *アラート*: アラートの合計数や自動スナップショットなど、すべてのアラートのステータスと詳細が含まれます。
@@ -44,7 +44,7 @@ image:screen-dashboard.png["[ダッシュボード]ページ"]
 . 次のいずれかを実行します。
 +
 ** ページから*ダウンロード*を選択しますimage:button-download.png["ダウンロードオプション"]オプション。
-** NetApp Ransomware Resilience メニューから、*レポート* を選択します。
+** NetApp Ransomware Resilienceメニューから、*レポート* を選択します。
 
 
 . *レポート* オプションを選択した場合は、事前設定されたファイル名の 1 つを選択し、*ダウンロード* を選択します。
