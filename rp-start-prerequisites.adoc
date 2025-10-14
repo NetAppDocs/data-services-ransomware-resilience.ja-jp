@@ -25,10 +25,10 @@ Ransomware Resilience を使用するには、次の前提条件を満たす必�
 * コンソールエージェントには、 `cloudmanager-ransomware-protection`アクティブな状態のコンテナ。
 * NetAppオンプレミスONTAPクラスターまたは AWS または Azure のCloud Volumes ONTAP を備えた少なくとも 1 つのコンソール システム。  Ransomware Resilience は、NAS (NFS および SMB) と SAN (iSCSI、FC、NVMe) の両方のプロトコルをサポートします。
 +
-** ONTAP OS バージョン 9.11.1 以降のONTAPまたはCloud Volumes ONTAPクラスターがサポートされています。
+** ランサムウェア耐性は、 ONTAPバージョン 9.11.1 以降のONTAPまたはCloud Volumes ONTAPクラスターでサポートされます。
 +
 
-NOTE: SAN ワークロードは、 ONTAP 9.17.1 以降でのみサポートされます。
+NOTE: SAN ワークロードで Ransomware Resilience を使用する予定の場合は、 ONTAP 9.17.1 以降を実行している必要があります。
 
 ** オンプレミスのONTAPクラスターまたは AWS または Azure クラウドのCloud Volumes ONTAP がコンソールにまだオンボードされていない場合は、コンソール エージェントが必要です。
 +
@@ -61,7 +61,7 @@ NOTE: Ransomware Resilience の一般リリースには、プレビュー リリ
 
 
 
-== データのバックアップ用
+== データのバックアップ
 
 * バックアップ ターゲットおよびアクセス権限セット用のNetApp StorageGRID、AWS S3、Azure Blob、または Google Cloud Platform のアカウント。
 +
@@ -72,6 +72,12 @@ NOTE: Ransomware Resilience の一般リリースには、プレビュー リリ
 Ransomware Resilience は、設定オプションを通じてバックアップの保存先を構成するのに役立ちます。見るlink:rp-use-settings.html["設定を構成する"] 。
 
 
+
+
+
+== 疑わしいユーザー行動
+
+Ransomware Resilience が疑わしいユーザー行動に関するアラートを提供するには、ユーザー アクティビティ エージェントを構成する必要があります。詳細については、 link:suspicious-user-activity.html["NetApp Ransomware Resilienceで疑わしいユーザーアクティビティの検出を構成する"]。
 
 
 
