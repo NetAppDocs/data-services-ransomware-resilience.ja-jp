@@ -480,14 +480,12 @@
   <block id="28cfeb7fff7b4f9ab9bf205d7135f788" category="paragraph">このタスクを実行するには、組織管理者、フォルダー管理者、またはプロジェクト管理者のロールが必要です。<block ref="43e60870b1a681df3de2812caf2de958" category="inline-link-rx"></block> 。</block>
   <block id="f53f2f881ada2816fc6ddea06cdcfc60" category="paragraph">*ライセンスの種類* 次のライセンスの種類を使用できます。</block>
   <block id="b5bf014c6bc530be1a7b68b5bcfb8ce0" category="list-text">Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace、または Azure Marketplace で従量課金制 (PAYGO) サブスクリプションを購入します。</block>
-  <block id="13bd4b8763a0912ae1342d2303d91929" category="list-text">BYOL (Bring Your Own License) は、 NetApp の営業担当者から取得したNetAppライセンス ファイル (NLF) です。ライセンス シリアル番号を使用して、コンソールで BYOL をアクティブ化できます。</block>
   <block id="bcc2135df9c790b26ee1baa911a601ef" category="paragraph">BYOL を設定するか、PAYGO サブスクリプションを購入すると、コンソールの[Licenses and subscriptions]セクションでライセンスを確認できます。</block>
   <block id="aa4412f38985c565aeb98dc6634f3029" category="paragraph">無料トライアルが終了した後、またはライセンスやサブスクリプションの有効期限が切れた後でも、Ransomware Resilience で次の操作を実行できます。</block>
   <block id="9f5e79cce3ac3e1b3962cddaef91e4e0" category="list-text">ワークロードとワークロードの健全性を表示します。</block>
   <block id="ed2dd81f2c51f4d72049803cf5ce6211" category="list-text">ポリシーなどのリソースを削除します。</block>
   <block id="1594f78ebbb281f7b5359eb6d2b89912" category="list-text">試用期間中またはライセンスに基づいて作成されたすべてのスケジュールされた操作を実行します。</block>
   <block id="231fd9de718f42c1c9e89368821092dd" category="section-title">その他のライセンス</block>
-  <block id="f5b76d2b545a3d3806e510148858010e" category="paragraph">Ransomware Resilience ライセンスには、追加のNetApp製品は含まれません。  Ransomware Resilience では、ライセンスがなくてもNetApp Backup and Recoveryを使用できます。</block>
   <block id="1f39796076513bca42919b255963cd5a" category="admonition">バックアップとリカバリとランサムウェア耐性の両方をお持ちの場合、両方の製品で保護されている共通データについては、ランサムウェア耐性に対してのみ課金されます。</block>
   <block id="b22e0a0c145eff4bd34bc6c46894b2a1" category="section-title">30日間の無料トライアルでお試しください</block>
   <block id="50de852d5302d938fcee7f3cfc39b286" category="paragraph">30 日間の無料トライアルを使用して、Ransomware Resilience を試すことができます。無料トライアルを開始するには、コンソール組織管理者である必要があります。</block>
@@ -645,36 +643,20 @@
   <block id="1f7fec232265cdaaed5c3995ce516af2" category="list-text">使用するには、ランサムウェア耐性 UI に戻ります。</block>
   <block id="01ad1e9b6ee32140ab032c379c4fd753" category="summary">わずか数ステップでNetApp Ransomware Resilienceを開始できます。</block>
   <block id="87269d545e3fccdff13a867df7261ace" category="doc">NetApp Ransomware Resilienceのクイックスタート</block>
-  <block id="41bff2ae3735c5f6436f8b085adcb8b8" category="paragraph">NetApp Ransomware Resilienceを開始するために必要な手順の概要を以下に示します。各ステップ内のリンクをクリックすると、詳細情報を提供するページに移動します。</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1</block>
   <block id="a2d56436fc6737079209e6c74380c5fb" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>前提条件を確認する</block>
-  <block id="8245d68da46718af8e64343032f76d49" category="inline-link-macro">システムがこれらの要件を満たしていることを確認してください</block>
-  <block id="75d0ccc7689bb95b15a30d63c9ccdcd4" category="paragraph"><block ref="9f6f8763dd3393068af568a58712b0aa" category="inline-link-macro-rx"></block> 。</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2</block>
   <block id="916d9ab8dea7ac43f2e082cba0d4f60d" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>ランサムウェア耐性を設定する</block>
   <block id="0545ec91139cbe1d8ed0b333ebef939f" category="inline-link-macro">NetApp StorageGRID、Amazon Web Services、Google Cloud Platform、または Microsoft Azure をバックアップ先として準備します。</block>
   <block id="72f842d16f2016131d4e9d7e14038e88" category="list-text"><block ref="9e4e7ea8cc8b7b041d3f5d7300c15c3a" category="inline-link-macro-rx"></block> 。</block>
-  <block id="9dc5e6bd86bf7e797ea094f6fe2a5852" category="inline-link-macro">コンソールエージェントを構成する</block>
-  <block id="47eb90acf1b579722f7d5dd2b44ef0e4" category="list-text"><block ref="9ec4312a792865a12e09d73a517eab36" category="inline-link-macro-rx"></block> 。</block>
-  <block id="0e6eeee847f00d7ef1cb454555892f49" category="list-text"><block ref="92c4728cc5c0729bcbef66420d0a7a81" category="inline-link-macro-rx"></block> 。</block>
   <block id="fc52e84f4845e2ef8156001fa74f3954" category="inline-link-macro">コンソールでワークロードを検出する</block>
-  <block id="cba6bdbd119078f38347599e997682f2" category="list-text"><block ref="76e35428aa7f6a7c95640d343a2f5eaa" category="inline-link-macro-rx"></block> 。</block>
   <block id="2eee0208d7c6702078e5b0a246b9c4d7" category="inline-link-macro">バックアップ先を設定する</block>
-  <block id="5b00991bda21ffcce334fcd5ac0e12a5" category="list-text"><block ref="7814f70b7e043ab52a7b13bfded37018" category="inline-link-macro-rx"></block> 。</block>
-  <block id="fcb74668c58aed2ac30ddcdee292a0c5" category="inline-link-macro">オプションで脅威検出を有効にする</block>
-  <block id="896465c47d1995c6e7b722de16fa80e5" category="list-text"><block ref="4e4968353ad45e1648e9b700ebce5a49" category="inline-link-macro-rx"></block> 。</block>
   <block id="63de46c3feae8642d94945ea3e056fed" category="inline-link-macro">オプションとして、ランサムウェア攻撃準備訓練を実施する</block>
-  <block id="39bdb514f38135f0ca92651ade127954" category="list-text"><block ref="2280163364b5b58f435fe47eab713eb2" category="inline-link-macro-rx"></block> 。</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三つ</block>
-  <block id="fb35cdd7029fec15aadbdddd879fa161" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>次は何?</block>
-  <block id="b9a39cb5a55f28deea4823b82a9d759b" category="paragraph">ランサムウェア耐性を設定したら、次に行うことは次のとおりです。</block>
   <block id="d50e8172d497c020af4e234d3280aa47" category="inline-link-macro">ダッシュボードでワークロード保護の健全性を表示する</block>
-  <block id="0da5fc044622620fa261132f6660bfdb" category="list-text"><block ref="97145b854a05806b01a222f1cee29fd6" category="inline-link-macro-rx"></block> 。</block>
-  <block id="d3c00938bca00732fbba5d481863930b" category="list-text"><block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block> 。</block>
   <block id="347a92b70b3c471a8a681a4b4a0c9256" category="inline-link-macro">潜在的なランサムウェア攻撃の検出に対応する</block>
   <block id="063e9c9c189a9f6aaad2b0b511ff7b3f" category="list-text"><block ref="b5ea4db5c411dc6348eb99be9283796b" category="inline-link-macro-rx"></block> 。</block>
   <block id="fc8492dd3eefdbcdcd34f8d91982e7a9" category="inline-link-macro">攻撃からの回復（インシデントが中和された後）</block>
-  <block id="9ae83eb049c6b5251c9298d8a8d40241" category="list-text"><block ref="8b134bf38fb096386395972987c1b025" category="inline-link-macro-rx"></block> 。</block>
   <block id="34966ee9421e907a190b85aa1680ce01" category="summary">Ransomware Resilience を使用するには、いくつかの手順を実行して設定します。</block>
   <block id="239718284ef31f1d7ca7a73645e14dd2" category="doc">NetApp Ransomware Resilienceを設定する</block>
   <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">前提条件</block>
@@ -1032,7 +1014,6 @@
   <block id="0a3dc5fda7d701cd5fc9a0ceb57afb3f" category="list-text"><block ref="9f0b279394cf25f00a608a52b5aed0b2" category="inline-link-macro-rx"></block> 。</block>
   <block id="bc1b76060f49fe8ad404d389d8431371" category="summary">NetApp Data Classificationを使用してデータのセキュリティとプライバシーのコンプライアンスを強化し、データに個人を特定できる情報や個人情報が含まれているかどうかを識別します。</block>
   <block id="e00e52239c81eaad00507b4b0b815570" category="doc">ランサムウェア耐性におけるNetApp Data Classificationで個人を特定できる情報をスキャン</block>
-  <block id="62fa4bfbc95859e20cfaa7150ab75d62" category="paragraph">NetApp Ransomware Resilienceでは、 NetApp Data Classificationを使用して、ファイル共有ワークロード内のデータをスキャンおよび分類できます。データを分類すると、データセットに個人を特定できる情報 (PII) が含まれているかどうかを判断するのに役立ちますが、これによりセキュリティ リスクが増大する可能性があります。データ分類はコンソールのコア コンポーネントであり、追加費用なしで利用できます。</block>
   <block id="604880f6f585767eee17ec85b3c76533" category="inline-link-macro">データ分類</block>
   <block id="00735a048dd8a101a0cf04ff8cf7c168" category="paragraph"><block ref="2324d2fecbef2eccb7e03b987d67689b" category="inline-link-macro-rx"></block>AI 駆動型の自然言語処理を利用してコンテキスト データの分析と分類を行い、データに関する実用的な分析情報を提供することで、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の加速を実現します。</block>
   <block id="d3b14d365ca3277402fce2839d562f60" category="admonition">このプロセスはワークロードの重要性に影響を与え、適切な保護が確保されるようにするのに役立ちます。</block>
@@ -2004,7 +1985,6 @@
   <block id="0f1fe9be7b1943507afe2ef939f76423" category="list-text">データの異常を探しながら、ランサムウェア攻撃に対するワークロードの健全性を監視します。</block>
   <block id="12bcfe65b7fb19c1dbe60c374599be1e" category="list-text">ランサムウェア インシデントがワークロードに与える影響を迅速に評価します。</block>
   <block id="f4d7f013aee4ff8dd19b36611ba3f3c6" category="list-text">データを復元し、保存されたデータからの再感染が発生しないようにすることで、ランサムウェア インシデントからインテリジェントに回復します。</block>
-  <block id="0c59fa3b4bea70fe5377775600bed707" category="sidebar">NetApp Ransomware Resilience は、オンプレミスおよびクラウド ストレージにおけるランサムウェアの脅威からアプリケーション ワークロードとファイル共有を保護、検出し、リカバリをサポートします。Oracle、MySQL、VM データストア、NAS ストレージなどのプラットフォームをサポートする Ransomware Resilience は、安全なバックアップとリカバリを可能にし、組織が重要なデータを保護し、ビジネスの継続性を維持するのに役立ちます。</block>
   <block id="89be776e54ba13993f6011aaa17a0ac9" category="sidebar">NetApp Ransomware Resilienceドキュメント</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">始めましょう</block>
   <block id="7b72a3240bb708a49cf4a635f75c8ca9" category="sidebar">ランサムウェア耐性の新機能</block>
@@ -2038,4 +2018,41 @@
   <block id="34691f87b892c333fe1b7a23452dcda6" category="paragraph">Ransomware Resilience が疑わしいユーザー行動に関するアラートを提供するには、ユーザー アクティビティ エージェントを構成する必要があります。詳細については、 <block ref="f3d3e5726f7feb4b59ca728c906df758" category="inline-link-macro-rx"></block>。</block>
   <block id="793485138a653779a0c8cb91bf9fc979" category="list-text">準備訓練の種類を選択します。暗号化データ侵害から手動で回復する場合は、**カスタム回復** を選択します。疑わしいユーザーアクティビティからの回復には、**データ侵害** を選択します。</block>
   <block id="8e0b9d66ccd774ed98d0b31d0e6ed305" category="admonition">ドリルの実行中は、準備ドリルの構成を編集することはできません。ドリルをリセットして停止し、設定を変更することができます。</block>
+  <block id="4226ab30b4df5e39149316f15c13d274" category="list-text">BYOL (Bring Your Own License) は、 NetApp の営業担当者から取得したNetAppライセンス ファイル (NLF) です。ライセンス シリアル番号を使用して、コンソールで BYOL をアクティブ化できます。</block>
+  <block id="18105991dc2815c0ab610717f615d548" category="admonition">6 か月間の試用版に登録する場合は、NLF ライセンスが必要です。</block>
+  <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">Ransomware Resilience ライセンスには、追加のNetApp製品は含まれません。ただし、バックアップとリカバリ用の個別のライセンスがない場合でも、Ransomware Resilience はNetApp Backup and Recoveryと統合できます。</block>
+  <block id="c785cc029c5e88f7796b29b4ff0e99e1" category="paragraph">ランサムウェア耐性を設定し、ワークロードを保護するために従う必要がある大まかな手順を理解します。</block>
+  <block id="6ff0e20f052119502398978ae7712412" category="paragraph">詳しい情報については、各ステップのリンクを参照してください。</block>
+  <block id="be796710aeb85a06716eb7e39256193d" category="paragraph">これらのタスクには、_コンソール管理者_ ロールが必要です。</block>
+  <block id="220434cdb736458843fe145fbd4b9ca9" category="inline-link-macro">コンソールエージェントがインストールされていることを確認してください</block>
+  <block id="ff6929fd02a6e7a1c0faa4152fe13ffe" category="list-text"><block ref="ff6929fd02a6e7a1c0faa4152fe13ffe" category="inline-link-macro-rx"></block></block>
+  <block id="9fde088755a092fd7205d2e697984007" category="inline-link-macro">システムが要件を満たしていることを確認する</block>
+  <block id="643740187acce828986cb107d41bafc5" category="list-text"><block ref="643740187acce828986cb107d41bafc5" category="inline-link-macro-rx"></block></block>
+  <block id="b9278659401ebc53048947304c656764" category="inline-link-macro">ランサムウェア耐性のユーザーロールを確認し、ランサムウェア耐性にアクセスするユーザーに権限を割り当てます。</block>
+  <block id="b29244e1b9c758144780bb223d35b4cf" category="list-text"><block ref="b29244e1b9c758144780bb223d35b4cf" category="inline-link-macro-rx"></block></block>
+  <block id="92c4728cc5c0729bcbef66420d0a7a81" category="list-text"><block ref="92c4728cc5c0729bcbef66420d0a7a81" category="inline-link-macro-rx"></block></block>
+  <block id="ae1607d72fd3a0506ce195b27e1dee67" category="paragraph">これらのタスクには、_Ransomware Resilience admin_ ロールが必要です。</block>
+  <block id="76e35428aa7f6a7c95640d343a2f5eaa" category="list-text"><block ref="76e35428aa7f6a7c95640d343a2f5eaa" category="inline-link-macro-rx"></block></block>
+  <block id="97145b854a05806b01a222f1cee29fd6" category="list-text"><block ref="97145b854a05806b01a222f1cee29fd6" category="inline-link-macro-rx"></block></block>
+  <block id="2280163364b5b58f435fe47eab713eb2" category="list-text"><block ref="2280163364b5b58f435fe47eab713eb2" category="inline-link-macro-rx"></block></block>
+  <block id="68d94437ae944e7e96a72f2fb55b3138" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>ランサムウェア耐性における保護と検出の設定</block>
+  <block id="0facb5062c7824665d78c38387a13d0d" category="paragraph">これらのタスクには、_Ransomware Resilience admin_ ロールが必要です。疑わしいユーザーの行動アクティビティを構成するには、追加の _Ransomware Resilience ユーザー行動管理者_ ロールが必要です。</block>
+  <block id="2b2daeeb32402291362fa9fa843a5c7e" category="list-text"><block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block></block>
+  <block id="93826dca9773d5abc2e88bd13610fa5f" category="inline-link-macro">疑わしいユーザーアクティビティの検出を設定して保護を強化する</block>
+  <block id="2b3602d3a23fabd0142c6690d942d97c" category="list-text">オプションとして、<block ref="c26759f19d29fbc2698510c8d2899376" category="inline-link-macro-rx"></block></block>
+  <block id="9de6007d1c8bb200a2730a88c394ccc5" category="list-text">必要に応じて、バックアップの保存先を構成します。</block>
+  <block id="7814f70b7e043ab52a7b13bfded37018" category="list-text"><block ref="7814f70b7e043ab52a7b13bfded37018" category="inline-link-macro-rx"></block></block>
+  <block id="b5ea4db5c411dc6348eb99be9283796b" category="list-text"><block ref="b5ea4db5c411dc6348eb99be9283796b" category="inline-link-macro-rx"></block></block>
+  <block id="8b134bf38fb096386395972987c1b025" category="list-text"><block ref="8b134bf38fb096386395972987c1b025" category="inline-link-macro-rx"></block></block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">4</block>
+  <block id="84b770f92be71ec30166cecd58fe295f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>次は何?</block>
+  <block id="6bed92a99cdfd0c4fededd25f3e7cc23" category="paragraph">Ransomware Resilience で保護を構成した後、次に実行できる操作は次のとおりです。</block>
+  <block id="7257a2c29f00e84365c5a48447d9c803" category="inline-link-macro">データ分類を有効にしてガバナンスとセキュリティリスクを特定します</block>
+  <block id="746bceb6a53af383ec0aa4495f694a94" category="list-text"><block ref="746bceb6a53af383ec0aa4495f694a94" category="inline-link-macro-rx"></block></block>
+  <block id="1d1758803ee1f7559973be04f120a0f7" category="inline-link-macro">SIEMにアラートを送信する</block>
+  <block id="81eb2602258c7f155c33ae884e447609" category="list-text"><block ref="81eb2602258c7f155c33ae884e447609" category="inline-link-macro-rx"></block></block>
+  <block id="660ecf2355e5ff3c5a22d2e4a48594e8" category="inline-link-macro">アラート、保護、準備訓練、回復、または概要レポートをダウンロードする</block>
+  <block id="b5884d5e59b952624998be52e7a9fe97" category="list-text"><block ref="b5884d5e59b952624998be52e7a9fe97" category="inline-link-macro-rx"></block></block>
+  <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">NetApp Ransomware Resilienceでは、 NetApp Data Classificationを使用して、ファイル共有ワークロード内のデータをスキャンおよび分類できます。データを分類すると、データセットに個人を特定できる情報 (PII) が含まれているかどうかを判断するのに役立ちますが、これによりセキュリティ リスクが増大する可能性があります。データ分類はNetApp Consoleのコア コンポーネントであり、追加費用なしで利用できます。</block>
+  <block id="4342c3c480135ea7c9398a3ba08357ec" category="sidebar">NetApp Ransomware Resilience は、オンプレミスおよびクラウド ストレージにおけるランサムウェアの脅威からアプリケーション ワークロードとファイル共有を保護、検出し、リカバリをサポートします。ランサムウェア耐性により、安全なバックアップとリカバリが可能になり、組織は Oracle、MySQL、VM データストア、NAS ストレージなどの重要なデータを保護し、ビジネスの継続性を維持できるようになります。</block>
 </blocks>

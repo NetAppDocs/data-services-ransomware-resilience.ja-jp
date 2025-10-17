@@ -23,6 +23,9 @@ NetApp Ransomware Resilienceでは、さまざまなライセンス プランを
 * BYOL (Bring Your Own License) は、 NetApp の営業担当者から取得したNetAppライセンス ファイル (NLF) です。ライセンス シリアル番号を使用して、コンソールで BYOL をアクティブ化できます。
 
 
+
+NOTE: 6 か月間の試用版に登録する場合は、NLF ライセンスが必要です。
+
 BYOL を設定するか、PAYGO サブスクリプションを購入すると、コンソールの[Licenses and subscriptions]セクションでライセンスを確認できます。
 
 無料トライアルが終了した後、またはライセンスやサブスクリプションの有効期限が切れた後でも、Ransomware Resilience で次の操作を実行できます。
@@ -36,7 +39,7 @@ BYOL を設定するか、PAYGO サブスクリプションを購入すると、
 
 == その他のライセンス
 
-Ransomware Resilience ライセンスには、追加のNetApp製品は含まれません。  Ransomware Resilience では、ライセンスがなくてもNetApp Backup and Recoveryを使用できます。
+Ransomware Resilience ライセンスには、追加のNetApp製品は含まれません。ただし、バックアップとリカバリ用の個別のライセンスがない場合でも、Ransomware Resilience はNetApp Backup and Recoveryと統合できます。
 
 
 NOTE: バックアップとリカバリとランサムウェア耐性の両方をお持ちの場合、両方の製品で保護されている共通データについては、ランサムウェア耐性に対してのみ課金されます。

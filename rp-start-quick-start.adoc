@@ -12,30 +12,57 @@ summary: わずか数ステップでNetApp Ransomware Resilienceを開始でき�
 
 
 [role="lead"]
-NetApp Ransomware Resilienceを開始するために必要な手順の概要を以下に示します。各ステップ内のリンクをクリックすると、詳細情報を提供するページに移動します。
+ランサムウェア耐性を設定し、ワークロードを保護するために従う必要がある大まかな手順を理解します。
+
+詳しい情報については、各ステップのリンクを参照してください。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1"]前提条件を確認する
 [role="quick-margin-para"]
-link:rp-start-prerequisites.html["システムがこれらの要件を満たしていることを確認してください"] 。
+これらのタスクには、_コンソール管理者_ ロールが必要です。
+
+[role="quick-margin-list"]
+* link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation["コンソールエージェントがインストールされていることを確認してください"^]
+* link:rp-start-prerequisites.html["システムが要件を満たしていることを確認する"]
+* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["ランサムウェア耐性のユーザーロールを確認し、ランサムウェア耐性にアクセスするユーザーに権限を割り当てます。"]
+* link:rp-start-licenses.html["ライセンスの設定"]
+
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2"]ランサムウェア耐性を設定する
-[role="quick-margin-list"]
-* link:rp-start-setup.html["NetApp StorageGRID、Amazon Web Services、Google Cloud Platform、または Microsoft Azure をバックアップ先として準備します。"] 。
-* link:rp-start-setup.html["コンソールエージェントを構成する"] 。
-* link:rp-start-licenses.html["ライセンスの設定"] 。
-* link:rp-start-discover.html["コンソールでワークロードを検出する"] 。
-* link:rp-start-setup.html["バックアップ先を設定する"] 。
-* link:rp-start-setup.html["オプションで脅威検出を有効にする"] 。
-* link:rp-start-simulate.html["オプションとして、ランサムウェア攻撃準備訓練を実施する"] 。
-
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三つ"]次は何?
 [role="quick-margin-para"]
-ランサムウェア耐性を設定したら、次に行うことは次のとおりです。
+これらのタスクには、_Ransomware Resilience admin_ ロールが必要です。
 
 [role="quick-margin-list"]
-* link:rp-use-dashboard.html["ダッシュボードでワークロード保護の健全性を表示する"] 。
-* link:rp-use-protect.html["ワークロードを保護する"] 。
-* link:rp-use-alert.html["潜在的なランサムウェア攻撃の検出に対応する"] 。
-* link:rp-use-recover.html["攻撃からの回復（インシデントが中和された後）"] 。
+* link:rp-start-discover.html["コンソールでワークロードを検出する"]
+* link:rp-use-dashboard.html["ダッシュボードでワークロード保護の健全性を表示する"]
+* link:rp-start-simulate.html["オプションとして、ランサムウェア攻撃準備訓練を実施する"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三つ"]ランサムウェア耐性における保護と検出の設定
+[role="quick-margin-para"]
+これらのタスクには、_Ransomware Resilience admin_ ロールが必要です。疑わしいユーザーの行動アクティビティを構成するには、追加の _Ransomware Resilience ユーザー行動管理者_ ロールが必要です。
+
+[role="quick-margin-list"]
+* link:rp-use-protect.html["ワークロードを保護する"]
++
+** オプションとして、link:suspicious-user-activity.html["疑わしいユーザーアクティビティの検出を設定して保護を強化する"]
+
+
+* 必要に応じて、バックアップの保存先を構成します。
++
+** link:rp-start-setup.html["NetApp StorageGRID、Amazon Web Services、Google Cloud Platform、または Microsoft Azure をバックアップ先として準備します。"] 。
+** link:rp-start-setup.html["バックアップ先を設定する"]
+
+
+* link:rp-use-alert.html["潜在的なランサムウェア攻撃の検出に対応する"]
+* link:rp-use-recover.html["攻撃からの回復（インシデントが中和された後）"]
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4"]次は何?
+[role="quick-margin-para"]
+Ransomware Resilience で保護を構成した後、次に実行できる操作は次のとおりです。
+
+[role="quick-margin-list"]
+* link:rp-use-protect-classify.html["データ分類を有効にしてガバナンスとセキュリティリスクを特定します"]
+* link:rp-use-settings.html#connect-to-a-security-and-event-management-system-siem-for-threat-analysis-and-detection["SIEMにアラートを送信する"]
+* link:p-use-reports.html["アラート、保護、準備訓練、回復、または概要レポートをダウンロードする"]
 
