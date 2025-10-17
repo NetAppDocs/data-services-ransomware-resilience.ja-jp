@@ -209,9 +209,6 @@ Google Cloud Platform (GCP) をバックアップ先として設定するには�
 .手順
 . *設定 > バックアップ先* ページで、*追加* を選択します。
 . バックアップ先の名前を入力します。
-+
-image:screen-settings-backup-destination-gcp.png["バックアップ先ページ"]
-
 . *Google Cloud Platform* を選択します。
 . 各設定の横にある下矢印を選択し、値を入力または選択します。
 +
@@ -219,6 +216,9 @@ image:screen-settings-backup-destination-gcp.png["バックアップ先ページ
 +
 *** 新しいバケットを作成します。アクセスキーとシークレットキーを入力します。
 *** Google Cloud Platform プロジェクトとリージョンを入力または選択します。
++
+image:screen-settings-backup-destination-gcp.png["バックアップ先ページ"]
+
 
 
 ** *暗号化*: 新しいバケットを作成する場合は、プロバイダーから提供された暗号化キー情報を入力します。既存のバケットを選択した場合は、暗号化情報がすでに利用可能です。
