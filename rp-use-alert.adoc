@@ -142,10 +142,10 @@ TIP: メール通知を購読するには、 https://docs.netapp.com/us-en/conso
 
 [アラート] タブを見ると、悪意のあるアクティビティや異常なユーザー動作があるかどうかを確認できます。
 
-ユーザー レベルの検出を表示するには、ユーザー アクティビティ エージェントを構成し、ユーザー動作検出機能を備えた保護ポリシーを有効にする必要があります。ユーザー行動検出が有効になっている場合、アラート ダッシュボードに *不審なユーザー* 列が表示されます。ユーザー行動検出が有効になっていない場合は表示されません。不審なユーザーの検出を有効にするには、link:suspicious-user-activity.html["不審なユーザーアクティビティ"] 。
+ユーザー レベルのアラートを表示するには、ユーザー アクティビティ エージェントを構成し、ユーザー動作検出機能を備えた保護ポリシーを有効にする必要があります。ユーザー行動検出が有効になっている場合、アラート ダッシュボードに *不審なユーザー* 列が表示されます。ユーザー行動検出が有効になっていない場合は表示されません。不審なユーザーの検出を有効にするには、link:suspicious-user-activity.html["不審なユーザーアクティビティ"] 。
 
 
-NOTE: NetApp Data Infrastructure Insights (DII) Workload Security を使用している場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用することをお勧めします。Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナントの間にペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。
+NOTE: NetApp Data Infrastructure Insights (DII) Workload Security を使用している場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用することをお勧めします。Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナント間のペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。
 
 
 
@@ -183,7 +183,7 @@ image:screen-alerts-incidents3.png["アラートインシデントページ"]
 . ランサムウェア耐性メニューから、「アラート」を選択します。
 . アラートを選択します。
 . アラート内のインシデントを確認します。
-. コンソールによって監視されている環境内で、疑わしいユーザーによるさらなるアクセスをブロックするには、ユーザー名の下の [*ブロック*] を選択します。
+. 環境内の疑わしいユーザーをブロックするには、ユーザー名の下にある [*ブロック*] を選択します。
 
 
 
@@ -223,7 +223,7 @@ image:screen-alerts-incidents3.png["アラートインシデントページ"]
 ワークロードを閉じると、潜在的なランサムウェア攻撃に応じて自動的に作成されたすべてのスナップショット コピーが完全に削除されます。
 
 
-CAUTION: アラートを無視した場合、そのステータスを他のステータスに戻すことはできず、この変更を元に戻すこともできません。
+CAUTION: アラートを無視した場合、そのステータスを変更したり、この変更を元に戻したりすることはできません。
 
 *必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
@@ -277,5 +277,5 @@ TIP: ボリュームに複数のアラートがある場合は、アラートご
 +
 image:screen-alerts-incidents-impacted-files.png["特定のアラートの影響を受けるファイルのリスト"]
 
-. そのインシデントについては、ダウンロード アイコンを選択し、影響を受けるファイルのリストを CSV 形式でダウンロードします。
+. そのインシデントについては、ダウンロード アイコンを選択して、影響を受けるファイルのリストを CSV 形式でダウンロードします。
 

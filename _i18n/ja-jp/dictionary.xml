@@ -473,24 +473,13 @@
   <block id="1f25ef09ab6fce0b56c79cd4246453be" category="paragraph">*ポリシーを無効にできますか?*</block>
   <block id="c90f429b2fc82db14813e44ccf0893a7" category="paragraph">System Manager UI、API、または CLI を使用して、検出ポリシーで ARP を無効にすることができます。</block>
   <block id="389b413db649d1d5d2854fd3e4faf2e6" category="paragraph">FPolicy およびバックアップ ポリシーを無効にするには、それらを含まない別のポリシーを適用します。</block>
-  <block id="0a0e0e0ad04e5c7e8ed3c1b30cb4d073" category="summary">ライセンスを設定して、NeApp Ransomware Resilience の使用を開始します。</block>
   <block id="8c4e51cf0af97fc084c32c7697ac400c" category="doc">NetApp Ransomware Resilienceのライセンスを設定する</block>
   <block id="9472cf1130b90417862c1aa4710f22a7" category="paragraph">NetApp Ransomware Resilienceでは、さまざまなライセンス プランを使用できます。</block>
   <block id="bf82f97d170b8b28711b0f6354af9b31" category="inline-link">コンソールアクセスロールについて学ぶ</block>
   <block id="28cfeb7fff7b4f9ab9bf205d7135f788" category="paragraph">このタスクを実行するには、組織管理者、フォルダー管理者、またはプロジェクト管理者のロールが必要です。<block ref="43e60870b1a681df3de2812caf2de958" category="inline-link-rx"></block> 。</block>
-  <block id="f53f2f881ada2816fc6ddea06cdcfc60" category="paragraph">*ライセンスの種類* 次のライセンスの種類を使用できます。</block>
-  <block id="b5bf014c6bc530be1a7b68b5bcfb8ce0" category="list-text">Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace、または Azure Marketplace で従量課金制 (PAYGO) サブスクリプションを購入します。</block>
   <block id="bcc2135df9c790b26ee1baa911a601ef" category="paragraph">BYOL を設定するか、PAYGO サブスクリプションを購入すると、コンソールの[Licenses and subscriptions]セクションでライセンスを確認できます。</block>
-  <block id="aa4412f38985c565aeb98dc6634f3029" category="paragraph">無料トライアルが終了した後、またはライセンスやサブスクリプションの有効期限が切れた後でも、Ransomware Resilience で次の操作を実行できます。</block>
-  <block id="9f5e79cce3ac3e1b3962cddaef91e4e0" category="list-text">ワークロードとワークロードの健全性を表示します。</block>
-  <block id="ed2dd81f2c51f4d72049803cf5ce6211" category="list-text">ポリシーなどのリソースを削除します。</block>
-  <block id="1594f78ebbb281f7b5359eb6d2b89912" category="list-text">試用期間中またはライセンスに基づいて作成されたすべてのスケジュールされた操作を実行します。</block>
   <block id="231fd9de718f42c1c9e89368821092dd" category="section-title">その他のライセンス</block>
   <block id="1f39796076513bca42919b255963cd5a" category="admonition">バックアップとリカバリとランサムウェア耐性の両方をお持ちの場合、両方の製品で保護されている共通データについては、ランサムウェア耐性に対してのみ課金されます。</block>
-  <block id="b22e0a0c145eff4bd34bc6c46894b2a1" category="section-title">30日間の無料トライアルでお試しください</block>
-  <block id="50de852d5302d938fcee7f3cfc39b286" category="paragraph">30 日間の無料トライアルを使用して、Ransomware Resilience を試すことができます。無料トライアルを開始するには、コンソール組織管理者である必要があります。</block>
-  <block id="6d82276368a10a436380f0cd7fa6094d" category="admonition">2024 年 10 月のリリースでは、Ransomware Resilience の新規展開に 30 日間の無料トライアルが提供されます。以前、Ransomware Resilience は 90 日間の無料トライアルを提供していました。すでに 90 日間の無料トライアル中の場合は、そのオファーは 90 日間継続されます。</block>
-  <block id="88c474e49a0cbbc7ef17d052040cd008" category="paragraph">トライアル期間中は容量制限は適用されません。</block>
   <block id="3ad87b9da828fc1c8e612ab5674dbabe" category="paragraph">いつでもライセンスを取得したりサブスクライブしたりすることができ、30 日間の試用期間が終了するまで料金は発生しません。  30 日間の試用期間後に継続するには、BYOL ライセンスまたは PAYGO サブスクリプションを購入する必要があります。</block>
   <block id="f37d436fdc8600ce24709a8f4435ec79" category="paragraph">試用期間中は、すべての機能をご利用になれます。</block>
   <block id="bccaa4aa80831b76c11240a16447975f" category="inline-link">コンソール</block>
@@ -498,10 +487,6 @@
   <block id="4a43cddfeeabba4570c14c252dec0bd1" category="list-text">コンソールにログインします。</block>
   <block id="16bcca2caaffd4aceb0b9f940711e44a" category="list-text">NetApp Consoleから、*保護* &gt; *ランサムウェア耐性* を選択します。</block>
   <block id="04f45bf7defd11ead0b4c56cf8c3f371" category="paragraph">このサービスに初めてログインする場合は、ランディング ページが表示されます。</block>
-  <block id="771e1ea643a8723d0d0dfad6c2b70ace" category="list-text">他のサービス用のコネクタをまだ追加していない場合は、追加します。</block>
-  <block id="91e534d044a3d9c6a1c8575f89e73c9b" category="inline-link">コンソールエージェントについて学ぶ</block>
-  <block id="395a0c83d18cd49c5468e19cda311fa7" category="paragraph">コンソールエージェントを追加するには、<block ref="552a7d66ccd9c93a9dbc55fd8ef74d52" category="inline-link-rx"></block> 。</block>
-  <block id="ce56f7856e3d6cb0eb9ff3ddabe5ec4e" category="list-text">コンソール エージェントを設定すると、ランサムウェア耐性ランディング ページで、コンソール エージェントを追加するためのボタンがワークロードを検出するためのボタンに変わります。  *ワークロードの検出から開始*を選択します。</block>
   <block id="7fd2f910bce182f3bed45cb0ffe3f2b7" category="list-text">無料トライアルの情報を確認するには、右上のドロップダウン オプションを選択します。</block>
   <block id="07b00cce8ecdc9955eb27940a652e625" category="paragraph">*試用期間が終了したら、サブスクリプションまたはライセンスを取得してください*</block>
   <block id="a668e7961280a1c2dd9b2e1867761d44" category="paragraph">無料トライアルが終了したら、いずれかのマーケットプレイスを通じてサブスクライブするか、 NetAppからライセンスを購入することができます。</block>
@@ -523,7 +508,6 @@
   <block id="adee13c3532773f19ac1ed1cd57fb86d" category="list-text">*ライセンスの追加*を選択して、コンソールにライセンスを追加します。</block>
   <block id="2e8bc7beff420b094bb88e9d8c7ae468" category="inline-image-macro">ライセンスの追加ページのスクリーンショット。</block>
   <block id="91aa021bc5ef766666131294c51b12a9" category="paragraph"><block ref="91aa021bc5ef766666131294c51b12a9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="dda85ea2192849a87663a1971ff2c144" category="list-text">[ライセンスの追加] ページで、[*シリアル番号を入力*] を選択し、送信された電子メールに記載されているシリアル番号を入力して、[*ライセンスの追加*] を選択します。</block>
   <block id="44c74befbf9a8104854254c21263bbd0" category="list-text">ライセンスの詳細を表示するには、コンソールの左側のナビゲーションから [*管理*] &gt; [*Licenses and subscriptions*] を選択します。</block>
   <block id="6ba03f72ccb23acc2e71d13b30e6a6f3" category="list-text">サブスクリプション情報を表示するには、[*サブスクリプション*] を選択します。</block>
   <block id="3a868051eb374227c279870a3cc58719" category="list-text">BYOL ライセンスを表示するには、*データ サービス ライセンス* を選択します。</block>
@@ -574,7 +558,6 @@
   <block id="3973bc267f97fbc53e553dbba08e2ea9" category="admonition">このメッセージはLicenses and subscriptionsにも表示されます。<block ref="a12300a172aa5e6e63382bcb48a8348c" category="inline-link-rx"></block> 。</block>
   <block id="bf817abc839636c237e9679a5b237f47" category="list-text">ライセンスの更新をリクエストするには、サポートに電子メールを送信できます。</block>
   <block id="153d23d2fc1cd1fafa2626b2ebad671d" category="paragraph">ライセンスの料金を支払い、ライセンスがNetAppサポート サイトに登録されると、コンソールによってライセンスが自動的に更新されます。データ サービス ライセンス ページには 5 ～ 10 分以内に変更が反映されます。</block>
-  <block id="6c1f5db8cc1f713f620fa21a318cf1bc" category="list-text">コンソールがライセンスを自動的に更新できない場合は、ライセンス ファイルを手動でアップロードする必要があります。</block>
   <block id="147b35ab5352426bba38d99d810db4ed" category="list-text">ライセンス ファイルは、 NetAppサポート サイトから入手できます。</block>
   <block id="f3538d2e62d8886ed134a8cd0baef1b1" category="list-text">コンソールで、**管理** &gt; **Licenses and subscriptions** を選択します。</block>
   <block id="08fc265b64fb33dd4dd39826e253b59a" category="list-text">*データ サービス ライセンス* タブを選択し、更新するシリアル番号の *アクション...* アイコンを選択して、*ライセンスの更新* を選択します。</block>
@@ -646,7 +629,6 @@
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1</block>
   <block id="a2d56436fc6737079209e6c74380c5fb" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>前提条件を確認する</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2</block>
-  <block id="916d9ab8dea7ac43f2e082cba0d4f60d" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>ランサムウェア耐性を設定する</block>
   <block id="0545ec91139cbe1d8ed0b333ebef939f" category="inline-link-macro">NetApp StorageGRID、Amazon Web Services、Google Cloud Platform、または Microsoft Azure をバックアップ先として準備します。</block>
   <block id="72f842d16f2016131d4e9d7e14038e88" category="list-text"><block ref="9e4e7ea8cc8b7b041d3f5d7300c15c3a" category="inline-link-macro-rx"></block> 。</block>
   <block id="fc52e84f4845e2ef8156001fa74f3954" category="inline-link-macro">コンソールでワークロードを検出する</block>
@@ -841,8 +823,6 @@
   <block id="be962bd392a7a1672125ea27465c8bd8" category="section-title">悪意のあるアクティビティや異常なユーザー行動を検出する</block>
   <block id="9d06719f2534c2ebd6c7bed1fd263123" category="paragraph">[アラート] タブを見ると、悪意のあるアクティビティや異常なユーザー動作があるかどうかを確認できます。</block>
   <block id="30cd6d23e33e657384daad5db666d56c" category="inline-link-macro">不審なユーザーアクティビティ</block>
-  <block id="92733af7522951b34c707ece97b76dbb" category="paragraph">ユーザー レベルの検出を表示するには、ユーザー アクティビティ エージェントを構成し、ユーザー動作検出機能を備えた保護ポリシーを有効にする必要があります。ユーザー行動検出が有効になっている場合、アラート ダッシュボードに *不審なユーザー* 列が表示されます。ユーザー行動検出が有効になっていない場合は表示されません。不審なユーザーの検出を有効にするには、<block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block> 。</block>
-  <block id="df6951a826abfdd03d428573cabc8a91" category="admonition">NetApp Data Infrastructure Insights (DII) Workload Security を使用している場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用することをお勧めします。Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナントの間にペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。</block>
   <block id="2654c9fc1ffd83d2d016920464872d91" category="section-title">悪意のあるアクティビティを表示する</block>
   <block id="c0339a08bfb0fb26aa3ecea9980349b3" category="paragraph">Autonomous Ransomware Protection が Ransomware Resilience でアラートをトリガーすると、次の詳細を表示できます。</block>
   <block id="da00dfcf2d3126754537ccdf32df23fa" category="list-text">受信データのエントロピー</block>
@@ -859,7 +839,6 @@
   <block id="24d8050f046c3ac972fd95f26e1a8670" category="list-text">インシデントの詳細を確認するには、インシデントを選択します。</block>
   <block id="ff74e9f48366f1b4465d1920693ddea8" category="inline-link-macro">ランサムウェア耐性設定を構成する</block>
   <block id="f784461c39e5b287f6733d0ee28efad4" category="paragraph">異常なユーザー行動を表示するように疑わしいユーザー検出を設定している場合は、ユーザーレベルのデータを表示し、特定のユーザーをブロックできます。疑わしいユーザーの設定を有効にするには、<block ref="788275b5d10fa192a2bbf25cebb6c38f" category="inline-link-macro-rx"></block> 。</block>
-  <block id="ec2349017ee84d143f6965ba0b643c86" category="list-text">コンソールによって監視されている環境内で、疑わしいユーザーによるさらなるアクセスをブロックするには、ユーザー名の下の [*ブロック*] を選択します。</block>
   <block id="705db8b34cf00efb73abf6403278e299" category="section-title">ランサムウェア インシデントを復旧準備完了としてマークする (インシデントが中和された後)</block>
   <block id="3950c317c3c61c1f422abb2e301a90ca" category="paragraph">攻撃を阻止した後、データの準備ができたことをストレージ管理者に通知し、リカバリを開始できるようにします。</block>
   <block id="a31e44b45b823ec61483db05b99be2cb" category="paragraph"><block ref="a31e44b45b823ec61483db05b99be2cb" category="inline-image-macro-rx" type="image"></block></block>
@@ -873,7 +852,6 @@
   <block id="b0b578b8be1448972010b482195bbda8" category="paragraph">インシデントを確認した後、そのインシデントが潜在的な攻撃であるかどうかを判断する必要があります。実際の脅威ではない場合は無視できます。</block>
   <block id="74583f536ee54b8803ab561a596f2bb9" category="paragraph">誤検知を無視するか、すぐにデータを回復することを決定できます。アラートを無視すると、Ransomware Resilience はこの動作を学習し、通常の操作と関連付けて、そのような動作に対して再度アラートを開始しなくなります。</block>
   <block id="5a5533258cfacee641d19f7f201b727f" category="paragraph">ワークロードを閉じると、潜在的なランサムウェア攻撃に応じて自動的に作成されたすべてのスナップショット コピーが完全に削除されます。</block>
-  <block id="e092b1515493abdb05e77ec47a53f36f" category="admonition">アラートを無視した場合、そのステータスを他のステータスに戻すことはできず、この変更を元に戻すこともできません。</block>
   <block id="46b4f01c45e92cd2d2fe7d4406168b5d" category="list-text">1 つ以上のインシデントを選択します。または、表の左上にあるインシデント ID ボックスを選択して、すべてのインシデントを選択します。</block>
   <block id="c4229f2836db3c8f0198619d853bad27" category="list-text">インシデントが脅威ではないと判断した場合は、誤検知として無視します。</block>
   <block id="a20ff2150b7b9f34f30c94111d0f2672" category="list-text">インシデントを選択します。</block>
@@ -1785,17 +1763,13 @@
   <block id="2a4edc5ec6e55f07dba0609dc2cd6d87" category="summary">Ransomware Resilience の疑わしいユーザー アクティビティ検出により、潜在的な脅威となる可能性のあるユーザー アクティビティを検出できます。</block>
   <block id="906ec8bab01967c36f2f073eff9f54df" category="doc">NetApp Ransomware Resilienceで疑わしいユーザーアクティビティの検出を構成する</block>
   <block id="9ba1db4a2c84400f14de2d58496b9f52" category="paragraph">ランサムウェア耐性は、検出ポリシーで疑わしいユーザー行動の検出をサポートし、ユーザー レベルでランサムウェア インシデントに対処できるようにします。</block>
-  <block id="97f8807a01c3206f369065a241cf5ac7" category="paragraph">Ransomware Resilience は、 ONTAPの FPolicy によって生成されたユーザー アクティビティ イベントを分析して、疑わしいユーザー アクティビティを検出します。ユーザー アクティビティ データを収集するには、1 つ以上のユーザー アクティビティ エージェントを展開する必要があります。エージェントは、テナント上のデバイスに接続できる Linux サーバーまたは VM です。</block>
   <block id="90c4c763135bd7a7443ed22e4149185b" category="section-title">エージェントとコレクター</block>
   <block id="03f21183a058745685d1d78fcc7eab3a" category="paragraph">Ransomware Resilience で疑わしいユーザー アクティビティの検出を有効にするには、少なくとも 1 つのユーザー アクティビティ エージェントをインストールする必要があります。ランサムウェア耐性ダッシュボードから疑わしいユーザー アクティビティ機能を有効にする場合、機能を有効にするためにエージェント ホスト情報を提供する必要があります。</block>
   <block id="2b294b61543173e7462d37def0724cef" category="paragraph">エージェントは複数のデータ コレクターをホストできます。データ コレクターは、分析のためにデータを SaaS の場所に送ります。コレクターには 2 つの種類があります。</block>
-  <block id="4fb02306f3b85b6cfd31c67b79007829" category="list-text">**データ コレクター** はONTAPからユーザー アクティビティ データを収集します。</block>
-  <block id="4449b11da47ae4743bfe16fdd7a33631" category="list-text">**ユーザー ディレクトリ コネクタ** はディレクトリに接続して、ユーザー ID をユーザー名にマッピングします。</block>
   <block id="fa83d0f077ae64e1df0b8a9ed9982815" category="paragraph">コレクターは、ランサムウェア耐性設定で構成されます。</block>
   <block id="4f047e83e52e21d5382adc1b5dbf3119" category="section-title">ユーザーアクティビティエージェントを追加する</block>
   <block id="4d4379036f7207029fbe126649ccc0a6" category="paragraph">ユーザー アクティビティ エージェントはデータ コレクターの実行可能環境です。データ コレクターはユーザー アクティビティ イベントを Ransomware Resilience と共有します。疑わしいユーザー アクティビティの検出を有効にするには、少なくとも 1 つのユーザー アクティビティ エージェントを作成する必要があります。</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="section-title">要件</block>
-  <block id="69cba9646d8849744460eb9ba06c7bd6" category="paragraph">ユーザー アクティビティ エージェントをインストールするには、次のいずれかのサポートされているオペレーティング システムとサーバー要件を満たすホストまたは VM が必要です。</block>
   <block id="176c18a49aa227401be466a34a903666" category="paragraph">**オペレーティング システム要件**</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">オペレーティング システム</block>
   <block id="2e5d14f7919ff3c6138e7845aec4f915" category="cell">サポート対象のバージョン</block>
@@ -1821,7 +1795,6 @@
   <block id="fd9b966c1c6f66e7c4f38e133767c880" category="paragraph">サーバーは次の最小要件を満たしている必要があります。</block>
   <block id="f0499c7832db4d35decdf83de714841c" category="list-text">**CPU**: 4コア</block>
   <block id="4a8a49e18f8860c4232837503bcc2edd" category="list-text">**RAM**: 16GB RAM</block>
-  <block id="465860b9bc6b405baa8ced9914b08ab3" category="list-text">**ディスク容量**: 35GBの空きディスク容量</block>
   <block id="a2ad8789f963859e0c26a6daaec4a76b" category="list-text">ユーザー アクティビティ エージェントを初めて作成する場合は、**ダッシュボード** に移動してください。**ユーザー アクティビティ** タイルで、**アクティブ化** を選択します。</block>
   <block id="44e08a5b01e752ac11f59bba4e07dea7" category="paragraph">追加のユーザー アクティビティ エージェントを追加する場合は、[*設定*] に移動し、[**ユーザー アクティビティ**] タイルを見つけて、[**管理**] を選択します。[ユーザー アクティビティ] 画面で、[**ユーザー アクティビティ エージェント**] タブを選択し、[**追加**] を選択します。</block>
   <block id="75d41b8fe2ef8de56d2fd2046bb0dad3" category="list-text">**クラウド プロバイダー** を選択し、次に **リージョン** を選択します。**次へ**を選択します。</block>
@@ -1834,7 +1807,6 @@
   <block id="7298950e09abf5a29938d42a442acced" category="paragraph"><block ref="7298950e09abf5a29938d42a442acced" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f2d7e7792f60fc56fc833ac06d43ff03" category="list-text">設定を確認してください。*アクティブ化*を選択して、ユーザー アクティビティ エージェントの追加を完了します。</block>
   <block id="a5990ac92f36dcb99f016321efbfa2cd" category="list-text">ユーザー アクティビティ エージェントが正常に作成されたことを確認します。ユーザー アクティビティ タイルに、成功したデプロイメントが「実行中」として表示されます。</block>
-  <block id="58dc71d80ac36fa12a160eef553b4dac" category="paragraph">ユーザー アクティビティ エージェントが正常に作成されたら、[**設定**] メニューに戻り、[ユーザー アクティビティ] タイルで [**管理**] を選択します。**ユーザー アクティビティ エージェント** タブを選択し、ユーザー アクティビティ エージェントを選択して、データ コレクターやユーザー ディレクトリ コネクタなどの詳細を表示します。</block>
   <block id="87890c9758b28588c6845cfcf6d19b17" category="section-title">データコレクターを追加する</block>
   <block id="cebc35dcf9d04a393d86d35a4e3cf6be" category="inline-xref-macro">検出ポリシーを追加する</block>
   <block id="24590b7519b5649099545f7ef699e504" category="paragraph">疑わしいユーザー アクティビティの検出を含むランサムウェア保護戦略を有効にすると、データ コレクターが自動的に作成されます。詳細については、以下を参照してください。 <block ref="c43e895be468efa96867f0ef21f97de4" category="inline-xref-macro-rx"></block> 。</block>
@@ -1842,7 +1814,6 @@
   <block id="79994c0d6b62d6854ba2d69416af2030" category="inline-image-macro">ユーザーアクティビティ設定のスクリーンショット</block>
   <block id="eb9abd0b9e77424befbbd0596585482d" category="paragraph"><block ref="eb9abd0b9e77424befbbd0596585482d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ae5063128f989ec31ec308b7dd0cb2ed" category="section-title">ユーザーディレクトリコネクタを追加する</block>
-  <block id="0e27165c28d4f54b78e7e5ec47c83fc4" category="paragraph">ユーザー ID をユーザー名にマップするには、ユーザー ディレクトリ コネクタを作成する必要があります。</block>
   <block id="8348d8dcee9ea32e049e21c42a431b91" category="list-text">Ransomware Resilience で、[*設定*] に移動します。</block>
   <block id="9fcb0a7634f29d96ae98e37bbc76e1cd" category="list-text">ユーザー アクティビティ タイルで、**管理** を選択します。</block>
   <block id="e70202c14c96f451fdcf2617844ea351" category="list-text">**ユーザー ディレクトリ コネクタ** タブを選択し、**追加** を選択します。</block>
@@ -2018,8 +1989,6 @@
   <block id="34691f87b892c333fe1b7a23452dcda6" category="paragraph">Ransomware Resilience が疑わしいユーザー行動に関するアラートを提供するには、ユーザー アクティビティ エージェントを構成する必要があります。詳細については、 <block ref="f3d3e5726f7feb4b59ca728c906df758" category="inline-link-macro-rx"></block>。</block>
   <block id="793485138a653779a0c8cb91bf9fc979" category="list-text">準備訓練の種類を選択します。暗号化データ侵害から手動で回復する場合は、**カスタム回復** を選択します。疑わしいユーザーアクティビティからの回復には、**データ侵害** を選択します。</block>
   <block id="8e0b9d66ccd774ed98d0b31d0e6ed305" category="admonition">ドリルの実行中は、準備ドリルの構成を編集することはできません。ドリルをリセットして停止し、設定を変更することができます。</block>
-  <block id="4226ab30b4df5e39149316f15c13d274" category="list-text">BYOL (Bring Your Own License) は、 NetApp の営業担当者から取得したNetAppライセンス ファイル (NLF) です。ライセンス シリアル番号を使用して、コンソールで BYOL をアクティブ化できます。</block>
-  <block id="18105991dc2815c0ab610717f615d548" category="admonition">6 か月間の試用版に登録する場合は、NLF ライセンスが必要です。</block>
   <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">Ransomware Resilience ライセンスには、追加のNetApp製品は含まれません。ただし、バックアップとリカバリ用の個別のライセンスがない場合でも、Ransomware Resilience はNetApp Backup and Recoveryと統合できます。</block>
   <block id="c785cc029c5e88f7796b29b4ff0e99e1" category="paragraph">ランサムウェア耐性を設定し、ワークロードを保護するために従う必要がある大まかな手順を理解します。</block>
   <block id="6ff0e20f052119502398978ae7712412" category="paragraph">詳しい情報については、各ステップのリンクを参照してください。</block>
@@ -2055,4 +2024,37 @@
   <block id="b5884d5e59b952624998be52e7a9fe97" category="list-text"><block ref="b5884d5e59b952624998be52e7a9fe97" category="inline-link-macro-rx"></block></block>
   <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">NetApp Ransomware Resilienceでは、 NetApp Data Classificationを使用して、ファイル共有ワークロード内のデータをスキャンおよび分類できます。データを分類すると、データセットに個人を特定できる情報 (PII) が含まれているかどうかを判断するのに役立ちますが、これによりセキュリティ リスクが増大する可能性があります。データ分類はNetApp Consoleのコア コンポーネントであり、追加費用なしで利用できます。</block>
   <block id="4342c3c480135ea7c9398a3ba08357ec" category="sidebar">NetApp Ransomware Resilience は、オンプレミスおよびクラウド ストレージにおけるランサムウェアの脅威からアプリケーション ワークロードとファイル共有を保護、検出し、リカバリをサポートします。ランサムウェア耐性により、安全なバックアップとリカバリが可能になり、組織は Oracle、MySQL、VM データストア、NAS ストレージなどの重要なデータを保護し、ビジネスの継続性を維持できるようになります。</block>
+  <block id="7b36da612c0e3a400f4daecc8016f21e" category="summary">システムとワークロードを保護するには、Ransomware Resilience のライセンス要件を満たしていることを確認してください。</block>
+  <block id="785a67fbf7c46bd5774af376154df40a" category="paragraph">*ライセンスの種類* Ransomware Resilience は、次のライセンスの種類で利用できます。</block>
+  <block id="5ef05167488611c5bd4ff0f410595ce4" category="list-text">30日間無料トライアル</block>
+  <block id="e71ba6c3178fa6f6844891e615ad0570" category="list-text">Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace、または Azure Marketplace で従量課金制 (PAYGO) サブスクリプションを購入する</block>
+  <block id="2f0583f3da64d216aa72116dc3460499" category="list-text">お客様独自のライセンスの持ち込み (BYOL): NetApp の営業担当者から取得したNetAppライセンス ファイル (NLF)。ライセンス シリアル番号を使用して、コンソールで BYOL をアクティブ化できます。</block>
+  <block id="16c0368d04c8f5c865d6c2e90734f733" category="paragraph">無料トライアルが終了した後、またはライセンスやサブスクリプションの有効期限が切れた後でも、次のことができます。</block>
+  <block id="99c8f1488beda59e11f21ed9f557f56e" category="list-text">ワークロードとワークロードの健全性を表示する</block>
+  <block id="1975faa7cb5e0e460ae859ca96dbfd00" category="list-text">ポリシーなどのリソースを削除する</block>
+  <block id="f51b0d61321d5c9f169d1ee6403840fa" category="list-text">試用期間中またはライセンスに基づいて作成されたすべてのスケジュールされた操作を実行します</block>
+  <block id="3819161dec7fd89239516062a4cc56a3" category="section-title">30日間の無料トライアルでランサムウェア耐性をお試しください</block>
+  <block id="e20a7cd21fba7d540ffd7589c1c59928" category="paragraph">Ransomware Resilience を 30 日間無料でお試しいただけます。無料トライアルを開始するには、コンソール組織管理者である必要があります。</block>
+  <block id="85a5bc1275ab09d60eed9f7c3b4d429b" category="paragraph">試用期間中はストレージ容量の制限は適用されません。</block>
+  <block id="ca78bf5eeed0245ff3d76d132c93b609" category="inline-link-macro">1つ追加</block>
+  <block id="94c135a38d325e223714d1f313c8efec" category="list-text">他のサービス用のコンソールエージェントをまだ追加していない場合は、<block ref="f7f69135987ef22de86b03a4f14a7bc8" category="inline-link-macro-rx"></block> 。</block>
+  <block id="edbdd3e3e169cd712816f78b82e91c2e" category="list-text">ランサムウェア耐性ランディング ページで、*ワークロードの検出から開始* を選択してワークロードを検出します。</block>
+  <block id="2866dfee0ffdf3a11a8323f6d53635f4" category="admonition">このオプションは、コンソール エージェントが正常にインストールされている場合にのみ使用できます。</block>
+  <block id="933f33d572b754e91a336439049ae279" category="list-text">[ライセンスの追加] ページで、[シリアル番号を入力] を選択し、送信された電子メールに記載されているシリアル番号を入力して、[ライセンスの追加] を選択します。</block>
+  <block id="2515e2bcc68e80666fa8c369e88f71e5" category="paragraph">ライセンスが追加されたことを確認するメッセージが表示されます。</block>
+  <block id="fca5751a0529f9987d0699648a97be3a" category="list-text">コンソールがライセンスを自動的に更新できない場合は、ライセンス ファイルを手動でアップロードする必要があります。</block>
+  <block id="f8541056d6bacae1a78fb5d2b68c67a8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>ランサムウェア耐性を始めましょう</block>
+  <block id="43eec2eb3dba42398d66e0c2aa294ea2" category="paragraph">ユーザー レベルのアラートを表示するには、ユーザー アクティビティ エージェントを構成し、ユーザー動作検出機能を備えた保護ポリシーを有効にする必要があります。ユーザー行動検出が有効になっている場合、アラート ダッシュボードに *不審なユーザー* 列が表示されます。ユーザー行動検出が有効になっていない場合は表示されません。不審なユーザーの検出を有効にするには、<block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block> 。</block>
+  <block id="3c6a637355e70f686e34e6e7c966c200" category="admonition">NetApp Data Infrastructure Insights (DII) Workload Security を使用している場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用することをお勧めします。Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナント間のペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。</block>
+  <block id="7a7f05bb105ddcf9c0d221e37f8a923c" category="list-text">環境内の疑わしいユーザーをブロックするには、ユーザー名の下にある [*ブロック*] を選択します。</block>
+  <block id="bc8ffb69fb560086f529e0097158caad" category="admonition">アラートを無視した場合、そのステータスを変更したり、この変更を元に戻したりすることはできません。</block>
+  <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">そのインシデントについては、ダウンロード アイコンを選択して、影響を受けるファイルのリストを CSV 形式でダウンロードします。</block>
+  <block id="8c7f95ceb912c8aea11de028710caf47" category="paragraph">Ransomware Resilience は、 ONTAPの FPolicy によって生成されたユーザー アクティビティ イベントを分析して、疑わしいユーザー アクティビティを検出します。ユーザー アクティビティ データを収集するには、1 つ以上のユーザー アクティビティ エージェントを展開する必要があります。エージェントは、テナント上のデバイスに接続できる Linux サーバーまたは VM です。</block>
+  <block id="fe1bb8cb54f03cf7a69c3e9568118b30" category="list-text">**データ コレクター** は、 ONTAPからユーザー アクティビティ データを収集します。</block>
+  <block id="b6173a051353d59a4ee775fcef288441" category="list-text">**ユーザー ディレクトリ コネクタ** はディレクトリに接続して、ユーザー ID をユーザー名にマッピングします。</block>
+  <block id="508899c1c018f291af4cb6a0423c426c" category="paragraph">*必要なコンソール ロール* 疑わしいユーザー アクティビティの検出を有効にするには、組織管理者のロールが必要です。疑わしいユーザー アクティビティに関する後続の構成では、ランサムウェア耐性ユーザー ビヘイビア管理者ロールが必要です。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
+  <block id="53b036bcd07f4ebcfe2ec32a98556822" category="paragraph">ユーザー アクティビティ エージェントをインストールするには、次のサポートされているオペレーティング システムとサーバーの要件を満たすホストまたは VM が必要です。</block>
+  <block id="d4a6e9b0b745b83f49163b25271ce445" category="list-text">**ディスク容量**: 35GBの空きディスク容量</block>
+  <block id="398de83ff8f318218f9eaedb05929ef0" category="paragraph">ユーザー アクティビティ エージェントが正常に作成されたら、[**設定**] メニューに戻り、[ユーザー アクティビティ] タイルで [**管理**] を選択します。**ユーザー アクティビティ エージェント** タブを選択し、ユーザー アクティビティ エージェントを選択して、データ コレクターやユーザー ディレクトリ コネクタなどの詳細を表示します。</block>
+  <block id="a83ea9a287c9fdd0689933a464055150" category="paragraph">ユーザー ID をユーザー名にマップするには、ユーザー ディレクトリ コネクタを作成する必要があります。</block>
 </blocks>
