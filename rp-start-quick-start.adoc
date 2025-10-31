@@ -64,5 +64,5 @@ Ransomware Resilience で保護を構成した後、次に実行できる操作�
 [role="quick-margin-list"]
 * link:rp-use-protect-classify.html["データ分類を有効にしてガバナンスとセキュリティリスクを特定します"]
 * link:rp-use-settings.html#connect-to-a-security-and-event-management-system-siem-for-threat-analysis-and-detection["SIEMにアラートを送信する"]
-* link:p-use-reports.html["アラート、保護、準備訓練、回復、または概要レポートをダウンロードする"]
+* link:rp-use-reports.html["アラート、保護、準備訓練、回復、または概要レポートをダウンロードする"]
 
