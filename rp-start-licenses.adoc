@@ -16,7 +16,11 @@ NetApp Ransomware Resilienceでは、さまざまなライセンス プランを
 
 このタスクを実行するには、組織管理者、フォルダー管理者、またはプロジェクト管理者のロールが必要です。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["コンソールアクセスロールについて学ぶ"^] 。
 
-*ライセンスの種類* Ransomware Resilience は、次のライセンスの種類で利用できます。
+
+
+== ライセンス タイプ
+
+Ransomware Resilience は、次のライセンス タイプで利用できます。
 
 * 30日間無料トライアル
 * Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace、または Azure Marketplace で従量課金制 (PAYGO) サブスクリプションを購入する

@@ -12,58 +12,72 @@ summary: 環境、ネットワーク アクセス、ログイン、Web ブラウ
 
 
 [role="lead"]
-運用環境、ログイン、ネットワーク アクセス、Web ブラウザの準備状況を確認して、 NetApp Ransomware Resilienceを開始してください。
+運用環境、ネットワーク アクセス、Web ブラウザの準備状況を確認して、 NetApp Ransomware Resilienceを開始してください。
 
-Ransomware Resilience を使用するには、次の前提条件を満たす必要があります。
+Ransomware Resilience を使用するには、前提条件を満たしていることを確認してください。
 
 
 
-== NetApp Console
+== サポートされているシステム
+
+サポートされているシステムを使用していることを確認してください。
+
+* ONTAPバージョン 9.11.1 以降を搭載したオンプレミスのONTAP NAS (NFS および CIFS プロトコルを使用)
+* ONTAPバージョン 9.17.1 以降を搭載したオンプレミスのONTAP SAN (FC、iSCSI、NVMe プロトコルを使用)
+* AWS 用のCloud Volumes ONTAP 9.11.1 以上（NFS および CIFS プロトコルを使用）
+* Google Cloud Platform 用のCloud Volumes ONTAP 9.11.1 以上（NFS および CIFS プロトコルを使用）
+* Microsoft Azure 用のCloud Volumes ONTAP 9.12.1 以上 (NFS および CIFS プロトコルを使用)
+* AWS、Google Cloud Platform、Microsoft Azure 向けのCloud Volumes ONTAP 9.17.1 以上（FC、iSCSI、NVMe プロトコルを使用）
+* Amazon FSx for NetApp ONTAP は、自律型ランサムウェア保護 (ARP であり、ARP/AI ではありません) を使用します。
+
+
+
+NOTE: ONTAPで ARP/AI を使用するには、 ONTAP 9.16 以上が必要です。 + ONTAP は、 FlexGroupボリューム、マウント ポイント ボリューム、マウント パス ボリューム、オフライン ボリューム、およびデータ保護 (DP) ボリュームに対してランサムウェア保護サポートを提供しません。必ず確認するlink:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html["ONTAPでサポートされている構成とサポートされていない構成"^]。
+
+
+
+== NetApp Consoleの要件
+
+NetApp Consoleの構成には次のものが必要です。
 
 * リソースを検出するための組織管理者権限を持つNetApp Consoleユーザー アカウント。
-* オンプレミスのONTAPクラスターまたは AWS または Azure のCloud Volumes ONTAPに接続するアクティブなコンソールエージェントが少なくとも 1 つあるコンソール組織。
-* コンソールエージェントには、 `cloudmanager-ransomware-protection`アクティブな状態のコンテナ。
-* NetAppオンプレミスONTAPクラスターまたは AWS または Azure のCloud Volumes ONTAP を備えた少なくとも 1 つのコンソール システム。  Ransomware Resilience は、NAS (NFS および SMB) と SAN (iSCSI、FC、NVMe) の両方のプロトコルをサポートします。
+* 少なくとも1つのアクティブなコンソールエージェントが接続しているコンソール組織とシステムlink:concept-ransomware-resilience.html#supported-backup-targets-systems-and-workload-data-sources["サポートされているシステム"]。
 +
-** ランサムウェア耐性は、 ONTAPバージョン 9.11.1 以降のONTAPまたはCloud Volumes ONTAPクラスターでサポートされます。
-+
-
-NOTE: SAN ワークロードで Ransomware Resilience を使用する予定の場合は、 ONTAP 9.17.1 以降を実行している必要があります。
-
-** オンプレミスのONTAPクラスターまたは AWS または Azure クラウドのCloud Volumes ONTAP がコンソールにまだオンボードされていない場合は、コンソール エージェントが必要です。
-+
-参照 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["コンソールエージェントの設定方法を学ぶ"]そして https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["標準コンソール要件"^]。
-
+** オンプレミスのONTAPクラスタまたはAWSまたはAzureクラウドのCloud Volumes ONTAPがコンソールで設定されていない場合は、link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["コンソールエージェントの設定方法を学ぶ"^]そしてlink:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["標準コンソール要件"^]。
 +
 
 NOTE: 単一のコンソール組織に複数のコンソール エージェントがある場合、Ransomware Resilience は、コンソール UI で現在選択されているエージェント以外のすべてのコンソール エージェントにわたってONTAPリソースをスキャンします。
 
 
 
-
-
-
-
-== ONTAP 9.11.1以降
-
-* オンプレミスのONTAPインスタンスでONTAP One ライセンスが有効になっています。
-* 使用しているONTAPのバージョンに応じて、オンプレミスのONTAPインスタンスで有効化された、Ransomware Resilience によって使用されるNetApp Autonomous Ransomware Protection のライセンス。参照 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自律型ランサムウェア対策 - 概要"^]。
+* コンソールエージェントには、 `cloudmanager-ransomware-protection`アクティブな状態のコンテナ。
+* NetAppオンプレミスONTAPクラスターまたは AWS または Azure のCloud Volumes ONTAP を備えた少なくとも 1 つのコンソール システム。  Ransomware Resilience は、NAS (NFS および SMB) と SAN (iSCSI、FC、NVMe) の両方のプロトコルをサポートします。
++
+** ランサムウェア耐性は、 ONTAPバージョン 9.11.1 以降のONTAPまたはCloud Volumes ONTAPクラスターでサポートされます。
 +
 
-NOTE: Ransomware Resilience の一般リリースには、プレビュー リリースとは異なり、 NetApp Autonomous Ransomware Protection テクノロジーのライセンスが含まれています。参照 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自律型ランサムウェア対策 - 概要"^]詳細については。
+NOTE: SAN ワークロードで Ransomware Resilience を使用するには、 ONTAP 9.17.1 以降を実行している必要があります。
 
-+
-ライセンスの詳細については、link:concept-ransomware-resilience.html["ランサムウェア耐性について学ぶ"] 。
 
-* 保護構成（自律型ランサムウェア保護の有効化など）を適用するには、Ransomware Resilience にONTAPクラスターに対する管理者権限が必要です。  ONTAPクラスタは、 ONTAPクラスタ管理者のユーザー認証情報のみを使用してオンボードされている必要があります。
-* ONTAPクラスタが非管理者ユーザの認証情報を使用してコンソールにすでにオンボードされている場合は、このページで説明されているように、 ONTAPクラスタにログインして、非管理者ユーザの権限を必要な権限で更新する必要があります。
 
+
+
+
+
+== ONTAPの要件
+
+* オンプレミスのONTAPインスタンスでONTAP One ライセンスが有効になっているONTAP 9.11.1 以降を実行している必要があります。  ONTAPサポートの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自律型ランサムウェア対策 - 概要"^] 。
+* 保護構成（自律型ランサムウェア保護の有効化など）を適用するには、Ransomware Resilience にONTAPクラスターに対する管理者権限が必要です。ONTAPクラスタは、 ONTAPクラスタ管理者のユーザー認証情報のみを使用してオンボードされている必要があります。
+
+
+
+NOTE: 管理者以外の認証情報を使用してONTAPクラスターをコンソールに接続している場合は、[ ONTAPクラスター内の認証情報を更新する必要があります](#ontap システム内の非管理者ユーザー権限の更新)。
 
 
 
 == データのバックアップ
 
-* バックアップ ターゲットおよびアクセス権限セット用のNetApp StorageGRID、AWS S3、Azure Blob、または Google Cloud Platform のアカウント。
+* 適切なアクセス権限が設定されたバックアップ ターゲット用のNetApp StorageGRID、AWS S3、Azure Blob、または Google Cloud Platform のアカウント。
 +
 参照 https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["AWS、Azure、またはS3の権限リスト"^]詳細については。
 
@@ -88,7 +102,7 @@ Ransomware Resilience が疑わしいユーザー行動に関するアラート�
 . コンソールにログインし、 ONTAPユーザー権限の更新が必要なシステムを探します。
 . 詳細を表示するにはシステムを選択してください。
 . ユーザー名を表示するには、[*追加情報を表示*] を選択します。
-. admin ユーザーを使用してONTAPクラスタ CLI にログインします。
+. 管理者ユーザーとしてONTAPクラスタ CLI にログインします。
 . そのユーザーの既存のロールを表示します。入力：
 +
 [listing]
@@ -101,5 +115,5 @@ security login show -user-or-group-name <username>
 ----
 security login modify -user-or-group-name <username> -application console|http|ontapi|ssh|telnet -authentication-method password -role admin
 ----
-. 使用するには、ランサムウェア耐性 UI に戻ります。
+. Ransomware Resilience を使用するには、 NetApp Consoleに戻ります。
 

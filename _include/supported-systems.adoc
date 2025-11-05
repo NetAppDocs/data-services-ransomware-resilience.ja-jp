@@ -1,0 +1,15 @@
+= 
+:allow-uri-read: 
+
+
+* ONTAPバージョン 9.11.1 以降を搭載したオンプレミスのONTAP NAS (NFS および CIFS プロトコルを使用)
+* ONTAPバージョン 9.17.1 以降を搭載したオンプレミスのONTAP SAN (FC、iSCSI、NVMe プロトコルを使用)
+* AWS 用のCloud Volumes ONTAP 9.11.1 以上（NFS および CIFS プロトコルを使用）
+* Google Cloud Platform 用のCloud Volumes ONTAP 9.11.1 以上（NFS および CIFS プロトコルを使用）
+* Microsoft Azure 用のCloud Volumes ONTAP 9.12.1 以上 (NFS および CIFS プロトコルを使用)
+* AWS、Google Cloud Platform、Microsoft Azure 向けのCloud Volumes ONTAP 9.17.1 以上（FC、iSCSI、NVMe プロトコルを使用）
+* Amazon FSx for NetApp ONTAP は、自律型ランサムウェア保護 (ARP であり、ARP/AI ではありません) を使用します。
+
+
+
+NOTE: ONTAPで ARP/AI を使用するには、 ONTAP 9.16 以上が必要です。 + ONTAP は、 FlexGroupボリューム、マウント ポイント ボリューム、マウント パス ボリューム、オフライン ボリューム、およびデータ保護 (DP) ボリュームに対してランサムウェア保護サポートを提供しません。必ず確認するlink:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html["ONTAPでサポートされている構成とサポートされていない構成"^]。

@@ -169,7 +169,9 @@ image:diagram-rp-architecture-preview3.png["ランサムウェア耐性アーキ
 
 Ransomware Resilience は、次のバックアップ ターゲット、システム、およびデータ ソースをサポートします。
 
-*サポートされているバックアップ対象*
+
+
+=== サポートされているバックアップ対象
 
 * Amazon Web Services（AWS）S3
 * Google Cloud Platform
@@ -177,7 +179,9 @@ Ransomware Resilience は、次のバックアップ ターゲット、システ
 * NetAppStorageGRID
 
 
-*サポートされているシステム*
+
+
+=== サポートされているシステム
 
 * ONTAPバージョン 9.11.1 以降を搭載したオンプレミスのONTAP NAS (NFS および CIFS プロトコルを使用)
 * ONTAPバージョン 9.17.1 以降を搭載したオンプレミスのONTAP SAN (FC、iSCSI、NVMe プロトコルを使用)
@@ -186,16 +190,14 @@ Ransomware Resilience は、次のバックアップ ターゲット、システ
 * Microsoft Azure 用のCloud Volumes ONTAP 9.12.1 以上 (NFS および CIFS プロトコルを使用)
 * AWS、Google Cloud Platform、Microsoft Azure 向けのCloud Volumes ONTAP 9.17.1 以上（FC、iSCSI、NVMe プロトコルを使用）
 * Amazon FSx for NetApp ONTAP は、自律型ランサムウェア保護 (ARP であり、ARP/AI ではありません) を使用します。
-+
-
-NOTE: ARP/AI にはONTAP 9.16 以上が必要です。
 
 
 
+NOTE: ONTAPで ARP/AI を使用するには、 ONTAP 9.16 以上が必要です。 + ONTAP は、 FlexGroupボリューム、マウント ポイント ボリューム、マウント パス ボリューム、オフライン ボリューム、およびデータ保護 (DP) ボリュームに対してランサムウェア保護サポートを提供しません。必ず確認するlink:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html["ONTAPでサポートされている構成とサポートされていない構成"^]。
 
-NOTE: 以下はサポートされていません: FlexGroupボリューム、9.11.1 より前のONTAPバージョン、マウント ポイント ボリューム、マウント パス ボリューム、オフライン ボリューム、およびデータ保護 (DP) ボリューム。
 
-*サポートされているワークロード データ ソース*
+
+=== サポートされているワークロード データ ソース
 
 ランサムウェア耐性は、プライマリ データ ボリューム上の次のアプリケーション ベースのワークロードを保護します。
 
@@ -203,7 +205,6 @@ NOTE: 以下はサポートされていません: FlexGroupボリューム、9.1
 * ブロックストレージ
 * VMwareデータストア
 * データベース（MySQL および Oracle）
-* 近日中にさらに追加予定
 
 
 さらに、 SnapCenterまたはSnapCenter for VMware を使用している場合は、それらの製品でサポートされているすべてのワークロードも Ransomware Resilience で識別されます。ランサムウェア耐性は、ワークロードの一貫性を保ちながらこれらを保護し、回復することができます。
