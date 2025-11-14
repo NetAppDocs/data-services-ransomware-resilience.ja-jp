@@ -44,8 +44,6 @@ sidebar:
       url: "/suspicious-user-activity.html"
   - title: ランサムウェア耐性を活用する
     entries:
-    - title: ランサムウェア耐性の概要を使用する
-      url: "/rp-use-overview.html"
     - title: ダッシュボードを使用してワークロードの健全性を表示する
       url: "/rp-use-dashboard.html"
     - title: ワークロードを保護する

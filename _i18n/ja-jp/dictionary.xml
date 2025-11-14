@@ -253,7 +253,6 @@
   <block id="4f0550f066ae72bb8c24fc3f59c323bf" category="list-text">ブロックストレージ</block>
   <block id="ed11408803c4c1aca5fbebbc43d88458" category="list-text">VMwareデータストア</block>
   <block id="3560990ee46f2f17d59094ab9e308c5e" category="list-text">データベース（MySQL および Oracle）</block>
-  <block id="ac52d0195d6b8f8c9196f4a11d911326" category="paragraph">さらに、 SnapCenterまたはSnapCenter for VMware を使用している場合は、それらの製品でサポートされているすべてのワークロードも Ransomware Resilience で識別されます。ランサムウェア耐性は、ワークロードの一貫性を保ちながらこれらを保護し、回復することができます。</block>
   <block id="02f360fe822afa82c0f600943169df7e" category="section-title">ランサムウェア対策に役立つ用語</block>
   <block id="77460e2b891748333455193aadd137d8" category="paragraph">ランサムウェア対策に関連するいくつかの用語を理解しておくと役立つかもしれません。</block>
   <block id="826a4e8d8facce6f785b2a404538e6cd" category="list-text">*保護*: ランサムウェア耐性における保護とは、保護ポリシーを使用して、スナップショットと不変のバックアップが別のセキュリティ ドメインに定期的に実行されるようにすることを意味します。</block>
@@ -572,7 +571,6 @@
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三つ</block>
   <block id="d50e8172d497c020af4e234d3280aa47" category="inline-link-macro">ダッシュボードでワークロード保護の健全性を表示する</block>
   <block id="347a92b70b3c471a8a681a4b4a0c9256" category="inline-link-macro">潜在的なランサムウェア攻撃の検出に対応する</block>
-  <block id="063e9c9c189a9f6aaad2b0b511ff7b3f" category="list-text"><block ref="b5ea4db5c411dc6348eb99be9283796b" category="inline-link-macro-rx"></block> 。</block>
   <block id="fc8492dd3eefdbcdcd34f8d91982e7a9" category="inline-link-macro">攻撃からの回復（インシデントが中和された後）</block>
   <block id="34966ee9421e907a190b85aa1680ce01" category="summary">Ransomware Resilience を使用するには、いくつかの手順を実行して設定します。</block>
   <block id="239718284ef31f1d7ca7a73645e14dd2" category="doc">NetApp Ransomware Resilienceを設定する</block>
@@ -910,21 +908,7 @@
   <block id="a5584fd777c131bf3f216931a3952c37" category="list-text">ランサムウェア耐性メニューから、*保護*を選択します。</block>
   <block id="0c494aaba0bbfa24f1d3a7438930b616" category="list-text">ワークロードを選択し、右側の *アクション* ... アイコンを選択して、 *ワークロード名の編集* を選択します。</block>
   <block id="b7ac3f69f0c0ac25814be4d03ba11c24" category="list-text">新しいワークロード名を入力し、[保存] を選択します。</block>
-  <block id="da654f624b17520b58f56cd7c8a9f769" category="summary">NetApp Ransomware Resilienceを使用すると、ワークロードの健全性を表示し、ワークロードを保護できます。</block>
-  <block id="b05791264bdc7b222293c51d378f16d8" category="doc">NetApp Ransomware Resilienceを活用する</block>
-  <block id="7e1d67d835e00f3989833a13c507a912" category="paragraph">NetApp Ransomware Resilienceを使用すると、ワークロードの健全性を確認し、ワークロードを保護できます。</block>
-  <block id="66e3fc6226503a1545683261aa615c2e" category="inline-link-macro">ランサムウェア耐性におけるワークロードの検出</block>
-  <block id="11169713ef219030e085aad80deaef78" category="list-text"><block ref="d9a82549307896e39722c8368294b0f7" category="inline-link-macro-rx"></block> 。</block>
-  <block id="8ae38ddd8686d8865973c999b7665ad0" category="inline-link-macro">ダッシュボードから保護とワークロードの健全性を表示する</block>
-  <block id="85799affb57a59ca2d5e76e59434ce35" category="list-text"><block ref="4303e5d19bf38f5d41c5f6787972e5c8" category="inline-link-macro-rx"></block> 。</block>
-  <block id="8b4a0dc38e356222731815227b0e1e34" category="list-text">ランサムウェア保護の推奨事項を確認し、それに従って行動します。</block>
-  <block id="2206c214072c87c16fb7def537e52304" category="list-text"><block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block>：</block>
-  <block id="01d9db102d1bd61a6c3336ec537d1d6b" category="list-text">ランサムウェア保護戦略をワークロードに割り当てます。</block>
-  <block id="557cf3a90ba86c7dcbdd7df658946ddc" category="list-text">将来のランサムウェア攻撃を防ぐためにアプリケーション保護を強化します。</block>
-  <block id="39eb13fe6281f202063b8531a23fd007" category="list-text">保護戦略を作成、変更、または削除します。</block>
   <block id="565c83689e020f29cdb2b1a2a0116b1a" category="inline-link-macro">攻撃からの回復</block>
-  <block id="eb6896c0b72086313bce0e4ad75e5559" category="list-text"><block ref="eb5dab1cbde9ee264030dc77418dde97" category="inline-link-macro-rx"></block>（事件が解決した後）。</block>
-  <block id="0a3dc5fda7d701cd5fc9a0ceb57afb3f" category="list-text"><block ref="9f0b279394cf25f00a608a52b5aed0b2" category="inline-link-macro-rx"></block> 。</block>
   <block id="bc1b76060f49fe8ad404d389d8431371" category="summary">NetApp Data Classificationを使用してデータのセキュリティとプライバシーのコンプライアンスを強化し、データに個人を特定できる情報や個人情報が含まれているかどうかを識別します。</block>
   <block id="e00e52239c81eaad00507b4b0b815570" category="doc">ランサムウェア耐性におけるNetApp Data Classificationで個人を特定できる情報をスキャン</block>
   <block id="604880f6f585767eee17ec85b3c76533" category="inline-link-macro">データ分類</block>
@@ -1897,7 +1881,6 @@
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">クイック スタート</block>
   <block id="03a0606ea5e305ef55dd39ee839003fd" category="sidebar">バックアップ先を設定し、脅威検出を有効にする</block>
   <block id="8bbd68b188344ab54d9a5aa4369f8add" category="sidebar">ランサムウェア耐性を活用する</block>
-  <block id="1b8f24b7585f7f77c98a15695ae97523" category="sidebar">ランサムウェア耐性の概要を使用する</block>
   <block id="20efa84cce28541d6712947d04bd7aff" category="sidebar">ダッシュボードを使用してワークロードの健全性を表示する</block>
   <block id="166351bd2ed187c21a26c5609ef2768c" category="sidebar">NetApp Data Classificationで個人を特定できる情報をスキャン</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログとコミュニティ</block>
@@ -2074,4 +2057,6 @@
   <block id="2256fdd13b41cd806db98cd42c5b498c" category="list-text">適切なアクセス権限が設定されたバックアップ ターゲット用のNetApp StorageGRID、AWS S3、Azure Blob、または Google Cloud Platform のアカウント。</block>
   <block id="27bfb5502a8db50d09f593ce1b77b181" category="list-text">管理者ユーザーとしてONTAPクラスタ CLI にログインします。</block>
   <block id="14e79e90c6d487ebb867aa7b0f88bf25" category="list-text">Ransomware Resilience を使用するには、 NetApp Consoleに戻ります。</block>
+  <block id="0d2fa76effcb3dce9fea42e1ccddfc30" category="paragraph">SnapCenterまたはSnapCenter for VMware を使用している場合、それらの製品でサポートされているすべてのワークロードも Ransomware Resilience で識別されます。ランサムウェア耐性は、ワークロードの一貫性を保ちながらこれらを保護し、回復することができます。</block>
+  <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025年11月10日</block>
 </blocks>

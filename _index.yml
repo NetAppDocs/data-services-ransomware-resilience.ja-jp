@@ -26,8 +26,6 @@ indexpage:
       url: "/rp-start-simulate.html"
   - title: ランサムウェア耐性を活用する
     links:
-    - title: ランサムウェア耐性の概要を使用する
-      url: "/rp-use-overview.html"
     - title: ワークロードを発見する
       url: "/rp-start-discover.html"
     - title: ダッシュボードを使用してワークロードの健全性を表示する

@@ -207,7 +207,7 @@ NOTE: ONTAPで ARP/AI を使用するには、 ONTAP 9.16 以上が必要です�
 * データベース（MySQL および Oracle）
 
 
-さらに、 SnapCenterまたはSnapCenter for VMware を使用している場合は、それらの製品でサポートされているすべてのワークロードも Ransomware Resilience で識別されます。ランサムウェア耐性は、ワークロードの一貫性を保ちながらこれらを保護し、回復することができます。
+SnapCenterまたはSnapCenter for VMware を使用している場合、それらの製品でサポートされているすべてのワークロードも Ransomware Resilience で識別されます。ランサムウェア耐性は、ワークロードの一貫性を保ちながらこれらを保護し、回復することができます。
 
 
 
