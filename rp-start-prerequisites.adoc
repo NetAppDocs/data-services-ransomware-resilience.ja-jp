@@ -22,17 +22,37 @@ Ransomware Resilience を使用するには、前提条件を満たしている�
 
 サポートされているシステムを使用していることを確認してください。
 
-* ONTAPバージョン 9.11.1 以降を搭載したオンプレミスのONTAP NAS (NFS および CIFS プロトコルを使用)
-* ONTAPバージョン 9.17.1 以降を搭載したオンプレミスのONTAP SAN (FC、iSCSI、NVMe プロトコルを使用)
-* AWS 用のCloud Volumes ONTAP 9.11.1 以上（NFS および CIFS プロトコルを使用）
-* Google Cloud Platform 用のCloud Volumes ONTAP 9.11.1 以上（NFS および CIFS プロトコルを使用）
-* Microsoft Azure 用のCloud Volumes ONTAP 9.12.1 以上 (NFS および CIFS プロトコルを使用)
-* AWS、Google Cloud Platform、Microsoft Azure 向けのCloud Volumes ONTAP 9.17.1 以上（FC、iSCSI、NVMe プロトコルを使用）
-* Amazon FSx for NetApp ONTAP は、自律型ランサムウェア保護 (ARP であり、ARP/AI ではありません) を使用します。
+|===
+| 環境 | プロトコル | サポート対象のバージョン 
 
 
+| Amazon FSx for NetApp ONTAP* | NFS、CIFS、SAN | 該当なし 
 
-NOTE: ONTAPで ARP/AI を使用するには、 ONTAP 9.16 以上が必要です。 + ONTAP は、 FlexGroupボリューム、マウント ポイント ボリューム、マウント パス ボリューム、オフライン ボリューム、およびデータ保護 (DP) ボリュームに対してランサムウェア保護サポートを提供しません。必ず確認するlink:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html["ONTAPでサポートされている構成とサポートされていない構成"^]。
+
+.2+| Cloud Volumes ONTAP for AWS | CIFSとNFS | 9.11.1以降 
+
+
+| SAN（FC、iSCSI、NVMe） | 9.17.1以降 
+
+
+.2+| Google Cloud Platform 向けCloud Volumes ONTAP | CIFSとNFS | 9.11.1以降 
+
+
+| SAN（FC、iSCSI、NVMe） | 9.17.1以降 
+
+
+.2+| Microsoft Azure 向けCloud Volumes ONTAP | CIFSとNFS | 9.12.1以降 
+
+
+| SAN（FC、iSCSI、NVMe） | 9.17.1以降 
+
+
+.2+| ONTAP （オンプレミス） | CIFSとNFS | 9.11.1以降 
+
+
+| SAN（FC、iSCSI、NVMe） | 9.17.1以降 
+|===
+{アスタリスク} Amazon FSx for NetApp ONTAP は、 ARP/AI ではなく、Autonomous Ransomware Protection (ARP) を使用します。違いの詳細については、link:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/AI"^] 。
 
 
 
@@ -43,7 +63,7 @@ NetApp Consoleの構成には次のものが必要です。
 * リソースを検出するための組織管理者権限を持つNetApp Consoleユーザー アカウント。
 * 少なくとも1つのアクティブなコンソールエージェントが接続しているコンソール組織とシステムlink:concept-ransomware-resilience.html#supported-backup-targets-systems-and-workload-data-sources["サポートされているシステム"]。
 +
-** オンプレミスのONTAPクラスタまたはAWSまたはAzureクラウドのCloud Volumes ONTAPがコンソールで設定されていない場合は、link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["コンソールエージェントの設定方法を学ぶ"^]そしてlink:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["標準コンソール要件"^]。
+** オンプレミスのONTAPクラスタまたはAWSまたはAzureクラウドのCloud Volumes ONTAPがコンソールで設定されていない場合は、link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html["コンソールエージェントの設定方法を学ぶ"^]そしてlink:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["標準コンソール要件"^]。
 +
 
 NOTE: 単一のコンソール組織に複数のコンソール エージェントがある場合、Ransomware Resilience は、コンソール UI で現在選択されているエージェント以外のすべてのコンソール エージェントにわたってONTAPリソースをスキャンします。

@@ -241,18 +241,10 @@
   <block id="5c9ef0d871938dccceb29ee63fad8ddb" category="list-text">Google Cloud Platform</block>
   <block id="6a51ed7bcacdfb13f78abc1e0f69c201" category="list-text">Microsoft Azure ブロブ</block>
   <block id="55cf1a0f0fce69fd543500e5761dd26d" category="list-text">NetAppStorageGRID</block>
-  <block id="5f35d0b4a7930f14f1022ee1f942ee64" category="list-text">ONTAPバージョン 9.11.1 以降を搭載したオンプレミスのONTAP NAS (NFS および CIFS プロトコルを使用)</block>
-  <block id="36471da59b7d9b72aa431fd1f5059d05" category="list-text">ONTAPバージョン 9.17.1 以降を搭載したオンプレミスのONTAP SAN (FC、iSCSI、NVMe プロトコルを使用)</block>
-  <block id="0479370d1a7f4250832bb43f782a1456" category="list-text">AWS 用のCloud Volumes ONTAP 9.11.1 以上（NFS および CIFS プロトコルを使用）</block>
-  <block id="692821f8e48f34e528c887a1bd9a5a50" category="list-text">Google Cloud Platform 用のCloud Volumes ONTAP 9.11.1 以上（NFS および CIFS プロトコルを使用）</block>
-  <block id="4d32d1cc8c36c71c8d57d570d802694f" category="list-text">Microsoft Azure 用のCloud Volumes ONTAP 9.12.1 以上 (NFS および CIFS プロトコルを使用)</block>
-  <block id="35042137939d246a1fd01199cb942d15" category="list-text">AWS、Google Cloud Platform、Microsoft Azure 向けのCloud Volumes ONTAP 9.17.1 以上（FC、iSCSI、NVMe プロトコルを使用）</block>
-  <block id="54d1e9634870c74de38de33364a86d27" category="list-text">Amazon FSx for NetApp ONTAP は、自律型ランサムウェア保護 (ARP であり、ARP/AI ではありません) を使用します。</block>
   <block id="2fd51284279972a6a1390536b053f3c3" category="paragraph">ランサムウェア耐性は、プライマリ データ ボリューム上の次のアプリケーション ベースのワークロードを保護します。</block>
   <block id="ffc184891768c331383cd53bcd1bc968" category="list-text">NetAppファイル共有</block>
   <block id="4f0550f066ae72bb8c24fc3f59c323bf" category="list-text">ブロックストレージ</block>
   <block id="ed11408803c4c1aca5fbebbc43d88458" category="list-text">VMwareデータストア</block>
-  <block id="3560990ee46f2f17d59094ab9e308c5e" category="list-text">データベース（MySQL および Oracle）</block>
   <block id="02f360fe822afa82c0f600943169df7e" category="section-title">ランサムウェア対策に役立つ用語</block>
   <block id="77460e2b891748333455193aadd137d8" category="paragraph">ランサムウェア対策に関連するいくつかの用語を理解しておくと役立つかもしれません。</block>
   <block id="826a4e8d8facce6f785b2a404538e6cd" category="list-text">*保護*: ランサムウェア耐性における保護とは、保護ポリシーを使用して、スナップショットと不変のバックアップが別のセキュリティ ドメインに定期的に実行されるようにすることを意味します。</block>
@@ -2035,7 +2027,6 @@
   <block id="6d1a51f08d9ca2d81528c19a5e4f2463" category="list-text"><block ref="6d1a51f08d9ca2d81528c19a5e4f2463" category="inline-link-macro-rx"></block></block>
   <block id="4db76a2031d1695a2f0a985a14a43ffa" category="paragraph">疑わしいユーザー アクティビティの検出を含むランサムウェア保護戦略を有効にすると、データ コレクターが自動的に作成されます。詳細については、 <block ref="eadf066433fbca34180c794e1f4838ae" category="inline-xref-macro-rx"></block>。</block>
   <block id="649b83fee66314cb36bc122912f59725" category="inline-link-macro">ONTAPでサポートされている構成とサポートされていない構成</block>
-  <block id="49f82a509cd0abff5327e4c71868f448" category="admonition">ONTAPで ARP/AI を使用するには、 ONTAP 9.16 以上が必要です。 + ONTAP は、 FlexGroupボリューム、マウント ポイント ボリューム、マウント パス ボリューム、オフライン ボリューム、およびデータ保護 (DP) ボリュームに対してランサムウェア保護サポートを提供しません。必ず確認する<block ref="49252e6bcf11c366c792cea95977195b" category="inline-link-macro-rx"></block>。</block>
   <block id="0b115ac5b217f989a1fc7dd422161b82" category="section-title">サポートされているバックアップ対象</block>
   <block id="933247e0be7796a309cfa4c95bd34938" category="section-title">サポートされているシステム</block>
   <block id="d7962ffe79df3d1aba19878fd6d019e4" category="section-title">サポートされているワークロード データ ソース</block>
@@ -2048,7 +2039,6 @@
   <block id="4c2c00472698b27eb7facf4ba3c6971f" category="paragraph">NetApp Consoleの構成には次のものが必要です。</block>
   <block id="fda98bab7cfe51ed764422ff7c4cc4dc" category="inline-link-macro">サポートされているシステム</block>
   <block id="24a33b7b8d81b241dc8d72ce84d02061" category="list-text">少なくとも1つのアクティブなコンソールエージェントが接続しているコンソール組織とシステム<block ref="33fcda4d13136e9638e8e0eecc30f508" category="inline-link-macro-rx"></block>。</block>
-  <block id="0d2165e32151ff379bcc5699011bbdbe" category="list-text">オンプレミスのONTAPクラスタまたはAWSまたはAzureクラウドのCloud Volumes ONTAPがコンソールで設定されていない場合は、<block ref="8a718d7913e8764fcbd48fb78a901ed8" category="inline-link-macro-rx"></block>そして<block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>。</block>
   <block id="def72830b58fb69b381492858d3b3665" category="admonition">SAN ワークロードで Ransomware Resilience を使用するには、 ONTAP 9.17.1 以降を実行している必要があります。</block>
   <block id="1b6bc3125f482fcbcf029c833aea1290" category="section-title">ONTAPの要件</block>
   <block id="69e575df737b34413e9ac5e132f6db01" category="list-text">オンプレミスのONTAPインスタンスでONTAP One ライセンスが有効になっているONTAP 9.11.1 以降を実行している必要があります。  ONTAPサポートの詳細については、以下を参照してください。<block ref="a17b9b304c2ac7f4ba576e11b099c691" category="inline-link-macro-rx"></block> 。</block>
@@ -2060,11 +2050,34 @@
   <block id="0d2fa76effcb3dce9fea42e1ccddfc30" category="paragraph">SnapCenterまたはSnapCenter for VMware を使用している場合、それらの製品でサポートされているすべてのワークロードも Ransomware Resilience で識別されます。ランサムウェア耐性は、ワークロードの一貫性を保ちながらこれらを保護し、回復することができます。</block>
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025年11月10日</block>
   <block id="8fe9bae39f62679bc4b589ccb17384a9" category="paragraph">**クラウドプロバイダーのサポート**</block>
-  <block id="4dbf3bdbb500347a8ca0ffe04b7e1f6c" category="paragraph">疑わしいユーザーアクティビティは、次のリージョンの AWS および Azure で利用できます。</block>
   <block id="e29d7c0b36af68edd13ebac84f15b44b" category="cell">クラウド プロバイダ</block>
   <block id="f447ac856e7e72435904956e3b15f433" category="cell">リージョン</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="cell">AWS</block>
   <block id="90f74c5c50c42b91275c19e2cccad976" category="cell">米国東部 (us-east-1)</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="cell">Azure</block>
   <block id="3c110de67497eb3f8d4c100e43101c81" category="cell">米国東部</block>
+  <block id="0ba29c6a1afacf586b03a26162c72274" category="cell">環境</block>
+  <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">プロトコル</block>
+  <block id="b881921e058834170584afe9213c4c73" category="cell">Amazon FSx for NetApp ONTAP*</block>
+  <block id="c2b4bf8a420967336b99691646ef85e6" category="cell">NFS、CIFS、SAN</block>
+  <block id="382b0f5185773fa0f67a8ed8056c7759" category="cell">該当なし</block>
+  <block id="096f3522cfa2f31de45d052b740adc65" category="cell">Cloud Volumes ONTAP for AWS</block>
+  <block id="05bcab512eefa1e7e2cc2d1e45970a7d" category="cell">CIFSとNFS</block>
+  <block id="1f03f70fe9097fcc16686889bafaf634" category="cell">9.11.1以降</block>
+  <block id="d32574662083c44bd1c1e27441a5f5f6" category="cell">SAN（FC、iSCSI、NVMe）</block>
+  <block id="ce2276d280ca79bc5d0b33e7903a7d49" category="cell">9.17.1以降</block>
+  <block id="a6810a0b37cbc417c34b4dffc16f07a1" category="cell">Google Cloud Platform 向けCloud Volumes ONTAP</block>
+  <block id="9722c69e4736d9b151d70e30b917a4e1" category="cell">Microsoft Azure 向けCloud Volumes ONTAP</block>
+  <block id="22f284bcf4504118b4d7e9ed2bce2c2e" category="cell">9.12.1以降</block>
+  <block id="7cfe224d3c8892dba0ae59bcf6d0c053" category="cell">ONTAP （オンプレミス）</block>
+  <block id="954e661212d7a62095e6b957259dc36f" category="inline-link-macro">ARP/AI</block>
+  <block id="7271886a703021fd0851304115b49ee2" category="paragraph">{アスタリスク} Amazon FSx for NetApp ONTAP は、 ARP/AI ではなく、Autonomous Ransomware Protection (ARP) を使用します。違いの詳細については、<block ref="ee25b596f35c0a0b982fc7b7e342f828" category="inline-link-macro-rx"></block> 。</block>
+  <block id="c71c95f02c8e85a6e5cddd09ad2a5d8b" category="admonition">ONTAPで ARP/AI を使用するには、 ONTAP 9.16 以上が必要です。+ ONTAP は、 FabricPool FlexCache、 FlexGroupボリューム、整合性グループのマウント ポイント ボリューム、マウント パス ボリューム、オフライン ボリューム、およびデータ保護 (DP) ボリュームに対してランサムウェア保護サポートを提供しません。必ず確認する<block ref="49252e6bcf11c366c792cea95977195b" category="inline-link-macro-rx"></block>。</block>
+  <block id="fd3b4579ab972a1738986581275cfcfa" category="list-text">データベース:</block>
+  <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">Microsoft SQL Server</block>
+  <block id="62a004b95946bb97541afa471dcca73a" category="list-text">MySQL</block>
+  <block id="30162ed78b6c10f731411f2fc440c24f" category="list-text">Oracle</block>
+  <block id="399bd1ee587245ecac6f39beaa99886f" category="list-text">PostgreSQL</block>
+  <block id="b8bf0879f259dbfb5601d4fdb086df91" category="list-text">オンプレミスのONTAPクラスタまたはAWSまたはAzureクラウドのCloud Volumes ONTAPがコンソールで設定されていない場合は、<block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block>そして<block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>。</block>
+  <block id="acd257a01891523b6ff91a9020b733ba" category="paragraph">疑わしいユーザーアクティビティ データは、次のリージョンの AWS および Azure に保存される可能性があります。</block>
 </blocks>
