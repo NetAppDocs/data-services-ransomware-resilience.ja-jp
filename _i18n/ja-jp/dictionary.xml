@@ -1517,39 +1517,24 @@
   <block id="f29be3377655fbc2e89f86e482ef5ca2" category="paragraph">設定ページに「接続済み」と表示されます。</block>
   <block id="bcee84ed1c24db7de866f4c5f5c8735a" category="summary">NetApp は、さまざまな方法でランサムウェア耐性のサポートを提供します。ナレッジベース (KB) 記事やコミュニティ フォーラムなど、広範な無料のセルフサポート オプションが 24 時間 365 日ご利用いただけます。サポート登録には、Webチケットによるリモートテクニカルサポートも含まれます。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">ヘルプを受ける</block>
-  <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetAppは、 BlueXPとそのクラウドサービスに対して、様々なサポートを提供しています。ナレッジベース（KB）記事やコミュニティフォーラムなど、充実した無料のセルフサポートオプションを24時間365日ご利用いただけます。サポート登録には、Webチケットによるリモートテクニカルサポートも含まれます。</block>
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">クラウドプロバイダーのファイルサービスのサポートを受ける</block>
-  <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">クラウド プロバイダーのファイル サービス、そのインフラストラクチャ、またはサービスを使用するソリューションに関連するテクニカル サポートについては、その製品のBlueXPドキュメントの「ヘルプの取得」を参照してください。</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSx for ONTAP</block>
-  <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
-  <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
   <block id="1215f8190533dfdf63d2224a6d88266f" category="inline-link-macro">Google Cloud NetApp Volumes</block>
-  <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
-  <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">BlueXPとそのストレージ ソリューションおよびサービスに固有のテクニカル サポートを受けるには、以下に説明するサポート オプションを使用してください。</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">セルフサポートオプションを使用する</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">以下のオプションは、24 時間 365 日無料でご利用いただけます。</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">ドキュメント</block>
-  <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">現在表示しているBlueXPドキュメント。</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">ナレッジベース</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
-  <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">BlueXPナレッジベースを検索して、問題のトラブルシューティングに役立つ記事を見つけます。</block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">コミュニティ</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
-  <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">BlueXPコミュニティに参加して、進行中のディスカッションをフォローしたり、新しいディスカッションを作成したりしてください。</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">NetAppサポートでケースを作成する</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">上記のセルフ サポート オプションに加えて、サポートを有効にした後は、 NetAppサポート スペシャリストと協力して問題を解決することもできます。</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="list-title">始める前に</block>
-  <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">BlueXPログインに関連付けられた資格情報を管理する方法を学びます</block>
-  <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">*ケースの作成*機能を使用するには、まずNetAppサポート サイトの資格情報をBlueXPログインに関連付ける必要があります。<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block> 。</block>
   <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">シリアル番号を持つONTAPシステムのケースを開く場合は、NSS アカウントがそのシステムのシリアル番号に関連付けられている必要があります。</block>
-  <block id="7fe6981833e8fe7fd89e0a99a55573da" category="list-text">BlueXPで、*ヘルプ &gt; サポート*を選択します。</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">*リソース*ページで、テクニカル サポートの下にある利用可能なオプションのいずれかを選択します。</block>
   <block id="6a1b74969231967ed071d465206b15c7" category="list-text">電話で誰かと話したい場合は、「電話する」を選択してください。電話をかけることができる電話番号をリストした netapp.com のページに移動します。</block>
   <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">NetAppサポート スペシャリストとのチケットを開くには、[ケースを作成] を選択します。</block>
-  <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*サービス*: 問題が関連付けられているサービスを選択します。たとえば、サービス内のワークフローまたは機能に関するテクニカル サポートの問題に固有の場合はBlueXP。</block>
-  <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*作業環境*: ストレージに該当する場合は、* Cloud Volumes ONTAP* または * On-Prem* を選択し、関連する作業環境を選択します。</block>
-  <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">作業環境のリストは、サービスのトップバナーで選択したBlueXP組織 (またはアカウント)、プロジェクト (またはワークスペース)、およびコネクタの範囲内にあります。</block>
   <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*ケースの優先度*: ケースの優先度 (低、中、高、重大) を選択します。</block>
   <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">これらの優先順位の詳細を確認するには、フィールド名の横にある情報アイコンの上にマウスを置きます。</block>
   <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*問題の説明*: 該当するエラー メッセージや実行したトラブルシューティング手順など、問題の詳細な説明を入力します。</block>
@@ -1557,18 +1542,12 @@
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*添付ファイル (オプション)*: 一度に 1 つずつ、最大 5 つの添付ファイルをアップロードします。</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">添付ファイルはファイルごとに 25 MB までに制限されます。サポートされているファイル拡張子は、txt、log、pdf、jpg/jpeg、rtf、doc/docx、xls/xlsx、csv です。</block>
   <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">NetAppサポートでケースを作成できる「ケースの作成」フォームのスクリーンショット。</block>
-  <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">終了後の操作</block>
   <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">サポート ケース番号を示すポップアップが表示されます。NetAppサポート スペシャリストがお客様のケースを確認し、すぐにご連絡いたします。</block>
   <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">サポート ケースの履歴については、*設定 &gt; タイムライン* を選択し、「サポート ケースの作成」というアクションを探します。右端のボタンを使用すると、アクションを展開して詳細を表示できます。</block>
   <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">ケースを作成しようとすると、次のエラー メッセージが表示される場合があります。</block>
   <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">「選択したサービスに対してケースを作成する権限がありません」</block>
-  <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">このエラーは、NSS アカウントとそれに関連付けられているレコード会社が、 BlueXPアカウントのシリアル番号のレコード会社と同じではないことを意味している可能性があります (つまり、960xxxx) または作業環境のシリアル番号。次のいずれかのオプションを使用してサポートを求めることができます。</block>
-  <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">製品内チャットを使用する</block>
   <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">非技術的なケースを提出する<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
-  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">サポートケースを管理する（プレビュー）</block>
-  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">アクティブおよび解決済みのサポート ケースをBlueXPから直接表示および管理できます。NSS アカウントおよび会社に関連付けられたケースを管理できます。</block>
-  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">ケース管理はプレビューとして利用できます。今後のリリースでは、このエクスペリエンスを改良し、機能強化を追加する予定です。製品内チャットを使用してフィードバックをお送りください。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">次の点に注意してください。</block>
   <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">ページ上部のケース管理ダッシュボードには、次の 2 つのビューがあります。</block>
   <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">左側のビューには、指定したユーザー NSS アカウントによって過去 3 か月間に開かれたケースの合計が表示されます。</block>
@@ -1577,60 +1556,29 @@
   <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">関心のある列を追加または削除したり、優先度やステータスなどの列の内容をフィルタリングしたりできます。その他の列は並べ替え機能のみを提供します。</block>
   <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">詳細については、以下の手順をご覧ください。</block>
   <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">ケースごとに、ケースメモを更新したり、まだ「クローズ」または「クローズ保留中」ステータスになっていないケースをクローズしたりする機能を提供します。</block>
-  <block id="0a4050ac39772e9281a9aba225254bf8" category="list-text">*ケース管理*を選択し、プロンプトが表示されたら、NSS アカウントをBlueXPに追加します。</block>
-  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">*ケース管理* ページには、 BlueXPユーザー アカウントに関連付けられている NSS アカウントに関連するオープン ケースが表示されます。これは、*NSS 管理* ページの上部に表示される NSS アカウントと同じです。</block>
   <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">必要に応じて、テーブルに表示される情報を変更します。</block>
   <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">*組織のケース*の下で*表示*を選択すると、会社に関連付けられているすべてのケースが表示されます。</block>
   <block id="059e856250b59be3069246887b74a23c" category="list-text">正確な日付範囲を選択するか、別の期間を選択して日付範囲を変更します。</block>
-  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">ケース管理ページの表の上にあるオプションのスクリーンショット。正確な日付範囲、または過去 7 日間、30 日間、または 3 か月間を選択できます。</block>
-  <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">列の内容をフィルタリングします。</block>
-  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">「アクティブ」や「クローズ」などの特定のステータスに一致するケースを除外できる、「ステータス」列のフィルター オプションのスクリーンショット。</block>
-  <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">表に表示されるプラスアイコン</block>
-  <block id="cdf14d2156528231a5dbd12ad5c95d3f" category="list-text">表に表示される列を変更するには、<block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block>次に、表示する列を選択します。</block>
-  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">テーブルに表示できる列を示すスクリーンショット。</block>
-  <block id="e65065c4fd326b9f3a1eeb9453c30d73" category="paragraph"><block ref="e65065c4fd326b9f3a1eeb9453c30d73" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">表の最後の列に表示される3つの点のアイコン</block>
-  <block id="348552521b849746260fe8d296d34c15" category="list-text">既存のケースを管理するには、<block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block>利用可能なオプションのいずれかを選択します。</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*ケースを表示*: 特定のケースに関する詳細をすべて表示します。</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*ケースノートを更新*: 問題に関する追加の詳細を入力するか、*ファイルのアップロード*を選択して最大 5 つのファイルを添付します。</block>
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*ケースを閉じる*: ケースを閉じる理由の詳細を入力し、[*ケースを閉じる*] を選択します。</block>
-  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">表の最後の列にあるメニューを選択した後に実行できるアクションを示すスクリーンショット。</block>
-  <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
   <block id="512fd5eb37bb5d3f000a423886a72dd0" category="summary">NetAppテクニカル サポートでサポート ケースを開く前に、 NetAppサポート サイト アカウントをNetApp Consoleに追加し、サポートに登録する必要があります。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">サポートに登録する</block>
-  <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">BlueXPおよびそのストレージ ソリューションとサービスに固有のテクニカル サポートを受けるには、サポート登録が必要です。Cloud Volumes ONTAPシステムの主要なワークフローを有効にするには、サポート登録も必要です。</block>
-  <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">サポートに登録しても、クラウド プロバイダー ファイル サービスに対するNetAppサポートは有効になりません。クラウド プロバイダーのファイル サービス、そのインフラストラクチャ、またはサービスを使用するソリューションに関連するテクニカル サポートについては、その製品のBlueXPドキュメントの「ヘルプの取得」を参照してください。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">サポート登録の概要</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">サポート資格を有効にするには、次の 2 つの登録形式があります。</block>
-  <block id="29360bfcdbc91d3f1514c372b4585965" category="list-text">BlueXPアカウントのシリアル番号を登録します ( BlueXPのサポート リソース ページにある 20 桁の 960xxxxxxxxx シリアル番号)。</block>
-  <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">これは、BlueXP内のすべてのサービスに対する単一のサポート サブスクリプション ID として機能します。各BlueXPアカウント レベルのサポート サブスクリプションを登録する必要があります。</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">クラウド プロバイダーのマーケットプレイスで、サブスクリプションに関連付けられたCloud Volumes ONTAPシリアル番号を登録します (これらは 20 桁の 909201xxxxxxxx シリアル番号です)。</block>
-  <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">これらのシリアル番号は一般に _PAYGO シリアル番号_ と呼ばれ、 Cloud Volumes ONTAP の展開時にBlueXPによって生成されます。</block>
-  <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">両方のタイプのシリアル番号を登録すると、サポート チケットの開設やケースの自動生成などの機能が有効になります。登録は、以下の説明に従ってNetAppサポート サイト (NSS) アカウントをBlueXPに追加することで完了します。</block>
-  <block id="444b74bc81e823cc1c4c704219ad8ed3" category="section-title">NetAppサポートのためにBlueXPを登録する</block>
-  <block id="b3bf31f8a918c712f26cdf493a908825" category="paragraph">サポートに登録し、サポート資格を有効にするには、 BlueXP組織 (またはアカウント) 内の 1 人のユーザーがNetAppサポート サイト アカウントをBlueXPログインに関連付ける必要があります。NetAppサポートに登録する方法は、 NetAppサポート サイト (NSS) アカウントをすでにお持ちかどうかによって異なります。</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">NSSアカウントをお持ちの既存顧客</block>
-  <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">NSS アカウントをお持ちのNetApp のお客様の場合は、 BlueXPを通じてサポートに登録するだけです。</block>
-  <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">BlueXPコンソールの右上にある設定アイコンを選択し、*資格情報*を選択します。</block>
   <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">*ユーザー資格情報*を選択します。</block>
-  <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">*NSS 資格情報の追加* を選択し、 NetAppサポート サイト (NSS) の認証プロンプトに従います。</block>
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">登録プロセスが成功したことを確認するには、[ヘルプ] アイコンを選択し、[サポート] を選択します。</block>
-  <block id="2ba7f9eae7a02f9c3ac0fc07517d1c48" category="paragraph">*リソース* ページには、 BlueXP組織がサポートに登録されていることが表示されます。</block>
-  <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">アカウントのシリアル番号、緑色のチェックボックス、および「サポートに登録済み」というテキストが表示されているスクリーンショット。</block>
-  <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c05e530d1466e986d570cfe3f92656c3" category="paragraph">他のBlueXPユーザーは、 NetAppサポート サイト アカウントをBlueXPログインに関連付けていない場合、同じサポート登録ステータスを表示しないことに注意してください。ただし、これはBlueXP組織がサポートに登録されていないことを意味するものではありません。組織内の 1 人のユーザーがこれらの手順を実行すれば、組織は登録されます。</block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">既存の顧客だがNSSアカウントがない</block>
-  <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">既存のNetApp顧客であり、既存のライセンスとシリアル番号を持っているものの、NSS アカウントを持っていない場合は、NSS アカウントを作成し、それをBlueXPログインに関連付ける必要があります。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">NetAppサポートサイト ユーザー登録フォーム</block>
   <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">NetAppサポートサイトのアカウントを作成するには、<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
   <block id="d61c9f72493817776f392db42ac446a2" category="list-text">適切なユーザー レベル (通常は * NetApp顧客/エンド ユーザー*) を選択してください。</block>
-  <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">上記で使用したBlueXPアカウントのシリアル番号 (960xxxx) を必ずシリアル番号フィールドにコピーしてください。これにより、アカウント処理が高速化されます。</block>
-  <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">以下の手順を完了して、新しいNSSアカウントをBlueXPログインに関連付けます。<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> 。</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetAppの新着情報</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">NetAppを初めて使用し、NSS アカウントをお持ちでない場合は、以下の手順に従ってください。</block>
-  <block id="d889e6e7cc4c5509ab5b37f8fc894e46" category="list-text">BlueXPコンソールの右上にあるヘルプ アイコンを選択し、*サポート* を選択します。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">「サポート」が最初のオプションとしてリストされている「ヘルプ」メニューのスクリーンショット</block>
   <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">サポート登録ページからアカウント ID シリアル番号を見つけます。</block>
@@ -1645,23 +1593,17 @@
   <block id="201080500e946070a2e4873042507c77" category="paragraph">確認すると、リクエストがNetAppに送信され、 NetAppサポート サイトのアカウントを作成することが推奨されます。</block>
   <block id="a2454703f88e5bf5b433ae850a87151b" category="list-text">上記で使用したアカウントのシリアル番号 (960xxxx) を必ずシリアル番号フィールドにコピーしてください。これにより処理速度が向上します。</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">このプロセス中に、 NetAppから連絡が来るはずです。これは、新規ユーザー向けの 1 回限りのオンボーディング演習です。</block>
-  <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">NetAppサポートサイトのアカウントを取得したら、以下の手順を実行してアカウントをBlueXPログインに関連付けます。<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> 。</block>
   <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">Cloud Volumes ONTAPサポートに NSS 認証情報を関連付ける</block>
-  <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">Cloud Volumes ONTAPの次の主要なワークフローを有効にするには、 NetAppサポート サイトの認証情報をBlueXP組織に関連付ける必要があります。</block>
   <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">従量課金制のCloud Volumes ONTAPシステムをサポート対象として登録する</block>
   <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">システムのサポートを有効にし、 NetAppテクニカル サポート リソースにアクセスするには、NSS アカウントを提供する必要があります。</block>
   <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">BYOL（個人ライセンス使用）時にCloud Volumes ONTAP を導入する</block>
-  <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">BlueXP がライセンス キーをアップロードし、購入した期間のサブスクリプションを有効にするには、NSS アカウントを提供する必要があります。これには、期間更新の自動更新が含まれます。</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Cloud Volumes ONTAPソフトウェアを最新リリースにアップグレードする</block>
-  <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">NSS 資格情報をBlueXP組織に関連付けることは、 BlueXPユーザー ログインに関連付けられている NSS アカウントとは異なります。</block>
-  <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">これらの NSS 資格情報は、特定のBlueXP組織 ID に関連付けられています。BlueXP組織に属するユーザーは、*サポート &gt; NSS 管理* からこれらの資格情報にアクセスできます。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">顧客レベルのアカウントをお持ちの場合は、1 つ以上の NSS アカウントを追加できます。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">パートナー アカウントまたは再販業者アカウントをお持ちの場合は、1 つ以上の NSS アカウントを追加できますが、顧客レベルのアカウントと一緒に追加することはできません。</block>
   <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">*NSS管理 &gt; NSSアカウントの追加*を選択します。</block>
   <block id="85b9386ed443776127e099931d73448a" category="list-text">プロンプトが表示されたら、[続行] を選択して、Microsoft ログイン ページにリダイレクトします。</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp は、サポートとライセンスに固有の認証サービスの ID プロバイダーとして Microsoft Entra ID を使用します。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">ログイン ページで、 NetAppサポート サイトに登録した電子メール アドレスとパスワードを入力して、認証プロセスを実行します。</block>
-  <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">これらのアクションにより、 BlueXP はライセンスのダウンロード、ソフトウェア アップグレードの検証、将来のサポート登録などに NSS アカウントを使用できるようになります。</block>
   <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSS アカウントは顧客レベルのアカウントである必要があります (ゲスト アカウントや一時アカウントではありません)。顧客レベルの NSS アカウントを複数持つことができます。</block>
   <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">パートナー レベルのアカウントの場合、NSS アカウントは 1 つだけ存在できます。顧客レベルの NSS アカウントを追加しようとしたときに、パートナー レベルのアカウントが存在する場合は、次のエラー メッセージが表示されます。</block>
   <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">「異なるタイプの NSS ユーザーがすでに存在するため、このアカウントでは NSS 顧客タイプは許可されません。」</block>
@@ -2080,4 +2022,51 @@
   <block id="399bd1ee587245ecac6f39beaa99886f" category="list-text">PostgreSQL</block>
   <block id="b8bf0879f259dbfb5601d4fdb086df91" category="list-text">オンプレミスのONTAPクラスタまたはAWSまたはAzureクラウドのCloud Volumes ONTAPがコンソールで設定されていない場合は、<block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block>そして<block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>。</block>
   <block id="acd257a01891523b6ff91a9020b733ba" category="paragraph">疑わしいユーザーアクティビティ データは、次のリージョンの AWS および Azure に保存される可能性があります。</block>
+  <block id="2feeca48692986e9cc471ec61f847fca" category="paragraph">NetApp は、 NetApp Consoleとそのクラウド サービスをさまざまな方法でサポートします。ナレッジ ベース (KB) 記事やコミュニティ フォーラムなど、豊富な無料のセルフ サポート オプションが 24 時間 365 日ご利用いただけます。サポート登録には、Webチケットによるリモートテクニカルサポートも含まれます。</block>
+  <block id="317cbd2c4fdbfd06a6c66bcd3f57d7ad" category="paragraph">クラウド プロバイダーのファイル サービス、そのインフラストラクチャ、またはサービスを使用するソリューションに関連するテクニカル サポートについては、その製品のドキュメントを参照してください。</block>
+  <block id="359d8b16e442ffaa72e03c95fcd60448" category="list-text"><block ref="359d8b16e442ffaa72e03c95fcd60448" category="inline-link-macro-rx"></block></block>
+  <block id="153836c062a78213f2aa165322254aa4" category="list-text"><block ref="153836c062a78213f2aa165322254aa4" category="inline-link-macro-rx"></block></block>
+  <block id="0d592360c983f234b130127efee38805" category="list-text"><block ref="0d592360c983f234b130127efee38805" category="inline-link-macro-rx"></block></block>
+  <block id="68e6fe8cde496154d24fd032b4262070" category="paragraph">NetAppとそのストレージ ソリューションおよびデータ サービスに固有のテクニカル サポートを受けるには、以下に説明するサポート オプションを使用してください。</block>
+  <block id="5bb94d173380c00577f5e04b6f26bb94" category="paragraph">現在表示しているNetApp Consoleのドキュメント。</block>
+  <block id="0e20091afcea2d83d0033a933ba85092" category="paragraph">NetAppナレッジベースを検索して、問題のトラブルシューティングに役立つ記事を見つけます。</block>
+  <block id="777d75a90b107e4f18469f82c4f81fe2" category="paragraph">NetApp Consoleコミュニティに参加して、進行中のディスカッションをフォローしたり、新しいディスカッションを作成したりできます。</block>
+  <block id="c406bf0ac8ac87bc5bb7132a7351b2ae" category="inline-link">コンソールログインに関連付けられた資格情報を管理する方法を学びます</block>
+  <block id="377118f28487e70bd456993144b72fc7" category="list-text">*ケースの作成*機能を使用するには、まずNetAppサポート サイトの資格情報をコンソール ログインに関連付ける必要があります。<block ref="68c4321a756e3ffe955b62cff6fea46d" category="inline-link-rx"></block> 。</block>
+  <block id="0ab80a63088581d58dcf067051f4c894" category="list-text">NetApp Consoleで、[ヘルプ] &gt; [サポート] を選択します。</block>
+  <block id="a1123cd59d7bd876c080c33906ae65ce" category="list-text">*サービス*: 問題が関連付けられているサービスを選択します。たとえば、* NetApp Console* は、コンソール内のワークフローまたは機能に関するテクニカル サポートの問題に固有の場合です。</block>
+  <block id="987df7518e2afb50a860647c832afd13" category="list-text">*システム*: ストレージに該当する場合は、* Cloud Volumes ONTAP* または *On-Prem* を選択し、関連する作業環境を選択します。</block>
+  <block id="8f8e8a86e5f52b6186a37bdf266c4320" category="paragraph">システムのリストは、コンソール組織と、上部のバナーで選択したコンソール エージェントの範囲内にあります。</block>
+  <block id="77c89527ec8a9f89b24c5579d19b3b4b" category="paragraph"><block ref="77c89527ec8a9f89b24c5579d19b3b4b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="178fdaf97b1d1577437f11ee9d5e5229" category="paragraph">このエラーは、NSS アカウントとそれに関連付けられているレコード会社が、NetApp Consoleアカウントのシリアル番号のレコード会社と同じではないことを意味している可能性があります (つまり、960xxxx) または作業環境のシリアル番号。次のいずれかのオプションを使用してサポートを求めることができます。</block>
+  <block id="e1100b46295d42ed50ba7a4630710164" category="section-title">サポートケースを管理する</block>
+  <block id="316508a3483178100806a9d44b49aba2" category="paragraph">アクティブなサポート ケースと解決済みのサポート ケースをコンソールから直接表示および管理できます。NSS アカウントおよび会社に関連付けられたケースを管理できます。</block>
+  <block id="9163e8bca6fd93c080d35ab49e3efdfa" category="list-text">NetApp Consoleで、[ヘルプ] &gt; [サポート] を選択します。</block>
+  <block id="2019fd19051c3ef493dbbb9ca65bab87" category="list-text">*ケース管理*を選択し、プロンプトが表示されたら、NSS アカウントをコンソールに追加します。</block>
+  <block id="75e54e3a6fdbf43ed890669e079d7594" category="paragraph">*ケース管理* ページには、コンソール ユーザー アカウントに関連付けられている NSS アカウントに関連するオープン ケースが表示されます。これは、*NSS 管理* ページの上部に表示される NSS アカウントと同じです。</block>
+  <block id="8ac6be88c1aa79062825a147fb263b0e" category="list-text">表に表示される列を変更するには、<block ref="500a336e7ba1c54bcffba4e27bda4eb6" category="inline-image-macro-rx" type="image"></block>次に、表示する列を選択します。</block>
+  <block id="049b7b9fab1242f5e715952973c9474d" category="list-text">既存のケースを管理するには、<block ref="7381d9baeaf62eb099ce84f1a21ed5ca" category="inline-image-macro-rx" type="image"></block>利用可能なオプションのいずれかを選択します。</block>
+  <block id="776abbf4d80cbef17bd3c86ff37b2257" category="paragraph">NetApp Consoleとそのストレージ ソリューションおよびデータ サービスに固有のテクニカル サポートを受けるには、サポート登録が必要です。Cloud Volumes ONTAPシステムの主要なワークフローを有効にするには、サポート登録も必要です。</block>
+  <block id="ba4e23e03f4354a0f1ef2781272c8477" category="paragraph">サポートに登録しても、クラウド プロバイダー ファイル サービスに対するNetAppサポートは有効になりません。クラウド プロバイダーのファイル サービス、そのインフラストラクチャ、またはサービスを使用するソリューションに関連するテクニカル サポートについては、その製品のドキュメントの「ヘルプの取得」を参照してください。</block>
+  <block id="869a868c87f6fb61410cfd773b4f1bab" category="list-text">NetApp Consoleアカウントのシリアル番号 (コンソールの [サポート リソース] ページにある 20 桁の 960xxxxxxxxx シリアル番号) を登録します。</block>
+  <block id="be0b51de4268d87101344aa0368b4403" category="paragraph">これは、コンソール内のすべてのサービスに対する単一のサポート サブスクリプション ID として機能します。各コンソール アカウントを登録する必要があります。</block>
+  <block id="3cf9fb70d6921dd90583621f028a395f" category="paragraph">これらのシリアル番号は一般に _PAYGO シリアル番号_ と呼ばれ、 Cloud Volumes ONTAP の導入時にNetApp Consoleによって生成されます。</block>
+  <block id="bf516b6498e37e816d29ae43ae132f74" category="paragraph">両方のタイプのシリアル番号を登録すると、サポート チケットの開設やケースの自動生成などの機能が有効になります。登録は、以下の説明に従ってNetAppサポート サイト (NSS) アカウントをコンソールに追加することで完了します。</block>
+  <block id="ba5983207e417797fefd5b9374ab4a97" category="section-title">NetAppサポートのためにNetApp Consoleを登録する</block>
+  <block id="dcb7105ba6e3d9411b05e726848feb80" category="paragraph">サポートに登録し、サポート資格を有効にするには、 NetApp Consoleアカウントの 1 人のユーザーがNetAppサポート サイト アカウントをコンソール ログインに関連付ける必要があります。NetAppサポートに登録する方法は、 NetAppサポート サイト (NSS) アカウントをすでにお持ちかどうかによって異なります。</block>
+  <block id="ed5bddb699a442b85bc1bb8e1516fe57" category="paragraph">NSS アカウントをお持ちのNetApp のお客様の場合は、コンソールからサポートに登録するだけです。</block>
+  <block id="76bc427c3d9c4b81dc353078b942f991" category="list-text">*管理* &gt; *資格情報*を選択します。</block>
+  <block id="e9451600769b4bf4b20ca941ba9e6d19" category="list-text">*NSS 資格情報の追加* を選択し、 NetAppサポート サイト (NSS) の認証プロンプトに従います。</block>
+  <block id="1d4ea9fd10f6cfcd6f6fe1f861d354a4" category="paragraph">*リソース* ページには、コンソール アカウントがサポートに登録されていることが表示されます。</block>
+  <block id="afe8240ca62f4b72006980ff64d371b8" category="paragraph">他のコンソール ユーザーは、ログインにNetAppサポート サイト アカウントを関連づけていない場合、同じサポート登録ステータスを表示しないことに注意してください。ただし、これはあなたのアカウントがサポートに登録されていないことを意味するものではありません。組織内の 1 人のユーザーがこれらの手順を実行していれば、アカウントは登録済みになります。</block>
+  <block id="42eaca1e1c2d9e1f04e932eeaa6d129d" category="paragraph">既存のNetApp顧客であり、既存のライセンスとシリアル番号を持っているものの、NSS アカウントを持っていない場合は、NSS アカウントを作成し、それをコンソール ログインに関連付ける必要があります。</block>
+  <block id="bd33c4539c7d6985f6edafd4a4f2ba1d" category="list-text">上記で使用したコンソール アカウントのシリアル番号 (960xxxx) を必ずシリアル番号フィールドにコピーしてください。これにより、アカウント処理が高速化されます。</block>
+  <block id="9b1f48f88cd439b7a50fe3e76eb8a853" category="list-text">以下の手順を実行して、新しいNSSアカウントをコンソールログインに関連付けます。<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="e7e9f49f4584c68b9d97c578e73b7583" category="list-text">コンソールの右上にあるヘルプ アイコンを選択し、*サポート* を選択します。</block>
+  <block id="629757336278be576456cf315303b178" category="paragraph">NetAppサポートサイトのアカウントを取得したら、以下の手順を実行して、アカウントをコンソールログインに関連付けます。<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="f22d1a855e255746a6b925a3b22f7838" category="paragraph">Cloud Volumes ONTAPの次の主要なワークフローを有効にするには、 NetAppサポート サイトの認証情報をコンソール アカウントに関連付ける必要があります。</block>
+  <block id="f3cd224f9506684fa3b5e2b89b2a566c" category="paragraph">コンソールがライセンス キーをアップロードし、購入した期間のサブスクリプションを有効にするには、NSS アカウントを提供する必要があります。これには、期間更新の自動更新が含まれます。</block>
+  <block id="daf104544b5203a46e1580e1b8583f1f" category="paragraph">NSS 資格情報をNetApp Consoleアカウントに関連付けることは、コンソール ユーザー ログインに関連付けられている NSS アカウントとは異なります。</block>
+  <block id="5bc1315a63455544e7a917a7cc968939" category="paragraph">これらの NSS 資格情報は、特定のコンソール アカウント ID に関連付けられています。コンソール組織に属するユーザーは、*サポート &gt; NSS 管理* からこれらの資格情報にアクセスできます。</block>
+  <block id="7687b0a57d5cb728d9fb892dfc814715" category="paragraph">これらのアクションにより、コンソールはライセンスのダウンロード、ソフトウェア アップグレードの検証、将来のサポート登録などに NSS アカウントを使用できるようになります。</block>
 </blocks>
