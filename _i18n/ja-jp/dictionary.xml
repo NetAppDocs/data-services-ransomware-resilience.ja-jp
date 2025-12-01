@@ -1995,7 +1995,6 @@
   <block id="e29d7c0b36af68edd13ebac84f15b44b" category="cell">クラウド プロバイダ</block>
   <block id="f447ac856e7e72435904956e3b15f433" category="cell">リージョン</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="cell">AWS</block>
-  <block id="90f74c5c50c42b91275c19e2cccad976" category="cell">米国東部 (us-east-1)</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="cell">Azure</block>
   <block id="3c110de67497eb3f8d4c100e43101c81" category="cell">米国東部</block>
   <block id="0ba29c6a1afacf586b03a26162c72274" category="cell">環境</block>
@@ -2069,4 +2068,7 @@
   <block id="daf104544b5203a46e1580e1b8583f1f" category="paragraph">NSS 資格情報をNetApp Consoleアカウントに関連付けることは、コンソール ユーザー ログインに関連付けられている NSS アカウントとは異なります。</block>
   <block id="5bc1315a63455544e7a917a7cc968939" category="paragraph">これらの NSS 資格情報は、特定のコンソール アカウント ID に関連付けられています。コンソール組織に属するユーザーは、*サポート &gt; NSS 管理* からこれらの資格情報にアクセスできます。</block>
   <block id="7687b0a57d5cb728d9fb892dfc814715" category="paragraph">これらのアクションにより、コンソールはライセンスのダウンロード、ソフトウェア アップグレードの検証、将来のサポート登録などに NSS アカウントを使用できるようになります。</block>
+  <block id="24dd233beea6d20446b604bba13115c0" category="list-text">アジア太平洋（シドニー）（ap-southeast-2）</block>
+  <block id="5c024c0f8096e0fba857f661afe2dbd0" category="list-text">ヨーロッパ (フランクフルト) (eu-central-1)</block>
+  <block id="d605e764d56b8615ebf6dd5f87998855" category="list-text">米国東部（バージニア北部）（us-east-1）</block>
 </blocks>
