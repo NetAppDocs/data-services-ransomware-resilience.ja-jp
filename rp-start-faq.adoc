@@ -56,7 +56,7 @@ Ransomware Resilience に推奨されるデバイス解像度は 1920x1080 以�
 
 == 相互運用性
 
-.Ransomware Resilience はNetApp ONTAPで行われた保護設定を認識しますか?
+.Ransomware Resilience はONTAPの保護設定を認識しますか?
 はい、Ransomware Resilience はONTAPで設定されたスナップショット スケジュールを検出します。
 
 .Ransomware Resilience はNetApp Backup and RecoveryおよびSnapCenterとどのように連携しますか?
@@ -65,6 +65,8 @@ Ransomware Resilience は、バックアップおよびリカバリと連携し�
 Ransomware Resilience は、 SnapCenterまたはSnapCenter for VMware と連携して、アプリケーションおよび VM ワークロードのスナップショットおよびバックアップ ポリシーを検出し、設定します。
 
 Ransomware Resilience は、バックアップとリカバリ、 SnapCenter ( SnapCenter for VMware を含む) と連携して、ファイルとワークロードの整合性のあるリカバリを実行します。
+
+ライセンスと課金に関しては、バックアップとリカバリ用の個別のライセンスがない場合でも、Ransomware Resilience をバックアップとリカバリと統合できます。バックアップとリカバリとランサムウェア耐性の両方をお持ちの場合、両方の製品で保護されている共通データについては、ランサムウェア耐性に対してのみ課金されます。
 
 
 
@@ -117,7 +119,7 @@ SnapCenterまたはSnapCenter for VMware があり、バックアップとリカ
 
 ランサムウェア耐性戦略では、バックアップ ポリシーは必要ありません。
 
-.Ransomware Resilience はNetApp ONTAPで行われた保護設定を認識しますか?
+.Ransomware Resilience はONTAPの保護設定を認識しますか?
 はい、Ransomware Resilience はONTAPで設定されたスナップショット スケジュールを検出します。また、検出されたワークロード内のすべてのボリュームで ARP と FPolicy が有効になっているかどうかも検出します。ランサムウェア耐性ダッシュボードに表示される情報は、他のNetAppソリューションおよび製品から集約されたものです。
 
 .Ransomware Resilience は、バックアップとリカバリおよびSnapCenterですでに作成されているポリシーを認識しますか?

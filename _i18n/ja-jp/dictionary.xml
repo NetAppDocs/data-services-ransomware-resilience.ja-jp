@@ -1925,7 +1925,6 @@
   <block id="654c205bcf87cc0cd36f606d947ec009" category="paragraph-title">どのブラウザを使用すればよいですか?</block>
   <block id="109ebdb84b226b323abc2b47b353e5f4" category="paragraph">最新の Web ブラウザを使用してNetApp Consoleにアクセスできます。</block>
   <block id="67a915151759ecc737f698391f7cfd08" category="section-title">相互運用性</block>
-  <block id="93b28face605282843b25b8f2fa64a10" category="paragraph-title">Ransomware Resilience はNetApp ONTAPで行われた保護設定を認識しますか?</block>
   <block id="10c4fe0b6e00d5560df8e602d85a5bd1" category="paragraph">はい、Ransomware Resilience はONTAPで設定されたスナップショット スケジュールを検出します。</block>
   <block id="8ed72bdbbdc0df9146a0777651178cbf" category="paragraph-title">Ransomware Resilience はNetApp Backup and RecoveryおよびSnapCenterとどのように連携しますか?</block>
   <block id="8f3fc6dee049aeb65422cea50c997060" category="paragraph">Ransomware Resilience は、バックアップおよびリカバリと連携して、ファイル共有ワークロードのスナップショットおよびバックアップ ポリシーを検出して設定します。</block>
@@ -2071,4 +2070,6 @@
   <block id="24dd233beea6d20446b604bba13115c0" category="list-text">アジア太平洋（シドニー）（ap-southeast-2）</block>
   <block id="5c024c0f8096e0fba857f661afe2dbd0" category="list-text">ヨーロッパ (フランクフルト) (eu-central-1)</block>
   <block id="d605e764d56b8615ebf6dd5f87998855" category="list-text">米国東部（バージニア北部）（us-east-1）</block>
+  <block id="a55a22032fc9fd630abe933324e9d4b9" category="paragraph-title">Ransomware Resilience はONTAPの保護設定を認識しますか?</block>
+  <block id="1c8f51534c2fc10dfef26d32d61c7ed3" category="paragraph">ライセンスと課金に関しては、バックアップとリカバリ用の個別のライセンスがない場合でも、Ransomware Resilience をバックアップとリカバリと統合できます。バックアップとリカバリとランサムウェア耐性の両方をお持ちの場合、両方の製品で保護されている共通データについては、ランサムウェア耐性に対してのみ課金されます。</block>
 </blocks>
