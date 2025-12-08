@@ -2073,6 +2073,11 @@
   <block id="dce365633ffb688b7532470dfaf4e118" category="cell">*プロトコル*</block>
   <block id="91fa08a58f816e98d83df1ce310eb825" category="cell">プロトコル フィールドはオプションです。LDAP、LDAPS、または LDAP over StartTLS を使用できます。</block>
   <block id="f9115354bfb0b47a80e11c68936a7ec8" category="cell">選択したポート番号を入力してください</block>
-  <block id="ffcb2d1f993f068c61d2776ab07c354f" category="paragraph">属性マッピングの詳細を入力します。 * *表示名* * *SID* (LDAP を使用している場合) * *ユーザー名* * *Unix ID* (NFS を使用している場合) * *オプションの属性を含める* を選択した場合は、電子メール アドレス、電話番号、役割、州、国、部門、写真、マネージャー DN、またはグループも追加できます。</block>
-  <block id="8cab6e56434342fb39a14e12391a5d3e" category="paragraph">+ オプションの検索クエリを追加するには、[*詳細*] を選択します。</block>
+  <block id="86c3d5aee71dba0d2e67a122a900b46d" category="paragraph">属性マッピングの詳細を指定します。</block>
+  <block id="67abd0bd8cf8f6b948416d41be7c6f6a" category="list-text">*表示名*</block>
+  <block id="aff175f709dc693d1f9ca4c44728163a" category="list-text">*SID* (LDAP を使用している場合)</block>
+  <block id="3b57547caa3754998fa617bd92514f25" category="list-text">*ユーザー名*</block>
+  <block id="c8a0546946d4ed57fd88fc4918d3825f" category="list-text">*Unix ID* (NFS を使用している場合)</block>
+  <block id="1358e8e29329a97048f0688a1813071f" category="list-text">*オプションの属性を含める*を選択した場合は、電子メール アドレス、電話番号、役割、州、国、部門、写真、マネージャー DN、またはグループも追加できます。</block>
+  <block id="7703674a5321c1f23549682250a732e9" category="paragraph">オプションの検索クエリを追加するには、[*詳細*] を選択します。</block>
 </blocks>
