@@ -16,7 +16,7 @@ NetApp Ransomware Resilienceを使用する前に、まずデータを検出す�
 
 *必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
-*ランサムウェア耐性は何を検出しますか?*ランサムウェア耐性は、MySQL アプリケーション、Oracle アプリケーション、VMware データストア、ファイル共有、ブロック ストレージを評価します。
+*ランサムウェア耐性は何を検出しますか?*ランサムウェア耐性は、Oracle アプリケーション、VMware データストア、ファイル共有、ブロック ストレージを評価します。
 
 
 NOTE: Ransomware Resilience では、 FlexGroupを使用するボリュームを持つワークロードは検出されません。

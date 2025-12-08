@@ -83,7 +83,7 @@ Ransomware Resilience は、バックアップとリカバリ、 SnapCenter ( Sn
 link:rp-use-protect.html["作業負荷の優先度や重要性について知る"] 。
 
 .Ransomware Resilience はどのようなワークロードをサポートしますか?
-Ransomware Resilience は、Oracle、MySQL、ファイル共有、ブロック ストレージ、VM、VM データストアなどのワークロードを識別できます。
+Ransomware Resilience は、Oracle、ファイル共有、ブロック ストレージ、VM、VM データストアなどのワークロードを識別できます。
 
 SnapCenterまたはSnapCenter for VMware を使用している場合、これらの製品でサポートされているすべてのワークロードも Ransomware Resilience で識別されます。ランサムウェア耐性により、 SnapCenterおよびSnapCenterワークロードをワークロードの一貫性を保ちながら保護および回復できます。
 

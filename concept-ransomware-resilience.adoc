@@ -16,7 +16,7 @@ summary: ランサムウェア耐性を使用すると、サイバーセキュ�
 [role="lead"]
 ランサムウェア攻撃によりデータへのアクセスがブロックされ、攻撃者はデータの解放や暗号化の解除と引き換えに身代金を要求する可能性があります。 IDC によれば、ランサムウェアの被害者が複数のランサムウェア攻撃を受けることは珍しくありません。この攻撃により、1 日から数週間にわたりデータへのアクセスが中断される可能性があります。
 
-NetApp Ransomware Resilience は、ランサムウェア攻撃からデータを保護します。ランサムウェア耐性では、オンプレミスの NAS ストレージ (NFS および CIFS プロトコルを使用) と SAN ストレージ (FC、iSCSI、NVMe) 上の Oracle、MySQL、VM データストア、ファイル共有のアプリケーションベースのワークロード、および NetApp コンソール全体のCloud Volumes ONTAP for Amazon Web Services、 Cloud Volumes ONTAP for Google Cloud、 Cloud Volumes ONTAP for Microsoft Azure、 Amazon FSx for NetApp ONTAP のNetApp Consoleが利用できます。  Amazon Web Services、Google Cloud、Microsoft Azure クラウド ストレージ、 NetApp StorageGRIDにデータをバックアップできます。
+NetApp Ransomware Resilience は、ランサムウェア攻撃からデータを保護します。ランサムウェア耐性では、Oracle のアプリケーションベースのワークロード、VM データストア、オンプレミスの NAS ストレージ (NFS および CIFS プロトコルを使用) と SAN ストレージ (FC、iSCSI、NVMe) 上のファイル共有、およびCloud Volumes ONTAP for Amazon Web Services、 Cloud Volumes ONTAP for Google Cloud、 Cloud Volumes ONTAP for Microsoft Azure、 Amazon FSx for NetApp ONTAPが利用できます。Amazon Web Services、Google Cloud、Microsoft Azure クラウド ストレージ、 NetApp StorageGRIDにデータをバックアップできます。
 
 
 
@@ -39,7 +39,7 @@ image:concept-security-layer-diagram.png["セキュリティ層図"]
 
 ランサムウェア耐性は、複数のNetAppテクノロジーをフル活用することで、ストレージ管理者、データ セキュリティ管理者、またはセキュリティ運用エンジニアが次の目標を達成できるようにします。
 
-* NetApp Console、プロジェクト、コンソール エージェント全体で、 NetAppオンプレミス NAS (NFS または CIFS) および SAN (FC、iSCSI、NVMe) システム内のすべてのアプリケーションベース、ファイル共有、または VMware 管理のワークロードを *識別* します。ランサムウェア耐性は、データの優先度を分類し、ランサムウェア耐性の向上に関する推奨事項を提供します。
+* NetApp Console、プロジェクト、コンソール エージェント全体で、 NetAppオンプレミス NAS (NFS または CIFS) および SAN (FC、iSCSI、NVMe) システム内のすべてのアプリケーション ベース、ファイル共有、または VMware 管理のワークロードを *識別* します。ランサムウェア耐性は、データの優先度を分類し、ランサムウェア耐性の向上に関する推奨事項を提供します。
 * データのバックアップ、スナップショット コピー、ランサムウェア保護戦略を有効にして、ワークロードを*保護*します。
 * ランサムウェア攻撃の可能性がある異常を*検出*します。脚注:[攻撃が検出されない可能性もありますが、当社の調査によると、 NetApp のテクノロジにより、特定のファイル暗号化ベースのランサムウェア攻撃を高いレベルで検出できることがわかっています。]
 * 不正なコピーや悪意によるコピーの削除ができないようにロックされた、改ざん防止のNetApp ONTAPスナップショットを自動的に開始することで、潜在的なランサムウェア攻撃に*対応*します。バックアップ データは変更不可能なまま、ソースと宛先の両方でランサムウェア攻撃からエンドツーエンドで保護されます。
@@ -59,7 +59,7 @@ image:diagram-rp-features-phases3.png["ランサムウェア耐性戦略（識�
 * ランサムウェア保護の態勢を評価し、わかりやすいダッシュボードに表示します。
 * 検出と保護態勢の分析に基づいて、次のステップに関する推奨事項を提供します。
 * ワンクリック アクセスで AI/ML 主導のデータ保護推奨事項を適用します。
-* MySQL、Oracle、VMware データストア、ファイル共有などの主要なアプリケーションベースのワークロード内のデータを保護します。
+* Oracle、VMware データストア、ファイル共有などのアプリケーションベースのワークロード内のデータを保護します。
 * AI テクノロジーを使用して、プライマリ ストレージ上のデータに対するランサムウェア攻撃をリアルタイムで検出します。
 * 検出された潜在的な攻撃に応じて、スナップショット コピーを作成し、異常なアクティビティに関するアラートを開始することで、自動アクションを開始します。
 * RPO ポリシーを満たすようにキュレートされたリカバリを適用します。  Ransomware Resilience は、NetApp Backup and Recovery (旧称 Cloud Backup) やSnapCenterなどの複数のNetAppリカバリ サービスを使用して、ランサムウェア インシデントからのリカバリを調整します。
@@ -228,7 +228,6 @@ NOTE: ONTAPで ARP/AI を使用するには、 ONTAP 9.16 以上が必要です�
 * データベース:
 +
 ** Microsoft SQL Server
-** MySQL
 ** Oracle
 ** PostgreSQL
 
@@ -246,5 +245,5 @@ SnapCenterまたはSnapCenter for VMware を使用している場合、それら
 ランサムウェア対策に関連するいくつかの用語を理解しておくと役立つかもしれません。
 
 * *保護*: ランサムウェア耐性における保護とは、保護ポリシーを使用して、スナップショットと不変のバックアップが別のセキュリティ ドメインに定期的に実行されるようにすることを意味します。
-* *ワークロード*: ランサムウェア耐性のワークロードには、MySQL または Oracle データベース、VMware データストア、ファイル共有が含まれる場合があります。
+* *ワークロード*: ランサムウェア耐性のワークロードには、Oracle データベース、VMware データストア、またはファイル共有が含まれる場合があります。
 

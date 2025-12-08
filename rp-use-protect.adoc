@@ -45,7 +45,7 @@ TIP: データ資産の管理と保護を強化するために、link:#create-a-
 
 * ファイル共有、VM ファイル共有向けのNetApp Backup and Recovery
 * VMデータストア用のSnapCenter for VMware
-* Oracle および MySQL 向けSnapCenter
+* Oracle向けSnapCenter
 
 
 これらのサービスからの保護情報は、Ransomware Resilience に表示されます。  Ransomware Resilience を使用して、これらのサービスに検出ポリシーを追加できます。  Ransomware Resilience を使用して保護ポリシーを追加すると、既存の保護ポリシーが置き換えられます。
