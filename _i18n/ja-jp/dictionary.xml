@@ -2069,7 +2069,6 @@
   <block id="8a9b2764802b622f9894a669a606f74f" category="doc">拡張機能のブロックはワークロードレベルで有効になります</block>
   <block id="ab47595f128d75b47b3449fcd4dfb523" category="paragraph">拡張機能のブロックを有効にすると、ストレージ VM レベルではなくワークロード レベルで有効になります。</block>
   <block id="a6493502d5fc22c0b3ccee818dc4a5a5" category="section-title">ユーザー行動アラートステータスの編集</block>
-  <block id="f143f02b29819ec9e761d9f292dea42c" category="paragraph">Ransomware Resilience では、ユーザー行動アラートのステータスを編集できるようになりました。アラートを手動で解除したり解決したりできます。アラートを「確認中」としてマークすることもできるようになりました。</block>
   <block id="685b0f2db45e4fc09a06ccb4695806de" category="inline-xref-macro">アラートを管理する</block>
   <block id="30acfc7aa0f5ff9593d73e769de766c0" category="paragraph">詳細については、 <block ref="32161c93f86d45672d8429d13ea78e6b" category="inline-xref-macro-rx"></block>。</block>
   <block id="d5214a8deea026de61af736ebf8697dd" category="section-title">複数のコンソールエージェントのサポート</block>
@@ -2079,7 +2078,6 @@
   <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">NetApp Ransomware Resilienceのアラートを管理する</block>
   <block id="9a51095678260d2a753174230dbe8a88" category="paragraph">NetApp Ransomware Resilience は、攻撃の可能性を検出すると、ダッシュボードと通知領域にアラートを表示します。Ransomware Resilience は直ちにスナップショットを作成します。ランサムウェア耐性の *アラート* タブで潜在的なリスクを確認します。</block>
   <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">アラート インシデントには、次の状態があります。</block>
-  <block id="afc3fd7b02af578176e65700acd6709b" category="list-text">*レビュー中*: インシデントを評価中に、レビュー中としてマークすることができます。</block>
   <block id="93771318f0ad483bcb651c0ded2c6033" category="admonition">攻撃を却下した後は、そのステータスを元に戻すことはできません。ワークロードを破棄すると、潜在的なランサムウェア攻撃に応じて自動的に作成されたすべてのスナップショット コピーが完全に削除されます。</block>
   <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">インシデントを確認した後、そのインシデントが潜在的な攻撃であるかどうかを判断する必要があります。実際の脅威ではない場合は、無視できます。</block>
   <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">誤検知を無視するか、すぐにデータを回復することを決定できます。アラートを無視すると、Ransomware Resilience はこの動作を学習し、通常の操作と関連付けて、そのような動作に対して再度アラートを開始しなくなります。</block>
@@ -2090,4 +2088,5 @@
   <block id="6edf03555b64b68b413469994ca42164" category="list-text">*コンソール エージェント* - コンソール エージェントは、ユーザー アクティビティ エージェントと同じネットワーク内に存在し、ユーザー アクティビティ エージェントの IP アドレスに SSH 接続できる必要があります。</block>
   <block id="8e19d605b8be4e3be2157e822268633f" category="list-text">*オプションの属性を含める*を選択した場合は、電子メール アドレス、電話番号、役割、州、国、部門、写真、マネージャー DN、またはグループも追加できます。オプションの検索クエリを追加するには、[*詳細*] を選択します。</block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025年12月8日</block>
+  <block id="4256b08931f8c14d28bbf33199e1b022" category="paragraph">Ransomware Resilience では、ユーザー行動アラートのステータスを編集できるようになりました。アラートを手動で解除したり解決したりできます。</block>
 </blocks>
