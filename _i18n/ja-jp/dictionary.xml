@@ -215,7 +215,6 @@
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link">自律型ランサムウェア対策</block>
   <block id="cc6088539286339733631d73fb51774b" category="inline-link">NetApp Backup and Recovery</block>
   <block id="2dd00507ca85eec8a3465506e478e45f" category="inline-link">ONTAP FPolicy</block>
-  <block id="f2abd20c3ee58c54298223da2df91335" category="list-text">各ボリュームのNetAppスナップショット コピーとバックアップ ポリシーの現在の保護レベルと、オンボックス検出機能を検出します。ランサムウェア耐性は、バックアップとリカバリ、 ONTAPサービス、および Autonomous Ransomware Protection ( ONTAPのバージョンに応じて ARP または ARP/AI)、FPolicy、バックアップ ポリシー、スナップショット ポリシーなどのNetAppテクノロジーを使用して、この保護態勢をワークロードに関連付けます。詳細はこちら<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-link-rx"></block>、<block ref="2b1b7f994c6938347657a18d8edc7db7" category="inline-link-rx"></block> 、 そして<block ref="591ebe16737e602cc342b68e859c040e" category="inline-link-rx"></block>。</block>
   <block id="d8b67a8dae92158ddb9e71a66b9532b5" category="list-text">自動的に検出された保護レベルに基づいて各ワークロードにビジネス優先度を割り当て、ビジネス優先度に基づいてワークロードの保護ポリシーを推奨します。ワークロードの優先順位は、ワークロードに関連付けられた各ボリュームにすでに適用されているスナップショット頻度に基づいています。</block>
   <block id="f23d5c00c473a2e87ffcd7a0eedb89b5" category="cell">*守る*</block>
   <block id="63b3247f9021fefc99163e7f1ccaa624" category="list-text">ワークロードをアクティブに監視し、識別された各ワークロードにポリシーを適用して、バックアップとリカバリ、 SnapCenter、およびONTAP API の使用を調整します。</block>
@@ -680,8 +679,6 @@
   <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">準備ドリルレポートをダウンロードするには、[*準備ドリル*] と [*ダウンロード*] を選択します。</block>
   <block id="bb44ab86396f7335c45f2c99c022776c" category="summary">ランサムウェア レジリエンスが攻撃の可能性を検出すると、ランサムウェア レジリエンス ダッシュボードに潜在的な攻撃を示すアラートが表示されます。この時点で、「ランサムウェア耐性アラート」タブで潜在的なリスクを確認する必要があります。</block>
-  <block id="1238309e873f300d76b90a5b0f3a20bc" category="doc">NetApp Ransomware Resilienceで検出されたランサムウェアアラートを処理する</block>
-  <block id="5edf980bc8d23fb98c1f0d60dc6594f8" category="paragraph">NetApp Ransomware Resilience は、攻撃の可能性を検出すると、ダッシュボードと通知領域にアラートを表示します。 Ransomware Resilience は直ちにスナップショットを作成します。ランサムウェア耐性の *アラート* タブで潜在的なリスクを確認します。</block>
   <block id="0cf61fe483b7c3216a42a15a22e0ef97" category="paragraph">Ransomware Resilience が攻撃の可能性を検出すると、コンソールの通知設定に通知が表示され、設定されたアドレスに電子メールが送信されます。電子メールには、重大度、影響を受けるワークロード、および Ransomware Resilience の *アラート* タブのアラートへのリンクに関する情報が含まれます。</block>
   <block id="4c8cd66676ad1c434108e699d9777408" category="paragraph">誤検知を無視するか、すぐにデータを回復することを決定できます。</block>
   <block id="899157335f0c98105a8cbc92966ba06d" category="admonition">アラートを無視すると、Ransomware Resilience はこの動作を学習し、通常の操作と関連付けて、再度アラートを開始しなくなります。</block>
@@ -703,10 +700,8 @@
   <block id="64c00e9ea78abe412d8db56dd1df0462" category="paragraph">アラートのステータスは次のいずれかになります。</block>
   <block id="adf79604cd73ac69e1173c85b1070d09" category="list-text">*新しい*</block>
   <block id="001af4b9160bf93cb0c3215a7180e3b7" category="list-text">*非アクティブ*</block>
-  <block id="0ab8632cf6795b381aaa64cb2dc1b45f" category="paragraph">アラート インシデントの状態は次のいずれかになります。</block>
   <block id="be48871d3fcb22d62d5de71b2de11ab9" category="list-text">*新規*: すべてのインシデントは、最初に特定されたときに「新規」としてマークされます。</block>
   <block id="d2b7a3286df55d9570e26ad7450dfeb9" category="list-text">*無視*: アクティビティがランサムウェア攻撃ではないと疑われる場合は、ステータスを「無視」に変更できます。</block>
-  <block id="5295c827fac90b16880fb1c75f51694f" category="admonition">攻撃を却下した後は、元に戻すことはできません。ワークロードを破棄すると、潜在的なランサムウェア攻撃に応じて自動的に作成されたすべてのスナップショット コピーが完全に削除されます。</block>
   <block id="abcc01ccddba81d6df2f14e786d4b375" category="list-text">*却下中*: インシデントは却下中です。</block>
   <block id="135963592c039774ee41872c4fec1009" category="list-text">*解決済み*: インシデントは修正されました。</block>
   <block id="afd9740574ba951a58c825da5cfeddb3" category="list-text">*自動解決*: 優先度の低いアラートの場合、5 日以内に何のアクションも取られなければ、インシデントは自動的に解決されます。</block>
@@ -768,18 +763,12 @@
   <block id="6faff9d182a89c619b1ad36913af4fa5" category="list-text">ワークロードの回復を開始するには、メッセージで「*ワークロードの回復*」を選択するか、「*回復*」タブを選択します。</block>
   <block id="dbb2ae89216b8dfda3662d01ab32469f" category="paragraph">アラートが復元対象としてマークされると、アラートは [アラート] タブから [回復] タブに移動します。</block>
   <block id="d3870301348c9947a819b7a9ed0c25df" category="section-title">潜在的な攻撃ではないインシデントを無視する</block>
-  <block id="b0b578b8be1448972010b482195bbda8" category="paragraph">インシデントを確認した後、そのインシデントが潜在的な攻撃であるかどうかを判断する必要があります。実際の脅威ではない場合は無視できます。</block>
-  <block id="74583f536ee54b8803ab561a596f2bb9" category="paragraph">誤検知を無視するか、すぐにデータを回復することを決定できます。アラートを無視すると、Ransomware Resilience はこの動作を学習し、通常の操作と関連付けて、そのような動作に対して再度アラートを開始しなくなります。</block>
   <block id="5a5533258cfacee641d19f7f201b727f" category="paragraph">ワークロードを閉じると、潜在的なランサムウェア攻撃に応じて自動的に作成されたすべてのスナップショット コピーが完全に削除されます。</block>
-  <block id="46b4f01c45e92cd2d2fe7d4406168b5d" category="list-text">1 つ以上のインシデントを選択します。または、表の左上にあるインシデント ID ボックスを選択して、すべてのインシデントを選択します。</block>
   <block id="c4229f2836db3c8f0198619d853bad27" category="list-text">インシデントが脅威ではないと判断した場合は、誤検知として無視します。</block>
   <block id="a20ff2150b7b9f34f30c94111d0f2672" category="list-text">インシデントを選択します。</block>
   <block id="4c8220d9b08f6a99b99ca2a31e910796" category="list-text">表の上にある*ステータスの編集*ボタンを選択します。</block>
   <block id="cae6793a9f947fdb33e9ebb9c2913794" category="inline-image-macro">アラート編集ステータスページ</block>
   <block id="e6fe1dbe41a0d14f05208f5ee0593783" category="paragraph"><block ref="e6fe1dbe41a0d14f05208f5ee0593783" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a3766d306cdb80badf038a83067d73d3" category="list-text">ステータス編集ボックスから、「却下」ステータスを選択します。</block>
-  <block id="0d77ad85eefae95571395461b82d0990" category="paragraph">ワークロードに関する追加情報とスナップショット コピーが削除されたことが表示されます。</block>
-  <block id="982b96cbcd987b2495b15ba07dd59831" category="paragraph">インシデントのステータスが「却下」に変わります。</block>
   <block id="03449fca76164b6dcb5b9e314b4a5c2b" category="section-title">影響を受けるファイルの一覧を表示する</block>
   <block id="0fd4c032e8d9638089eca51930a25305" category="paragraph">アプリケーション ワークロードをファイル レベルで復元する前に、影響を受けるファイルの一覧を表示できます。影響を受けるファイルのリストをダウンロードするには、「アラート」ページにアクセスしてください。次に、「回復」ページを使用してリストをアップロードし、復元するファイルを選択します。</block>
   <block id="6162015141ec2e05b3da3316c594dc7a" category="paragraph">影響を受けるファイルのリストを取得するには、「アラート」ページを使用します。</block>
@@ -1639,7 +1628,6 @@
   <block id="75d41b8fe2ef8de56d2fd2046bb0dad3" category="list-text">**クラウド プロバイダー** を選択し、次に **リージョン** を選択します。**次へ**を選択します。</block>
   <block id="604a864dab990debb57e02cc6550cb0b" category="list-text">ユーザー アクティビティ エージェントの詳細を入力します。</block>
   <block id="8b67ab5f6d4b7a7c9b54a220ab393e0f" category="list-text">**ユーザーアクティビティエージェント名**</block>
-  <block id="40c10b55b38de651cc304b987f3b8552" category="list-text">*コンソール エージェント* - コンソール エージェントは、ユーザー アクティビティ エージェントと同じネットワーク内に存在し、ユーザー アクティビティ エージェントの IP アドレスに SSH 接続できる必要があります。</block>
   <block id="b023c42f6578a2febd3d77169ecb00ef" category="list-text">*VM DNS名またはIPアドレス*</block>
   <block id="95a1594aeff80ead5b4f2710e4acb1c5" category="list-text">*VM SSHキー*</block>
   <block id="1dc03f52e7a38f5b6ec91f4303e010ad" category="inline-image-macro">アクティビティ エージェントの追加インターフェースのスクリーンショット。</block>
@@ -2078,6 +2066,28 @@
   <block id="aff175f709dc693d1f9ca4c44728163a" category="list-text">*SID* (LDAP を使用している場合)</block>
   <block id="3b57547caa3754998fa617bd92514f25" category="list-text">*ユーザー名*</block>
   <block id="c8a0546946d4ed57fd88fc4918d3825f" category="list-text">*Unix ID* (NFS を使用している場合)</block>
-  <block id="1358e8e29329a97048f0688a1813071f" category="list-text">*オプションの属性を含める*を選択した場合は、電子メール アドレス、電話番号、役割、州、国、部門、写真、マネージャー DN、またはグループも追加できます。</block>
-  <block id="7703674a5321c1f23549682250a732e9" category="paragraph">オプションの検索クエリを追加するには、[*詳細*] を選択します。</block>
+  <block id="8a9b2764802b622f9894a669a606f74f" category="doc">拡張機能のブロックはワークロードレベルで有効になります</block>
+  <block id="ab47595f128d75b47b3449fcd4dfb523" category="paragraph">拡張機能のブロックを有効にすると、ストレージ VM レベルではなくワークロード レベルで有効になります。</block>
+  <block id="a6493502d5fc22c0b3ccee818dc4a5a5" category="section-title">ユーザー行動アラートステータスの編集</block>
+  <block id="f143f02b29819ec9e761d9f292dea42c" category="paragraph">Ransomware Resilience では、ユーザー行動アラートのステータスを編集できるようになりました。アラートを手動で解除したり解決したりできます。アラートを「確認中」としてマークすることもできるようになりました。</block>
+  <block id="685b0f2db45e4fc09a06ccb4695806de" category="inline-xref-macro">アラートを管理する</block>
+  <block id="30acfc7aa0f5ff9593d73e769de766c0" category="paragraph">詳細については、 <block ref="32161c93f86d45672d8429d13ea78e6b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="d5214a8deea026de61af736ebf8697dd" category="section-title">複数のコンソールエージェントのサポート</block>
+  <block id="1a6a565def701385358a626d6728afd8" category="paragraph">Ransomware Resilience では、複数のコンソール エージェントを使用して同じシステムを管理することがサポートされるようになりました。</block>
+  <block id="76adc55b5a0beb97a709fbc0c204a3d0" category="paragraph">コンソールエージェントの詳細については、以下を参照してください。<block ref="c97584494dd542160395e5c607ae4c2c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="be8cc003074f86f2bc2b3ef0d2f3a334" category="list-text">各ボリュームのNetAppスナップショット コピーとバックアップ ポリシーの現在の保護レベルと、オンボックス検出機能を検出します。ランサムウェア耐性は、バックアップとリカバリ、 ONTAPサービス、Autonomous Ransomware Protection ( ONTAP のバージョンに応じて ARP または ARP/AI)、FPolicy、バックアップ ポリシー、スナップショット ポリシーなどのNetAppテクノロジーを使用して、この保護態勢をワークロードに関連付けます。詳細はこちら<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-link-rx"></block>、<block ref="2b1b7f994c6938347657a18d8edc7db7" category="inline-link-rx"></block> 、 そして<block ref="591ebe16737e602cc342b68e859c040e" category="inline-link-rx"></block>。</block>
+  <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">NetApp Ransomware Resilienceのアラートを管理する</block>
+  <block id="9a51095678260d2a753174230dbe8a88" category="paragraph">NetApp Ransomware Resilience は、攻撃の可能性を検出すると、ダッシュボードと通知領域にアラートを表示します。Ransomware Resilience は直ちにスナップショットを作成します。ランサムウェア耐性の *アラート* タブで潜在的なリスクを確認します。</block>
+  <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">アラート インシデントには、次の状態があります。</block>
+  <block id="afc3fd7b02af578176e65700acd6709b" category="list-text">*レビュー中*: インシデントを評価中に、レビュー中としてマークすることができます。</block>
+  <block id="93771318f0ad483bcb651c0ded2c6033" category="admonition">攻撃を却下した後は、そのステータスを元に戻すことはできません。ワークロードを破棄すると、潜在的なランサムウェア攻撃に応じて自動的に作成されたすべてのスナップショット コピーが完全に削除されます。</block>
+  <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">インシデントを確認した後、そのインシデントが潜在的な攻撃であるかどうかを判断する必要があります。実際の脅威ではない場合は、無視できます。</block>
+  <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">誤検知を無視するか、すぐにデータを回復することを決定できます。アラートを無視すると、Ransomware Resilience はこの動作を学習し、通常の操作と関連付けて、そのような動作に対して再度アラートを開始しなくなります。</block>
+  <block id="ea3cf0f8eb2106f78fd9e62d674bd7c0" category="list-text">1 つ以上のインシデントを選択します。または、表の左上にあるインシデント ID ボックスを選択して、すべてのインシデントを選択します。</block>
+  <block id="845279243191f55592e2d4438456de67" category="list-text">[ステータスの編集] ボックスから、[*却下*] ステータスを選択します。</block>
+  <block id="c66f0ec622b69a240be9821f2dbbb082" category="paragraph">ワークロードと削除されたスナップショット コピーに関する追加情報が表示されます。</block>
+  <block id="3224e89b6de433c70f47e320c0777439" category="paragraph">インシデントのステータスが「却下」に変わります。</block>
+  <block id="6edf03555b64b68b413469994ca42164" category="list-text">*コンソール エージェント* - コンソール エージェントは、ユーザー アクティビティ エージェントと同じネットワーク内に存在し、ユーザー アクティビティ エージェントの IP アドレスに SSH 接続できる必要があります。</block>
+  <block id="8e19d605b8be4e3be2157e822268633f" category="list-text">*オプションの属性を含める*を選択した場合は、電子メール アドレス、電話番号、役割、州、国、部門、写真、マネージャー DN、またはグループも追加できます。オプションの検索クエリを追加するには、[*詳細*] を選択します。</block>
+  <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025年12月8日</block>
 </blocks>
