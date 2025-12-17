@@ -280,3 +280,10 @@ PAYGO サブスクリプションを終了したい場合は、いつでも終�
 . ドロップダウンの詳細で、[現在の支払い方法の有効期限が切れた後に使用する] ボックスのチェックを外します。
 . *保存*を選択します。
 
+
+
+
+== 詳細情報
+
+* link:https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html["NetApp Consoleのライセンスとサブスクリプションのドキュメント"^]
+

@@ -24,8 +24,8 @@ summary: 既知の制限事項では、この製品リリースでサポート�
 
 == Amazon FSx for NetApp ONTAP の制限
 
-Amazon FSx for NetApp ONTAPシステムは、Ransomware Resilience でサポートされています。このシステムには次の制限が適用されます。
+Amazon FSx for NetApp ONTAPシステムは、Ransomware Resilience でサポートされています。Amazon FSx for ONTAPには次の制限が適用されます。
 
-* Fsx for ONTAPではバックアップ ポリシーはサポートされていません。この環境では、バックアップにAmazon FSxを使用してバックアップ操作を実行する必要があります。  Ransomware Resilience を使用してこれらのワークロードを復元できます。
+* バックアップ ポリシーはAmazon FSx for ONTAPではサポートされていません。この環境では、バックアップにAmazon FSxを使用してバックアップ操作を実行する必要があります。Ransomware Resilience を使用してこれらのワークロードを復元できます。
 * 復元操作はスナップショットからのみ実行されます。
 
