@@ -109,9 +109,9 @@ Ransomware Resilience は、設定オプションを通じてバックアップ�
 
 
 
-== 疑わしいユーザー行動
+== 疑わしいユーザー行動の要件
 
-Ransomware Resilience が疑わしいユーザー行動に関するアラートを提供するには、ユーザー アクティビティ エージェントを構成する必要があります。詳細については、 link:suspicious-user-activity.html["NetApp Ransomware Resilienceで疑わしいユーザーアクティビティの検出を構成する"]。
+Ransomware Resilience が疑わしいユーザー行動に関するアラートを提供するには、ユーザー アクティビティ エージェントを構成する必要があります。ユーザー アクティビティ エージェントをインストールするには、システムが.link:suspicious-user-activity.html["要件"] .
 
 
 

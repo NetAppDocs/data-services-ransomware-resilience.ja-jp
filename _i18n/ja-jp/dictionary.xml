@@ -168,7 +168,6 @@
   <block id="08c9bb2f955e4452b60d6285d467218b" category="paragraph">ランサムウェア耐性は、複数のNetAppテクノロジーをフル活用することで、ストレージ管理者、データ セキュリティ管理者、またはセキュリティ運用エンジニアが次の目標を達成できるようにします。</block>
   <block id="ab76e9ddf0b5cc0436537248ef996b33" category="list-text">データのバックアップ、スナップショット コピー、ランサムウェア保護戦略を有効にして、ワークロードを*保護*します。</block>
   <block id="2260f3efb7f7ff8d7a4a295911d64e87" category="list-text">ランサムウェア攻撃の可能性がある異常を*検出*します。脚注:[攻撃が検出されない可能性もありますが、当社の調査によると、 NetApp のテクノロジにより、特定のファイル暗号化ベースのランサムウェア攻撃を高いレベルで検出できることがわかっています。]</block>
-  <block id="61a5394873cb968131d6938cc55d2316" category="list-text">不正なコピーや悪意によるコピーの削除ができないようにロックされた、改ざん防止のNetApp ONTAPスナップショットを自動的に開始することで、潜在的なランサムウェア攻撃に*対応*します。バックアップ データは変更不可能なまま、ソースと宛先の両方でランサムウェア攻撃からエンドツーエンドで保護されます。</block>
   <block id="2b9059f4bfe46561bd84cd4afc8e39d5" category="list-text">複数のNetAppテクノロジーをオーケストレーションすることで、ワークロードの稼働時間を短縮し、ワークロードを *回復* します。特定のボリュームを回復することを選択できます。  Ransomware Resilience では、最適なオプションに関する推奨事項が提供されます。</block>
   <block id="c81ae261ce25e22a1af05caba692e648" category="list-text">*管理*: ランサムウェア保護戦略を実装し、結果を監視します。</block>
   <block id="2df7b40bf0b6e6b4631432c24ce9a052" category="inline-image-macro">ランサムウェア耐性戦略（識別、保護、検出、対応、回復）を示す図</block>
@@ -184,8 +183,6 @@
   <block id="4a72582f981b12d4f27dceb8b0d7dbb9" category="list-text">RPO ポリシーを満たすようにキュレートされたリカバリを適用します。  Ransomware Resilience は、NetApp Backup and Recovery (旧称 Cloud Backup) やSnapCenterなどの複数のNetAppリカバリ サービスを使用して、ランサムウェア インシデントからのリカバリを調整します。</block>
   <block id="5af59cc2b4c7693a13f53462b371bb84" category="list-text">ロールベースのアクセス制御 (RBAC) を使用して、機能と操作へのアクセスを管理します。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">料金</block>
-  <block id="6562c2bca564e449fe43db01de50095f" category="paragraph">NetApp は、Ransomware Resilience の試用版の使用に対して料金を請求しません。</block>
-  <block id="d593a9e1e3308f3f58bd4666acd9e7d2" category="admonition">2024 年 10 月のリリースでは、Ransomware Resilience の新規展開に 30 日間の無料トライアルが提供されます。以前、Ransomware Resilience は 90 日間の無料トライアルを提供していました。すでに 90 日間の無料トライアルに登録している場合は、そのトライアルは 90 日間有効です。</block>
   <block id="644c6176733b0f8cdca928e0cc985955" category="paragraph">バックアップとリカバリとランサムウェア耐性の両方をお持ちの場合、両方の製品で保護されている共通データについては、ランサムウェア耐性に対してのみ課金されます。</block>
   <block id="371ddff75d8ad1c060c49de732c7531f" category="paragraph">ライセンスまたは PayGo サブスクリプションを購入した後、ランサムウェア検出ポリシー (Autonomous Ransomware Protection) が有効になっている (Ransomware Resilience によって検出または設定された) ワークロードと、少なくとも 1 つのスナップショットまたはバックアップ ポリシーがある場合、Ransomware Resilience によってそのワークロードは「保護済み」に分類され、購入した容量または PayGo サブスクリプションに対してカウントされます。バックアップ ポリシーまたはスナップショット ポリシーがあっても、検出ポリシーなしでワークロードが検出された場合は、「危険」と分類され、購入した容量にはカウントされません。</block>
   <block id="9a093ed6d29fdd7ce44eca3fd1e3b883" category="paragraph">保護されたワークロードは、90 日間の試用期間が終了した後、購入した容量またはサブスクリプションに対してカウントされます。ランサムウェア耐性は、効率化前の保護されたワークロードに関連付けられたデータに対して GB 単位で課金されます。</block>
@@ -769,16 +766,13 @@
   <block id="a0fd18fc337758e79e647649d69f4149" category="paragraph"><block ref="a0fd18fc337758e79e647649d69f4149" category="inline-image-macro-rx" type="image"></block></block>
   <block id="955d1101c1424d23d653984e03cf7099" category="list-text">そのインシデントについては、ダウンロード アイコンを選択し、影響を受けるファイルのリストを CSV 形式でダウンロードします。</block>
   <block id="efe8304005b9c8de768eaef14e8d07f2" category="summary">NetApp Ransomware Resilienceダッシュボードは、ワークロードの保護の健全性に関する情報を提供します。危険にさらされているワークロードや保護されているワークロード、インシデントの影響を受けているワークロードや回復中のワークロードを迅速に特定し、保護されているストレージや危険にさらされているストレージの量を確認して保護の範囲を評価できます。ダッシュボードを使用して、保護に関する推奨事項を確認し、それに従って対応することもできます。</block>
-  <block id="58fb3a7f55ef002a5ceea9d69c7db695" category="doc">NetAPp ランサムウェア耐性ダッシュボードを使用してワークロードの健全性を監視する</block>
   <block id="8c036228e726b58da7c61083499276b0" category="paragraph">NetApp Ransomware Resilienceダッシュボードでは、ワークロードの保護の健全性に関する情報が一目でわかります。危険にさらされているワークロードや保護されているワークロードを迅速に判断し、インシデントの影響を受けているワークロードや回復中のワークロードを識別し、保護されているストレージや危険にさらされているストレージの量を確認して保護の範囲を評価できます。</block>
-  <block id="12969eef062c86f82bae05cb86d6089a" category="paragraph">ダッシュボードを使用して、保護の提案を確認したり、設定を変更したり、レポートをダウンロードしたり、ドキュメントを表示したりできます。</block>
   <block id="b5695a87e857b3dfe980329900e2d5c8" category="section-title">ダッシュボードを使用してワークロードの健全性を確認する</block>
   <block id="2711b34ed6f854164ab28f6ba7d757fc" category="list-text">コンソールがワークロードを検出すると、ランサムウェア耐性ダッシュボードにワークロード データ保護の健全性が表示されます。</block>
   <block id="1de66de0484295c7b0e311cd3746dab8" category="inline-image-macro">[ダッシュボード]ページ</block>
   <block id="1541b6face8479b500e3accafb066eee" category="paragraph"><block ref="1541b6face8479b500e3accafb066eee" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bbb730a044e88545c3476ffea030b9f1" category="list-text">ダッシュボードから、各ペインで次のアクションを実行できます。</block>
   <block id="5cf652b0493bef09f6f5bcbd5925413f" category="list-text">*ワークロード データ保護*: [保護] ページで、危険にさらされている、または保護されているすべてのワークロードを表示するには、[すべて表示] を選択します。保護レベルが保護ポリシーと一致しない場合、ワークロードは危険にさらされます。。 <block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block> 。</block>
-  <block id="4159a2cc0463c712e016f2bfb6e3d137" category="admonition">このデータに関するヒントを表示するには、「i」ツールヒントを選択します。ワークロード制限を増やすには、この i ノート内の *ワークロード制限を増やす* を選択します。これを選択すると、コンソール サポート ページに移動し、ケース チケットを作成できます。</block>
   <block id="7946ca9134fecb1e363f88a194b4e259" category="inline-link-macro">検出されたアラートに応答する</block>
   <block id="3e68731452668c74a209b358c132dbaa" category="list-text">*アラートとワークロード データの回復*: [すべて表示] を選択すると、ワークロードに影響を与えたアクティブなインシデント、インシデントが解決された後に回復の準備ができているアクティブなインシデント、または回復中のアクティブなインシデントが表示されます。。 <block ref="a57b82018dcad508c33f5a5c54351028" category="inline-link-macro-rx"></block> 。</block>
   <block id="8cdbaff59230fdce1ca498813a54b0c1" category="list-text">インシデントは次のいずれかの状態に分類されます。</block>
@@ -843,7 +837,6 @@
   <block id="afce881d2940c0ad45fd669e83552ce8" category="list-text">ランサムウェア耐性の「推奨アクション」ペインから推奨事項を選択し、「確認して修正」します。</block>
   <block id="b10e70829881666c441e82656f6ce36d" category="list-text">後でアクションを閉じるには、[閉じる] を選択します。</block>
   <block id="1ac10a835f53c6060811d5cfb8fbff70" category="paragraph">推奨事項は To Do リストから消去され、却下リストに表示されます。</block>
-  <block id="d546413031876c1e4d267a59f45f1a37" category="admonition">後で、却下した項目を To Do 項目に変更できます。アイテムを完了としてマークするか、却下したアイテムを To Do アクションに変更すると、アクションの合計が 1 つ増加します。</block>
   <block id="91ac2d2291b1ce27106b795a77ccc0f3" category="list-text">推奨事項に基づいて行動する方法に関する情報を確認するには、*情報*アイコンを選択します。</block>
   <block id="00a080932e73f4d8ad7b946bbd5191d6" category="section-title">保護データをCSVファイルにエクスポートする</block>
   <block id="daed4261480079bedadbb918fa15519d" category="paragraph">データをエクスポートし、保護、アラート、回復の詳細を示す CSV ファイルをダウンロードできます。</block>
@@ -851,10 +844,8 @@
   <block id="6f9c031059ce499b64d237a642150228" category="list-text">*保護*: ランサムウェア耐性によって保護または危険とマークされたワークロードの合計数など、すべてのワークロードのステータスと詳細が含まれます。</block>
   <block id="4f303d58ecece08d64f03bf8e77bc7a5" category="list-text">*アラート*: アラートの合計数や自動スナップショットなど、すべてのアラートのステータスと詳細が含まれます。</block>
   <block id="1973c46d3c0e52cd5edacad3e53db5ac" category="list-text">*回復*: 復元が必要なすべてのワークロードのステータスと詳細が含まれます。これには、Ransomware Resilience によって「復元が必要」、「進行中」、「復元に失敗しました」、「正常に復元されました」とマークされたワークロードの合計数が含まれます。</block>
-  <block id="c7c231dbb05238c9bf0176f11aa17d87" category="paragraph">ページから CSV ファイルをダウンロードすると、そのページのデータのみが含まれます。</block>
   <block id="7206de626f5f3d32701a60ffd5ca9c45" category="paragraph">CSV ファイルには、すべてのコンソール システム上のすべてのワークロードのデータが含まれます。</block>
   <block id="88720d11d44ed6c674eee114228c0d69" category="inline-image-macro">更新オプション</block>
-  <block id="94f33634f7c58d79aeccfd3a5782f0d8" category="list-text">ランサムウェア耐性ダッシュボードから*更新*を選択します。<block ref="94d384894f036157c348eadc55c40952" category="inline-image-macro-rx" type="image"></block>右上のオプションを選択すると、ファイルに表示されるデータが更新されます。</block>
   <block id="c4b039b69c313acc38209c4b1d1da8ef" category="inline-image-macro">ダウンロードオプション</block>
   <block id="fdf229b723a77d85d0134f45f3d183ce" category="list-text">ページから*ダウンロード*を選択します<block ref="c05ed6b7dc469ce447520bacbf36b3ca" category="inline-image-macro-rx" type="image"></block>オプション。</block>
   <block id="f34a80cb389a208db15e7ae434fbddf2" category="list-text">*レポート* オプションを選択した場合は、事前設定された名前付きファイルの 1 つを選択し、*ダウンロード (CSV)* または *ダウンロード (JSON)* を選択します。</block>
@@ -1587,13 +1578,9 @@
   <block id="2a4edc5ec6e55f07dba0609dc2cd6d87" category="summary">Ransomware Resilience の疑わしいユーザー アクティビティ検出により、潜在的な脅威となる可能性のあるユーザー アクティビティを検出できます。</block>
   <block id="906ec8bab01967c36f2f073eff9f54df" category="doc">NetApp Ransomware Resilienceで疑わしいユーザーアクティビティの検出を構成する</block>
   <block id="9ba1db4a2c84400f14de2d58496b9f52" category="paragraph">ランサムウェア耐性は、検出ポリシーで疑わしいユーザー行動の検出をサポートし、ユーザー レベルでランサムウェア インシデントに対処できるようにします。</block>
-  <block id="90c4c763135bd7a7443ed22e4149185b" category="section-title">エージェントとコレクター</block>
-  <block id="2b294b61543173e7462d37def0724cef" category="paragraph">エージェントは複数のデータ コレクターをホストできます。データ コレクターは、分析のためにデータを SaaS の場所に送ります。コレクターには 2 つの種類があります。</block>
   <block id="fa83d0f077ae64e1df0b8a9ed9982815" category="paragraph">コレクターは、ランサムウェア耐性設定で構成されます。</block>
   <block id="4f047e83e52e21d5382adc1b5dbf3119" category="section-title">ユーザーアクティビティエージェントを追加する</block>
   <block id="4d4379036f7207029fbe126649ccc0a6" category="paragraph">ユーザー アクティビティ エージェントはデータ コレクターの実行可能環境です。データ コレクターはユーザー アクティビティ イベントを Ransomware Resilience と共有します。疑わしいユーザー アクティビティの検出を有効にするには、少なくとも 1 つのユーザー アクティビティ エージェントを作成する必要があります。</block>
-  <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="section-title">要件</block>
-  <block id="176c18a49aa227401be466a34a903666" category="paragraph">**オペレーティング システム要件**</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">オペレーティング システム</block>
   <block id="2e5d14f7919ff3c6138e7845aec4f915" category="cell">サポート対象のバージョン</block>
   <block id="c158e3ead98c5929e4228914a1e6e615" category="cell">アルマリナックス</block>
@@ -1610,7 +1597,6 @@
   <block id="ce370a856bc8592a8206af596cace9ea" category="cell">15 SP4 (64 ビット) から 15 SP6 (64 ビット)、SELinux を含む</block>
   <block id="3d945423f8e9496c429a5d8c65b4604f" category="cell">Ubuntu</block>
   <block id="6072b01d67af0366830f2fef13cdf0da" category="cell">20.04 LTS (64 ビット)、22.04 LTS (64 ビット)、24.04 LTS (64 ビット)</block>
-  <block id="e5fc81082964adedb5790746c18c9fb7" category="paragraph">**サーバー要件**</block>
   <block id="fd9b966c1c6f66e7c4f38e133767c880" category="paragraph">サーバーは次の最小要件を満たしている必要があります。</block>
   <block id="a2ad8789f963859e0c26a6daaec4a76b" category="list-text">ユーザー アクティビティ エージェントを初めて作成する場合は、**ダッシュボード** に移動してください。**ユーザー アクティビティ** タイルで、**アクティブ化** を選択します。</block>
   <block id="44e08a5b01e752ac11f59bba4e07dea7" category="paragraph">追加のユーザー アクティビティ エージェントを追加する場合は、[*設定*] に移動し、[**ユーザー アクティビティ**] タイルを見つけて、[**管理**] を選択します。[ユーザー アクティビティ] 画面で、[**ユーザー アクティビティ エージェント**] タブを選択し、[**追加**] を選択します。</block>
@@ -1787,8 +1773,6 @@
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
   <block id="69d1e7a74a8d35e4122500df6d2f5042" category="list-text">ランサムウェア耐性は、 ONTAPバージョン 9.11.1 以降のONTAPまたはCloud Volumes ONTAPクラスターでサポートされます。</block>
   <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">データのバックアップ</block>
-  <block id="9755e4a474d0024a8dcd40393e571716" category="section-title">疑わしいユーザー行動</block>
-  <block id="34691f87b892c333fe1b7a23452dcda6" category="paragraph">Ransomware Resilience が疑わしいユーザー行動に関するアラートを提供するには、ユーザー アクティビティ エージェントを構成する必要があります。詳細については、 <block ref="f3d3e5726f7feb4b59ca728c906df758" category="inline-link-macro-rx"></block>。</block>
   <block id="793485138a653779a0c8cb91bf9fc979" category="list-text">準備訓練の種類を選択します。暗号化データ侵害から手動で回復する場合は、**カスタム回復** を選択します。疑わしいユーザーアクティビティからの回復には、**データ侵害** を選択します。</block>
   <block id="8e0b9d66ccd774ed98d0b31d0e6ed305" category="admonition">ドリルの実行中は、準備ドリルの構成を編集することはできません。ドリルをリセットして停止し、設定を変更することができます。</block>
   <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">Ransomware Resilience ライセンスには、追加のNetApp製品は含まれません。ただし、バックアップとリカバリ用の個別のライセンスがない場合でも、Ransomware Resilience はNetApp Backup and Recoveryと統合できます。</block>
@@ -1848,11 +1832,9 @@
   <block id="7a7f05bb105ddcf9c0d221e37f8a923c" category="list-text">環境内の疑わしいユーザーをブロックするには、ユーザー名の下にある [*ブロック*] を選択します。</block>
   <block id="bc8ffb69fb560086f529e0097158caad" category="admonition">アラートを無視した場合、そのステータスを変更したり、この変更を元に戻したりすることはできません。</block>
   <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">そのインシデントについては、ダウンロード アイコンを選択して、影響を受けるファイルのリストを CSV 形式でダウンロードします。</block>
-  <block id="8c7f95ceb912c8aea11de028710caf47" category="paragraph">Ransomware Resilience は、 ONTAPの FPolicy によって生成されたユーザー アクティビティ イベントを分析して、疑わしいユーザー アクティビティを検出します。ユーザー アクティビティ データを収集するには、1 つ以上のユーザー アクティビティ エージェントを展開する必要があります。エージェントは、テナント上のデバイスに接続できる Linux サーバーまたは VM です。</block>
   <block id="fe1bb8cb54f03cf7a69c3e9568118b30" category="list-text">**データ コレクター** は、 ONTAPからユーザー アクティビティ データを収集します。</block>
   <block id="b6173a051353d59a4ee775fcef288441" category="list-text">**ユーザー ディレクトリ コネクタ** はディレクトリに接続して、ユーザー ID をユーザー名にマッピングします。</block>
   <block id="508899c1c018f291af4cb6a0423c426c" category="paragraph">*必要なコンソール ロール* 疑わしいユーザー アクティビティの検出を有効にするには、組織管理者のロールが必要です。疑わしいユーザー アクティビティに関する後続の構成では、ランサムウェア耐性ユーザー ビヘイビア管理者ロールが必要です。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
-  <block id="53b036bcd07f4ebcfe2ec32a98556822" category="paragraph">ユーザー アクティビティ エージェントをインストールするには、次のサポートされているオペレーティング システムとサーバーの要件を満たすホストまたは VM が必要です。</block>
   <block id="398de83ff8f318218f9eaedb05929ef0" category="paragraph">ユーザー アクティビティ エージェントが正常に作成されたら、[**設定**] メニューに戻り、[ユーザー アクティビティ] タイルで [**管理**] を選択します。**ユーザー アクティビティ エージェント** タブを選択し、ユーザー アクティビティ エージェントを選択して、データ コレクターやユーザー ディレクトリ コネクタなどの詳細を表示します。</block>
   <block id="a83ea9a287c9fdd0689933a464055150" category="paragraph">ユーザー ID をユーザー名にマップするには、ユーザー ディレクトリ コネクタを作成する必要があります。</block>
   <block id="89bd0177a422e5d81fce2f8f82dac3f6" category="paragraph-title">Ransomware Resilience を使用するにはライセンスが必要ですか?</block>
@@ -2029,14 +2011,12 @@
   <block id="f6967390d49d08c53cc88d3cdf42eb92" category="list-text">Oracle向けSnapCenter</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">プレビュー バージョンでは、このサービスは、Oracle、VM データストア、オンプレミスの NAS ストレージ上のファイル共有、およびBlueXP組織全体のCloud Volumes ONTAP on AWS (NFS プロトコルを使用) のアプリケーション ベースのワークロードを個別に保護し、データを Amazon Web Services クラウド ストレージにバックアップします。</block>
   <block id="2d2972fc6d16379955701a1cc8c6633f" category="sidebar">NetApp Ransomware Resilience は、オンプレミスおよびクラウド ストレージにおけるランサムウェアの脅威からアプリケーション ワークロードとファイル共有を保護、検出し、リカバリをサポートします。ランサムウェア耐性により、安全なバックアップとリカバリが可能になり、組織は Oracle、VM データストア、NAS ストレージなどの重要なデータを保護し、ビジネス継続性を維持できるようになります。</block>
-  <block id="05a32e62ff35ead335cfbdaf6b19a9b2" category="paragraph">Ransomware Resilience で疑わしいユーザー アクティビティの検出を有効にするには、少なくとも 1 つのユーザー アクティビティ エージェントをインストールする必要があります。ランサムウェア耐性ダッシュボードから疑わしいユーザー アクティビティ機能を有効にする場合は、エージェント ホスト情報を提供する必要があります。</block>
   <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3 (64 ビット) から 15.6 (64 ビット)</block>
   <block id="32d094cff0ab508ab383051555e7844b" category="cell">8.10 (64 ビット)、および 9.1 (64 ビット) から 9.6 (64 ビット) (SELinux を含む)</block>
   <block id="1d9fc183665bd1e195391190be506894" category="cell">Red Hat</block>
   <block id="40a4866844a145aa0d01d094ea38e0d3" category="cell">Rocky 9.4 (64 ビット) から 9.6 (64 ビット)、SELinux を含む</block>
   <block id="ec0c7e841d2f0e7a16a6b4b47a57ecd8" category="list-text">**CPU**: 4コア</block>
   <block id="177d9a4926538bc7d9bcbb8ad6ca3f0f" category="list-text">**RAM**: 16GB RAM</block>
-  <block id="f01ab58abd28b55b4954d17a62080293" category="list-text">**ディスク容量**: 35 GB の空きディスク容量</block>
   <block id="191a3f30ab05799955dc06c5f394b591" category="list-text">接続を構成します。各フィールドに必要な情報を入力します。</block>
   <block id="6f16a5f8ff5d75ab84c018adacdfcbb7" category="cell">フィールド</block>
   <block id="8099786db97f0913cd0cefcd4a7bc6fd" category="cell">ユーザーディレクトリコネクタの一意の名前を入力します</block>
@@ -2090,4 +2070,74 @@
   <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="section-title">詳細情報</block>
   <block id="48bf90c5e99016f124c48c02a77dc8fd" category="inline-link-macro">NetApp Consoleのライセンスとサブスクリプションのドキュメント</block>
   <block id="0fa9a3c869139d736cd7d6df862b94e3" category="list-text"><block ref="0fa9a3c869139d736cd7d6df862b94e3" category="inline-link-macro-rx"></block></block>
+  <block id="ee23d61365a6507dff70606d3790e1de" category="list-text">コピーが誤ってまたは悪意を持って削除されないようにロックされたポイントインタイムスナップショットを自動的に開始することで、潜在的なランサムウェア攻撃に*対応*します。バックアップ データは変更不可能なまま、ソースと宛先の両方でランサムウェア攻撃からエンドツーエンドで保護されます。</block>
+  <block id="7e56b5e89b8f29e1bd4a5ecf15c201e8" category="paragraph">Ransomware Resilience を 30 日間無料でお試しいただけます。NetApp は、Ransomware Resilience の試用版の使用に対して料金を請求しません。</block>
+  <block id="773dd0f5eb55036249a06d189bd46093" category="section-title">疑わしいユーザー行動の要件</block>
+  <block id="567dcfd6302e5511c1b546a4df21a679" category="inline-link-macro">要件</block>
+  <block id="3fa9bd6939fae83104d5483bb4df09cf" category="paragraph">Ransomware Resilience が疑わしいユーザー行動に関するアラートを提供するには、ユーザー アクティビティ エージェントを構成する必要があります。ユーザー アクティビティ エージェントをインストールするには、システムが.<block ref="48db2132a53f1fefbda7dcf1745aa324" category="inline-link-macro-rx"></block> .</block>
+  <block id="7f176789d86d465c8df04184cd91e82b" category="doc">NetApp Ransomware Resilienceダッシュボードを使用してワークロードの健全性を監視する</block>
+  <block id="bb0857f5685be3107534e9cb3600a43f" category="paragraph">ダッシュボードを使用して、保護の提案を確認したり、設定を変更したり、レポートをダウンロードしたりできます。</block>
+  <block id="acf2855d96f83cab1f4ac80844c18ed5" category="admonition">このデータに関するヒントを表示するには、「i」ツールヒントを選択します。ワークロード制限を増やすには、この i ノート内の *ワークロード制限を増やす* を選択します。これを選択すると、コンソール サポート ページに移動し、ケース チケットを作成できます。</block>
+  <block id="c0bf6edc60bad775ee4a7ad24f670742" category="admonition">後で、却下した項目を To Do 項目に変更できます。アイテムを完了としてマークするか、却下したアイテムを To Do アクションに変更すると、アクションの合計が 1 つ増加します。</block>
+  <block id="e820fe024db1b211ec2a532b3515e062" category="paragraph">ページから CSV ファイルをダウンロードすると、そのページのデータのみが含まれます。</block>
+  <block id="eab868da8e2666bb93a6c4508ffd3e80" category="list-text">ランサムウェア耐性ダッシュボードから*更新*を選択します。 <block ref="94d384894f036157c348eadc55c40952" category="inline-image-macro-rx" type="image"></block> 右上のオプションを選択すると、ファイルに表示されるデータが更新されます。</block>
+  <block id="83740edb7e1cce01ad9abd22c965f833" category="inline-image-macro">ダウンロードオプションアイコンの画像</block>
+  <block id="003de596593787da81cd02bc78808f9d" category="list-text">ページから*ダウンロード*を選択します <block ref="10920434d8a4b3cb6afdcf0337f83d24" category="inline-image-macro-rx" type="image"></block> オプション。</block>
+  <block id="d51c0020ded66c680ed4bf4dab57a782" category="paragraph">Ransomware Resilience は、 ONTAPの FPolicy によって生成されたユーザー アクティビティ イベントを分析して、疑わしいユーザー アクティビティを検出します。ユーザー アクティビティ データを収集するには、1 つ以上のユーザー アクティビティ エージェントを展開する必要があります。エージェントは、テナント上のデバイスに接続できる Linux サーバーまたは VM です。</block>
+  <block id="951fa3938f2418e5c7bdceb36d525b4e" category="section-title">ユーザーアクティビティエージェントとコレクター</block>
+  <block id="012fdb750d9f768ed33b4236dd982ae4" category="paragraph">Ransomware Resilience で疑わしいユーザー アクティビティの検出を有効にするには、少なくとも 1 つのユーザー アクティビティ エージェントをインストールする必要があります。ランサムウェア耐性ダッシュボードから疑わしいユーザー アクティビティ機能を有効にする場合は、エージェント ホスト情報を提供する必要があります。</block>
+  <block id="da7bfaf398235069a409197330d59b53" category="paragraph">エージェントは複数のデータ コレクターをホストできます。データ コレクターは、分析のためにデータを SaaS の場所に送ります。コレクターには 2 つの種類があります。</block>
+  <block id="1e496ca2f7a66d863132588473f14de2" category="section-title">システム要件</block>
+  <block id="b7cc904e79a175038a121ea330565832" category="paragraph">ユーザー アクティビティ エージェントをインストールするには、次の要件を満たすホストまたは VM が必要です。</block>
+  <block id="b9300e15e3fa20c1dc3ecfabbbb96a7b" category="section-title">オペレーティング システム要件</block>
+  <block id="afea8c44acd019a3a489f7a3ddeb5c8e" category="admonition">ユーザー アクティビティ エージェントに使用するマシンは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用サーバーをお勧めします。</block>
+  <block id="19edca9ea70315410039bf08b3ffecda" category="paragraph">その<block ref="0a342b59ecdcede0571340b9ed11633f" prefix=" " category="inline-code"></block> インストールにはコマンドが必要です。その<block ref="beb493211c3135923a11284ef26bf909" prefix=" " category="inline-code"></block> インストール、スクリプトの実行、アンインストールにはコマンドが必要です。</block>
+  <block id="a54c13ad42512dbfec4e8a44d793a52e" category="section-title">サーバー要件</block>
+  <block id="34af15b56c0def7a2806fd4b03537e12" category="list-text">**ディスク容量**: 36 GB の空きディスク容量</block>
+  <block id="68eda0e29d8e074409c51f53581f3a64" category="admonition">ファイルシステムの作成を可能にするために追加のディスク領域を割り当てます。ファイルシステムに少なくとも 35 GB の空き領域があることを確認します。+ もし<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> NAS ストレージからマウントされたフォルダーであるため、ローカル ユーザーはこのフォルダーにアクセスできる必要があります。ローカル ユーザーに必要な権限がない場合、ユーザー アクティビティ エージェントの作成が失敗する可能性があります。</block>
+  <block id="4efd7fc25783a87a8f0795f4de1a8af7" category="admonition">ランサムウェア耐性環境とは別のシステムにユーザー アクティビティ エージェントをインストールすることをお勧めします。同じマシンにインストールする場合は、50 ～ 55 GB のディスク容量を確保する必要があります。Linuxの場合は、25～30GBのスペースを割り当てます。<block ref="4bf2f0d069734974e4d76e679433aa07" prefix=" " category="inline-code"></block> 25 GBまで<block ref="ea5f88360fb7c06d3270b165b4dad226" prefix=" " category="inline-code"></block>。</block>
+  <block id="52554f7429cd5c72cd3c3e9561412160" category="admonition">Network Time Protocol (NTP) または Simple Network Time Protocol (SNTP) を使用して、 ONTAPシステムとユーザー アクティビティ エージェント マシンの両方の時刻を同期することをお勧めします。</block>
+  <block id="77469c598ab2b5984e8dafd3d15a2315" category="section-title">クラウドネットワークアクセスルール</block>
+  <block id="c793f078b8fd1dcce9dfd5ae57f2a51c" category="paragraph">関連する地域 (アジア太平洋、ヨーロッパ、または米国) のクラウド ネットワーク アクセス ルールを確認します。</block>
+  <block id="b59e5489bdc375550b52afe395f08180" category="section-title">APAC ベースのユーザー アクティビティ エージェントの展開</block>
+  <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">ポート</block>
+  <block id="f31bbdd1b3e85bccd652680e16935819" category="cell">ソース</block>
+  <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">デスティネーション</block>
+  <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
+  <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443</block>
+  <block id="f2ca52b87225d79d40f899aebabeec45" category="cell">ユーザーアクティビティエージェント</block>
+  <block id="e7d932b2a7bf9471a38ac8c68fbf83ad" category="list-text">&lt;サイト名&gt;.cs01-ap-1.cloudinsights.netapp.com</block>
+  <block id="8f31785e58dfdc396495a127fdd7d7dd" category="list-text">&lt;サイト名&gt;.c01-ap-1.cloudinsights.netapp.com</block>
+  <block id="edc2894193def90c2ccbb8f855d6f564" category="list-text">&lt;サイト名&gt;.c02-ap-1.cloudinsights.netapp.com</block>
+  <block id="b7169d36c5259a3a051359ca51dbd682" category="cell">ランサムウェア耐性へのアクセス</block>
+  <block id="012f0abca78822d24d27455403c3d089" category="cell">エージェントログイン.cs01-ap-1.cloudinsights.netapp.com</block>
+  <block id="d4fedc7f035f96436f1598f9626876e2" category="cell">認証サービスへのアクセス</block>
+  <block id="0e07fec3da393adf659f6e786a442b5d" category="section-title">ヨーロッパを拠点とするユーザーアクティビティエージェントの展開</block>
+  <block id="00c7e633a09840b7e60ee5de5aec797b" category="list-text">&lt;サイト名&gt;.cs01-eu-1.cloudinsights.netapp.com</block>
+  <block id="54d1f56395e5ec9d39e9a416c61b311a" category="list-text">&lt;サイト名&gt;.c01-eu-1.cloudinsights.netapp.com</block>
+  <block id="0ba615943513b9683a0e9b145f96e5b2" category="list-text">&lt;サイト名&gt;.c02-eu-1.cloudinsights.netapp.com</block>
+  <block id="29acd3d3cfc5f8e3cb650abeb2622a68" category="cell">agentlogin.cs01-eu-1.cloudinsights.netapp.com</block>
+  <block id="e0a04d596459d34d5495089a5a992421" category="section-title">米国ベースのユーザーアクティビティエージェントの展開</block>
+  <block id="686fe123d13d19cbe67fa0429375b0e1" category="list-text">&lt;サイト名&gt;.cs01.cloudinsights.netapp.com</block>
+  <block id="ce47b0513e6a5635f603be8cc52f392d" category="list-text">&lt;サイト名&gt;.c01.cloudinsights.netapp.com</block>
+  <block id="906a7644c76f341f29012680a39f7225" category="list-text">&lt;サイト名&gt;.c02.cloudinsights.netapp.com</block>
+  <block id="142b47c359d647af9faff9ef084152c7" category="cell">agentlogin.cs01.cloudinsights.netapp.com</block>
+  <block id="0cd58d8585970b5311e84ca2c34ba5ef" category="section-title">ネットワーク内ルール</block>
+  <block id="1b09a58921479be87f9dae639915150f" category="cell">389(LDAP) 636 (LDAP / start-tls)</block>
+  <block id="84caee864977bc98db0b0df24853f63c" category="cell">LDAP Server URL</block>
+  <block id="b272c206ad7d80ebc1e17385c8d4450c" category="cell">LDAPに接続する</block>
+  <block id="3e1d4f7104327b6aa02e8d988c873b86" category="cell">クラスタまたは SVM 管理 IP アドレス (SVM コレクターの構成によって異なります)</block>
+  <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">ONTAPとのAPI通信</block>
+  <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
+  <block id="4f1eb19420b75b94e053a805cd0feb1d" category="paragraph">SVMデータLIF IPアドレス</block>
+  <block id="3b04fff3171347ca78c0c2fb925106dd" category="cell">Fpolicy イベントに関するONTAPからユーザー アクティビティ エージェントへの通信。ONTAP がイベントをユーザー アクティビティ エージェントに送信するには、ユーザー アクティビティ エージェントに対してこれらのポートを開く必要があります。これには、ユーザー アクティビティ エージェント自体のファイアウォール（存在する場合）も含まれます。+ **注意:** これらのポートをすべて予約する必要はありませんが、予約するポートはこの範囲内である必要があります。まずは 100 個のポートを予約し、必要に応じて増やすことをお勧めします。</block>
+  <block id="3756ac460c094adc890ad7f26460010b" category="cell">35000-55000</block>
+  <block id="0e948943e8277507eeeec08bbb91d3b4" category="cell">クラスタ管理IP</block>
+  <block id="f41a23af01b3d7e16d16141a3f6003df" category="cell">ONTAPクラスタ管理 IP から *EMS イベント* のユーザ アクティビティ エージェントへの通信。ONTAP がEMS イベントを送信するには、ユーザ アクティビティ エージェント自体のファイアウォールも含めて、これらのポートをユーザ アクティビティ エージェントに対して開く必要があります。+ **注意:** これらのポートをすべて予約する必要はありませんが、予約するポートはこの範囲内である必要があります。まずは 100 個のポートを予約し、必要に応じて増やすことをお勧めします。</block>
+  <block id="765553e6c7ac8592c389acb9878a050a" category="cell">SSH</block>
+  <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="cell">22</block>
+  <block id="1eb5ae63609e68a11106494d272615bf" category="cell">クラスタ管理</block>
+  <block id="269ab41459ba8b3de391eb30b649d222" category="cell">CIFS/SMB ユーザーのブロックに必要です。</block>
+  <block id="c3c0e3736c092f9f194505694468ca8b" category="inline-link-macro">システム要件</block>
+  <block id="3711ac0a85bd797cffe6d1b55a460f16" category="paragraph">以下の条件を満たしていることを確認してください <block ref="24745d2c3c6c1ff64bcdf410b4214e6b" category="inline-link-macro-rx"></block> ユーザー アクティビティ エージェント用。構成がサポートされているクラウド プロバイダーとリージョンに準拠していることを確認します。</block>
 </blocks>
