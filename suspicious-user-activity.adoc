@@ -113,15 +113,10 @@ TIP: Network Time Protocol (NTP) または Simple Network Time Protocol (SNTP) �
 | プロトコル | ポート | ソース | デスティネーション | 説明 
 
 
-| TCP | 443 | ユーザーアクティビティエージェント  a| 
-* <サイト名>.cs01-ap-1.cloudinsights.netapp.com
-* <サイト名>.c01-ap-1.cloudinsights.netapp.com
-* <サイト名>.c02-ap-1.cloudinsights.netapp.com
-
-| ランサムウェア耐性へのアクセス 
+| TCP | 443 | ユーザーアクティビティエージェント | ランサムウェア耐性サービス | ランサムウェア耐性へのアクセス 
 
 
-| TCP | 443 | ユーザーアクティビティエージェント | エージェントログイン.cs01-ap-1.cloudinsights.netapp.com | 認証サービスへのアクセス 
+| TCP | 443 | ユーザーアクティビティエージェント | ランサムウェア耐性サービス | 認証サービスへのアクセス 
 |===
 
 
@@ -132,15 +127,10 @@ TIP: Network Time Protocol (NTP) または Simple Network Time Protocol (SNTP) �
 | プロトコル | ポート | ソース | デスティネーション | 説明 
 
 
-| TCP | 443 | ユーザーアクティビティエージェント  a| 
-* <サイト名>.cs01-eu-1.cloudinsights.netapp.com
-* <サイト名>.c01-eu-1.cloudinsights.netapp.com
-* <サイト名>.c02-eu-1.cloudinsights.netapp.com
-
-| ランサムウェア耐性へのアクセス 
+| TCP | 443 | ユーザーアクティビティエージェント | ランサムウェア耐性サービス | ランサムウェア耐性へのアクセス 
 
 
-| TCP | 443 | ユーザーアクティビティエージェント | agentlogin.cs01-eu-1.cloudinsights.netapp.com | 認証サービスへのアクセス 
+| TCP | 443 | ユーザーアクティビティエージェント | ランサムウェア耐性サービス | 認証サービスへのアクセス 
 |===
 
 
@@ -151,15 +141,10 @@ TIP: Network Time Protocol (NTP) または Simple Network Time Protocol (SNTP) �
 | プロトコル | ポート | ソース | デスティネーション | 説明 
 
 
-| TCP | 443 | ユーザーアクティビティエージェント  a| 
-* <サイト名>.cs01.cloudinsights.netapp.com
-* <サイト名>.c01.cloudinsights.netapp.com
-* <サイト名>.c02.cloudinsights.netapp.com
-
-| ランサムウェア耐性へのアクセス 
+| TCP | 443 | ユーザーアクティビティエージェント | ランサムウェア耐性サービス | ランサムウェア耐性へのアクセス 
 
 
-| TCP | 443 | ユーザーアクティビティエージェント | agentlogin.cs01.cloudinsights.netapp.com | 認証サービスへのアクセス 
+| TCP | 443 | ユーザーアクティビティエージェント | ランサムウェア耐性サービス | 認証サービスへのアクセス 
 |===
 
 
