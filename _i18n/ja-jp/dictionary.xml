@@ -337,10 +337,6 @@
   <block id="76722f595147e9e40ab79fef549441a4" category="admonition">スナップショット ポリシーを無効にしないことをお勧めします。</block>
   <block id="ef54d92c7cc927ca7eb5e489c30b0e9b" category="summary">検出中に、Ransomware Resilience はすべてのコンソール エージェントとアカウントにわたるシステム内のすべてのボリュームとファイルを分析します。</block>
   <block id="e9be3c13b1ed73a120f1b23e2cefb058" category="doc">NetApp Ransomware Resilienceのワークロードを発見</block>
-  <block id="66fde4240a0e74342b069b682c733504" category="paragraph">*ワークロードをどのように検出できますか?*次の処理を実行できます。</block>
-  <block id="e532d8f244f0ea9cd5619802d3cb8f03" category="list-text">各コンソール エージェント内で、ワークロードを検出するシステムを選択します。環境内の特定のワークロードを保護し、他のワークロードは保護しない場合は、この機能が役立つ可能性があります。</block>
-  <block id="6785cfec3a12064afa1fdb005b389154" category="list-text">以前選択したシステムに対して新しく作成されたワークロードを検出します。</block>
-  <block id="35cf13d9dca3a78ecf913cca5a7af14a" category="list-text">新しいシステムを発見してください。</block>
   <block id="790472d97707885ad0bca12c5442db2a" category="paragraph">各コンソール エージェント内で、ワークロードを検出するシステムを選択します。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
   <block id="7b8dc42ed597eb23a119869a1195c334" category="list-text">NetApp Consoleから、*保護* &gt; *ランサムウェア保護* を選択します。</block>
@@ -363,12 +359,9 @@
   <block id="7aa859cab6bf5bccbd16604f19eefa93" category="inline-link-macro">ダッシュボードに表示される内容について説明します。</block>
   <block id="6363fabfdf63bcf12dfba9fd9de06ba3" category="paragraph"><block ref="6363fabfdf63bcf12dfba9fd9de06ba3" category="inline-link-macro-rx"></block></block>
   <block id="0e8bd87ff5fa544ac4a41711a3b607ee" category="section-title">以前に選択したシステムに対して新しく作成されたワークロードを検出する</block>
-  <block id="50cb53872ff54665f11a232b976038d3" category="paragraph">検出対象のシステムをすでに選択している場合は、ダッシュボードからそれらの環境に対して新しく作成されたワークロードを検出できます。</block>
-  <block id="349f26e9c45e28e1bbdcacd539035898" category="list-text">最後の検出日を特定するには、ランサムウェア耐性ダッシュボードの右上にある *更新* アイコンの横にある日付と時刻のスタンプを確認します。</block>
   <block id="cee654483027bd7fe0b0908f5113b46f" category="section-title">新しいシステムを発見する</block>
   <block id="3a268026d4270688c4ec208104cc118c" category="paragraph">すでにシステムを検出している場合は、新しいシステムや以前に選択しなかったシステムを見つけることができます。</block>
   <block id="12138171b6ceeb4bdc45d66e55bebe1c" category="inline-image-macro">垂直アクション</block>
-  <block id="981597877eeda1ab60f9f862028665bf" category="list-text">ランサムウェア耐性メニューから、垂直方向の<block ref="ddacd9651566dbd67045ad6fbaf81a6c" category="inline-image-macro-rx" type="image"></block>... 右上のオプションをクリックします。ドロップダウンメニューから*設定*を選択します。</block>
   <block id="405f846fd5caab9c6bb41e637ac55c97" category="summary">NetApp Ransomware Resilienceに関するよくある質問への回答をご覧ください。</block>
   <block id="815a60d80ffbc32f6db251b3410900b2" category="doc">NetApp Ransomware Resilienceに関するよくある質問</block>
   <block id="0257967210bdc685c6f54c2fd5c5300f" category="paragraph">この FAQ は、NetApp Ransomware Resilienceに関する質問への簡単な回答を探している場合に役立ちます。</block>
@@ -924,8 +917,6 @@
   <block id="54a418aa76c7e9afaa77a58a34a3d3ed" category="doc">NetApp Ransomware Resilience保護戦略でワークロードを保護する</block>
   <block id="7bf3a8af65d2a153b44dafcf248f1df7" category="paragraph">NetApp Ransomware Resilienceでワークロード一貫性保護を有効にするか、ランサムウェア保護戦略を作成することにより、ランサムウェア攻撃からワークロードを保護できます。</block>
   <block id="9d76fd8cddbcb128567856bd698d409e" category="section-title">ランサムウェア対策戦略を理解する</block>
-  <block id="88a4ad08ed31669f06a098dea0a14a38" category="paragraph">ランサムウェア保護戦略には、検出ポリシーと保護ポリシーの両方が含まれます。</block>
-  <block id="dd90d4cdb71a18320f3becc35cd530d5" category="list-text">**検出ポリシー** ランサムウェアの脅威を検出します</block>
   <block id="b5728c1f0d5859e4bf3e89712b5ddbdf" category="list-text">**保護ポリシー** には、スナップショット ポリシーとバックアップ ポリシーが含まれます。保護戦略には検出およびスナップショット ポリシーが必要です。バックアップ ポリシーはオプションです。</block>
   <block id="7646c296ea1b221cbb826893afaa224e" category="paragraph">ワークロードを保護するために他のNetApp製品を使用している場合、Ransomware Resilience はそれらを検出し、次のいずれかのオプションを提供します。</block>
   <block id="0e468f869572effeac4af4bbea21ed06" category="list-text">ランサムウェア検出ポリシーを使用し、他のNetAppツールによって作成されたスナップショットおよびバックアップポリシーを引き続き使用するか、</block>
@@ -975,18 +966,11 @@
   <block id="6041f003f0f1bda39024283f18c8591b" category="list-text">スナップショットとバックアップを管理するランサムウェア保護ポリシーの名前</block>
   <block id="0b780e70f563e19cd1a3f1e2bce2f198" category="paragraph">*ワークロードの重要度*</block>
   <block id="0882532dc9eb74e24a8b137f1e6a0b39" category="paragraph">ランサムウェア耐性は、各ワークロードの分析に基づいて、検出中に各ワークロードに重要度または優先度を割り当てます。ワークロードの重要度は、次のスナップショット頻度によって決まります。</block>
-  <block id="1ad5d2b1df5750779a9e10432b0d7a7b" category="list-text">*重大*: スナップショット コピーが 1 時間あたり 1 回以上作成される (非常に積極的な保護スケジュール)</block>
-  <block id="1adc4b459e7f50d96280424fb7e06709" category="list-text">*重要*: スナップショット コピーは 1 時間あたり 1 回未満ですが、1 日あたり 1 回以上作成されます</block>
-  <block id="e12f58d91eed1a4a160b184cc1b10ebf" category="list-text">*標準*: 1日あたり1回以上のスナップショットコピーの取得</block>
-  <block id="48102e7d0a568223836c2d653abd58e5" category="paragraph">*定義済み検出ポリシー* [[定義済み]]</block>
   <block id="58adba48bf0678c3abb71d1fdf829602" category="paragraph">ワークロードの重要度に合わせて、次のランサムウェア耐性定義済みポリシーのいずれかを選択できます。</block>
   <block id="4d293abd3f96b37c9afdf90f01855f8b" category="admonition">**暗号化ユーザー拡張** ポリシーは、疑わしいユーザーの動作の検出をサポートする唯一の定義済みポリシーです。</block>
   <block id="a2c5d5541ff19f8df63922963356ec16" category="cell">ポリシーレベル</block>
   <block id="d4e2713d1b1725a1592f9268589f990d" category="cell">Snapshot</block>
   <block id="7cf395303ce3665a9834721d4b748e4b" category="cell">頻度</block>
-  <block id="c2097ddf718c7c0477555ad9dde31c5e" category="cell">保持期間（日数）</block>
-  <block id="39531fdceaea662abd6669cba8f989fc" category="cell">スナップショットコピーの数</block>
-  <block id="c6b8cedaee837159aadd999ac609755e" category="cell">スナップショットコピーの合計最大数</block>
   <block id="e8ce96c640213db710ed76440fe41391" category="cell">*重要なワークロードポリシー*</block>
   <block id="ef47e7cb2656929b4b5701de51c43f5f" category="paragraph">15分ごと</block>
   <block id="efec1cf9b9eee75e20f0e689c7d19618" category="cell">15分ごと</block>
@@ -1054,9 +1038,7 @@
   <block id="e4574be2aa1d855d0a159fa734c028b7" category="list-text">各項目について、*下矢印*を選択します。</block>
   <block id="b77a56354e9e39a76b1a118e9bfa09d3" category="list-text">*検出ポリシー*:</block>
   <block id="949db64066489b0349a4ff1451832808" category="list-text">*ポリシー*: 事前に設計された検出ポリシーの 1 つを選択します。</block>
-  <block id="0bea212ea55cc876a45f2009621526fb" category="list-text">*プライマリ検出*: ランサムウェア検出を有効にして、ランサムウェア耐性により潜在的なランサムウェア攻撃を検出します。</block>
   <block id="66ecff8104cfb8cf22c05ebdad07a66a" category="list-text">*疑わしいユーザー行動の検出*: ユーザー行動の検出を有効にすると、ユーザーアクティビティイベントが Ransomware Resilience に送信され、データ侵害などの疑わしいイベントが検出されます。</block>
-  <block id="25c38cb370fc00bc6fd644a75102eeb2" category="list-text">*ファイル拡張子をブロック*: これを有効にすると、Ransomware Resilience によって既知の疑わしいファイル拡張子がブロックされます。ランサムウェア耐性は、プライマリ検出が有効になっている場合に自動スナップショット コピーを作成します。</block>
   <block id="7c06fadd4f73e4b63eb519df7d9880fc" category="paragraph">ブロックされたファイル拡張子を変更する場合は、System Manager で編集します。</block>
   <block id="c8499d03897189696e5af26fc5ab9f45" category="list-text">*スナップショットポリシー*:</block>
   <block id="007ac2633329ecdb55692304050d9260" category="list-text">*スナップショット ポリシー ベース名*: ポリシーを選択するか、*作成* を選択してスナップショット ポリシーの名前を入力します。</block>
@@ -1079,7 +1061,6 @@
   <block id="5bf833f3ee3985c83ff4a2c137c2cdb9" category="list-text">Ransomware Resilience は、アクティブなSnapCenterまたはバックアップとリカバリ ポリシーが存在しているかどうかを検出します。</block>
   <block id="0d7426ba5ec4042ac3383e7c8f81d565" category="list-text">既存のバックアップとリカバリまたはSnapCenterポリシーをそのままにして、_検出_ ポリシーのみを適用するには、[**既存のポリシーを置き換える**] ボックスをオフのままにします。</block>
   <block id="346ced422939f5220048eed80e512829" category="list-text">SnapCenterポリシーの詳細を表示するには、*下矢印*を選択します。</block>
-  <block id="0004fcb1621d03d3051ca5a93121a0c9" category="list-text">必要な検出設定を選択してください: *暗号化検出* *疑わしいユーザー行動の検出* *疑わしいファイル拡張子のブロック*</block>
   <block id="c716b644cde6bcf010e93cdafcb078a0" category="list-text">**次へ**を選択します。</block>
   <block id="a3de809b15b92430b0a649973defb161" category="inline-link-macro">または作成する</block>
   <block id="4ba6fce8781481d7a10ccdf42ed8690d" category="list-text">検出設定として*不審なユーザー行動の検出*を選択した場合は、ユーザーアクティビティエージェントまたは<block ref="739a3400f03009256dff1eb7cc8f7f4a" category="inline-link-macro-rx"></block>。</block>
@@ -1259,9 +1240,7 @@
   <block id="b2ff9d90b8575c5030e4183e92ccf938" category="summary">NetApp Ransomware Resilienceを使用すると、保護、アラート、リカバリの詳細を示すレポートをダウンロードし、CSV ファイルとして保存できます。</block>
   <block id="2963ad4383209a31ba7b5a890b302bc2" category="doc">NetApp Ransomware Resilienceのレポートをダウンロード</block>
   <block id="6fb301adfaa83e3f2590a0454361757e" category="paragraph">保護データをエクスポートし、攻撃準備訓練、保護、アラート、回復の詳細を示す CSV または JSON ファイルをダウンロードできます。</block>
-  <block id="d788bcb0d6bc2e0d54ec3c042333bf41" category="admonition">ファイルをダウンロードする前に、データを更新する必要があります。これにより、ファイルに表示されるデータも更新されます。</block>
   <block id="229560de4c61096e275f68d7eda37c00" category="paragraph">*どのようなデータをダウンロードできますか?*メイン メニュー オプションのいずれかからファイルをダウンロードできます。</block>
-  <block id="9e3cf45f94aa890af53ce59cfb5a0bac" category="list-text">*保護*: 保護されているワークロードとリスクのあるワークロードの合計数など、すべてのワークロードのステータスと詳細が含まれます。</block>
   <block id="a7e404e1296fea04d0cd654b84867b5a" category="list-text">*回復*: 復元が必要なすべてのワークロードのステータスと詳細が含まれます。これには、「復元が必要」、「進行中」、「復元に失敗しました」、「正常に復元されました」とマークされたワークロードの合計数も含まれます。</block>
   <block id="a36d9f25fe7ecafe45db2fd45823c6e7" category="list-text">*レポート*: どのページからでもデータをエクスポートし、ファイルをダウンロードできます。</block>
   <block id="cba5c013826db3e7efce5d0c19aee9c1" category="admonition">準備ドリルレポートは、*レポート* ページからのみダウンロードできます。</block>
@@ -1542,9 +1521,7 @@
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetAppの新着情報</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">NetAppを初めて使用し、NSS アカウントをお持ちでない場合は、以下の手順に従ってください。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">「サポート」が最初のオプションとしてリストされている「ヘルプ」メニューのスクリーンショット</block>
-  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">サポート登録ページからアカウント ID シリアル番号を見つけます。</block>
-  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetAppのサポート登録サイト</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">移動先<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block>*私は登録済みのNetApp顧客ではありません* を選択します。</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">必須フィールド（赤いアスタリスクが付いているフィールド）に入力します。</block>
@@ -1572,8 +1549,6 @@
   <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">既存の顧客レベルの NSS アカウントがあり、パートナー レベルのアカウントを追加しようとする場合も同様です。</block>
   <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">ログインが成功すると、 NetApp はNSS ユーザー名を保存します。</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">3つの水平の点のアイコン</block>
-  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">これは、メールにマッピングされるシステム生成の ID です。*NSS管理*ページでは、<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
-  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">ログイン認証トークンを更新する必要がある場合は、<block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">このオプションを使用すると、再度ログインするよう求められます。これらのアカウントのトークンは 90 日後に期限切れになることに注意してください。これを知らせる通知が投稿されます。</block>
   <block id="2a4edc5ec6e55f07dba0609dc2cd6d87" category="summary">Ransomware Resilience の疑わしいユーザー アクティビティ検出により、潜在的な脅威となる可能性のあるユーザー アクティビティを検出できます。</block>
   <block id="906ec8bab01967c36f2f073eff9f54df" category="doc">NetApp Ransomware Resilienceで疑わしいユーザーアクティビティの検出を構成する</block>
@@ -2044,7 +2019,6 @@
   <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">NetApp Ransomware Resilienceのアラートを管理する</block>
   <block id="9a51095678260d2a753174230dbe8a88" category="paragraph">NetApp Ransomware Resilience は、攻撃の可能性を検出すると、ダッシュボードと通知領域にアラートを表示します。Ransomware Resilience は直ちにスナップショットを作成します。ランサムウェア耐性の *アラート* タブで潜在的なリスクを確認します。</block>
   <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">アラート インシデントには、次の状態があります。</block>
-  <block id="93771318f0ad483bcb651c0ded2c6033" category="admonition">攻撃を却下した後は、そのステータスを元に戻すことはできません。ワークロードを破棄すると、潜在的なランサムウェア攻撃に応じて自動的に作成されたすべてのスナップショット コピーが完全に削除されます。</block>
   <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">インシデントを確認した後、そのインシデントが潜在的な攻撃であるかどうかを判断する必要があります。実際の脅威ではない場合は、無視できます。</block>
   <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">誤検知を無視するか、すぐにデータを回復することを決定できます。アラートを無視すると、Ransomware Resilience はこの動作を学習し、通常の操作と関連付けて、そのような動作に対して再度アラートを開始しなくなります。</block>
   <block id="ea3cf0f8eb2106f78fd9e62d674bd7c0" category="list-text">1 つ以上のインシデントを選択します。または、表の左上にあるインシデント ID ボックスを選択して、すべてのインシデントを選択します。</block>
@@ -2063,7 +2037,6 @@
   <block id="55971de7d1268c37251f60641b742b76" category="paragraph">検出ダッシュボードでは、Ransomware Resilience によってサポートされているシステム構成とサポートされていないシステム構成が表示されます。ランサムウェア耐性は、Oracle アプリケーション、VMware データストア、ファイル共有、ブロック ストレージを評価します。</block>
   <block id="1e55889dc96c3aa2614c39626c9cecdd" category="admonition">Ransomware Resilience では、 FlexGroupを使用するボリュームを持つワークロードは検出されません。</block>
   <block id="c0605366a345249c74664f31f92636c4" category="paragraph">Ransomware Resilience は、現在のバックアップ保護、スナップショット コピー、およびNetApp Autonomous Ransomware Protection オプションをチェックします。Ransomware Resilience は、VM データストアのSnapCenter for VMware、 SnapCenter for Oracle、ファイル共有および VM ファイル共有のNetApp Backup and Recoveryからの保護情報も検出します。次に、ランサムウェア保護を強化する方法を推奨します。</block>
-  <block id="20571d4d9a9f67814984ceaa9897d90b" category="paragraph">ランサムウェア耐性は、選択されたシステムのコンソール エージェントのワークロード データのみを検出します。このプロセスには数分かかる場合があります。</block>
   <block id="0c4db502345984347741cd5a9a3da447" category="list-text">ダッシュボードから「*更新*」アイコンを選択して、新しいワークロードを見つけます。</block>
   <block id="242b6b00ff2f35d933e337704d202041" category="list-text">ワークロード検出カードで、*ワークロードの検出*を選択します。検出には数分かかる場合があります。読み込みアイコンに進行状況が表示されます。</block>
   <block id="728cc93ad9329b5fca77365b0336ce77" category="list-text">Ransomware Resilience は、サポートされているシステムとサポートされていないシステムの両方を検出します。ONTAPバージョンが必要なバージョンより低い場合、システムはサポートされません。サポートされていないシステムにマウスを移動すると、ツールチップに理由が表示されます。ワークロードを検出するシステムを選択します。</block>
@@ -2129,4 +2102,74 @@
   <block id="c3c0e3736c092f9f194505694468ca8b" category="inline-link-macro">システム要件</block>
   <block id="3711ac0a85bd797cffe6d1b55a460f16" category="paragraph">以下の条件を満たしていることを確認してください <block ref="24745d2c3c6c1ff64bcdf410b4214e6b" category="inline-link-macro-rx"></block> ユーザー アクティビティ エージェント用。構成がサポートされているクラウド プロバイダーとリージョンに準拠していることを確認します。</block>
   <block id="bbeae0eeffca7072631fe62be382e481" category="cell">ランサムウェア耐性サービス</block>
+  <block id="28f949c139c27e6b09df3640a4d3aea0" category="doc">スナップショットをONTAPに複製する</block>
+  <block id="f67d671d0eb9b2810d472b2c73fb65d6" category="paragraph">Ransomware Resilience では、セカンダリONTAPサイトへのスナップショットのレプリケーションの追加がサポートされるようになりました。レプリケーションを含むランサムウェア保護戦略を作成することも、定義済みの戦略を使用することもできます。レプリケーション ポリシーを使用する保護グループを使用すると、ワークロードごとに同じ宛先または異なる宛先にレプリケートできます。</block>
+  <block id="6ca5a36112bece1031ef1a3e82518ffb" category="inline-link-macro">ランサムウェア耐性でワークロードを保護する</block>
+  <block id="0b603f5148dda4ce1b974e4b20493476" category="paragraph">詳細については、 <block ref="1b59dbcecddb451034333205ceb2d85d" category="inline-link-macro-rx"></block>。</block>
+  <block id="f7bb3fba9e87909a7d99018a8feebef5" category="section-title">ランサムウェア耐性からワークロードを除外する</block>
+  <block id="36d62eb8fbffb07f574185bd90036cd1" category="paragraph">ランサムウェア耐性では、システム内の特定のワークロードを保護およびランサムウェア耐性ダッシュボードから除外することがサポートされるようになりました。検出後にワークロードを除外し、ランサムウェア保護を追加する場合は再度含めることができます。除外されたワークロードについては課金されません。</block>
+  <block id="427dab7765b34a516acce2d3545db33d" category="inline-link-macro">ワークロードを除外する</block>
+  <block id="cce6483b933a36b9eebb2ecf0d8f32a6" category="paragraph">詳細については、 <block ref="40a5b14292f3b3c1d42c8b093a2843e2" category="inline-link-macro-rx"></block>。</block>
+  <block id="35308ce14b9ba8b4f632405b876f0cc3" category="section-title">アラートをレビュー中としてマークする</block>
+  <block id="ff4c9cd383a7fe5ae887d1ac68d7ba52" category="paragraph">Ransomware Resilience では、アラートを「レビュー中」としてマークできるようになりました。「レビュー中」ラベルを使用すると、アクティブなランサムウェアの脅威をトリアージおよび管理する際に、チーム全体の明確性が向上します。</block>
+  <block id="89f2d4e28daee04bf630a66530a30349" category="paragraph">Ransomware Resilience は、システムを選択した場合にのみワークロード データを検出します。検出プロセスには数分かかる場合があります。</block>
+  <block id="67cfc97e3b12b9504bf641388c095506" category="paragraph">以前に検出されたシステムにワークロードを追加した場合は、新しいワークロードを保護するために検出を再度開始する必要があります。</block>
+  <block id="a766aa8ad09c7fe20050753d75beca3f" category="list-text">最後の検出時刻を特定するには、ランサムウェア耐性ダッシュボードの右上にある *更新* アイコンの横にある日付と時刻のスタンプを確認します。</block>
+  <block id="b449485bf7d14cf53070de7818e6bb15" category="inline-image-macro">垂直アクション&lt;block ref="2f43b42fd833d1e77420a8dae7419000" prefix="</block>
+  <block id="5b000e587ccbc59d84db84375ebb8da8" category="list-text">ランサムウェア耐性メニューから、垂直方向の <block ref="fc01824fafc69aa9b95ac35277bbc402" category="inline-image-macro-rx" type="image"></block>右上の「category='inline-code'/&gt;」オプションをクリックします。ドロップダウンメニューから*設定*を選択します。</block>
+  <block id="a73cb044815fd2c4fc6f7f4be69aea1b" category="paragraph">ランサムウェア耐性により、システム内の特定のワークロードをランサムウェアの保護と検出から除外できます。</block>
+  <block id="195a678c9c8d484143eb63eed10f0646" category="paragraph">除外できるのは、サポートされており、正常に検出されたワークロードのみです。除外されたワークロードのリストはいつでも変更できます。ランサムウェア耐性から除外されたワークロードについては課金されません。</block>
+  <block id="8177747908126fef8483f6d1d6004f44" category="list-title">除外ワークロードリストにワークロードを追加する</block>
+  <block id="37eb321d29db5dca11557bda9adc6eb7" category="list-text">ランサムウェア耐性で、[**設定**] を選択します。</block>
+  <block id="c015f4b89fe0df1b17fc4657c586df8c" category="list-text">設定ダッシュボードで、ワークロード検出ダッシュボードを見つけます。カードには除外されたワークロードの数が表示されます。ワークロードを追加するには、除外されたワークロードの横にある [**管理**] を選択します。</block>
+  <block id="7722f090277db2c47e7aecd7f6ee7e81" category="inline-image-macro">ランサムウェア耐性設定ダッシュボード</block>
+  <block id="fed7f3c8409ae810bb45ed3af428f167" category="paragraph"><block ref="fed7f3c8409ae810bb45ed3af428f167" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2aa032eed68682b8806374264ab61a71" category="list-text">[除外されたワークロード] ページで、[**追加**] を選択します。</block>
+  <block id="37cf02ce6bbea058426687b673a078ad" category="list-text">除外するワークロードを選択し、[**追加**] をクリックします。</block>
+  <block id="5b9260ea2b4c6018fc2bd598ec422b08" category="list-text">「除外されたワークロード」ページで除外されたワークロードを確認します。ワークロードの追加中は、その名前の横に進行状況インジケーターが表示されます。ワークロードが正常に除外されなかった場合、そのワークロードはページに表示されません。</block>
+  <block id="423527e51d69b12e13d1380a3cd19d9f" category="list-title">除外ワークロードリストからワークロードを削除する</block>
+  <block id="8e0c5d2e3270df01d0de694ff5c7c445" category="list-text">設定ダッシュボードで、ワークロード検出ダッシュボードを見つけます。カードには除外されたワークロードの数が表示されます。除外されたワークロードの横にある [**管理**] を選択します。</block>
+  <block id="d3ce09b8cd5f44a1b0f3a2d83e6ac0f2" category="inline-image-macro">ランサムウェア耐性設定ダッシュボードのスクリーンショット。</block>
+  <block id="ca700be141532b3ddfdcc178e0b5cd32" category="paragraph"><block ref="ca700be141532b3ddfdcc178e0b5cd32" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9ec9c37808e2bdf2c275e0fc67f873fc" category="list-text">個々のワークロードを削除するには、除外リストから削除するワークロードのアクション メニューを選択します。</block>
+  <block id="d1e463c8fe8d734bd3327fb633998456" category="paragraph">複数のワークロードを削除するには、削除するワークロードの横にあるチェックボックスをオンにして、[**除外から削除**] を選択します。</block>
+  <block id="9f1822f26663cadd0ea726defa3cca17" category="list-text">ダイアログで [**削除**] を選択して、除外リストからワークロードを削除することを確認します。</block>
+  <block id="01e74a47d7af3692bf72faf95ffcd1a3" category="inline-image-macro">除外されたワークロードを正常に削除したスクリーンショット。</block>
+  <block id="af77f82e6f94939c1b89727420b621ac" category="list-text">除外されたワークロード リストからワークロードが正常に削除されると、[除外されたワークロード] ページに成功メッセージが表示され、除外されたワークロードのリストにワークロードが表示されなくなります。アクションが失敗した場合はエラー メッセージが表示されるので、操作を再度実行してください。 <block ref="364f1d2f9b1485226ce83c7872b1bae0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="afc3fd7b02af578176e65700acd6709b" category="list-text">*レビュー中*: インシデントを評価中に、レビュー中としてマークすることができます。</block>
+  <block id="a6e3974f4227562b42dd3774682f3f56" category="admonition">攻撃を却下した後は、そのステータスを元に戻すことはできません。ワークロードを破棄すると、潜在的なランサムウェア攻撃に応じて自動的に作成されたすべてのスナップショット コピーが完全に削除されます。</block>
+  <block id="95f7e6287ef0ab80de109e7baee476ad" category="paragraph">ランサムウェア保護戦略には、検出、保護、および複製のポリシーが含まれます。</block>
+  <block id="b8b45f3c53a227dc5aa1d806ef340f06" category="list-text">**検出ポリシー** ランサムウェアの脅威を特定</block>
+  <block id="68fc9b8869c6d23ecc7c4acaf4ef7761" category="list-text">**レプリケーション ポリシー** を使用すると、Ransomware Resilience からセカンダリ サイトにスナップショットをレプリケートできます。レプリケーション スケジュールは、時間ごと、日ごと、週ごと、または月ごとの頻度に設定できます。</block>
+  <block id="3ed69b14426127876e3ab79ddc2e266e" category="paragraph">現在、スナップショットをレプリケートできるのはオンプレミスのONTAPストレージのみです。</block>
+  <block id="6474bbda8f7c072686c6e020cf107ead" category="list-text">コンソールの左側のナビゲーションから、*保護* &gt; *ランサムウェア耐性*を選択します。</block>
+  <block id="ace8eeed056a04351826cffef5f4da33" category="admonition">疑わしいユーザー行動アクティビティと FPolicy (疑わしいファイル拡張子) アクティビティは、検出ステータスとは別に表示されます。</block>
+  <block id="8e671825df2521c62d586d393df3398d" category="paragraph">*レプリケーション先*: スナップショット レプリケーションを構成している場合は、宛先ストレージ VM とシステムの名前が一覧表示されます。レプリケーションがない場合、このフィールドには「なし」と表示されます。</block>
+  <block id="705d8898c1c055eb3bff9939a87b6812" category="list-text">*重大*: 1 時間あたり 1 回以上のスナップショット コピーが作成される (非常に積極的な保護スケジュール)</block>
+  <block id="0bec43abfdb99f043ac56e20931d1899" category="list-text">*重要*: スナップショットのコピーは、1時間ごとよりも頻度は低いですが、毎日よりも頻繁に作成されます。</block>
+  <block id="890ca6db61a7d84b3c2f7e8b21560ff7" category="list-text">*標準*: スナップショットコピーは1日に複数回作成されます</block>
+  <block id="da4aa80a5402fe8991327699e5421e28" category="section-title">定義済みの検出ポリシー</block>
+  <block id="b267816a1724e79c894aa7e4509e18b2" category="paragraph">+ **クリティカル レプリケーション ポリシー** は、 ONTAPへのスナップショットのレプリケーションをサポートする唯一の定義済みポリシーです。</block>
+  <block id="0d6a90889ade51e4252ba8bbf1ad155e" category="cell">保持期間（日数）</block>
+  <block id="b5b7fab63026325a379913c2a05751c2" category="cell">スナップショットコピーの数</block>
+  <block id="aa9adfa847815670c9bd986dafc8c79c" category="cell">スナップショットコピーの最大数</block>
+  <block id="cf9344351eb239ccd95661876c4d97ee" category="cell">*重要なレプリケーションポリシー*</block>
+  <block id="ad53fda1a18da9db9d8aa1d460952aa5" category="list-text">ONTAPへのセカンダリレプリケーション</block>
+  <block id="8f6c5d8baaf38cda61b5392a06e30e68" category="list-text">*一次検出*: ランサムウェア耐性を有効にして、潜在的なランサムウェア攻撃を検出します。</block>
+  <block id="21fd87cf8a3d6f008657537a5cec6e82" category="list-text">*ファイル拡張子をブロック*: ランサムウェア耐性を有効にして、既知の疑わしいファイル拡張子をブロックします。ランサムウェア耐性は、プライマリ検出が有効になっている場合に自動スナップショット コピーを作成します。</block>
+  <block id="50723c157cd9ea132a02f421411e273d" category="list-text">*レプリケーションポリシー*:</block>
+  <block id="f84245dfb1fc8217e62c0934102ba606" category="list-text">*レプリケーション ポリシーのベース名*: 新しい名前を入力するか、既存の名前を選択します。ベース名は、すべてのスナップショットに追加されるプレフィックスです。</block>
+  <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*レプリケーション スケジュール*: 有効にする頻度 (時間別、日次、週次、月次) を切り替え、有効にするスケジュールごとに保持値 (保持する複製スナップショットの数) を設定します。</block>
+  <block id="228ec8f5cf8241b99a71e0c11689b0e6" category="list-text">必要な検出設定を選択してください: *暗号化検出* *疑わしいユーザー行動の検出* *疑わしいファイル拡張子のブロック*</block>
+  <block id="447fce6406d4a8e99de98a2d5d107536" category="list-text">戦略にレプリケーションが含まれている場合は、**宛先システム** と **宛先ストレージ VM** を選択します。**次へ**を選択します。</block>
+  <block id="0c82c0ade162cfe42b72c98aa569451d" category="list-text">保護戦略にレプリケーションが含まれている場合は、レプリケーション設定を確認します。</block>
+  <block id="22af614d3b0e3b88037f6f632819e41f" category="list-text">すべてのスナップショットを同じ宛先に複製するには、**各ワークロードに同じ宛先を使用する** をオンにします。コンソール エージェント セクションのワークロードに対して、*宛先システム* と *宛先ストレージ VM* を選択します。</block>
+  <block id="5cddb60bd30a2b5abfa065435ff46fad" category="paragraph">別の宛先を使用するには、そのボックスのチェックを外します。各コンソール エージェントの下の各ワークロードを確認し、各ワークロードに *宛先システム* と *宛先ストレージ VM* を割り当てます。**次へ**を選択します。</block>
+  <block id="05f102695dcd78d82f88a52818f4c682" category="admonition">ファイルをダウンロードする前に、ダッシュボードを更新して、レポートの最新データを取得する必要があります。</block>
+  <block id="6f540707e47351a26c8e3c79ccce18ea" category="list-text">*保護*: 保護されているワークロードとリスクのあるワークロードの合計数など、すべてのワークロードのステータスと詳細が含まれます。</block>
+  <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7019a39846e9a2c7f7a80eaba91e4a41" category="paragraph"><block ref="7019a39846e9a2c7f7a80eaba91e4a41" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">これは、メールにマッピングされるシステム生成の ID です。*NSS管理*ページでは、<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
+  <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">ログイン認証トークンを更新する必要がある場合は、<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
+  <block id="667dffcf5676fe0bd645082d2a512fef" category="section-title">2026年1月12日</block>
 </blocks>
