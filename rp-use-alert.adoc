@@ -146,7 +146,7 @@ TIP: メール通知を購読するには、 https://docs.netapp.com/us-en/conso
 ユーザー レベルのアラートを表示するには、ユーザー アクティビティ エージェントを構成し、ユーザー動作検出機能を備えた保護ポリシーを有効にする必要があります。ユーザー行動検出が有効になっている場合、アラート ダッシュボードに *不審なユーザー* 列が表示されます。ユーザー行動検出が有効になっていない場合は表示されません。不審なユーザーの検出を有効にするには、link:suspicious-user-activity.html["不審なユーザーアクティビティ"] 。
 
 
-NOTE: NetApp Data Infrastructure Insights (DII) Workload Security を使用している場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用することをお勧めします。Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナント間のペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。
+NOTE: NetApp Data Infrastructure Insights (DII) Workload Security を使用している場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用することをお勧めします。Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナント間のペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。+ DII を使用していない場合は、疑わしいユーザー行動の検出機能を利用できます。必ず link:suspicious-user-activity.html["疑わしいユーザーアクティビティの検出を有効にしました"] 適切なエージェントを構成します。
 
 
 

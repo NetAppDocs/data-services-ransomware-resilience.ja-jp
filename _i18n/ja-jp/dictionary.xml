@@ -268,61 +268,7 @@
   <block id="20fd4e2b91312c8ee1419aa853c936e1" category="paragraph">ランサムウェア攻撃対策ドリル用にONTAP 9.11.1 ボリュームを選択すると、Ransomware Resilience によってアラートが送信されます。  「ボリュームへのクローン」オプションを使用してデータを回復し、ドリルをリセットすると、リセット操作は失敗します。</block>
   <block id="4662983aa04c5f2df5dded885a7f15c5" category="section-title">Amazon FSx for NetApp ONTAP の制限</block>
   <block id="ae06555bf1899a4ef9c10d46f1e1d5ab" category="list-text">復元操作はスナップショットからのみ実行されます。</block>
-  <block id="59ad4756ad1f9899a8154575ba4aeb8f" category="summary">NetApp Ransomware Resilience は、ロールを使用して、各ユーザーの特定の機能およびアクションへのアクセスを制御します。</block>
-  <block id="bb1accae7f94f7f55d6103b9e6ed4887" category="paragraph">ランサムウェア耐性は、ランサムウェア耐性に固有の次のロールを使用します。</block>
-  <block id="db7664bf605b3c359f584db725113965" category="list-text">*ランサムウェア耐性管理者*: [保護]、[アラート]、[回復]、[設定]、[レポート] タブのアクションを管理します。</block>
-  <block id="0f8a9a76c246899cc20804694dde0c5d" category="list-text">*ランサムウェア耐性ビューア*: NetAppワークロード データの表示、アラート データの表示、リカバリ データのダウンロード、レポートのダウンロードを行います。</block>
-  <block id="6451a60ec696fdaf149fd3ab5d73d11b" category="inline-link">セットアップと管理に関するドキュメント</block>
-  <block id="d8a8c665f6da963545862e3f1cd5ee11" category="paragraph">これらのロールは、コンソール サービスや、データ保護、ワークロード管理などのその他のサービスへのアクセスを制御するコンソール プラットフォーム ロールに加えて提供されます。すべてのコンソールプラットフォームロールの詳細については、<block ref="70be838599755f5947865c6eb0bd7ba4" category="inline-link-rx"></block> 。</block>
-  <block id="dac305684bf34329491ffc1845204f2f" category="paragraph">次の表は、各 Ransomware Resilience ロールが実行できるアクションを示しています。</block>
-  <block id="4420e7353184ac575b539cdce1b991db" category="cell">特徴とアクション</block>
-  <block id="913c14919cea84283a7e5c825e227099" category="cell">ランサムウェア耐性管理者</block>
-  <block id="5955e6b8bb599727395fc82db2951dcd" category="cell">ランサムウェア耐性ビューア</block>
-  <block id="b60c44c6bbbb3793d0c08c34cd6e2382" category="cell">ダッシュボードとすべてのタブを表示</block>
-  <block id="93cba07454f06a4a960172bbd6e2a435" category="paragraph">はい</block>
-  <block id="2961ef9224153d664a9bde6ee6ef2570" category="cell">ダッシュボードで推奨事項のステータスを更新する</block>
-  <block id="bafd7322c6e97d25b6299b5d6fe8920b" category="paragraph">いいえ</block>
-  <block id="78c7efbfa07116553a52f59800129dde" category="cell">無料トライアルを始める</block>
-  <block id="42174d568723a8694dc7e6dfd143cb12" category="cell">ワークロードの検出を開始する</block>
-  <block id="bb73fa2a07d0c544491039dc1ffed7b8" category="cell">ワークロードの再検出を開始する</block>
-  <block id="26548eb85488e3cdc0f0b9b27802995f" category="cell">*[保護]タブで*:</block>
-  <block id="8ae06231e3533fd967c3e2959a7f5325" category="cell">保護プランの追加、変更、削除</block>
-  <block id="579066063b3104c9f6c74d2084e0e7e4" category="cell">機密データへの露出を特定する</block>
-  <block id="e1b7f478f4648932399a0f8d6835740b" category="cell">保護プランと詳細を一覧表示する</block>
-  <block id="8921dd8678af3de7359bee784af9a8e0" category="cell">保護グループの一覧</block>
-  <block id="97803e7af23cd9dd5e46bef4245a8480" category="cell">保護グループの詳細を表示する</block>
-  <block id="70348d94ac22a6df8ff175b1e3a7535b" category="cell">保護グループの作成、編集、削除</block>
-  <block id="4330b42a340140b836c42bbe9c7105be" category="cell">データをダウンロード</block>
-  <block id="b1e60ac72e50f485ca0a5ea9c82143d2" category="cell">*アラートタブ*:</block>
-  <block id="a0da34eb7fa7ce71299612d3548b6f6a" category="cell">アラートとアラートの詳細を表示する</block>
-  <block id="f700fad2259a25a87fbe56ba2810e8ff" category="cell">インシデントステータスの編集</block>
-  <block id="e975f9abac95a06f0645ce83ab0e4e37" category="cell">回復の警告をマーク</block>
-  <block id="ef9988f85b068b8709daa3be2c31fca3" category="cell">インシデントの詳細を表示</block>
-  <block id="52d7595020614137b8fad8f4575e90d3" category="cell">事件を却下または解決する</block>
-  <block id="f84e2dc493985bbd340b2cd14bf2daeb" category="cell">ユーザーをブロック</block>
-  <block id="38de1b212ca13fa4c230f4c20adbb48a" category="cell">影響を受けるファイルの完全なリストを取得する</block>
-  <block id="4b1b2c63b979feafab4b35d6b2307876" category="cell">アラートデータをダウンロード</block>
-  <block id="b338bf8c8e0fbc61d8a0fad3b4a74e35" category="cell">*[回復]タブで*:</block>
-  <block id="f5f949f53a00b2da6ffa7a9f7a0fd0f8" category="cell">影響を受けるファイルをダウンロードする</block>
-  <block id="65ca8041cc328ebb64db5f8368a9101a" category="cell">ワークロードの復元</block>
-  <block id="4ebc1406711ca6754873e22a81f31c6f" category="cell">回復データをダウンロードする</block>
   <block id="df6e3c89245cdc5bf0a7191c642d6997" category="cell">レポートをダウンロード</block>
-  <block id="a4f2411faacb07693dd051a3d2d9f97e" category="cell">*設定タブで*:</block>
-  <block id="fc36f5b7ec87bb05d12fcec7b985fe79" category="cell">バックアップ先を追加または変更する</block>
-  <block id="765ffd3ea8472bde364d6d75c648c7e2" category="cell">バックアップ先の一覧</block>
-  <block id="be9d2f996415c0e9128f109806d13e74" category="cell">接続されたSIEMターゲットを表示する</block>
-  <block id="08fec10c338548595a28b0310a1c0600" category="cell">SIEMターゲットの追加または変更</block>
-  <block id="39a6763102d641618da35a0d6583043f" category="cell">ワークロードのセキュリティターゲットを接続する</block>
-  <block id="08181115072bbb33365c19f99efea3d7" category="cell">ワークロードセキュリティ接続ステータスを表示する</block>
-  <block id="613856eb65cebd5ee253760f764af42d" category="cell">ワークロードのセキュリティターゲットを切断する</block>
-  <block id="0e12704ac2cf7981683f2392843a3751" category="cell">準備訓練を構成する</block>
-  <block id="fbca60f39e39ac567548a02c9e536305" category="cell">準備訓練を開始する</block>
-  <block id="9e914ba4c13fe3f6329717ca31b8bfca" category="cell">リセット準備訓練</block>
-  <block id="45f15fba3339f71439f0c72c967fc0d3" category="cell">編集準備訓練</block>
-  <block id="62bbacc7c65bd53641f4347319efbc1b" category="cell">準備訓練の状況を確認する</block>
-  <block id="0e6583bdbbf88acbfc57d3f868629d3c" category="cell">検出構成の更新</block>
-  <block id="5439d77b96ff7a9498be958a6755e89a" category="cell">検出構成の表示</block>
-  <block id="1ed006cd78ff9bf590a02c6fc268141f" category="cell">*レポートタブ*:</block>
   <block id="c237a2957d794956f228d80e877a27db" category="summary">NetApp Ransomware Resilienceを使用したくなくなった場合は、ライセンスを期限切れにすることができます。</block>
   <block id="e84bd6808df2e3541b6e418b89691895" category="doc">NetApp Ransomware Resilienceを無効にする</block>
   <block id="47dde0af2802e8666105b9e466033035" category="paragraph">NetApp Ransomware Resilienceを使用したくなくなった場合は、ライセンスを期限切れにすることができます。使用しなくなったポリシーを無効にすることもできます。</block>
@@ -1097,7 +1043,6 @@
   <block id="f7ba12bb96df2ae9d69ffbf1bc2af6bb" category="inline-image-macro">保護グループの追加 - ポリシーページ</block>
   <block id="a739b6145911af1f850b745cae737475" category="paragraph"><block ref="a739b6145911af1f850b745cae737475" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ae08906aa42275aa58a2b7641019104" category="list-text">このグループの保護を管理するポリシーを選択します。確認するには、[次へ] を選択します。</block>
-  <block id="810716a15e8cb79df6f2dd60bfee1161" category="list-text">バックアップ ポリシーを構成する必要がある場合は、いずれかを選択して [**次へ**] を選択します。</block>
   <block id="f724f66c90177c8dac8336038a0778c0" category="list-text">検出ポリシーにユーザー行動の検出が含まれている場合は、使用するデータ コレクターを選択し、[**次へ**] をクリックします。</block>
   <block id="0fc76de5572d1186f1358665dff6076f" category="list-text">保護グループの選択内容を確認します。</block>
   <block id="d7a75d0f58bb349985e6d2104ca65596" category="list-text">保護グループの作成を完了するには、[*追加*] を選択します。</block>
@@ -1803,7 +1748,6 @@
   <block id="fca5751a0529f9987d0699648a97be3a" category="list-text">コンソールがライセンスを自動的に更新できない場合は、ライセンス ファイルを手動でアップロードする必要があります。</block>
   <block id="f8541056d6bacae1a78fb5d2b68c67a8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>ランサムウェア耐性を始めましょう</block>
   <block id="43eec2eb3dba42398d66e0c2aa294ea2" category="paragraph">ユーザー レベルのアラートを表示するには、ユーザー アクティビティ エージェントを構成し、ユーザー動作検出機能を備えた保護ポリシーを有効にする必要があります。ユーザー行動検出が有効になっている場合、アラート ダッシュボードに *不審なユーザー* 列が表示されます。ユーザー行動検出が有効になっていない場合は表示されません。不審なユーザーの検出を有効にするには、<block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block> 。</block>
-  <block id="3c6a637355e70f686e34e6e7c966c200" category="admonition">NetApp Data Infrastructure Insights (DII) Workload Security を使用している場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用することをお勧めします。Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナント間のペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。</block>
   <block id="7a7f05bb105ddcf9c0d221e37f8a923c" category="list-text">環境内の疑わしいユーザーをブロックするには、ユーザー名の下にある [*ブロック*] を選択します。</block>
   <block id="bc8ffb69fb560086f529e0097158caad" category="admonition">アラートを無視した場合、そのステータスを変更したり、この変更を元に戻したりすることはできません。</block>
   <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">そのインシデントについては、ダウンロード アイコンを選択して、影響を受けるファイルのリストを CSV 形式でダウンロードします。</block>
@@ -2103,7 +2047,6 @@
   <block id="3711ac0a85bd797cffe6d1b55a460f16" category="paragraph">以下の条件を満たしていることを確認してください <block ref="24745d2c3c6c1ff64bcdf410b4214e6b" category="inline-link-macro-rx"></block> ユーザー アクティビティ エージェント用。構成がサポートされているクラウド プロバイダーとリージョンに準拠していることを確認します。</block>
   <block id="bbeae0eeffca7072631fe62be382e481" category="cell">ランサムウェア耐性サービス</block>
   <block id="28f949c139c27e6b09df3640a4d3aea0" category="doc">スナップショットをONTAPに複製する</block>
-  <block id="f67d671d0eb9b2810d472b2c73fb65d6" category="paragraph">Ransomware Resilience では、セカンダリONTAPサイトへのスナップショットのレプリケーションの追加がサポートされるようになりました。レプリケーションを含むランサムウェア保護戦略を作成することも、定義済みの戦略を使用することもできます。レプリケーション ポリシーを使用する保護グループを使用すると、ワークロードごとに同じ宛先または異なる宛先にレプリケートできます。</block>
   <block id="6ca5a36112bece1031ef1a3e82518ffb" category="inline-link-macro">ランサムウェア耐性でワークロードを保護する</block>
   <block id="0b603f5148dda4ce1b974e4b20493476" category="paragraph">詳細については、 <block ref="1b59dbcecddb451034333205ceb2d85d" category="inline-link-macro-rx"></block>。</block>
   <block id="f7bb3fba9e87909a7d99018a8feebef5" category="section-title">ランサムウェア耐性からワークロードを除外する</block>
@@ -2162,9 +2105,6 @@
   <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*レプリケーション スケジュール*: 有効にする頻度 (時間別、日次、週次、月次) を切り替え、有効にするスケジュールごとに保持値 (保持する複製スナップショットの数) を設定します。</block>
   <block id="228ec8f5cf8241b99a71e0c11689b0e6" category="list-text">必要な検出設定を選択してください: *暗号化検出* *疑わしいユーザー行動の検出* *疑わしいファイル拡張子のブロック*</block>
   <block id="447fce6406d4a8e99de98a2d5d107536" category="list-text">戦略にレプリケーションが含まれている場合は、**宛先システム** と **宛先ストレージ VM** を選択します。**次へ**を選択します。</block>
-  <block id="0c82c0ade162cfe42b72c98aa569451d" category="list-text">保護戦略にレプリケーションが含まれている場合は、レプリケーション設定を確認します。</block>
-  <block id="22af614d3b0e3b88037f6f632819e41f" category="list-text">すべてのスナップショットを同じ宛先に複製するには、**各ワークロードに同じ宛先を使用する** をオンにします。コンソール エージェント セクションのワークロードに対して、*宛先システム* と *宛先ストレージ VM* を選択します。</block>
-  <block id="5cddb60bd30a2b5abfa065435ff46fad" category="paragraph">別の宛先を使用するには、そのボックスのチェックを外します。各コンソール エージェントの下の各ワークロードを確認し、各ワークロードに *宛先システム* と *宛先ストレージ VM* を割り当てます。**次へ**を選択します。</block>
   <block id="05f102695dcd78d82f88a52818f4c682" category="admonition">ファイルをダウンロードする前に、ダッシュボードを更新して、レポートの最新データを取得する必要があります。</block>
   <block id="6f540707e47351a26c8e3c79ccce18ea" category="list-text">*保護*: 保護されているワークロードとリスクのあるワークロードの合計数など、すべてのワークロードのステータスと詳細が含まれます。</block>
   <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
@@ -2172,4 +2112,8 @@
   <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">これは、メールにマッピングされるシステム生成の ID です。*NSS管理*ページでは、<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
   <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">ログイン認証トークンを更新する必要がある場合は、<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
   <block id="667dffcf5676fe0bd645082d2a512fef" category="section-title">2026年1月12日</block>
+  <block id="1bfdea46bcdc184ecc395f7be984a97f" category="paragraph">Ransomware Resilience では、セカンダリONTAPサイトへのスナップショットのレプリケーションの追加がサポートされるようになりました。レプリケーションを含むランサムウェア保護戦略を作成することも、定義済みの戦略を使用することもできます。</block>
+  <block id="1f84339ab34d5298a23a70d51ad457d4" category="inline-link-macro">疑わしいユーザーアクティビティの検出を有効にしました</block>
+  <block id="0c72d558c2e8468bc311f1933be197b5" category="admonition">NetApp Data Infrastructure Insights (DII) Workload Security を使用している場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用することをお勧めします。Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナント間のペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。+ DII を使用していない場合は、疑わしいユーザー行動の検出機能を利用できます。必ず <block ref="f31f86ab68cf8ca6dc8a3009e6d9ea7a" category="inline-link-macro-rx"></block> 適切なエージェントを構成します。</block>
+  <block id="49fa679e35a13dc09de6805c384904d1" category="list-text">バックアップ ポリシーを構成するには、いずれかを選択して [**次へ**] を選択します。</block>
 </blocks>
