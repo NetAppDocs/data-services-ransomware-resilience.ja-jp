@@ -2105,15 +2105,25 @@
   <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*レプリケーション スケジュール*: 有効にする頻度 (時間別、日次、週次、月次) を切り替え、有効にするスケジュールごとに保持値 (保持する複製スナップショットの数) を設定します。</block>
   <block id="228ec8f5cf8241b99a71e0c11689b0e6" category="list-text">必要な検出設定を選択してください: *暗号化検出* *疑わしいユーザー行動の検出* *疑わしいファイル拡張子のブロック*</block>
   <block id="447fce6406d4a8e99de98a2d5d107536" category="list-text">戦略にレプリケーションが含まれている場合は、**宛先システム** と **宛先ストレージ VM** を選択します。**次へ**を選択します。</block>
-  <block id="05f102695dcd78d82f88a52818f4c682" category="admonition">ファイルをダウンロードする前に、ダッシュボードを更新して、レポートの最新データを取得する必要があります。</block>
   <block id="6f540707e47351a26c8e3c79ccce18ea" category="list-text">*保護*: 保護されているワークロードとリスクのあるワークロードの合計数など、すべてのワークロードのステータスと詳細が含まれます。</block>
   <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7019a39846e9a2c7f7a80eaba91e4a41" category="paragraph"><block ref="7019a39846e9a2c7f7a80eaba91e4a41" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">これは、メールにマッピングされるシステム生成の ID です。*NSS管理*ページでは、<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
   <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">ログイン認証トークンを更新する必要がある場合は、<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
   <block id="667dffcf5676fe0bd645082d2a512fef" category="section-title">2026年1月12日</block>
-  <block id="1bfdea46bcdc184ecc395f7be984a97f" category="paragraph">Ransomware Resilience では、セカンダリONTAPサイトへのスナップショットのレプリケーションの追加がサポートされるようになりました。レプリケーションを含むランサムウェア保護戦略を作成することも、定義済みの戦略を使用することもできます。</block>
   <block id="1f84339ab34d5298a23a70d51ad457d4" category="inline-link-macro">疑わしいユーザーアクティビティの検出を有効にしました</block>
   <block id="0c72d558c2e8468bc311f1933be197b5" category="admonition">NetApp Data Infrastructure Insights (DII) Workload Security を使用している場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用することをお勧めします。Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナント間のペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。+ DII を使用していない場合は、疑わしいユーザー行動の検出機能を利用できます。必ず <block ref="f31f86ab68cf8ca6dc8a3009e6d9ea7a" category="inline-link-macro-rx"></block> 適切なエージェントを構成します。</block>
   <block id="49fa679e35a13dc09de6805c384904d1" category="list-text">バックアップ ポリシーを構成するには、いずれかを選択して [**次へ**] を選択します。</block>
+  <block id="748b96a793ccf0ab113112372db17649" category="paragraph">Ransomware Resilience では、セカンダリONTAPサイトへのスナップショットのレプリケーションの追加がサポートされるようになりました。レプリケーション ポリシーを使用する保護グループを使用すると、ワークロードごとに同じ宛先または異なる宛先にレプリケートできます。レプリケーションを含むランサムウェア保護戦略を作成することも、定義済みの戦略を使用することもできます。</block>
+  <block id="389e0c39aeda061370262a9fa330d865" category="doc">サポートされていないボリューム</block>
+  <block id="7aedbf1b65f2bcaf699a2f7f37ba458b" category="paragraph">ランサムウェア耐性レポートでは、**概要** レポートでサポートされているボリュームとサポートされていないボリュームに関する情報が取得されるようになりました。この情報を使用して、システム内のボリュームがランサムウェア保護の対象外となる理由を診断します。</block>
+  <block id="6a43554be5f7f046255a806f0d7cbba9" category="inline-link-macro">ランサムウェア耐性レポートをダウンロード</block>
+  <block id="877e42a9811fb7c41b1fccef32ca2477" category="paragraph">詳細については、 <block ref="225fa9dfe1003c8a72e52db2e5a89a50" category="inline-link-macro-rx"></block>。</block>
+  <block id="0b2947ed93537c3557ef0b1dda419a7a" category="admonition">検出したシステムにボリュームが表示されない場合は、そのボリュームはサポートされていない可能性があります。サポートされていないボリュームのリストを見つけるには、[**設定**] メニューに移動し、[ワークロード検出] カードのアクション メニューを選択して、サポートされているボリュームとサポートされていないボリュームの JSON レポートをダウンロードします。</block>
+  <block id="0c82c0ade162cfe42b72c98aa569451d" category="list-text">保護戦略にレプリケーションが含まれている場合は、レプリケーション設定を確認します。</block>
+  <block id="d6fa1bf46ad545c166256cf297b47ba9" category="list-text">すべてのスナップショットを同じ宛先に複製するには、**各ワークロードに同じ宛先を使用する** をオンにします。コンソール エージェント セクションのワークロードに対して、*宛先システム* と *宛先ストレージ VM* を選択します。+ 別の宛先を使用するには、そのボックスのチェックを外します。各コンソール エージェントの下の各ワークロードを確認し、各ワークロードに *宛先システム* と *宛先ストレージ VM* を割り当てます。**次へ**を選択します。</block>
+  <block id="87971b78e8c43e7c3e77036d3ec8d929" category="admonition">ファイルをダウンロードする前に、ダッシュボードを更新して、レポートの最新データを取得してください。</block>
+  <block id="5d26628350f5209b3a0d69e817a49a0f" category="list-text">**概要**: サポートされているワークロードとサポートされていないワークロードのリスト、サイバーレジリエンスの体制を改善するための推奨アクション、およびランサムウェアレジリエンスダッシュボードで収集された情報が含まれています。</block>
+  <block id="886b1df808dc5d3879143640b1ad98a7" category="admonition">設定のワークロード検出カードからアクションメニューを選択します<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block> 次に、**レポート (JSON) をダウンロード** して、システムでサポートされているワークロードとサポートされていないワークロードのリストを確認します。</block>
+  <block id="194a29c3464a05de3c32434145c0b5d6" category="section-title">2026年1月19日</block>
 </blocks>
