@@ -30,7 +30,9 @@ Ransomware Resilience で疑わしいユーザー アクティビティの検出
 
 コレクターは、ランサムウェア耐性設定で構成されます。
 
-*必要なコンソール ロール* 疑わしいユーザー アクティビティの検出を有効にするには、組織管理者のロールが必要です。疑わしいユーザー アクティビティに関する後続の構成では、ランサムウェア耐性ユーザー ビヘイビア管理者ロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^]。
+*必須のコンソールロール* 疑わしいユーザーアクティビティの検出を有効にするには、**Organization admin role**が必要です。その後の疑わしいユーザーアクティビティの設定には、**Ransomware Resilience user behavior admin role**が必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^]。
+
+各ロールが組織レベルで適用されていることを確認します。
 
 
 

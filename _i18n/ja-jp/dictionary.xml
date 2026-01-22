@@ -1753,7 +1753,6 @@
   <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">そのインシデントについては、ダウンロード アイコンを選択して、影響を受けるファイルのリストを CSV 形式でダウンロードします。</block>
   <block id="fe1bb8cb54f03cf7a69c3e9568118b30" category="list-text">**データ コレクター** は、 ONTAPからユーザー アクティビティ データを収集します。</block>
   <block id="b6173a051353d59a4ee775fcef288441" category="list-text">**ユーザー ディレクトリ コネクタ** はディレクトリに接続して、ユーザー ID をユーザー名にマッピングします。</block>
-  <block id="508899c1c018f291af4cb6a0423c426c" category="paragraph">*必要なコンソール ロール* 疑わしいユーザー アクティビティの検出を有効にするには、組織管理者のロールが必要です。疑わしいユーザー アクティビティに関する後続の構成では、ランサムウェア耐性ユーザー ビヘイビア管理者ロールが必要です。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
   <block id="398de83ff8f318218f9eaedb05929ef0" category="paragraph">ユーザー アクティビティ エージェントが正常に作成されたら、[**設定**] メニューに戻り、[ユーザー アクティビティ] タイルで [**管理**] を選択します。**ユーザー アクティビティ エージェント** タブを選択し、ユーザー アクティビティ エージェントを選択して、データ コレクターやユーザー ディレクトリ コネクタなどの詳細を表示します。</block>
   <block id="a83ea9a287c9fdd0689933a464055150" category="paragraph">ユーザー ID をユーザー名にマップするには、ユーザー ディレクトリ コネクタを作成する必要があります。</block>
   <block id="89bd0177a422e5d81fce2f8f82dac3f6" category="paragraph-title">Ransomware Resilience を使用するにはライセンスが必要ですか?</block>
@@ -2126,4 +2125,6 @@
   <block id="5d26628350f5209b3a0d69e817a49a0f" category="list-text">**概要**: サポートされているワークロードとサポートされていないワークロードのリスト、サイバーレジリエンスの体制を改善するための推奨アクション、およびランサムウェアレジリエンスダッシュボードで収集された情報が含まれています。</block>
   <block id="886b1df808dc5d3879143640b1ad98a7" category="admonition">設定のワークロード検出カードからアクションメニューを選択します<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block> 次に、**レポート (JSON) をダウンロード** して、システムでサポートされているワークロードとサポートされていないワークロードのリストを確認します。</block>
   <block id="194a29c3464a05de3c32434145c0b5d6" category="section-title">2026年1月19日</block>
+  <block id="5971dc29642c8dabe6ddf4db4c2f9634" category="paragraph">*必須のコンソールロール* 疑わしいユーザーアクティビティの検出を有効にするには、**Organization admin role**が必要です。その後の疑わしいユーザーアクティビティの設定には、**Ransomware Resilience user behavior admin role**が必要です。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
+  <block id="49c6535c126789c87c5cd609fbdb3a3f" category="paragraph">各ロールが組織レベルで適用されていることを確認します。</block>
 </blocks>
