@@ -14,7 +14,7 @@ summary: ランサムウェア レジリエンスが攻撃の可能性を検出�
 [role="lead"]
 NetApp Ransomware Resilience は、攻撃の可能性を検出すると、ダッシュボードと通知領域にアラートを表示します。Ransomware Resilience は直ちにスナップショットを作成します。ランサムウェア耐性の *アラート* タブで潜在的なリスクを確認します。
 
-Ransomware Resilience が攻撃の可能性を検出すると、コンソールの通知設定に通知が表示され、設定されたアドレスに電子メールが送信されます。電子メールには、重大度、影響を受けるワークロード、および Ransomware Resilience の *アラート* タブのアラートへのリンクに関する情報が含まれます。
+Ransomware Resilienceが攻撃の可能性を検知すると、NetApp Consoleの通知設定に通知が表示され、設定されたアドレスにメールが送信されます。メールには、深刻度、影響を受けるワークロード、Ransomware Resilienceの*アラート*タブにあるアラートへのリンクが含まれます。
 
 誤検知を無視するか、すぐにデータを回復することを決定できます。
 
@@ -46,7 +46,7 @@ Ransomware Resilience は、アラートが発行された原因に関する次�
 
 
 
-NOTE: SAN 環境の場合、警告は高エントロピーに基づいてのみ行われます。
+NOTE: SAN 環境の場合、警告は高エントロピーのみに基づきます。
 
 証拠は、 ONTAPの Autonomous Ransomware Protection の情報に基づいています。詳細については、 https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自律型ランサムウェア対策 - 概要"^] 。
 
@@ -103,20 +103,10 @@ image:screen-alerts.png["アラートページ"]
 
 == アラートメールに返信する
 
-Ransomware Resilience は潜在的な攻撃を検出すると、サブスクリプションの通知設定に基づいて、登録したユーザーに電子メール通知を送信します。電子メールには、重大度や影響を受けるリソースなど、アラートに関する情報が含まれています。
-
-ランサムウェア耐性アラートの電子メール通知を受信できます。この機能を使用すると、アラート、その重大度、影響を受けるリソースに関する情報を常に把握できます。
+Ransomware Resilienceは潜在的な攻撃を検出すると、NetApp Console設定で設定されたサブスクリプション通知設定に基づいて、登録ユーザーにメール通知を送信します。メールには、重大度や影響を受けるリソースなど、アラートに関する情報が記載されています。
 
 
-TIP: メール通知を購読するには、 https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["メール通知設定を設定する"^] 。
-
-. Ransomware Resilience で、[*設定*] ページに移動します。
-. *通知*の下で、電子メール通知設定を見つけます。
-. アラートを受信するメールアドレスを入力します。
-. 変更を保存します。
-
-
-新しいアラートが生成されると、電子メール通知が届くようになります。
+TIP: コンソールで電子メール通知を設定するには、link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings["メール通知設定を設定する"^]を参照してください。
 
 *必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、ランサムウェア レジリエンス管理者、またはランサムウェア レジリエンス ビューアーのロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
@@ -143,10 +133,10 @@ TIP: メール通知を購読するには、 https://docs.netapp.com/us-en/conso
 
 [アラート] タブを見ると、悪意のあるアクティビティや異常なユーザー動作があるかどうかを確認できます。
 
-ユーザー レベルのアラートを表示するには、ユーザー アクティビティ エージェントを構成し、ユーザー動作検出機能を備えた保護ポリシーを有効にする必要があります。ユーザー行動検出が有効になっている場合、アラート ダッシュボードに *不審なユーザー* 列が表示されます。ユーザー行動検出が有効になっていない場合は表示されません。不審なユーザーの検出を有効にするには、link:suspicious-user-activity.html["不審なユーザーアクティビティ"] 。
+ユーザーレベルのアラートを表示するには、ユーザーアクティビティエージェントを設定し、ユーザー行動検出機能を備えた保護ポリシーを有効にする必要があります。アラートダッシュボードに「*不審なユーザー*」列が表示されるのは、ユーザー行動検出が有効になっている場合のみです。不審なユーザー検出を有効にするには、link:suspicious-user-activity.html["不審なユーザーアクティビティ"]をご覧ください。
 
 
-NOTE: NetApp Data Infrastructure Insights (DII) Workload Security を使用している場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用することをお勧めします。Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナント間のペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。+ DII を使用していない場合は、疑わしいユーザー行動の検出機能を利用できます。必ず link:suspicious-user-activity.html["疑わしいユーザーアクティビティの検出を有効にしました"] 適切なエージェントを構成します。
+NOTE: NetApp Data Infrastructure Insights（DII）Workload Securityをご利用の場合は、Ransomware Resilienceにも同じWorkload Securityエージェントを使用することをお勧めします。Ransomware Resilience用に個別のWorkload Securityエージェントを導入する必要はありませんが、同じWorkload Securityエージェントを使用するには、Ransomware Resilience Console組織とDII Storage Workload Securityテナント間のペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。+ DIIを使用せずに不審ユーザー検出を使用するには、link:suspicious-user-activity.html["疑わしいユーザーアクティビティの検出を有効にしました"]適切なエージェントが設定されていることを確認してください。
 
 
 
@@ -191,7 +181,7 @@ image:screen-alerts-incidents3.png["アラートインシデントページ"]
 
 == ランサムウェア インシデントを復旧準備完了としてマークする (インシデントが中和された後)
 
-攻撃を阻止した後、データの準備ができたことをストレージ管理者に通知し、リカバリを開始できるようにします。
+攻撃を停止した後、データの準備ができたことをストレージ管理者に通知し、リカバリプロセスを開始できるようにします。
 
 *必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 

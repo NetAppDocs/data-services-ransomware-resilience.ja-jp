@@ -604,7 +604,6 @@
   <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">準備ドリルレポートをダウンロードするには、[*準備ドリル*] と [*ダウンロード*] を選択します。</block>
   <block id="bb44ab86396f7335c45f2c99c022776c" category="summary">ランサムウェア レジリエンスが攻撃の可能性を検出すると、ランサムウェア レジリエンス ダッシュボードに潜在的な攻撃を示すアラートが表示されます。この時点で、「ランサムウェア耐性アラート」タブで潜在的なリスクを確認する必要があります。</block>
-  <block id="0cf61fe483b7c3216a42a15a22e0ef97" category="paragraph">Ransomware Resilience が攻撃の可能性を検出すると、コンソールの通知設定に通知が表示され、設定されたアドレスに電子メールが送信されます。電子メールには、重大度、影響を受けるワークロード、および Ransomware Resilience の *アラート* タブのアラートへのリンクに関する情報が含まれます。</block>
   <block id="4c8cd66676ad1c434108e699d9777408" category="paragraph">誤検知を無視するか、すぐにデータを回復することを決定できます。</block>
   <block id="899157335f0c98105a8cbc92966ba06d" category="admonition">アラートを無視すると、Ransomware Resilience はこの動作を学習し、通常の操作と関連付けて、再度アラートを開始しなくなります。</block>
   <block id="a8fd9e3988acb841854762788963d815" category="paragraph">データの復旧を開始するには、アラートを復旧準備完了としてマークし、ストレージ管理者が復旧プロセスを開始できるようにします。</block>
@@ -620,7 +619,6 @@
   <block id="dfc56481bc0d4c0e37c0cc1e55fec278" category="list-text">新しい拡張機能の検出はこれまで確認されておらず、同じ動作が攻撃として宣言されるほど十分な回数繰り返されていません。</block>
   <block id="2c8035709ee020723e6bf59e526fe816" category="list-text">高いエントロピーが観測されます。</block>
   <block id="98a2c9ec203e0706ca2f538df133d059" category="list-text">ファイルの読み取り、書き込み、名前変更、または削除アクティビティが、通常のレベルと比較して 2 倍になりました。</block>
-  <block id="4da187364d63bcda0c1ea8730221bf1a" category="admonition">SAN 環境の場合、警告は高エントロピーに基づいてのみ行われます。</block>
   <block id="e96b2ea99a3be7415866a5df8f69cf6e" category="paragraph">証拠は、 ONTAPの Autonomous Ransomware Protection の情報に基づいています。詳細については、<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block> 。</block>
   <block id="64c00e9ea78abe412d8db56dd1df0462" category="paragraph">アラートのステータスは次のいずれかになります。</block>
   <block id="adf79604cd73ac69e1173c85b1070d09" category="list-text">*新しい*</block>
@@ -645,15 +643,7 @@
   <block id="3de551d699ac2cc6d8ee45100e3c09c2" category="list-text"><block ref="7b8fc6583551e56b0c8a96f4e8f63c8a" category="inline-xref-macro-rx"></block> 。</block>
   <block id="ab66e5346633f4af4f4982dc29ca7015" category="list-text"><block ref="e99b3e15cfc7ea44c087b4875208c217" category="inline-xref-macro-rx"></block> 。</block>
   <block id="9b317c5e8c93afadbc7755c407538945" category="section-title">アラートメールに返信する</block>
-  <block id="14e7851a172a122d7528efff8567f8ba" category="paragraph">Ransomware Resilience は潜在的な攻撃を検出すると、サブスクリプションの通知設定に基づいて、登録したユーザーに電子メール通知を送信します。電子メールには、重大度や影響を受けるリソースなど、アラートに関する情報が含まれています。</block>
-  <block id="bf1a62bcb3143d1124cae262157745d7" category="paragraph">ランサムウェア耐性アラートの電子メール通知を受信できます。この機能を使用すると、アラート、その重大度、影響を受けるリソースに関する情報を常に把握できます。</block>
   <block id="def7f3eac7eed1dada5cdcd2951ede36" category="inline-link">メール通知設定を設定する</block>
-  <block id="b170729861af663a30599b6746973b7b" category="admonition">メール通知を購読するには、<block ref="99cf5d485b43f483ee8ecf47c33bdf82" category="inline-link-rx"></block> 。</block>
-  <block id="f2e19c6011cc550fb6503dafd26a8973" category="list-text">Ransomware Resilience で、[*設定*] ページに移動します。</block>
-  <block id="ed6e52d47993626528f7c48bb20927cd" category="list-text">*通知*の下で、電子メール通知設定を見つけます。</block>
-  <block id="581a71037b750a62c75558dfea9bae72" category="list-text">アラートを受信するメールアドレスを入力します。</block>
-  <block id="345e93a96b6e66cb9274dbad975c0db2" category="list-text">変更を保存します。</block>
-  <block id="ea9dd721e10f4a1fefec35d95c57efc7" category="paragraph">新しいアラートが生成されると、電子メール通知が届くようになります。</block>
   <block id="e66d9f5613065312cf1d46114b193ed7" category="list-text">メールを表示します。</block>
   <block id="f40ae80cf7396576022afae759080cf1" category="list-text">メールで「アラートを表示」を選択し、Ransomware Resilience にログインします。</block>
   <block id="9d425c6001c325d2240cf2219c5c8111" category="paragraph">アラート ページが表示されます。</block>
@@ -679,7 +669,6 @@
   <block id="ff74e9f48366f1b4465d1920693ddea8" category="inline-link-macro">ランサムウェア耐性設定を構成する</block>
   <block id="f784461c39e5b287f6733d0ee28efad4" category="paragraph">異常なユーザー行動を表示するように疑わしいユーザー検出を設定している場合は、ユーザーレベルのデータを表示し、特定のユーザーをブロックできます。疑わしいユーザーの設定を有効にするには、<block ref="788275b5d10fa192a2bbf25cebb6c38f" category="inline-link-macro-rx"></block> 。</block>
   <block id="705db8b34cf00efb73abf6403278e299" category="section-title">ランサムウェア インシデントを復旧準備完了としてマークする (インシデントが中和された後)</block>
-  <block id="3950c317c3c61c1f422abb2e301a90ca" category="paragraph">攻撃を阻止した後、データの準備ができたことをストレージ管理者に通知し、リカバリを開始できるようにします。</block>
   <block id="a31e44b45b823ec61483db05b99be2cb" category="paragraph"><block ref="a31e44b45b823ec61483db05b99be2cb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9d6e925ee1290815ef828d96d28218c6" category="list-text">「アラート」ページで、アラートを選択します。</block>
   <block id="81e1378e6c274792e689b2705fda8824" category="paragraph"><block ref="81e1378e6c274792e689b2705fda8824" category="inline-image-macro-rx" type="image"></block></block>
@@ -1747,7 +1736,6 @@
   <block id="2515e2bcc68e80666fa8c369e88f71e5" category="paragraph">ライセンスが追加されたことを確認するメッセージが表示されます。</block>
   <block id="fca5751a0529f9987d0699648a97be3a" category="list-text">コンソールがライセンスを自動的に更新できない場合は、ライセンス ファイルを手動でアップロードする必要があります。</block>
   <block id="f8541056d6bacae1a78fb5d2b68c67a8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>ランサムウェア耐性を始めましょう</block>
-  <block id="43eec2eb3dba42398d66e0c2aa294ea2" category="paragraph">ユーザー レベルのアラートを表示するには、ユーザー アクティビティ エージェントを構成し、ユーザー動作検出機能を備えた保護ポリシーを有効にする必要があります。ユーザー行動検出が有効になっている場合、アラート ダッシュボードに *不審なユーザー* 列が表示されます。ユーザー行動検出が有効になっていない場合は表示されません。不審なユーザーの検出を有効にするには、<block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block> 。</block>
   <block id="7a7f05bb105ddcf9c0d221e37f8a923c" category="list-text">環境内の疑わしいユーザーをブロックするには、ユーザー名の下にある [*ブロック*] を選択します。</block>
   <block id="bc8ffb69fb560086f529e0097158caad" category="admonition">アラートを無視した場合、そのステータスを変更したり、この変更を元に戻したりすることはできません。</block>
   <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">そのインシデントについては、ダウンロード アイコンを選択して、影響を受けるファイルのリストを CSV 形式でダウンロードします。</block>
@@ -2111,7 +2099,6 @@
   <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">ログイン認証トークンを更新する必要がある場合は、<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
   <block id="667dffcf5676fe0bd645082d2a512fef" category="section-title">2026年1月12日</block>
   <block id="1f84339ab34d5298a23a70d51ad457d4" category="inline-link-macro">疑わしいユーザーアクティビティの検出を有効にしました</block>
-  <block id="0c72d558c2e8468bc311f1933be197b5" category="admonition">NetApp Data Infrastructure Insights (DII) Workload Security を使用している場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用することをお勧めします。Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナント間のペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。+ DII を使用していない場合は、疑わしいユーザー行動の検出機能を利用できます。必ず <block ref="f31f86ab68cf8ca6dc8a3009e6d9ea7a" category="inline-link-macro-rx"></block> 適切なエージェントを構成します。</block>
   <block id="49fa679e35a13dc09de6805c384904d1" category="list-text">バックアップ ポリシーを構成するには、いずれかを選択して [**次へ**] を選択します。</block>
   <block id="748b96a793ccf0ab113112372db17649" category="paragraph">Ransomware Resilience では、セカンダリONTAPサイトへのスナップショットのレプリケーションの追加がサポートされるようになりました。レプリケーション ポリシーを使用する保護グループを使用すると、ワークロードごとに同じ宛先または異なる宛先にレプリケートできます。レプリケーションを含むランサムウェア保護戦略を作成することも、定義済みの戦略を使用することもできます。</block>
   <block id="389e0c39aeda061370262a9fa330d865" category="doc">サポートされていないボリューム</block>
@@ -2127,4 +2114,11 @@
   <block id="194a29c3464a05de3c32434145c0b5d6" category="section-title">2026年1月19日</block>
   <block id="5971dc29642c8dabe6ddf4db4c2f9634" category="paragraph">*必須のコンソールロール* 疑わしいユーザーアクティビティの検出を有効にするには、**Organization admin role**が必要です。その後の疑わしいユーザーアクティビティの設定には、**Ransomware Resilience user behavior admin role**が必要です。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
   <block id="49c6535c126789c87c5cd609fbdb3a3f" category="paragraph">各ロールが組織レベルで適用されていることを確認します。</block>
+  <block id="426b9957bbb31fa730d0ddd4241a548c" category="paragraph">Ransomware Resilienceが攻撃の可能性を検知すると、NetApp Consoleの通知設定に通知が表示され、設定されたアドレスにメールが送信されます。メールには、深刻度、影響を受けるワークロード、Ransomware Resilienceの*アラート*タブにあるアラートへのリンクが含まれます。</block>
+  <block id="ea6028617b2209ac986a738b1b26840a" category="admonition">SAN 環境の場合、警告は高エントロピーのみに基づきます。</block>
+  <block id="53140a5b1fd2965a3ae256fca48ef979" category="paragraph">Ransomware Resilienceは潜在的な攻撃を検出すると、NetApp Console設定で設定されたサブスクリプション通知設定に基づいて、登録ユーザーにメール通知を送信します。メールには、重大度や影響を受けるリソースなど、アラートに関する情報が記載されています。</block>
+  <block id="a2079b2871fe8072cb3a3a5245ad0458" category="admonition">コンソールで電子メール通知を設定するには、<block ref="7a8deb9a674d2246166ab2113d0b6247" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="02b8f736b0a683e2999fdad847ee8cd4" category="paragraph">ユーザーレベルのアラートを表示するには、ユーザーアクティビティエージェントを設定し、ユーザー行動検出機能を備えた保護ポリシーを有効にする必要があります。アラートダッシュボードに「*不審なユーザー*」列が表示されるのは、ユーザー行動検出が有効になっている場合のみです。不審なユーザー検出を有効にするには、<block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>をご覧ください。</block>
+  <block id="b37f5f6a060700bfc5da32b05dba5978" category="admonition">NetApp Data Infrastructure Insights（DII）Workload Securityをご利用の場合は、Ransomware Resilienceにも同じWorkload Securityエージェントを使用することをお勧めします。Ransomware Resilience用に個別のWorkload Securityエージェントを導入する必要はありませんが、同じWorkload Securityエージェントを使用するには、Ransomware Resilience Console組織とDII Storage Workload Securityテナント間のペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。+ DIIを使用せずに不審ユーザー検出を使用するには、<block ref="f31f86ab68cf8ca6dc8a3009e6d9ea7a" category="inline-link-macro-rx"></block>適切なエージェントが設定されていることを確認してください。</block>
+  <block id="22b921337bb720d655059859772c0131" category="paragraph">攻撃を停止した後、データの準備ができたことをストレージ管理者に通知し、リカバリプロセスを開始できるようにします。</block>
 </blocks>
