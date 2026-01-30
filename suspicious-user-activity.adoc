@@ -107,46 +107,58 @@ TIP: Network Time Protocol (NTP) または Simple Network Time Protocol (SNTP) �
 関連する地域 (アジア太平洋、ヨーロッパ、または米国) のクラウド ネットワーク アクセス ルールを確認します。
 
 
+IMPORTANT: 初期インストール中は、 `<site_name>`をワイルドカード(`*`）権限に置き換えてください。エージェントが有効化され、完全に稼働したら、権限をサイト名に置き換えることができます。サイト名については、NetApp担当者にお問い合わせください。
+
+
 
 ==== APAC ベースのユーザー アクティビティ エージェントの展開
 
-[cols="5*"]
+[cols="1,1,1,3,1"]
 |===
 | プロトコル | ポート | ソース | デスティネーション | 説明 
 
 
-| TCP | 443 | ユーザーアクティビティエージェント | ランサムウェア耐性サービス | ランサムウェア耐性へのアクセス 
+| TCP | 443 | ユーザーアクティビティエージェント  a| 
+* <site_name>.cs01-ap-1.cloudinsights.netapp.com
+* <site_name>.c01-ap-1.cloudinsights.netapp.com
+* <site_name>.c02-ap-1.cloudinsights.netapp.com
+* gentlogin.cs01-ap-1.cloudinsights.netapp.com
 
-
-| TCP | 443 | ユーザーアクティビティエージェント | ランサムウェア耐性サービス | 認証サービスへのアクセス 
+| ランサムウェア耐性へのアクセス 
 |===
 
 
 ==== ヨーロッパを拠点とするユーザーアクティビティエージェントの展開
 
-[cols="5*"]
+[cols="1,1,1,3,1"]
 |===
 | プロトコル | ポート | ソース | デスティネーション | 説明 
 
 
-| TCP | 443 | ユーザーアクティビティエージェント | ランサムウェア耐性サービス | ランサムウェア耐性へのアクセス 
+| TCP | 443 | ユーザーアクティビティエージェント  a| 
+* <site_name>.cs01-eu-1.cloudinsights.netapp.com
+* <site_name>.c01-eu-1.cloudinsights.netapp.com
+* <site_name>.c02-eu-1.cloudinsights.netapp.com
+* agentlogin.cs01-eu-1.cloudinsights.netapp.com
 
-
-| TCP | 443 | ユーザーアクティビティエージェント | ランサムウェア耐性サービス | 認証サービスへのアクセス 
+| ランサムウェア耐性へのアクセス 
 |===
 
 
 ==== 米国ベースのユーザーアクティビティエージェントの展開
 
-[cols="5*"]
+[cols="1,1,1,3,1"]
 |===
 | プロトコル | ポート | ソース | デスティネーション | 説明 
 
 
-| TCP | 443 | ユーザーアクティビティエージェント | ランサムウェア耐性サービス | ランサムウェア耐性へのアクセス 
+| TCP | 443 | ユーザーアクティビティエージェント  a| 
+* <site_name>.cs01.cloudinsights.netapp.com
+* <site_name>.c01.cloudinsights.netapp.com
+* <site_name>.c02.cloudinsights.netapp.com
+* agentlogin.cs01.cloudinsights.netapp.com
 
-
-| TCP | 443 | ユーザーアクティビティエージェント | ランサムウェア耐性サービス | 認証サービスへのアクセス 
+| ランサムウェア耐性へのアクセス 
 |===
 
 
