@@ -118,7 +118,7 @@ IMPORTANT: 初期インストール中は、 `<site_name>`をワイルドカー�
 | プロトコル | ポート | ソース | デスティネーション | 説明 
 
 
-| TCP | 443 | ユーザーアクティビティエージェント  a| 
+| HTTPS（TCP） | 443 | ユーザーアクティビティエージェント  a| 
 * <site_name>.cs01-ap-1.cloudinsights.netapp.com
 * <site_name>.c01-ap-1.cloudinsights.netapp.com
 * <site_name>.c02-ap-1.cloudinsights.netapp.com
@@ -135,7 +135,7 @@ IMPORTANT: 初期インストール中は、 `<site_name>`をワイルドカー�
 | プロトコル | ポート | ソース | デスティネーション | 説明 
 
 
-| TCP | 443 | ユーザーアクティビティエージェント  a| 
+| HTTPS（TCP） | 443 | ユーザーアクティビティエージェント  a| 
 * <site_name>.cs01-eu-1.cloudinsights.netapp.com
 * <site_name>.c01-eu-1.cloudinsights.netapp.com
 * <site_name>.c02-eu-1.cloudinsights.netapp.com
@@ -152,7 +152,7 @@ IMPORTANT: 初期インストール中は、 `<site_name>`をワイルドカー�
 | プロトコル | ポート | ソース | デスティネーション | 説明 
 
 
-| TCP | 443 | ユーザーアクティビティエージェント  a| 
+| HTTPS（TCP） | 443 | ユーザーアクティビティエージェント  a| 
 * <site_name>.cs01.cloudinsights.netapp.com
 * <site_name>.c01.cloudinsights.netapp.com
 * <site_name>.c02.cloudinsights.netapp.com
@@ -172,7 +172,7 @@ IMPORTANT: 初期インストール中は、 `<site_name>`をワイルドカー�
 | TCP | 389(LDAP) 636 (LDAP / start-tls) | ユーザーアクティビティエージェント | LDAP Server URL | LDAPに接続する 
 
 
-| TCP | 443 | ユーザーアクティビティエージェント | クラスタまたは SVM 管理 IP アドレス (SVM コレクターの構成によって異なります) | ONTAPとのAPI通信 
+| HTTPS（TCP） | 443 | ユーザーアクティビティエージェント | クラスタまたは SVM 管理 IP アドレス (SVM コレクターの構成によって異なります) | ONTAPとのAPI通信 
 
 
 | TCP | 35000 - 55000  a| 
