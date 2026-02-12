@@ -136,9 +136,6 @@ TIP: コンソールで電子メール通知を設定するには、link:https:/
 ユーザーレベルのアラートを表示するには、ユーザーアクティビティエージェントを設定し、ユーザー行動検出機能を備えた保護ポリシーを有効にする必要があります。アラートダッシュボードに「*不審なユーザー*」列が表示されるのは、ユーザー行動検出が有効になっている場合のみです。不審なユーザー検出を有効にするには、link:suspicious-user-activity.html["不審なユーザーアクティビティ"]をご覧ください。
 
 
-NOTE: NetApp Data Infrastructure Insights（DII）Workload Securityをご利用の場合は、Ransomware Resilienceにも同じWorkload Securityエージェントを使用することをお勧めします。Ransomware Resilience用に個別のWorkload Securityエージェントを導入する必要はありませんが、同じWorkload Securityエージェントを使用するには、Ransomware Resilience Console組織とDII Storage Workload Securityテナント間のペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。+ DIIを使用せずに不審ユーザー検出を使用するには、link:suspicious-user-activity.html["疑わしいユーザーアクティビティの検出を有効にしました"]適切なエージェントが設定されていることを確認してください。
-
-
 
 === 悪意のあるアクティビティを表示する
 

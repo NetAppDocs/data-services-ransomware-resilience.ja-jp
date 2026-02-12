@@ -443,7 +443,7 @@ image:screen-protection.png["戦略管理ページ"]
 . SnapCenterポリシーの詳細を表示するには、*下矢印*を選択します。
 . 必要な検出設定を選択してください: *暗号化検出* *疑わしいユーザー行動の検出* *疑わしいファイル拡張子のブロック*
 . **次へ**を選択します。
-. 検出設定として*不審なユーザー行動の検出*を選択した場合は、ユーザーアクティビティエージェントまたはlink:suspicious-user-activity.html#add-a-user-activity-agent["または作成する"]。
+. 検出設定として*不審なユーザー行動の検出*を選択した場合は、ユーザーアクティビティエージェントまたはlink:suspicious-user-activity.html#create-a-user-activity-agent["または作成する"]を選択します。
 +
 ユーザー アクティビティ エージェントは新しいデータ コレクターをホストします。Ransomware Resilience は、データ コレクターを自動的に作成し、ユーザー アクティビティ イベントを Ransomware Resilience に送信して、異常なユーザー動作を検出します。
 

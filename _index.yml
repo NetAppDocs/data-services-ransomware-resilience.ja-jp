@@ -24,6 +24,8 @@ indexpage:
       url: "/rp-use-settings.html"
     - title: ランサムウェア攻撃をシミュレートする
       url: "/rp-start-simulate.html"
+    - title: 不審なユーザーアクティビティの検出を設定する
+      url: "/suspicious-user-activity.html"
   - title: ランサムウェア耐性を活用する
     links:
     - title: ワークロードを発見する

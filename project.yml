@@ -40,8 +40,14 @@ sidebar:
       url: "/rp-start-simulate.html"
     - title: 設定でバックアップ、脅威検出、攻撃シミュレーションを構成する
       url: "/rp-use-settings.html"
-    - title: 不審なユーザーアクティビティの検出を構成する
-      url: "/suspicious-user-activity.html"
+    - title: ユーザーアクティビティ検出を設定する
+      entries:
+      - title: ユーザーアクティビティ検出について学ぶ
+        url: "/concept-user-behavior.html"
+      - title: ユーザーアクティビティ要件
+        url: "/reference-user-activity-requirements.html"
+      - title: エージェントとコレクターを設定する
+        url: "/suspicious-user-activity.html"
   - title: ランサムウェア耐性を活用する
     entries:
     - title: ダッシュボードを使用してワークロードの健全性を表示する
