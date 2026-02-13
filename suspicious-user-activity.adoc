@@ -55,7 +55,14 @@ NOTE: すでにNetApp Data Infrastructure Insights（DII）Workload Security を
 ** **ユーザーアクティビティエージェント名**
 ** *コンソール エージェント* - コンソール エージェントは、ユーザー アクティビティ エージェントと同じネットワーク内に存在し、ユーザー アクティビティ エージェントの IP アドレスに SSH 接続できる必要があります。
 ** *VM DNS名またはIPアドレス*
-** *VM SSHキー*
+** *VM SSH キー* - 次の形式で SSH キーを入力します：
++
+[code]
+----
+-----BEGIN OPENSSH PRIVATE KEY-----
+private-key-contents
+-----END OPENSSH PRIVATE KEY-----
+----
 +
 image:user-activity-agent.png["アクティビティ エージェントの追加インターフェースのスクリーンショット。"]
 
