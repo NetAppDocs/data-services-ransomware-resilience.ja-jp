@@ -858,7 +858,6 @@
   <block id="e10a2e4ef1f3cc661e89aa47c1655787" category="list-text">VMデータストア用のSnapCenter for VMware</block>
   <block id="9f467d31ef54c60530e9d07d18e7df6d" category="paragraph">これらのサービスからの保護情報は、Ransomware Resilience に表示されます。  Ransomware Resilience を使用して、これらのサービスに検出ポリシーを追加できます。  Ransomware Resilience を使用して保護ポリシーを追加すると、既存の保護ポリシーが置き換えられます。</block>
   <block id="f37d79a56cb20cdcf206acc1cfa8be14" category="paragraph">ランサムウェア検出ポリシーがONTAPの Autonomous Ransomware Protection（ ONTAP のバージョンに応じて ARP または ARP/AI）と FPolicy によって管理されている場合、それらのワークロードは保護され、引き続き ARP と FPolicy によって管理されます。</block>
-  <block id="7c07f079f6b4547ea768c45b8e8c9c54" category="admonition">バックアップ先は、Amazon FSx for NetApp ONTAP のワークロードでは使用できません。 FSx for ONTAPバックアップ サービスを使用してバックアップ操作を実行します。ワークロードのバックアップポリシーは、Ransomware Resilience ではなく、AWS の FSx for ONTAPで設定します。バックアップ ポリシーは Ransomware Resilience に表示され、AWS から変更されません。</block>
   <block id="d62f06f1ca9fb020be7953fe3101f0a3" category="section-title">NetAppアプリケーションによって保護されていないワークロードの保護ポリシー</block>
   <block id="ec45a6a3163f1e5c5139c2b24b9596f2" category="paragraph">ワークロードが Backup and Recovery、Ransomware Resilience、 SnapCenter、またはSnapCenter Plug-in for VMware vSphereによって管理されていない場合は、 ONTAPまたはその他の製品の一部としてスナップショットが取得されている可能性があります。  ONTAP FPolicy 保護が設定されている場合は、 ONTAPを使用して FPolicy 保護を変更できます。</block>
   <block id="631014fb608aae26275f461a597abc09" category="section-title">ワークロードのランサムウェア保護を表示する</block>
@@ -1024,7 +1023,6 @@
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">*次へ*を選択します。</block>
   <block id="f7ba12bb96df2ae9d69ffbf1bc2af6bb" category="inline-image-macro">保護グループの追加 - ポリシーページ</block>
   <block id="a739b6145911af1f850b745cae737475" category="paragraph"><block ref="a739b6145911af1f850b745cae737475" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1ae08906aa42275aa58a2b7641019104" category="list-text">このグループの保護を管理するポリシーを選択します。確認するには、[次へ] を選択します。</block>
   <block id="f724f66c90177c8dac8336038a0778c0" category="list-text">検出ポリシーにユーザー行動の検出が含まれている場合は、使用するデータ コレクターを選択し、[**次へ**] をクリックします。</block>
   <block id="0fc76de5572d1186f1358665dff6076f" category="list-text">保護グループの選択内容を確認します。</block>
   <block id="d7a75d0f58bb349985e6d2104ca65596" category="list-text">保護グループの作成を完了するには、[*追加*] を選択します。</block>
@@ -1178,13 +1176,10 @@
   <block id="09121bb3cb936ab87dd837c1fd8da18a" category="list-text">*レポート* オプションを選択した場合は、事前設定されたファイル名の 1 つを選択し、*ダウンロード* を選択します。</block>
   <block id="edb56701c02931a83b80f61481367ade" category="summary">設定ページでは、バックアップ先や脅威の検出など、いくつかのオプションを設定できます。</block>
   <block id="9aa6ed30a3e0d803a1b8b079e0b8d650" category="doc">NetApp Ransomware Resilienceで保護設定を構成する</block>
-  <block id="efc5b90b499969efcedcd2b7276a218d" category="paragraph">*設定* オプションにアクセスして、バックアップ先を構成したり、外部のセキュリティおよびイベント管理 (SIEM) システムへデータを送信したり、攻撃準備訓練を実施したり、ワークロード検出を構成したり、疑わしいユーザー アクティビティの検出を構成したりすることができます。</block>
   <block id="105c4d7cf6704d10a27fac5acd7333a3" category="paragraph">*設定ページで何ができますか?*  「設定」ページからは、次の操作を実行できます。</block>
   <block id="2fdebc69dc6e7b0ee210d7c727cf37e2" category="list-text">準備訓練を実施してランサムウェア攻撃をシミュレートし、シミュレートされたランサムウェアアラートに応答します。詳細については、 <block ref="764586bbfc596fce1f2309fe8b2a42c0" category="inline-link-macro-rx"></block> 。</block>
   <block id="3fdd6341b0ef86488ae1a773932c96c7" category="list-text">ワークロード検出を構成します。</block>
-  <block id="ad5a89c970ba403587fba991f4218c99" category="list-text">疑わしいユーザー アクティビティのレポートを構成します。</block>
   <block id="d9e0cef30d1fd79b64dd0675b6e2eb12" category="list-text">バックアップ先を追加します。</block>
-  <block id="43360d747c31106b5dbf428088f9fabc" category="list-text">脅威の分析と検出のために、セキュリティおよびイベント管理システム (SIEM) を接続します。脅威検出を有効にすると、脅威分析のためにデータが自動的に SIEM に送信されます。</block>
   <block id="f6de47008760d29836d5758a5a06bf0f" category="section-title">設定ページに直接アクセスする</block>
   <block id="47ee39f07973e19ecd9ed033f5faabb1" category="paragraph">上部メニューの近くにある [アクション] オプションから [設定] ページに簡単にアクセスできます。</block>
   <block id="2ed94c26a1d2bdd8aa204fd20eb40937" category="list-text">ランサムウェア耐性から、垂直方向を選択します<block ref="ddacd9651566dbd67045ad6fbaf81a6c" category="inline-image-macro-rx" type="image"></block>... 右上のオプションをクリックします。</block>
@@ -1202,13 +1197,10 @@
   <block id="4c624f22bdf5c52da245d3b038c2b92e" category="list-text">ワークロードを検出するシステムをチェックするか、テーブルの上部にあるボックスを選択して、検出されたすべてのワークロード環境でワークロードを検出します。</block>
   <block id="9f9e31c32e5b1d13d9371a818f0a6ee0" category="list-text">必要に応じて他のシステムでもこれを実行してください。</block>
   <block id="04abb68cc3e6cbd75c6183768d3cdb47" category="list-text">*検出* を選択すると、選択したコンソール エージェントで Ransomware Resilience によって新しいワークロードが自動的に検出されます。</block>
-  <block id="6a8da91afd3259d0e94261d0d1d4cdaa" category="paragraph">ユーザー アクティビティ カードでは、疑わしいユーザー アクティビティを検出するために必要なユーザー アクティビティ エージェントを作成および管理できます。</block>
-  <block id="1e9de376e860f46db74a2fe6749a824e" category="paragraph">詳細については、以下を参照してください。 <block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block> 。</block>
   <block id="55483e3219b15f38112442f737a1bf92" category="section-title">バックアップ先を追加する</block>
   <block id="ca0d9b702b5686b0dbe483b8b038b9d5" category="paragraph">Ransomware Resilience は、まだバックアップがないワークロードと、まだバックアップ先が割り当てられていないワークロードを識別できます。</block>
   <block id="dc0a4770af38e660c7408d8ac2fac395" category="paragraph">これらのワークロードを保護するには、バックアップ先を追加する必要があります。次のいずれかのバックアップ先を選択できます。</block>
   <block id="943ca3782b28d89aff2f86a50b332b3c" category="list-text">Amazon Web Services（AWS）</block>
-  <block id="065ced4e95bc23c02a22f53b7d00da49" category="admonition">バックアップ先は、Amazon FSx for NetApp ONTAP のワークロードでは使用できません。  FSx for ONTAPバックアップ サービスを使用してバックアップ操作を実行します。</block>
   <block id="4ec94f814f491d45c196584c149a7d3e" category="paragraph">ダッシュボードから、またはメニューの [設定] オプションにアクセスして、推奨アクションに基づいてバックアップ先を追加できます。</block>
   <block id="423773f9edb45d8141b1c7b6278c8092" category="section-title">ダッシュボードの推奨アクションからバックアップ先オプションにアクセスします</block>
   <block id="fd0da3fefc8a8a7ae1d9742f929d60d2" category="paragraph">ダッシュボードには多くの推奨事項が表示されます。  1 つの推奨事項としては、バックアップの保存先を構成することが挙げられます。</block>
@@ -1274,10 +1266,7 @@
   <block id="6c2708162873644f82108cfcad8ae099" category="list-text">必要に応じて、以前に構成した Azure プライベート エンドポイントを使用するかどうかを選択します。</block>
   <block id="8044b0463892d9d29dbab8cfd03e8863" category="inline-link">Azure プライベートリンク</block>
   <block id="13ed98575f9b615f49abab3355f19c34" category="paragraph">Azure PrivateLink を使用する場合は、以下を参照してください。<block ref="dc49bf79d1a3da34447e7543d00fee44" category="inline-link-rx"></block> 。</block>
-  <block id="e82028134cc149b687f7fdb64684dbf7" category="section-title">脅威の分析と検出のためにセキュリティおよびイベント管理システム (SIEM) に接続する</block>
-  <block id="c442f897ba9f28d5d7d3b1643ea9284a" category="paragraph">脅威の分析と検出のために、データをセキュリティおよびイベント管理システム (SIEM) に自動的に送信できます。  SIEM として、AWS Security Hub、Microsoft Sentinel、または Splunk Cloud を選択できます。</block>
   <block id="cbf029478800b63da0670604895d0640" category="paragraph">Ransomware Resilience で SIEM を有効にする前に、SIEM システムを構成する必要があります。</block>
-  <block id="7e15fa4f52a2b2bbe9c0fde780818748" category="paragraph-title">SIEMに送信されるイベントデータについて</block>
   <block id="44af434bf59e9ca7200d90f680bae3bc" category="paragraph">Ransomware Resilience は、次のイベント データを SIEM システムに送信できます。</block>
   <block id="5976a11ab4dca8b4245edb915c6dfbd7" category="list-text">*コンテクスト*：</block>
   <block id="c01e6c1876fd41a917ea803c3ef48d66" category="list-text">*os*: これはONTAPの値を持つ定数です。</block>
@@ -1293,7 +1282,6 @@
   <block id="09471f7939b8b27b32ee107cd9b1c44b" category="list-text">*重大度*: 次のアラート レベルのいずれか: 「CRITICAL」、「HIGH」、「MEDIUM」、「LOW」。</block>
   <block id="6f51b5c965cb508d8d37085592031c21" category="list-text">*説明*: 検出されたアラートの詳細。例: 「ワークロード arp_learning_mode_test_2630 で潜在的なランサムウェア攻撃が検出されました」</block>
   <block id="0df177143ce12a3516098cd3329e85c2" category="section-title">脅威検出用に AWS Security Hub を構成する</block>
-  <block id="ffc1de84dbea7f504a06f3ac9f3aca23" category="paragraph">Ransomware Resilience で AWS Security Hub を有効にする前に、AWS Security Hub で次の大まかな手順を実行する必要があります。</block>
   <block id="de9b4f41a945df92e6c5b62f443f03f1" category="list-text">AWS Security Hub で権限を設定します。</block>
   <block id="5fd0d2c5fd8b96b7b7b69f69b942c559" category="list-text">AWS Security Hub で認証アクセスキーとシークレットキーを設定します。  (これらの手順はここでは説明しません。)</block>
   <block id="12eef9b6a125a82d69978241dca88c07" category="list-title">AWS Security Hubで権限を設定する手順</block>
@@ -1301,7 +1289,6 @@
   <block id="bf6953a41efa897b0862fca0fe547641" category="list-text">*ポリシー*を選択します。</block>
   <block id="2228b7980f61d80481608141744ecee0" category="list-text">次の JSON 形式のコードを使用してポリシーを作成します。</block>
   <block id="cd4d66bdd803d46b839b94afd734cbcd" category="section-title">脅威検出用に Microsoft Sentinel を構成する</block>
-  <block id="0554c1e832e7fe2b51d5dcb9023f05f5" category="paragraph">Ransomware Resilience で Microsoft Sentinel を有効にする前に、Microsoft Sentinel で次の大まかな手順を実行する必要があります。</block>
   <block id="fc01add8dc5e609f9be29c977daabdb7" category="list-text">*前提条件*</block>
   <block id="37f2e7903c233bd04580bbd9be3e01dd" category="list-text">Microsoft Sentinel を有効にします。</block>
   <block id="4b78ed88f7480fc055e7d156d68bc76f" category="list-text">Microsoft Sentinel でカスタム ロールを作成します。</block>
@@ -1697,7 +1684,6 @@
   <block id="7257a2c29f00e84365c5a48447d9c803" category="inline-link-macro">データ分類を有効にしてガバナンスとセキュリティリスクを特定します</block>
   <block id="746bceb6a53af383ec0aa4495f694a94" category="list-text"><block ref="746bceb6a53af383ec0aa4495f694a94" category="inline-link-macro-rx"></block></block>
   <block id="1d1758803ee1f7559973be04f120a0f7" category="inline-link-macro">SIEMにアラートを送信する</block>
-  <block id="81eb2602258c7f155c33ae884e447609" category="list-text"><block ref="81eb2602258c7f155c33ae884e447609" category="inline-link-macro-rx"></block></block>
   <block id="660ecf2355e5ff3c5a22d2e4a48594e8" category="inline-link-macro">アラート、保護、準備訓練、回復、または概要レポートをダウンロードする</block>
   <block id="52210acbff73a572a2ca89fb77371615" category="paragraph">NetApp Ransomware Resilienceでは、 NetApp Data Classificationを使用して、ファイル共有ワークロード内のデータをスキャンおよび分類できます。データを分類すると、データセットに個人を特定できる情報 (PII) が含まれているかどうかを判断するのに役立ちますが、これによりセキュリティ リスクが増大する可能性があります。データ分類はNetApp Consoleのコア コンポーネントであり、追加費用なしで利用できます。</block>
   <block id="7b36da612c0e3a400f4daecc8016f21e" category="summary">システムとワークロードを保護するには、Ransomware Resilience のライセンス要件を満たしていることを確認してください。</block>
@@ -1719,7 +1705,6 @@
   <block id="2515e2bcc68e80666fa8c369e88f71e5" category="paragraph">ライセンスが追加されたことを確認するメッセージが表示されます。</block>
   <block id="fca5751a0529f9987d0699648a97be3a" category="list-text">コンソールがライセンスを自動的に更新できない場合は、ライセンス ファイルを手動でアップロードする必要があります。</block>
   <block id="f8541056d6bacae1a78fb5d2b68c67a8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>ランサムウェア耐性を始めましょう</block>
-  <block id="7a7f05bb105ddcf9c0d221e37f8a923c" category="list-text">環境内の疑わしいユーザーをブロックするには、ユーザー名の下にある [*ブロック*] を選択します。</block>
   <block id="bc8ffb69fb560086f529e0097158caad" category="admonition">アラートを無視した場合、そのステータスを変更したり、この変更を元に戻したりすることはできません。</block>
   <block id="7149ff1e14f0a158752906babaa08dc3" category="list-text">そのインシデントについては、ダウンロード アイコンを選択して、影響を受けるファイルのリストを CSV 形式でダウンロードします。</block>
   <block id="fe1bb8cb54f03cf7a69c3e9568118b30" category="list-text">**データ コレクター** は、 ONTAPからユーザー アクティビティ データを収集します。</block>
@@ -1819,7 +1804,6 @@
   <block id="0ba29c6a1afacf586b03a26162c72274" category="cell">環境</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">プロトコル</block>
   <block id="b881921e058834170584afe9213c4c73" category="cell">Amazon FSx for NetApp ONTAP*</block>
-  <block id="c2b4bf8a420967336b99691646ef85e6" category="cell">NFS、CIFS、SAN</block>
   <block id="382b0f5185773fa0f67a8ed8056c7759" category="cell">該当なし</block>
   <block id="096f3522cfa2f31de45d052b740adc65" category="cell">Cloud Volumes ONTAP for AWS</block>
   <block id="05bcab512eefa1e7e2cc2d1e45970a7d" category="cell">CIFSとNFS</block>
@@ -1945,7 +1929,6 @@
   <block id="8fe404d4b8af36b9844eb288d2706bbe" category="inline-link-macro">ランサムウェア耐性のアラートを管理する</block>
   <block id="869c8807275d576171cb34b892652da6" category="paragraph">詳細については、 <block ref="ca80a6cafecee489657bc722219fb267" category="inline-link-macro-rx"></block>。</block>
   <block id="22a81a009e8d21bf17e2788fdbfa4a6d" category="paragraph">Amazon FSx for NetApp ONTAPシステムは、Ransomware Resilience でサポートされています。Amazon FSx for ONTAPには次の制限が適用されます。</block>
-  <block id="e414901fbfa8ee419bbb8a9bf7c11320" category="list-text">バックアップ ポリシーはAmazon FSx for ONTAPではサポートされていません。この環境では、バックアップにAmazon FSxを使用してバックアップ操作を実行する必要があります。Ransomware Resilience を使用してこれらのワークロードを復元できます。</block>
   <block id="f20af4e11539d270463e7ed46557be6f" category="paragraph">NetApp Ransomware Resilienceを使用する前に、まずワークロード データを検出する必要があります。検出中に、Ransomware Resilience は組織内のすべてのコンソール エージェントとプロジェクトのシステム内のすべてのボリュームとファイルを分析します。</block>
   <block id="55971de7d1268c37251f60641b742b76" category="paragraph">検出ダッシュボードでは、Ransomware Resilience によってサポートされているシステム構成とサポートされていないシステム構成が表示されます。ランサムウェア耐性は、Oracle アプリケーション、VMware データストア、ファイル共有、ブロック ストレージを評価します。</block>
   <block id="1e55889dc96c3aa2614c39626c9cecdd" category="admonition">Ransomware Resilience では、 FlexGroupを使用するボリュームを持つワークロードは検出されません。</block>
@@ -2058,7 +2041,6 @@
   <block id="50723c157cd9ea132a02f421411e273d" category="list-text">*レプリケーションポリシー*:</block>
   <block id="f84245dfb1fc8217e62c0934102ba606" category="list-text">*レプリケーション ポリシーのベース名*: 新しい名前を入力するか、既存の名前を選択します。ベース名は、すべてのスナップショットに追加されるプレフィックスです。</block>
   <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*レプリケーション スケジュール*: 有効にする頻度 (時間別、日次、週次、月次) を切り替え、有効にするスケジュールごとに保持値 (保持する複製スナップショットの数) を設定します。</block>
-  <block id="228ec8f5cf8241b99a71e0c11689b0e6" category="list-text">必要な検出設定を選択してください: *暗号化検出* *疑わしいユーザー行動の検出* *疑わしいファイル拡張子のブロック*</block>
   <block id="447fce6406d4a8e99de98a2d5d107536" category="list-text">戦略にレプリケーションが含まれている場合は、**宛先システム** と **宛先ストレージ VM** を選択します。**次へ**を選択します。</block>
   <block id="6f540707e47351a26c8e3c79ccce18ea" category="list-text">*保護*: 保護されているワークロードとリスクのあるワークロードの合計数など、すべてのワークロードのステータスと詳細が含まれます。</block>
   <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
@@ -2067,7 +2049,6 @@
   <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">ログイン認証トークンを更新する必要がある場合は、<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
   <block id="667dffcf5676fe0bd645082d2a512fef" category="section-title">2026年1月12日</block>
   <block id="49fa679e35a13dc09de6805c384904d1" category="list-text">バックアップ ポリシーを構成するには、いずれかを選択して [**次へ**] を選択します。</block>
-  <block id="748b96a793ccf0ab113112372db17649" category="paragraph">Ransomware Resilience では、セカンダリONTAPサイトへのスナップショットのレプリケーションの追加がサポートされるようになりました。レプリケーション ポリシーを使用する保護グループを使用すると、ワークロードごとに同じ宛先または異なる宛先にレプリケートできます。レプリケーションを含むランサムウェア保護戦略を作成することも、定義済みの戦略を使用することもできます。</block>
   <block id="389e0c39aeda061370262a9fa330d865" category="doc">サポートされていないボリューム</block>
   <block id="7aedbf1b65f2bcaf699a2f7f37ba458b" category="paragraph">ランサムウェア耐性レポートでは、**概要** レポートでサポートされているボリュームとサポートされていないボリュームに関する情報が取得されるようになりました。この情報を使用して、システム内のボリュームがランサムウェア保護の対象外となる理由を診断します。</block>
   <block id="6a43554be5f7f046255a806f0d7cbba9" category="inline-link-macro">ランサムウェア耐性レポートをダウンロード</block>
@@ -2170,4 +2151,63 @@
   <block id="f77c342afbfaabafce4f6d6b3c0fc25a" category="sidebar">ユーザーアクティビティ要件</block>
   <block id="851ba516be036ed05e26d4e1aa17e994" category="sidebar">エージェントとコレクターを設定する</block>
   <block id="f00a921e7dbbed8405cd9ce5fce914d3" category="list-text">*VM SSH キー* - 次の形式で SSH キーを入力します：</block>
+  <block id="6180003c782f1663eb2df1464acac0bd" category="cell">CIFS、NFS、SAN</block>
+  <block id="691a3e8e2059e924160a8104310f552d" category="paragraph">ランサムウェア耐性は、スナップショットのレプリケーションをセカンダリONTAPサイトに追加できるようになりました。レプリケーションポリシーを使用する保護グループを使用すると、ワークロードごとに同じ宛先または異なる宛先にレプリケートできます。レプリケーションを含むランサムウェア保護戦略を作成することも、定義済みの戦略を使用することもできます。</block>
+  <block id="17dfbc312023bdd4da992d8e751e72ac" category="doc">Azure NetApp Files サポート</block>
+  <block id="ea2f778dfb597a4b527dac7e944ad95b" category="paragraph">Ransomware Resilienceは、Azure NetApp Filesシステムをサポートするようになり、Azure NetApp Filesでランサムウェアの脅威を効率的に検出して対応できるようになりました。ワークロードを検出すると、Ransomware ResilienceはAzure NetApp Filesを表示し、保護ダッシュボードに表示します。Azure NetApp FilesのRansomware Resilienceサポートには、スナップショットのみを使用した検出および保護戦略が含まれます。Azure NetApp Filesのサポートは現在プレビュー段階です。</block>
+  <block id="5e0e68da0b873ce6ac5da97de07de426" category="paragraph">詳細については、<block ref="d50b16a5274f0acc6be171c51d532ef9" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="533173be617e8e70b39c22d6b639f1ef" category="section-title">ユーザー行動アラートからユーザーを除外する</block>
+  <block id="34db265ea1c563cd1e8fec4196fdd55a" category="paragraph">NetApp Ransomware Resilienceにより、ユーザー行動アラートから特定のユーザーを除外できるようになりました。信頼できるユーザーを除外すると、誤検知や不要なアラートを防ぐことができます。</block>
+  <block id="0801620ca1af462c0fd534ad95bfa3b0" category="inline-link-macro">アラートからユーザーを除外する</block>
+  <block id="628cc6a9c569438d880eccc1e4a778da" category="paragraph">詳細については、<block ref="dfd47d5e016db97d5fa8c5e4a7bd25f8" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="366a951452a8cc6f0127d24e9230c837" category="section-title">ユーザー行動アクティビティの保護グループサポート</block>
+  <block id="3393700830226a018a19341bd00d6fa7" category="paragraph">Ransomware Resilience保護グループは、疑わしいユーザーの行動を検出するための検出ポリシーをサポートするようになりました。保護グループにランサムウェア保護戦略を適用すると、ワークロード全体にポリシーが適用され、サイバーセキュリティ体制の管理が効率化されます。</block>
+  <block id="e37ee5388292007ad9d3935327219122" category="paragraph">詳細については、<block ref="5988324edfd7d92a7675cb7a08ac2a7e" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="58c30bd4c949be43357ab1b7557703b5" category="list-text">Amazon FSx for ONTAP ではバックアップポリシーはサポートされていません。この環境では、Amazon FSx for ONTAP のバックアップ機能を使用してバックアップ操作を実行する必要があります。NetApp Ransomware Resilience を使用してこれらのワークロードを復元できます。</block>
+  <block id="2a0c2a157bd80927f000333567138b57" category="section-title">Azure NetApp Files の制限事項</block>
+  <block id="9ccc8d744240b4ff1c9fb964a84a7d3c" category="paragraph">Azure NetApp Files は、NetApp Ransomware Resilience でサポートされています。Azure NetApp Files には以下の制限事項が適用されます：</block>
+  <block id="b285edab772b215df16e97f47e6cf852" category="list-text">バックアップポリシーを使用したランサムウェア保護戦略は、Azure NetApp Files ではサポートされていません。代わりに、Azure NetApp Files バックアップを使用できます。</block>
+  <block id="af5eb4e584c938e9f8b3531d944e3a59" category="list-text">レプリケーションを使用したランサムウェア保護戦略は Azure NetApp Files ではサポートされていません。</block>
+  <block id="1c312af1f49befaddd00883a617fa8ba" category="list-text">保護戦略を選択するときは、スナップショットスケジュールがAzure NetApp Filesと互換性があることを確認してください。Azure NetApp Filesで利用できる最も頻繁なスナップショットスケジュールは1時間ごとです。</block>
+  <block id="e02189957b252d42e679aa66d35030cd" category="list-text"><block ref="e02189957b252d42e679aa66d35030cd" category="inline-link-macro-rx"></block></block>
+  <block id="bf1ffe0e445fb2a07fc3757d6ae841ec" category="list-text">環境内の疑わしいユーザーをブロックするには、ユーザー名の横にある*ブロック*を選択します。</block>
+  <block id="0f20f1de24e002ee03e9a0d693faaf59" category="list-text">偽であるとわかっているアラートの対象となっている特定のユーザーに対するアラートを無効にするには、3つのドット<block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>を選択してから、**このユーザーを監視から除外**を選択します。ダイアログを確認し、**除外**を選択して確定します。</block>
+  <block id="c65a69d50600a3f76ccdd1109d15b6e3" category="inline-link-macro">ユーザーを除外する</block>
+  <block id="d632bf28d8164d0436ca05f069b989e9" category="admonition">ユーザーのアラートを再度有効にするには、アラートを返します。3 つのドットを選択し、**このユーザーを監視に含める** を選択します。また、<block ref="e33a84d4132808c30f0e6b091e9f7e88" category="inline-link-macro-rx"></block>監視から実行することもできます。</block>
+  <block id="fb7f1789c81ab5377f72e16f6b9384ad" category="inline-link-macro">各サービスの制限</block>
+  <block id="771abd282157ca2dcc3c9f4d73d158c2" category="admonition">Amazon FSx for NetApp ONTAPおよびAzure NetApp Filesの保護戦略を設定する場合は、<block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="3adbdb581af927d3972b2f1c8cfb96a6" category="admonition">バックアップ先は、Amazon FSx for NetApp ONTAP または Azure NetApp Files のワークロードでは使用できません。FSx for ONTAP バックアップサービスを使用してバックアップ操作を実行します。FSx for ONTAP のワークロードのバックアップポリシーは、Ransomware Resilience ではなく AWS で設定します。バックアップポリシーは Ransomware Resilience に表示され、AWS から変更されません。</block>
+  <block id="3bc2d94b3185bcb1259a8b3cf7da880b" category="list-text">必要な検出設定を選択します：</block>
+  <block id="d5fc4bf8c0e9a03cea6fbde26d8608f2" category="list-text">このグループの保護を管理するポリシーを選択します。</block>
+  <block id="e468b341048b440bba27f4904f7a59c4" category="paragraph">NetApp Ransomware Resilienceの設定タブでは、バックアップ先の構成、攻撃準備ドリルの実施、ワークロード検出の構成、疑わしいユーザーアクティビティの検出の構成を行うことができます。</block>
+  <block id="04ba211304888e157a1517c86860bd73" category="list-text">疑わしいユーザーアクティビティのレポートを構成します。詳細については、<block ref="da26800578b610b8b3390e49bb643377" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="5d8eeee45929294781013d6d152aae8a" category="inline-link-macro">NetApp Ransomware Resilienceを SIEMに接続</block>
+  <block id="143fb46cdff0222e6e176aa99a0f923e" category="list-text">脅威の分析と検出のために、セキュリティおよびイベント管理システム（SIEM）を接続します。脅威検出を有効にすると、脅威分析のためにデータが自動的にSIEMに送信されます。詳細については、<block ref="c7d7e4de61d3da74895aed14b126475d" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="fb12d4a7a4843715dd8c19d7dd88935d" category="admonition">Amazon FSx for NetApp ONTAP および Azure NetApp Files のワークロードでは、バックアップ先を使用できません。ネイティブバックアップソリューションを使用してバックアップ操作を実行します（FSx for ONTAP バックアップサービスまたは Azure NetApp Files バックアップ）。</block>
+  <block id="eb7705f4441056c554dc7aea52de0b17" category="paragraph">特定の信頼できるユーザーの行動によってユーザー行動アラートがトリガーされる可能性がある場合は、そのユーザーをアラートから除外できます。</block>
+  <block id="0189c7f085ff5d22843080df2225281b" category="list-text">設定ダッシュボードで、ユーザーアクティビティカードを見つけて、**管理**を選択します。</block>
+  <block id="82694a5fa079406313056daf01f9118b" category="list-text">**除外ユーザー**タブを選択します。</block>
+  <block id="de13c27fd58614b060a46c2092ed0545" category="list-text">UI で個々のユーザーを確認するには、**手動で選択**を選択します。除外されたユーザーのリストをアップロードするには、**アップロード**を選択します。</block>
+  <block id="9dd5e919daf597022ca9ace5ebd739e9" category="list-text">**手動で選択**を選択した場合は、除外する特定のユーザーの名前の横にあるチェックボックスをオンにします。</block>
+  <block id="d2b1df006cba7f480a48064be15b71ec" category="list-text">**アップロード** を選択した場合は、まずすべてのユーザーのリストが含まれる CSV ファイルをダウンロードする必要があります。リストにアクセスするには、**ダウンロード** を選択します。</block>
+  <block id="f44e20ff3f0d285a050e5f4e9dc1267f" category="paragraph">CSV ファイルを確認します。検出を維持するすべてのユーザーの名前を削除します。検出から除外するユーザーの名前のみがリストに含まれたら、保存します。**アップロード**を選択してファイルを見つけ、選択します。</block>
+  <block id="8641c2055d546da7c2e15e6d18bc9016" category="list-text">除外リストへのユーザーの追加を完了するには、**[追加]** を選択します。</block>
+  <block id="98e062a77fcb05260f463a017f171f72" category="list-text">**除外ユーザー**タブでは、ユーザー行動検出アラートから削除されたユーザーの名前がダッシュボードに表示されるようになりました。</block>
+  <block id="bf7da00a56585a6a89ff8f8184dfd6fd" category="inline-link-macro">ランサムウェアの警告に応答する</block>
+  <block id="face5a9388d96715a2df2a403febcfad" category="admonition">アラートからユーザーを直接除外することもできます。詳細については、<block ref="56429daef20ebac0c2b98002f6d61934" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="0b09185e7ecba92cf7f8f0712501db0b" category="section-title">除外ユーザーリストからユーザーを削除する</block>
+  <block id="3ba04eb11eb815c62355b0a9cb7b05e5" category="paragraph">後からユーザーを検出対象に再度追加することができます。</block>
+  <block id="144c603fbbde0985023a4ea73e22e35b" category="list-text">除外ユーザーの選択から削除するユーザーの名前を見つけます。ユーザー名の行にあるアクションメニュー（<block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>）を選択し、**削除**を選択します。</block>
+  <block id="581c5c550f20f231f6c9e881e699829b" category="list-text">ダイアログで、**削除**を選択して、選択したユーザーを削除することを確認します。</block>
+  <block id="90c78a95b0a3dffc0aa664d3139d1369" category="summary">NetApp Ransomware Resilienceから脅威の分析と検出のために、セキュリティおよびイベント管理システム（SIEM）にデータを自動的に送信できます。</block>
+  <block id="2e83d7690079c133e11ad37c5e4ff93e" category="doc">NetApp Ransomware Resilienceをセキュリティおよびイベント管理システム（SIEM）に接続し、脅威の分析と検出を行う</block>
+  <block id="7be8ef49fa437b6a669fb54a081312c4" category="paragraph">NetApp Ransomware Resilience は次の SIEM をサポートしています：</block>
+  <block id="03883d80013dc0b2b972eccd5b93b56f" category="list-text">AWS Security Hub</block>
+  <block id="11759e65f10609550e1a85679db960a9" category="list-text">Microsoft Sentinel</block>
+  <block id="a60efb4483a892cd919ec4e745900e2d" category="list-text">Splunk Cloud</block>
+  <block id="46fa98b3b308dc6f48d40cf8b1712bfe" category="section-title">SIEMに送信されるイベントデータ</block>
+  <block id="cfa147fb3f8ac9012f43e41767ad8241" category="paragraph">Ransomware Resilience で AWS Security Hub を有効にする前に、AWS Security Hub で次の大まかな手順を実行する必要があります：</block>
+  <block id="2787b10f438b5f28e340793feb9becb6" category="paragraph">Ransomware Resilience で Microsoft Sentinel を有効にする前に、Microsoft Sentinel で次の大まかな手順を実行する必要があります。</block>
+  <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">2026年2月16日</block>
+  <block id="51f5590fac3af82049df229fcb91793c" category="sidebar">SIEMの設定</block>
 </blocks>

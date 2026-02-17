@@ -26,6 +26,17 @@ summary: 既知の制限事項では、この製品リリースでサポート�
 
 Amazon FSx for NetApp ONTAPシステムは、Ransomware Resilience でサポートされています。Amazon FSx for ONTAPには次の制限が適用されます。
 
-* バックアップ ポリシーはAmazon FSx for ONTAPではサポートされていません。この環境では、バックアップにAmazon FSxを使用してバックアップ操作を実行する必要があります。Ransomware Resilience を使用してこれらのワークロードを復元できます。
+* Amazon FSx for ONTAP ではバックアップポリシーはサポートされていません。この環境では、Amazon FSx for ONTAP のバックアップ機能を使用してバックアップ操作を実行する必要があります。NetApp Ransomware Resilience を使用してこれらのワークロードを復元できます。
 * 復元操作はスナップショットからのみ実行されます。
+
+
+
+
+== Azure NetApp Files の制限事項
+
+Azure NetApp Files は、NetApp Ransomware Resilience でサポートされています。Azure NetApp Files には以下の制限事項が適用されます：
+
+* バックアップポリシーを使用したランサムウェア保護戦略は、Azure NetApp Files ではサポートされていません。代わりに、Azure NetApp Files バックアップを使用できます。
+* レプリケーションを使用したランサムウェア保護戦略は Azure NetApp Files ではサポートされていません。
+* 保護戦略を選択するときは、スナップショットスケジュールがAzure NetApp Filesと互換性があることを確認してください。Azure NetApp Filesで利用できる最も頻繁なスナップショットスケジュールは1時間ごとです。
 

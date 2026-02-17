@@ -1,0 +1,259 @@
+---
+sidebar: sidebar 
+permalink: task-siem.html 
+keywords: ransomware protection, SIEM, security event management system, soar, playbook, orchestration, event management 
+summary: NetApp Ransomware Resilienceから脅威の分析と検出のために、セキュリティおよびイベント管理システム（SIEM）にデータを自動的に送信できます。 
+---
+= NetApp Ransomware Resilienceをセキュリティおよびイベント管理システム（SIEM）に接続し、脅威の分析と検出を行う
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilienceから脅威の分析と検出のために、セキュリティおよびイベント管理システム（SIEM）にデータを自動的に送信できます。
+
+NetApp Ransomware Resilience は次の SIEM をサポートしています：
+
+* AWS Security Hub
+* Microsoft Sentinel
+* Splunk Cloud
+
+
+Ransomware Resilience で SIEM を有効にする前に、SIEM システムを構成する必要があります。
+
+
+
+== SIEMに送信されるイベントデータ
+
+Ransomware Resilience は、次のイベント データを SIEM システムに送信できます。
+
+* *コンテクスト*：
++
+** *os*: これはONTAPの値を持つ定数です。
+** *os_version*: システムで実行されているONTAPのバージョン。
+** *connector_id*: システムを管理するコンソールエージェントの ID。
+** *cluster_id*: システムのONTAPによって報告されたクラスタ ID。
+** *svm_name*: アラートが見つかった SVM の名前。
+** *volume_name*: アラートが見つかったボリュームの名前。
+** *volume_id*: システムのONTAPによって報告されたボリュームの ID。
+
+
+* *事件*：
++
+** *incident_id*: Ransomware Resilience で攻撃を受けているボリュームに対して Ransomware Resilience によって生成されたインシデント ID。
+** *alert_id*: ワークロードに対して Ransomware Resilience によって生成された ID。
+** *重大度*: 次のアラート レベルのいずれか: 「CRITICAL」、「HIGH」、「MEDIUM」、「LOW」。
+** *説明*: 検出されたアラートの詳細。例: 「ワークロード arp_learning_mode_test_2630 で潜在的なランサムウェア攻撃が検出されました」
+
+
+
+
+
+
+== 脅威検出用に AWS Security Hub を構成する
+
+Ransomware Resilience で AWS Security Hub を有効にする前に、AWS Security Hub で次の大まかな手順を実行する必要があります：
+
+* AWS Security Hub で権限を設定します。
+* AWS Security Hub で認証アクセスキーとシークレットキーを設定します。  (これらの手順はここでは説明しません。)
+
+
+.AWS Security Hubで権限を設定する手順
+. *AWS IAM コンソール* に移動します。
+. *ポリシー*を選択します。
+. 次の JSON 形式のコードを使用してポリシーを作成します。
++
+[listing]
+----
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "NetAppSecurityHubFindings",
+      "Effect": "Allow",
+      "Action": [
+        "securityhub:BatchImportFindings",
+        "securityhub:BatchUpdateFindings"
+      ],
+      "Resource": [
+        "arn:aws:securityhub:*:*:product/*/default",
+        "arn:aws:securityhub:*:*:hub/default"
+      ]
+    }
+  ]
+}
+----
+
+
+
+
+== 脅威検出用に Microsoft Sentinel を構成する
+
+Ransomware Resilience で Microsoft Sentinel を有効にする前に、Microsoft Sentinel で次の大まかな手順を実行する必要があります。
+
+* *前提条件*
++
+** Microsoft Sentinel を有効にします。
+** Microsoft Sentinel でカスタム ロールを作成します。
+
+
+* *登録*
++
+** Microsoft Sentinel からイベントを受信するには、Ransomware Resilience を登録します。
+** 登録用のシークレットを作成します。
+
+
+* *権限*: アプリケーションに権限を割り当てます。
+* *認証*: アプリケーションの認証資格情報を入力します。
+
+
+.Microsoft Sentinelを有効にする手順
+. Microsoft Sentinel にアクセスします。
+. *Log Analytics ワークスペース* を作成します。
+. 作成した Log Analytics ワークスペースを Microsoft Sentinel で使用できるようにします。
+
+
+.Microsoft Sentinelでカスタムロールを作成する手順
+. Microsoft Sentinel にアクセスします。
+. *サブスクリプション* > *アクセス制御 (IAM)* を選択します。
+. カスタム ロール名を入力します。  *Ransomware Resilience Sentinel Configurator* という名前を使用します。
+. 次の JSON をコピーして、*JSON* タブに貼り付けます。
++
+[listing]
+----
+{
+  "roleName": "Ransomware Resilience Sentinel Configurator",
+  "description": "",
+  "assignableScopes":["/subscriptions/{subscription_id}"],
+  "permissions": [
+
+  ]
+}
+----
+. 設定を確認して保存します。
+
+
+.Microsoft Sentinelからイベントを受信するためにRansomware Resilienceを登録する手順
+. Microsoft Sentinel にアクセスします。
+. *Entra ID* > *アプリケーション* > *アプリ登録*を選択します。
+. アプリケーションの*表示名*に「*Ransomware Resilience*」と入力します。
+. *サポートされているアカウントの種類* フィールドで、*この組織ディレクトリ内のアカウントのみ* を選択します。
+. イベントがプッシュされる*デフォルト インデックス*を選択します。
+. *レビュー*を選択します。
+. 設定を保存するには、[*登録*] を選択します。
++
+登録後、Microsoft Entra 管理センターにアプリケーションの概要ペインが表示されます。
+
+
+
+.登録用のシークレットを作成する手順
+. Microsoft Sentinel にアクセスします。
+. *証明書とシークレット* > *クライアント シークレット* > *新しいクライアント シークレット*を選択します。
+. アプリケーション シークレットの説明を追加します。
+. シークレットの*有効期限*を選択するか、カスタム有効期間を指定します。
++
+
+TIP: クライアント シークレットの有効期間は 2 年 (24 か月) 以下に制限されます。  Microsoft では、有効期限を 12 か月未満に設定することをお勧めします。
+
+. シークレットを作成するには、[*追加*] を選択します。
+. 認証手順で使用するシークレットを記録します。このページを離れた後、秘密は再び表示されることはありません。
+
+
+.アプリケーションに権限を割り当てる手順
+. Microsoft Sentinel にアクセスします。
+. *サブスクリプション* > *アクセス制御 (IAM)* を選択します。
+. *追加* > *ロールの割り当てを追加*を選択します。
+. *特権管理者ロール* フィールドで、*Ransomware Resilience Sentinel Configurator* を選択します。
++
+
+TIP: これは先ほど作成したカスタム ロールです。
+
+. *次へ*を選択します。
+. *アクセスの割り当て先* フィールドで、*ユーザー、グループ、またはサービス プリンシパル* を選択します。
+. *メンバーを選択*を選択します。次に、「*Ransomware Resilience Sentinel Configurator*」を選択します。
+. *次へ*を選択します。
+. *ユーザーが実行できる操作* フィールドで、*特権管理者ロール (所有者、UAA、RBAC) を除くすべてのロールの割り当てをユーザーに許可する (推奨)* を選択します。
+. *次へ*を選択します。
+. 権限を割り当てるには、[*確認して割り当て*] を選択します。
+
+
+.アプリケーションの認証資格情報を入力する手順
+. Microsoft Sentinel にアクセスします。
+. 資格情報を入力してください:
++
+.. テナント ID、クライアント アプリケーション ID、およびクライアント アプリケーション シークレットを入力します。
+.. *認証*をクリックします。
++
+
+NOTE: 認証が成功すると、「認証済み」というメッセージが表示されます。
+
+
+
+. アプリケーションの Log Analytics ワークスペースの詳細を入力します。
++
+.. サブスクリプション ID、リソース グループ、Log Analytics ワークスペースを選択します。
+
+
+
+
+
+
+== 脅威検出用にSplunk Cloudを構成する
+
+Ransomware Resilience で Splunk Cloud を有効にする前に、Splunk Cloud で次の大まかな手順を実行する必要があります。
+
+* Splunk Cloud の HTTP イベント コレクターを有効にして、コンソールから HTTP または HTTPS 経由でイベント データを受信します。
+* Splunk Cloud でイベント コレクター トークンを作成します。
+
+
+.SplunkでHTTPイベントコレクターを有効にする手順
+. Splunk Cloud に移動します。
+. *設定* > *データ入力*を選択します。
+. *HTTP イベント コレクター* > *グローバル設定* を選択します。
+. [すべてのトークン] トグルで、[有効] を選択します。
+. イベント コレクターが HTTP ではなく HTTPS 経由でリッスンして通信するようにするには、[SSL を有効にする] を選択します。
+. HTTP イベント コレクターの *HTTP ポート番号* にポートを入力します。
+
+
+.Splunkでイベントコレクタートークンを作成する手順
+. Splunk Cloud に移動します。
+. *設定* > *データの追加*を選択します。
+. *モニター* > *HTTP イベント コレクター* を選択します。
+. トークンの名前を入力し、[次へ] を選択します。
+. イベントがプッシュされる *デフォルト インデックス* を選択し、*レビュー* を選択します。
+. エンドポイントのすべての設定が正しいことを確認し、[送信] を選択します。
+. トークンをコピーして別のドキュメントに貼り付け、認証手順の準備を整えます。
+
+
+
+
+== ランサムウェア耐性におけるSIEMの接続
+
+SIEM を有効にすると、脅威の分析とレポートのために、Ransomware Resilience から SIEM サーバーにデータが送信されます。
+
+.手順
+. コンソール メニューから、*保護* > *ランサムウェア耐性* を選択します。
+. ランサムウェア耐性メニューから、垂直方向のimage:button-actions-vertical.png["垂直アクション"]... 右上のオプションをクリックします。
+. *設定*を選択します。
++
+設定ページが表示されます。
+
++
+image:screen-settings2.png["設定ページ"]
+
+. [設定] ページで、SIEM 接続タイルの [*接続*] を選択します。
++
+image:screen-settings-threat-detection-3options.png["脅威検出の詳細ページを有効にする"]
+
+. SIEM システムの 1 つを選択します。
+. AWS Security Hub または Splunk Cloud で設定したトークンと認証の詳細を入力します。
++
+
+NOTE: 入力する情報は、選択した SIEM によって異なります。
+
+. *有効*を選択します。
++
+設定ページに「接続済み」と表示されます。
+
+

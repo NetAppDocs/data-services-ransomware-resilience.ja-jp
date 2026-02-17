@@ -184,7 +184,10 @@ Ransomware Resilience は、次のバックアップ ターゲット、システ
 | 環境 | プロトコル | サポート対象のバージョン 
 
 
-| Amazon FSx for NetApp ONTAP* | NFS、CIFS、SAN | 該当なし 
+| Amazon FSx for NetApp ONTAP* | CIFS、NFS、SAN | 該当なし 
+
+
+| Azure NetApp Files | CIFSとNFS | 該当なし 
 
 
 .2+| Cloud Volumes ONTAP for AWS | CIFSとNFS | 9.11.1以降 

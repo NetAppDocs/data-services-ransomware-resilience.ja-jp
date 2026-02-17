@@ -40,6 +40,8 @@ sidebar:
       url: "/rp-start-simulate.html"
     - title: 設定でバックアップ、脅威検出、攻撃シミュレーションを構成する
       url: "/rp-use-settings.html"
+    - title: SIEMの設定
+      url: "/task-siem.html"
     - title: ユーザーアクティビティ検出を設定する
       entries:
       - title: ユーザーアクティビティ検出について学ぶ

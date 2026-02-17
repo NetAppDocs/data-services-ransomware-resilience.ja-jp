@@ -39,6 +39,9 @@ NetApp Ransomware Resilienceでワークロード一貫性保護を有効にす�
 
 
 
+NOTE: Amazon FSx for NetApp ONTAPおよびAzure NetApp Filesの保護戦略を設定する場合は、link:rp-reference-limitations.html["各サービスの制限"]を参照してください。
+
+
 TIP: データ資産の管理と保護を強化するために、link:#create-a-protection-group["グループファイル共有"] 1 つの戦略の下でボリュームをまとめて保護します。
 
 
@@ -57,7 +60,7 @@ TIP: データ資産の管理と保護を強化するために、link:#create-a-
 ランサムウェア検出ポリシーがONTAPの Autonomous Ransomware Protection（ ONTAP のバージョンに応じて ARP または ARP/AI）と FPolicy によって管理されている場合、それらのワークロードは保護され、引き続き ARP と FPolicy によって管理されます。
 
 
-NOTE: バックアップ先は、Amazon FSx for NetApp ONTAP のワークロードでは使用できません。 FSx for ONTAPバックアップ サービスを使用してバックアップ操作を実行します。ワークロードのバックアップポリシーは、Ransomware Resilience ではなく、AWS の FSx for ONTAPで設定します。バックアップ ポリシーは Ransomware Resilience に表示され、AWS から変更されません。
+NOTE: バックアップ先は、Amazon FSx for NetApp ONTAP または Azure NetApp Files のワークロードでは使用できません。FSx for ONTAP バックアップサービスを使用してバックアップ操作を実行します。FSx for ONTAP のワークロードのバックアップポリシーは、Ransomware Resilience ではなく AWS で設定します。バックアップポリシーは Ransomware Resilience に表示され、AWS から変更されません。
 
 
 
@@ -441,7 +444,13 @@ image:screen-protection.png["戦略管理ページ"]
 . Ransomware Resilience は、アクティブなSnapCenterまたはバックアップとリカバリ ポリシーが存在しているかどうかを検出します。
 . 既存のバックアップとリカバリまたはSnapCenterポリシーをそのままにして、_検出_ ポリシーのみを適用するには、[**既存のポリシーを置き換える**] ボックスをオフのままにします。
 . SnapCenterポリシーの詳細を表示するには、*下矢印*を選択します。
-. 必要な検出設定を選択してください: *暗号化検出* *疑わしいユーザー行動の検出* *疑わしいファイル拡張子のブロック*
+. 必要な検出設定を選択します：
++
+....
+*Encryption detection*
+*Suspicious user behavior detection*
+*Block suspicious file extensions*
+....
 . **次へ**を選択します。
 . 検出設定として*不審なユーザー行動の検出*を選択した場合は、ユーザーアクティビティエージェントまたはlink:suspicious-user-activity.html#create-a-user-activity-agent["または作成する"]を選択します。
 +
@@ -522,7 +531,7 @@ TIP: ワークロードの詳細を表示するには、右にスクロールし
 +
 image:screen-protection-groups-policy.png["保護グループの追加 - ポリシーページ"]
 
-. このグループの保護を管理するポリシーを選択します。確認するには、[次へ] を選択します。
+. このグループの保護を管理するポリシーを選択します。
 . 保護戦略にレプリケーションが含まれている場合は、レプリケーション設定を確認します。
 +
 .. すべてのスナップショットを同じ宛先に複製するには、**各ワークロードに同じ宛先を使用する** をオンにします。コンソール エージェント セクションのワークロードに対して、*宛先システム* と *宛先ストレージ VM* を選択します。+ 別の宛先を使用するには、そのボックスのチェックを外します。各コンソール エージェントの下の各ワークロードを確認し、各ワークロードに *宛先システム* と *宛先ストレージ VM* を割り当てます。**次へ**を選択します。
