@@ -62,9 +62,9 @@ Ransomware Resilience に推奨されるデバイス解像度は 1920x1080 以�
 .Ransomware Resilience はNetApp Backup and RecoveryおよびSnapCenterとどのように連携しますか?
 Ransomware Resilience は、バックアップおよびリカバリと連携して、ファイル共有ワークロードのスナップショットおよびバックアップ ポリシーを検出して設定します。
 
-Ransomware Resilience は、 SnapCenterまたはSnapCenter for VMware と連携して、アプリケーションおよび VM ワークロードのスナップショットおよびバックアップ ポリシーを検出し、設定します。
+ランサムウェア耐性はSnapCenterまたはSnapCenter for VMwareと連携して、アプリケーションおよびVMワークロードのスナップショットおよびバックアップポリシーを検出して設定します。現時点では、SnapCenterを使用したランサムウェア耐性によるリカバリは利用できません。
 
-Ransomware Resilience は、バックアップとリカバリ、 SnapCenter ( SnapCenter for VMware を含む) と連携して、ファイルとワークロードの整合性のあるリカバリを実行します。
+NetApp Ransomware Resilience は、 NetApp Backup and Recovery と連携して、ファイルおよびワークロードの一貫性のあるリカバリを実行します。
 
 ライセンスと課金に関しては、バックアップとリカバリ用の個別のライセンスがない場合でも、Ransomware Resilience をバックアップとリカバリと統合できます。バックアップとリカバリとランサムウェア耐性の両方をお持ちの場合、両方の製品で保護されている共通データについては、ランサムウェア耐性に対してのみ課金されます。
 
@@ -85,7 +85,7 @@ link:rp-use-protect.html["作業負荷の優先度や重要性について知る
 .Ransomware Resilience はどのようなワークロードをサポートしますか?
 Ransomware Resilience は、Oracle、ファイル共有、ブロック ストレージ、VM、VM データストアなどのワークロードを識別できます。
 
-SnapCenterまたはSnapCenter for VMware を使用している場合、これらの製品でサポートされているすべてのワークロードも Ransomware Resilience で識別されます。ランサムウェア耐性により、 SnapCenterおよびSnapCenterワークロードをワークロードの一貫性を保ちながら保護および回復できます。
+SnapCenterまたはSnapCenter for VMwareを使用している場合、これらの製品でサポートされているすべてのワークロードは、NetApp Ransomware Resilienceでも識別されます。
 
 .データをワークロードにどのように関連付けますか?
 Ransomware Resilience はボリュームとファイル拡張子を検出し、適切なワークロードに関連付けます。

@@ -108,7 +108,7 @@ NetApp Consoleの使用を開始するためにライセンスやサブスクリ
 
 == ランサムウェア耐性の仕組み
 
-Ransomware Resilience は、 NetApp Backup and Recoveryを使用してファイル共有ワークロードのスナップショットおよびバックアップ ポリシーを検出して設定し、 SnapCenterまたはSnapCenter for VMware を使用してアプリケーションおよび VM ワークロードのスナップショットおよびバックアップ ポリシーを検出して設定します。さらに、Ransomware Resilience は、バックアップとリカバリ、およびSnapCenter / SnapCenter for VMware を使用して、ファイルとワークロードの整合性のあるリカバリを実行します。
+Ransomware Resilienceは、NetApp Backup and Recoveryを使用して、ファイル共有ワークロードのスナップショットおよびバックアップポリシーを検出し、設定します。
 
 image:diagram-rp-architecture-preview3.png["ランサムウェア耐性アーキテクチャを示す図"]
 
@@ -119,7 +119,7 @@ image:diagram-rp-architecture-preview3.png["ランサムウェア耐性アーキ
 
 | *識別する*  a| 
 * コンソールに接続されているすべての顧客のオンプレミス NAS (NFS および CIFS プロトコル)、SAN (FC、iSCSI、NVMe)、およびCloud Volumes ONTAPデータを検索します。
-* ONTAPおよびSnapCenterサービス API から顧客データを識別し、ワークロードに関連付けます。詳細はこちら https://docs.netapp.com/us-en/ontap-family/["ONTAP"^]そして https://docs.netapp.com/us-en/snapcenter/index.html["SnapCenterソフトウェア"^]。
+* ONTAP および SnapCenter サービス API から顧客データを識別し、ワークロードに関連付けます。詳細については、 https://docs.netapp.com/us-en/ontap-family/["ONTAP"^]を参照してください。
 * 各ボリュームのNetAppスナップショット コピーとバックアップ ポリシーの現在の保護レベルと、オンボックス検出機能を検出します。ランサムウェア耐性は、バックアップとリカバリ、 ONTAPサービス、Autonomous Ransomware Protection ( ONTAP のバージョンに応じて ARP または ARP/AI)、FPolicy、バックアップ ポリシー、スナップショット ポリシーなどのNetAppテクノロジーを使用して、この保護態勢をワークロードに関連付けます。詳細はこちら https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自律型ランサムウェア対策"^]、 https://docs.netapp.com/us-en/data-services-backup-recovery/index.html["NetApp Backup and Recovery"^] 、 そして https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["ONTAP FPolicy"^]。
 * 自動的に検出された保護レベルに基づいて各ワークロードにビジネス優先度を割り当て、ビジネス優先度に基づいてワークロードの保護ポリシーを推奨します。ワークロードの優先順位は、ワークロードに関連付けられた各ボリュームにすでに適用されているスナップショット頻度に基づいています。
 
@@ -127,7 +127,7 @@ image:diagram-rp-architecture-preview3.png["ランサムウェア耐性アーキ
 
 
 | *守る*  a| 
-* ワークロードをアクティブに監視し、識別された各ワークロードにポリシーを適用して、バックアップとリカバリ、 SnapCenter、およびONTAP API の使用を調整します。
+* ワークロードを積極的に監視し、識別された各ワークロードにポリシーを適用することで、NetApp Backup and Recovery と ONTAP API の使用を調整します。
 
 
 
@@ -235,8 +235,6 @@ NOTE: ONTAPで ARP/AI を使用するには、 ONTAP 9.16 以上が必要です�
 * NetAppファイル共有
 * VMwareデータストア
 
-
-SnapCenterまたはSnapCenter for VMware を使用している場合、それらの製品でサポートされているすべてのワークロードも Ransomware Resilience で識別されます。ランサムウェア耐性は、ワークロードの一貫性を保ちながらこれらを保護し、回復することができます。
 
 
 

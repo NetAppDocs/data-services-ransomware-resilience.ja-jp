@@ -58,6 +58,8 @@ sidebar:
       entries:
       - title: ランサムウェア対策戦略でワークロードを保護する
         url: "/rp-use-protect.html"
+      - title: 保護グループの管理
+        url: "/task-protection-group.html"
       - title: 個人を特定できるデータをスキャンする
         url: "/rp-use-protect-classify.html"
     - title: 検出されたアラートに応答する

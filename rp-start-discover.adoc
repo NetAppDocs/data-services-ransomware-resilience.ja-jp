@@ -21,6 +21,9 @@ NOTE: Ransomware Resilience では、 FlexGroupを使用するボリュームを
 
 Ransomware Resilience は、現在のバックアップ保護、スナップショット コピー、およびNetApp Autonomous Ransomware Protection オプションをチェックします。Ransomware Resilience は、VM データストアのSnapCenter for VMware、 SnapCenter for Oracle、ファイル共有および VM ファイル共有のNetApp Backup and Recoveryからの保護情報も検出します。次に、ランサムウェア保護を強化する方法を推奨します。
 
+
+IMPORTANT: NetApp Ransomware ResilienceはSnapCenterのポリシーを認識しますが、NetApp Ransomware Resilienceを使用してSnapCenter経由でリカバリを実行することはできません。
+
 *必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
 
 
