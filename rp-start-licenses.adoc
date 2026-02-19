@@ -12,9 +12,9 @@ summary: システムとワークロードを保護するには、Ransomware Res
 
 
 [role="lead"]
-NetApp Ransomware Resilienceでは、さまざまなライセンス プランを使用できます。
+NetApp Ransomware Resilience ではさまざまなライセンス プランを提供しており、組織にとって適切なサービスに加入できます。
 
-このタスクを実行するには、組織管理者、フォルダー管理者、またはプロジェクト管理者のロールが必要です。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["コンソールアクセスロールについて学ぶ"^] 。
+ライセンスを設定するには、組織管理者、フォルダー管理者、またはプロジェクト管理者のロールが必要です https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["コンソールアクセスロールについて学ぶ"^]。
 
 
 

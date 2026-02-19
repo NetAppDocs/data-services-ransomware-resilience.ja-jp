@@ -12,9 +12,9 @@ summary: 環境、ネットワーク アクセス、ログイン、Web ブラウ
 
 
 [role="lead"]
-運用環境、ネットワーク アクセス、Web ブラウザの準備状況を確認して、 NetApp Ransomware Resilienceを開始してください。
+NetApp Ransomware Resilienceの導入を確実に成功させるには、運用環境の準備状況、ネットワーク アクセス、およびWebブラウザを確認してください。
 
-Ransomware Resilience を使用するには、前提条件を満たしていることを確認してください。
+以下の要件を確認し、満たしていることを確認してください。
 
 
 

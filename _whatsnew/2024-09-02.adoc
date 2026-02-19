@@ -6,7 +6,7 @@
 
 === Digital Advisorによるセキュリティリスク評価
 
-BlueXP ransomware protectionは、 NetApp Digital Advisorからクラスターに関連する高レベルおよび重大なセキュリティ リスクに関する情報を収集するようになりました。リスクが見つかった場合、 BlueXP ransomware protectionはダッシュボードの *推奨アクション* ペインに「クラスター <name> の既知のセキュリティ脆弱性を修正する」という推奨事項を表示します。ダッシュボードの推奨事項から、[*確認して修正*] をクリックすると、セキュリティ リスクを解決するためにDigital Advisorと Common Vulnerability & Exposure (CVE) の記事を確認することが提案されます。セキュリティリスクが複数ある場合は、 Digital Advisorの情報を確認してください。
+BlueXP ransomware protectionは、NetApp Digital Advisorからクラスタに関連する高および重大なセキュリティリスクに関する情報を収集するようになりました。リスクが見つかった場合、BlueXP ransomware protectionはダッシュボードの*推奨アクション*ペインに推奨事項を表示します：「クラスタ上の既知のセキュリティ脆弱性を修正する<name>。」ダッシュボードの推奨事項から*レビューして修正*を選択すると、セキュリティリスクを解決するためにDigital AdvisorとCommon Vulnerability & Exposure（CVE）記事を確認することが提案されます。複数のセキュリティリスクがある場合は、Digital Advisorで情報を確認してください。
 
 参照 https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisorのドキュメント"^]。
 

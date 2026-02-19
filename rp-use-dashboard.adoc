@@ -4,7 +4,7 @@ permalink: rp-use-dashboard.html
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack 
 summary: NetApp Ransomware Resilienceダッシュボードは、ワークロードの保護の健全性に関する情報を提供します。危険にさらされているワークロードや保護されているワークロード、インシデントの影響を受けているワークロードや回復中のワークロードを迅速に特定し、保護されているストレージや危険にさらされているストレージの量を確認して保護の範囲を評価できます。ダッシュボードを使用して、保護に関する推奨事項を確認し、それに従って対応することもできます。 
 ---
-= NetApp Ransomware Resilienceダッシュボードを使用してワークロードの健全性を監視する
+= NetApp Ransomware Resilienceでワークロードの健全性を監視する
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
