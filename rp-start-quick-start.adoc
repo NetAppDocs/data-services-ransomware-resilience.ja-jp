@@ -62,7 +62,7 @@ summary: わずか数ステップでNetApp Ransomware Resilienceを開始でき�
 Ransomware Resilience で保護を構成した後、次に実行できる操作は次のとおりです。
 
 [role="quick-margin-list"]
-* link:rp-use-protect-classify.html["データ分類を有効にしてガバナンスとセキュリティリスクを特定します"]
+* link:task-classify.html["データ分類を有効にしてガバナンスとセキュリティリスクを特定します"]
 * link:task-siem.html["SIEMにアラートを送信する"]
 * link:rp-use-reports.html["アラート、保護、準備訓練、回復、または概要レポートをダウンロードする"]
 

@@ -80,11 +80,11 @@ image:user-activity-agent.png["アクティビティ エージェントの追加
 
 === データコレクターを追加する
 
-疑わしいユーザー アクティビティの検出を含むランサムウェア保護戦略を有効にすると、データ コレクターが自動的に作成されます。詳細については、 xref:rp-use-protect.adoc#add-a-detection-policy-to-workloads-with-existing-snapshot-and-backup-policies-managed-by-snapcenter-or-backup-and-recovery[検出ポリシーを追加する]。
+疑わしいユーザー アクティビティの検出を含むランサムウェア保護戦略を有効にすると、データ コレクターが自動的に作成されます。詳細については、link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["検出ポリシーを追加する"]を参照してください。
 
 データコレクターの詳細を表示できます。[設定] から、[ユーザー アクティビティ] タイルの [**管理**] を選択します。**データ コレクター** タブを選択し、データ コレクターを選択して詳細を表示するか、一時停止します。
 
-image:user-activity-settings.png["ユーザーアクティビティ設定のスクリーンショット"]
+image:user-activity-settings.png["ユーザーアクティビティ設定のスクリーンショット。"]
 
 
 

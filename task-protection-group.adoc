@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task-protection-group 
+permalink: task-protection-group.html 
 keywords: ransomware protection, protection group, modify, create, 
 summary: NetApp Ransomware Resilienceでワークロードにポリシーを割り当てることで、ランサムウェア攻撃からワークロードを保護できます。 
 ---

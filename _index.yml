@@ -35,7 +35,7 @@ indexpage:
     - title: ワークロードを保護する
       url: "/rp-use-protect.html"
     - title: NetApp Data Classificationで個人を特定できる情報をスキャン
-      url: "/rp-use-protect-classify.html"
+      url: "/task-classify.html"
     - title: 検出されたアラートに応答する
       url: "/rp-use-alert.html"
     - title: 攻撃からの回復

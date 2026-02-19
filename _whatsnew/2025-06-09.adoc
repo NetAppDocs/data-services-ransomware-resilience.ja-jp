@@ -28,4 +28,4 @@ BlueXP ransomware protectionサービス内でBlueXP classificationを使用す�
 
 BlueXP ransomware protection内から、ファイル共有ワークロードにBlueXP classificationを展開できます。 *プライバシー露出*列で、*露出の特定*オプションを選択します。分類サービスを有効にしている場合、このアクションによって露出が識別されます。それ以外の場合、このリリースでは、ダイアログ ボックスにBlueXP classificationを展開するオプションが表示されます。 *デプロイ* を選択すると、 BlueXP classificationサービスのランディング ページに移動し、そのサービスをデプロイできます。W
 
-詳細については、 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["クラウドでBlueXP classificationを展開"^] BlueXP ransomware protection内でサービスを利用するには、 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect-classify.html["BlueXP classificationで個人を特定できる情報をスキャン"] 。
+詳細については、 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html["クラウドでBlueXP classificationを展開"^]を参照してください。BlueXP ransomware protection内でサービスを使用する方法については、 https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-classify.html["BlueXP classificationで個人を特定できる情報をスキャン"]を参照してください。

@@ -39,7 +39,7 @@ image:all-file-activity.png["すべてのファイルアクティビティビュ
 NetApp Ransomware Resilience の疑わしいユーザー行動アクティビティ検出には、3 つの主要コンポーネントがあります。
 
 * **ユーザーアクティビティエージェント**は、データコレクター用の実行可能環境です。ユーザーアクティビティエージェントを設定する必要があります。
-* **データコレクタ**は、ユーザーアクティビティイベントをRansomware Resilienceと共有します。データコレクタは、xref:rp-use-protect.adoc#add-a-detection-policy-to-workloads-with-existing-snapshot-and-backup-policies-managed-by-snapcenter-or-backup-and-recovery[疑わしいユーザアクティビティの検出によるランサムウェア保護戦略を有効化]ときに自動的に作成されます。
+* **データコレクタ**は、ユーザーアクティビティイベントをRansomware Resilienceと共有します。データコレクタは、link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["疑わしいユーザアクティビティの検出によるランサムウェア保護戦略を有効化"]ときに自動的に作成されます。
 * **ユーザーディレクトリコネクタ**を使用すると、ユーザー名とユーザーID間のマッピングが可能になり、疑わしいユーザーの行動への対応がより明確になります。ユーザーディレクトリコネクタを設定する必要があります。
 
 
