@@ -590,13 +590,10 @@
   <block id="899157335f0c98105a8cbc92966ba06d" category="admonition">アラートを無視すると、Ransomware Resilience はこの動作を学習し、通常の操作と関連付けて、再度アラートを開始しなくなります。</block>
   <block id="a8fd9e3988acb841854762788963d815" category="paragraph">データの復旧を開始するには、アラートを復旧準備完了としてマークし、ストレージ管理者が復旧プロセスを開始できるようにします。</block>
   <block id="304b86572af1a03e438d6a3b86bfad43" category="paragraph">各アラートには、さまざまなボリュームとステータスの複数のインシデントが含まれる場合があります。すべてのインシデントを確認します。</block>
-  <block id="214db9c71f4c0ba37c3d72c3460341e5" category="paragraph">Ransomware Resilience は、アラートが発行された原因に関する次のような証拠と呼ばれる情報を提供します。</block>
   <block id="271b5be554c7641bb10d05402276d05a" category="list-text">ファイル拡張子が作成または変更されました</block>
   <block id="ae12e4a2881496a3d2a890f09a21dbb7" category="list-text">検出されたレートと予想されるレートを比較したファイルの作成</block>
   <block id="00567bc010bd0fe366d33796dbc20cc4" category="list-text">検出された率と予想される率の比較によるファイル削除</block>
   <block id="7491606097f73ec9ee4cd8649e24e37b" category="list-text">暗号化レベルが高く、ファイル拡張子を変更しない場合</block>
-  <block id="c8922ede2258e352de90fce4498e586f" category="paragraph">アラートは次のいずれかに分類されます。</block>
-  <block id="c8e4786dc8495216a70ff4c4a2f04274" category="list-text">*潜在的な攻撃*: Autonomous Ransomware Protection が新しい拡張機能を検出し、その発生が過去 24 時間以内に 20 回以上繰り返された場合にアラートが発生します (デフォルトの動作)。</block>
   <block id="e881515eb95ff022b5c6fd323fe5a57a" category="list-text">*警告*: 次の動作に基づいて警告が発生します。</block>
   <block id="dfc56481bc0d4c0e37c0cc1e55fec278" category="list-text">新しい拡張機能の検出はこれまで確認されておらず、同じ動作が攻撃として宣言されるほど十分な回数繰り返されていません。</block>
   <block id="2c8035709ee020723e6bf59e526fe816" category="list-text">高いエントロピーが観測されます。</block>
@@ -604,15 +601,7 @@
   <block id="e96b2ea99a3be7415866a5df8f69cf6e" category="paragraph">証拠は、 ONTAPの Autonomous Ransomware Protection の情報に基づいています。詳細については、<block ref="9a25fd5e356132f930267232d70ad02b" category="inline-link-rx"></block> 。</block>
   <block id="64c00e9ea78abe412d8db56dd1df0462" category="paragraph">アラートのステータスは次のいずれかになります。</block>
   <block id="adf79604cd73ac69e1173c85b1070d09" category="list-text">*新しい*</block>
-  <block id="001af4b9160bf93cb0c3215a7180e3b7" category="list-text">*非アクティブ*</block>
-  <block id="be48871d3fcb22d62d5de71b2de11ab9" category="list-text">*新規*: すべてのインシデントは、最初に特定されたときに「新規」としてマークされます。</block>
-  <block id="d2b7a3286df55d9570e26ad7450dfeb9" category="list-text">*無視*: アクティビティがランサムウェア攻撃ではないと疑われる場合は、ステータスを「無視」に変更できます。</block>
-  <block id="abcc01ccddba81d6df2f14e786d4b375" category="list-text">*却下中*: インシデントは却下中です。</block>
-  <block id="135963592c039774ee41872c4fec1009" category="list-text">*解決済み*: インシデントは修正されました。</block>
-  <block id="afd9740574ba951a58c825da5cfeddb3" category="list-text">*自動解決*: 優先度の低いアラートの場合、5 日以内に何のアクションも取られなければ、インシデントは自動的に解決されます。</block>
-  <block id="0ab493fb9f14e4a6d1e67c75639156f3" category="admonition">設定ページで Ransomware Resilience にセキュリティおよびイベント管理システム (SIEM) を構成した場合、Ransomware Resilience はアラートの詳細を SIEM システムに送信します。</block>
   <block id="428c58ec1c2902ea6bff31e38cae88ff" category="section-title">アラートを表示</block>
-  <block id="12cc8340b05947bc26160f562979c312" category="paragraph">アラートには、ランサムウェア耐性ダッシュボードまたは「アラート」タブからアクセスできます。</block>
   <block id="d676f14418a66ee1ac07a8bb1f61d02f" category="list-text">ランサムウェア耐性ダッシュボードで、[アラート] ペインを確認します。</block>
   <block id="6f619b1b7d17720e868f27a6a00e82c3" category="list-text">いずれかのステータスの下にある*すべて表示*を選択します。</block>
   <block id="63afcf111af36e926f8c3a19c547e9ae" category="list-text">アラートを選択して、アラートごとに各ボリュームのすべてのインシデントを確認します。</block>
@@ -627,19 +616,16 @@
   <block id="9b317c5e8c93afadbc7755c407538945" category="section-title">アラートメールに返信する</block>
   <block id="def7f3eac7eed1dada5cdcd2951ede36" category="inline-link">メール通知設定を設定する</block>
   <block id="e66d9f5613065312cf1d46114b193ed7" category="list-text">メールを表示します。</block>
-  <block id="f40ae80cf7396576022afae759080cf1" category="list-text">メールで「アラートを表示」を選択し、Ransomware Resilience にログインします。</block>
   <block id="9d425c6001c325d2240cf2219c5c8111" category="paragraph">アラート ページが表示されます。</block>
   <block id="ebce9876dfa9cc6dfd0e7d91d6a4ff2e" category="list-text">各アラートについて、各ボリュームのすべてのインシデントを確認します。</block>
   <block id="be962bd392a7a1672125ea27465c8bd8" category="section-title">悪意のあるアクティビティや異常なユーザー行動を検出する</block>
   <block id="9d06719f2534c2ebd6c7bed1fd263123" category="paragraph">[アラート] タブを見ると、悪意のあるアクティビティや異常なユーザー動作があるかどうかを確認できます。</block>
   <block id="30cd6d23e33e657384daad5db666d56c" category="inline-link-macro">不審なユーザーアクティビティ</block>
   <block id="2654c9fc1ffd83d2d016920464872d91" category="section-title">悪意のあるアクティビティを表示する</block>
-  <block id="c0339a08bfb0fb26aa3ecea9980349b3" category="paragraph">Autonomous Ransomware Protection が Ransomware Resilience でアラートをトリガーすると、次の詳細を表示できます。</block>
   <block id="da00dfcf2d3126754537ccdf32df23fa" category="list-text">受信データのエントロピー</block>
   <block id="acbf3e1d9f15facfe81c7ba30574b98f" category="list-text">新規ファイルの予想作成率と検出率の比較</block>
   <block id="244cbe016f3894f8fdbc6c552b25b627" category="list-text">ファイルの予想削除率と検出率の比較</block>
   <block id="b53ebc948bfc1f79f472eb77a501f56d" category="list-text">検出された率と比較したファイルの予想される名前変更率</block>
-  <block id="627c9caf27de22ab63a8c85f8e162aeb" category="list-text">影響を受けるファイルとディレクトリ</block>
   <block id="f9a5e70d083b4b276ca27983e0da35c8" category="admonition">これらの詳細は、NAS ワークロードで表示できます。  SAN 環境では、エントロピー データのみが利用可能です。</block>
   <block id="8910b12ac8590ba4767a30b2ddc0d161" category="list-text">ランサムウェア耐性メニューから、「アラート」を選択します。</block>
   <block id="76449079e275babe381772ebc5fecd7e" category="list-text">アラートを選択します。</block>
@@ -1799,7 +1785,6 @@
   <block id="76adc55b5a0beb97a709fbc0c204a3d0" category="paragraph">コンソールエージェントの詳細については、以下を参照してください。<block ref="c97584494dd542160395e5c607ae4c2c" category="inline-link-macro-rx"></block> 。</block>
   <block id="be8cc003074f86f2bc2b3ef0d2f3a334" category="list-text">各ボリュームのNetAppスナップショット コピーとバックアップ ポリシーの現在の保護レベルと、オンボックス検出機能を検出します。ランサムウェア耐性は、バックアップとリカバリ、 ONTAPサービス、Autonomous Ransomware Protection ( ONTAP のバージョンに応じて ARP または ARP/AI)、FPolicy、バックアップ ポリシー、スナップショット ポリシーなどのNetAppテクノロジーを使用して、この保護態勢をワークロードに関連付けます。詳細はこちら<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-link-rx"></block>、<block ref="2b1b7f994c6938347657a18d8edc7db7" category="inline-link-rx"></block> 、 そして<block ref="591ebe16737e602cc342b68e859c040e" category="inline-link-rx"></block>。</block>
   <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">NetApp Ransomware Resilienceのアラートを管理する</block>
-  <block id="9a51095678260d2a753174230dbe8a88" category="paragraph">NetApp Ransomware Resilience は、攻撃の可能性を検出すると、ダッシュボードと通知領域にアラートを表示します。Ransomware Resilience は直ちにスナップショットを作成します。ランサムウェア耐性の *アラート* タブで潜在的なリスクを確認します。</block>
   <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">アラート インシデントには、次の状態があります。</block>
   <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">インシデントを確認した後、そのインシデントが潜在的な攻撃であるかどうかを判断する必要があります。実際の脅威ではない場合は、無視できます。</block>
   <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">誤検知を無視するか、すぐにデータを回復することを決定できます。アラートを無視すると、Ransomware Resilience はこの動作を学習し、通常の操作と関連付けて、そのような動作に対して再度アラートを開始しなくなります。</block>
@@ -1901,8 +1886,6 @@
   <block id="9f1822f26663cadd0ea726defa3cca17" category="list-text">ダイアログで [**削除**] を選択して、除外リストからワークロードを削除することを確認します。</block>
   <block id="01e74a47d7af3692bf72faf95ffcd1a3" category="inline-image-macro">除外されたワークロードを正常に削除したスクリーンショット。</block>
   <block id="af77f82e6f94939c1b89727420b621ac" category="list-text">除外されたワークロード リストからワークロードが正常に削除されると、[除外されたワークロード] ページに成功メッセージが表示され、除外されたワークロードのリストにワークロードが表示されなくなります。アクションが失敗した場合はエラー メッセージが表示されるので、操作を再度実行してください。 <block ref="364f1d2f9b1485226ce83c7872b1bae0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="afc3fd7b02af578176e65700acd6709b" category="list-text">*レビュー中*: インシデントを評価中に、レビュー中としてマークすることができます。</block>
-  <block id="a6e3974f4227562b42dd3774682f3f56" category="admonition">攻撃を却下した後は、そのステータスを元に戻すことはできません。ワークロードを破棄すると、潜在的なランサムウェア攻撃に応じて自動的に作成されたすべてのスナップショット コピーが完全に削除されます。</block>
   <block id="b8b45f3c53a227dc5aa1d806ef340f06" category="list-text">**検出ポリシー** ランサムウェアの脅威を特定</block>
   <block id="68fc9b8869c6d23ecc7c4acaf4ef7761" category="list-text">**レプリケーション ポリシー** を使用すると、Ransomware Resilience からセカンダリ サイトにスナップショットをレプリケートできます。レプリケーション スケジュールは、時間ごと、日ごと、週ごと、または月ごとの頻度に設定できます。</block>
   <block id="3ed69b14426127876e3ab79ddc2e266e" category="paragraph">現在、スナップショットをレプリケートできるのはオンプレミスのONTAPストレージのみです。</block>
@@ -2046,7 +2029,6 @@
   <block id="af5eb4e584c938e9f8b3531d944e3a59" category="list-text">レプリケーションを使用したランサムウェア保護戦略は Azure NetApp Files ではサポートされていません。</block>
   <block id="1c312af1f49befaddd00883a617fa8ba" category="list-text">保護戦略を選択するときは、スナップショットスケジュールがAzure NetApp Filesと互換性があることを確認してください。Azure NetApp Filesで利用できる最も頻繁なスナップショットスケジュールは1時間ごとです。</block>
   <block id="e02189957b252d42e679aa66d35030cd" category="list-text"><block ref="e02189957b252d42e679aa66d35030cd" category="inline-link-macro-rx"></block></block>
-  <block id="bf1ffe0e445fb2a07fc3757d6ae841ec" category="list-text">環境内の疑わしいユーザーをブロックするには、ユーザー名の横にある*ブロック*を選択します。</block>
   <block id="0f20f1de24e002ee03e9a0d693faaf59" category="list-text">偽であるとわかっているアラートの対象となっている特定のユーザーに対するアラートを無効にするには、3つのドット<block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>を選択してから、**このユーザーを監視から除外**を選択します。ダイアログを確認し、**除外**を選択して確定します。</block>
   <block id="c65a69d50600a3f76ccdd1109d15b6e3" category="inline-link-macro">ユーザーを除外する</block>
   <block id="d632bf28d8164d0436ca05f069b989e9" category="admonition">ユーザーのアラートを再度有効にするには、アラートを返します。3 つのドットを選択し、**このユーザーを監視に含める** を選択します。また、<block ref="e33a84d4132808c30f0e6b091e9f7e88" category="inline-link-macro-rx"></block>監視から実行することもできます。</block>
@@ -2178,4 +2160,38 @@
   <block id="d3a17ab1969b7e28ae5324bee6d4cd54" category="paragraph">セキュリティおよびイベント管理システム（SIEM）は、ログとイベント データを一元管理して、セキュリティ イベントとコンプライアンスに関する分析情報を提供します。NetApp Ransomware Resilienceは、脅威の分析と検出を効率化するために、SIEMにデータを自動的に送信することをサポートします。</block>
   <block id="1054e7cee5045661c2dae3afe8f146e4" category="list-text">*Authenticate* を選択します。</block>
   <block id="3538785960373ea81ad23e72866e9266" category="sidebar">保護の確認</block>
+  <block id="9b792a24170d5651c572c72e1a0fcfc2" category="admonition">ユーザーアクティビティの検出は現在、SANワークロードではサポートされていません。Amazon FSxN for ONTAP、Cloud Volumes ONTAP、ONTAPのNASワークロードでユーザーアクティビティ検出を使用できます。</block>
+  <block id="6aef124ac144e3ae69ac50e0f114e548" category="paragraph">NetApp Ransomware Resilienceが攻撃の可能性を検出すると、ダッシュボードと通知領域に警告が表示されます。Ransomware Resilienceは直ちにスナップショットを作成します。アラートを受信した場合は、Ransomware Resilienceの*アラート*タブで潜在的なリスクを確認し、データへの影響を評価して、潜在的なランサムウェア攻撃を防止します。</block>
+  <block id="51f69bf6a11f3daca8752b8344ebc420" category="section-title">アラートの生成方法</block>
+  <block id="9e7bcb464844b7db89d979e9085bac76" category="paragraph">Ransomware Resilience は、データエントロピーパターン、ファイル拡張子の種類、暗号化に関する証拠に基づいてアラートを生成します。アラートは次のイベントに基づいています：</block>
+  <block id="fb7cc6e16ef254f2ff2f03b0ba6cadee" category="list-text">データ侵害</block>
+  <block id="147fa6a15cbb387b90cd75ccc34d8cfe" category="list-text">データ破壊</block>
+  <block id="9755e4a474d0024a8dcd40393e571716" category="list-text">疑わしいユーザー行動</block>
+  <block id="f94e6cd450a12c55223329be07d15575" category="inline-link-macro">ユーザーアクティビティ検出</block>
+  <block id="09e9060a723336e7b5657759fccb4bbf" category="admonition">データ侵害、データ破壊、疑わしいユーザー行動のアラートについては、<block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>を設定する必要があります。</block>
+  <block id="b413c7d063ce740207cbb531b68c46dc" category="section-title">アラートの種類とステータス</block>
+  <block id="1405a7e68c0a63e640869ddcfd6a3c37" category="paragraph">アラートには、*新規*または*非アクティブ*の 2 つのステータスのいずれかがあります。</block>
+  <block id="75a90d27a357c4859ab2e4e41a012d82" category="paragraph">アラートは次のいずれかのタイプに分類されます：</block>
+  <block id="bdb8ca0360b2fe066d05c9a1a048c735" category="list-text">*潜在的な攻撃*：次の場合、アラートは潜在的な攻撃として分類されます：</block>
+  <block id="f56291051fc1ed98942260fa2ee0eee0" category="list-text">Autonomous Ransomware Protectionが新しい拡張子を検出し、過去24時間に20回以上発生した場合（デフォルトの動作）。</block>
+  <block id="b235238ab28a3bf3f4659ca61246b1ba" category="list-text">データ侵害が検出されました。</block>
+  <block id="e97aedde568ba1309d7dee88757cc7a6" category="list-text">データ破壊が検出されました。</block>
+  <block id="30f96ff3a86b53c9339e0fcb0a5d4f56" category="section-title">アラート状態</block>
+  <block id="46a2a41cc6e552044816a2d04634545d" category="cell">都道府県</block>
+  <block id="4ba105e3c097cf6f2953389b3edb7afe" category="cell">すべてのインシデントは、最初に特定されたときに「新規」としてマークされます。</block>
+  <block id="583663d39289a91bdb2fc8a311ff5d43" category="cell">*レビュー中*</block>
+  <block id="2997572eb0d7e3b29462cc68181bc484" category="cell">アラートインシデントを評価するときに、手動で「レビュー中」としてマークすることができます。</block>
+  <block id="acb47975adbffbb55594bbed73e4b27d" category="cell">*却下*</block>
+  <block id="37d6f73d98a805a6d1c377464250b2f8" category="paragraph">アクティビティがランサムウェア攻撃ではないと疑われる場合は、ステータスを「dismissed」に変更できます。+ 注意：攻撃を却下した後は、そのステータスを元に戻すことはできません。ワークロードを却下すると、潜在的なランサムウェア攻撃に応じて自動的に作成されたすべてのSnapshotコピーが完全に削除されます。</block>
+  <block id="233759d6fff761018a2a5438302273e3" category="cell">*解決済み*</block>
+  <block id="5f7604fd39c6c6a677a542c60aafd5b4" category="cell">インシデントは修正されました。</block>
+  <block id="ec573101219f640c28052674265d7465" category="cell">*自動解決済み*</block>
+  <block id="06dc51fc99ed3c0d2a4c44ba607b2290" category="cell">優先度の低いアラートの場合、5日以内に何のアクションも取られなければ、インシデントは自動的に解決されます。</block>
+  <block id="f6cf985a5665cb78843065d12f8d1651" category="paragraph">アラートには、Ransomware Resilienceダッシュボードまたは*アラート*タブからアクセスできます。</block>
+  <block id="4cd7c3f63e9693e91004f9e55b4eb0ce" category="list-text">メールで*アラートを表示*を選択し、Ransomware Resilienceにログインします。</block>
+  <block id="f8e5b2d689322950f1d346b22381d36c" category="paragraph">Autonomous Ransomware Protection が NetApp Ransomware Resilience でアラートをトリガーすると、次の詳細を表示できます：</block>
+  <block id="7f41a371ba4e549119e44e211d1b4d72" category="list-text">アラートがトリガーされたとき</block>
+  <block id="378c9aa27d38e9ec5b0fbf34bcb8febc" category="list-text">アクセスが変更または拒否された場合</block>
+  <block id="49408f5917e16f5795da1781a7748aa5" category="list-text">影響を受けるワークロード、ボリューム、ファイル、ディレクトリ</block>
+  <block id="a6bd7f80fc17cbb8e58e8dca754bf710" category="list-text">環境内の疑わしいユーザーをブロックするには、ユーザー名の横にある*ブロック*を選択します。</block>
 </blocks>

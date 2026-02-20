@@ -21,6 +21,9 @@ NetApp Ransomware Resilience は、疑わしいユーザーアクティビティ
 Ransomware Resilience は、 ONTAPの FPolicy によって生成されたユーザー アクティビティ イベントを分析して、疑わしいユーザー アクティビティを検出します。ユーザー アクティビティ データを収集するには、1 つ以上のユーザー アクティビティ エージェントを展開する必要があります。エージェントは、テナント上のデバイスに接続できる Linux サーバーまたは VM です。
 
 
+IMPORTANT: ユーザーアクティビティの検出は現在、SANワークロードではサポートされていません。Amazon FSxN for ONTAP、Cloud Volumes ONTAP、ONTAPのNASワークロードでユーザーアクティビティ検出を使用できます。
+
+
 
 == 疑わしいユーザーアクティビティのフォレンジック
 
