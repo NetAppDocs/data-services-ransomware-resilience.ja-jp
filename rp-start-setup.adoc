@@ -26,7 +26,7 @@ NetApp Ransomware Resilience を簡単に導入できます。始める前に、
 * Microsoft Azure
 
 
-バックアップ先自体でオプションを構成した後、後で Ransomware Resilience でバックアップ先として構成します。ランサムウェア耐性におけるバックアップ先の設定方法の詳細については、以下を参照してください。link:rp-use-settings.html["バックアップ先を設定する"] 。
+バックアップ先自体でオプションを構成した後、後でNetApp Ransomware Resilienceでバックアップ先として構成します。NetApp Ransomware Resilienceにおけるバックアップ先の設定方法の詳細については、link:task-backup-destination.html["バックアップ先を設定する"]を参照してください。
 
 
 

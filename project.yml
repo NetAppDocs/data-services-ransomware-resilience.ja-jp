@@ -30,44 +30,46 @@ sidebar:
       url: "/rp-start-quick-start.html"
     - title: ランサムウェア耐性を設定する
       url: "/rp-start-setup.html"
-    - title: ランサムウェア耐性にアクセス
-      url: "/rp-start-login.html"
     - title: ライセンスの設定
       url: "/rp-start-licenses.html"
     - title: ワークロードを発見する
       url: "/rp-start-discover.html"
-    - title: ランサムウェア攻撃を準備訓練でシミュレートする
-      url: "/rp-start-simulate.html"
-    - title: 設定でバックアップ、脅威検出、攻撃シミュレーションを構成する
-      url: "/rp-use-settings.html"
-    - title: SIEMの設定
-      url: "/task-siem.html"
-    - title: ユーザーアクティビティ検出を設定する
-      entries:
-      - title: ユーザーアクティビティ検出について学ぶ
-        url: "/concept-user-behavior.html"
-      - title: ユーザーアクティビティ要件
-        url: "/reference-user-activity-requirements.html"
-      - title: エージェントとコレクターを設定する
-        url: "/suspicious-user-activity.html"
   - title: ランサムウェア耐性を活用する
     entries:
-    - title: ダッシュボードを使用してワークロードの健全性を表示する
+    - title: ランサムウェア耐性にアクセス
+      url: "/rp-start-login.html"
+    - title: ワークロードの健全性を表示する
       url: "/rp-use-dashboard.html"
-    - title: ワークロードを保護する
+    - title: 保護と検出
       entries:
       - title: 保護の確認
         url: "/task-review-protection.html"
-      - title: ランサムウェア対策戦略でワークロードを保護する
+      - title: バックアップ先を設定する
+        url: "/task-backup-destination.html"
+      - title: ワークロードを保護する
         url: "/rp-use-protect.html"
+      - title: ユーザーアクティビティ検出を設定する
+        entries:
+        - title: ユーザーアクティビティ検出について学ぶ
+          url: "/concept-user-behavior.html"
+        - title: ユーザアクティビティ検出要件
+          url: "/reference-user-activity-requirements.html"
+        - title: エージェントとコレクターを設定する
+          url: "/suspicious-user-activity.html"
       - title: 保護グループの管理
         url: "/task-protection-group.html"
       - title: 個人を特定できるデータをスキャンする
         url: "/task-classify.html"
-    - title: 検出されたアラートに応答する
-      url: "/rp-use-alert.html"
-    - title: ランサムウェア攻撃からの回復
-      url: "/rp-use-recover.html"
+    - title: 対応と回復
+      entries:
+      - title: 検出されたアラートに応答する
+        url: "/rp-use-alert.html"
+      - title: ランサムウェア攻撃からの回復
+        url: "/rp-use-recover.html"
+    - title: 準備訓練を実施する
+      url: "/rp-start-simulate.html"
+    - title: SIEMの設定
+      url: "/task-siem.html"
     - title: レポートをダウンロード
       url: "/rp-use-reports.html"
   - section: support

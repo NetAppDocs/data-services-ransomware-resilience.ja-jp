@@ -14,28 +14,24 @@ indexpage:
     links:
     - title: ランサムウェア耐性について学ぶ
       url: "/concept-ransomware-resilience.html"
+    - title: ユーザーアクティビティ検出について学ぶ
+      url: "/concept-user-behavior.html"
     - title: ランサムウェア耐性の新機能
       url: "/whats-new.html"
     - title: 前提条件
       url: "/rp-start-prerequisites.html"
     - title: クイック スタート
       url: "/rp-start-quick-start.html"
-    - title: バックアップ先を設定し、脅威検出を有効にする
-      url: "/rp-use-settings.html"
-    - title: ランサムウェア攻撃をシミュレートする
-      url: "/rp-start-simulate.html"
-    - title: 不審なユーザーアクティビティの検出を設定する
-      url: "/suspicious-user-activity.html"
   - title: ランサムウェア耐性を活用する
     links:
     - title: ワークロードを発見する
       url: "/rp-start-discover.html"
-    - title: ダッシュボードを使用してワークロードの健全性を表示する
+    - title: ワークロードの健全性を表示する
       url: "/rp-use-dashboard.html"
     - title: ワークロードを保護する
       url: "/rp-use-protect.html"
-    - title: NetApp Data Classificationで個人を特定できる情報をスキャン
-      url: "/task-classify.html"
+    - title: 不審なユーザーアクティビティの検出を設定する
+      url: "/suspicious-user-activity.html"
     - title: 検出されたアラートに応答する
       url: "/rp-use-alert.html"
     - title: 攻撃からの回復

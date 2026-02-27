@@ -102,7 +102,7 @@ NOTE: 管理者以外の認証情報を使用してONTAPクラスターをコン
 
 * システムでNetApp Backup and Recovery を有効にする必要はありません。
 +
-Ransomware Resilience は、設定オプションを通じてバックアップの保存先を構成するのに役立ちます。見るlink:rp-use-settings.html["設定を構成する"] 。
+Ransomware Resilience は、設定オプションを通じてバックアップ先を構成するのに役立ちます。link:task-backup-destination.html["バックアップ先を追加する"]を参照してください。
 
 
 

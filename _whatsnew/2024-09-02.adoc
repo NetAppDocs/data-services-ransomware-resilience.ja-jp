@@ -16,7 +16,7 @@ BlueXP ransomware protectionは、NetApp Digital Advisorからクラスタに関
 
 このリリースでは、バックアップ先を Google Cloud Platform バケットに設定できます。以前は、バックアップ先を追加できるのはNetApp StorageGRID、Amazon Web Services、Microsoft Azure のみでした。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["BlueXP ransomware protection設定の構成について詳しくは、こちらをご覧ください。"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["BlueXP ransomware protection設定の構成について詳しくは、こちらをご覧ください。"]。
 
 
 

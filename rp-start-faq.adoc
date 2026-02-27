@@ -120,7 +120,7 @@ SnapCenterまたはSnapCenter for VMware があり、バックアップとリカ
 ランサムウェア耐性戦略では、バックアップ ポリシーは必要ありません。
 
 .Ransomware Resilience はONTAPの保護設定を認識しますか?
-はい、Ransomware Resilience はONTAPで設定されたスナップショット スケジュールを検出します。また、検出されたワークロード内のすべてのボリュームで ARP と FPolicy が有効になっているかどうかも検出します。ランサムウェア耐性ダッシュボードに表示される情報は、他のNetAppソリューションおよび製品から集約されたものです。
+はい、Ransomware Resilienceは、ONTAPで設定されたスナップショットスケジュールを検出します。また、検出されたワークロード内のすべてのボリュームでARPとFPolicyが有効になっているかどうかも検出します。Ransomware Resilienceダッシュボードに表示される情報は、他のNetAppソリューションと製品から集約されたものです。
 
 .Ransomware Resilience は、バックアップとリカバリおよびSnapCenterですでに作成されているポリシーを認識しますか?
 はい、Backup and Recovery またはSnapCenterで管理されているワークロードがある場合、それらの製品によって管理されているポリシーは Ransomware Resilience に取り込まれます。

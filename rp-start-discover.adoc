@@ -4,7 +4,7 @@ permalink: rp-start-discover.html
 keywords: bluexp, ransomware protection, protection, risk, cyber attack, security,data security, data protection, data recovery, data discovery 
 summary: 検出中に、Ransomware Resilience はすべてのコンソール エージェントとアカウントにわたるシステム内のすべてのボリュームとファイルを分析します。 
 ---
-= NetApp Ransomware Resilienceのワークロードを発見
+= NetApp Ransomware Resilienceでワークロードを検出および管理
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -66,7 +66,7 @@ Ransomware Resilience は、システムを選択した場合にのみワーク�
 image:screen-dashboard.png["ランサムウェア耐性ダッシュボード"]
 
 +
-link:rp-use-dashboard.html["ダッシュボードに表示される内容について説明します。"]
+link:rp-use-dashboard.html["ダッシュボードに表示される内容を確認します。"]
 
 
 
@@ -78,7 +78,7 @@ link:rp-use-dashboard.html["ダッシュボードに表示される内容につ�
 
 .手順
 . 最後の検出時刻を特定するには、ランサムウェア耐性ダッシュボードの右上にある *更新* アイコンの横にある日付と時刻のスタンプを確認します。
-. ダッシュボードから「*更新*」アイコンを選択して、新しいワークロードを見つけます。
+. ダッシュボードから、*更新*アイコンを選択して新しいワークロードを検索します。
 
 
 
@@ -88,10 +88,10 @@ TIP: 検出したシステムにボリュームが表示されない場合は、
 
 == 新しいシステムを発見する
 
-すでにシステムを検出している場合は、新しいシステムや以前に選択しなかったシステムを見つけることができます。
+すでにワークロードを検出している場合は、新しいワークロードや以前に選択しなかったワークロードを見つけることができます。
 
 .手順
-. ランサムウェア耐性メニューから、垂直方向の 右上の「category='inline-code'/>」オプションをクリックします。ドロップダウンメニューから*設定*を選択します。
+. Ransomware Resilienceから、*Settings*を選択します。
 . ワークロード検出カードで、*ワークロードの検出*を選択します。検出には数分かかる場合があります。読み込みアイコンに進行状況が表示されます。
 . Ransomware Resilience は、サポートされているシステムとサポートされていないシステムの両方を検出します。ONTAPバージョンが必要なバージョンより低い場合、システムはサポートされません。サポートされていないシステムにマウスを移動すると、ツールチップに理由が表示されます。ワークロードを検出するシステムを選択します。
 . *Discover*を選択します。

@@ -449,7 +449,7 @@ BlueXP ransomware protectionは、NetApp Digital Advisorからクラスタに関
 
 このリリースでは、バックアップ先を Google Cloud Platform バケットに設定できます。以前は、バックアップ先を追加できるのはNetApp StorageGRID、Amazon Web Services、Microsoft Azure のみでした。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["BlueXP ransomware protection設定の構成について詳しくは、こちらをご覧ください。"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["BlueXP ransomware protection設定の構成について詳しくは、こちらをご覧ください。"]。
 
 
 
@@ -477,7 +477,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 脅威の分析と検出のために、データをセキュリティおよびイベント管理システム (SIEM) に自動的に送信できます。以前のリリースでは、SIEM として AWS Security Hub のみを選択できました。このリリースでは、SIEM として AWS Security Hub または Splunk Cloud を選択できるようになりました。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["BlueXP ransomware protection設定の構成について詳しくは、こちらをご覧ください。"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["BlueXP ransomware protection設定の構成について詳しくは、こちらをご覧ください。"]。
 
 
 
@@ -546,7 +546,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 AWS およびNetApp StorageGRIDに加えて、Microsoft Azure をバックアップ先として追加できるようになりました。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["保護設定を構成する方法について詳しくは、こちらをご覧ください。"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["保護設定を構成する方法について詳しくは、こちらをご覧ください。"]。
 
 
 
@@ -601,7 +601,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 サードパーティのセキュリティおよびイベント管理 (SIEM) システムを使用して、脅威検出を有効にできるようになりました。ダッシュボードには、「脅威検出を有効にする」という新しい推奨事項が表示されるようになりました。これは設定ページで構成できます。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["設定オプションの構成について詳しくは"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["設定オプションの構成について詳しくは"]。
 
 
 
@@ -637,7 +637,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports
 
 === BlueXP backup and recovery
 
-BlueXP backup and recoveryサービスをシステムで有効にしておく必要がなくなりました。見るlink:rp-start-prerequisites.html["前提条件"] 。 BlueXP ransomware protectionサービスは、設定オプションを通じてバックアップの保存先を構成するのに役立ちます。見るlink:rp-use-settings.html["設定を構成する"] 。
+BlueXPバックアップおよびリカバリサービスをシステム上で有効にしておく必要がなくなりました。link:rp-start-prerequisites.html["前提条件"]を参照してください。BlueXPランサムウェア保護サービスは、設定オプションを通じてバックアップ先を構成するのに役立ちます。link:task-backup-destination.html["設定を構成する"]を参照してください。
 
 
 
@@ -645,7 +645,7 @@ BlueXP backup and recoveryサービスをシステムで有効にしておく必
 
 BlueXP ransomware protection設定でバックアップ先を設定できるようになりました。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["設定オプションの構成について詳しくは"] 。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["設定オプションの構成について詳しくは"]。
 
 
 
@@ -667,7 +667,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-setting
 
 === NetApp StorageGRIDへの自動バックアップ
 
-AWS の使用に加えて、バックアップ先としてStorageGRID を選択できるようになりました。 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html["バックアップ先の設定について詳しくは"] 。
+AWSの使用に加えて、StorageGRIDをバックアップ先として選択できるようになりました https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["バックアップ先の設定について詳しくは"]。
 
 
 
