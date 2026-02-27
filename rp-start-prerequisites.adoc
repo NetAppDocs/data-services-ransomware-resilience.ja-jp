@@ -35,19 +35,19 @@ NetApp Ransomware Resilienceの導入を確実に成功させるには、運用�
 .2+| Cloud Volumes ONTAP for AWS | CIFSとNFS | 9.11.1以降 
 
 
-| SAN（FC、iSCSI、NVMe） | 9.17.1以降 
+| SAN（iSCSI および NVMe） | 9.17.1以降 
 
 
 .2+| Google Cloud Platform 向けCloud Volumes ONTAP | CIFSとNFS | 9.11.1以降 
 
 
-| SAN（FC、iSCSI、NVMe） | 9.17.1以降 
+| SAN（iSCSI および NVMe） | 9.17.1以降 
 
 
 .2+| Microsoft Azure 向けCloud Volumes ONTAP | CIFSとNFS | 9.12.1以降 
 
 
-| SAN（FC、iSCSI、NVMe） | 9.17.1以降 
+| SAN（iSCSI および NVMe） | 9.17.1以降 
 
 
 .2+| ONTAP （オンプレミス） | CIFSとNFS | 9.11.1以降 
@@ -66,7 +66,7 @@ NetApp Consoleの構成には次のものが必要です。
 * リソースを検出するための組織管理者権限を持つNetApp Consoleユーザー アカウント。
 * 少なくとも1つのアクティブなコンソールエージェントが接続しているコンソール組織とシステムlink:concept-ransomware-resilience.html#supported-backup-targets-systems-and-workload-data-sources["サポートされているシステム"]。
 +
-** オンプレミスのONTAPクラスタまたはAWSまたはAzureクラウドのCloud Volumes ONTAPがコンソールで設定されていない場合は、link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html["コンソールエージェントの設定方法を学ぶ"^]そしてlink:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["標準コンソール要件"^]。
+** オンプレミス ONTAP クラスタまたは Cloud Volumes ONTAP システムが NetApp Console で設定されていない場合は、link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html["コンソールエージェントの設定方法を学ぶ"^]およびlink:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["標準コンソール要件"^]を参照してください。
 +
 
 NOTE: 単一のコンソール組織に複数のコンソール エージェントがある場合、Ransomware Resilience は、コンソール UI で現在選択されているエージェント以外のすべてのコンソール エージェントにわたってONTAPリソースをスキャンします。
@@ -74,14 +74,10 @@ NOTE: 単一のコンソール組織に複数のコンソール エージェン�
 
 
 * コンソールエージェントには、 `cloudmanager-ransomware-protection`アクティブな状態のコンテナ。
-* NetAppオンプレミスONTAPクラスターまたは AWS または Azure のCloud Volumes ONTAP を備えた少なくとも 1 つのコンソール システム。  Ransomware Resilience は、NAS (NFS および SMB) と SAN (iSCSI、FC、NVMe) の両方のプロトコルをサポートします。
-+
-** ランサムウェア耐性は、 ONTAPバージョン 9.11.1 以降のONTAPまたはCloud Volumes ONTAPクラスターでサポートされます。
+* ONTAP または Cloud Volumes ONTAP クラスタの場合、Ransomware Resilience には ONTAP バージョン 9.11.1 以降が必要です。
 +
 
 NOTE: SAN ワークロードで Ransomware Resilience を使用するには、 ONTAP 9.17.1 以降を実行している必要があります。
-
-
 
 
 

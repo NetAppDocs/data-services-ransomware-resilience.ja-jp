@@ -15,19 +15,19 @@
 .2+| Cloud Volumes ONTAP for AWS | CIFSとNFS | 9.11.1以降 
 
 
-| SAN（FC、iSCSI、NVMe） | 9.17.1以降 
+| SAN（iSCSI および NVMe） | 9.17.1以降 
 
 
 .2+| Google Cloud Platform 向けCloud Volumes ONTAP | CIFSとNFS | 9.11.1以降 
 
 
-| SAN（FC、iSCSI、NVMe） | 9.17.1以降 
+| SAN（iSCSI および NVMe） | 9.17.1以降 
 
 
 .2+| Microsoft Azure 向けCloud Volumes ONTAP | CIFSとNFS | 9.12.1以降 
 
 
-| SAN（FC、iSCSI、NVMe） | 9.17.1以降 
+| SAN（iSCSI および NVMe） | 9.17.1以降 
 
 
 .2+| ONTAP （オンプレミス） | CIFSとNFS | 9.11.1以降 
