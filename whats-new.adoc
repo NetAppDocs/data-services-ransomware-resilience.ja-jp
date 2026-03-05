@@ -190,7 +190,7 @@ IMPORTANT: 新しいlink:#new-user-roles-for-data-breach-detection["ランサム
 
 === ワークロード保護の改善
 
-このリリースでは、 SnapCenterやBlueXP backup and recoveryなどの他のNetAppツールからのスナップショットおよびバックアップ ポリシーを使用したワークロードの構成プロセスが改善されています。以前のリリースでは、 BlueXP ransomware protectionは他のツールからのポリシーを検出し、検出ポリシーの変更のみが可能でした。このリリースでは、スナップショットおよびバックアップ ポリシーをBlueXP ransomware protectionポリシーに置き換えたり、他のツールのポリシーを引き続き使用したりできるようになりました。
+このリリースでは、NetAppの他のツール（BlueXPバックアップとリカバリなど）のスナップショットポリシーやバックアップポリシーを使用したワークロードの設定プロセスが改善されました。以前のリリースでは、BlueXPランサムウェア対策は他のツールからのポリシーを検出し、検出ポリシーの変更のみを許可していました。このリリースでは、スナップショットポリシーとバックアップポリシーをBlueXPランサムウェア対策ポリシーに置き換えるか、他のツールのポリシーを引き続き使用できるようになりました。
 
 詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["ワークロードを保護する"] 。
 
@@ -573,14 +573,6 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licen
 このリリースでは、保護ページやその他のページのワークロード情報にさらに詳しい情報が提供され、ワークロード保護の評価が改善されました。ワークロードの詳細から、現在割り当てられているポリシーを確認し、構成されているバックアップ先を確認できます。
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["保護ページでワークロードの詳細を表示する方法の詳細"] 。
-
-
-
-=== アプリケーション整合性とVM整合性の保護とリカバリ
-
-NetApp SnapCenterソフトウェアによるアプリケーション整合性のある保護と、 SnapCenter Plug-in for VMware vSphereによる VM 整合性のある保護を実行できるようになりました。これにより、静止状態と整合性のある状態が実現され、後でリカバリが必要になった場合にデータ損失の可能性を回避できます。回復が必要な場合は、アプリケーションまたは VM を以前の任意の状態に復元できます。
-
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["ワークロードの保護について詳しく見る"] 。
 
 
 
