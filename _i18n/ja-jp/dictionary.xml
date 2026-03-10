@@ -1893,7 +1893,6 @@
   <block id="691a3e8e2059e924160a8104310f552d" category="paragraph">ランサムウェア耐性は、スナップショットのレプリケーションをセカンダリONTAPサイトに追加できるようになりました。レプリケーションポリシーを使用する保護グループを使用すると、ワークロードごとに同じ宛先または異なる宛先にレプリケートできます。レプリケーションを含むランサムウェア保護戦略を作成することも、定義済みの戦略を使用することもできます。</block>
   <block id="17dfbc312023bdd4da992d8e751e72ac" category="doc">Azure NetApp Files サポート</block>
   <block id="ea2f778dfb597a4b527dac7e944ad95b" category="paragraph">Ransomware Resilienceは、Azure NetApp Filesシステムをサポートするようになり、Azure NetApp Filesでランサムウェアの脅威を効率的に検出して対応できるようになりました。ワークロードを検出すると、Ransomware ResilienceはAzure NetApp Filesを表示し、保護ダッシュボードに表示します。Azure NetApp FilesのRansomware Resilienceサポートには、スナップショットのみを使用した検出および保護戦略が含まれます。Azure NetApp Filesのサポートは現在プレビュー段階です。</block>
-  <block id="5e0e68da0b873ce6ac5da97de07de426" category="paragraph">詳細については、<block ref="d50b16a5274f0acc6be171c51d532ef9" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="533173be617e8e70b39c22d6b639f1ef" category="section-title">ユーザー行動アラートからユーザーを除外する</block>
   <block id="34db265ea1c563cd1e8fec4196fdd55a" category="paragraph">NetApp Ransomware Resilienceにより、ユーザー行動アラートから特定のユーザーを除外できるようになりました。信頼できるユーザーを除外すると、誤検知や不要なアラートを防ぐことができます。</block>
   <block id="0801620ca1af462c0fd534ad95bfa3b0" category="inline-link-macro">アラートからユーザーを除外する</block>
@@ -1920,8 +1919,6 @@
   <block id="82694a5fa079406313056daf01f9118b" category="list-text">**除外ユーザー**タブを選択します。</block>
   <block id="de13c27fd58614b060a46c2092ed0545" category="list-text">UI で個々のユーザーを確認するには、**手動で選択**を選択します。除外されたユーザーのリストをアップロードするには、**アップロード**を選択します。</block>
   <block id="9dd5e919daf597022ca9ace5ebd739e9" category="list-text">**手動で選択**を選択した場合は、除外する特定のユーザーの名前の横にあるチェックボックスをオンにします。</block>
-  <block id="d2b1df006cba7f480a48064be15b71ec" category="list-text">**アップロード** を選択した場合は、まずすべてのユーザーのリストが含まれる CSV ファイルをダウンロードする必要があります。リストにアクセスするには、**ダウンロード** を選択します。</block>
-  <block id="f44e20ff3f0d285a050e5f4e9dc1267f" category="paragraph">CSV ファイルを確認します。検出を維持するすべてのユーザーの名前を削除します。検出から除外するユーザーの名前のみがリストに含まれたら、保存します。**アップロード**を選択してファイルを見つけ、選択します。</block>
   <block id="8641c2055d546da7c2e15e6d18bc9016" category="list-text">除外リストへのユーザーの追加を完了するには、**[追加]** を選択します。</block>
   <block id="98e062a77fcb05260f463a017f171f72" category="list-text">**除外ユーザー**タブでは、ユーザー行動検出アラートから削除されたユーザーの名前がダッシュボードに表示されるようになりました。</block>
   <block id="bf7da00a56585a6a89ff8f8184dfd6fd" category="inline-link-macro">ランサムウェアの警告に応答する</block>
@@ -1931,7 +1928,6 @@
   <block id="144c603fbbde0985023a4ea73e22e35b" category="list-text">除外ユーザーの選択から削除するユーザーの名前を見つけます。ユーザー名の行にあるアクションメニュー（<block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>）を選択し、**削除**を選択します。</block>
   <block id="581c5c550f20f231f6c9e881e699829b" category="list-text">ダイアログで、**削除**を選択して、選択したユーザーを削除することを確認します。</block>
   <block id="90c78a95b0a3dffc0aa664d3139d1369" category="summary">NetApp Ransomware Resilienceから脅威の分析と検出のために、セキュリティおよびイベント管理システム（SIEM）にデータを自動的に送信できます。</block>
-  <block id="2e83d7690079c133e11ad37c5e4ff93e" category="doc">NetApp Ransomware Resilienceをセキュリティおよびイベント管理システム（SIEM）に接続し、脅威の分析と検出を行う</block>
   <block id="7be8ef49fa437b6a669fb54a081312c4" category="paragraph">NetApp Ransomware Resilience は次の SIEM をサポートしています：</block>
   <block id="03883d80013dc0b2b972eccd5b93b56f" category="list-text">AWS Security Hub</block>
   <block id="11759e65f10609550e1a85679db960a9" category="list-text">Microsoft Sentinel</block>
@@ -2025,7 +2021,6 @@
   <block id="5ca3c8d5b41265fc9239c63ce669af8e" category="list-text"><block ref="5ca3c8d5b41265fc9239c63ce669af8e" category="inline-link-macro-rx"></block></block>
   <block id="a328de7375b1a392aaa6da8ac6a9c525" category="list-text"><block ref="a328de7375b1a392aaa6da8ac6a9c525" category="inline-link-macro-rx"></block></block>
   <block id="3e16604d2667be9816f6bfb6ba4f70f1" category="list-text"><block ref="3e16604d2667be9816f6bfb6ba4f70f1" category="inline-link-macro-rx"></block></block>
-  <block id="d3a17ab1969b7e28ae5324bee6d4cd54" category="paragraph">セキュリティおよびイベント管理システム（SIEM）は、ログとイベント データを一元管理して、セキュリティ イベントとコンプライアンスに関する分析情報を提供します。NetApp Ransomware Resilienceは、脅威の分析と検出を効率化するために、SIEMにデータを自動的に送信することをサポートします。</block>
   <block id="1054e7cee5045661c2dae3afe8f146e4" category="list-text">*Authenticate* を選択します。</block>
   <block id="3538785960373ea81ad23e72866e9266" category="sidebar">保護の確認</block>
   <block id="9b792a24170d5651c572c72e1a0fcfc2" category="admonition">ユーザーアクティビティの検出は現在、SANワークロードではサポートされていません。Amazon FSxN for ONTAP、Cloud Volumes ONTAP、ONTAPのNASワークロードでユーザーアクティビティ検出を使用できます。</block>
@@ -2157,4 +2152,19 @@
   <block id="65f1f74c15350fb3342360320ff8c717" category="section-title">2024年7月1日</block>
   <block id="c3084a9e2d458e9a14fb0606a505126d" category="section-title">2024年3月5日</block>
   <block id="ff1c2e86cdd326544983c6d6affd39a5" category="section-title">2023年10月6日</block>
+  <block id="d78202f5dede249577567c1012878352" category="paragraph">詳細については、<block ref="d50b16a5274f0acc6be171c51d532ef9" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="f1997d5dfd164e5a0380ec3b9fe07b89" category="doc">ユーザー行動アラートからユーザーを一括除外する</block>
+  <block id="4de429b8f1b2702e94fc5d32dd614fa1" category="paragraph">Ransomware Resilience では、既存の UI および CSV ベースのオプションに加えて、ユーザー行動アクティビティアラートから除外するユーザーの JSON リストのアップロードがサポートされるようになりました。</block>
+  <block id="0255e4883b8e158de2dac4173dac190a" category="paragraph">詳細については、<block ref="dfd47d5e016db97d5fa8c5e4a7bd25f8" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="5d8e3a83bb9b2062983b23dd93a1a59a" category="section-title">ユーザー行動アクティビティの強化</block>
+  <block id="fcd457ee097f566ef709e77f46015c87" category="paragraph">Ransomware Resilienceは、Eメールアラートを追加し、サポートされているSIEMイベントデータ（AWS Security Hub、Microsoft Sentinel、およびSplunk Cloud）にユーザー行動イベントを含めることで、ユーザー行動に関する洞察を改善しました。これらの機能強化により、セキュリティとコンプライアンスの監視に関するより正確な洞察が提供されます。</block>
+  <block id="5d8eeee45929294781013d6d152aae8a" category="inline-link-macro">NetApp Ransomware Resilienceを SIEMに接続</block>
+  <block id="ffe0756ca1f78d7e15e127b325f96178" category="paragraph">詳細については、<block ref="372c79e94d2824fc0323cc318a30717d" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="2aeee41e03e1ec5e48f7c1deb934b617" category="list-text">**Upload** を選択した場合は、すべてのユーザーのリストが含まれる CSV または JSON ファイルをダウンロードします。リストにアクセスするには、**Download** を選択します。</block>
+  <block id="e2616004bc9cf87f18910a512e2c2379" category="paragraph">ローカルマシンでファイルを確認します。検出を維持するすべてのユーザーの名前を削除します。検出から除外するユーザーの名前のみがリストに含まれたら、保存します。</block>
+  <block id="3e56f67eb69a3fdb139a993bc1606e4f" category="paragraph">Ransomware Resilienceで、**Upload**を選択します。ファイルを見つけてアップロードします。</block>
+  <block id="2a26cf4062a1ee4ec346c86574259847" category="list-text">UI から個々のユーザーを除外するには、**手動で選択**を選択します。</block>
+  <block id="fd117b89b92e15d359324da93300356b" category="doc">NetApp Ransomware ResilienceをSIEMに接続して脅威分析と検出を行う</block>
+  <block id="e02579eaf37afcb0e3837dd893799871" category="paragraph">セキュリティ情報およびイベント管理システム（SIEM）は、ログとイベントデータを一元管理して、セキュリティイベントとコンプライアンスに関する分析情報を提供します。NetApp Ransomware Resilienceは、脅威の分析と検出を効率化するために、SIEMにデータを自動的に送信することをサポートします。</block>
+  <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026年3月9日</block>
 </blocks>

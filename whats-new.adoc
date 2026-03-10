@@ -18,6 +18,26 @@ NetApp Ransomware Resilienceの新機能についてご確認ください。
 
 
 
+== 2026年3月9日
+
+
+
+=== ユーザー行動アラートからユーザーを一括除外する
+
+Ransomware Resilience では、既存の UI および CSV ベースのオプションに加えて、ユーザー行動アクティビティアラートから除外するユーザーの JSON リストのアップロードがサポートされるようになりました。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#exclude-users-from-alerts["アラートからユーザーを除外する"^]を参照してください。
+
+
+
+=== ユーザー行動アクティビティの強化
+
+Ransomware Resilienceは、Eメールアラートを追加し、サポートされているSIEMイベントデータ（AWS Security Hub、Microsoft Sentinel、およびSplunk Cloud）にユーザー行動イベントを含めることで、ユーザー行動に関する洞察を改善しました。これらの機能強化により、セキュリティとコンプライアンスの監視に関するより正確な洞察が提供されます。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html["NetApp Ransomware Resilienceを SIEMに接続"^]を参照してください。
+
+
+
 == 2026年2月16日
 
 
