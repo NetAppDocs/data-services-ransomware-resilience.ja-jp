@@ -2060,8 +2060,6 @@
   <block id="65072a668477cd315b4302df8afcce32" category="paragraph">NetApp Ransomware Resilienceは、ランサムウェア攻撃からデータを保護します。Ransomware Resilienceでは、Oracleのアプリケーションベースのワークロード、VMデータストア、NASストレージ（NFSおよびCIFSプロトコル）およびSANストレージ（FC、iSCSI、NVMeプロトコル）のファイル共有を保護できます。Ransomware Resilienceは、オンプレミスストレージのほか、Amazon Web Services向けCloud Volumes ONTAP、Google Cloud向けCloud Volumes ONTAP、Microsoft Azure向けCloud Volumes ONTAP、Azure NetApp Files、Amazon FSx for NetApp ONTAPがNetApp Console全体でサポートされています。Amazon Web Services、Google Cloud、Microsoft Azure、およびNetApp StorageGRIDにデータをバックアップできます。</block>
   <block id="8987946f77221ac2f7d1494a4fcae0a6" category="list-text">NetApp Console、プロジェクト、およびConsole エージェント全体で、NetAppオンプレミスNASおよびSANシステム内のアプリケーションベース、ファイル共有、またはVMware管理のワークロードを*識別*します。ワークロードを検出した後、Ransomware Resilienceはランサムウェア耐性を向上させる機会を特定します。</block>
   <block id="3b9c98c430c62cb3627db641468d7e64" category="list-text">ランサムウェア保護の態勢を評価し、わかりやすいダッシュボードに表示するとともに、保護を改善するための推奨事項を提供します。</block>
-  <block id="8ab218529be70765f2dbc68a1731ea6e" category="paragraph">ワークロードが保護対象として分類されると、購入した容量またはPayGoサブスクリプションにカウントされます。Ransomware Resilienceは、少なくとも1つのスナップショットまたはバックアップ ポリシーで検出ポリシーが有効になっている場合、ワークロードを保護対象として分類します。検出ポリシーで検出されたが、バックアップ ポリシーまたはスナップショット ポリシーがないワークロードは、危険であると分類されます。リスクのあるワークロードは、購入した容量にはカウントされません。</block>
-  <block id="89895786495ed60e80d759587b508469" category="paragraph">保護されたワークロードは、無料試用期間の終了後、購入した容量またはサブスクリプションに対してカウントされます。NetApp Ransomware Resilienceは、効率化前の保護されたワークロードに関連付けられたデータに対してGB単位で課金されます。</block>
   <block id="9bd1fe262c57584526c5184d4de31827" category="list-text">オンプレミス ONTAP クラスタまたは Cloud Volumes ONTAP システムが NetApp Console で設定されていない場合は、<block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block>および<block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="3eb45f3714606347a6ff182b822b69cc" category="list-text">ONTAP または Cloud Volumes ONTAP クラスタの場合、Ransomware Resilience には ONTAP バージョン 9.11.1 以降が必要です。</block>
   <block id="4b2c42068bb1431d3a8d94e9ca135659" category="paragraph"><block ref="187dbd743d444b65478d146e1c2c85f6" category="inline-link-rx"></block>。</block>
@@ -2167,4 +2165,9 @@
   <block id="fd117b89b92e15d359324da93300356b" category="doc">NetApp Ransomware ResilienceをSIEMに接続して脅威分析と検出を行う</block>
   <block id="e02579eaf37afcb0e3837dd893799871" category="paragraph">セキュリティ情報およびイベント管理システム（SIEM）は、ログとイベントデータを一元管理して、セキュリティイベントとコンプライアンスに関する分析情報を提供します。NetApp Ransomware Resilienceは、脅威の分析と検出を効率化するために、SIEMにデータを自動的に送信することをサポートします。</block>
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026年3月9日</block>
+  <block id="b4dfd6d471f025389f9c78ebe17c16ba" category="paragraph">ワークロードが保護されていると分類されると、購入した容量または PAYGO サブスクリプションに対してカウントされます。Ransomware Resilience は、少なくとも1つのスナップショットまたはバックアップ ポリシーで検出ポリシーが有効になっている場合、ワークロードを保護されていると分類します。検出ポリシーで検出されたが、バックアップ ポリシーまたはスナップショット ポリシーがないワークロードは、危険であると分類されます。リスクのあるワークロードは、購入した容量にはカウントされません。</block>
+  <block id="9b0a81f6fc494248483a10631a72dabe" category="paragraph">保護されたワークロードは、無料試用期間の終了後、購入した容量またはサブスクリプションに対してカウントされます。ランサムウェア耐性は、効率化前の保護されたワークロードに関連するデータ（ONTAPによって報告される）に対してGB単位で課金されます。</block>
+  <block id="1dba6347dc69b3be8eba699851eddc8f" category="paragraph-title">Ransomware Resilience の請求はどのように行われますか？</block>
+  <block id="6c1c5737355a8b30e87ad5d7c6da9553" category="inline-link-macro">ライセンスを更新する</block>
+  <block id="fb8e096a7050c588583ae61ddb846c94" category="admonition">ランサムウェア耐性保護ダッシュボードで保護されたデータのサイズを監視します。容量を追加するには、<block ref="0cb59e747afacc80ad7810dc5f26bca9" category="inline-link-macro-rx"></block>を参照してください。</block>
 </blocks>
