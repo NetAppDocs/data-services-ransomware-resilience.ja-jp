@@ -4,14 +4,16 @@ permalink: task-classify.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification 
 summary: NetApp Data Classificationを使用してデータのセキュリティとプライバシーのコンプライアンスを強化し、データに個人を特定できる情報や個人情報が含まれているかどうかを識別します。 
 ---
-= ランサムウェア耐性におけるNetApp Data Classificationで個人を特定できる情報をスキャン
+= NetApp Ransomware Resilienceで個人を特定できる情報をスキャンする
 :allow-uri-read: 
 
 
 [role="lead"]
-NetApp Ransomware Resilienceでは、 NetApp Data Classificationを使用して、ファイル共有ワークロード内のデータをスキャンおよび分類できます。データを分類すると、データセットに個人を特定できる情報 (PII) が含まれているかどうかを判断するのに役立ちますが、これによりセキュリティ リスクが増大する可能性があります。データ分類はNetApp Consoleのコア コンポーネントであり、追加費用なしで利用できます。
+NetApp Ransomware Resilience内で、NetApp Data Classificationを使用して、ファイル共有ワークロード内のデータをスキャンおよび分類できます。データを分類することで、データセットに個人を特定できる情報（PII）が含まれているかどうかを判断でき、セキュリティリスクが増大する可能性があります。
 
 link:https://docs.netapp.com/us-en/data-services-data-classification/["データ分類"^]AI 駆動型の自然言語処理を利用してコンテキスト データの分析と分類を行い、データに関する実用的な分析情報を提供することで、コンプライアンス要件への対応、セキュリティの脆弱性の検出、コストの最適化、移行の加速を実現します。
+
+Data Classificationは、NetApp Consoleの中核コンポーネントです。Data Classificationを使用するのにライセンスは必要ありません。設定によっては、Data Classificationを構成するとコストが発生する可能性がありますが、これはRansomware Resilienceによって請求されません。詳細については、link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html#cost["データ分類について学ぶ"^]を参照してください。
 
 
 TIP: このプロセスはワークロードの重要性に影響を与え、適切な保護が確保されるようにするのに役立ちます。

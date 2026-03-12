@@ -4,7 +4,7 @@ permalink: rp-use-recover.html
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA 
 summary: '攻撃後、 NetApp Ransomware Resilience はセカンダリ ストレージ上のバックアップ データがクリーンであることを確認し、実際の復旧ポイント (RPA) を推奨し、クラッシュ耐性のある復旧のためのワークフローを調整します。' 
 ---
-= NetApp Ransomware Resilienceでランサムウェア攻撃から回復 (インシデントが中和された後)
+= NetApp Ransomware Resilienceを使用してランサムウェア攻撃から回復する
 :hardbreaks:
 :allow-uri-read: 
 :icons: font

@@ -4,7 +4,7 @@ permalink: reference-user-activity-requirements.html
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, requirements, end points, operating systems, networking 
 summary: ユーザーアクティビティエージェントやその他のコレクターを作成する前に、概説されているオペレーティングシステム、サーバー、およびネットワークの要件を満たしていることを確認する必要があります。 
 ---
-= NetApp Ransomware Resilience におけるユーザー行動検出の要件
+= NetApp Ransomware Resilienceのユーザーアクティビティ検出要件
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
