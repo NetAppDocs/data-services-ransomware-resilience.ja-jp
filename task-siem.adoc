@@ -23,6 +23,9 @@ NetApp Ransomware Resilience は次の SIEM をサポートしています：
 Ransomware Resilience で SIEM を有効にする前に、SIEM システムを構成する必要があります。
 
 
+TIP: Ransomware Resilienceはlink:reference-soar.html["セキュリティオーケストレーション、自動化、および対応（SOAR）プレイブック"^]もサポートしています。
+
+
 
 == SIEMに送信されるイベントデータ
 
@@ -256,4 +259,11 @@ NOTE: 入力する情報は、選択した SIEM によって異なります。
 +
 設定ページに「接続済み」と表示されます。
 
+
+
+
+
+== 次の手順
+
+* link:reference-soar.html["SOARプレイブックを統合する"]
 
