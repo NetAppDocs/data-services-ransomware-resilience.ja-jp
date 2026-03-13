@@ -6,6 +6,6 @@
 
 === Microsoft SentinelおよびSplunk用のSOARプレイブック
 
-Ransomware Resilienceは、link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooksp["Microsoft Sentinel"^]およびlink:https://github.com/splunk-soar-connectors/netappransomwareresilience["Splunk"^]向けのセキュリティオーケストレーション、自動化、対応（SOAR）プレイブックを提供するようになりました。このプレイブックにより、脅威対応の管理が容易になり、タスクのテストや、スナップショットの作成やボリュームのオフライン化などの重要なランサムウェア対応作業が自動化されます。
+Ransomware Resilienceは、link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks["Microsoft Sentinel"^]およびlink:https://github.com/splunk-soar-connectors/netappransomwareresilience["Splunk"^]向けのセキュリティオーケストレーション、自動化、対応（SOAR）プレイブックを提供するようになりました。このプレイブックにより、脅威対応の管理が容易になり、タスクのテストや、スナップショットの作成やボリュームのオフライン化などの重要なランサムウェア対応作業が自動化されます。
 
 詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html["SOARプレイブックを統合する"^]を参照してください。

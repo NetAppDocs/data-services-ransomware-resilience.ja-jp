@@ -2174,7 +2174,6 @@
   <block id="1954c0eede9cec276e44236c76142770" category="paragraph">Data Classificationは、NetApp Consoleの中核コンポーネントです。Data Classificationを使用するのにライセンスは必要ありません。設定によっては、Data Classificationを構成するとコストが発生する可能性がありますが、これはRansomware Resilienceによって請求されません。詳細については、<block ref="c5cce5d1091349460847f69d486fd688" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="70c542a285cfdf5cc22587e58fc3fcbb" category="doc">Microsoft SentinelおよびSplunk用のSOARプレイブック</block>
   <block id="2f9304fe9b427489507405bef9a0bb9f" category="inline-link-macro">Splunk</block>
-  <block id="e0df5750183f59f1a681c84ab0a08458" category="paragraph">Ransomware Resilienceは、<block ref="353f990ad0de32e744a84d05e731dc96" category="inline-link-macro-rx"></block>および<block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block>向けのセキュリティオーケストレーション、自動化、対応（SOAR）プレイブックを提供するようになりました。このプレイブックにより、脅威対応の管理が容易になり、タスクのテストや、スナップショットの作成やボリュームのオフライン化などの重要なランサムウェア対応作業が自動化されます。</block>
   <block id="c75f115758f26a9b54a9d51601b66cf9" category="inline-link-macro">SOARプレイブックを統合する</block>
   <block id="b8b94feeaf531f391629f42d138991ba" category="paragraph">詳細については、<block ref="ea7002ba1a528c89bfc86119082f1178" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="e809d3cd971f3bd0702a07af10ed5b3f" category="summary">SOARプレイブックを統合して使用し、NetApp Ransomware Resilienceの脅威対応タスクを自動化します。</block>
@@ -2199,4 +2198,5 @@
   <block id="d8c1214f51ea9ce3d7b9e64dd8a16327" category="inline-link-macro">SOARプレイブックを統合する</block>
   <block id="450000aaa83625b4284af1b1791c4576" category="list-text"><block ref="450000aaa83625b4284af1b1791c4576" category="inline-link-macro-rx"></block></block>
   <block id="462a6e98fbd2a13cda63645b676477e3" category="section-title">2026年3月12日</block>
+  <block id="cb4ae29d8762239c8dfdfc76bdb65d37" category="paragraph">Ransomware Resilienceは、<block ref="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="inline-link-macro-rx"></block>および<block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block>向けのセキュリティオーケストレーション、自動化、対応（SOAR）プレイブックを提供するようになりました。このプレイブックにより、脅威対応の管理が容易になり、タスクのテストや、スナップショットの作成やボリュームのオフライン化などの重要なランサムウェア対応作業が自動化されます。</block>
 </blocks>
