@@ -2186,7 +2186,6 @@
   <block id="dbc85b383817f560c0d1b083f4449627" category="list-text">接続性をテストする</block>
   <block id="870d0fb8b0bf7879e6ada101131c6864" category="list-text">エンリッチメントジョブのステータスを確認する</block>
   <block id="5156f3fe3404db2816f53b4f01711a75" category="section-title">プレイブック</block>
-  <block id="0c7fbad5c54a3cc727fd8969a07d6ea4" category="paragraph">Ransomware ResilienceはMicrosoft SentinelとSplunkのプレイブックを提供します。セットアップの詳細については、それぞれのGitHubページを参照してください。</block>
   <block id="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="list-text"><block ref="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="inline-link-macro-rx"></block></block>
   <block id="4655146bfbabab7fd679c2d1ca7a8d15" category="list-text"><block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block></block>
   <block id="fcd13f38c6a87165a33577bfdd3654b4" category="inline-link-macro">Splunkbase</block>
@@ -2202,11 +2201,12 @@
   <block id="0a444369e66f3a256a69eec8c1934071" category="paragraph">サイジングを検討する際、ライセンス費用はアクティブ ファイル システムの論理容量に基づいて決定されます（つまり、スナップショットが消費する容量は含まれません）。</block>
   <block id="ed300adca180c1e33d800707367434a6" category="doc">Google SecOps向けSOARプレイブック</block>
   <block id="d6e96acd595d94a4f4fd9727f77f8f89" category="inline-link-macro">Google SecOps</block>
-  <block id="6e9577ca2ef4afc51475afb9c4855a58" category="paragraph">Ransomware Resilience では、<block ref="a0b16504c1687e5508c034346a32796a" category="inline-link-macro-rx"></block>のセキュリティオーケストレーション、自動化、およびレスポンス（SOAR）プレイブックを提供しています。このプレイブックにより、脅威対応管理が容易になり、タスクのテストや、スナップショットの作成、ボリュームのオフライン化といったランサムウェア対応の重要な作業を自動化できます。</block>
   <block id="d942356c034f7ad3c314a5fae7d11e1d" category="list-text"><block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block></block>
   <block id="1432a60da610bc1b6af09d6319597446" category="inline-link-macro">Azure NetApp Files の制限事項</block>
   <block id="7c227d7b6723bc5af92a1b877aae1bbe" category="admonition">Azure NetApp Files システムの場合は、SOAR で<block ref="a1a46b98c4974de0d0c21339035b1250" category="inline-link-macro-rx"></block>を確認してください。</block>
   <block id="895dff905f51ff367d108afbf6e634a7" category="inline-link-macro">SOARプレイブック</block>
-  <block id="fbaf8ef61cfa55e52a929ce171ffe013" category="list-text">Azure NetApp Files APIが自動操作をブロックするため、Azure NetApp Filesでサポートされている<block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block>を使用しないことを推奨します。</block>
   <block id="d8fdc2681cdec613a02ac551c44a6e8c" category="section-title">2026年3月31日</block>
+  <block id="d0c1ba6e120f697911d5bd92a51f0322" category="paragraph">Ransomware Resilienceは、<block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block>のセキュリティオーケストレーション、自動化、およびレスポンス（SOAR）プレイブックを提供しています。このプレイブックにより、脅威対応管理が容易になり、タスクやテストが自動化されるほか、スナップショットの作成やボリュームのオフライン化など、ランサムウェア対策に不可欠な作業がサポートされます。</block>
+  <block id="dce0959f50faa93a47d141f615365404" category="paragraph">Ransomware ResilienceはGoogle SecOps、Microsoft Sentinel、Splunk向けにプレイブックを提供しています。セットアップの詳細については、それぞれのGitHubページを確認してください。</block>
+  <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">Azure NetApp Files では、Azure NetApp Files API が自動操作をブロックするため、<block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block>を使用しないことをお勧めします。</block>
 </blocks>
