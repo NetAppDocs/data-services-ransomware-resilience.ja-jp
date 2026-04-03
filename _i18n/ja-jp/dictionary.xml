@@ -2158,7 +2158,6 @@
   <block id="fd117b89b92e15d359324da93300356b" category="doc">NetApp Ransomware ResilienceをSIEMに接続して脅威分析と検出を行う</block>
   <block id="e02579eaf37afcb0e3837dd893799871" category="paragraph">セキュリティ情報およびイベント管理システム（SIEM）は、ログとイベントデータを一元管理して、セキュリティイベントとコンプライアンスに関する分析情報を提供します。NetApp Ransomware Resilienceは、脅威の分析と検出を効率化するために、SIEMにデータを自動的に送信することをサポートします。</block>
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026年3月9日</block>
-  <block id="b4dfd6d471f025389f9c78ebe17c16ba" category="paragraph">ワークロードが保護されていると分類されると、購入した容量または PAYGO サブスクリプションに対してカウントされます。Ransomware Resilience は、少なくとも1つのスナップショットまたはバックアップ ポリシーで検出ポリシーが有効になっている場合、ワークロードを保護されていると分類します。検出ポリシーで検出されたが、バックアップ ポリシーまたはスナップショット ポリシーがないワークロードは、危険であると分類されます。リスクのあるワークロードは、購入した容量にはカウントされません。</block>
   <block id="9b0a81f6fc494248483a10631a72dabe" category="paragraph">保護されたワークロードは、無料試用期間の終了後、購入した容量またはサブスクリプションに対してカウントされます。ランサムウェア耐性は、効率化前の保護されたワークロードに関連するデータ（ONTAPによって報告される）に対してGB単位で課金されます。</block>
   <block id="1dba6347dc69b3be8eba699851eddc8f" category="paragraph-title">Ransomware Resilience の請求はどのように行われますか？</block>
   <block id="6c1c5737355a8b30e87ad5d7c6da9553" category="inline-link-macro">ライセンスを更新する</block>
@@ -2199,4 +2198,15 @@
   <block id="450000aaa83625b4284af1b1791c4576" category="list-text"><block ref="450000aaa83625b4284af1b1791c4576" category="inline-link-macro-rx"></block></block>
   <block id="462a6e98fbd2a13cda63645b676477e3" category="section-title">2026年3月12日</block>
   <block id="cb4ae29d8762239c8dfdfc76bdb65d37" category="paragraph">Ransomware Resilienceは、<block ref="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="inline-link-macro-rx"></block>および<block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block>向けのセキュリティオーケストレーション、自動化、対応（SOAR）プレイブックを提供するようになりました。このプレイブックにより、脅威対応の管理が容易になり、タスクのテストや、スナップショットの作成やボリュームのオフライン化などの重要なランサムウェア対応作業が自動化されます。</block>
+  <block id="7a62bbe1752bad34a2882c1488855472" category="paragraph">ワークロードが保護対象として分類されると、購入済みの容量または従量課金制のサブスクリプションに対してカウントされます。Ransomware Resilienceは、少なくとも1つのスナップショットまたはバックアップポリシーで検出ポリシーが有効になっている場合、ワークロードを保護されていると分類します。検出ポリシーによって検出されたワークロードのうち、バックアップポリシーやスナップショットポリシーが設定されていないワークロードは、リスクがあると分類されます。リスクのあるワークロードは、購入済みの容量にはカウントされません。</block>
+  <block id="0a444369e66f3a256a69eec8c1934071" category="paragraph">サイジングを検討する際、ライセンス費用はアクティブ ファイル システムの論理容量に基づいて決定されます（つまり、スナップショットが消費する容量は含まれません）。</block>
+  <block id="ed300adca180c1e33d800707367434a6" category="doc">Google SecOps向けSOARプレイブック</block>
+  <block id="d6e96acd595d94a4f4fd9727f77f8f89" category="inline-link-macro">Google SecOps</block>
+  <block id="6e9577ca2ef4afc51475afb9c4855a58" category="paragraph">Ransomware Resilience では、<block ref="a0b16504c1687e5508c034346a32796a" category="inline-link-macro-rx"></block>のセキュリティオーケストレーション、自動化、およびレスポンス（SOAR）プレイブックを提供しています。このプレイブックにより、脅威対応管理が容易になり、タスクのテストや、スナップショットの作成、ボリュームのオフライン化といったランサムウェア対応の重要な作業を自動化できます。</block>
+  <block id="d942356c034f7ad3c314a5fae7d11e1d" category="list-text"><block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block></block>
+  <block id="1432a60da610bc1b6af09d6319597446" category="inline-link-macro">Azure NetApp Files の制限事項</block>
+  <block id="7c227d7b6723bc5af92a1b877aae1bbe" category="admonition">Azure NetApp Files システムの場合は、SOAR で<block ref="a1a46b98c4974de0d0c21339035b1250" category="inline-link-macro-rx"></block>を確認してください。</block>
+  <block id="895dff905f51ff367d108afbf6e634a7" category="inline-link-macro">SOARプレイブック</block>
+  <block id="fbaf8ef61cfa55e52a929ce171ffe013" category="list-text">Azure NetApp Files APIが自動操作をブロックするため、Azure NetApp Filesでサポートされている<block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block>を使用しないことを推奨します。</block>
+  <block id="d8fdc2681cdec613a02ac551c44a6e8c" category="section-title">2026年3月31日</block>
 </blocks>

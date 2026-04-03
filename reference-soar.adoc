@@ -29,12 +29,16 @@ Ransomware Resilienceプレイブックは、次の機能を提供します：
 
 Ransomware ResilienceはMicrosoft SentinelとSplunkのプレイブックを提供します。セットアップの詳細については、それぞれのGitHubページを参照してください。
 
+* link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresilience["Google SecOps"^]
 * link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks["Microsoft Sentinel"^]
 * link:https://github.com/splunk-soar-connectors/netappransomwareresilience["Splunk"^]
 
 
 
 NOTE: Splunk Cloud では、プラットフォーム バージョン 7.0、7.1、7.2、8.0、または 8.4 を実行している必要があります。詳細については、link:https://splunkbase.splunk.com/app/8483["Splunkbase"^]を参照してください。
+
+
+NOTE: Azure NetApp Files システムの場合は、SOAR でlink:rp-reference-limitations.html["Azure NetApp Files の制限事項"]を確認してください。
 
 
 

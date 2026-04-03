@@ -18,6 +18,18 @@ NetApp Ransomware Resilienceの新機能についてご確認ください。
 
 
 
+== 2026年3月31日
+
+
+
+=== Google SecOps向けSOARプレイブック
+
+Ransomware Resilience では、link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresiliences["Google SecOps"^]のセキュリティオーケストレーション、自動化、およびレスポンス（SOAR）プレイブックを提供しています。このプレイブックにより、脅威対応管理が容易になり、タスクのテストや、スナップショットの作成、ボリュームのオフライン化といったランサムウェア対応の重要な作業を自動化できます。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html["SOARプレイブックを統合する"^]を参照してください。
+
+
+
 == 2026年3月12日
 
 
