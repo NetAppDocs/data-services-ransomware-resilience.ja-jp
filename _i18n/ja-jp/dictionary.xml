@@ -498,7 +498,6 @@
   <block id="6c66a8a541d348bc3f3a48dc2e58492c" category="list-text">テスト システムを選択します。</block>
   <block id="9d5c8a6e3597683b4559e2c596a2ead9" category="list-text">テスト ストレージ SVM を選択します。</block>
   <block id="09cb5a7830e25d2457463ef0f909f5a0" category="list-text">CIFS (SMB) ストレージ VM を選択した場合は、**ユーザー名** フィールドと **パスワード** フィールドが表示されます。ストレージ VM のユーザー名とパスワードを入力します。</block>
-  <block id="6773f809e3f238c4a8a25adcd8e46f13" category="list-text">作成する新しいテスト ワークロードの名前を入力します。名前にダッシュを含めないでください。</block>
   <block id="b5ffafbc91e02195737c6716b418141e" category="admonition">準備ドリルの構成は、後で設定ページを使用して編集できます。</block>
   <block id="187666a138e7f6f15224af7bcef93040" category="section-title">準備訓練を開始する</block>
   <block id="b30d5003eb8b470d6df77c1edbb96724" category="paragraph">準備ドリルを構成したら、ドリルを開始できます。</block>
@@ -538,7 +537,6 @@
   <block id="402892b652810818eb61e703ca333d06" category="list-text">*復元が必要としてマーク*を選択します。</block>
   <block id="f1a43a1191cd8e11a5db942f4175b31f" category="list-text">確認内容を確認し、確認ボックスで「復元が必要としてマーク」を選択します。</block>
   <block id="63d4b8d17265522f12b229a2016b08c9" category="list-text">ランサムウェア耐性メニューから、「回復」を選択します。</block>
-  <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">復元する「準備ドリル」とマークされたテスト ワークロードを選択します。</block>
   <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">*復元*を選択します。</block>
   <block id="98576e747c7efb09ca0d1e50a58ae308" category="list-text">「復元」ページで、復元に関する情報を入力します。</block>
   <block id="05e2304cb46b92601ea1e826aa3fec0b" category="list-text">ソース スナップショットのコピーを選択します。</block>
@@ -555,7 +553,6 @@
   <block id="b707d985234424bd425b96580911950e" category="list-text">アラートをもう一度選択します。</block>
   <block id="2da9a9f4e6a92f5857d147337ae308f7" category="list-text">*ステータスの編集* を選択してステータスを指定し、次のいずれかのステータスに変更します。</block>
   <block id="e0a30b860c06e610cadc21ebf64426da" category="list-text">却下: アクティビティがランサムウェア攻撃ではないと疑われる場合は、ステータスを「却下」に変更します。</block>
-  <block id="ff8d215b189dca41bf900d6545392594" category="admonition">攻撃を却下した後は、元に戻すことはできません。ワークロードを破棄すると、潜在的なランサムウェア攻撃に応じて自動的に作成されたすべてのスナップショット コピーが完全に削除されます。アラートを無視すると、準備訓練は完了したとみなされます。</block>
   <block id="36b45588cbfa3653d0bdeb91883b49f4" category="list-text">解決済み: インシデントは軽減されました。</block>
   <block id="1be5568d0c3f299b7d0fa2b810d4b90d" category="section-title">即応訓練に関する報告書を確認する</block>
   <block id="1618fcb06831249fd4142102d83577f5" category="paragraph">準備訓練が完了したら、訓練に関するレポートを確認して保存することをお勧めします。</block>
@@ -2209,4 +2206,7 @@
   <block id="d0c1ba6e120f697911d5bd92a51f0322" category="paragraph">Ransomware Resilienceは、<block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block>のセキュリティオーケストレーション、自動化、およびレスポンス（SOAR）プレイブックを提供しています。このプレイブックにより、脅威対応管理が容易になり、タスクやテストが自動化されるほか、スナップショットの作成やボリュームのオフライン化など、ランサムウェア対策に不可欠な作業がサポートされます。</block>
   <block id="dce0959f50faa93a47d141f615365404" category="paragraph">Ransomware ResilienceはGoogle SecOps、Microsoft Sentinel、Splunk向けにプレイブックを提供しています。セットアップの詳細については、それぞれのGitHubページを確認してください。</block>
   <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">Azure NetApp Files では、Azure NetApp Files API が自動操作をブロックするため、<block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block>を使用しないことをお勧めします。</block>
+  <block id="4fcce21aba16e6a89d3c15cbcce7db5a" category="list-text">テストワークロードの名前を入力します。名前にダッシュを含めないでください。</block>
+  <block id="922e09477f5763a3965ac29db0b9139d" category="list-text">復元したい「Readiness drill」とマークされたテストワークロードを選択してください。</block>
+  <block id="3aecb1c0d4a2579d6c2b4487309b2cdc" category="admonition">攻撃を却下した後は、元に戻すことはできません。ワークロードを却下すると、ランサムウェア攻撃の可能性に対応して自動的に作成されたすべてのSnapshotコピーが完全に削除されます。アラートを却下すれば、準備訓練は完了とみなされます。</block>
 </blocks>
