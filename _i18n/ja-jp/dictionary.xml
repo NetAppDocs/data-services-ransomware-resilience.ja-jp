@@ -1132,12 +1132,7 @@
   <block id="53e68cb1edb551af8b1c0d8fee230e44" category="admonition">認証が成功すると、「認証済み」というメッセージが表示されます。</block>
   <block id="00bcd4c2f217493f06ecbb6ddfa3862b" category="list-text">アプリケーションの Log Analytics ワークスペースの詳細を入力します。</block>
   <block id="b263ba58e894356680bda9edd8c52400" category="list-text">サブスクリプション ID、リソース グループ、Log Analytics ワークスペースを選択します。</block>
-  <block id="9ccf45c8190b08c78e0be70f31ab71c4" category="section-title">脅威検出用にSplunk Cloudを構成する</block>
-  <block id="4d6d1328084c627bf56727551f4a6626" category="paragraph">Ransomware Resilience で Splunk Cloud を有効にする前に、Splunk Cloud で次の大まかな手順を実行する必要があります。</block>
-  <block id="8a628c54baa5d5a16a963626db04a20f" category="list-text">Splunk Cloud の HTTP イベント コレクターを有効にして、コンソールから HTTP または HTTPS 経由でイベント データを受信します。</block>
-  <block id="a0df7816503d32b52e0b8eaf94868e56" category="list-text">Splunk Cloud でイベント コレクター トークンを作成します。</block>
   <block id="2c65d4e0cdac9c48880857277c1bc9e3" category="list-title">SplunkでHTTPイベントコレクターを有効にする手順</block>
-  <block id="a99a07d12915c1a94a26205b4a84ba20" category="list-text">Splunk Cloud に移動します。</block>
   <block id="ce0362998bb10251a5412bcabd9b833c" category="list-text">*設定* &gt; *データ入力*を選択します。</block>
   <block id="069c7509480a5fbadda560c7376dca8a" category="list-text">*HTTP イベント コレクター* &gt; *グローバル設定* を選択します。</block>
   <block id="b42b974604014d593eace2a8678716ed" category="list-text">[すべてのトークン] トグルで、[有効] を選択します。</block>
@@ -1162,7 +1157,6 @@
   <block id="322bdafeaec3f2756e524c7676eec70b" category="inline-image-macro">脅威検出の詳細ページを有効にする</block>
   <block id="a79d3cc091ba614079e19b05bd4144d7" category="paragraph"><block ref="a79d3cc091ba614079e19b05bd4144d7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="53ff0c832c14f6bc98decd93490e2576" category="list-text">SIEM システムの 1 つを選択します。</block>
-  <block id="8b2302df496c7e3838b65f0dfaee3ab4" category="list-text">AWS Security Hub または Splunk Cloud で設定したトークンと認証の詳細を入力します。</block>
   <block id="4cb0caa7f0c97dd44ed525e6237432d2" category="admonition">入力する情報は、選択した SIEM によって異なります。</block>
   <block id="71377237946a16cc4981e8007b83be9b" category="list-text">*有効*を選択します。</block>
   <block id="f29be3377655fbc2e89f86e482ef5ca2" category="paragraph">設定ページに「接続済み」と表示されます。</block>
@@ -2207,6 +2201,16 @@
   <block id="dce0959f50faa93a47d141f615365404" category="paragraph">Ransomware ResilienceはGoogle SecOps、Microsoft Sentinel、Splunk向けにプレイブックを提供しています。セットアップの詳細については、それぞれのGitHubページを確認してください。</block>
   <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">Azure NetApp Files では、Azure NetApp Files API が自動操作をブロックするため、<block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block>を使用しないことをお勧めします。</block>
   <block id="4fcce21aba16e6a89d3c15cbcce7db5a" category="list-text">テストワークロードの名前を入力します。名前にダッシュを含めないでください。</block>
-  <block id="922e09477f5763a3965ac29db0b9139d" category="list-text">復元したい「Readiness drill」とマークされたテストワークロードを選択してください。</block>
   <block id="3aecb1c0d4a2579d6c2b4487309b2cdc" category="admonition">攻撃を却下した後は、元に戻すことはできません。ワークロードを却下すると、ランサムウェア攻撃の可能性に対応して自動的に作成されたすべてのSnapshotコピーが完全に削除されます。アラートを却下すれば、準備訓練は完了とみなされます。</block>
+  <block id="a1f10863eda000ced0430d0c31580729" category="list-text">Azure NetApp Files は FPolicy やユーザー行動アクティビティをサポートしていません。</block>
+  <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">復元したい「Readiness drill」とマークされたテストワークロードを選択してください。</block>
+  <block id="5dba46907e72d7502229329d2aafd8a2" category="list-text">Splunk Enterprise</block>
+  <block id="a8fdc49c32c2aa34ebd35cbf9823def6" category="section-title">脅威検出のためのSplunk CloudとSplunk Enterpriseの設定</block>
+  <block id="681024dbfdb70dd04ac980451d89db64" category="paragraph">Ransomware ResilienceはSplunk CloudおよびSplunk Enterpriseによる脅威検出をサポートします。Ransomware ResilienceでSplunk接続を有効にする前に、次の作業が必要です：</block>
+  <block id="026d482451225403707f4d919cfb8461" category="list-text">Splunk Cloud または Enterprise で HTTP Event Collector を有効にして、Console から HTTP または HTTPS 経由でイベントデータを受信します。</block>
+  <block id="42de63532cd927f3b14ff23339042fae" category="list-text">Splunk Cloud または Enterprise でイベントコレクタトークンを作成します。</block>
+  <block id="b8e9fd0fd0fe8e4c4d930ae7315048e4" category="admonition">Splunk Enterpriseの場合、Ransomware Resilienceが指定されたHTTPイベントコレクターの詳細を使用してイベントをプッシュできるようにするには、インバウンドパブリックインターネットトラフィックを許可する必要があります。</block>
+  <block id="261f193d834ffba7dae6c54f99306659" category="list-text">選択したSplunk環境に移動してください：CloudまたはEnterprise。</block>
+  <block id="eade5cc0d987bed25c884550a681c364" category="list-text">Splunk CloudまたはEnterpriseに移動します。</block>
+  <block id="e4f58ddb798b11dab7791e0175f6cf0f" category="list-text">AWS Security Hub、Splunk Cloud、または Splunk Enterprise で設定したトークンと認証の詳細を入力してください。</block>
 </blocks>
