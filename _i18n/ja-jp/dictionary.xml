@@ -2195,8 +2195,8 @@
   <block id="261f193d834ffba7dae6c54f99306659" category="list-text">選択したSplunk環境に移動してください：CloudまたはEnterprise。</block>
   <block id="eade5cc0d987bed25c884550a681c364" category="list-text">Splunk CloudまたはEnterpriseに移動します。</block>
   <block id="e4f58ddb798b11dab7791e0175f6cf0f" category="list-text">AWS Security Hub、Splunk Cloud、または Splunk Enterprise で設定したトークンと認証の詳細を入力してください。</block>
-  <block id="c49fdbd48abc0805f78e165d087f6c4b" category="admonition-title">クリーンルームSVMデータLIF IP（crr-data-LIF-IP）</block>
-  <block id="f0778a7682182f497af90edd54b04a18" category="paragraph">Amazon FSxN for ONTAP のソースで IRE を構成している場合は、このクリーンルーム SVM データ LIF IP 要件をスキップしてください。</block>
+  <block id="c49fdbd48abc0805f78e165d087f6c4b" category="list-title">クリーンルームSVMデータLIF IP（crr-data-LIF-IP）</block>
+  <block id="f0778a7682182f497af90edd54b04a18" category="admonition">Amazon FSxN for ONTAP のソースで IRE を構成している場合は、このクリーンルーム SVM データ LIF IP 要件をスキップしてください。</block>
   <block id="074ccc576a0d2f59ff97aa7d5cd6f1db" category="list-text">クリーンルームSVMデータLIF用のIPアドレスを設定します。IPアドレスをメモしておいてください：このIPアドレスはIREの設定プロセス中に必要になります。</block>
   <block id="6e72e986d17ee66e6f3fdfe4e138163d" category="list-text">Cloud Volumes ONTAP with AWSでクラウド間クリーンリストアを使用する場合は、IPアドレスがElastic Network Interfaceに割り当てられていることを確認してください。</block>
   <block id="b1573f80f25470f8eb281542e0c5be32" category="list-text">SVMデータLIF IPからIREへのルーティングを許可します。</block>
@@ -2233,11 +2233,10 @@
   <block id="ad2a9811677d640aa02be04e16ed6267" category="doc">クリーン復元</block>
   <block id="a27a472ba292f326ddc2e430f964123b" category="paragraph">Ransomware Resilienceは、クリーンリストアをサポートするようになりました。これは、ランサムウェア攻撃から迅速かつ容易に復旧するための新しい復旧オプションです。クリーンリストアは、ダウンタイムを最小限に抑えながらワークロードを迅速に稼働させるための最適なリストアポイントを特定する、ガイド付きワークフローを提供します。クリーンリストアのワークフローは、データに関するファイルレベルの情報も提供するため、マルウェアのないワークロードを復元でき、再感染を防ぎ、データ損失を最小限に抑えることができます。</block>
   <block id="86ef5018580452c81ea6cb2911275e90" category="inline-link-macro">隔離された復旧環境を作成する</block>
-  <block id="508a286442ccdd0f0c8a02ce355b62db" category="inline-link-macro">クリーンリストアでワークロードを復旧する</block>
-  <block id="a9e75b5aa64910e787dec413e103a858" category="paragraph">サポートされている構成と、システムをクリーンな復元用に構成する方法については、<block ref="bce58762a021948ccde0fba2f5f7a845" category="inline-link-macro-rx"></block>を参照してください。クリーンな復元で復旧する方法については、<block ref="455be04ee07ce68cbcdf924300b59eba" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="508a286442ccdd0f0c8a02ce355b62db" category="inline-link-macro">クリーンリストアでワークロードをリカバリする</block>
   <block id="1268d987cbc2b2bc1be3c9ba04af7cd1" category="section-title">Splunk EnterpriseのSIEMサポート</block>
-  <block id="8d4e1592ef4f14add49e9860e8b367dc" category="paragraph">Ransomware Resilience は、Splunk Enterprise のセキュリティ情報イベント管理（SIEM）サポートを提供し、ログデータとイベントデータを一元管理して、脅威分析と検出を効率化できるようになりました。</block>
-  <block id="c81c8aac6cfb1c5f690b914eda6a69fd" category="inline-link-macro">NetApp Ransomware ResilienceをSIEMに接続</block>
+  <block id="8d4e1592ef4f14add49e9860e8b367dc" category="paragraph">Ransomware Resilience は、Splunk Enterprise のセキュリティ情報イベント管理（SIEM）サポートを提供し、ログデータとイベントデータを一元管理して、脅威分析と検出を効率化できます。</block>
+  <block id="c81c8aac6cfb1c5f690b914eda6a69fd" category="inline-link-macro">ランサムウェア対策をSIEMに接続</block>
   <block id="dbdca0e081ed0b247153e35ce9b1c298" category="paragraph">詳細については、<block ref="d02df671c233387bf6b644be94acfdf7" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="54dee0adf9652288315f3c7099d462be" category="section-title">ユーザー行動アクティビティの強化</block>
   <block id="7ee4b3a8392885d95b1b7c9f5a6c99e5" category="paragraph">データ侵害イベントに関するインサイトは、インシデント発生後13か月間保持されるようになり、レポートのニーズに応じてより長期間の記録保持が可能になりました。</block>
@@ -2389,16 +2388,15 @@
   <block id="c8e2277ecfb1427838c488c217f99466" category="open-title">クラウド</block>
   <block id="0f41fbceabc827d5c5df2618a1c312ad" category="list-text">「クリーン復元」カードで、これが最初の環境の場合は **構成** を選択し、既に作成済みの場合は **管理** を選択します。</block>
   <block id="33319874642cd9fa09af5fae9c62b0f4" category="list-text">IREを作成するのが初めての場合は、次のステップに進んでください。</block>
-  <block id="7a5443fd9ce8d6f45236ac37568d5b41" category="paragraph">既にIREを作成済みの場合は、**追加**を選択して別のIREを作成します。</block>
+  <block id="7a5443fd9ce8d6f45236ac37568d5b41" category="paragraph">既にIREを作成済みの場合は、**追加**を選択して別のIREを作成してください。</block>
   <block id="b0836e1bf6680e789281aea3293f7647" category="list-text">クラウドベースの IRE の場合は、**Amazon Web Services** を選択してください。</block>
   <block id="4564ef7a631e6ae4e5c472323c190a1d" category="list-text">**Name**セクションを展開します。環境の**Name**を作成します。</block>
-  <block id="b330f48d8947ae91888a185951c00937" category="list-text">*Systems* セクションを展開します。IRE に接続するシステムを選択します。選択した各システムについて、ストレージ VM の IP アドレス、サブネット マスク、およびゲートウェイを指定する必要があります。</block>
+  <block id="b330f48d8947ae91888a185951c00937" category="list-text">*Systems*セクションを展開します。IRE に接続するシステムを選択します。選択した各システムについて、ストレージ VM の IP アドレス、サブネット マスク、およびゲートウェイを指定する必要があります。</block>
   <block id="9c0961645ab2dde42b360b9dd39f0dcc" category="admonition">Amazon FSxN for ONTAPに導入されたIREの場合、この情報を提供する必要はありません。</block>
   <block id="be33043acadffab164c32971cd856af7" category="inline-image-macro">システム選択インターフェイスのスクリーンショット。</block>
   <block id="9aa6cf1eff1a76b0409b3e752312ea85" category="paragraph"><block ref="9aa6cf1eff1a76b0409b3e752312ea85" category="inline-image-macro-rx" type="image"></block></block>
   <block id="89fdf1c0dc132ad5060755aed85034a8" category="list-text">* 認証 * セクションを展開します。</block>
   <block id="4714db5e444c82e9797cf1040d2e1bb4" category="list-text">クラウド**アカウント**IDを入力し、アカウントの**リージョン**を選択します。</block>
-  <block id="3aae9af33dfbd98649b0845bbd649675" category="list-text">アカウントの**アクセス キー**と**シークレット キー**を入力します**。**</block>
   <block id="a81c4edeb10492c8584a0c9082f6ce84" category="list-text">* Virtual private cloud （ VPC ）* セクションを展開します。IRE を導入する VPC ID を入力します。</block>
   <block id="c2b8af5a06c2ce8a91c4861ae659df43" category="inline-image-macro">IRE 認証設定のスクリーンショット。</block>
   <block id="9a717f23235ddd79acf46b60cbb49654" category="paragraph"><block ref="9a717f23235ddd79acf46b60cbb49654" category="inline-image-macro-rx" type="image"></block></block>
@@ -2422,7 +2420,7 @@
   <block id="8cae18dea7d74591e21c2f2407666e60" category="paragraph"><block ref="8cae18dea7d74591e21c2f2407666e60" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7ca860788f238da4a9c5263bd546d3d2" category="list-text">*VMs*セクションを展開します。このセクションは、*Compute*セクションでの入力内容に基づいて入力されます。クリーンリストア中にマルウェアをスキャンするために使用するESXiホスト上のVMを選択します。選択した各VMの*User name*と*Password*を入力します。</block>
   <block id="d7b9a49b450fb7d4116d3c4df7a11288" category="list-text">**追加**を選択してIREを作成します。Ransomware Resilienceは、追加を選択した後に接続をテストします。この処理には時間がかかる場合があります。</block>
-  <block id="af131a682b99e37528a95fa21be4b5cc" category="paragraph">進捗状況を追跡できます。設定タブで、**Isolated recovery environments**を選択します。Isolated recovery environmentsページには、すべてのIREとそのステータスが表示されます。その環境に関連するすべてのジョブの詳細を確認するには、**View jobs**を選択してください。</block>
+  <block id="af131a682b99e37528a95fa21be4b5cc" category="paragraph">進捗状況を追跡できます。設定タブで、**隔離されたリカバリ環境**を選択します。Isolated recovery environmentsページには、すべてのIREとそのステータスが表示されます。その環境に関連するすべてのジョブの詳細を確認するには、**View jobs**を選択してください。</block>
   <block id="16a6474800dcc57e48f9c5fecf7f4b0a" category="paragraph">IREは作成後でもシステムを変更できます。設定タブで、**隔離されたリカバリ環境**を選択します。編集したいIREを見つけて、アクションメニュー<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>を選択し、**編集**を選択します。システムの変更作業を進めてください。完了したら**保存**を選択してください。</block>
   <block id="59f0ec64e6ca9eb2b145c2d0b972a631" category="section-title">隔離された回復環境を削除</block>
   <block id="3b98dd3eb2a4ab1e4dbff3d07d4b9987" category="paragraph">復元操作がアクティブな状態では、IREを削除することはできません。復元操作をキャンセルするか、復元が完了するまで待ってからIREを削除してください。</block>
@@ -2444,4 +2442,8 @@
   <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026年4月13日</block>
   <block id="794c08acf0fdad83a95c363b8c9662f4" category="sidebar">回復状況を確認する</block>
   <block id="d14be6fd318be2bc44adb6224cd0309b" category="sidebar">クリーンな復元で復旧する</block>
+  <block id="6ff288c704ac97afbc67708bc23dbc09" category="paragraph">サポートされている構成と、システムをクリーンな復元用に構成する方法については、<block ref="bce58762a021948ccde0fba2f5f7a845" category="inline-link-macro-rx"></block>を参照してください。クリーンな復元で復旧する方法については、<block ref="c39fc221f9e8d680274efcf9f5170bf4" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="482b73c713ea8cffc3070c798b03badc" category="open-title">オンプレミスからクラウドへ</block>
+  <block id="8880534a0e139c017e28bbf6bc44e84b" category="open-title">オンプレミスからオンプレミス</block>
+  <block id="9df5336cadaa8da9a21a00f3f55c497b" category="list-text">アカウントの**Access key**と**Secret key**を入力してください。</block>
 </blocks>

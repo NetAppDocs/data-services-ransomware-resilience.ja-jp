@@ -8,15 +8,15 @@
 
 Ransomware Resilienceは、クリーンリストアをサポートするようになりました。これは、ランサムウェア攻撃から迅速かつ容易に復旧するための新しい復旧オプションです。クリーンリストアは、ダウンタイムを最小限に抑えながらワークロードを迅速に稼働させるための最適なリストアポイントを特定する、ガイド付きワークフローを提供します。クリーンリストアのワークフローは、データに関するファイルレベルの情報も提供するため、マルウェアのないワークロードを復元でき、再感染を防ぎ、データ損失を最小限に抑えることができます。
 
-サポートされている構成と、システムをクリーンな復元用に構成する方法については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["隔離された復旧環境を作成する"^]を参照してください。クリーンな復元で復旧する方法については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover["クリーンリストアでワークロードを復旧する"^]を参照してください。
+サポートされている構成と、システムをクリーンな復元用に構成する方法については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["隔離された復旧環境を作成する"^]を参照してください。クリーンな復元で復旧する方法については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["クリーンリストアでワークロードをリカバリする"^]を参照してください。
 
 
 
 === Splunk EnterpriseのSIEMサポート
 
-Ransomware Resilience は、Splunk Enterprise のセキュリティ情報イベント管理（SIEM）サポートを提供し、ログデータとイベントデータを一元管理して、脅威分析と検出を効率化できるようになりました。
+Ransomware Resilience は、Splunk Enterprise のセキュリティ情報イベント管理（SIEM）サポートを提供し、ログデータとイベントデータを一元管理して、脅威分析と検出を効率化できます。
 
-詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["NetApp Ransomware ResilienceをSIEMに接続"^]を参照してください。
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["ランサムウェア対策をSIEMに接続"^]を参照してください。
 
 
 
