@@ -370,7 +370,6 @@
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">開始する前に</block>
   <block id="73738579d10f958bf97df41b6b44631a" category="paragraph">Ransomware Resilience のシリアル番号が必要です。この番号は販売注文書から探すか、アカウント チームに問い合わせて確認してください。</block>
   <block id="af25599baf3c84c2f248b3b60dcbeb1e" category="list-text">ライセンスを取得したら、Ransomware Resilience に戻ります。右上にある*支払い方法の表示*オプションを選択します。または、無料トライアルの有効期限が切れるというメッセージで、[*サブスクライブまたはライセンスを購入*] を選択します。</block>
-  <block id="92039ced8cec8859d2ca3a52e4c27cde" category="list-text">*ライセンスの追加* を選択して、コンソールのライセンスとサブスクリプション ページに移動します。</block>
   <block id="13a1d7753283c14a67aa5ea60b79c583" category="list-text">*データ サービス ライセンス* タブから、*ライセンスの追加* を選択します。</block>
   <block id="7578ebad24c71aee2f2992e5efe1118d" category="list-text">「ライセンスの追加」ページで、シリアル番号とNetAppサポート サイトのアカウント情報を入力します。</block>
   <block id="8e74888372203fd2a7ad3d3f9a2ce99f" category="list-text">コンソール ライセンスのシリアル番号があり、NSS アカウントがわかっている場合は、[*シリアル番号を入力*] オプションを選択し、その情報を入力します。</block>
@@ -927,11 +926,9 @@
   <block id="a70aafb0a2b8a5a46157e22ae8d2dd99" category="list-text">*失敗*: ワークロードの復元プロセスを完了できませんでした。</block>
   <block id="f591728141675d7a289dcb31f31fde56" category="section-title">復元準備が整ったワークロードを表示する</block>
   <block id="9e307871a02cb271c0a3a1a008a2e4e1" category="paragraph">「復元が必要」の回復ステータスにあるワークロードを確認します。</block>
-  <block id="2400d3aab4f81941f09385a6e9a6dda5" category="list-text">メニューから*回復*を選択します。</block>
   <block id="6ff7646970e054813b30a697e9d483e8" category="list-text">*回復*ページでワークロード情報を確認します。</block>
   <block id="4adfa9c3d33f897660ad408e7f5dc8e8" category="inline-image-macro">回復ページ</block>
   <block id="926aaeb3693d20413ab32b7da19a4c24" category="paragraph"><block ref="926aaeb3693d20413ab32b7da19a4c24" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e5807844b120730d46eedbad32ba0ea7" category="paragraph">Ransomware Resilience を使用すると、ストレージ管理者は、推奨される復元ポイントまたは優先復元ポイントからワークロードを復元する最適な方法を決定できます。</block>
   <block id="7c653203a3096df8b7646a6ab87c0b2f" category="list-text">「復元が必要」状態にあるワークロードを選択します。</block>
   <block id="3423ce5ef0c24dff08aba7c67e954912" category="list-text">復元するには、[復元] を選択します。</block>
   <block id="8e39c6b8e82f00af62a92b5e18f0d487" category="list-text">*目的地*: 詳細を表示するには、目的地の横にある下矢印を選択します。</block>
@@ -973,10 +970,7 @@
   <block id="e117d7e0417b0abf71f8e538099181f1" category="admonition">新しいボリューム名は、元のボリューム名 + バックアップ名 + バックアップ日付として表示されます。</block>
   <block id="6412a45d589675b39a03f4d8c440e7a7" category="section-title">ファイルレベルでアプリケーションのワークロードを復元する</block>
   <block id="dda1633bee980c6aee630455ccc23784" category="paragraph">アプリケーション ワークロードをファイル レベルで同じシステムまたは別のシステムに復元できます。</block>
-  <block id="c859754ec0a06e9f1e87879e1e8a4b78" category="paragraph-title">影響を受けるファイルのリストを取得する手順</block>
-  <block id="e962fee54eeb3df3283d6d28bb1f073b" category="admonition">ボリュームに複数のアラートがある場合は、アラートごとに影響を受けるファイルの CSV リストをダウンロードする必要があります。</block>
   <block id="632b8e66b02aebebfc5b46583ee30222" category="list-text">ファイルの完全なリストを表示するには、[影響を受けるファイル] ペインの上部にある [*ここをクリック*] を選択します。</block>
-  <block id="d4ea49f7c37230203af54722c95962fe" category="list-title">これらのファイルを復元する手順</block>
   <block id="3e64769073a6ebfad26862c552f42c72" category="list-text">[復元] ページの [復元範囲] で、[*ファイル別*] を選択します。</block>
   <block id="f1760e95914fef75d7a25a4643d9128a" category="list-text">ボリュームのリストで、復元するファイルが含まれているボリュームを選択します。</block>
   <block id="a47287face7d6331a60273ac64f1cb53" category="list-text">*復元ポイント*: 詳細を表示するには、*復元ポイント*の横にある下矢印を選択します。データを復元するために使用する復元ポイントを選択します。</block>
@@ -1007,12 +1001,7 @@
   <block id="cc03ddbe51eba1cd776926690a07ca14" category="list-text">*目的地*: 元の場所へ。</block>
   <block id="b2ff9d90b8575c5030e4183e92ccf938" category="summary">NetApp Ransomware Resilienceを使用すると、保護、アラート、リカバリの詳細を示すレポートをダウンロードし、CSV ファイルとして保存できます。</block>
   <block id="2963ad4383209a31ba7b5a890b302bc2" category="doc">NetApp Ransomware Resilienceのレポートをダウンロード</block>
-  <block id="229560de4c61096e275f68d7eda37c00" category="paragraph">*どのようなデータをダウンロードできますか?*メイン メニュー オプションのいずれかからファイルをダウンロードできます。</block>
   <block id="a7e404e1296fea04d0cd654b84867b5a" category="list-text">*回復*: 復元が必要なすべてのワークロードのステータスと詳細が含まれます。これには、「復元が必要」、「進行中」、「復元に失敗しました」、「正常に復元されました」とマークされたワークロードの合計数も含まれます。</block>
-  <block id="a36d9f25fe7ecafe45db2fd45823c6e7" category="list-text">*レポート*: どのページからでもデータをエクスポートし、ファイルをダウンロードできます。</block>
-  <block id="cba5c013826db3e7efce5d0c19aee9c1" category="admonition">準備ドリルレポートは、*レポート* ページからのみダウンロードできます。</block>
-  <block id="5b21bc493cdab40a819ce8921c81c72d" category="paragraph">保護、アラート、または回復ページから CSV または JSON ファイルをダウンロードすると、そのページのデータのみが表示されます。</block>
-  <block id="12d495a2d34cbe83eecedb29ea139390" category="paragraph">CSV または JSON ファイルには、すべてのコンソール システム上のすべてのワークロードのデータが含まれます。</block>
   <block id="4263eebb7cfbc2a50797df9b351df75d" category="list-text">NetApp Ransomware Resilienceメニューから、*レポート* を選択します。</block>
   <block id="09121bb3cb936ab87dd837c1fd8da18a" category="list-text">*レポート* オプションを選択した場合は、事前設定されたファイル名の 1 つを選択し、*ダウンロード* を選択します。</block>
   <block id="55483e3219b15f38112442f737a1bf92" category="section-title">バックアップ先を追加する</block>
@@ -1416,7 +1405,6 @@
   <block id="3e89831fbd0267df9052ee5e70bc06ab" category="sidebar">ランサムウェア耐性にアクセス</block>
   <block id="d67482bbf82ef9c339e44809ea9873b1" category="sidebar">ランサムウェア対策戦略でワークロードを保護する</block>
   <block id="4b55af6e5a9948a11e84a0809a34edfb" category="sidebar">個人を特定できるデータをスキャンする</block>
-  <block id="f8a7dc43864435cb9b522a28b586e556" category="sidebar">ランサムウェア攻撃からの回復</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">FAQ</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
   <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">データのバックアップ</block>
@@ -1464,7 +1452,6 @@
   <block id="e20a7cd21fba7d540ffd7589c1c59928" category="paragraph">Ransomware Resilience を 30 日間無料でお試しいただけます。無料トライアルを開始するには、コンソール組織管理者である必要があります。</block>
   <block id="85a5bc1275ab09d60eed9f7c3b4d429b" category="paragraph">試用期間中はストレージ容量の制限は適用されません。</block>
   <block id="ca78bf5eeed0245ff3d76d132c93b609" category="inline-link-macro">1つ追加</block>
-  <block id="94c135a38d325e223714d1f313c8efec" category="list-text">他のサービス用のコンソールエージェントをまだ追加していない場合は、<block ref="f7f69135987ef22de86b03a4f14a7bc8" category="inline-link-macro-rx"></block> 。</block>
   <block id="edbdd3e3e169cd712816f78b82e91c2e" category="list-text">ランサムウェア耐性ランディング ページで、*ワークロードの検出から開始* を選択してワークロードを検出します。</block>
   <block id="2866dfee0ffdf3a11a8323f6d53635f4" category="admonition">このオプションは、コンソール エージェントが正常にインストールされている場合にのみ使用できます。</block>
   <block id="933f33d572b754e91a336439049ae279" category="list-text">[ライセンスの追加] ページで、[シリアル番号を入力] を選択し、送信された電子メールに記載されているシリアル番号を入力して、[ライセンスの追加] を選択します。</block>
@@ -1858,7 +1845,6 @@
   <block id="6a3ad50557786ed110b2cefa2a2be7bd" category="list-text">システムを選択して詳細を表示します。</block>
   <block id="6872a6ef5ae2db047b6effa74304d0af" category="list-text">そのユーザーの既存のロールを表示します：</block>
   <block id="67c903793b6bf8b730fee76339b93672" category="list-text">検出設定として*不審なユーザー行動の検出*を選択した場合は、ユーザーアクティビティエージェントまたは<block ref="0fcb9e48262f104799fbf49d6c09d7d5" category="inline-link-macro-rx"></block>を選択します。</block>
-  <block id="7c6b2f72c99d1ebd4a429f9dc9ce38de" category="doc">NetApp Ransomware Resilienceでユーザアクティビティ検出用のエージェントとコレクタを設定</block>
   <block id="a7045f65a60246a57662a00a9dc6dc73" category="inline-link-macro">オペレーティングシステム、サーバ、およびネットワークの要件</block>
   <block id="72ae3905ad051e75d558266df8b1e63a" category="list-text"><block ref="4535d4c19297d046165dc98674d914e8" category="inline-link-macro-rx"></block>を満たしていることを確認してください。</block>
   <block id="59ad45573dbf4296a202cefa7894c118" category="section-title">ユーザーアクティビティエージェントを作成する</block>
@@ -1977,7 +1963,6 @@
   <block id="43cf481327dfdef7257dfcd2239c1c16" category="list-text">*暗号化検出*</block>
   <block id="b2a1cab5712cdb105f101f829159956b" category="list-text">*不審なユーザー行動の検出*</block>
   <block id="e221e0c0391c288e04416b2254112154" category="list-text">*疑わしいファイル拡張子をブロック*</block>
-  <block id="e90e1f21879e00aa74c7b0dba188efdb" category="paragraph">NetApp Ransomware Resilienceは、サポートされているボリュームとサポートされていないボリューム、攻撃準備訓練、保護、アラート、リカバリの詳細を示すCSVおよびJSON形式のレポートを提供します。レポートを使用すると、訓練、保護態勢、アラート、リカバリイベントに関するオフラインレポートを保存して確認できます。</block>
   <block id="920471a68a7a085ba7f5c267570313be" category="paragraph">NetApp Ransomware Resilience ユーザー アクティビティ検出は、ユーザー レベルのランサムウェア イベントを防ぐのに役立ちます。Ransomware Resilience で疑わしいユーザー動作の検出を有効にするには、少なくとも 1 つのユーザー アクティビティ エージェントをインストールする必要があります。これにより、ランサムウェア イベントに類似する異常なパターンがないかユーザー動作を監視するデータ収集環境が作成されます。</block>
   <block id="91600cc8235d0715eba412169c7c3d73" category="paragraph">ユーザー アクティビティ エージェントは、データ コレクターとユーザー ディレクトリ コネクタをホストします。これらの両方がデータを分析のために SaaS の場所に送信します。</block>
   <block id="fa97e4f101b82056aea0cbbc9151ce6c" category="list-text">**データコレクタ**は、ONTAPからユーザーアクティビティデータを収集します。ユーザー行動検出を含む保護戦略を作成すると、データコレクタが自動的に作成されます。</block>
@@ -2077,7 +2062,6 @@
   <block id="4640cffe8cecf29a2e28eccc89d62e54" category="cell">脅威検出を有効にするには、SIEM/XDR サーバーの詳細を入力します。<block ref="ffa7fd2a3621d8607d19220a5312c79a" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="384ff6974e7af6bfbb47b5f1a1e8a8ef" category="cell">このワークロードを保護するには、バックアップ先を追加します。<block ref="e25a1b60993d45f33b0deea2ae726330" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="b6ac186c730d3951ea5f7795e32f0554" category="admonition">セカンダリストレージでバックアップロックを有効にするには、*Settings*オプションを使用してバックアップの保存先を設定します。詳細については、<block ref="33c35db19b883807eccfb2734290ae91" category="inline-link-macro-rx"></block>を参照してください。</block>
-  <block id="11f2f37965157c7da67e33eb40c1030c" category="list-text">ダッシュボードから、[アラート] ペインの [復元が必要] の合計を確認し、*すべて表示* を選択します。</block>
   <block id="bcecace85f7c3d476feccac24d9db3eb" category="list-text">ダッシュボードまたは他のページから、右上の*更新* <block ref="94d384894f036157c348eadc55c40952" category="inline-image-macro-rx" type="image"></block> オプションを選択すると、レポートに表示されるデータが更新されます。</block>
   <block id="cc3ae719c12cc9e21d1f9b6b919eb818" category="summary">NetApp Ransomware Resilienceにバックアップ先を追加して、サイバーレジリエンスを向上させます。</block>
   <block id="162cbc2e55bba363e404fc5b076b5396" category="doc">NetApp Ransomware Resilienceでバックアップ先を追加する</block>
@@ -2158,8 +2142,6 @@
   <block id="7df30d939fa4f3d1575169ec6d1894d8" category="doc">NetApp Ransomware Resilienceの既知の制限事項</block>
   <block id="e9be3c13b1ed73a120f1b23e2cefb058" category="doc">NetApp Ransomware Resilienceでワークロードを検出</block>
   <block id="871215526a8732732fd40b6335388e98" category="doc">NetApp Ransomware Resilience に関するFAQ</block>
-  <block id="382e702ef8f61842f6f9c0b76fb23047" category="doc">NetApp Ransomware Resilienceを使用してランサムウェア攻撃から回復する</block>
-  <block id="a8bb9ad5a88304569c56e3805762683b" category="doc">NetApp Ransomware Resilienceで個人を特定できる情報をスキャンする</block>
   <block id="1ca81bce832a538b6144470d9a25c786" category="paragraph">NetApp Ransomware Resilience内で、NetApp Data Classificationを使用して、ファイル共有ワークロード内のデータをスキャンおよび分類できます。データを分類することで、データセットに個人を特定できる情報（PII）が含まれているかどうかを判断でき、セキュリティリスクが増大する可能性があります。</block>
   <block id="1954c0eede9cec276e44236c76142770" category="paragraph">Data Classificationは、NetApp Consoleの中核コンポーネントです。Data Classificationを使用するのにライセンスは必要ありません。設定によっては、Data Classificationを構成するとコストが発生する可能性がありますが、これはRansomware Resilienceによって請求されません。詳細については、<block ref="c5cce5d1091349460847f69d486fd688" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="70c542a285cfdf5cc22587e58fc3fcbb" category="doc">Microsoft SentinelおよびSplunk用のSOARプレイブック</block>
@@ -2213,4 +2195,253 @@
   <block id="261f193d834ffba7dae6c54f99306659" category="list-text">選択したSplunk環境に移動してください：CloudまたはEnterprise。</block>
   <block id="eade5cc0d987bed25c884550a681c364" category="list-text">Splunk CloudまたはEnterpriseに移動します。</block>
   <block id="e4f58ddb798b11dab7791e0175f6cf0f" category="list-text">AWS Security Hub、Splunk Cloud、または Splunk Enterprise で設定したトークンと認証の詳細を入力してください。</block>
+  <block id="c49fdbd48abc0805f78e165d087f6c4b" category="admonition-title">クリーンルームSVMデータLIF IP（crr-data-LIF-IP）</block>
+  <block id="f0778a7682182f497af90edd54b04a18" category="paragraph">Amazon FSxN for ONTAP のソースで IRE を構成している場合は、このクリーンルーム SVM データ LIF IP 要件をスキップしてください。</block>
+  <block id="074ccc576a0d2f59ff97aa7d5cd6f1db" category="list-text">クリーンルームSVMデータLIF用のIPアドレスを設定します。IPアドレスをメモしておいてください：このIPアドレスはIREの設定プロセス中に必要になります。</block>
+  <block id="6e72e986d17ee66e6f3fdfe4e138163d" category="list-text">Cloud Volumes ONTAP with AWSでクラウド間クリーンリストアを使用する場合は、IPアドレスがElastic Network Interfaceに割り当てられていることを確認してください。</block>
+  <block id="b1573f80f25470f8eb281542e0c5be32" category="list-text">SVMデータLIF IPからIREへのルーティングを許可します。</block>
+  <block id="9c9dab37f0ac19e3e253ffd75559fad6" category="list-title">本番環境ルートテーブル</block>
+  <block id="17e68097ee762fecf78b9e9fdb36d0c8" category="list-text">本番環境のルーティングテーブルでは、IREサブネットからクリーンな復元データLIF IPへのトラフィックを許可する必要があります。このルートを本番環境のルーティングテーブルに追加する必要があります。</block>
+  <block id="673c05ce31cb0b56b8af3c9126f1cbb0" category="list-text">本番環境のONTAPクラスタのセキュリティグループとファイアウォールは、クリーンリストアデータLIF IPへのNFSv4およびNFSv3インバウンドトラフィックを許可する必要があります。ファイアウォールは、IRE CIDR範囲からのイングレスに対して開放されている必要があります（：）</block>
+  <block id="7c1a5f175cfc657a18de4a95621d74e3" category="cell">宛先ポート</block>
+  <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
+  <block id="f8dc77f2ac2f7272dc57dd5689ee9d63" category="cell">TCP &amp; UDP</block>
+  <block id="06b1338ba02add2b5d2da67663b19ebe" category="cell">2049</block>
+  <block id="48f2e8432e8385f065e192dbe2c54948" category="cell">IRE VPC CIDR範囲</block>
+  <block id="4afacf798011af530d39470f0f7302d4" category="cell">IREからのNFSv4アクセス</block>
+  <block id="698d51a19d8a121ce581499d7b701668" category="cell">111</block>
+  <block id="4d41b2260156687cd1e011fa25c9a1fe" category="cell">IREからのNFSv3アクセス</block>
+  <block id="6a10bbd480e4c5573d8f3af73ae0454b" category="cell">635</block>
+  <block id="ee0e95249268b86ff2053bef214bfeda" category="cell">4045</block>
+  <block id="354ac345fd8c6d7ef634d9a8e3d47b83" category="cell">4046</block>
+  <block id="89a4779d3836ea432f7ea074e522a17e" category="cell">4049</block>
+  <block id="a96992553da8960e79dd08a3aebe469c" category="list-title">IREルーティングテーブル</block>
+  <block id="e4c932cf61edc0fce9f5b104f66ab438" category="list-text">IREルートテーブルは、IRE VPCのメインルートテーブルである必要があります。</block>
+  <block id="c2cccb2eacdb092cd7d276cf6e0a7e23" category="list-text">IREルーティングテーブルは、クリーンな復元データLIF IPアドレスへのルーティングを許可する必要があります。</block>
+  <block id="719950786b97235baf482bf31cdb5bc3" category="list-text">IREルーティングテーブルには、IREエージェントが動作するために、パブリックインターネットへのルートも含まれている必要があります。</block>
+  <block id="da24b5c81ba0343ed645984ea8b07f17" category="list-title">仮想プライベートクラウド（VPC）</block>
+  <block id="cae5a69da14508ba47067bd733f9b47e" category="list-text">IRE の場合は、本番環境の IP アドレス範囲内に VPC をプロビジョニングします。IP アドレスは、既存の IP アドレスと競合しないようにする必要があります。</block>
+  <block id="ab56c80155a34dbf9b3a23a431a66db7" category="list-text">VPCには最低64個のIPアドレス（/26ネットマスク）の容量が必要です。</block>
+  <block id="50b0b122b46409582254c40604d5a2ac" category="list-text">VPCはパブリックインターネットアクセスを許可する必要があります。そうしないと、Consoleエージェントが動作しません。</block>
+  <block id="beada74f16c5078d9dcfb7d53fb2e205" category="list-title">クラウドの権限</block>
+  <block id="854c429c8b60de0e8502c18a4ad20f86" category="inline-link-macro">AWSでIAMポリシーを作成する</block>
+  <block id="164bd1fd2869da49bcef315a5bbe2370" category="list-text">Ransomware Resilienceは、AWS環境でクリーンな復元を実行するために、適切なIAM権限を持つAWSアクセスキーとシークレットを必要とします。<block ref="269f7c936a5a453bf5e1f3661f3e90dd" category="inline-link-macro-rx"></block>以下の権限を付与した上で、ポリシーを新しく作成したユーザーに割り当ててください。ユーザーを作成したら、IAM認証情報を生成し、クリーン復元時にその情報を提供します。</block>
+  <block id="600a19be2eeeff3456f518555f21d179" category="list-text">暗号化型ランサムウェア攻撃の場合、クリーンな復元のみを実行できます。</block>
+  <block id="2a0ba341f6bfb114fb8d895beeb1a449" category="list-text">隔離された復旧環境に新しい操作を実行するための容量がない場合、空きができるまでキューに格納されます。</block>
+  <block id="1e0cb6f175281202fbb8e130dc6ceb5b" category="list-text">NetApp Ransomware Resilienceリカバリダッシュボードでは、アクティブなクリーン復元操作とキューに登録されているクリーン復元操作のステータスをいつでも監視できます。</block>
+  <block id="75b68821e2e55eb56181916eaf645c45" category="list-text">クリーンな復元を開始すると、元のボリュームがアンマウントされるため、IOアクセスが中断される可能性があります。</block>
+  <block id="ad2a9811677d640aa02be04e16ed6267" category="doc">クリーン復元</block>
+  <block id="a27a472ba292f326ddc2e430f964123b" category="paragraph">Ransomware Resilienceは、クリーンリストアをサポートするようになりました。これは、ランサムウェア攻撃から迅速かつ容易に復旧するための新しい復旧オプションです。クリーンリストアは、ダウンタイムを最小限に抑えながらワークロードを迅速に稼働させるための最適なリストアポイントを特定する、ガイド付きワークフローを提供します。クリーンリストアのワークフローは、データに関するファイルレベルの情報も提供するため、マルウェアのないワークロードを復元でき、再感染を防ぎ、データ損失を最小限に抑えることができます。</block>
+  <block id="86ef5018580452c81ea6cb2911275e90" category="inline-link-macro">隔離された復旧環境を作成する</block>
+  <block id="508a286442ccdd0f0c8a02ce355b62db" category="inline-link-macro">クリーンリストアでワークロードを復旧する</block>
+  <block id="a9e75b5aa64910e787dec413e103a858" category="paragraph">サポートされている構成と、システムをクリーンな復元用に構成する方法については、<block ref="bce58762a021948ccde0fba2f5f7a845" category="inline-link-macro-rx"></block>を参照してください。クリーンな復元で復旧する方法については、<block ref="455be04ee07ce68cbcdf924300b59eba" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="1268d987cbc2b2bc1be3c9ba04af7cd1" category="section-title">Splunk EnterpriseのSIEMサポート</block>
+  <block id="8d4e1592ef4f14add49e9860e8b367dc" category="paragraph">Ransomware Resilience は、Splunk Enterprise のセキュリティ情報イベント管理（SIEM）サポートを提供し、ログデータとイベントデータを一元管理して、脅威分析と検出を効率化できるようになりました。</block>
+  <block id="c81c8aac6cfb1c5f690b914eda6a69fd" category="inline-link-macro">NetApp Ransomware ResilienceをSIEMに接続</block>
+  <block id="dbdca0e081ed0b247153e35ce9b1c298" category="paragraph">詳細については、<block ref="d02df671c233387bf6b644be94acfdf7" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="54dee0adf9652288315f3c7099d462be" category="section-title">ユーザー行動アクティビティの強化</block>
+  <block id="7ee4b3a8392885d95b1b7c9f5a6c99e5" category="paragraph">データ侵害イベントに関するインサイトは、インシデント発生後13か月間保持されるようになり、レポートのニーズに応じてより長期間の記録保持が可能になりました。</block>
+  <block id="787e93d4c2f472a6434cd13d74f3f4d4" category="paragraph">詳細については、<block ref="1a6935dbce91cdb72e61e2f8c1313b36" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="ff1d8a11789570b9a7e5f2d8fa4b3245" category="list-text">他のサービス用のコンソールエージェントをまだ追加していない場合は、<block ref="51497621bfe4b6ebf6d24d0214cc9366" category="inline-link-macro-rx"></block>。</block>
+  <block id="5ce927453063236746bf9f7b1ee339ed" category="list-text">*ライセンスの追加*を選択して、コンソールのLicenses and subscriptionsページに移動します。</block>
+  <block id="5aacdcc38fb6938e8f7950fb8e5395fc" category="doc">NetApp Ransomware Resilienceでリカバリステータスを確認</block>
+  <block id="12d4b8182b6c1654981eba595c7de57c" category="list-text">メインのRansomware Resilienceダッシュボードから、アラートペインの「復元が必要」の合計を確認し、*すべて表示*を選択します。</block>
+  <block id="b4f544735b828be5cd38dd2b84c34888" category="paragraph">または、サイドバーから * Recovery * を選択します。</block>
+  <block id="88ade1fb5341b9cab4ee9b0b899aada2" category="section-title">ワークロードをリカバリする</block>
+  <block id="3ed6844c21861f4032d4bb0085849cce" category="paragraph">ワークロードを評価した後、ワークロードを復元するには次の2つの方法があります。</block>
+  <block id="558f08ac28f5d715f7d0f406a1404b95" category="inline-xref-macro">カスタムリストアで復旧</block>
+  <block id="683e86eb75d5e8da1a3597af4eb62db8" category="list-text"><block ref="683e86eb75d5e8da1a3597af4eb62db8" category="inline-xref-macro-rx"></block></block>
+  <block id="baf02bc77de4caf276599d8b3c23c8b0" category="inline-xref-macro">クリーンな復元で復旧</block>
+  <block id="47a1b97d112c774adbe8538c59caa4e5" category="list-text"><block ref="47a1b97d112c774adbe8538c59caa4e5" category="inline-xref-macro-rx"></block></block>
+  <block id="b33cc6ae02a005574f67dfd20adb1e83" category="paragraph">NetApp Ransomware Resilienceは、サポートされているボリュームとサポートされていないボリューム、攻撃への備えの訓練、保護、アラート、およびリカバリの詳細を示すJSON形式のレポートを提供し、ランサムウェアのイベントと備えをオフラインで評価および確認できるようにします。</block>
+  <block id="cfd78d66bd11cf60d1554ae2cc1ce600" category="paragraph">*どのようなレポートをダウンロードできますか？*</block>
+  <block id="3d49084ca725aed4ed86dd5114d71e31" category="list-text">*準備訓練*：改善すべき点を明確にするために、模擬攻撃の結果が含まれます。</block>
+  <block id="5197e64c7ccdc2c17a66633186db1e56" category="list-text">*クリーン復元*：クリーン復元で復元されたワークロードの詳細が含まれます。</block>
+  <block id="3d5136c6c3a9616651f6d948d9ff9bc3" category="paragraph">クリーンなリストアレポートを生成するには、アクティブな隔離リカバリ環境（IRE）が必要です。IREが削除された後は、クリーンなリストアレポートは利用できません。</block>
+  <block id="362814f084076136afc53ff5657841e9" category="doc">NetApp Ransomware Resilienceでユーザーアクティビティ検出を設定する</block>
+  <block id="9d13b6c301a5845f3abf35b5845c2e44" category="doc">NetApp Ransomware Resilienceでプライバシー侵害を特定</block>
+  <block id="6099697e2a6a8f6f3f428d832424ccd8" category="summary">Ransomware Resilienceを使用すると、クリーンなリストアでワークロードを制御してサニタイズできます。</block>
+  <block id="6a9e29e376d0cfeb3458eb2ec0d368c2" category="doc">NetApp Ransomware Resilienceでクリーンリストアを使用してワークロードをリカバリ</block>
+  <block id="f0b90fa8f5ad3bdcf7ca0566043b0bc7" category="paragraph">NetApp Ransomware Resilienceを使用すると、クリーンリストアを使用して、暗号化ベースのランサムウェア攻撃のあとにガイド付きリカバリを実行できます。クリーンリストアは、データ損失を最小限に抑え、ワークロードを可能な限り短時間でオンラインに戻すための最適化されたリカバリパスを特定します。</block>
+  <block id="88616a0b3339c4c7896bc89637623c8c" category="inline-xref-macro">カスタム復元オプション</block>
+  <block id="335671c274748cbe7e810da4fb09ee39" category="paragraph">クリーン復元オプションは、<block ref="7505fe57dac9c850bacebdaf9c5d9534" category="inline-xref-macro-rx"></block>の代替手段です。</block>
+  <block id="563d648fca7174bd637bc7553ffbdfd5" category="inline-link-macro">隔離された回復環境</block>
+  <block id="68a63568bae8b1136a4d6ed86a9df817" category="paragraph">クリーンな復元を実行する前に、<block ref="e6b9ac27e9d8426eab4ef45db03a98fc" category="inline-link-macro-rx"></block>を設定しておく必要があります。</block>
+  <block id="ea61e2c2ff507048203824add1eb7c21" category="section-title">考慮事項</block>
+  <block id="8a687ede20b3179501211e222eccc84d" category="section-title">クリーンな復元を実行します</block>
+  <block id="7d3fcc28c899a7b289e05e013aad4dc6" category="list-text">**Recovery**セクションで、復元するワークロードを選択します。**Restore**を選択します。</block>
+  <block id="9c5ec70f60ca9ceaf825ce83f9bd4bac" category="list-text">復元タイプのオプションで、**クリーン復元**を選択し、**次へ**をクリックします。</block>
+  <block id="b57d941a4d6ae6c8309974df2602afd1" category="list-text">使用する隔離されたリカバリ環境を選択し、*[次へ]*をクリックします。</block>
+  <block id="d58c5ad1de11a448129ae415c7bf9504" category="list-text">隔離された復旧環境を確認し、正しい場所であることを確認します。**Restore**を選択します。</block>
+  <block id="adbc7d98b73b56e4671ba46ad7551544" category="list-text">Ransomware Resilienceは必要な設定を実行します。セットアップが正常に完了すると、Ransomware Resilienceは**Setup complete**と表示します。分析に進むには、**Next**を選択してください。</block>
+  <block id="aac0bbc39aabd77485c1a91df7ebf08a" category="list-text">セットアップが完了したら、**分析を実行**を選択してください。Ransomware Resilienceは、ランサムウェア攻撃発生前の7日間に利用可能なすべての復元ポイントを分析し、復元ポイントの日付と種類を表示します。</block>
+  <block id="737dfd8870fb9011f2148f9df5f1c709" category="inline-image-macro">クリーンリストア分析ステップのスクリーンショット。</block>
+  <block id="d64cc3b278bde1725adb921ef1a31d7e" category="paragraph"><block ref="d64cc3b278bde1725adb921ef1a31d7e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="975584d4fa288f1c7066a3e04c45884c" category="list-text">分析が完了したら、**Next**を選択して回復計画を立ててください。Ransomware Resilienceには、**Least data loss**と**Latest unimpacted restore point**という2つのオプションがあります。いずれかのオプションを選択し、必要に応じて、それぞれの復元ポイントの個々のファイルデータを確認できます。</block>
+  <block id="c26ff48add8a2ec49af17a7e2a76ee5b" category="paragraph">詳細なファイルイベントデータを表示するには、分析対象のファイルを選択して暗号化ステータスを確認します。ファイルが作成、変更、または削除された日時、およびどの復元ポイントがどの操作に対応するかを確認できます。</block>
+  <block id="59eb34c12f3abfa98756951d0fb8ecfb" category="inline-image-macro">クリーンリストアプランの手順のスクリーンショット。</block>
+  <block id="ea7360bc3a148c8251f392279d717749" category="paragraph"><block ref="ea7360bc3a148c8251f392279d717749" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="06b21a82c6a8e8409f7421e256a89d75" category="list-text">復元ポイントを選択したら、**次へ**を選択してファイルのクリーンアップを開始してください。</block>
+  <block id="bf919d26eded9ba9285a6e36c4dca3fd" category="list-text">Ransomware Resilienceがワークロードのクリーンアップを開始します。</block>
+  <block id="4f7284ff2b84a2edf1a4d1841e9673e8" category="paragraph">クリーニングが完了したら、**Start recovery**を選択してリカバリを開始します。</block>
+  <block id="7b2695ab24236bab0ddf7ad7175f5c04" category="list-text">元のワークロードを保存するかどうかを選択してください。元のワークロードを保存しない場合は、**No, replace the original workload**を選択してください。保存するには、**Yes, save the original workload**を選択し、ワークロードの新しい名前を入力します。</block>
+  <block id="bb48b2870670838fdaceecb7e839faf4" category="list-text">**リカバリ開始**を選択して、リカバリを開始します。</block>
+  <block id="6f442695db7c03fcadf2ad5e394da170" category="list-text">リカバリが完了したら、**Next**を選択して最終フェーズに進みます。</block>
+  <block id="c40ef494fde6d59a18088598fb50e5f5" category="list-text">**リソースを解放して終了**を選択して、リソースを解放し、クリーンルームを閉じます。リソースを解放することを確認するには、**終了**を選択します。</block>
+  <block id="ce9ea3f9da32231f2342106b6a2da0c1" category="doc">NetApp Ransomware Resilienceでクリーンな復元環境を設定する</block>
+  <block id="d08d6f8d7a531831181b973c3132aaef" category="paragraph">NetApp Ransomware Resilienceはクリーンリストアを提供し、ランサムウェア攻撃後のガイド付きリカバリを実現します。クリーンリストアを実行するには、まずオンプレミスまたはサポートされているクラウド環境に、隔離されたリカバリ環境（IRE）を作成する必要があります。IRE内にクリーンルームを作成します。そこでRansomware Resilienceはワークロードを隔離し、どのファイルがクリーンで、どのファイルがランサムウェアの影響を受けているかを特定します。</block>
+  <block id="f6ee05d779160a7db74d926e2bb640f7" category="section-title">クリーンリストアについて</block>
+  <block id="ae684a367ef7be289c58528c425ecc18" category="paragraph">クリーンリストアを実行すると、NetApp Ransomware Resilienceがリカバリを最適化する複数ステップのプロセスをガイドします。</block>
+  <block id="3f2567a86f8c54d04ec6273cdb7e3a90" category="list-text">**セットアップ**：クリーンなリストアを実行するには、まず IRE を作成し、次にリストアするワークロードを選択する必要があります。Ransomware Resilience は、ワークロードに関するすべてのアクションが実行されるクリーンルームを作成します。</block>
+  <block id="c3763704f64261ad7b74c0b6ece3a5e7" category="list-text">**分析**：クリーンルームでは、NetApp Ransomware Resilienceがすべてのスナップショットを分析し、暗号化が存在するかどうかを確認します。クリーンな復元は、最適な復旧計画を決定するための復旧マップを作成します。</block>
+  <block id="5cdee73c83008a843d9dbb0a991b8307" category="paragraph">影響を受けるファイルを含まない復元ポイントが検出されると、それ以前のすべての復元ポイントはスキップされます。例えば、ランサムウェア攻撃が10月10日に発生し、10月7日午前10：21に影響を受けていない復元ポイントが見つかった場合、10月7日午前10：21より前のすべての復元ポイントはスキップされます。</block>
+  <block id="82e75ee1827478564b33a5410c9eb863" category="paragraph">分析ステップでは、レビューされたファイルの数も表示され、影響を受けるファイルと影響を受けないファイルが示されます。</block>
+  <block id="3ad61c0b3a3d27855f2b93882effa895" category="list-text">**プラン**：提供されている復旧オプションから選択してください。</block>
+  <block id="e5837c573a5ec3255c53e691d80aa8d5" category="list-text">_最新の影響を受けていない復元ポイント_：攻撃前の最新の暗号化されていないスナップショットからの最も迅速な復元ポイント</block>
+  <block id="005de8e860701780275d7a1820f266e8" category="list-text">_データ損失最小_：異なるスナップショットから得られた、暗号化されていないすべてのファイルの最新バージョン</block>
+  <block id="bcec21f7634632270763ec4fbec096be" category="paragraph">計画段階でファイル履歴を表示することで、ランサムウェア攻撃がファイルに影響を与えた時期や、復旧ポイントがその攻撃と時間的にどのように関連しているかを確認することもできます。</block>
+  <block id="d4b88ae7112ba206532c2177bf4d3ee7" category="list-text">**クリーンアップ**：NetApp Ransomware Resilience は、リカバリポイントからマルウェアを削除します。クリーンアップできないファイルがある場合は、復元対象から除外され、別の場所に隔離されます。</block>
+  <block id="df2aee92cf409d5307ab1b2587c12b51" category="list-text">**復元**：NetApp Ransomware Resilienceは、クリーンなデータをソース環境に復元します。</block>
+  <block id="c37b4ad01da7b4bdabb1e1ef27187b86" category="list-text">**終了**：NetApp Ransomware Resilience はプロセスの詳細な概要を提供し、クリーンルームを閉じ、セットアップ中にプロビジョニングされたリソースを解放して、将来の従量課金コストを排除します。</block>
+  <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">サポートされている構成</block>
+  <block id="01c81fea09d285ebadc2362452091509" category="list-text">ランサムウェア対策アカウントごとに作成できるIREは1つだけです。各IREには3つのクリーンルームを設置できます。</block>
+  <block id="582cfdbdcce499f277827ab3d0e7be89" category="list-text">クリーン リストアは現在、 NAS ファイル共有（ NFS / CIFS ）でのみサポートされています。</block>
+  <block id="9c69ad94c9075f0b7cad75c76d595107" category="list-text">ソース環境にクリーン リストアを実行する必要があります。</block>
+  <block id="3f1675c8b59091961a73a7cb3f4ccc76" category="list-text">クラウドまたはオンプレミスでIREを作成できます。現在、以下の構成がサポートされています：</block>
+  <block id="9937b29fcbc513990ee3a11d520463ec" category="cell">Destination（IRE）</block>
+  <block id="936e18cf7bf36043950dc2aaedf4d3e0" category="cell">サポートされている宛先リージョン</block>
+  <block id="459af8e818b008f87953a215f60b7602" category="cell">オンプレミス（AFF または FAS システムのみ）*</block>
+  <block id="ada6ac960107fc33df56471b0563964c" category="cell">オンプレミス（VMware vCenter）</block>
+  <block id="1470c4596f09bf147bf564758d0ab65a" category="cell">クラウド：AWS</block>
+  <block id="8086e076c1440c96a66792ace0ad9a9a" category="list-text">US East 1</block>
+  <block id="2cefd515e4957f2cd0e6e94109aedf59" category="list-text">EU Central 1</block>
+  <block id="3189552bad716cc50b21cf06e1ce8055" category="cell">クラウド：Cloud Volumes ONTAP と AWS*</block>
+  <block id="6eac9a8614fc5276d77f16262e773b73" category="cell">クラウド：Amazon FSxN for ONTAP</block>
+  <block id="b1f5b0ae27e9c2d8ce17d7546a138c55" category="paragraph">{asterisk} ONTAP 9.11.1以降を実行している必要があります。</block>
+  <block id="e94e6e5768958058fb727a7416bb95cc" category="inline-link-macro">コストとライセンス</block>
+  <block id="df793ad0d2ee67dbaef2bbd64569c674" category="admonition">クラウドベース環境でクリーンな復元を実行すると、クラウド プロバイダから追加のコンピューティング料金が発生する場合があります。詳細については、<block ref="c8aa07fb5af5da0ce42c5de706498fc6" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="fbf08ce067505f9878100fd957c4b417" category="section-title">オンプレミス環境に関する追加の考慮事項</block>
+  <block id="566ad5e0156a42a838473ceceafc4a22" category="paragraph">オンプレミスのIREを展開する場合、クリーンリストアでリカバリ分析のためにWindows VMをクローンすると、クローンされたVMはソースと同じ構成を保持します。これにより競合が発生する可能性があります：</block>
+  <block id="fc9897437d0058f47163b41933bf7218" category="list-text">同じセキュリティ識別子（SID）を使用すると、認証およびセキュリティ上の競合が発生します。</block>
+  <block id="b8a224e639154658d903c119ad01f115" category="list-text">同じコンピュータ名（CN）を使用すると、ネットワークの競合が発生します。</block>
+  <block id="42d5a005352158447d080ff821694db4" category="list-text">同じマシン ID を使用すると、ライセンスとアクティベーションに関する問題が発生します。</block>
+  <block id="2b973fe4e18c7b4ee211cfe2a2373d41" category="paragraph">これらの競合を回避するため、Ransomware ResilienceはクローンVMに対してsysprepを実行し、SID、CN、およびマシンIDをリセットします。これらの値をリセットすることで、クローンVMがソースVMに干渉することなく、独自の独立したインスタンスとして動作することが保証されます。</block>
+  <block id="c94b2ef9dde0531d36cb0d4e5d7b4b72" category="section-title">セカンダリ ソース</block>
+  <block id="08607b19598a980be86467b52da1e4d3" category="paragraph">オンプレミスのソースに対してIREを作成する場合、セカンダリ ソースを追加するオプションがあります。</block>
+  <block id="dd4cfaa170b77a39c3f6a4580966901c" category="paragraph">プライマリ ソースが利用可能な場合は、クリーン リストアをプライマリ ソースにリストアする必要があります。プライマリ ソースが利用できず、セカンダリ ソースを設定している場合は、クリーン リストアはセカンダリ ソースにリストアされます。</block>
+  <block id="4a03772068b579d9b09ff0433b7acadd" category="paragraph">クリーンリストアプロセスは、デフォルトではソース環境のスナップショットを分析します。ソース環境が利用できない場合、またはソース上の暗号化されていないスナップショットが利用できない場合、クリーンリストアは、セカンダリ システムを設定済みの場合はそのスナップショットを分析します。</block>
+  <block id="bf6aff190124dd12362477474eddaf9b" category="paragraph">クリーン リストアは Ransomware Resilience の一部として提供されます。クリーン リストアの実行や IRE の作成に追加ライセンスは必要ありません。</block>
+  <block id="2c5f8b1bf69ff1fef550992679ff59b6" category="paragraph">クリーンリストアを有効にすると、サードパーティのクラウド プロバイダ料金が発生する可能性があります。サービスの利用方法によっては、クリーンリストア環境が存在する間、これらの料金が繰り返し発生する場合があります。</block>
+  <block id="d820e90e08f18bcb21f419de5072496d" category="paragraph">サードパーティの料金には、コンピューティング インスタンスの作成と導入、およびクリーニングとリカバリのための追加の本番ストレージ容量が含まれる場合があります。次の例を考えてみましょう：</block>
+  <block id="b8e0a8b93f5e303e66c1913fea32d6c2" category="list-text">AWSにIREがデプロイされ、クリーンリストアを開始すると、暗号化とマルウェアをクリーンアップするために、IRE内のクリーンルームに2つのt3.medium AWS EC2インスタンスがデプロイされます。</block>
+  <block id="c21b1c1f109ee448ac505029595363ff" category="list-text">Cloud Volumes ONTAPでは、クリーン リストアによって、メタデータ ボリュームと分析用のSnapshotクローン用のクリーン ルーム ストレージVMが作成されます。</block>
+  <block id="794fbe3384113d14f1fdcd8989bf96c9" category="paragraph">選択したクリーン リストア導入タイプの前提条件が完了していることを確認してください。選択したIRE構成のタブを選択します。</block>
+  <block id="97b3465a0840a995756be84349359712" category="admonition">IREを作成する際には、IRE作成時のシステム選択ステップで、分析に使用するすべてのシステム（プライマリまたはセカンダリ）を追加する必要があります。</block>
+  <block id="f936c9befadd0c2d8782d30172d6b01c" category="open-title">クラウド間</block>
+  <block id="a398547216c8a6f879cf6f1f9ece192b" category="paragraph">この図は、クラウド間クリーンリストア構成の例を示しています。IREを作成する前に、図と構成する必要のあるリソースを確認してください。</block>
+  <block id="e4c9c1fbddfacd425e4392d01cc2e86d" category="image-alt">クラウド間クリーンリストアの図</block>
+  <block id="ab667ad4c2c05508cbadf5243680d8f5" category="paragraph">この図は、オンプレミス環境からクラウド環境へのクリーンな復元構成の例を示しています。IREを作成する前に、図と構成する必要のあるリソースを確認してください。</block>
+  <block id="e2089e21752dabbd3ef51ff9a49553db" category="inline-image-macro">クラウドからオンプレミスへのクリーン リストアの図</block>
+  <block id="e625cf867c975ae8e97fac00f8ea41e7" category="paragraph"><block ref="e625cf867c975ae8e97fac00f8ea41e7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="57983f59ac18dd6402d0d93159c0e4f3" category="paragraph">この図は、オンプレミスからオンプレミスへのクリーン リストア構成の例を示しています。IREを作成する前に、図と構成する必要のあるリソースを確認してください。</block>
+  <block id="4d3cce2603ee3aa9f3e68180c988fecb" category="paragraph"><block ref="4d3cce2603ee3aa9f3e68180c988fecb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1bd140cbc0c8258678984fa95a11c4e7" category="list-text">ワークロードを復元するためにIREに接続するよう選択した各システムには、Storage Virtual Machine（SVM）が作成されます。クリーンルームSVMのデータLIFとして使用される各システムには、専用のIPアドレスを指定する必要があります。</block>
+  <block id="dddae7341366d21d7817814cf5648201" category="list-title">ホストとvCenter</block>
+  <block id="4c83fbda122cce9ae58d211347f6ad57" category="list-text">vCenterのバージョンは7.0以降で、少なくとも1つのデータセンターが必要です。</block>
+  <block id="de09cac8955fbf4a538227b1a500f1ea" category="list-text">ESXi ホストは ESXi バージョン 7.0 以降である必要があり、少なくとも 1 台のホストには VM をクローンするのに十分な CPU とメモリリソースが利用可能でなければなりません。</block>
+  <block id="d60d7d94a2b0fa737cc49124079ae916" category="list-text">提供されたvCenter認証情報には、リソースを検出して VM をクローニングするための権限が必要です。</block>
+  <block id="583b10215b97e432386097ad4ec74fba" category="list-title">ベース VM（Windows または Linux）</block>
+  <block id="8e43f7e3e1b14cfafc8b3e06e57ce8f7" category="list-text">クリーンリストアによる復旧時には、ベースとなる仮想マシンが選択されたデータセンターにクローンされ、選択されたESXiコンピューティング上に配置され、指定されたデータストアにマッピングされ、指定されたネットワークに接続されます。VMがクローンされると、2つのvCPUと4GBのRAM（LinuxまたはWindows VMの場合）、およびベースVMと同じ量のディスク容量を持つように構成されます。各クリーンリストアセッションでは、指定されたCIDR範囲から2つのIPアドレスが使用されます。</block>
+  <block id="8cf10fd69a4fd984472b32ac076fd294" category="list-text">複数のクリーンルームセッションを同時に処理できるよう、十分なIPアドレス範囲を指定する必要があります。IPアドレスは復旧完了後に解放されます。</block>
+  <block id="5de22c7c2e6d79be9397c6ce6e52329d" category="list-text">データストアには、仮想マシンのクローン作成に対応できる十分な空き容量が必要です。</block>
+  <block id="f57c45eba65afff0aceb3a08fcbcb844" category="list-text">IP アドレス範囲は CIDR 形式で指定する必要があります（例：100.100.0.0/24）</block>
+  <block id="907c95835e464d0d2873ade7ea1a6aa0" category="list-text">Linux VMの場合：</block>
+  <block id="544db10e10ef5df6ce60a5904860672f" category="list-text">オペレーティング システムは Ubuntu Linux 20.04 以降である必要があります。</block>
+  <block id="406c1681779df816214c3844edb2bea6" category="list-text">オンプレミス システムの電源を入れる必要があります。</block>
+  <block id="fa48228aaf71277e6bc2d05f062b62bb" category="list-text">VMware Toolsがインストールされ、実行されている必要があります。</block>
+  <block id="c3d0c72650d11485355d35484d14c0a1" category="list-text">SSHが有効になっている必要があります。</block>
+  <block id="e1be34a58f3251e0469bedfad3e4788d" category="list-text">nfs-commonをインストールする必要があります。</block>
+  <block id="bf53e61c050ee11a55b3479c83c5512f" category="list-text">Dockerがインストールされ、実行されている必要があります。</block>
+  <block id="66ed64c9284af661b30715d4eca9f181" category="list-text">最低40GBの空き容量が必要です。</block>
+  <block id="300cc7d3b66cf666cb37df412b0cc68b" category="list-text">Windows VMの場合：</block>
+  <block id="21755314d24463f2d188ab45bb05c0c0" category="list-text">Windows 仮想マシンには 20 GB の空き容量が必要です。</block>
+  <block id="90d564042949a5f93242647a2eebfa5a" category="list-text">OS は Windows Server 2022 または 2025 である必要があります。</block>
+  <block id="f4202e7e0c5094531b708b50600cc832" category="list-text">VMware Tools がインストールされ、実行されている必要があります。</block>
+  <block id="09b7c2aa37556075a97e0692779f37aa" category="list-text">WinRMを有効にする必要があります。</block>
+  <block id="3150667c3111f1fed62e5265ad610aa2" category="list-text">IP を設定する必要があります。</block>
+  <block id="8521641d0ead625e5ab746c26c3df774" category="list-text">ベースVMのクローニングを許可する適切なライセンスがあることを確認してください。</block>
+  <block id="b69e202d94775b8134a93d5f20d13c9e" category="list-text">VM の電源をオンにする必要があります。</block>
+  <block id="eec89088ee408b80387155272b113256" category="list-title">ネットワーク</block>
+  <block id="5d1a1ff59e66d0bc9d1daac52f5b90db" category="list-text">VLAN リソースを次のアクセス権限で設定します：</block>
+  <block id="be8545ae7ab0276e15898aae7acfbd7a" category="cell">リソース</block>
+  <block id="57985bf22d56d3d5ad7e34ea170e50e1" category="cell">クリーンルーム SVM VLAN</block>
+  <block id="aad7ad0a3b482124ebe65e2a0d0d63f4" category="paragraph">NFSアクセス先：* Production Consoleエージェント * Console エージェントVLAN * クリーンルームVLAN</block>
+  <block id="8270526e73a5afac153ac40285767b82" category="cell">コンソール エージェント VLAN</block>
+  <block id="7cc3389e88f60e41b644c5d65d86d889" category="list-text">クリーン ルーム SVM VLAN への NFS アクセス</block>
+  <block id="0ef1f9cf74002e09d29a925e45cb855e" category="list-text">クリーンルーム VLAN への HTTP/SSH アクセス</block>
+  <block id="15ab65595c9c0052c561da4d42f21b89" category="cell">クリーン ルーム VLAN</block>
+  <block id="746b3d3a85d2d1d3c46dfac5624ebef0" category="cell">クリーン ルーム SVM VLAN への NFS アクセス</block>
+  <block id="c0d06f34f409c88591b7f6400fe18f79" category="list-title">専用NetApp Consoleエージェント</block>
+  <block id="7ceddaa8655f37336fb68de0bd913377" category="inline-link-macro">オンプレミスに Console エージェントを導入する</block>
+  <block id="aa147883aef6768d6c780bb0a1c8f82b" category="list-text">IRE 用の専用NetApp Console エージェントを導入します。Console エージェントは、クリーン ルーム VLAN にアクセスできる宛先vCenterに導入する必要があります。導入プロセスの詳細については、<block ref="8982c6b7b71ee0cfe0da7587be46f6b1" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="fcbb0e1baa9ae5913c0059a3babc98ba" category="paragraph">クリーンな復元を実行する前に、隔離されたリカバリ ルームを作成する必要があります。</block>
+  <block id="90f9f1ae9aae8bda3367df6cbbd98883" category="paragraph">隔離されたリカバリ ルームを作成するプロセスは、環境がクラウドにあるかオンプレミスにあるかによって異なります。正しい場所の手順に従ってください。</block>
+  <block id="c8e2277ecfb1427838c488c217f99466" category="open-title">クラウド</block>
+  <block id="0f41fbceabc827d5c5df2618a1c312ad" category="list-text">「クリーン復元」カードで、これが最初の環境の場合は **構成** を選択し、既に作成済みの場合は **管理** を選択します。</block>
+  <block id="33319874642cd9fa09af5fae9c62b0f4" category="list-text">IREを作成するのが初めての場合は、次のステップに進んでください。</block>
+  <block id="7a5443fd9ce8d6f45236ac37568d5b41" category="paragraph">既にIREを作成済みの場合は、**追加**を選択して別のIREを作成します。</block>
+  <block id="b0836e1bf6680e789281aea3293f7647" category="list-text">クラウドベースの IRE の場合は、**Amazon Web Services** を選択してください。</block>
+  <block id="4564ef7a631e6ae4e5c472323c190a1d" category="list-text">**Name**セクションを展開します。環境の**Name**を作成します。</block>
+  <block id="b330f48d8947ae91888a185951c00937" category="list-text">*Systems* セクションを展開します。IRE に接続するシステムを選択します。選択した各システムについて、ストレージ VM の IP アドレス、サブネット マスク、およびゲートウェイを指定する必要があります。</block>
+  <block id="9c0961645ab2dde42b360b9dd39f0dcc" category="admonition">Amazon FSxN for ONTAPに導入されたIREの場合、この情報を提供する必要はありません。</block>
+  <block id="be33043acadffab164c32971cd856af7" category="inline-image-macro">システム選択インターフェイスのスクリーンショット。</block>
+  <block id="9aa6cf1eff1a76b0409b3e752312ea85" category="paragraph"><block ref="9aa6cf1eff1a76b0409b3e752312ea85" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="89fdf1c0dc132ad5060755aed85034a8" category="list-text">* 認証 * セクションを展開します。</block>
+  <block id="4714db5e444c82e9797cf1040d2e1bb4" category="list-text">クラウド**アカウント**IDを入力し、アカウントの**リージョン**を選択します。</block>
+  <block id="3aae9af33dfbd98649b0845bbd649675" category="list-text">アカウントの**アクセス キー**と**シークレット キー**を入力します**。**</block>
+  <block id="a81c4edeb10492c8584a0c9082f6ce84" category="list-text">* Virtual private cloud （ VPC ）* セクションを展開します。IRE を導入する VPC ID を入力します。</block>
+  <block id="c2b8af5a06c2ce8a91c4861ae659df43" category="inline-image-macro">IRE 認証設定のスクリーンショット。</block>
+  <block id="9a717f23235ddd79acf46b60cbb49654" category="paragraph"><block ref="9a717f23235ddd79acf46b60cbb49654" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="220e304e2191688ccb248376282d530b" category="list-text">**追加**を選択してIREを作成します。</block>
+  <block id="f705de5bc3ba8ea79dddb837a99ebb45" category="paragraph">Ransomware Resilienceは、追加を選択した後に接続をテストします。これには数分かかる場合があります。</block>
+  <block id="f0e69ccbb7ad96f546f7924206944bfa" category="open-title">オンプレミス</block>
+  <block id="9f1d53078d7f9d9907fb2e5042915794" category="list-text">「クリーン復元」カードで、これが最初の環境の場合は **追加** を選択し、既に作成済みの場合は **管理** を選択します。</block>
+  <block id="fffc61b2d6d50fdd26e57c1dc63ba3e1" category="list-text">IREを作成するのが初めての場合は、次のステップに進んでください。既にIREを作成済みの場合は、**追加**を選択して別のIREを作成してください。</block>
+  <block id="a32ffcf87a910c4dc1998036da51a79e" category="list-text">場所については、**オンプレミス**を選択してください。</block>
+  <block id="de069b391b655fa33e7b553f551b3ed8" category="list-text">*Name*セクションを展開します。IREに**Name**を割り当てます。</block>
+  <block id="da5888e486faa08ea3f4a546d8ea2b6b" category="list-text">*Systems*セクションを展開します。IREに接続するシステムを選択します。IREでリカバリするワークロードがある各システムに、ストレージVM IPアドレス、サブネットマスク、ゲートウェイを割り当てます。</block>
+  <block id="6c98e0cb0c66954d78f2191bf8fdcd90" category="paragraph">選択する各システムには、IPアドレスが割り当てられている必要があります。プライマリシステムまたはセカンダリシステムを選択できます。プライマリシステムに暗号化されていないスナップショットがない場合、またはプライマリシステムが利用できない場合は、セカンダリシステムを分析および復旧に使用できます。</block>
+  <block id="88fd1b8a6e78502ed71683ed691e3faa" category="list-text">**Console agent** セクションを展開します。IRE にデプロイされている Console agent をドロップダウンメニューから選択します。</block>
+  <block id="594222a9ce3ab2f5ea0066e3f132342d" category="list-text">*Compute* セクションを展開します。</block>
+  <block id="2c164c9a5db457fb3a29bc4f36a90e11" category="list-text">vCenter サーバーを認証するための認証情報を入力します：*IP アドレス*または完全修飾ドメイン名（FQDN）、*ポート*、*ユーザー名*、*パスワード*。</block>
+  <block id="dc7731af7d2a810f6507b9403958dd46" category="list-text">**認証**を選択してクレデンシャルを確認します。続行する前に、UIでクレデンシャルが確認されるまで待ちます。</block>
+  <block id="1af5b22f428ddc58d2ad153a520e2dbb" category="list-text">VMをデプロイする*データセンター*、*クラスタ*、および*ESXiホスト*を選択します。</block>
+  <block id="b3c061b4902652a5ebd7ec117faf4ac4" category="list-text">ESXiホストの*データストア*と*ネットワーク*を選択します。</block>
+  <block id="653958d4d3ad99fa5fc27c03767b14a0" category="list-text">VMの*IPアドレス範囲*と*ゲートウェイ*を入力します。</block>
+  <block id="3c313c8ed317dbe7d4203dcdd31c8a19" category="inline-image-macro">コンピューティング選択インターフェイスのスクリーンショット。</block>
+  <block id="8cae18dea7d74591e21c2f2407666e60" category="paragraph"><block ref="8cae18dea7d74591e21c2f2407666e60" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7ca860788f238da4a9c5263bd546d3d2" category="list-text">*VMs*セクションを展開します。このセクションは、*Compute*セクションでの入力内容に基づいて入力されます。クリーンリストア中にマルウェアをスキャンするために使用するESXiホスト上のVMを選択します。選択した各VMの*User name*と*Password*を入力します。</block>
+  <block id="d7b9a49b450fb7d4116d3c4df7a11288" category="list-text">**追加**を選択してIREを作成します。Ransomware Resilienceは、追加を選択した後に接続をテストします。この処理には時間がかかる場合があります。</block>
+  <block id="af131a682b99e37528a95fa21be4b5cc" category="paragraph">進捗状況を追跡できます。設定タブで、**Isolated recovery environments**を選択します。Isolated recovery environmentsページには、すべてのIREとそのステータスが表示されます。その環境に関連するすべてのジョブの詳細を確認するには、**View jobs**を選択してください。</block>
+  <block id="16a6474800dcc57e48f9c5fecf7f4b0a" category="paragraph">IREは作成後でもシステムを変更できます。設定タブで、**隔離されたリカバリ環境**を選択します。編集したいIREを見つけて、アクションメニュー<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>を選択し、**編集**を選択します。システムの変更作業を進めてください。完了したら**保存**を選択してください。</block>
+  <block id="59f0ec64e6ca9eb2b145c2d0b972a631" category="section-title">隔離された回復環境を削除</block>
+  <block id="3b98dd3eb2a4ab1e4dbff3d07d4b9987" category="paragraph">復元操作がアクティブな状態では、IREを削除することはできません。復元操作をキャンセルするか、復元が完了するまで待ってからIREを削除してください。</block>
+  <block id="f9df77cbf2042ca0c84056ff5f798b3f" category="admonition">IREを削除すると、クリーンルームSVMとメタデータボリュームも削除されます。これらのアセットが削除されると、クリーンリストアに関するレポートを生成することはできなくなります。</block>
+  <block id="ffbbe06f3f17d59276920755ff6ac29b" category="list-text">**設定**に移動します。</block>
+  <block id="40d3ac507a7227e0481f98409e8015f7" category="list-text">「クリーン復元」カードで、**「管理」**を選択します。</block>
+  <block id="28d6e2e82ae55c1edb64289ae5513448" category="list-text">削除するクリーンルームを特定します。そのルームのアクションメニュー列で、3つのドット<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>を選択し、次に**削除**を選択します。</block>
+  <block id="7c2d524886480cf4cd6bc69e0c99bb89" category="list-text">ダイアログで **Delete** を選択して操作を確定します。</block>
+  <block id="f4cc881797e2311f16dfa07e4349adcc" category="doc">NetApp Ransomware Resilienceのカスタムリストアを使用してランサムウェア攻撃から復旧</block>
+  <block id="535ddb562a8b468bf49b846735d03ed1" category="paragraph">Ransomware Resilienceを使用すると、ストレージ管理者は、推奨復元ポイントまたは優先復元ポイントのどちらからワークロードを復元するのが最適かを判断できます。</block>
+  <block id="bd0b37105ea52455dcd82ba55451d05f" category="inline-xref-macro">クリーン復元オプション</block>
+  <block id="5dcd94da76cba8e0b3c6917268a26445" category="admonition">Ransomware Resilienceは、<block ref="8b52cfc7bcb9ecd0048f1693353befd6" category="inline-xref-macro-rx"></block>もサポートしており、ガイド付き復旧機能と高度な機能が提供され、クリーンで暗号化されていないデータのみが復旧されることが保証されます。</block>
+  <block id="078165d94495873b74eac3f73ef2c5c5" category="paragraph">*必要なコンソールロール* 組織管理者、フォルダまたはプロジェクト管理者、またはランサムウェア対策管理者。<block ref="c63b2c8d20974c1834bc75207be469f3" category="inline-link-macro-rx"></block>。</block>
+  <block id="4f22e7913d6404c2f4a730aca8aa04aa" category="list-text">ファイルのクリーンアップを行わずに続行するには、**カスタム復元**を選択してください。</block>
+  <block id="b5909998e75bc501f2c6e00e6e19c1d6" category="section-title">影響を受けるファイルのリストを取得します</block>
+  <block id="186ec07a353da723ddd0689610e66577" category="admonition">ボリュームに複数のアラートがある場合は、各アラートについて影響を受けるファイルのCSVリストをダウンロードする必要があります。</block>
+  <block id="488dd29bfedaf4a56b590ad9e2171dc8" category="section-title">ファイルを復元する</block>
+  <block id="138cbd11459ece46267adb92ab34ee1f" category="paragraph">影響を受けたファイルを評価した後、復元することができます。</block>
+  <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026年4月13日</block>
+  <block id="794c08acf0fdad83a95c363b8c9662f4" category="sidebar">回復状況を確認する</block>
+  <block id="d14be6fd318be2bc44adb6224cd0309b" category="sidebar">クリーンな復元で復旧する</block>
 </blocks>

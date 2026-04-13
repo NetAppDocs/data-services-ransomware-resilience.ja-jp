@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: task-clean-restore-recover.html 
+keywords: clean room, clean restore, secure recovery, recover, isolated recovery environment, ire 
+summary: Ransomware Resilienceを使用すると、クリーンなリストアでワークロードを制御してサニタイズできます。 
+---
+= NetApp Ransomware Resilienceでクリーンリストアを使用してワークロードをリカバリ
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilienceを使用すると、クリーンリストアを使用して、暗号化ベースのランサムウェア攻撃のあとにガイド付きリカバリを実行できます。クリーンリストアは、データ損失を最小限に抑え、ワークロードを可能な限り短時間でオンラインに戻すための最適化されたリカバリパスを特定します。
+
+クリーン復元オプションは、xref:task-custom-restore.html[カスタム復元オプション]の代替手段です。
+
+
+
+== 開始する前に
+
+クリーンな復元を実行する前に、link:task-clean-restore.html["隔離された回復環境"^]を設定しておく必要があります。
+
+*必要なコンソール ロール* このタスクを実行するには、組織管理者、フォルダーまたはプロジェクト管理者、またはランサムウェア耐性管理者のロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
+
+
+
+== 考慮事項
+
+* 暗号化型ランサムウェア攻撃の場合、クリーンな復元のみを実行できます。
+* 隔離された復旧環境に新しい操作を実行するための容量がない場合、空きができるまでキューに格納されます。
++
+** NetApp Ransomware Resilienceリカバリダッシュボードでは、アクティブなクリーン復元操作とキューに登録されているクリーン復元操作のステータスをいつでも監視できます。
+
+
+* クリーンな復元を開始すると、元のボリュームがアンマウントされるため、IOアクセスが中断される可能性があります。
+
+
+
+
+== クリーンな復元を実行します
+
+. **Recovery**セクションで、復元するワークロードを選択します。**Restore**を選択します。
+. 復元タイプのオプションで、**クリーン復元**を選択し、**次へ**をクリックします。
+. 使用する隔離されたリカバリ環境を選択し、*[次へ]*をクリックします。
+. 隔離された復旧環境を確認し、正しい場所であることを確認します。**Restore**を選択します。
+. Ransomware Resilienceは必要な設定を実行します。セットアップが正常に完了すると、Ransomware Resilienceは**Setup complete**と表示します。分析に進むには、**Next**を選択してください。
+. セットアップが完了したら、**分析を実行**を選択してください。Ransomware Resilienceは、ランサムウェア攻撃発生前の7日間に利用可能なすべての復元ポイントを分析し、復元ポイントの日付と種類を表示します。
++
+image:screenshot-clean-room-analysis.png["クリーンリストア分析ステップのスクリーンショット。"]
+
+. 分析が完了したら、**Next**を選択して回復計画を立ててください。Ransomware Resilienceには、**Least data loss**と**Latest unimpacted restore point**という2つのオプションがあります。いずれかのオプションを選択し、必要に応じて、それぞれの復元ポイントの個々のファイルデータを確認できます。
++
+詳細なファイルイベントデータを表示するには、分析対象のファイルを選択して暗号化ステータスを確認します。ファイルが作成、変更、または削除された日時、およびどの復元ポイントがどの操作に対応するかを確認できます。
+
++
+image:clean-restore-plan.png["クリーンリストアプランの手順のスクリーンショット。"]
+
+. 復元ポイントを選択したら、**次へ**を選択してファイルのクリーンアップを開始してください。
+. Ransomware Resilienceがワークロードのクリーンアップを開始します。
++
+クリーニングが完了したら、**Start recovery**を選択してリカバリを開始します。
+
+. 元のワークロードを保存するかどうかを選択してください。元のワークロードを保存しない場合は、**No, replace the original workload**を選択してください。保存するには、**Yes, save the original workload**を選択し、ワークロードの新しい名前を入力します。
+. **リカバリ開始**を選択して、リカバリを開始します。
+. リカバリが完了したら、**Next**を選択して最終フェーズに進みます。
+. **リソースを解放して終了**を選択して、リソースを解放し、クリーンルームを閉じます。リソースを解放することを確認するには、**終了**を選択します。
+

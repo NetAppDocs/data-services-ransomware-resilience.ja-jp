@@ -4,7 +4,7 @@ permalink: suspicious-user-activity.html
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, 
 summary: Ransomware Resilience の疑わしいユーザー アクティビティ検出により、潜在的な脅威となる可能性のあるユーザー アクティビティを検出できます。 
 ---
-= NetApp Ransomware Resilienceでユーザアクティビティ検出用のエージェントとコレクタを設定
+= NetApp Ransomware Resilienceでユーザーアクティビティ検出を設定する
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
