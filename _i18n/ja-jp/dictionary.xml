@@ -2262,8 +2262,6 @@
   <block id="6099697e2a6a8f6f3f428d832424ccd8" category="summary">Ransomware Resilienceを使用すると、クリーンなリストアでワークロードを制御してサニタイズできます。</block>
   <block id="6a9e29e376d0cfeb3458eb2ec0d368c2" category="doc">NetApp Ransomware Resilienceでクリーンリストアを使用してワークロードをリカバリ</block>
   <block id="f0b90fa8f5ad3bdcf7ca0566043b0bc7" category="paragraph">NetApp Ransomware Resilienceを使用すると、クリーンリストアを使用して、暗号化ベースのランサムウェア攻撃のあとにガイド付きリカバリを実行できます。クリーンリストアは、データ損失を最小限に抑え、ワークロードを可能な限り短時間でオンラインに戻すための最適化されたリカバリパスを特定します。</block>
-  <block id="88616a0b3339c4c7896bc89637623c8c" category="inline-xref-macro">カスタム復元オプション</block>
-  <block id="335671c274748cbe7e810da4fb09ee39" category="paragraph">クリーン復元オプションは、<block ref="7505fe57dac9c850bacebdaf9c5d9534" category="inline-xref-macro-rx"></block>の代替手段です。</block>
   <block id="563d648fca7174bd637bc7553ffbdfd5" category="inline-link-macro">隔離された回復環境</block>
   <block id="68a63568bae8b1136a4d6ed86a9df817" category="paragraph">クリーンな復元を実行する前に、<block ref="e6b9ac27e9d8426eab4ef45db03a98fc" category="inline-link-macro-rx"></block>を設定しておく必要があります。</block>
   <block id="ea61e2c2ff507048203824add1eb7c21" category="section-title">考慮事項</block>
@@ -2287,7 +2285,6 @@
   <block id="bb48b2870670838fdaceecb7e839faf4" category="list-text">**リカバリ開始**を選択して、リカバリを開始します。</block>
   <block id="6f442695db7c03fcadf2ad5e394da170" category="list-text">リカバリが完了したら、**Next**を選択して最終フェーズに進みます。</block>
   <block id="c40ef494fde6d59a18088598fb50e5f5" category="list-text">**リソースを解放して終了**を選択して、リソースを解放し、クリーンルームを閉じます。リソースを解放することを確認するには、**終了**を選択します。</block>
-  <block id="ce9ea3f9da32231f2342106b6a2da0c1" category="doc">NetApp Ransomware Resilienceでクリーンな復元環境を設定する</block>
   <block id="d08d6f8d7a531831181b973c3132aaef" category="paragraph">NetApp Ransomware Resilienceはクリーンリストアを提供し、ランサムウェア攻撃後のガイド付きリカバリを実現します。クリーンリストアを実行するには、まずオンプレミスまたはサポートされているクラウド環境に、隔離されたリカバリ環境（IRE）を作成する必要があります。IRE内にクリーンルームを作成します。そこでRansomware Resilienceはワークロードを隔離し、どのファイルがクリーンで、どのファイルがランサムウェアの影響を受けているかを特定します。</block>
   <block id="f6ee05d779160a7db74d926e2bb640f7" category="section-title">クリーンリストアについて</block>
   <block id="ae684a367ef7be289c58528c425ecc18" category="paragraph">クリーンリストアを実行すると、NetApp Ransomware Resilienceがリカバリを最適化する複数ステップのプロセスをガイドします。</block>
@@ -2386,25 +2383,18 @@
   <block id="fcbb0e1baa9ae5913c0059a3babc98ba" category="paragraph">クリーンな復元を実行する前に、隔離されたリカバリ ルームを作成する必要があります。</block>
   <block id="90f9f1ae9aae8bda3367df6cbbd98883" category="paragraph">隔離されたリカバリ ルームを作成するプロセスは、環境がクラウドにあるかオンプレミスにあるかによって異なります。正しい場所の手順に従ってください。</block>
   <block id="c8e2277ecfb1427838c488c217f99466" category="open-title">クラウド</block>
-  <block id="0f41fbceabc827d5c5df2618a1c312ad" category="list-text">「クリーン復元」カードで、これが最初の環境の場合は **構成** を選択し、既に作成済みの場合は **管理** を選択します。</block>
-  <block id="33319874642cd9fa09af5fae9c62b0f4" category="list-text">IREを作成するのが初めての場合は、次のステップに進んでください。</block>
-  <block id="7a5443fd9ce8d6f45236ac37568d5b41" category="paragraph">既にIREを作成済みの場合は、**追加**を選択して別のIREを作成してください。</block>
   <block id="b0836e1bf6680e789281aea3293f7647" category="list-text">クラウドベースの IRE の場合は、**Amazon Web Services** を選択してください。</block>
-  <block id="4564ef7a631e6ae4e5c472323c190a1d" category="list-text">**Name**セクションを展開します。環境の**Name**を作成します。</block>
   <block id="b330f48d8947ae91888a185951c00937" category="list-text">*Systems*セクションを展開します。IRE に接続するシステムを選択します。選択した各システムについて、ストレージ VM の IP アドレス、サブネット マスク、およびゲートウェイを指定する必要があります。</block>
   <block id="9c0961645ab2dde42b360b9dd39f0dcc" category="admonition">Amazon FSxN for ONTAPに導入されたIREの場合、この情報を提供する必要はありません。</block>
   <block id="be33043acadffab164c32971cd856af7" category="inline-image-macro">システム選択インターフェイスのスクリーンショット。</block>
   <block id="9aa6cf1eff1a76b0409b3e752312ea85" category="paragraph"><block ref="9aa6cf1eff1a76b0409b3e752312ea85" category="inline-image-macro-rx" type="image"></block></block>
   <block id="89fdf1c0dc132ad5060755aed85034a8" category="list-text">* 認証 * セクションを展開します。</block>
-  <block id="4714db5e444c82e9797cf1040d2e1bb4" category="list-text">クラウド**アカウント**IDを入力し、アカウントの**リージョン**を選択します。</block>
   <block id="a81c4edeb10492c8584a0c9082f6ce84" category="list-text">* Virtual private cloud （ VPC ）* セクションを展開します。IRE を導入する VPC ID を入力します。</block>
   <block id="c2b8af5a06c2ce8a91c4861ae659df43" category="inline-image-macro">IRE 認証設定のスクリーンショット。</block>
   <block id="9a717f23235ddd79acf46b60cbb49654" category="paragraph"><block ref="9a717f23235ddd79acf46b60cbb49654" category="inline-image-macro-rx" type="image"></block></block>
   <block id="220e304e2191688ccb248376282d530b" category="list-text">**追加**を選択してIREを作成します。</block>
-  <block id="f705de5bc3ba8ea79dddb837a99ebb45" category="paragraph">Ransomware Resilienceは、追加を選択した後に接続をテストします。これには数分かかる場合があります。</block>
   <block id="f0e69ccbb7ad96f546f7924206944bfa" category="open-title">オンプレミス</block>
   <block id="9f1d53078d7f9d9907fb2e5042915794" category="list-text">「クリーン復元」カードで、これが最初の環境の場合は **追加** を選択し、既に作成済みの場合は **管理** を選択します。</block>
-  <block id="fffc61b2d6d50fdd26e57c1dc63ba3e1" category="list-text">IREを作成するのが初めての場合は、次のステップに進んでください。既にIREを作成済みの場合は、**追加**を選択して別のIREを作成してください。</block>
   <block id="a32ffcf87a910c4dc1998036da51a79e" category="list-text">場所については、**オンプレミス**を選択してください。</block>
   <block id="de069b391b655fa33e7b553f551b3ed8" category="list-text">*Name*セクションを展開します。IREに**Name**を割り当てます。</block>
   <block id="da5888e486faa08ea3f4a546d8ea2b6b" category="list-text">*Systems*セクションを展開します。IREに接続するシステムを選択します。IREでリカバリするワークロードがある各システムに、ストレージVM IPアドレス、サブネットマスク、ゲートウェイを割り当てます。</block>
@@ -2413,21 +2403,14 @@
   <block id="594222a9ce3ab2f5ea0066e3f132342d" category="list-text">*Compute* セクションを展開します。</block>
   <block id="2c164c9a5db457fb3a29bc4f36a90e11" category="list-text">vCenter サーバーを認証するための認証情報を入力します：*IP アドレス*または完全修飾ドメイン名（FQDN）、*ポート*、*ユーザー名*、*パスワード*。</block>
   <block id="dc7731af7d2a810f6507b9403958dd46" category="list-text">**認証**を選択してクレデンシャルを確認します。続行する前に、UIでクレデンシャルが確認されるまで待ちます。</block>
-  <block id="1af5b22f428ddc58d2ad153a520e2dbb" category="list-text">VMをデプロイする*データセンター*、*クラスタ*、および*ESXiホスト*を選択します。</block>
-  <block id="b3c061b4902652a5ebd7ec117faf4ac4" category="list-text">ESXiホストの*データストア*と*ネットワーク*を選択します。</block>
-  <block id="653958d4d3ad99fa5fc27c03767b14a0" category="list-text">VMの*IPアドレス範囲*と*ゲートウェイ*を入力します。</block>
   <block id="3c313c8ed317dbe7d4203dcdd31c8a19" category="inline-image-macro">コンピューティング選択インターフェイスのスクリーンショット。</block>
   <block id="8cae18dea7d74591e21c2f2407666e60" category="paragraph"><block ref="8cae18dea7d74591e21c2f2407666e60" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7ca860788f238da4a9c5263bd546d3d2" category="list-text">*VMs*セクションを展開します。このセクションは、*Compute*セクションでの入力内容に基づいて入力されます。クリーンリストア中にマルウェアをスキャンするために使用するESXiホスト上のVMを選択します。選択した各VMの*User name*と*Password*を入力します。</block>
-  <block id="d7b9a49b450fb7d4116d3c4df7a11288" category="list-text">**追加**を選択してIREを作成します。Ransomware Resilienceは、追加を選択した後に接続をテストします。この処理には時間がかかる場合があります。</block>
-  <block id="af131a682b99e37528a95fa21be4b5cc" category="paragraph">進捗状況を追跡できます。設定タブで、**隔離されたリカバリ環境**を選択します。Isolated recovery environmentsページには、すべてのIREとそのステータスが表示されます。その環境に関連するすべてのジョブの詳細を確認するには、**View jobs**を選択してください。</block>
   <block id="16a6474800dcc57e48f9c5fecf7f4b0a" category="paragraph">IREは作成後でもシステムを変更できます。設定タブで、**隔離されたリカバリ環境**を選択します。編集したいIREを見つけて、アクションメニュー<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>を選択し、**編集**を選択します。システムの変更作業を進めてください。完了したら**保存**を選択してください。</block>
   <block id="59f0ec64e6ca9eb2b145c2d0b972a631" category="section-title">隔離された回復環境を削除</block>
   <block id="3b98dd3eb2a4ab1e4dbff3d07d4b9987" category="paragraph">復元操作がアクティブな状態では、IREを削除することはできません。復元操作をキャンセルするか、復元が完了するまで待ってからIREを削除してください。</block>
   <block id="f9df77cbf2042ca0c84056ff5f798b3f" category="admonition">IREを削除すると、クリーンルームSVMとメタデータボリュームも削除されます。これらのアセットが削除されると、クリーンリストアに関するレポートを生成することはできなくなります。</block>
   <block id="ffbbe06f3f17d59276920755ff6ac29b" category="list-text">**設定**に移動します。</block>
   <block id="40d3ac507a7227e0481f98409e8015f7" category="list-text">「クリーン復元」カードで、**「管理」**を選択します。</block>
-  <block id="28d6e2e82ae55c1edb64289ae5513448" category="list-text">削除するクリーンルームを特定します。そのルームのアクションメニュー列で、3つのドット<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>を選択し、次に**削除**を選択します。</block>
   <block id="7c2d524886480cf4cd6bc69e0c99bb89" category="list-text">ダイアログで **Delete** を選択して操作を確定します。</block>
   <block id="f4cc881797e2311f16dfa07e4349adcc" category="doc">NetApp Ransomware Resilienceのカスタムリストアを使用してランサムウェア攻撃から復旧</block>
   <block id="535ddb562a8b468bf49b846735d03ed1" category="paragraph">Ransomware Resilienceを使用すると、ストレージ管理者は、推奨復元ポイントまたは優先復元ポイントのどちらからワークロードを復元するのが最適かを判断できます。</block>
@@ -2446,4 +2429,20 @@
   <block id="482b73c713ea8cffc3070c798b03badc" category="open-title">オンプレミスからクラウドへ</block>
   <block id="8880534a0e139c017e28bbf6bc44e84b" category="open-title">オンプレミスからオンプレミス</block>
   <block id="9df5336cadaa8da9a21a00f3f55c497b" category="list-text">アカウントの**Access key**と**Secret key**を入力してください。</block>
+  <block id="2717d5efc491d88d4fc433e4af820d74" category="summary">NetApp Ransomware Resilienceでクリーンリストアを実行する前に、環境を隔離してクリーンアップするための隔離されたリカバリ環境を作成する必要があります。</block>
+  <block id="d58e1a84905920b61ed4f1f26262aeb9" category="doc">NetApp Ransomware Resilienceでクリーンリストアの環境を設定</block>
+  <block id="48b395c83fb3667e93231c09593be027" category="list-text">クリーン復元カードで、**追加**を選択して、隔離された回復環境を作成します。</block>
+  <block id="105f7259b2dc81485c4baf296e55aec5" category="list-text">**Name** セクションを展開します。環境の **Name** を入力します。</block>
+  <block id="2eda5a6118ec15220cd7332a61e3afa7" category="list-text">クラウド**アカウント**IDを入力し、ドロップダウンメニューからアカウントの**リージョン**を選択してください。IREはサポートされているリージョンにのみデプロイできます。</block>
+  <block id="8a6858555f085685f5bb427c4dbd4219" category="paragraph">Ransomware Resilienceは、追加を選択した後に接続テストを実行します。これには数分かかる場合があります。IREのステータスが「deployed」と表示されれば、IREの展開は成功です。</block>
+  <block id="72fe6d9d17dfd2ab74965b68d4ad7d09" category="list-text">VM を導入する *Datacenter* と *Cluster* を選択します。</block>
+  <block id="3e00060a376e7413a4ebadfd06157d94" category="list-text">ESXiホストの*データストア*と*ネットワーク*を選択します。</block>
+  <block id="30329b19b858d26d073ea4ab5feeed6f" category="list-text">VMの*IPアドレス範囲*をCIDR形式（例：10.0.0.1/24）、*サブネットマスク*、および*ゲートウェイ*を入力します。</block>
+  <block id="5e4a4c67d9b9212d3f7d2d36cd4be2de" category="list-text">*VMs*セクションを展開します。このセクションは、*Compute*セクションでの入力内容に基づいて入力されます。</block>
+  <block id="1a65a52eeaaaf2a882bf42fa7b872483" category="list-text">NetApp Ransomware Resilienceがランサムウェアのスキャンに使用するLinux VMについては、ドロップダウンメニューからVMを選択し、VMの*ユーザー名*と*パスワード*を入力してください。</block>
+  <block id="3c4a04ceaab48b61f17ab0bd613644c0" category="list-text">スキャンに使用するWindows VMについては、ドロップダウンメニューからVMを選択し、VMの*ユーザー名*と*パスワード*を入力します。</block>
+  <block id="13291e241521a2260f7ae5746544e195" category="list-text">**追加**を選択してIREを作成します。Ransomware Resilienceは、追加を選択した後に接続をテストします。この処理には数分かかることがあります。IREのステータスが「deployed」と表示されると、IREは正常に導入されています。</block>
+  <block id="8d81ff5c5b48d23cce9332dd984632b4" category="paragraph">進捗状況を追跡できます。設定タブで、**Isolated recovery environments**を選択します。Isolated recovery environmentsページには、IREとそのステータスが表示されます。その環境に関連するすべてのジョブの詳細を確認するには、**View jobs**を選択してください。</block>
+  <block id="4f9ce9d8880d6bdd44ed37068e5fb560" category="admonition">IRE の詳細を変更する必要がある場合は、Ransomware Resilience サイドバーから *Settings* を選択し、Clean restore カードで **Manage** を選択します。IRE のアクションメニューを選択し、**Edit** を選択して設定を変更します。</block>
+  <block id="b84cf7acbf3f47154038369f7661d257" category="list-text">削除するクリーンルームを特定します。IRE のアクションメニュー（<block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>）を選択し、**削除** を選択します。</block>
 </blocks>
