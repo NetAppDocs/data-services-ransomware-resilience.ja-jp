@@ -47,11 +47,24 @@ Ransomware Resilience は、次のイベント データを SIEM システムに
 +
 ** *incident_id*: Ransomware Resilience で攻撃を受けているボリュームに対して Ransomware Resilience によって生成されたインシデント ID。
 ** *alert_id*: ワークロードに対して Ransomware Resilience によって生成された ID。
-** *重大度*: 次のアラート レベルのいずれか: 「CRITICAL」、「HIGH」、「MEDIUM」、「LOW」。
+** *severity*：アラートレベルの深刻度："CRITICAL"、"HIGH"、"MEDIUM"、"LOW"。
 ** *説明*: 検出されたアラートの詳細。例: 「ワークロード arp_learning_mode_test_2630 で潜在的なランサムウェア攻撃が検出されました」
+** *title*: 検出されたアラートの表示名
+** *criticality*：環境におけるボリュームの重要度の評価：「CRITICAL」、「IMPORTANT」、「STANDARD」。
+** *incident_status*：インシデントのアクティブなステータス。次のいずれかになります："NEW"、"RESOLVED"、"DISMISSED"、"AUTO_RESOLVED"。
+** *first_detected*：Ransomware Resilienceによってインシデントが最初に検出された日時を示すタイムスタンプ。
+** *is_readiness_drill*：アラートが訓練か実際のインシデントかを示すブール値。
+** *protocol*：ボリュームで使用されるプロトコル。指定可能な値は「iSCSI」、「NFS」、「SMB」です。
+** *alert_type*：検出された脅威のタイプ。指定できる値は、「Encryption」、「Data destruction」、「Data breach」、「Suspicious user behavior」です。
+** *user_name*：アラートに関連付けられている疑わしいユーザーのユーザー名。
+** *user_id*：アラートに関連付けられている疑わしいユーザーのユーザーID。
+** *client_ips*：不審なアクティビティに関連付けられたクライアント IP アドレスのリスト。NFS アラートにのみ適用されます。
 
 
 
+
+
+NOTE: *user_name* と *user_id* フィールドは、xref:concept-user-behavior.adoc[ユーザー行動検出]を設定している場合にのみ関係します。
 
 
 

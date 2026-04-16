@@ -1065,7 +1065,6 @@
   <block id="fbc1ce5001bb72336a31bd6789ea9410" category="list-text">*事件*：</block>
   <block id="4bd1481e6e41ef9455be86b308947d80" category="list-text">*incident_id*: Ransomware Resilience で攻撃を受けているボリュームに対して Ransomware Resilience によって生成されたインシデント ID。</block>
   <block id="cc3ab46854d1cd0291788ac54819f4cb" category="list-text">*alert_id*: ワークロードに対して Ransomware Resilience によって生成された ID。</block>
-  <block id="09471f7939b8b27b32ee107cd9b1c44b" category="list-text">*重大度*: 次のアラート レベルのいずれか: 「CRITICAL」、「HIGH」、「MEDIUM」、「LOW」。</block>
   <block id="6f51b5c965cb508d8d37085592031c21" category="list-text">*説明*: 検出されたアラートの詳細。例: 「ワークロード arp_learning_mode_test_2630 で潜在的なランサムウェア攻撃が検出されました」</block>
   <block id="0df177143ce12a3516098cd3329e85c2" category="section-title">脅威検出用に AWS Security Hub を構成する</block>
   <block id="de9b4f41a945df92e6c5b62f443f03f1" category="list-text">AWS Security Hub で権限を設定します。</block>
@@ -2445,4 +2444,19 @@
   <block id="8d81ff5c5b48d23cce9332dd984632b4" category="paragraph">進捗状況を追跡できます。設定タブで、**Isolated recovery environments**を選択します。Isolated recovery environmentsページには、IREとそのステータスが表示されます。その環境に関連するすべてのジョブの詳細を確認するには、**View jobs**を選択してください。</block>
   <block id="4f9ce9d8880d6bdd44ed37068e5fb560" category="admonition">IRE の詳細を変更する必要がある場合は、Ransomware Resilience サイドバーから *Settings* を選択し、Clean restore カードで **Manage** を選択します。IRE のアクションメニューを選択し、**Edit** を選択して設定を変更します。</block>
   <block id="b84cf7acbf3f47154038369f7661d257" category="list-text">削除するクリーンルームを特定します。IRE のアクションメニュー（<block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>）を選択し、**削除** を選択します。</block>
+  <block id="26878907f297abf4a6b9ee208577dd47" category="inline-link-macro">SIEMレポート</block>
+  <block id="f7816573bcae53abb1ea5d75ebbcc21f" category="list-text">一部のイベントデータは、Azure NetApp Files 構成の<block ref="b3b62e437019ccd4f3f5eaf4371edbef" category="inline-link-macro-rx"></block>には含まれていません。</block>
+  <block id="48d3ab7b017da0151934baee35c16686" category="list-text">*severity*：アラートレベルの深刻度："CRITICAL"、"HIGH"、"MEDIUM"、"LOW"。</block>
+  <block id="476907eec09be2e630a16004aa28b05c" category="list-text">*title*: 検出されたアラートの表示名</block>
+  <block id="00a5492099d0c380c62d2bca0017768b" category="list-text">*criticality*：環境におけるボリュームの重要度の評価：「CRITICAL」、「IMPORTANT」、「STANDARD」。</block>
+  <block id="cf9e1e333f399d756f12b7eaeca06cf0" category="list-text">*incident_status*：インシデントのアクティブなステータス。次のいずれかになります："NEW"、"RESOLVED"、"DISMISSED"、"AUTO_RESOLVED"。</block>
+  <block id="7ca5319a89508d8a4627d00f61af6052" category="list-text">*first_detected*：Ransomware Resilienceによってインシデントが最初に検出された日時を示すタイムスタンプ。</block>
+  <block id="afcc1dc9ee42af2b994f4bc3c230cf05" category="list-text">*is_readiness_drill*：アラートが訓練か実際のインシデントかを示すブール値。</block>
+  <block id="bab1ad221140ac4e4ec08ff369bf3d19" category="list-text">*protocol*：ボリュームで使用されるプロトコル。指定可能な値は「iSCSI」、「NFS」、「SMB」です。</block>
+  <block id="f3b109f0ac2cf449900a6b67dbeb858a" category="list-text">*alert_type*：検出された脅威のタイプ。指定できる値は、「Encryption」、「Data destruction」、「Data breach」、「Suspicious user behavior」です。</block>
+  <block id="1d217eb56fafce6504630e4bb01c45a4" category="list-text">*user_name*：アラートに関連付けられている疑わしいユーザーのユーザー名。</block>
+  <block id="a943b30ba2be58cbc52a883804bfa5fa" category="list-text">*user_id*：アラートに関連付けられている疑わしいユーザーのユーザーID。</block>
+  <block id="7a755da696018214d12394be03c26ad9" category="list-text">*client_ips*：不審なアクティビティに関連付けられたクライアント IP アドレスのリスト。NFS アラートにのみ適用されます。</block>
+  <block id="f9eb142e440614e3bc3df451c259e688" category="inline-xref-macro">ユーザー行動検出</block>
+  <block id="7cf317ef553074fdf56ee4c41abb350e" category="admonition">*user_name* と *user_id* フィールドは、<block ref="25f82e638d2822742166353d70e9d327" category="inline-xref-macro-rx"></block>を設定している場合にのみ関係します。</block>
 </blocks>
