@@ -161,7 +161,6 @@
   <block id="08c9bb2f955e4452b60d6285d467218b" category="paragraph">ランサムウェア耐性は、複数のNetAppテクノロジーをフル活用することで、ストレージ管理者、データ セキュリティ管理者、またはセキュリティ運用エンジニアが次の目標を達成できるようにします。</block>
   <block id="ab76e9ddf0b5cc0436537248ef996b33" category="list-text">データのバックアップ、スナップショット コピー、ランサムウェア保護戦略を有効にして、ワークロードを*保護*します。</block>
   <block id="2260f3efb7f7ff8d7a4a295911d64e87" category="list-text">ランサムウェア攻撃の可能性がある異常を*検出*します。脚注:[攻撃が検出されない可能性もありますが、当社の調査によると、 NetApp のテクノロジにより、特定のファイル暗号化ベースのランサムウェア攻撃を高いレベルで検出できることがわかっています。]</block>
-  <block id="2b9059f4bfe46561bd84cd4afc8e39d5" category="list-text">複数のNetAppテクノロジーをオーケストレーションすることで、ワークロードの稼働時間を短縮し、ワークロードを *回復* します。特定のボリュームを回復することを選択できます。  Ransomware Resilience では、最適なオプションに関する推奨事項が提供されます。</block>
   <block id="c81ae261ce25e22a1af05caba692e648" category="list-text">*管理*: ランサムウェア保護戦略を実装し、結果を監視します。</block>
   <block id="2df7b40bf0b6e6b4631432c24ce9a052" category="inline-image-macro">ランサムウェア耐性戦略（識別、保護、検出、対応、回復）を示す図</block>
   <block id="cfab6cedd02afb98600a358d70d70886" category="paragraph"><block ref="cfab6cedd02afb98600a358d70d70886" category="inline-image-macro-rx" type="image"></block></block>
@@ -257,24 +256,16 @@
   <block id="91a892e300bf9b67ce6a16b0a80f1b1a" category="inline-link-macro">ランサムウェア耐性ライセンスを設定する</block>
   <block id="88699be3d302c7e5f5715be794649591" category="paragraph">ライセンスの有効期限が切れた後でも実行できる操作の詳細については、<block ref="f3b829d4bde16775bc19f33a0a06c197" category="inline-link-macro-rx"></block> 。</block>
   <block id="c724e39bb0a48a947cd8004592d90338" category="section-title">保護ポリシーを無効にする</block>
-  <block id="1312742e007207f60e4a52af11c06567" category="paragraph">ワークロードに適用されている保護ポリシーの使用を停止する場合は、System Manager、API 呼び出し、または CLI を使用して無効にすることができます。</block>
   <block id="64086e522631840f7f453586e2c9736d" category="inline-link-macro">ランサムウェア攻撃からワークロードを保護する</block>
   <block id="8ba3ac2a14af0c43cfde525668f6e546" category="paragraph">FPolicy とバックアップ ポリシーを含まない別のポリシーを適用することで、Ransomware Resilience でこれらを無効にすることができます。保護ポリシーの設定手順については、<block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> 。</block>
   <block id="76722f595147e9e40ab79fef549441a4" category="admonition">スナップショット ポリシーを無効にしないことをお勧めします。</block>
   <block id="ef54d92c7cc927ca7eb5e489c30b0e9b" category="summary">検出中に、Ransomware Resilience はすべてのコンソール エージェントとアカウントにわたるシステム内のすべてのボリュームとファイルを分析します。</block>
-  <block id="790472d97707885ad0bca12c5442db2a" category="paragraph">各コンソール エージェント内で、ワークロードを検出するシステムを選択します。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
-  <block id="7b8dc42ed597eb23a119869a1195c334" category="list-text">NetApp Consoleから、*保護* &gt; *ランサムウェア保護* を選択します。</block>
-  <block id="475360813ddb5fa78d5eb18ec0fff45d" category="paragraph">初めてログインする場合は、ランディング ページが表示されます。</block>
   <block id="d44e74d71274e14e6b7f32dbf6277d75" category="inline-image-macro">ランサムウェア耐性のランディングページのスクリーンショット</block>
   <block id="e66ce57fedc4caff000c35f070d7b537" category="paragraph"><block ref="e66ce57fedc4caff000c35f070d7b537" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7c3643602c46264fa601bce5ec20f6df" category="admonition">無料トライアルを開始した場合、[*30 日間の無料トライアルを開始*] ボタンのラベルが [*ワークロードの検出から開始*] に変わります。</block>
-  <block id="27a22ff8cea8c84583985661c68afc5b" category="list-text">最初のランディング ページで、[*ワークロードの検出から開始する*] を選択します。</block>
   <block id="5a73bf8837c9a23f81b6df3efef9dee3" category="paragraph">Ransomware Resilience は、サポートされているシステムとサポートされていないシステムの両方を検出します。このプロセスには数分かかる場合があります。</block>
   <block id="18eb5242d6e5ac768698e677b047a0eb" category="inline-image-macro">ワークロードのスクリーンショットを発見</block>
   <block id="d79f191c2ec9abafe65a74f3afd2fd3e" category="paragraph"><block ref="d79f191c2ec9abafe65a74f3afd2fd3e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="aa38c459f1855c79933ef88c2500bd20" category="list-text">特定のコンソール エージェントのワークロードを検出するには、ワークロードを検出するコンソール エージェントの横にある [*システムの選択*] を選択します。</block>
-  <block id="b5df43021af6103a6e0b208280b7bd9c" category="list-text">ワークロードを検出するシステムを選択します。</block>
   <block id="6717014f0e48b7ab08c9846925b42c93" category="list-text">*Discover*を選択します。</block>
   <block id="60b91ac4e4f14d7cb892956fc74437d2" category="list-text">検出されたワークロードのリストをダウンロードするには、[結果のダウンロード] を選択します。</block>
   <block id="f78bb7fa8ba897b7d7d1b1b09e4e9938" category="list-text">ランサムウェア耐性ダッシュボードを表示するには、[ダッシュボードに移動] を選択します。</block>
@@ -409,9 +400,6 @@
   <block id="6c9642c3e49c9627e18f399bd2f107c7" category="paragraph">それ以外の場合は、ランサムウェア耐性ダッシュボードが表示されます。</block>
   <block id="9fc4ee93846b9550507b5403fc073ebd" category="inline-image-macro">ランサムウェア耐性ダッシュボードのスクリーンショット</block>
   <block id="90fe6d0f96c8ecd14685b359ef85e68f" category="paragraph"><block ref="90fe6d0f96c8ecd14685b359ef85e68f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8df9c75ead72be3995c8516a43376cb6" category="list-text">まだ行っていない場合は、[*ワークロードの検出*] オプションを選択します。</block>
-  <block id="54300910bbc8e214a070c89af79010e7" category="inline-link-macro">ワークロードの検出</block>
-  <block id="ac6282fe86530df822c059310d9c8cc3" category="paragraph">。 <block ref="40333c3f84ed5cb5976f4d99c62be349" category="inline-link-macro-rx"></block> 。</block>
   <block id="d0e83b4dfc8809d4d0f31e184c6f9ebb" category="summary">環境、ネットワーク アクセス、ログイン、Web ブラウザーのサポートを確認して、 NetApp Ransomware Resilienceを開始してください。</block>
   <block id="fd2baaaf591d18081f2e012015874835" category="doc">NetApp Ransomware Resilienceの前提条件</block>
   <block id="e315520b8d0944e7422c773e49fc17a7" category="list-text">リソースを検出するための組織管理者権限を持つNetApp Consoleユーザー アカウント。</block>
@@ -1439,7 +1427,6 @@
   <block id="7257a2c29f00e84365c5a48447d9c803" category="inline-link-macro">データ分類を有効にしてガバナンスとセキュリティリスクを特定します</block>
   <block id="1d1758803ee1f7559973be04f120a0f7" category="inline-link-macro">SIEMにアラートを送信する</block>
   <block id="660ecf2355e5ff3c5a22d2e4a48594e8" category="inline-link-macro">アラート、保護、準備訓練、回復、または概要レポートをダウンロードする</block>
-  <block id="7b36da612c0e3a400f4daecc8016f21e" category="summary">システムとワークロードを保護するには、Ransomware Resilience のライセンス要件を満たしていることを確認してください。</block>
   <block id="5ef05167488611c5bd4ff0f410595ce4" category="list-text">30日間無料トライアル</block>
   <block id="e71ba6c3178fa6f6844891e615ad0570" category="list-text">Amazon Web Services (AWS) Marketplace、Google Cloud Marketplace、または Azure Marketplace で従量課金制 (PAYGO) サブスクリプションを購入する</block>
   <block id="2f0583f3da64d216aa72116dc3460499" category="list-text">お客様独自のライセンスの持ち込み (BYOL): NetApp の営業担当者から取得したNetAppライセンス ファイル (NLF)。ライセンス シリアル番号を使用して、コンソールで BYOL をアクティブ化できます。</block>
@@ -1609,10 +1596,8 @@
   <block id="a55a22032fc9fd630abe933324e9d4b9" category="paragraph-title">Ransomware Resilience はONTAPの保護設定を認識しますか?</block>
   <block id="1c8f51534c2fc10dfef26d32d61c7ed3" category="paragraph">ライセンスと課金に関しては、バックアップとリカバリ用の個別のライセンスがない場合でも、Ransomware Resilience をバックアップとリカバリと統合できます。バックアップとリカバリとランサムウェア耐性の両方をお持ちの場合、両方の製品で保護されている共通データについては、ランサムウェア耐性に対してのみ課金されます。</block>
   <block id="182b9ed848b82506c10ba162f10e3f5b" category="list-text">Oracle、VMware データストア、ファイル共有などのアプリケーションベースのワークロード内のデータを保護します。</block>
-  <block id="aa07eabc400eb4ccb13f116e99da0b48" category="list-text">*ワークロード*: ランサムウェア耐性のワークロードには、Oracle データベース、VMware データストア、またはファイル共有が含まれる場合があります。</block>
   <block id="6b62768f3f94df043ea31bf9c43b2a42" category="paragraph">Ransomware Resilience は、Oracle、ファイル共有、ブロック ストレージ、VM、VM データストアなどのワークロードを識別できます。</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">プレビュー バージョンでは、このサービスは、Oracle、VM データストア、オンプレミスの NAS ストレージ上のファイル共有、およびBlueXP組織全体のCloud Volumes ONTAP on AWS (NFS プロトコルを使用) のアプリケーション ベースのワークロードを個別に保護し、データを Amazon Web Services クラウド ストレージにバックアップします。</block>
-  <block id="2d2972fc6d16379955701a1cc8c6633f" category="sidebar">NetApp Ransomware Resilience は、オンプレミスおよびクラウド ストレージにおけるランサムウェアの脅威からアプリケーション ワークロードとファイル共有を保護、検出し、リカバリをサポートします。ランサムウェア耐性により、安全なバックアップとリカバリが可能になり、組織は Oracle、VM データストア、NAS ストレージなどの重要なデータを保護し、ビジネス継続性を維持できるようになります。</block>
   <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3 (64 ビット) から 15.6 (64 ビット)</block>
   <block id="32d094cff0ab508ab383051555e7844b" category="cell">8.10 (64 ビット)、および 9.1 (64 ビット) から 9.6 (64 ビット) (SELinux を含む)</block>
   <block id="1d9fc183665bd1e195391190be506894" category="cell">Red Hat</block>
@@ -1660,9 +1645,6 @@
   <block id="22a81a009e8d21bf17e2788fdbfa4a6d" category="paragraph">Amazon FSx for NetApp ONTAPシステムは、Ransomware Resilience でサポートされています。Amazon FSx for ONTAPには次の制限が適用されます。</block>
   <block id="f20af4e11539d270463e7ed46557be6f" category="paragraph">NetApp Ransomware Resilienceを使用する前に、まずワークロード データを検出する必要があります。検出中に、Ransomware Resilience は組織内のすべてのコンソール エージェントとプロジェクトのシステム内のすべてのボリュームとファイルを分析します。</block>
   <block id="55971de7d1268c37251f60641b742b76" category="paragraph">検出ダッシュボードでは、Ransomware Resilience によってサポートされているシステム構成とサポートされていないシステム構成が表示されます。ランサムウェア耐性は、Oracle アプリケーション、VMware データストア、ファイル共有、ブロック ストレージを評価します。</block>
-  <block id="1e55889dc96c3aa2614c39626c9cecdd" category="admonition">Ransomware Resilience では、 FlexGroupを使用するボリュームを持つワークロードは検出されません。</block>
-  <block id="242b6b00ff2f35d933e337704d202041" category="list-text">ワークロード検出カードで、*ワークロードの検出*を選択します。検出には数分かかる場合があります。読み込みアイコンに進行状況が表示されます。</block>
-  <block id="728cc93ad9329b5fca77365b0336ce77" category="list-text">Ransomware Resilience は、サポートされているシステムとサポートされていないシステムの両方を検出します。ONTAPバージョンが必要なバージョンより低い場合、システムはサポートされません。サポートされていないシステムにマウスを移動すると、ツールチップに理由が表示されます。ワークロードを検出するシステムを選択します。</block>
   <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="section-title">詳細情報</block>
   <block id="48bf90c5e99016f124c48c02a77dc8fd" category="inline-link-macro">NetApp Consoleのライセンスとサブスクリプションのドキュメント</block>
   <block id="0fa9a3c869139d736cd7d6df862b94e3" category="list-text"><block ref="0fa9a3c869139d736cd7d6df862b94e3" category="inline-link-macro-rx"></block></block>
@@ -2027,7 +2009,6 @@
   <block id="a6bd7f80fc17cbb8e58e8dca754bf710" category="list-text">環境内の疑わしいユーザーをブロックするには、ユーザー名の横にある*ブロック*を選択します。</block>
   <block id="e2907e7cb7d68b36821cd11cda209bc3" category="cell">SAN（iSCSI および NVMe）</block>
   <block id="65072a668477cd315b4302df8afcce32" category="paragraph">NetApp Ransomware Resilienceは、ランサムウェア攻撃からデータを保護します。Ransomware Resilienceでは、Oracleのアプリケーションベースのワークロード、VMデータストア、NASストレージ（NFSおよびCIFSプロトコル）およびSANストレージ（FC、iSCSI、NVMeプロトコル）のファイル共有を保護できます。Ransomware Resilienceは、オンプレミスストレージのほか、Amazon Web Services向けCloud Volumes ONTAP、Google Cloud向けCloud Volumes ONTAP、Microsoft Azure向けCloud Volumes ONTAP、Azure NetApp Files、Amazon FSx for NetApp ONTAPがNetApp Console全体でサポートされています。Amazon Web Services、Google Cloud、Microsoft Azure、およびNetApp StorageGRIDにデータをバックアップできます。</block>
-  <block id="8987946f77221ac2f7d1494a4fcae0a6" category="list-text">NetApp Console、プロジェクト、およびConsole エージェント全体で、NetAppオンプレミスNASおよびSANシステム内のアプリケーションベース、ファイル共有、またはVMware管理のワークロードを*識別*します。ワークロードを検出した後、Ransomware Resilienceはランサムウェア耐性を向上させる機会を特定します。</block>
   <block id="3b9c98c430c62cb3627db641468d7e64" category="list-text">ランサムウェア保護の態勢を評価し、わかりやすいダッシュボードに表示するとともに、保護を改善するための推奨事項を提供します。</block>
   <block id="9bd1fe262c57584526c5184d4de31827" category="list-text">オンプレミス ONTAP クラスタまたは Cloud Volumes ONTAP システムが NetApp Console で設定されていない場合は、<block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block>および<block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="3eb45f3714606347a6ff182b822b69cc" category="list-text">ONTAP または Cloud Volumes ONTAP クラスタの場合、Ransomware Resilience には ONTAP バージョン 9.11.1 以降が必要です。</block>
@@ -2037,8 +2018,6 @@
   <block id="401331622ba7c8cd9b2b100526565200" category="paragraph"><block ref="401331622ba7c8cd9b2b100526565200" category="inline-image-macro-rx" type="image"></block></block>
   <block id="01dfed405f4d8cc130b8369c1886ec0f" category="inline-link-macro">ダッシュボードに表示される内容を確認します。</block>
   <block id="7ca04b3ca0d38a36dbb53ddae48a80fa" category="paragraph"><block ref="7ca04b3ca0d38a36dbb53ddae48a80fa" category="inline-link-macro-rx"></block></block>
-  <block id="c86672f01f1885742d44030caeca3656" category="list-text">ダッシュボードから、*更新*アイコンを選択して新しいワークロードを検索します。</block>
-  <block id="6a9bfc63a8ad7addf42c2109b163b952" category="paragraph">すでにワークロードを検出している場合は、新しいワークロードや以前に選択しなかったワークロードを見つけることができます。</block>
   <block id="86f1d97261d36debcad3b0a69e10f3f4" category="list-text">Ransomware Resilienceから、*Settings*を選択します。</block>
   <block id="91437eaac9ac7d1f1da9a4e4751cbaa6" category="paragraph">はい、Ransomware Resilienceは、ONTAPで設定されたスナップショットスケジュールを検出します。また、検出されたワークロード内のすべてのボリュームでARPとFPolicyが有効になっているかどうかも検出します。Ransomware Resilienceダッシュボードに表示される情報は、他のNetAppソリューションと製品から集約されたものです。</block>
   <block id="30d645e3c3e5cd0e502a92a067fc1be8" category="paragraph">Ransomware Resilience は、設定オプションを通じてバックアップ先を構成するのに役立ちます。<block ref="e25a1b60993d45f33b0deea2ae726330" category="inline-link-macro-rx"></block>を参照してください。</block>
@@ -2099,8 +2078,6 @@
   <block id="d805ea206a1d58881a7d28213018ae80" category="sidebar">準備訓練を実施する</block>
   <block id="a23f6543c6afd691624522ac1b0c2620" category="paragraph">このリリースでは、NetAppの他のツール（BlueXPバックアップとリカバリなど）のスナップショットポリシーやバックアップポリシーを使用したワークロードの設定プロセスが改善されました。以前のリリースでは、BlueXPランサムウェア対策は他のツールからのポリシーを検出し、検出ポリシーの変更のみを許可していました。このリリースでは、スナップショットポリシーとバックアップポリシーをBlueXPランサムウェア対策ポリシーに置き換えるか、他のツールのポリシーを引き続き使用できるようになりました。</block>
   <block id="b720eb62a1de68d6cb9c9dbea3c63907" category="list-text">RPO ポリシーを満たすようにキュレートされたリカバリを適用します。ランサムウェアレジリエンスは、NetApp Backup and Recovery によるランサムウェアインシデントからのリカバリを調整します。</block>
-  <block id="a819c959f129152fca4db3ef3b38727c" category="list-text">コンソールに接続されたシステム内のすべての顧客のオンプレミスおよびクラウド NAS（NFS および CIFS プロトコル）および SAN（FC、iSCSI、NVMe）データを検索します。</block>
-  <block id="d24b6d4f9b8a5c2126c721c0f8b448e5" category="list-text">ONTAP および Backup and Recovery サービス API から顧客データを識別し、ワークロードに関連付けます。詳細については、<block ref="a16fd9a0601d0464b4c9ce4f59c2454b" category="inline-link-rx"></block>を参照してください。</block>
   <block id="5d81d4b181b1f6e47c262988038cd67d" category="paragraph">Ransomware Resilienceは、現在のバックアップ保護、スナップショットコピー、およびNetApp Autonomous Ransomware Protectionオプションをチェックします。Ransomware Resilienceは、ファイル共有およびVMファイル共有に対するNetApp Backup and Recoveryからの保護情報も検出します。その後、ランサムウェア保護を強化するための方法を推奨します。</block>
   <block id="c048f8419f5606e294e716a232b223a2" category="paragraph-title">ランサムウェア耐性はNetApp Backup and Recoveryとどのように相互作用しますか？</block>
   <block id="eadde9be35eb975c3bbd5558937ea6ce" category="paragraph">Ransomware Resilience は、Backup and Recovery と連携して、ファイル共有ワークロードのスナップショットおよびバックアップポリシーを検出して設定します。Ransomware Resilience は、Backup and Recovery と連携して、ファイルおよびワークロードの一貫性のあるリカバリを実行します。</block>
@@ -2459,4 +2436,25 @@
   <block id="7a755da696018214d12394be03c26ad9" category="list-text">*client_ips*：不審なアクティビティに関連付けられたクライアント IP アドレスのリスト。NFS アラートにのみ適用されます。</block>
   <block id="f9eb142e440614e3bc3df451c259e688" category="inline-xref-macro">ユーザー行動検出</block>
   <block id="7cf317ef553074fdf56ee4c41abb350e" category="admonition">*user_name* と *user_id* フィールドは、<block ref="25f82e638d2822742166353d70e9d327" category="inline-xref-macro-rx"></block>を設定している場合にのみ関係します。</block>
+  <block id="25b4dd9535e0d17e415da7dea9f2e1a2" category="list-text">NetApp Console、プロジェクト、およびConsoleエージェント全体で、NetAppのオンプレミスNASおよびSANシステム内のワークロードを*特定*します。ワークロードを検出した後、Ransomware Resilienceはランサムウェアのレジリエンシを向上させる機会を特定します。</block>
+  <block id="76c07e024915a14c275975a549a9ee9b" category="list-text">複数のNetAppテクノロジーをオーケストレーションすることでワークロードの稼働時間を短縮するために、ワークロードを*復旧*します。特定のボリュームを選択して復元することができます。Ransomware Resilienceは、最適な選択肢に関する推奨事項を提供します。</block>
+  <block id="857d0c5d34b476c300d20857901434ee" category="list-text">コンソールに接続されたシステム内のすべてのオンプレミスおよびクラウドNAS（NFSおよびCIFSプロトコル）およびSAN（FC、iSCSI、NVMe）データを検索します。</block>
+  <block id="8d2a9bcb8af52527cb5ef134952b126c" category="list-text">ONTAP および Backup and Recovery サービス API からデータを識別し、ワークロードに関連付けます。詳細については、<block ref="a16fd9a0601d0464b4c9ce4f59c2454b" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="aea5e53a84ea68f5c29fd5b651210249" category="list-text">*ワークロード*：ワークロードとは、システム内のストレージリソースの論理的なグループのことです。たとえば、Oracleデータベース、VMwareデータストア、ファイル共有などです。</block>
+  <block id="185b7516beffeca9e791d1462be2e3df" category="paragraph">ワークロードに適用されている保護ポリシーの使用を停止する場合は、System Manager、API呼び出し、またはCLIを使用して無効にすることができます。</block>
+  <block id="321e92de54fb9050ca985e93dd41037e" category="admonition">Ransomware Resilienceは、FlexGroupを使用するボリュームを持つシステムを検出しません。</block>
+  <block id="660970b5bfb72eddca5566de07107009" category="section-title">検出するワークロードを選択</block>
+  <block id="2206052869b09e544d3b0ca84614cb93" category="paragraph">各コンソールエージェント内で、ワークロードを識別するシステムを選択します。</block>
+  <block id="3e567fadbb65a78232511f4530a5e9ee" category="inline-link-macro">保護を設定する</block>
+  <block id="542dbcbddb5ad48872c0a3467bca19cf" category="paragraph">ワークロードを検出したからといって、自動的に保護されるわけではありません。Ransomware Resilienceは、検出プロセスにおいてNetApp Backup and RecoveryまたはONTAPからの既存の保護ポリシーを認識します。保護されていないワークロードについては、<block ref="7fe4ee5a6fb50faf1d1032b2174bc3d8" category="inline-link-macro-rx"></block>する必要があります。</block>
+  <block id="c9469d9f20bc9e5b5d8e18790baaa32c" category="paragraph">初めてログインする場合は、ランディングページが表示されます。無料トライアルを開始するには、*30日間無料トライアルを開始*を選択してください。既にトライアルを有効にしている場合は、*ワークロードの検出から開始する*を選択してください。</block>
+  <block id="25e55f8e8c02fccd0565ce3e09516eaa" category="list-text">特定の Console エージェントのシステムを検出するには、検出するシステムが含まれている Console エージェントの下向き矢印を選択します。</block>
+  <block id="491d8571b2a09dcbae564ec801e25fe7" category="list-text">検出を実行するシステムを選択してください。</block>
+  <block id="d741204137cafb846d39315517ca1067" category="list-text">ダッシュボードから*更新*アイコンを選択して、新しいワークロードを特定します。</block>
+  <block id="812c0e17c55314eccce1dcb3ee7d6153" category="paragraph">既にシステムに対して検出を実行済みで、その後ワークロードを追加した場合は、ワークロードを特定するために再度検出を実行してください。</block>
+  <block id="b793bd330c25538b7cd98bb4e4bec503" category="list-text">ワークロード検出カードで、*Discover*を選択します。検出には数分かかる場合があります。読み込みアイコンに進行状況が表示されます。</block>
+  <block id="e35ddec8b9589eba5325509abe9f7e64" category="list-text">Ransomware Resilienceは、サポートされているシステムとサポートされていないシステムの両方を検出します。ONTAPバージョンが必要なバージョンよりも低い場合、そのシステムはサポートされません。サポートされていないシステムにカーソルを合わせると、ツールチップにその理由が表示されます。ワークロードを特定するシステムを選択します。</block>
+  <block id="6d008767b6b1ed8f9bb99930968157ff" category="summary">ワークロードを保護するために、Ransomware Resilienceのライセンス要件を満たしていることを確認してください。</block>
+  <block id="360e5892ccf9a138fa1f7477e6e2db92" category="list-text">Ransomware Resilience を初めて使用する場合は、<block ref="f19bbe7d2dbc45b6f2a3e4d9d3615c0f" category="inline-link-macro-rx"></block>。</block>
+  <block id="df3fb79f22fd0d8a496bd6ab0f7fcb62" category="sidebar">NetApp Ransomware Resilienceは、オンプレミスおよびクラウドストレージにおけるランサムウェアの脅威からワークロードを保護、検出し、リカバリをサポートします。Ransomware Resilienceはセキュアなバックアップとリカバリを可能にし、Oracle、VMデータストア、NASストレージなどにおいて、組織が重要なデータを保護し、ビジネスの継続性を維持できるよう支援します。</block>
 </blocks>

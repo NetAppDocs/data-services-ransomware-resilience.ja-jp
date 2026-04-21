@@ -1,14 +1,12 @@
 ---
 indexpage:
   title: NetApp Ransomware Resilienceドキュメント
-  summary: NetApp Ransomware Resilience は、オンプレミスおよびクラウド ストレージにおけるランサムウェアの脅威からアプリケーション
-    ワークロードとファイル共有を保護、検出し、リカバリをサポートします。ランサムウェア耐性により、安全なバックアップとリカバリが可能になり、組織は Oracle、VM
-    データストア、NAS ストレージなどの重要なデータを保護し、ビジネス継続性を維持できるようになります。
+  summary: NetApp Ransomware Resilienceは、オンプレミスおよびクラウドストレージにおけるランサムウェアの脅威からワークロードを保護、検出し、リカバリをサポートします。Ransomware
+    Resilienceはセキュアなバックアップとリカバリを可能にし、Oracle、VMデータストア、NASストレージなどにおいて、組織が重要なデータを保護し、ビジネスの継続性を維持できるよう支援します。
   keywords: bluexp, ransomware, anti-ransomware, cyber attack, netapp, ontap, amazon
     web services, aws, storagegrid, protection, resilience
-  lead: NetApp Ransomware Resilience は、オンプレミスおよびクラウド ストレージにおけるランサムウェアの脅威からアプリケーション
-    ワークロードとファイル共有を保護、検出し、リカバリをサポートします。ランサムウェア耐性により、安全なバックアップとリカバリが可能になり、組織は Oracle、VM
-    データストア、NAS ストレージなどの重要なデータを保護し、ビジネス継続性を維持できるようになります。
+  lead: NetApp Ransomware Resilienceは、オンプレミスおよびクラウドストレージにおけるランサムウェアの脅威からワークロードを保護、検出し、リカバリをサポートします。Ransomware
+    Resilienceはセキュアなバックアップとリカバリを可能にし、Oracle、VMデータストア、NASストレージなどにおいて、組織が重要なデータを保護し、ビジネスの継続性を維持できるよう支援します。
   tiles:
   - title: 始めましょう
     links:
