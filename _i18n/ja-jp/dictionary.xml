@@ -2178,7 +2178,6 @@
   <block id="b1573f80f25470f8eb281542e0c5be32" category="list-text">SVMデータLIF IPからIREへのルーティングを許可します。</block>
   <block id="9c9dab37f0ac19e3e253ffd75559fad6" category="list-title">本番環境ルートテーブル</block>
   <block id="17e68097ee762fecf78b9e9fdb36d0c8" category="list-text">本番環境のルーティングテーブルでは、IREサブネットからクリーンな復元データLIF IPへのトラフィックを許可する必要があります。このルートを本番環境のルーティングテーブルに追加する必要があります。</block>
-  <block id="673c05ce31cb0b56b8af3c9126f1cbb0" category="list-text">本番環境のONTAPクラスタのセキュリティグループとファイアウォールは、クリーンリストアデータLIF IPへのNFSv4およびNFSv3インバウンドトラフィックを許可する必要があります。ファイアウォールは、IRE CIDR範囲からのイングレスに対して開放されている必要があります（：）</block>
   <block id="7c1a5f175cfc657a18de4a95621d74e3" category="cell">宛先ポート</block>
   <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
   <block id="f8dc77f2ac2f7272dc57dd5689ee9d63" category="cell">TCP &amp; UDP</block>
@@ -2457,4 +2456,6 @@
   <block id="6d008767b6b1ed8f9bb99930968157ff" category="summary">ワークロードを保護するために、Ransomware Resilienceのライセンス要件を満たしていることを確認してください。</block>
   <block id="360e5892ccf9a138fa1f7477e6e2db92" category="list-text">Ransomware Resilience を初めて使用する場合は、<block ref="f19bbe7d2dbc45b6f2a3e4d9d3615c0f" category="inline-link-macro-rx"></block>。</block>
   <block id="df3fb79f22fd0d8a496bd6ab0f7fcb62" category="sidebar">NetApp Ransomware Resilienceは、オンプレミスおよびクラウドストレージにおけるランサムウェアの脅威からワークロードを保護、検出し、リカバリをサポートします。Ransomware Resilienceはセキュアなバックアップとリカバリを可能にし、Oracle、VMデータストア、NASストレージなどにおいて、組織が重要なデータを保護し、ビジネスの継続性を維持できるよう支援します。</block>
+  <block id="d75c1a5d668e6fb6360954c43259df75" category="list-title">IREファイアウォール</block>
+  <block id="93222c59d4ce3b5c19ed433527efc1b4" category="list-text">crr-data-LIF-IP の受信を管理するために、別のファイアウォールを作成する必要があります。このファイアウォールは、IRE VPC CIDR 範囲からの NFSv3 および NFSv4 マウントを許可する必要があります。</block>
 </blocks>
