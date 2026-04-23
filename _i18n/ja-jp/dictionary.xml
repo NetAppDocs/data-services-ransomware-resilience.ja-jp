@@ -32,8 +32,6 @@
   <block id="5148a0988dead45b54188f22121bb178" category="paragraph">Microsoft Sentinel を使用して脅威の分析と検出を行うために、データをセキュリティおよびイベント管理システム (SIEM) に送信できるようになりました。以前は、SIEM として AWS Security Hub または Splunk Cloud を選択できました。</block>
   <block id="178324624f63d3f322bedd1a0cf9e6fc" category="section-title">今すぐ30日間無料トライアル</block>
   <block id="31e5266d7eefb6e39e445571b556a4b6" category="paragraph">このリリースでは、 BlueXP ransomware protectionの新規導入に 30 日間の無料トライアルが提供されます。以前は、 BlueXP ransomware protectionは90 日間の無料トライアルを提供していました。すでに 90 日間の無料トライアル中の場合は、そのオファーは 90 日間継続されます。</block>
-  <block id="131dcf966228f0c4a90e6e64618c8def" category="section-title">Podman のファイルレベルでアプリケーション ワークロードを復元する</block>
-  <block id="b4a1818e2de3da83b0e71c710c96525c" category="paragraph">アプリケーション ワークロードをファイル レベルで復元する前に、攻撃の影響を受けた可能性のあるファイルの一覧を表示し、復元するファイルを特定できるようになりました。以前は、組織 (以前のアカウント) 内のBlueXPコネクタが Podman を使用していた場合、この機能は無効になっていました。  Podman で有効になりました。  BlueXP ransomware protectionで復元するファイルを選択したり、アラートの影響を受けたすべてのファイルをリストした CSV ファイルをアップロードしたり、復元するファイルを手動で特定したりすることができます。</block>
   <block id="f013b90a0fd96db59795b7cb0b9d2d1b" category="inline-link">ランサムウェア攻撃からの回復について詳しくはこちら</block>
   <block id="5b647f592bce019e9ea00dd644f72e0d" category="paragraph"><block ref="3233a18d80c5120d82dff0bcc15fb4c4" category="inline-link-rx"></block> 。</block>
   <block id="e6ecd439699f8fefa13e20f9536a72a6" category="doc">Data Infrastructure Insightsストレージワークロードセキュリティを使用して異常なユーザー行動を検出する</block>
@@ -153,7 +151,6 @@
   <block id="e1e21525512158b10d87c17fe3eb8be1" category="list-text">*最外層*: これは、ファイアウォール、侵入検知システム、仮想プライベート ネットワークを使用してネットワーク境界を保護する最初の防御線です。</block>
   <block id="3d919b06a70d926da258dcac0b1b3567" category="list-text">*ネットワーク セキュリティ*: このレイヤーは、ネットワークのセグメンテーション、トラフィックの監視、暗号化を基盤として構築されます。</block>
   <block id="de44ea881a9fa5d914b559d9ddf154c6" category="list-text">*ID セキュリティ*: 認証方法、アクセス制御、ID 管理を使用して、承認されたユーザーのみが機密リソースにアクセスできるようにします。</block>
-  <block id="1fd649bf08bafaf5cfd51a70ba2289a5" category="list-text">*アプリケーション セキュリティ*: 安全なコーディング プラクティス、セキュリティ テスト、ランタイム アプリケーションの自己保護を使用してソフトウェア アプリケーションを保護します。</block>
   <block id="db8257db6100fdc78f6b256a62675d51" category="list-text">*データ セキュリティ*: データ保護、バックアップ、および回復戦略によりデータを保護します。ランサムウェア耐性はこの層で動作します。</block>
   <block id="9dde44b4554f7832d0e00963746f8f42" category="inline-image-macro">セキュリティ層図</block>
   <block id="58cc8c9025afc05f9ee4dee0439c8c7d" category="paragraph"><block ref="58cc8c9025afc05f9ee4dee0439c8c7d" category="inline-image-macro-rx" type="image"></block></block>
@@ -205,7 +202,6 @@
   <block id="b1d747ad7060df692913a3b8e839735e" category="list-text">ONTAP、Autonomous Ransomware Protection ( ONTAPのバージョンに応じて ARP または ARP/AI)、FPolicy などのNetApp のテクノロジと製品を使用して、クイック スナップショット コピーを開始します。</block>
   <block id="5fefe6c4ada89d95390ae77eba79e7db" category="cell">*回復する*</block>
   <block id="059d032d5bb8125e3e1681f7d9ce6023" category="list-text">バックアップとリカバリ、 ONTAP、自律型ランサムウェア保護 ( ONTAPのバージョンに応じて ARP または ARP/AI)、および FPolicy のテクノロジとサービスを使用して、最適なスナップショットまたはバックアップを決定し、最適な RPA (実際の復旧ポイント) を推奨します。</block>
-  <block id="26871f0800751ffb8b48674992b42dfe" category="list-text">VM、ファイル共有、ブロック ストレージ、データベースなどのワークロードのリカバリをアプリケーションの一貫性を保ちながらオーケストレーションします。</block>
   <block id="4ddd3abee434eb92eb13e6cac3e1ad1d" category="cell">*統治*</block>
   <block id="cc4378b1dc9af2e69cb13a88397e2aa7" category="list-text">ランサムウェア対策戦略を割り当てる</block>
   <block id="90d096ff0013c9c2874a247b26e69950" category="list-text">結果を監視するのに役立ちます。</block>
@@ -215,10 +211,7 @@
   <block id="5c9ef0d871938dccceb29ee63fad8ddb" category="list-text">Google Cloud Platform</block>
   <block id="6a51ed7bcacdfb13f78abc1e0f69c201" category="list-text">Microsoft Azure ブロブ</block>
   <block id="55cf1a0f0fce69fd543500e5761dd26d" category="list-text">NetAppStorageGRID</block>
-  <block id="2fd51284279972a6a1390536b053f3c3" category="paragraph">ランサムウェア耐性は、プライマリ データ ボリューム上の次のアプリケーション ベースのワークロードを保護します。</block>
-  <block id="ffc184891768c331383cd53bcd1bc968" category="list-text">NetAppファイル共有</block>
   <block id="4f0550f066ae72bb8c24fc3f59c323bf" category="list-text">ブロックストレージ</block>
-  <block id="ed11408803c4c1aca5fbebbc43d88458" category="list-text">VMwareデータストア</block>
   <block id="77460e2b891748333455193aadd137d8" category="paragraph">ランサムウェア対策に関連するいくつかの用語を理解しておくと役立つかもしれません。</block>
   <block id="826a4e8d8facce6f785b2a404538e6cd" category="list-text">*保護*: ランサムウェア耐性における保護とは、保護ポリシーを使用して、スナップショットと不変のバックアップが別のセキュリティ ドメインに定期的に実行されるようにすることを意味します。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律上の表示</block>
@@ -609,10 +602,8 @@
   <block id="cae6793a9f947fdb33e9ebb9c2913794" category="inline-image-macro">アラート編集ステータスページ</block>
   <block id="e6fe1dbe41a0d14f05208f5ee0593783" category="paragraph"><block ref="e6fe1dbe41a0d14f05208f5ee0593783" category="inline-image-macro-rx" type="image"></block></block>
   <block id="03449fca76164b6dcb5b9e314b4a5c2b" category="section-title">影響を受けるファイルの一覧を表示する</block>
-  <block id="0fd4c032e8d9638089eca51930a25305" category="paragraph">アプリケーション ワークロードをファイル レベルで復元する前に、影響を受けるファイルの一覧を表示できます。影響を受けるファイルのリストをダウンロードするには、「アラート」ページにアクセスしてください。次に、「回復」ページを使用してリストをアップロードし、復元するファイルを選択します。</block>
   <block id="6162015141ec2e05b3da3316c594dc7a" category="paragraph">影響を受けるファイルのリストを取得するには、「アラート」ページを使用します。</block>
   <block id="adb36d0a41dcf531bb715bb815c75586" category="admonition">ボリュームに複数のアラートがある場合は、アラートごとに影響を受けるファイルの CSV リストをダウンロードする必要がある場合があります。</block>
-  <block id="eab85082296138dfa241a48f81820ee9" category="list-text">[アラート] ページで、結果をワークロード別に並べ替えて、復元するアプリケーション ワークロードのアラートを表示します。</block>
   <block id="4901f4d01c8a64589f2641ea221c79ee" category="list-text">そのワークロードのアラートのリストから、アラートを選択します。</block>
   <block id="020c63db3b1b6d893f5b8e59d6f4f282" category="list-text">そのアラートに対して、単一のインシデントを選択します。</block>
   <block id="3da0517dff453f03b4448de6079af196" category="inline-image-macro">特定のアラートの影響を受けるファイルのリスト</block>
@@ -657,8 +648,6 @@
   <block id="8db2e9b654cd93f28beeae96f827c30a" category="cell">保持期間の延長、バックアップの追加、不変のバックアップの強制、疑わしいファイル拡張子のブロック、セカンダリ ストレージでの検出の有効化など。。 <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> 。</block>
   <block id="a3b50e444d5d5789130de78ddb2b3e45" category="cell">ワークロード データをバックアップするためのバックアップ先として &lt;バックアップ プロバイダー&gt; を準備します。</block>
   <block id="e08278c8217792f95a8bc1de9c7a7d8b" category="cell">現在、ワークロードにはバックアップ先がありません。</block>
-  <block id="3b4633f78219c68314768337af8968bf" category="cell">重要な、または非常に重要なアプリケーションのワークロードをランサムウェアから保護します。</block>
-  <block id="9c592743fe6a292e0be5b9e6343dc1ba" category="cell">[保護] ページには、保護されていない重要な、または非常に重要な (割り当てられた優先度レベルに基づく) アプリケーション ワークロードが表示されます。</block>
   <block id="1f03c05bf6e65a368653bb061f47d41c" category="cell">これらのワークロードにポリシーを割り当てます。。 <block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block> 。</block>
   <block id="09ac1a414033303cc9f61ba014837263" category="cell">重要な、または非常に重要なファイル共有ワークロードをランサムウェアから保護します。</block>
   <block id="723aa86a592f3ac7a3d0c493a7f7f6f8" category="cell">[保護] ページには、保護されていないファイル共有またはデータストア タイプの重要なワークロードまたは非常に重要なワークロードが表示されます。</block>
@@ -759,7 +748,6 @@
   <block id="f37d79a56cb20cdcf206acc1cfa8be14" category="paragraph">ランサムウェア検出ポリシーがONTAPの Autonomous Ransomware Protection（ ONTAP のバージョンに応じて ARP または ARP/AI）と FPolicy によって管理されている場合、それらのワークロードは保護され、引き続き ARP と FPolicy によって管理されます。</block>
   <block id="d62f06f1ca9fb020be7953fe3101f0a3" category="section-title">NetAppアプリケーションによって保護されていないワークロードの保護ポリシー</block>
   <block id="a6f7464fa2fed88291aecd220709e4c3" category="paragraph">ワークロードを保護するための最初のステップの 1 つは、現在のワークロードとその保護ステータスを確認することです。次の種類のワークロードを確認できます。</block>
-  <block id="1178945c6ac5c3d230f56a7ae6f7233f" category="list-text">アプリケーションワークロード</block>
   <block id="8a5042da8154d7b57ae6ca95c51af501" category="list-text">ブロックワークロード</block>
   <block id="f6eb9aea7f708dfdaa2db67cab1a9d7a" category="list-text">ファイル共有ワークロード</block>
   <block id="001c5efa43c01ae33e4db0d43c8d8fa5" category="list-text">VMワークロード</block>
@@ -925,9 +913,6 @@
   <block id="1a7c3267d0415566593c1285505aa765" category="list-text">選択内容を確認します。</block>
   <block id="6f6897e6c796f284c66b248179fd67ba" category="list-text">上部のメニューから [*リカバリ*] を選択し、[リカバリ] ページでワークロードを確認します。ここでは、操作のステータスがさまざまな状態を遷移します。</block>
   <block id="4bd702a7df3c8966625d698f05cd0cc6" category="paragraph">セキュリティ ストレージ管理者は、さまざまなレベルでデータを回復できます。</block>
-  <block id="c2fcef7151504f035e47ba31c3e5ddf5" category="list-text">すべてのボリュームを回復</block>
-  <block id="068f7fc4b5a2b14387afa21644b54045" category="list-text">ボリューム レベルまたはファイルとフォルダー レベルでアプリケーションを回復します。</block>
-  <block id="318b3b219a722faf75710b5f3a03fc90" category="list-text">ボリューム レベル、ディレクトリ レベル、またはファイル/フォルダー レベルでファイル共有を回復します。</block>
   <block id="e626ada343290f415dbe5463dd32adc6" category="list-text">VM レベルでデータストアから回復します。</block>
   <block id="f7c909c79472e02e68ad0d93011cfe0d" category="paragraph">プロセスはワークロードの種類によって異なります。</block>
   <block id="44dfe1570ed5a548116ca04db0d20450" category="list-text">*復元範囲*: 実行する復元の種類を選択します。</block>
@@ -936,7 +921,6 @@
   <block id="2381a26d342d1f67e865975093ebf01f" category="list-text">ファイル別: 復元するフォルダーまたは単一のファイルを指定できます。</block>
   <block id="46a7598fc73d53164244a0638ecf7951" category="admonition">SAN ワークロードの場合、ワークロードごとにのみ復元できます。</block>
   <block id="529c8dae31154f53895310faea8c67fa" category="admonition">最大 100 個のファイルまたは 1 つのフォルダーを選択できます。</block>
-  <block id="908544495ea40587cf39ce2e5f22e4bc" category="list-text">アプリケーション、ボリューム、またはファイルのいずれを選択したかに応じて、次のいずれかの手順を続行します。</block>
   <block id="92c289a4edeb4fe9f271012a0186db7e" category="section-title">すべてのボリュームを復元する</block>
   <block id="d6423436696bf345f898a3676ed1f0dd" category="list-text">[復元] ページの [復元範囲] で、[*すべてのボリューム*] を選択します。</block>
   <block id="60b7fcd27a0d6ec11fae18faa686b7b8" category="inline-image-macro">すべてのボリュームによる復元ページ</block>
@@ -947,8 +931,6 @@
   <block id="2a8100bf9205c5202d9072f926fc015c" category="list-text">集計を選択します。</block>
   <block id="93cd071f37816a758745f9110838474f" category="list-text">すべての新しいボリュームの先頭に追加されるボリューム プレフィックスを変更します。</block>
   <block id="51371f4640fbc3d25ac82cefab45418d" category="admonition">新しいボリューム名は、プレフィックス + 元のボリューム名 + バックアップ名 + バックアップ日付として表示されます。</block>
-  <block id="6176694f7bff94dfa4c7296ff6dc3769" category="section-title">ボリュームレベルでアプリケーションワークロードを復元する</block>
-  <block id="48c24178716eb1262ba72b16ed76e5c5" category="list-text">「復元が必要」状態にあるアプリケーション ワークロードを選択します。</block>
   <block id="e97c4e3d59c331da11cb01db2eadc265" category="list-text">[復元] ページの [復元範囲] で、[*ボリューム別*] を選択します。</block>
   <block id="645aa6060c294634583fc329f68ef054" category="inline-image-macro">ボリュームごとの復元ページ</block>
   <block id="7c4da72b4401875080d62e2c8998be3f" category="paragraph"><block ref="7c4da72b4401875080d62e2c8998be3f" category="inline-image-macro-rx" type="image"></block></block>
@@ -956,8 +938,6 @@
   <block id="cb66ace7c6b9d638625f30c2eadff897" category="admonition">ランサムウェア耐性は、インシデント発生直前の最新のバックアップを最適な復元ポイントとして識別し、「推奨」表示を表示します。</block>
   <block id="ce398ae17610821c0664dc141883be1a" category="list-text">新しいボリューム名を確認します。</block>
   <block id="e117d7e0417b0abf71f8e538099181f1" category="admonition">新しいボリューム名は、元のボリューム名 + バックアップ名 + バックアップ日付として表示されます。</block>
-  <block id="6412a45d589675b39a03f4d8c440e7a7" category="section-title">ファイルレベルでアプリケーションのワークロードを復元する</block>
-  <block id="dda1633bee980c6aee630455ccc23784" category="paragraph">アプリケーション ワークロードをファイル レベルで同じシステムまたは別のシステムに復元できます。</block>
   <block id="632b8e66b02aebebfc5b46583ee30222" category="list-text">ファイルの完全なリストを表示するには、[影響を受けるファイル] ペインの上部にある [*ここをクリック*] を選択します。</block>
   <block id="3e64769073a6ebfad26862c552f42c72" category="list-text">[復元] ページの [復元範囲] で、[*ファイル別*] を選択します。</block>
   <block id="f1760e95914fef75d7a25a4643d9128a" category="list-text">ボリュームのリストで、復元するファイルが含まれているボリュームを選択します。</block>
@@ -1070,16 +1050,13 @@
   <block id="e9533d3cc3450cc437e3452b21f4e97f" category="list-text">登録用のシークレットを作成します。</block>
   <block id="d0d26c22c8bcacd0db2ef7f6857801c1" category="list-text">*権限*: アプリケーションに権限を割り当てます。</block>
   <block id="634e092bf22459996810a1c2929824dc" category="list-text">*認証*: アプリケーションの認証資格情報を入力します。</block>
-  <block id="7a183e1af9011b3614a78324d4616e15" category="list-title">Microsoft Sentinelを有効にする手順</block>
   <block id="08a65e7044425c8d2c782e9b34c3e654" category="list-text">Microsoft Sentinel にアクセスします。</block>
   <block id="8c871324b9c8d6f9e574d61e6af06ac8" category="list-text">*Log Analytics ワークスペース* を作成します。</block>
   <block id="d7f9c1502929f8a9624aeb8a459be84e" category="list-text">作成した Log Analytics ワークスペースを Microsoft Sentinel で使用できるようにします。</block>
-  <block id="74ac1228e90a795447fcd3ef5d57fbb9" category="list-title">Microsoft Sentinelでカスタムロールを作成する手順</block>
   <block id="c81259b70bf3f6091a6ea9d12a1516c3" category="list-text">*サブスクリプション* &gt; *アクセス制御 (IAM)* を選択します。</block>
   <block id="0e0b93e5e66d733c957afe1a383637ec" category="list-text">カスタム ロール名を入力します。  *Ransomware Resilience Sentinel Configurator* という名前を使用します。</block>
   <block id="dcec7acebd109f04b4e2a5e7982c2ca6" category="list-text">次の JSON をコピーして、*JSON* タブに貼り付けます。</block>
   <block id="f14b670805869bff13be2818d420e8b9" category="list-text">設定を確認して保存します。</block>
-  <block id="1edce0bd61c3bd7df2516cf1c42c87b9" category="list-title">Microsoft Sentinelからイベントを受信するためにRansomware Resilienceを登録する手順</block>
   <block id="cc29294d0b591a10fc322169b7f1f026" category="list-text">*Entra ID* &gt; *アプリケーション* &gt; *アプリ登録*を選択します。</block>
   <block id="5f1387f27bad2647c460bfdb36ec2e0b" category="list-text">アプリケーションの*表示名*に「*Ransomware Resilience*」と入力します。</block>
   <block id="b98526e9d91b1e1635367700d6012267" category="list-text">*サポートされているアカウントの種類* フィールドで、*この組織ディレクトリ内のアカウントのみ* を選択します。</block>
@@ -1087,14 +1064,12 @@
   <block id="b99a9a5879442c5ad3ae30c94964ccb3" category="list-text">*レビュー*を選択します。</block>
   <block id="d7f089d595dc5d8b4b35eb5acb6cf354" category="list-text">設定を保存するには、[*登録*] を選択します。</block>
   <block id="5293737739d192ce4c823f55d6348b38" category="paragraph">登録後、Microsoft Entra 管理センターにアプリケーションの概要ペインが表示されます。</block>
-  <block id="08d457149f23a08e7d52fc0144d0ba4d" category="list-title">登録用のシークレットを作成する手順</block>
   <block id="110778c40d9a0f7258c68cac989bbe9c" category="list-text">*証明書とシークレット* &gt; *クライアント シークレット* &gt; *新しいクライアント シークレット*を選択します。</block>
   <block id="25b912035505a8c7f4db26a790036f2e" category="list-text">アプリケーション シークレットの説明を追加します。</block>
   <block id="8d630138be955f4fdc041c611342cd58" category="list-text">シークレットの*有効期限*を選択するか、カスタム有効期間を指定します。</block>
   <block id="485fdedb0c7094275d346a406c7511bc" category="admonition">クライアント シークレットの有効期間は 2 年 (24 か月) 以下に制限されます。  Microsoft では、有効期限を 12 か月未満に設定することをお勧めします。</block>
   <block id="1ff868ad6c260db8589989baff2a8980" category="list-text">シークレットを作成するには、[*追加*] を選択します。</block>
   <block id="c669e93c1e1c1457b26eee151fca6438" category="list-text">認証手順で使用するシークレットを記録します。このページを離れた後、秘密は再び表示されることはありません。</block>
-  <block id="260a969e6beee33bb0d12186ae95be83" category="list-title">アプリケーションに権限を割り当てる手順</block>
   <block id="9917d3e3752f3388fb31aaf44f32cf72" category="list-text">*追加* &gt; *ロールの割り当てを追加*を選択します。</block>
   <block id="fc9ff510933e7824938a0a7d44b24aeb" category="list-text">*特権管理者ロール* フィールドで、*Ransomware Resilience Sentinel Configurator* を選択します。</block>
   <block id="fa4157795fdbaed676b0486ebceb9f1a" category="admonition">これは先ほど作成したカスタム ロールです。</block>
@@ -1102,19 +1077,16 @@
   <block id="ba79e586f6b5202f28597984ee8243b7" category="list-text">*メンバーを選択*を選択します。次に、「*Ransomware Resilience Sentinel Configurator*」を選択します。</block>
   <block id="0b08d4bbcc90f50506c6e3c62fa007c9" category="list-text">*ユーザーが実行できる操作* フィールドで、*特権管理者ロール (所有者、UAA、RBAC) を除くすべてのロールの割り当てをユーザーに許可する (推奨)* を選択します。</block>
   <block id="0427238efbd6d8ab4d12c132cb4cae7d" category="list-text">権限を割り当てるには、[*確認して割り当て*] を選択します。</block>
-  <block id="b37c7df6ed28d0c6b82990a40be5956c" category="list-title">アプリケーションの認証資格情報を入力する手順</block>
   <block id="9d4673f4ba59f2e834f5cc5a15b8a533" category="list-text">資格情報を入力してください:</block>
   <block id="df399ba2a5bc8f8f94de9d50ed1b4f39" category="list-text">テナント ID、クライアント アプリケーション ID、およびクライアント アプリケーション シークレットを入力します。</block>
   <block id="53e68cb1edb551af8b1c0d8fee230e44" category="admonition">認証が成功すると、「認証済み」というメッセージが表示されます。</block>
   <block id="00bcd4c2f217493f06ecbb6ddfa3862b" category="list-text">アプリケーションの Log Analytics ワークスペースの詳細を入力します。</block>
   <block id="b263ba58e894356680bda9edd8c52400" category="list-text">サブスクリプション ID、リソース グループ、Log Analytics ワークスペースを選択します。</block>
-  <block id="2c65d4e0cdac9c48880857277c1bc9e3" category="list-title">SplunkでHTTPイベントコレクターを有効にする手順</block>
   <block id="ce0362998bb10251a5412bcabd9b833c" category="list-text">*設定* &gt; *データ入力*を選択します。</block>
   <block id="069c7509480a5fbadda560c7376dca8a" category="list-text">*HTTP イベント コレクター* &gt; *グローバル設定* を選択します。</block>
   <block id="b42b974604014d593eace2a8678716ed" category="list-text">[すべてのトークン] トグルで、[有効] を選択します。</block>
   <block id="1f07cda18625f2e87b3b485165c2fde6" category="list-text">イベント コレクターが HTTP ではなく HTTPS 経由でリッスンして通信するようにするには、[SSL を有効にする] を選択します。</block>
   <block id="f0f064c9e7c481532480bef9466ae445" category="list-text">HTTP イベント コレクターの *HTTP ポート番号* にポートを入力します。</block>
-  <block id="c660c961cf09ba8531cdfd3369af008b" category="list-title">Splunkでイベントコレクタートークンを作成する手順</block>
   <block id="23e1d5a70208de028ca12ba8bef552d9" category="list-text">*設定* &gt; *データの追加*を選択します。</block>
   <block id="5c4a26d0a7ecde2f25b0a5d7c482ab87" category="list-text">*モニター* &gt; *HTTP イベント コレクター* を選択します。</block>
   <block id="7afbca3b4e9f4fb695134baafcac5c4d" category="list-text">トークンの名前を入力し、[次へ] を選択します。</block>
@@ -1294,13 +1266,8 @@
   <block id="3ad6a80bb44b13a7ad34ad835b0166d5" category="paragraph">このリリースでは、 NetApp の営業担当者から取得したNetAppライセンス ファイル (NLF) である BYOL ライセンスを使用できます。</block>
   <block id="a0f248fceae83613cf99c651e3c24be5" category="inline-link">ライセンスの設定について詳しくはこちら</block>
   <block id="9d5aaa8966c5e35be75ef082fe317272" category="paragraph"><block ref="52acad0b8ccf8676f5a7124bd999ec73" category="inline-link-rx"></block> 。</block>
-  <block id="731d998f19bf5dc5e302b024a5e269ae" category="section-title">ファイルレベルでアプリケーションのワークロードを復元する</block>
-  <block id="3ca66b2ea6d0090926c6ed42102cd321" category="paragraph">アプリケーション ワークロードをファイル レベルで復元する前に、攻撃の影響を受けた可能性のあるファイルの一覧を表示し、復元するファイルを特定できるようになりました。  BlueXP ransomware protectionで復元するファイルを選択したり、アラートの影響を受けたすべてのファイルをリストした CSV ファイルをアップロードしたり、復元するファイルを手動で特定したりすることができます。</block>
   <block id="f117dfa6c0387d743ec4a20f0d5de0bc" category="admonition">このリリースでは、アカウント内のすべてのBlueXPコネクタが Podman を使用していない場合でも、単一ファイルの復元機能が有効になります。それ以外の場合、そのアカウントは無効になります。</block>
   <block id="a73c37f93df66de7bad711d109e97dec" category="section-title">影響を受けるファイルのリストをダウンロードする</block>
-  <block id="2054cf1c5fa9dc941ee8bea29d93f66c" category="paragraph">アプリケーション ワークロードをファイル レベルで復元する前に、[アラート] ページにアクセスして影響を受けるファイルのリストを CSV ファイルでダウンロードし、[リカバリ] ページを使用して CSV ファイルをアップロードできるようになりました。</block>
-  <block id="eb7455ff51d7f3745fb801aa3ad0fb2a" category="inline-link">アプリケーションを復元する前に影響を受けるファイルをダウンロードする方法について詳しくは、こちらをご覧ください。</block>
-  <block id="29dfc4e316452c829eef22178afa1c8f" category="paragraph"><block ref="280bb568aae28b55ea90793d53388aa1" category="inline-link-rx"></block> 。</block>
   <block id="16a3ef0c0012d6ecafe00aeaff08d20c" category="section-title">保護プランを削除する</block>
   <block id="0e7f928ba1ebfe3d5652a71f58c576d8" category="paragraph">このリリースでは、ランサムウェア保護戦略を削除できるようになりました。</block>
   <block id="5bc0cd3e3204e2ab72bd03661373648f" category="inline-link">ワークロードの保護とランサムウェア保護戦略の管理について詳しく学ぶ</block>
@@ -1469,8 +1436,6 @@
   <block id="67a915151759ecc737f698391f7cfd08" category="section-title">相互運用性</block>
   <block id="10c4fe0b6e00d5560df8e602d85a5bd1" category="paragraph">はい、Ransomware Resilience はONTAPで設定されたスナップショット スケジュールを検出します。</block>
   <block id="282764b1530b129720ca01a123b6f6ce" category="paragraph-title">ランサムウェア耐性の観点から見たワークロードとは何ですか?</block>
-  <block id="10c8ec686acd93b9da39b3efea09bc01" category="paragraph">ワークロードは、アプリケーション、VM、またはファイル共有です。ワークロードには、単一のアプリケーション インスタンスによって使用されるすべてのボリュームが含まれます。</block>
-  <block id="f7e19062cc2eaeb5901ce8337d69e539" category="paragraph">たとえば、ora3.host.comにデプロイされたOracleデータベースを考えてみましょう。<block ref="2b0d59c7031769e80c8e5118b6ec7694" prefix=" " category="inline-code"></block> データを含み、<block ref="a110e8ed91b0de267a5728888b1f4ed1" prefix=" " category="inline-code"></block> ログを含みます。2 つのボリュームが、その Oracle データベース インスタンスのワークロードを構成します。</block>
   <block id="f4d0f54d022c7715505fb12db9dfaab4" category="paragraph-title">Ransomware Resilience はワークロード データをどのように優先順位付けしますか?</block>
   <block id="6f240a888a055fa4629059d3d5328220" category="paragraph">ワークロードの優先度 (クリティカル、標準、重要) は、ワークロードに関連付けられた各ボリュームにすでに適用されているスナップショット頻度とスケジュールされたバックアップによって決まります。</block>
   <block id="79444a9daf1e4ef34a492d7a4ccc93fd" category="paragraph-title">Ransomware Resilience はどのようなワークロードをサポートしますか?</block>
@@ -1538,10 +1503,6 @@
   <block id="954e661212d7a62095e6b957259dc36f" category="inline-link-macro">ARP/AI</block>
   <block id="7271886a703021fd0851304115b49ee2" category="paragraph">{アスタリスク} Amazon FSx for NetApp ONTAP は、 ARP/AI ではなく、Autonomous Ransomware Protection (ARP) を使用します。違いの詳細については、<block ref="ee25b596f35c0a0b982fc7b7e342f828" category="inline-link-macro-rx"></block> 。</block>
   <block id="c71c95f02c8e85a6e5cddd09ad2a5d8b" category="admonition">ONTAPで ARP/AI を使用するには、 ONTAP 9.16 以上が必要です。+ ONTAP は、 FabricPool FlexCache、 FlexGroupボリューム、整合性グループのマウント ポイント ボリューム、マウント パス ボリューム、オフライン ボリューム、およびデータ保護 (DP) ボリュームに対してランサムウェア保護サポートを提供しません。必ず確認する<block ref="49252e6bcf11c366c792cea95977195b" category="inline-link-macro-rx"></block>。</block>
-  <block id="fd3b4579ab972a1738986581275cfcfa" category="list-text">データベース:</block>
-  <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">Microsoft SQL Server</block>
-  <block id="30162ed78b6c10f731411f2fc440c24f" category="list-text">Oracle</block>
-  <block id="399bd1ee587245ecac6f39beaa99886f" category="list-text">PostgreSQL</block>
   <block id="acd257a01891523b6ff91a9020b733ba" category="paragraph">疑わしいユーザーアクティビティ データは、次のリージョンの AWS および Azure に保存される可能性があります。</block>
   <block id="2feeca48692986e9cc471ec61f847fca" category="paragraph">NetApp は、 NetApp Consoleとそのクラウド サービスをさまざまな方法でサポートします。ナレッジ ベース (KB) 記事やコミュニティ フォーラムなど、豊富な無料のセルフ サポート オプションが 24 時間 365 日ご利用いただけます。サポート登録には、Webチケットによるリモートテクニカルサポートも含まれます。</block>
   <block id="317cbd2c4fdbfd06a6c66bcd3f57d7ad" category="paragraph">クラウド プロバイダーのファイル サービス、そのインフラストラクチャ、またはサービスを使用するソリューションに関連するテクニカル サポートについては、その製品のドキュメントを参照してください。</block>
@@ -1595,7 +1556,6 @@
   <block id="d605e764d56b8615ebf6dd5f87998855" category="list-text">米国東部（バージニア北部）（us-east-1）</block>
   <block id="a55a22032fc9fd630abe933324e9d4b9" category="paragraph-title">Ransomware Resilience はONTAPの保護設定を認識しますか?</block>
   <block id="1c8f51534c2fc10dfef26d32d61c7ed3" category="paragraph">ライセンスと課金に関しては、バックアップとリカバリ用の個別のライセンスがない場合でも、Ransomware Resilience をバックアップとリカバリと統合できます。バックアップとリカバリとランサムウェア耐性の両方をお持ちの場合、両方の製品で保護されている共通データについては、ランサムウェア耐性に対してのみ課金されます。</block>
-  <block id="182b9ed848b82506c10ba162f10e3f5b" category="list-text">Oracle、VMware データストア、ファイル共有などのアプリケーションベースのワークロード内のデータを保護します。</block>
   <block id="6b62768f3f94df043ea31bf9c43b2a42" category="paragraph">Ransomware Resilience は、Oracle、ファイル共有、ブロック ストレージ、VM、VM データストアなどのワークロードを識別できます。</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">プレビュー バージョンでは、このサービスは、Oracle、VM データストア、オンプレミスの NAS ストレージ上のファイル共有、およびBlueXP組織全体のCloud Volumes ONTAP on AWS (NFS プロトコルを使用) のアプリケーション ベースのワークロードを個別に保護し、データを Amazon Web Services クラウド ストレージにバックアップします。</block>
   <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3 (64 ビット) から 15.6 (64 ビット)</block>
@@ -1644,7 +1604,6 @@
   <block id="869c8807275d576171cb34b892652da6" category="paragraph">詳細については、 <block ref="ca80a6cafecee489657bc722219fb267" category="inline-link-macro-rx"></block>。</block>
   <block id="22a81a009e8d21bf17e2788fdbfa4a6d" category="paragraph">Amazon FSx for NetApp ONTAPシステムは、Ransomware Resilience でサポートされています。Amazon FSx for ONTAPには次の制限が適用されます。</block>
   <block id="f20af4e11539d270463e7ed46557be6f" category="paragraph">NetApp Ransomware Resilienceを使用する前に、まずワークロード データを検出する必要があります。検出中に、Ransomware Resilience は組織内のすべてのコンソール エージェントとプロジェクトのシステム内のすべてのボリュームとファイルを分析します。</block>
-  <block id="55971de7d1268c37251f60641b742b76" category="paragraph">検出ダッシュボードでは、Ransomware Resilience によってサポートされているシステム構成とサポートされていないシステム構成が表示されます。ランサムウェア耐性は、Oracle アプリケーション、VMware データストア、ファイル共有、ブロック ストレージを評価します。</block>
   <block id="ab066b3292d8ab61ef3b5c77169cdd19" category="section-title">詳細情報</block>
   <block id="48bf90c5e99016f124c48c02a77dc8fd" category="inline-link-macro">NetApp Consoleのライセンスとサブスクリプションのドキュメント</block>
   <block id="0fa9a3c869139d736cd7d6df862b94e3" category="list-text"><block ref="0fa9a3c869139d736cd7d6df862b94e3" category="inline-link-macro-rx"></block></block>
@@ -1905,7 +1864,6 @@
   <block id="ffe6653bcd557bfbd80aff3ce171f491" category="list-text">既存のNetApp Backup and Recoveryをそのままにして、_検出_ポリシーのみを適用するには、[**既存のポリシーを置き換える**] ボックスのチェックを外しておきます。</block>
   <block id="aafd4e94bcc37426152d473c41e03659" category="list-text">NetApp Ransomware Resilience は、アクティブな NetApp Backup and Recovery ポリシーが存在しているかどうかを検出します。既存のポリシーを置き換えるには、**既存のポリシーを置き換える**ボックスを選択します。ボックスを選択すると、NetApp Ransomware Resilience によって検出ポリシーのリストが検出ポリシーに置き換えられます。</block>
   <block id="037372d8704e59765af4c473d08f5257" category="list-text">ワークロードに、維持する既存のNetApp Backup and Recovery保護ポリシーがある場合は、**既存のポリシーを置き換える**のチェックを外します。既存のポリシーを置き換えるには、**既存のポリシーを置き換える**をオンにします。</block>
-  <block id="2ef974fc1907e25ad7d2ab240867a065" category="list-text">アプリケーションやVMがNetApp Backup and RecoveryまたはRansomware Resilienceによって管理されている場合、Ransomware Resilienceは「crash consistent state（障害など予期しないシャットダウン時と同様）」の状態でリストアを実行します。これは、システムがクラッシュした場合など、同じ時点でボリューム内にあったすべてのデータがリストアされることを意味します。</block>
   <block id="b11b835f559ed8748e33a3412f3c77b2" category="section-title">ワークロードを復元する</block>
   <block id="ea9eea4a980add15f1982bc5d385bfc2" category="doc">NetApp Ransomware Resilience で保護グループを管理する</block>
   <block id="ed2728c518fe52f7f1f0f734bdf3232f" category="paragraph">NetApp Ransomware Resilienceは、データ資産の管理を容易にするために保護グループを提供します。保護グループは、ワークロードを論理的にまとめたグループです。Ransomware Resilienceは、1つの保護戦略で保護グループ内のすべてのボリュームを同時に保護できるため、各ワークロードごとに戦略を適用する手間が省けます。</block>
@@ -2008,7 +1966,6 @@
   <block id="49408f5917e16f5795da1781a7748aa5" category="list-text">影響を受けるワークロード、ボリューム、ファイル、ディレクトリ</block>
   <block id="a6bd7f80fc17cbb8e58e8dca754bf710" category="list-text">環境内の疑わしいユーザーをブロックするには、ユーザー名の横にある*ブロック*を選択します。</block>
   <block id="e2907e7cb7d68b36821cd11cda209bc3" category="cell">SAN（iSCSI および NVMe）</block>
-  <block id="65072a668477cd315b4302df8afcce32" category="paragraph">NetApp Ransomware Resilienceは、ランサムウェア攻撃からデータを保護します。Ransomware Resilienceでは、Oracleのアプリケーションベースのワークロード、VMデータストア、NASストレージ（NFSおよびCIFSプロトコル）およびSANストレージ（FC、iSCSI、NVMeプロトコル）のファイル共有を保護できます。Ransomware Resilienceは、オンプレミスストレージのほか、Amazon Web Services向けCloud Volumes ONTAP、Google Cloud向けCloud Volumes ONTAP、Microsoft Azure向けCloud Volumes ONTAP、Azure NetApp Files、Amazon FSx for NetApp ONTAPがNetApp Console全体でサポートされています。Amazon Web Services、Google Cloud、Microsoft Azure、およびNetApp StorageGRIDにデータをバックアップできます。</block>
   <block id="3b9c98c430c62cb3627db641468d7e64" category="list-text">ランサムウェア保護の態勢を評価し、わかりやすいダッシュボードに表示するとともに、保護を改善するための推奨事項を提供します。</block>
   <block id="9bd1fe262c57584526c5184d4de31827" category="list-text">オンプレミス ONTAP クラスタまたは Cloud Volumes ONTAP システムが NetApp Console で設定されていない場合は、<block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block>および<block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="3eb45f3714606347a6ff182b822b69cc" category="list-text">ONTAP または Cloud Volumes ONTAP クラスタの場合、Ransomware Resilience には ONTAP バージョン 9.11.1 以降が必要です。</block>
@@ -2439,7 +2396,6 @@
   <block id="76c07e024915a14c275975a549a9ee9b" category="list-text">複数のNetAppテクノロジーをオーケストレーションすることでワークロードの稼働時間を短縮するために、ワークロードを*復旧*します。特定のボリュームを選択して復元することができます。Ransomware Resilienceは、最適な選択肢に関する推奨事項を提供します。</block>
   <block id="857d0c5d34b476c300d20857901434ee" category="list-text">コンソールに接続されたシステム内のすべてのオンプレミスおよびクラウドNAS（NFSおよびCIFSプロトコル）およびSAN（FC、iSCSI、NVMe）データを検索します。</block>
   <block id="8d2a9bcb8af52527cb5ef134952b126c" category="list-text">ONTAP および Backup and Recovery サービス API からデータを識別し、ワークロードに関連付けます。詳細については、<block ref="a16fd9a0601d0464b4c9ce4f59c2454b" category="inline-link-rx"></block>を参照してください。</block>
-  <block id="aea5e53a84ea68f5c29fd5b651210249" category="list-text">*ワークロード*：ワークロードとは、システム内のストレージリソースの論理的なグループのことです。たとえば、Oracleデータベース、VMwareデータストア、ファイル共有などです。</block>
   <block id="185b7516beffeca9e791d1462be2e3df" category="paragraph">ワークロードに適用されている保護ポリシーの使用を停止する場合は、System Manager、API呼び出し、またはCLIを使用して無効にすることができます。</block>
   <block id="321e92de54fb9050ca985e93dd41037e" category="admonition">Ransomware Resilienceは、FlexGroupを使用するボリュームを持つシステムを検出しません。</block>
   <block id="660970b5bfb72eddca5566de07107009" category="section-title">検出するワークロードを選択</block>
@@ -2458,4 +2414,37 @@
   <block id="df3fb79f22fd0d8a496bd6ab0f7fcb62" category="sidebar">NetApp Ransomware Resilienceは、オンプレミスおよびクラウドストレージにおけるランサムウェアの脅威からワークロードを保護、検出し、リカバリをサポートします。Ransomware Resilienceはセキュアなバックアップとリカバリを可能にし、Oracle、VMデータストア、NASストレージなどにおいて、組織が重要なデータを保護し、ビジネスの継続性を維持できるよう支援します。</block>
   <block id="d75c1a5d668e6fb6360954c43259df75" category="list-title">IREファイアウォール</block>
   <block id="93222c59d4ce3b5c19ed433527efc1b4" category="list-text">crr-data-LIF-IP の受信を管理するために、別のファイアウォールを作成する必要があります。このファイアウォールは、IRE VPC CIDR 範囲からの NFSv3 および NFSv4 マウントを許可する必要があります。</block>
+  <block id="ed6277eb011dd9324445de0b4deb0234" category="paragraph">NetApp Ransomware Resilienceは、ランサムウェア攻撃からデータを保護します。Ransomware Resilienceでは、NASストレージ（NFSおよびCIFSプロトコル）とSANストレージ（FC、iSCSI、およびNVMeプロトコル）のファイル共有に対する保護が利用可能です。Ransomware Resilienceは、オンプレミスストレージ、Cloud Volumes ONTAP for Amazon Web Services、Cloud Volumes ONTAP for Google Cloud、Cloud Volumes ONTAP for Microsoft Azure、Azure NetApp Files、Amazon FSx for NetApp ONTAPでNetApp Console全体にわたってサポートされています。データはAmazon Web Services、Google Cloud、Microsoft Azure、NetApp StorageGRIDにバックアップできます。</block>
+  <block id="fb1cd4562ec1a61033e9d2c4ab767995" category="list-text">ファイル共有内のデータを保護します。</block>
+  <block id="303e01b1cd1cab99501fe839539f4e39" category="list-text">仮想マシン、ファイル共有、ブロックストレージなどのワークロードのリカバリをオーケストレーションします。</block>
+  <block id="c951303ee0fd5682237895bfad7df328" category="paragraph">NetApp Ransomware Resilienceは、プライマリデータボリューム上の以下のワークロードを保護します：</block>
+  <block id="c2d47b6bc95c845ff73e9809734fad1a" category="list-text">ファイル共有</block>
+  <block id="df8050ed04247af525daf2daa6c322c4" category="list-text">*ワークロード*：ワークロードとは、システム内のストレージリソースの論理的なグループのことです（ファイル共有など）。</block>
+  <block id="219ae0200ec3ea6dcfb05554d78fc029" category="paragraph">検出ダッシュボードでは、NetApp Ransomware Resilienceがサポートされているシステム構成とサポートされていないシステム構成を表示します。NetApp Ransomware Resilienceは、ファイル共有とブロックストレージを評価します。</block>
+  <block id="69bffd4bb9e455aa5c62ca1f53702cd9" category="paragraph">ワークロードとは、VMまたはファイル共有のことです。</block>
+  <block id="f4154bf5e6042768a9a528579573895f" category="paragraph">ファイルレベルでワークロードを復元する前に、影響を受けるファイルのリストを表示できます。アラートページにアクセスすると、影響を受けるファイルのリストをダウンロードできます。次に、復元ページを使用してリストをアップロードし、復元するファイルを選択します。</block>
+  <block id="3143da82214f4e025a696a23ee63d6dd" category="list-text">アラートページで、結果をワークロードごとに並べ替えて、復元したいワークロードに関するアラートを表示します。</block>
+  <block id="ad81d983549cd4869ecbf4e4568dd9a4" category="cell">ランサムウェアから、重要度の高いワークロードや極めて重要なワークロードを保護します。</block>
+  <block id="90c14c660f3939a93b414d3d4c9b707b" category="cell">「保護」ページには、保護されていない重要または非常に重要なワークロード（割り当てられた優先度レベルに基づく）が表示されます。</block>
+  <block id="74dd01db809dfdbbd3fee87a6f6fd4ae" category="list-text">VMがNetApp Backup and RecoveryまたはRansomware Resilienceで管理されている場合、Ransomware Resilienceは「crash consistent state（障害など予期しないシャットダウン時と同様）」の状態のリストアを実行します。これは、システムがクラッシュした場合などに、ボリューム内の同じ時点のすべてのデータがリストアされることを意味します。</block>
+  <block id="14952d9b177967e65f6269de52dfadc6" category="list-text">すべてのボリュームをリカバリする</block>
+  <block id="103e1bfcc7b78c6a613046060aa97751" category="list-text">ボリュームレベル、ディレクトリレベル、またはファイルレベルでファイル共有を復元します。</block>
+  <block id="138e328417253325f0020bc6f909cf21" category="list-text">ボリュームを選択したかファイルを選択したかに応じて、以下のいずれかの手順に進んでください。</block>
+  <block id="66b52194e9444d101bbebc0e5d3c85db" category="list-text">「復元が必要」状態のワークロードを選択してください。</block>
+  <block id="c4bf33102c16c6d0f3b82ccd10132cbe" category="section-title">ボリュームレベルでワークロードをリストアする</block>
+  <block id="6eeebf96ed736572085b2e60a07707d2" category="section-title">ファイルレベルでワークロードを復元する</block>
+  <block id="330d8bbff953330ca78d7f5a365cf755" category="paragraph">ファイルレベルでワークロードを同じシステムまたは別のシステムに復元できます。</block>
+  <block id="ac59eb4c3a4cee556cefcce89ff46aa1" category="list-title">Microsoft Sentinel を有効にする</block>
+  <block id="db5ac87576026bbb8d31e812518d4d3a" category="list-title">Microsoft Sentinelでカスタムロールを作成する</block>
+  <block id="5714c8ca3850d2c9baed74815356f1ca" category="list-title">Microsoft Sentinel からイベントを受信するには、NetApp Ransomware Resilience を登録してください。</block>
+  <block id="6629c8b10a65c01c4456e0a111604c4c" category="list-title">登録用のシークレットを作成する</block>
+  <block id="bf61754a0d34cf517c48ffb1487ba40c" category="list-title">権限を割り当てる</block>
+  <block id="c7439d2223d35c56a0c13dfc89356b4a" category="list-title">認証クレデンシャルを入力</block>
+  <block id="1d0d3e915b82f0548aa65826ac228575" category="list-title">Splunk で HTTP イベントコレクターを有効にする</block>
+  <block id="e4ae3ec1a7b6078a2a227108e873d56c" category="list-title">Splunk でイベントコレクタートークンを作成します</block>
+  <block id="80f321a7a812aa867bed58b03ef5cc65" category="section-title">ファイルレベルでワークロードを復元する</block>
+  <block id="7a9b2e033aaa7b0a366213831f6f5670" category="paragraph">ファイルレベルでワークロードを復元する前に、攻撃の影響を受けた可能性のあるファイルのリストを表示し、復元したいファイルを特定できるようになりました。BlueXP ransomware protectionで復元するファイルを選択できます。アラートの影響を受けたすべてのファイルをリストしたCSVファイルをアップロードするか、復元したいファイルを手動で指定することができます。</block>
+  <block id="367e5a02a217d0d56ba1d4196683de67" category="paragraph">ファイルレベルでワークロードを復元する前に、アラートページにアクセスして影響を受けるファイルのリストをCSVファイルとしてダウンロードし、その後リカバリページを使用してCSVファイルをアップロードできるようになりました。</block>
+  <block id="b61174a96feeed9315df09125dbf021e" category="inline-link-macro">ワークロードを復元する前に影響を受けるファイルをダウンロードする方法の詳細</block>
+  <block id="f9ab80c55fbab58c37aab4891dabffae" category="paragraph"><block ref="f9ab80c55fbab58c37aab4891dabffae" category="inline-link-macro-rx"></block></block>
 </blocks>

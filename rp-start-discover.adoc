@@ -14,7 +14,7 @@ summary: 検出中に、Ransomware Resilience はすべてのコンソール エ
 [role="lead"]
 NetApp Ransomware Resilienceを使用する前に、まずワークロード データを検出する必要があります。検出中に、Ransomware Resilience は組織内のすべてのコンソール エージェントとプロジェクトのシステム内のすべてのボリュームとファイルを分析します。
 
-検出ダッシュボードでは、Ransomware Resilience によってサポートされているシステム構成とサポートされていないシステム構成が表示されます。ランサムウェア耐性は、Oracle アプリケーション、VMware データストア、ファイル共有、ブロック ストレージを評価します。
+検出ダッシュボードでは、NetApp Ransomware Resilienceがサポートされているシステム構成とサポートされていないシステム構成を表示します。NetApp Ransomware Resilienceは、ファイル共有とブロックストレージを評価します。
 
 
 NOTE: Ransomware Resilienceは、FlexGroupを使用するボリュームを持つシステムを検出しません。

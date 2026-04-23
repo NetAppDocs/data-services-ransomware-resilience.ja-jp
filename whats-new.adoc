@@ -485,14 +485,6 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html
 
 
 
-=== Podman のファイルレベルでアプリケーション ワークロードを復元する
-
-アプリケーション ワークロードをファイル レベルで復元する前に、攻撃の影響を受けた可能性のあるファイルの一覧を表示し、復元するファイルを特定できるようになりました。以前は、組織 (以前のアカウント) 内のBlueXPコネクタが Podman を使用していた場合、この機能は無効になっていました。  Podman で有効になりました。  BlueXP ransomware protectionで復元するファイルを選択したり、アラートの影響を受けたすべてのファイルをリストした CSV ファイルをアップロードしたり、復元するファイルを手動で特定したりすることができます。
-
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["ランサムウェア攻撃からの回復について詳しくはこちら"] 。
-
-
-
 == 2024年9月30日
 
 
@@ -565,9 +557,9 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licen
 
 
 
-=== ファイルレベルでアプリケーションのワークロードを復元する
+=== ファイルレベルでワークロードを復元する
 
-アプリケーション ワークロードをファイル レベルで復元する前に、攻撃の影響を受けた可能性のあるファイルの一覧を表示し、復元するファイルを特定できるようになりました。  BlueXP ransomware protectionで復元するファイルを選択したり、アラートの影響を受けたすべてのファイルをリストした CSV ファイルをアップロードしたり、復元するファイルを手動で特定したりすることができます。
+ファイルレベルでワークロードを復元する前に、攻撃の影響を受けた可能性のあるファイルのリストを表示し、復元したいファイルを特定できるようになりました。BlueXP ransomware protectionで復元するファイルを選択できます。アラートの影響を受けたすべてのファイルをリストしたCSVファイルをアップロードするか、復元したいファイルを手動で指定することができます。
 
 
 NOTE: このリリースでは、アカウント内のすべてのBlueXPコネクタが Podman を使用していない場合でも、単一ファイルの復元機能が有効になります。それ以外の場合、そのアカウントは無効になります。
@@ -578,9 +570,9 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover
 
 === 影響を受けるファイルのリストをダウンロードする
 
-アプリケーション ワークロードをファイル レベルで復元する前に、[アラート] ページにアクセスして影響を受けるファイルのリストを CSV ファイルでダウンロードし、[リカバリ] ページを使用して CSV ファイルをアップロードできるようになりました。
+ファイルレベルでワークロードを復元する前に、アラートページにアクセスして影響を受けるファイルのリストをCSVファイルとしてダウンロードし、その後リカバリページを使用してCSVファイルをアップロードできるようになりました。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["アプリケーションを復元する前に影響を受けるファイルをダウンロードする方法について詳しくは、こちらをご覧ください。"] 。
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["ワークロードを復元する前に影響を受けるファイルをダウンロードする方法の詳細"]
 
 
 

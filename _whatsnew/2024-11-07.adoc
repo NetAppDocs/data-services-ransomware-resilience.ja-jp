@@ -25,11 +25,3 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html
 === 今すぐ30日間無料トライアル
 
 このリリースでは、 BlueXP ransomware protectionの新規導入に 30 日間の無料トライアルが提供されます。以前は、 BlueXP ransomware protectionは90 日間の無料トライアルを提供していました。すでに 90 日間の無料トライアル中の場合は、そのオファーは 90 日間継続されます。
-
-
-
-=== Podman のファイルレベルでアプリケーション ワークロードを復元する
-
-アプリケーション ワークロードをファイル レベルで復元する前に、攻撃の影響を受けた可能性のあるファイルの一覧を表示し、復元するファイルを特定できるようになりました。以前は、組織 (以前のアカウント) 内のBlueXPコネクタが Podman を使用していた場合、この機能は無効になっていました。  Podman で有効になりました。  BlueXP ransomware protectionで復元するファイルを選択したり、アラートの影響を受けたすべてのファイルをリストした CSV ファイルをアップロードしたり、復元するファイルを手動で特定したりすることができます。
-
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["ランサムウェア攻撃からの回復について詳しくはこちら"] 。
