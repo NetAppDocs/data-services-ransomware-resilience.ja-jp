@@ -54,6 +54,6 @@ image:screen-recovery2.png["回復ページ"]
 
 ワークロードを評価した後、ワークロードを復元するには次の2つの方法があります。
 
-* xref:task-custom-restore.html[カスタムリストアで復旧]
 * xref:task-clean-restore.html[クリーンな復元で復旧]
+* xref:task-custom-restore.html[カスタムリストアで復旧]
 

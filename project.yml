@@ -66,14 +66,14 @@ sidebar:
         url: "/rp-use-alert.html"
       - title: 回復状況を確認する
         url: "/rp-use-recover.html"
-      - title: カスタムリストアで復旧
-        url: "/rp-use-recover.html"
-      - title: クリーンな復元を実行します
+      - title: クリーンな復元で復旧
         entries:
         - title: 隔離された復旧環境を作成する
           url: "/task-clean-restore.html"
-        - title: クリーンな復元で復旧する
+        - title: クリーンな復元を実行します
           url: "/task-clean-restore-recover.html"
+      - title: カスタムリストアで復旧
+        url: "/rp-use-recover.html"
     - title: 準備訓練を実施する
       url: "/rp-start-simulate.html"
     - title: SIEMの設定
