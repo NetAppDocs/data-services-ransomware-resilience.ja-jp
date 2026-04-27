@@ -2289,7 +2289,6 @@
   <block id="fa48228aaf71277e6bc2d05f062b62bb" category="list-text">VMware Toolsがインストールされ、実行されている必要があります。</block>
   <block id="c3d0c72650d11485355d35484d14c0a1" category="list-text">SSHが有効になっている必要があります。</block>
   <block id="e1be34a58f3251e0469bedfad3e4788d" category="list-text">nfs-commonをインストールする必要があります。</block>
-  <block id="bf53e61c050ee11a55b3479c83c5512f" category="list-text">Dockerがインストールされ、実行されている必要があります。</block>
   <block id="66ed64c9284af661b30715d4eca9f181" category="list-text">最低40GBの空き容量が必要です。</block>
   <block id="300cc7d3b66cf666cb37df412b0cc68b" category="list-text">Windows VMの場合：</block>
   <block id="21755314d24463f2d188ab45bb05c0c0" category="list-text">Windows 仮想マシンには 20 GB の空き容量が必要です。</block>
@@ -2447,4 +2446,5 @@
   <block id="367e5a02a217d0d56ba1d4196683de67" category="paragraph">ファイルレベルでワークロードを復元する前に、アラートページにアクセスして影響を受けるファイルのリストをCSVファイルとしてダウンロードし、その後リカバリページを使用してCSVファイルをアップロードできるようになりました。</block>
   <block id="b61174a96feeed9315df09125dbf021e" category="inline-link-macro">ワークロードを復元する前に影響を受けるファイルをダウンロードする方法の詳細</block>
   <block id="f9ab80c55fbab58c37aab4891dabffae" category="paragraph"><block ref="f9ab80c55fbab58c37aab4891dabffae" category="inline-link-macro-rx"></block></block>
+  <block id="23bb3b926c6da9edf1342c50a0cbf22e" category="list-text">Dockerバージョン20.x以降がインストールされ、実行されている必要があります。</block>
 </blocks>
