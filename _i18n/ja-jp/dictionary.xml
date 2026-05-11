@@ -264,7 +264,6 @@
   <block id="f78bb7fa8ba897b7d7d1b1b09e4e9938" category="list-text">ランサムウェア耐性ダッシュボードを表示するには、[ダッシュボードに移動] を選択します。</block>
   <block id="0e8bd87ff5fa544ac4a41711a3b607ee" category="section-title">以前に選択したシステムに対して新しく作成されたワークロードを検出する</block>
   <block id="cee654483027bd7fe0b0908f5113b46f" category="section-title">新しいシステムを発見する</block>
-  <block id="12138171b6ceeb4bdc45d66e55bebe1c" category="inline-image-macro">垂直アクション</block>
   <block id="405f846fd5caab9c6bb41e637ac55c97" category="summary">NetApp Ransomware Resilienceに関するよくある質問への回答をご覧ください。</block>
   <block id="0257967210bdc685c6f54c2fd5c5300f" category="paragraph">この FAQ は、NetApp Ransomware Resilienceに関する質問への簡単な回答を探している場合に役立ちます。</block>
   <block id="ea355214fd4bc7c57f471bd92918879b" category="section-title">導入</block>
@@ -995,7 +994,6 @@
   <block id="6c2708162873644f82108cfcad8ae099" category="list-text">必要に応じて、以前に構成した Azure プライベート エンドポイントを使用するかどうかを選択します。</block>
   <block id="8044b0463892d9d29dbab8cfd03e8863" category="inline-link">Azure プライベートリンク</block>
   <block id="13ed98575f9b615f49abab3355f19c34" category="paragraph">Azure PrivateLink を使用する場合は、以下を参照してください。<block ref="dc49bf79d1a3da34447e7543d00fee44" category="inline-link-rx"></block> 。</block>
-  <block id="cbf029478800b63da0670604895d0640" category="paragraph">Ransomware Resilience で SIEM を有効にする前に、SIEM システムを構成する必要があります。</block>
   <block id="44af434bf59e9ca7200d90f680bae3bc" category="paragraph">Ransomware Resilience は、次のイベント データを SIEM システムに送信できます。</block>
   <block id="5976a11ab4dca8b4245edb915c6dfbd7" category="list-text">*コンテクスト*：</block>
   <block id="c01e6c1876fd41a917ea803c3ef48d66" category="list-text">*os*: これはONTAPの値を持つ定数です。</block>
@@ -1061,28 +1059,17 @@
   <block id="069c7509480a5fbadda560c7376dca8a" category="list-text">*HTTP イベント コレクター* &gt; *グローバル設定* を選択します。</block>
   <block id="b42b974604014d593eace2a8678716ed" category="list-text">[すべてのトークン] トグルで、[有効] を選択します。</block>
   <block id="1f07cda18625f2e87b3b485165c2fde6" category="list-text">イベント コレクターが HTTP ではなく HTTPS 経由でリッスンして通信するようにするには、[SSL を有効にする] を選択します。</block>
-  <block id="f0f064c9e7c481532480bef9466ae445" category="list-text">HTTP イベント コレクターの *HTTP ポート番号* にポートを入力します。</block>
   <block id="23e1d5a70208de028ca12ba8bef552d9" category="list-text">*設定* &gt; *データの追加*を選択します。</block>
   <block id="5c4a26d0a7ecde2f25b0a5d7c482ab87" category="list-text">*モニター* &gt; *HTTP イベント コレクター* を選択します。</block>
   <block id="7afbca3b4e9f4fb695134baafcac5c4d" category="list-text">トークンの名前を入力し、[次へ] を選択します。</block>
   <block id="69675529fc04a5656485b982a05f2582" category="list-text">イベントがプッシュされる *デフォルト インデックス* を選択し、*レビュー* を選択します。</block>
   <block id="68c568fcca74ba3d038d4f9401649265" category="list-text">エンドポイントのすべての設定が正しいことを確認し、[送信] を選択します。</block>
   <block id="629e41fb0338811b619a94a1e584ef5b" category="list-text">トークンをコピーして別のドキュメントに貼り付け、認証手順の準備を整えます。</block>
-  <block id="5093639d0b291e5e1c5e4bfcba50615a" category="section-title">ランサムウェア耐性におけるSIEMの接続</block>
-  <block id="b511a369f029c5c8478e91be4ebcc01c" category="paragraph">SIEM を有効にすると、脅威の分析とレポートのために、Ransomware Resilience から SIEM サーバーにデータが送信されます。</block>
-  <block id="6c667d0799ef10e8db95d986c682f873" category="list-text">コンソール メニューから、*保護* &gt; *ランサムウェア耐性* を選択します。</block>
-  <block id="d7ddcf81671a0ae259f3c19b9fb8bc79" category="list-text">ランサムウェア耐性メニューから、垂直方向の<block ref="ddacd9651566dbd67045ad6fbaf81a6c" category="inline-image-macro-rx" type="image"></block>... 右上のオプションをクリックします。</block>
-  <block id="376ec8b3e51e6597fb939c31a3fe0e59" category="list-text">*設定*を選択します。</block>
-  <block id="76e6564d7dbedb2803c452520ca3cd02" category="paragraph">設定ページが表示されます。</block>
   <block id="cb212c0e367b7e5f6090b19e7f1473eb" category="inline-image-macro">設定ページ</block>
   <block id="6d7cbe8caa190a79506b1314d84bb01b" category="paragraph"><block ref="6d7cbe8caa190a79506b1314d84bb01b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="466e22ed907b69bcece2ccdfba36fdb4" category="list-text">[設定] ページで、SIEM 接続タイルの [*接続*] を選択します。</block>
   <block id="322bdafeaec3f2756e524c7676eec70b" category="inline-image-macro">脅威検出の詳細ページを有効にする</block>
   <block id="a79d3cc091ba614079e19b05bd4144d7" category="paragraph"><block ref="a79d3cc091ba614079e19b05bd4144d7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="53ff0c832c14f6bc98decd93490e2576" category="list-text">SIEM システムの 1 つを選択します。</block>
-  <block id="4cb0caa7f0c97dd44ed525e6237432d2" category="admonition">入力する情報は、選択した SIEM によって異なります。</block>
-  <block id="71377237946a16cc4981e8007b83be9b" category="list-text">*有効*を選択します。</block>
-  <block id="f29be3377655fbc2e89f86e482ef5ca2" category="paragraph">設定ページに「接続済み」と表示されます。</block>
   <block id="bcee84ed1c24db7de866f4c5f5c8735a" category="summary">NetApp は、さまざまな方法でランサムウェア耐性のサポートを提供します。ナレッジベース (KB) 記事やコミュニティ フォーラムなど、広範な無料のセルフサポート オプションが 24 時間 365 日ご利用いただけます。サポート登録には、Webチケットによるリモートテクニカルサポートも含まれます。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">ヘルプを受ける</block>
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">クラウドプロバイダーのファイルサービスのサポートを受ける</block>
@@ -1814,13 +1801,10 @@
   <block id="144c603fbbde0985023a4ea73e22e35b" category="list-text">除外ユーザーの選択から削除するユーザーの名前を見つけます。ユーザー名の行にあるアクションメニュー（<block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>）を選択し、**削除**を選択します。</block>
   <block id="581c5c550f20f231f6c9e881e699829b" category="list-text">ダイアログで、**削除**を選択して、選択したユーザーを削除することを確認します。</block>
   <block id="90c78a95b0a3dffc0aa664d3139d1369" category="summary">NetApp Ransomware Resilienceから脅威の分析と検出のために、セキュリティおよびイベント管理システム（SIEM）にデータを自動的に送信できます。</block>
-  <block id="7be8ef49fa437b6a669fb54a081312c4" category="paragraph">NetApp Ransomware Resilience は次の SIEM をサポートしています：</block>
   <block id="03883d80013dc0b2b972eccd5b93b56f" category="list-text">AWS Security Hub</block>
   <block id="11759e65f10609550e1a85679db960a9" category="list-text">Microsoft Sentinel</block>
   <block id="a60efb4483a892cd919ec4e745900e2d" category="list-text">Splunk Cloud</block>
   <block id="46fa98b3b308dc6f48d40cf8b1712bfe" category="section-title">SIEMに送信されるイベントデータ</block>
-  <block id="cfa147fb3f8ac9012f43e41767ad8241" category="paragraph">Ransomware Resilience で AWS Security Hub を有効にする前に、AWS Security Hub で次の大まかな手順を実行する必要があります：</block>
-  <block id="2787b10f438b5f28e340793feb9becb6" category="paragraph">Ransomware Resilience で Microsoft Sentinel を有効にする前に、Microsoft Sentinel で次の大まかな手順を実行する必要があります。</block>
   <block id="fb042b7b99959e391eeb7c417511098a" category="section-title">2026年2月16日</block>
   <block id="51f5590fac3af82049df229fcb91793c" category="sidebar">SIEMの設定</block>
   <block id="8944abed4a7795983ff8cde0c660dfda" category="paragraph">Ransomware Resilienceは、NetApp Backup and Recoveryを使用して、ファイル共有ワークロードのスナップショットおよびバックアップポリシーを検出し、設定します。</block>
@@ -2039,7 +2023,6 @@
   <block id="3e56f67eb69a3fdb139a993bc1606e4f" category="paragraph">Ransomware Resilienceで、**Upload**を選択します。ファイルを見つけてアップロードします。</block>
   <block id="2a26cf4062a1ee4ec346c86574259847" category="list-text">UI から個々のユーザーを除外するには、**手動で選択**を選択します。</block>
   <block id="fd117b89b92e15d359324da93300356b" category="doc">NetApp Ransomware ResilienceをSIEMに接続して脅威分析と検出を行う</block>
-  <block id="e02579eaf37afcb0e3837dd893799871" category="paragraph">セキュリティ情報およびイベント管理システム（SIEM）は、ログとイベントデータを一元管理して、セキュリティイベントとコンプライアンスに関する分析情報を提供します。NetApp Ransomware Resilienceは、脅威の分析と検出を効率化するために、SIEMにデータを自動的に送信することをサポートします。</block>
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026年3月9日</block>
   <block id="9b0a81f6fc494248483a10631a72dabe" category="paragraph">保護されたワークロードは、無料試用期間の終了後、購入した容量またはサブスクリプションに対してカウントされます。ランサムウェア耐性は、効率化前の保護されたワークロードに関連するデータ（ONTAPによって報告される）に対してGB単位で課金されます。</block>
   <block id="1dba6347dc69b3be8eba699851eddc8f" category="paragraph-title">Ransomware Resilience の請求はどのように行われますか？</block>
@@ -2071,7 +2054,6 @@
   <block id="2a89449caab8a2ca7d825a1c6a44640c" category="admonition">Splunk Cloud では、プラットフォーム バージョン 7.0、7.1、7.2、8.0、または 8.4 を実行している必要があります。詳細については、<block ref="258077ff9a23292548ab7c25d009028a" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="d11de361a9507cdd0eba54b47b77df6e" category="list-text"><block ref="d11de361a9507cdd0eba54b47b77df6e" category="inline-link-macro-rx"></block></block>
   <block id="5d0a0988b6064ad1afb79d8f5aa31f02" category="inline-link-macro">セキュリティオーケストレーション、自動化、および対応（SOAR）プレイブック</block>
-  <block id="b6f1ae85c12d06f23f82164c0136a6fc" category="admonition">Ransomware Resilienceは<block ref="de8332ed81162473af5cb8a1551a7e36" category="inline-link-macro-rx"></block>もサポートしています。</block>
   <block id="d8c1214f51ea9ce3d7b9e64dd8a16327" category="inline-link-macro">SOARプレイブックを統合する</block>
   <block id="450000aaa83625b4284af1b1791c4576" category="list-text"><block ref="450000aaa83625b4284af1b1791c4576" category="inline-link-macro-rx"></block></block>
   <block id="462a6e98fbd2a13cda63645b676477e3" category="section-title">2026年3月12日</block>
@@ -2090,7 +2072,6 @@
   <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">Azure NetApp Files では、Azure NetApp Files API が自動操作をブロックするため、<block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block>を使用しないことをお勧めします。</block>
   <block id="4fcce21aba16e6a89d3c15cbcce7db5a" category="list-text">テストワークロードの名前を入力します。名前にダッシュを含めないでください。</block>
   <block id="3aecb1c0d4a2579d6c2b4487309b2cdc" category="admonition">攻撃を却下した後は、元に戻すことはできません。ワークロードを却下すると、ランサムウェア攻撃の可能性に対応して自動的に作成されたすべてのSnapshotコピーが完全に削除されます。アラートを却下すれば、準備訓練は完了とみなされます。</block>
-  <block id="a1f10863eda000ced0430d0c31580729" category="list-text">Azure NetApp Files は FPolicy やユーザー行動アクティビティをサポートしていません。</block>
   <block id="001b6bed17667ada4d5dad085e5729b3" category="list-text">復元したい「Readiness drill」とマークされたテストワークロードを選択してください。</block>
   <block id="5dba46907e72d7502229329d2aafd8a2" category="list-text">Splunk Enterprise</block>
   <block id="a8fdc49c32c2aa34ebd35cbf9823def6" category="section-title">脅威検出のためのSplunk CloudとSplunk Enterpriseの設定</block>
@@ -2100,7 +2081,6 @@
   <block id="b8e9fd0fd0fe8e4c4d930ae7315048e4" category="admonition">Splunk Enterpriseの場合、Ransomware Resilienceが指定されたHTTPイベントコレクターの詳細を使用してイベントをプッシュできるようにするには、インバウンドパブリックインターネットトラフィックを許可する必要があります。</block>
   <block id="261f193d834ffba7dae6c54f99306659" category="list-text">選択したSplunk環境に移動してください：CloudまたはEnterprise。</block>
   <block id="eade5cc0d987bed25c884550a681c364" category="list-text">Splunk CloudまたはEnterpriseに移動します。</block>
-  <block id="e4f58ddb798b11dab7791e0175f6cf0f" category="list-text">AWS Security Hub、Splunk Cloud、または Splunk Enterprise で設定したトークンと認証の詳細を入力してください。</block>
   <block id="c49fdbd48abc0805f78e165d087f6c4b" category="list-title">クリーンルームSVMデータLIF IP（crr-data-LIF-IP）</block>
   <block id="f0778a7682182f497af90edd54b04a18" category="admonition">Amazon FSxN for ONTAP のソースで IRE を構成している場合は、このクリーンルーム SVM データ LIF IP 要件をスキップしてください。</block>
   <block id="074ccc576a0d2f59ff97aa7d5cd6f1db" category="list-text">クリーンルームSVMデータLIF用のIPアドレスを設定します。IPアドレスをメモしておいてください：このIPアドレスはIREの設定プロセス中に必要になります。</block>
@@ -2176,15 +2156,12 @@
   <block id="b57d941a4d6ae6c8309974df2602afd1" category="list-text">使用する隔離されたリカバリ環境を選択し、*[次へ]*をクリックします。</block>
   <block id="d58c5ad1de11a448129ae415c7bf9504" category="list-text">隔離された復旧環境を確認し、正しい場所であることを確認します。**Restore**を選択します。</block>
   <block id="adbc7d98b73b56e4671ba46ad7551544" category="list-text">Ransomware Resilienceは必要な設定を実行します。セットアップが正常に完了すると、Ransomware Resilienceは**Setup complete**と表示します。分析に進むには、**Next**を選択してください。</block>
-  <block id="aac0bbc39aabd77485c1a91df7ebf08a" category="list-text">セットアップが完了したら、**分析を実行**を選択してください。Ransomware Resilienceは、ランサムウェア攻撃発生前の7日間に利用可能なすべての復元ポイントを分析し、復元ポイントの日付と種類を表示します。</block>
   <block id="737dfd8870fb9011f2148f9df5f1c709" category="inline-image-macro">クリーンリストア分析ステップのスクリーンショット。</block>
   <block id="d64cc3b278bde1725adb921ef1a31d7e" category="paragraph"><block ref="d64cc3b278bde1725adb921ef1a31d7e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="975584d4fa288f1c7066a3e04c45884c" category="list-text">分析が完了したら、**Next**を選択して回復計画を立ててください。Ransomware Resilienceには、**Least data loss**と**Latest unimpacted restore point**という2つのオプションがあります。いずれかのオプションを選択し、必要に応じて、それぞれの復元ポイントの個々のファイルデータを確認できます。</block>
   <block id="c26ff48add8a2ec49af17a7e2a76ee5b" category="paragraph">詳細なファイルイベントデータを表示するには、分析対象のファイルを選択して暗号化ステータスを確認します。ファイルが作成、変更、または削除された日時、およびどの復元ポイントがどの操作に対応するかを確認できます。</block>
   <block id="59eb34c12f3abfa98756951d0fb8ecfb" category="inline-image-macro">クリーンリストアプランの手順のスクリーンショット。</block>
   <block id="ea7360bc3a148c8251f392279d717749" category="paragraph"><block ref="ea7360bc3a148c8251f392279d717749" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="06b21a82c6a8e8409f7421e256a89d75" category="list-text">復元ポイントを選択したら、**次へ**を選択してファイルのクリーンアップを開始してください。</block>
-  <block id="bf919d26eded9ba9285a6e36c4dca3fd" category="list-text">Ransomware Resilienceがワークロードのクリーンアップを開始します。</block>
   <block id="4f7284ff2b84a2edf1a4d1841e9673e8" category="paragraph">クリーニングが完了したら、**Start recovery**を選択してリカバリを開始します。</block>
   <block id="7b2695ab24236bab0ddf7ad7175f5c04" category="list-text">元のワークロードを保存するかどうかを選択してください。元のワークロードを保存しない場合は、**No, replace the original workload**を選択してください。保存するには、**Yes, save the original workload**を選択し、ワークロードの新しい名前を入力します。</block>
   <block id="bb48b2870670838fdaceecb7e839faf4" category="list-text">**リカバリ開始**を選択して、リカバリを開始します。</block>
@@ -2351,7 +2328,6 @@
   <block id="26878907f297abf4a6b9ee208577dd47" category="inline-link-macro">SIEMレポート</block>
   <block id="f7816573bcae53abb1ea5d75ebbcc21f" category="list-text">一部のイベントデータは、Azure NetApp Files 構成の<block ref="b3b62e437019ccd4f3f5eaf4371edbef" category="inline-link-macro-rx"></block>には含まれていません。</block>
   <block id="48d3ab7b017da0151934baee35c16686" category="list-text">*severity*：アラートレベルの深刻度："CRITICAL"、"HIGH"、"MEDIUM"、"LOW"。</block>
-  <block id="476907eec09be2e630a16004aa28b05c" category="list-text">*title*: 検出されたアラートの表示名</block>
   <block id="00a5492099d0c380c62d2bca0017768b" category="list-text">*criticality*：環境におけるボリュームの重要度の評価：「CRITICAL」、「IMPORTANT」、「STANDARD」。</block>
   <block id="cf9e1e333f399d756f12b7eaeca06cf0" category="list-text">*incident_status*：インシデントのアクティブなステータス。次のいずれかになります："NEW"、"RESOLVED"、"DISMISSED"、"AUTO_RESOLVED"。</block>
   <block id="7ca5319a89508d8a4627d00f61af6052" category="list-text">*first_detected*：Ransomware Resilienceによってインシデントが最初に検出された日時を示すタイムスタンプ。</block>
@@ -2407,7 +2383,6 @@
   <block id="330d8bbff953330ca78d7f5a365cf755" category="paragraph">ファイルレベルでワークロードを同じシステムまたは別のシステムに復元できます。</block>
   <block id="ac59eb4c3a4cee556cefcce89ff46aa1" category="list-title">Microsoft Sentinel を有効にする</block>
   <block id="db5ac87576026bbb8d31e812518d4d3a" category="list-title">Microsoft Sentinelでカスタムロールを作成する</block>
-  <block id="5714c8ca3850d2c9baed74815356f1ca" category="list-title">Microsoft Sentinel からイベントを受信するには、NetApp Ransomware Resilience を登録してください。</block>
   <block id="6629c8b10a65c01c4456e0a111604c4c" category="list-title">登録用のシークレットを作成する</block>
   <block id="bf61754a0d34cf517c48ffb1487ba40c" category="list-title">権限を割り当てる</block>
   <block id="c7439d2223d35c56a0c13dfc89356b4a" category="list-title">認証クレデンシャルを入力</block>
@@ -2437,4 +2412,74 @@
   <block id="79297b17dc9f8b6a6e468bfe48b8e0e4" category="cell">現在のエクスポージャー</block>
   <block id="cbe03757132fcab02b71ae82dd1e0884" category="cell">ワークロードの重要性の変化</block>
   <block id="2f976de5f743c1cf88b6945568efbc4d" category="paragraph">プライバシー侵害の是正方法については、Data Classification に関するドキュメントを参照してください：</block>
+  <block id="9a9dd7aacb2ac352c55dbbc5bc460b94" category="doc">クリーンリストアの機能強化</block>
+  <block id="5214cc2b554214c44574918df0ce4dd1" category="paragraph">クリーンリストア機能が、代替クラスターへの復旧と、7日を超える期間の分析をサポートするようになりました。</block>
+  <block id="b3b5d3c0c3eb03018f8b168331bf449f" category="paragraph"><block ref="b1b57aeec3a947615fddf0610c8788f4" category="inline-link-macro-rx"></block>。</block>
+  <block id="eddd63bd47a99db9ac6b332f06d65b76" category="section-title">Google SecOps SIEM サポート</block>
+  <block id="4977d1cdc293f17b4b971e00b9010c9d" category="paragraph">Ransomware Resilienceは、Google SecOpsとのセキュリティ情報およびイベント管理（SIEM）をサポートするようになりました。これにより、効率的な脅威分析と検出のために、データを自動的にGoogle SecOpsに送信できるようになります。</block>
+  <block id="5ef49dc0416f3c817660ec88587d3752" category="paragraph">設定情報については、<block ref="d02df671c233387bf6b644be94acfdf7" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="6ed9912d7c1784fccae7864acc430aeb" category="section-title">Azure NetApp Files サポートが一般提供開始となりました</block>
+  <block id="71c5d2f3f39fa5ddeeec1b7e5cd06c5e" category="paragraph">Ransomware ResilienceがAzure NetApp Filesシステムをサポートするようになり、Azure NetApp Filesでランサムウェアの脅威を効率的に検出して対応できるようになりました。ワークロードを検出すると、Ransomware ResilienceがAzure NetApp Filesを表示し、保護ダッシュボードに表示します。Azure NetApp FilesのRansomware Resilienceサポートには、スナップショットのみを使用した検出および保護戦略が含まれています。Azure NetApp Filesのサポートが一般提供開始（GA）となりました。</block>
+  <block id="23261131430f46ec6fb27110ac7f00fc" category="section-title">ユーザーのブロックに対するSOARサポート</block>
+  <block id="e5b8f2d9ef7cdce04d260640283c68c6" category="paragraph">NetApp Ransomware Resilienceは、Google SecOpsおよびSplunk SOARプレイブックを使用した個々のユーザーのブロックをサポートするようになりました。この機能追加により、NetApp Ransomware Resilienceがデータ侵害や大量のデータ削除などの疑わしいユーザーアクティビティを検出した場合に、ユーザーを自動的にブロックできるようになります。</block>
+  <block id="2f82a2e72d177e2d1d65a490cf072506" category="paragraph"><block ref="f63222f2dbc8e79c6867c1aa1bf7ad40" category="inline-link-macro-rx"></block>。</block>
+  <block id="cec6d1e77603c10f8f9b0c0c23a333f4" category="list-text">ユーザーをブロックする*</block>
+  <block id="33cfb684e4c2f848fb95d0dfdc255bec" category="inline-link-macro">ユーザー行動アクティビティの検出</block>
+  <block id="c7374d5e15926358755ed36bb1b7e217" category="paragraph">{asterisk}ユーザーのブロックは、SplunkおよびGoogle SecOps SOARプレイブックでのみサポートされています。ユーザーをブロックするには、サポートされているシステムで<block ref="b5480edb0f1108d2d990061c7e3130d0" category="inline-link-macro-rx"></block>を設定しておく必要があります。</block>
+  <block id="86a0d99882458a05cdf455b05a5fc9ae" category="list-text">Azure NetApp Files は FPolicy やユーザー行動アクティビティをサポートしていません。Azure NetApp Files はエントロピーフォレンジックもサポートしていません。</block>
+  <block id="3bb44a404ece63a954a10befcdada9a8" category="list-text">セットアップが完了したら、**分析を実行**を選択します。NetApp Ransomware Resilienceは、ランサムウェアイベント前に利用可能なリストアポイントを検索し、リストアポイントの日付とタイプを表示します。NetApp Ransomware Resilienceは、7日間隔でリストアポイントを検索します。最初の7日間でリストアポイントが見つからない場合、NetApp Ransomware Resilienceは前の7日間を調べ始め、有効なリカバリパスが見つかるまでこのプロセスを繰り返します。</block>
+  <block id="7857c1a3e3c71150758f075d8491a6f6" category="list-text">復元ポイントを選択したら、**次へ**を選択してファイルのクリーンアップを開始してください。Ransomware Resilienceがワークロードのクリーンアップを開始します。</block>
+  <block id="ec72076b80f039b34d11e1dff3bca668" category="list-text">リカバリ先を選択します。</block>
+  <block id="2c4ffbb9470b6d460ce8723289618c37" category="list-text">*Alternate*を選択した場合は、リカバリ先の*System*、*Storage VM*、*Aggregate*を選択します。*New volume*名を入力します。</block>
+  <block id="5e5e4d611b545e088600f1e94c227e02" category="list-text">「タイプ」セクションで、*Cleaning only* を選択します。</block>
+  <block id="15133f0d70ddd9da0f0a4ccaf25d12f2" category="paragraph">セキュリティ情報およびイベント管理（SIEM）システムは、ログデータとイベントデータを一元管理することで、セキュリティイベントとコンプライアンスに関する洞察を提供します。NetApp Ransomware Resilienceは、SIEMへのデータ自動送信をサポートし、効率的な脅威分析と検出を実現します。</block>
+  <block id="f6f2f1de81eb4c260d55918d831d8b4e" category="paragraph">NetApp Ransomware Resilienceは、以下のSIEMシステムをサポートしています：</block>
+  <block id="963e2ddcdebcdd0f6fcbd1dad696e580" category="admonition">Ransomware Resilienceには、<block ref="de8332ed81162473af5cb8a1551a7e36" category="inline-link-macro-rx"></block>も用意されています。</block>
+  <block id="1d128c6086cbb73d30a6cbf3e127963d" category="list-text">*title*：検出されたアラートの表示名。</block>
+  <block id="bf49f7b724de055a76d11fee549a6a9c" category="paragraph">Ransomware ResilienceでAWS Security Hubを有効にする前に、AWS Security Hubで次の概要手順を実行する必要があります：</block>
+  <block id="41b1238763de1c7569a52c2f6f418f26" category="list-title">Ransomware ResilienceでAWS Security Hubを認証</block>
+  <block id="a9e57cc6ddc3d658ec2f623d0d9bc8a4" category="list-text">Ransomware Resilienceで、サイドバーの*Settings*を選択します。</block>
+  <block id="d28cdccd0f4e99a6f4e0f91d5197063e" category="list-text">SIEMプロバイダとして*AWS Security Hub*を選択します。</block>
+  <block id="646744982a4247883454fa20145f8b06" category="list-text">*権限*セクションを確認してください。</block>
+  <block id="b4d9ce89acb6384e4535ea86caa108e0" category="list-text">* 認証 * セクションを展開します。</block>
+  <block id="f762a2cc3430a0ec53b845b435f881e0" category="list-text">AWS *アカウント*を入力し、そのアカウントの*AWSリージョン*を選択します。</block>
+  <block id="443138dbe7f978d2acaacf2bd2231445" category="list-text">AWS Security Hubから*アクセスキー*と*シークレットキー*を入力します。</block>
+  <block id="d180fa8b6818eb2751ed18c17d309831" category="list-text">*接続*を選択して、SIEMデータの送信を開始します。</block>
+  <block id="78fa61a5dcd11b7ca556c56cd411d0dc" category="section-title">脅威検出用に Google SecOps を設定する</block>
+  <block id="3732ca50d0bc5d17cb16c93b502acb56" category="paragraph">Ransomware ResilienceでGoogle SecOpsを有効にする前に、サービス間の接続を有効にするために、Google SecOpsでログタイプとWebhookを登録する必要があります。</block>
+  <block id="3ab654d33d42325a77bd1ada435779eb" category="list-title">ログタイプを作成する</block>
+  <block id="2cda02602843e46261d1c4d67d55abbb" category="list-text">Google SecOpsに移動します。</block>
+  <block id="47d900523b55b2819796e70d06b96a82" category="list-text">*Settings*&gt;*SIEM Settings*&gt;*Available Log Types*に移動します。</block>
+  <block id="e32fbb9be86ebeccc14c89e4561efb59" category="paragraph">NETAPP_RANSOMWARE_RESILIENCEログタイプを使用することをお勧めします。これを使用しない場合は、カスタムログタイプを作成してください。</block>
+  <block id="004ffe0d11b3f4b6596b8bc1ed1d01b9" category="list-text">NETAPP_RANSOMWARE_RESILIENCEログタイプを使用する場合、あらかじめ構築されたパーサーが含まれているため、それ以上の操作は必要ありません。</block>
+  <block id="1dd7174732c8e34270b8897ee893ad78" category="paragraph">カスタムログタイプを使用する場合は、パーサーを作成する必要があります。*SIEM Settings* &gt; *Parsers* &gt; *Create Parser* に移動してパーサーを作成します。</block>
+  <block id="787913e5f937b632a13ab35683997656" category="list-title">Webhook を登録する</block>
+  <block id="62f8e821d027e779875f9d949e13e483" category="list-text">Google SecOpsに移動します。</block>
+  <block id="31d7fb6c4d192c8ca5e43d42ed002342" category="list-text">*Settings*&gt;*SIEM settings*&gt;*Feeds*に移動します。</block>
+  <block id="fb89379c2deba1702994b6e88e31cb1c" category="list-text">*Add new feed* を選択します。</block>
+  <block id="668963a1074c3b947e65e96ee7245392" category="list-text">「ログタイプの作成」ワークフローで使用したログタイプを選択します。</block>
+  <block id="3af2863f82ca32ff342ea5e1c3bc0bc9" category="list-text">*ソースタイプ*をWebhookに設定してから、フィードを保存します。</block>
+  <block id="3ab11a4d61acaf1f2066e0e78bec4147" category="list-text">*詳細*タブを開きます。NetApp Ransomware Resilienceで認証する際に使用する*WebhookエンドポイントURL*をコピーします。</block>
+  <block id="1d21bee4c48baf7d666f49740de06448" category="list-text">*Secret key*タブを開きます。秘密鍵を生成するか、既に作成済みの場合はコピーしてください。NetApp Ransomware Resilienceで認証を行う際に使用するキーを保存してください。</block>
+  <block id="b5fdc6af33586c2a9305369db3576ff7" category="list-text">組織のGoogle APIキー作成プロセスを使用して、*APIキー*を作成してください。</block>
+  <block id="2831fb9ebcc0eda00f544f8526b2c82b" category="list-title">Ransomware ResilienceでGoogle SecOpsを認証する</block>
+  <block id="0005dc12bc53549857c7de28cb9a33e8" category="list-text">SIEMプロバイダーとして*Google SecOps*を選択してください。</block>
+  <block id="24918ea780ad12c93c6521bbd538adb6" category="list-text">*前提条件*および*Webhookフィード*のセクションを確認してください。</block>
+  <block id="f7a9de73d2c4b8bc9f7ff37fe64b7f3f" category="list-text">Google SecOps の Webhook エンドポイント URL からコピーした *Webhook URL* を入力します。</block>
+  <block id="fb7c3ca4d95f3fd19a05ab9668b09dbf" category="list-text">Google SecOpsから*シークレットキー*と*APIキー*を入力します。</block>
+  <block id="6774cf3c09a237d7a31083a9ef2d4b47" category="paragraph">Ransomware ResilienceでMicrosoft Sentinelを有効にする前に、Microsoft Sentinelで以下の概要手順を実行する必要があります：</block>
+  <block id="d267b04e21aa140dd2ee815218bd7f5c" category="list-title">Microsoft Sentinel からイベントを受信するには、NetApp Ransomware Resilience を認証します。</block>
+  <block id="76337cc6c9573906b5d896882951d5d3" category="list-title">NetApp Ransomware ResilienceでMicrosoft Sentinelを認証</block>
+  <block id="2115fc3be6742ece8685887768fc977c" category="list-text">SIEMプロバイダーとして*Microsoft Sentinel*を選択してください。</block>
+  <block id="2b14913164ec32916fd5a78e5f62baee" category="list-text">*前提条件*、*登録*、*権限*の各セクションを確認し、各手順が正しく完了していることを確認してください。</block>
+  <block id="c842605d2209e1232c7e93fa4c6d547b" category="list-text">*ディレクトリ（テナント）ID*、*アプリケーション（テナント）ID*、および*クライアントシークレット*を入力します。*認証*を選択し、UIでクレデンシャルが認証されたことが確認されるまで待ちます。</block>
+  <block id="ffdd051c4118c41574ae62c7536ccf18" category="list-text">ドロップダウンメニューから、SIEMデータを送信する*サブスクリプションID*、*リソースグループ*、および*Log analyticsワークスペース*を選択してください。</block>
+  <block id="947943f19cece5046e07d0df0e76dfcf" category="list-text">HTTP Event Collectorの*HTTPポート番号*にポートを入力します。認証プロセスのためにポート番号を保存します。</block>
+  <block id="0e1da6f6e7ced8d8073144cd5f10b8b7" category="list-title">Splunk を NetApp Ransomware Resilience で認証する</block>
+  <block id="5062ec86b18fed38d98e9e38d8bc9223" category="list-text">SIEMプロバイダとして*Splunk*を選択します。</block>
+  <block id="76dd66f4900813f356a68e5c41710377" category="list-text">*Event collector* セクションと *Token* セクションを確認し、正しい情報が入力されていることを確認してください。</block>
+  <block id="3709262a3984a4066d844e26650ffbfd" category="list-text">HTTP Event Collectorの**プロトコル**を選択します。HTTPSの使用を推奨しますが、HTTP Event CollectorでSSLが有効になっていない場合は、*HTTP*を選択します。</block>
+  <block id="0bffbc11a95d5a4be5584ad87467b460" category="list-text">HTTP Event Collectorを実行するSplunk Cloudインスタンスの*Host*と*Port*を入力します。ポートは、HTTPイベントコレクタープロセスで入力したものと一致する必要があります。</block>
+  <block id="00b8afb4b439e4d80895bdc0b67f43e4" category="list-text">Splunk で作成したイベントコレクタートークンを入力してください。</block>
+  <block id="448172d3af38cf3c8143e719c364e53d" category="section-title">2026年3月11日</block>
 </blocks>

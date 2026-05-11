@@ -1,0 +1,35 @@
+= クリーンリストアの機能強化
+:allow-uri-read: 
+
+
+
+
+=== クリーンリストアの機能強化
+
+クリーンリストア機能が、代替クラスターへの復旧と、7日を超える期間の分析をサポートするようになりました。
+
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["クリーンリストアでワークロードをリカバリする"^]。
+
+
+
+=== Google SecOps SIEM サポート
+
+Ransomware Resilienceは、Google SecOpsとのセキュリティ情報およびイベント管理（SIEM）をサポートするようになりました。これにより、効率的な脅威分析と検出のために、データを自動的にGoogle SecOpsに送信できるようになります。
+
+設定情報については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["ランサムウェア対策をSIEMに接続"^]を参照してください。
+
+
+
+=== Azure NetApp Files サポートが一般提供開始となりました
+
+Ransomware ResilienceがAzure NetApp Filesシステムをサポートするようになり、Azure NetApp Filesでランサムウェアの脅威を効率的に検出して対応できるようになりました。ワークロードを検出すると、Ransomware ResilienceがAzure NetApp Filesを表示し、保護ダッシュボードに表示します。Azure NetApp FilesのRansomware Resilienceサポートには、スナップショットのみを使用した検出および保護戦略が含まれています。Azure NetApp Filesのサポートが一般提供開始（GA）となりました。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["ランサムウェア耐性について学ぶ"^]を参照してください。
+
+
+
+=== ユーザーのブロックに対するSOARサポート
+
+NetApp Ransomware Resilienceは、Google SecOpsおよびSplunk SOARプレイブックを使用した個々のユーザーのブロックをサポートするようになりました。この機能追加により、NetApp Ransomware Resilienceがデータ侵害や大量のデータ削除などの疑わしいユーザーアクティビティを検出した場合に、ユーザーを自動的にブロックできるようになります。
+
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html["SOARプレイブックを統合する"^]。
