@@ -2481,5 +2481,5 @@
   <block id="3709262a3984a4066d844e26650ffbfd" category="list-text">HTTP Event Collectorの**プロトコル**を選択します。HTTPSの使用を推奨しますが、HTTP Event CollectorでSSLが有効になっていない場合は、*HTTP*を選択します。</block>
   <block id="0bffbc11a95d5a4be5584ad87467b460" category="list-text">HTTP Event Collectorを実行するSplunk Cloudインスタンスの*Host*と*Port*を入力します。ポートは、HTTPイベントコレクタープロセスで入力したものと一致する必要があります。</block>
   <block id="00b8afb4b439e4d80895bdc0b67f43e4" category="list-text">Splunk で作成したイベントコレクタートークンを入力してください。</block>
-  <block id="448172d3af38cf3c8143e719c364e53d" category="section-title">2026年3月11日</block>
+  <block id="9b70df306d1f1719fd9d70e02911394c" category="section-title">2026年5月11日</block>
 </blocks>
