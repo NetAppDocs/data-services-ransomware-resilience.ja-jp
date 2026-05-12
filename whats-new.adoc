@@ -24,9 +24,9 @@ NetApp Ransomware Resilienceの新機能についてご確認ください。
 
 === クリーンリストアの機能強化
 
-クリーンリストア機能が、代替クラスターへの復旧と、7日を超える期間の分析をサポートするようになりました。
+クリーン復元機能が代替場所への復元をサポートするようになり、同じConsoleエージェントによって管理されている異なるシステム、ストレージVM、およびアグリゲートにボリュームを復元できるようになりました。さらに、クリーン復元では、復元に使用可能なスナップショットを検索する際の7日間の制限が撤廃されました。クリーン復元は、ランサムウェアイベントからの距離に関係なく、利用可能なスナップショットの中から有効な復元ポイントを引き続き検索します。
 
-link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["クリーンリストアでワークロードをリカバリする"^]。
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["クリーンリストアでワークロードをリカバリする"^]。
 
 
 
