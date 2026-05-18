@@ -33,6 +33,12 @@
 .2+| ONTAP （オンプレミス） | CIFSとNFS | 9.11.1以降 
 
 
-| SAN（FC、iSCSI、NVMe） | 9.17.1以降 
+| SAN（iSCSI および NVMe） | 9.17.1以降 
+
+
+| Google Cloud NetApp Volumes | CIFS、NFS、SAN（iSCSI および NVMe） | 該当なし 
 |===
 {アスタリスク} Amazon FSx for NetApp ONTAP は、 ARP/AI ではなく、Autonomous Ransomware Protection (ARP) を使用します。違いの詳細については、link:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/AI"^] 。
+
+
+NOTE: Azure NetApp FilesまたはGoogle Cloud NetApp Volumesでは、不審なユーザーアクティビティの検出はサポートされていません。不審なユーザーアクティビティ検出のサポートに関する詳細については、link:reference-user-activity-requirements.html["ユーザアクティビティ検出要件"]を参照してください。

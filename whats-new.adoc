@@ -18,6 +18,28 @@ NetApp Ransomware Resilienceの新機能についてご確認ください。
 
 
 
+== 2026年5月18日
+
+
+
+=== Google Cloud NetApp Volumes サポート（プレビュー）
+
+Ransomware ResilienceがGoogle Cloud NetApp Volumesシステムをサポートするようになり、Google Cloud NetApp Volumesでランサムウェアの脅威を効率的に検出して対応できるようになりました。検出を実行すると、Ransomware ResilienceはGoogle Cloud NetApp Volumesシステムのワークロードを自動的に表示します。システムが検出されると、Ransomware Resilienceダッシュボードに表示されます。Ransomware ResilienceでのGoogle Cloud NetApp Volumesのサポートは現在プレビュー版です。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["ランサムウェア耐性について学ぶ"^]を参照してください。Google Cloud NetApp Volumesのサポート範囲については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["ランサムウェアレジリエンスの制限事項"^]を参照してください。
+
+
+
+=== クリーンリストアの機能強化
+
+クリーン復元機能がレポートをサポートするようになりました。レポートを使用すると、クリーンな復元状況を確認・評価し、その情報をCSVファイルとしてオフラインで保存できます。
+
+クリーンリストア機能で、分析の停止もサポートされるようになりました。分析を停止した場合は、クリーンリストアを最初からやり直す必要があります。
+
+レポートの詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["ランサムウェア耐性レポートをダウンロード"^]を参照してください。リカバリの詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["クリーンリストアでワークロードをリカバリする"^]を参照してください。
+
+
+
 == 2026年5月11日
 
 
