@@ -398,7 +398,6 @@
   <block id="ffc25a5f8d1276ee801a950e7f83a233" category="list-text">コンソールエージェントには、<block ref="d5aabb6133fba5c7ef5a4e8db21d18ae" prefix=" " category="inline-code"></block>アクティブな状態のコンテナ。</block>
   <block id="04f679e072129c7e87e077dc95e5e73e" category="inline-link">コンソールエージェントの設定方法を学ぶ</block>
   <block id="b1fb1d531493b1af3ab2980b2c579a5f" category="inline-link">標準コンソール要件</block>
-  <block id="f9a3157f34101a0d560e518291db02ba" category="admonition">単一のコンソール組織に複数のコンソール エージェントがある場合、Ransomware Resilience は、コンソール UI で現在選択されているエージェント以外のすべてのコンソール エージェントにわたってONTAPリソースをスキャンします。</block>
   <block id="13572bbe68fe6ecbb17fb5a38d1313bb" category="inline-link">自律型ランサムウェア対策 - 概要</block>
   <block id="d5d09e7741370854c28c983cfbae51eb" category="inline-link-macro">ランサムウェア耐性について学ぶ</block>
   <block id="d2e3e802d3f25894bd170688859d6cef" category="inline-link">AWS、Azure、またはS3の権限リスト</block>
@@ -1439,7 +1438,6 @@
   <block id="1b6bc3125f482fcbcf029c833aea1290" category="section-title">ONTAPの要件</block>
   <block id="69e575df737b34413e9ac5e132f6db01" category="list-text">オンプレミスのONTAPインスタンスでONTAP One ライセンスが有効になっているONTAP 9.11.1 以降を実行している必要があります。  ONTAPサポートの詳細については、以下を参照してください。<block ref="a17b9b304c2ac7f4ba576e11b099c691" category="inline-link-macro-rx"></block> 。</block>
   <block id="287d5057af26ee58d3ebb3f5ab1c418c" category="list-text">保護構成（自律型ランサムウェア保護の有効化など）を適用するには、Ransomware Resilience にONTAPクラスターに対する管理者権限が必要です。ONTAPクラスタは、 ONTAPクラスタ管理者のユーザー認証情報のみを使用してオンボードされている必要があります。</block>
-  <block id="afabe9e17313d371201713a96a9674ac" category="admonition">管理者以外の認証情報を使用してONTAPクラスターをコンソールに接続している場合は、[ ONTAPクラスター内の認証情報を更新する必要があります](#ontap システム内の非管理者ユーザー権限の更新)。</block>
   <block id="2256fdd13b41cd806db98cd42c5b498c" category="list-text">適切なアクセス権限が設定されたバックアップ ターゲット用のNetApp StorageGRID、AWS S3、Azure Blob、または Google Cloud Platform のアカウント。</block>
   <block id="27bfb5502a8db50d09f593ce1b77b181" category="list-text">管理者ユーザーとしてONTAPクラスタ CLI にログインします。</block>
   <block id="14e79e90c6d487ebb867aa7b0f88bf25" category="list-text">Ransomware Resilience を使用するには、 NetApp Consoleに戻ります。</block>
@@ -1742,8 +1740,6 @@
   <block id="e85295e320f98fda3869b6fd777fcb74" category="inline-link-macro">ユーザアクティビティエージェントとコレクタを設定する</block>
   <block id="1cb54935f05151077e45294fd0acda40" category="list-text"><block ref="1cb54935f05151077e45294fd0acda40" category="inline-link-macro-rx"></block></block>
   <block id="a7f617894520c70eda06105083582777" category="paragraph">Ransomware Resilienceが疑わしいユーザー行動に関するアラートを提供するには、ユーザーアクティビティエージェントを設定する必要があります。ユーザーアクティビティエージェントをインストールするには、システムが<block ref="423b5fb22336ee99727442d2bf2268c5" category="inline-link-macro-rx"></block>を満たしていることを確認してください。</block>
-  <block id="f5d77d7a39be1811d47f1310b0b80a61" category="paragraph">特定のシステムの管理者以外のユーザー権限を更新する必要がある場合は、この手順の手順を使用します。</block>
-  <block id="ecafefb609794a493ed83be961865b30" category="list-text">コンソールにログインします。ダッシュボードで、ONTAP ユーザ権限の更新が必要なシステムを特定します。</block>
   <block id="6a3ad50557786ed110b2cefa2a2be7bd" category="list-text">システムを選択して詳細を表示します。</block>
   <block id="6872a6ef5ae2db047b6effa74304d0af" category="list-text">そのユーザーの既存のロールを表示します：</block>
   <block id="67c903793b6bf8b730fee76339b93672" category="list-text">検出設定として*不審なユーザー行動の検出*を選択した場合は、ユーザーアクティビティエージェントまたは<block ref="0fcb9e48262f104799fbf49d6c09d7d5" category="inline-link-macro-rx"></block>を選択します。</block>
@@ -1927,7 +1923,6 @@
   <block id="e2907e7cb7d68b36821cd11cda209bc3" category="cell">SAN（iSCSI および NVMe）</block>
   <block id="3b9c98c430c62cb3627db641468d7e64" category="list-text">ランサムウェア保護の態勢を評価し、わかりやすいダッシュボードに表示するとともに、保護を改善するための推奨事項を提供します。</block>
   <block id="9bd1fe262c57584526c5184d4de31827" category="list-text">オンプレミス ONTAP クラスタまたは Cloud Volumes ONTAP システムが NetApp Console で設定されていない場合は、<block ref="1c09904f3fbf9f22b68e96599d2dcddc" category="inline-link-macro-rx"></block>および<block ref="b04507b2bbabc17c071b912167d3ff4f" category="inline-link-macro-rx"></block>を参照してください。</block>
-  <block id="3eb45f3714606347a6ff182b822b69cc" category="list-text">ONTAP または Cloud Volumes ONTAP クラスタの場合、Ransomware Resilience には ONTAP バージョン 9.11.1 以降が必要です。</block>
   <block id="4b2c42068bb1431d3a8d94e9ca135659" category="paragraph"><block ref="187dbd743d444b65478d146e1c2c85f6" category="inline-link-rx"></block>。</block>
   <block id="e300a441bfe88a3cd9729e46cfd3c605" category="paragraph">ダッシュボードにはデータ保護の健全性が表示されます。新しいワークロードが検出されると、危険にさらされているワークロードまたは保護されているワークロードの数が更新されます。</block>
   <block id="3d7e9fe4b06f7b72aa18a4870bc065e4" category="inline-image-macro">ランサムウェア耐性ダッシュボード</block>
@@ -2493,4 +2488,15 @@
   <block id="f5cfed6a695ca584c4de91e043cec8df" category="list-text">**リソースを解放して終了**を選択して、リソースを解放し、クリーンルームを閉じます。確認するには、**終了**を選択します。</block>
   <block id="ee9eb963788511d80fc2e4d572229dfc" category="paragraph">プライマリ ソースが利用できず、セカンダリ ソースを設定している場合は、クリーン リストアはセカンダリ ソースにリストアされます。</block>
   <block id="1ed548d363a0d2a6ce0c5db113b94db8" category="paragraph">IREを作成する際に、セカンダリソースを追加するオプションがあります。</block>
+  <block id="61fcfe4267994f7a09ac2c0eac28d82e" category="admonition">単一のコンソール組織に複数のコンソールエージェントがある場合、ランサムウェア耐性は、コンソールUIで現在選択されているエージェント以外の、すべてのコンソールエージェントにわたるONTAPリソースをスキャンします。</block>
+  <block id="8c2c19111935f9243c0b70cc9147c7f6" category="list-text">ONTAPまたはCloud Volumes ONTAPクラスタの場合、ランサムウェア耐性にはONTAPバージョン9.11.1以降が必要です。</block>
+  <block id="fdd0606f2daa519f710ae175b71f67f1" category="admonition">管理者以外の資格情報を使用してONTAPクラスターをコンソールに接続している場合は、<block ref="065743cc2c7ea5dd36eed7ab4585f3ce" category="inline-xref-macro-rx"></block>する必要があります。</block>
+  <block id="6677749fe8a4ba0666e6645ce9e88655" category="section-title">クリーンリストアの前提条件</block>
+  <block id="9f7a1ec0fd7d8ed497c98ea393a4f199" category="inline-link-macro">前提条件を満たしていることを確認してください</block>
+  <block id="fa846f105dbfe513971f8343a3907be6" category="paragraph">Ransomware Resilienceは、最適な復旧経路を見つけるためのガイド付き復旧プロセスを提供する、クリーンな復元機能を提供します。クリーンリストアを使用するには、<block ref="b5c2c0cc1a78442b8e29bd0cb44004f7" category="inline-link-macro-rx"></block>。</block>
+  <block id="c36975af9ca6baf7b5a05658605b577d" category="paragraph">特定のシステムにおける管理者以外のユーザーの権限を更新する必要がある場合は、以下の手順に従ってください：</block>
+  <block id="3e24330471da607e91da657f3cdf7a39" category="list-text">コンソールにログインします。ダッシュボードで、ONTAP ユーザー権限を更新する必要があるシステムを特定します。</block>
+  <block id="7f3418b9bbded932a1a1585ec05f42c3" category="inline-link-macro">不審なユーザーアクティビティの検出</block>
+  <block id="df790109011414a6034217652cd48d7c" category="inline-link-macro">クリーンリストア</block>
+  <block id="c40aa9438834745dead5ab833fb4ad95" category="list-text">また、<block ref="8195b6c486e4af94bbefa0d6c4fe0d9d" category="inline-link-macro-rx"></block>と<block ref="5909784b16712ef276fd16aaaa47a088" category="inline-link-macro-rx"></block>の要件も確認してください。</block>
 </blocks>
