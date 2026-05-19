@@ -204,7 +204,6 @@
   <block id="059d032d5bb8125e3e1681f7d9ce6023" category="list-text">バックアップとリカバリ、 ONTAP、自律型ランサムウェア保護 ( ONTAPのバージョンに応じて ARP または ARP/AI)、および FPolicy のテクノロジとサービスを使用して、最適なスナップショットまたはバックアップを決定し、最適な RPA (実際の復旧ポイント) を推奨します。</block>
   <block id="4ddd3abee434eb92eb13e6cac3e1ad1d" category="cell">*統治*</block>
   <block id="cc4378b1dc9af2e69cb13a88397e2aa7" category="list-text">ランサムウェア対策戦略を割り当てる</block>
-  <block id="90d096ff0013c9c2874a247b26e69950" category="list-text">結果を監視するのに役立ちます。</block>
   <block id="4f743c093ec077920561596aa32a74f6" category="section-title">サポートされているバックアップターゲット、システム、ワークロードデータソース</block>
   <block id="b45c27598e81de132cbcf41c4f6124d9" category="paragraph">Ransomware Resilience は、次のバックアップ ターゲット、システム、およびデータ ソースをサポートします。</block>
   <block id="736ca911d7d143d01bd8cbfe0d4afbca" category="list-text">Amazon Web Services（AWS）S3</block>
@@ -1859,7 +1858,6 @@
   <block id="fa97e4f101b82056aea0cbbc9151ce6c" category="list-text">**データコレクタ**は、ONTAPからユーザーアクティビティデータを収集します。ユーザー行動検出を含む保護戦略を作成すると、データコレクタが自動的に作成されます。</block>
   <block id="039bbdbfc55cf385f4e9d2f185a58a2f" category="list-text">**ユーザー ディレクトリ コネクタ** はディレクトリに接続して、ユーザー ID をユーザー名にマッピングします。ユーザー ディレクトリ コネクタを設定する必要があります。</block>
   <block id="8f8ab86c0f901231688c7df2b7c1fe00" category="paragraph">ユーザー アクティビティ エージェント、データ コレクター、ユーザー ディレクトリ コネクタはすべて、Ransomware Resilience 設定ダッシュボードから管理できます。</block>
-  <block id="3bf09ba6164b30984f536fd784b700e3" category="paragraph">+ DII を使用して_いない_場合は、ここでの設定手順に進みます。</block>
   <block id="8e1169256c8218a428d9f7bf9485bb7a" category="admonition">Ransomware Resilience の保護ダッシュボードを確認するときに、保護グループごとにワークロードを並べ替えることができます。</block>
   <block id="4baf379055a0f4c2e8270e48da4264cd" category="doc">NetApp Ransomware Resilienceで保護ステータスを確認する</block>
   <block id="1a54b4ce88b0b40ec2bc5535c46c4022" category="paragraph">NetApp Ransomware Resilience の保護ダッシュボードには、ワークロードの保護ステータスと準備状況の概要が表示されます。保護ダッシュボードを使用すると、保護されているもの、保護が必要なもの、保護の範囲についての情報を得ることができます。</block>
@@ -2518,4 +2516,29 @@
   <block id="fd97f891be8e4ff9fd31d19ccffe7cfa" category="list-text">レプリケーションを使用した保護戦略は、現在Google Cloud NetApp Volumesではサポートされていません</block>
   <block id="98d8c0e0a6e1f848e25119bcb40e31fb" category="paragraph">分析の実行中に、**停止**を選択できます。分析を停止すると、クリーンな復元プロセスを最初からやり直す必要があります。</block>
   <block id="3bfca6a430fa87d8630a8459fe8a4aa1" category="section-title">2026年5月18日</block>
+  <block id="2e16025a0775d82fdc475daeb18a1fe1" category="list-text">成果をモニタリングするのに役立ちます。</block>
+  <block id="b39c809eea98a8d210feb1830518c4e1" category="section-title">サイジングの推奨事項</block>
+  <block id="00a0542d454a2c3d33aa384b663f57ae" category="paragraph">ユーザーイベントを収集する際は、ユーザーアクティビティエージェントをホストするマシンが、イベント発生頻度に対応できる十分な容量を備えていることを確認してください。これは、ユーザーアクティビティエージェントをホストするマシンに、毎秒発生するイベント数を処理できるだけの十分なデータコレクター、CPU、およびRAMが搭載されていることを確認する必要があることを意味します。データコレクターの数を増やすには、RAMまたはCPUの容量を増やす必要がある場合があります。Ransomware Resilienceは、ユーザーアクティビティエージェントごとに最大50個のデータコレクターをサポートします。</block>
+  <block id="6be806c9e81235cc334525899e24ce6d" category="paragraph">次の表は、サイジングに関する一般的なガイダンスを示しています。</block>
+  <block id="b8ba9599bd38d83618d773a0942a64b8" category="cell">ユーザーアクティビティエージェントマシン構成</block>
+  <block id="3999d93ad3d5c74655af6243f558b8c2" category="cell">データコレクタの数</block>
+  <block id="18d4395da7ff8f089039a4b405433d06" category="cell">最大イベントレート</block>
+  <block id="b5de202e9046a5a5b8fefd0d5db9cad4" category="cell">4コア、16GB</block>
+  <block id="23c89b5a97c4b2cdaa4c2463c212461a" category="cell">10個のデータコレクタ</block>
+  <block id="269caf37ed3e8cf3c1e0fedca333dc67" category="cell">20,000件のイベント/秒</block>
+  <block id="4abe7d5f36e50b61122614a74ed19547" category="cell">4コア、32GB</block>
+  <block id="4e562f558044748b7be8a4092faa6075" category="cell">20個のデータコレクタ</block>
+  <block id="9f4dd2227b035f32e343309b777f9a0f" category="paragraph">ご自身の具体的な要件を計算することもできます。適切な規模を計算する際には、30%のバッファー率で適格性を判断することをお勧めします。この式を使用して、お使いの構成が負荷に対応できるかどうかを判断してください。</block>
+  <block id="ad126668a8b9ef5079623e9949eca426" category="example-title">Ransomware Resilienceは、イベントデータレートを計算するためのスクリプトを提供します。Ransomware Resilienceにおけるイベントデータレートの計算方法を学びましょう。</block>
+  <block id="05ad069676a9f89984541497cb4b503a" category="paragraph">Ransomware Resilienceは、システム上で実行してイベントデータレートを計算するスクリプトを提供します。デフォルトでは、このスクリプトは最大5台のストレージVMに対して実行されます。環境に5つ以上のSVMが含まれている場合は、スクリプトをそれに応じて修正してください。SVMの数に関わらず、このスクリプトは平均イベント発生率の読み取りに約5分かかります。スクリプトを実行する前に、以下のものが必要です：</block>
+  <block id="a8addc595422085e1668bb3064c9e3c2" category="inline-link-macro">ユーザーアクティビティエージェントを設定しました</block>
+  <block id="ee4ff3935e64f4bc766cf7c778ecf035" category="list-text"><block ref="ee4ff3935e64f4bc766cf7c778ecf035" category="inline-link-macro-rx"></block></block>
+  <block id="b824ffb71459288c7a3f5b876e2c6648" category="list-text">クラスタ IP アドレス</block>
+  <block id="3b35700f5db77466b9829093b579bafc" category="list-text">クラスタ管理者のユーザ名とパスワード</block>
+  <block id="8357c5714e49295e422957fed4ec2caa" category="list-text">Linux マシンにインストール済み<block ref="2fa62e05d832f87969a8d99226be5a74" prefix=" " category="inline-code"></block>（コマンドでインストールできます<block ref="bd20ec476e804fab40ab36d6175d1936" prefix=" " category="inline-code"></block>）</block>
+  <block id="361ccd8284c6f49a106851d9aeaab8b2" category="list-text">ユーザーアクティビティエージェントをホストしているクラスターから、管理者としてスクリプトを実行します：<block ref="3b9c122b681f59f04f03105e338591ce" prefix=" " category="inline-code"></block></block>
+  <block id="e0e0df3692200b73a8808571748906b3" category="list-text">プロンプトが表示されたら、クラスタのIPアドレス、管理者ユーザー名、および管理者パスワードを入力してください。</block>
+  <block id="2757451d7ac78a3fd169d2600d54a8ad" category="list-text">このスクリプトの実行には約5分かかります。処理が完了すると、コマンドラインにイベント発生率が表示されます。例えば、"Svm svm_rate is generating 100 events/sec."のように表示されます。</block>
+  <block id="73e368716ffe1eef8733ba4acf297472" category="paragraph">イベント発生率を使用して、サイジングを計算してください。</block>
+  <block id="caa617e3833cdf64d33905efb6a82682" category="paragraph">DII を使用して _いない_ 場合は、こちらの設定手順に従ってください。</block>
 </blocks>
