@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: suspicious-user-activity.html 
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, 
-summary: Ransomware Resilience の疑わしいユーザー アクティビティ検出により、潜在的な脅威となる可能性のあるユーザー アクティビティを検出できます。 
+summary: NetApp Ransomware Resilienceのユーザーアクティビティ検出機能を使用すると、潜在的な脅威となる可能性のあるユーザーアクティビティを検出できます。 
 ---
 = NetApp Ransomware Resilienceでユーザーアクティビティ検出を設定する
 :hardbreaks:
@@ -12,7 +12,7 @@ summary: Ransomware Resilience の疑わしいユーザー アクティビティ
 
 
 [role="lead"]
-NetApp Ransomware Resilience ユーザー アクティビティ検出は、ユーザー レベルのランサムウェア イベントを防ぐのに役立ちます。Ransomware Resilience で疑わしいユーザー動作の検出を有効にするには、少なくとも 1 つのユーザー アクティビティ エージェントをインストールする必要があります。これにより、ランサムウェア イベントに類似する異常なパターンがないかユーザー動作を監視するデータ収集環境が作成されます。
+NetApp Ransomware Resilienceのユーザー行動検出は、ユーザーレベルのランサムウェアイベントを防止するのに役立ちます。Ransomware Resilienceでユーザー行動検出を有効にするには、少なくとも1つのユーザーアクティビティエージェントをインストールする必要があります。これにより、ランサムウェアイベントに似た異常なパターンのユーザー行動を監視するためのデータ収集環境が作成されます。
 
 ユーザー アクティビティ エージェントは、データ コレクターとユーザー ディレクトリ コネクタをホストします。これらの両方がデータを分析のために SaaS の場所に送信します。
 
@@ -34,7 +34,7 @@ DII を使用して _いない_ 場合は、こちらの設定手順に従って
 * link:reference-user-activity-requirements.html["オペレーティングシステム、サーバ、およびネットワークの要件"]を満たしていることを確認してください。
 
 
-*必須のコンソールロール* 疑わしいユーザーアクティビティの検出を有効にするには、**Organization admin role**が必要です。その後の疑わしいユーザーアクティビティの設定には、**Ransomware Resilience user behavior admin role**が必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^]。
+*必要なコンソールロール* ユーザー行動検出を有効にするには、**組織管理者ロール**が必要です。以降のユーザー行動検出設定を行うには、**ランサムウェア耐性ユーザー行動管理者ロール**が必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^]。
 
 各ロールが組織レベルで適用されていることを確認します。
 
@@ -42,7 +42,7 @@ DII を使用して _いない_ 場合は、こちらの設定手順に従って
 
 == ユーザーアクティビティエージェントを作成する
 
-ユーザーアクティビティエージェントは、link:#add-a-data-collector["データコレクタ"]の実行可能な環境です。データコレクターは、ユーザーアクティビティイベントをNetApp Ransomware Resilienceと共有します。疑わしいユーザーアクティビティの検出を有効にするには、少なくとも1つのユーザーアクティビティエージェントを作成する必要があります。
+ユーザアクティビティエージェントはlink:#add-a-data-collector["データコレクタ"]の実行可能な環境です。データコレクタは、ユーザアクティビティイベントをNetApp Ransomware Resilienceと共有します。ユーザアクティビティ検出を有効にするには、少なくとも1つのユーザアクティビティエージェントを作成する必要があります。
 
 .手順
 . ユーザー アクティビティ エージェントを初めて作成する場合は、**ダッシュボード** に移動してください。**ユーザー アクティビティ** タイルで、**アクティブ化** を選択します。
@@ -80,7 +80,7 @@ image:user-activity-agent.png["アクティビティ エージェントの追加
 
 === データコレクターを追加する
 
-疑わしいユーザー アクティビティの検出を含むランサムウェア保護戦略を有効にすると、データ コレクターが自動的に作成されます。詳細については、link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["検出ポリシーを追加する"]を参照してください。
+ユーザーアクティビティ検出機能を備えたランサムウェア対策戦略を有効にすると、データコレクターが自動的に作成されます。詳細については、link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["検出ポリシーを追加する"]を参照してください。
 
 データコレクターの詳細を表示できます。[設定] から、[ユーザー アクティビティ] タイルの [**管理**] を選択します。**データ コレクター** タブを選択し、データ コレクターを選択して詳細を表示するか、一時停止します。
 
@@ -204,6 +204,6 @@ TIP: アラートからユーザーを直接除外することもできます。
 
 
 
-== 不審なユーザーアクティビティアラートに応答する
+== ユーザーアクティビティアラートに対応する
 
-疑わしいユーザーアクティビティの検出を構成すると、アラートページでイベントを監視できます。詳細については、link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["悪意のあるアクティビティや疑わしいユーザーの行動を検出する"]を参照してください。
+ユーザーアクティビティ検出を設定した後、アラートページでイベントを監視できます。詳細については、link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["悪意のあるアクティビティや疑わしいユーザーの行動を検出する"]を参照してください。

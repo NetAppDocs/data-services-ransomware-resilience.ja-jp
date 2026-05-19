@@ -24,7 +24,7 @@ Ransomware Resilienceプレイブックは、次の機能を提供します：
 * エンリッチメントジョブのステータスを確認する
 
 
-{asterisk}ユーザーのブロックは、SplunkおよびGoogle SecOps SOARプレイブックでのみサポートされています。ユーザーをブロックするには、サポートされているシステムでlink:concept-user-behavior["ユーザー行動アクティビティの検出"]を設定しておく必要があります。
+{asterisk}ユーザーのブロックは、SplunkおよびGoogle SecOps SOARプレイブックでのみサポートされています。ユーザーをブロックするには、サポートされているシステムでlink:concept-user-behavior["ユーザー行動検出"]を設定しておく必要があります。
 
 
 

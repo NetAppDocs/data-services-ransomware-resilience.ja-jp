@@ -162,6 +162,34 @@ image:diagram-rp-architecture-preview3.png["ランサムウェア耐性アーキ
 |===
 
 
+=== 攻撃の種類
+
+NetApp Ransomware Resilienceは、5種類の攻撃を認識します：
+
+[cols="25,75"]
+|===
+| 攻撃タイプ | 定義 
+
+
+| 暗号化（エントロピー） | Ransomware Resilienceは、異常なIOPSパターン、データエントロピー、および非標準のファイル拡張子を認識します。 
+
+
+| 暗号化（ユーザーの動作） | ランサムウェア耐性機能は、特定のユーザーによって実行された異常なファイルの読み取り、書き込み、および名前変更アクティビティを識別します。 
+
+
+| データ侵害 | NetApp Ransomware Resilienceは、特定のユーザーによって実行された異常なファイル読み取りアクセスパターンを検出します。 
+
+
+| データ破壊 | NetApp Ransomware Resilienceは、特定のユーザーによるファイルの大量削除を検出します。 
+
+
+| 疑わしいユーザー行動 | Ransomware Resilienceは、データ侵害、データ破壊、暗号化の範囲を超える異常な動作を特定します。 
+|===
+
+NOTE: 攻撃の原因となった特定のユーザーを特定するには、link:concept-user-behavior.html["ユーザー行動の検出。"]を設定する必要があります。link:rp-reference-limitations.html["制限事項"]を確認して、お使いのシステムがユーザーアクティビティ検出をサポートしているかどうかを確認してください。
+
+
+
 == サポートされているバックアップターゲット、システム、ワークロードデータソース
 
 Ransomware Resilience は、次のバックアップ ターゲット、システム、およびデータ ソースをサポートします。
@@ -219,7 +247,7 @@ Ransomware Resilience は、次のバックアップ ターゲット、システ
 {アスタリスク} Amazon FSx for NetApp ONTAP は、 ARP/AI ではなく、Autonomous Ransomware Protection (ARP) を使用します。違いの詳細については、link:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/AI"^] 。
 
 
-NOTE: Azure NetApp FilesまたはGoogle Cloud NetApp Volumesでは、不審なユーザーアクティビティの検出はサポートされていません。不審なユーザーアクティビティ検出のサポートに関する詳細については、link:reference-user-activity-requirements.html["ユーザアクティビティ検出要件"]を参照してください。
+NOTE: Azure NetApp FilesまたはGoogle Cloud NetApp Volumesでは、ユーザーアクティビティ検出はサポートされていません。ユーザーアクティビティ検出のサポートの詳細については、link:reference-user-activity-requirements.html["ユーザアクティビティ検出要件"]を参照してください。
 
 
 NOTE: ONTAPで ARP/AI を使用するには、 ONTAP 9.16 以上が必要です。+ ONTAP は、 FabricPool FlexCache、 FlexGroupボリューム、整合性グループのマウント ポイント ボリューム、マウント パス ボリューム、オフライン ボリューム、およびデータ保護 (DP) ボリュームに対してランサムウェア保護サポートを提供しません。必ず確認するlink:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html["ONTAPでサポートされている構成とサポートされていない構成"^]。

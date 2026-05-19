@@ -38,7 +38,7 @@ Azure NetApp Files には以下の制限事項が適用されます：
 
 * バックアップポリシーを使用したランサムウェア保護戦略は、Azure NetApp Files ではサポートされていません。代わりに、Azure NetApp Files バックアップを使用できます。
 * レプリケーションを使用したランサムウェア保護戦略は Azure NetApp Files ではサポートされていません。
-* Azure NetApp Files は FPolicy やユーザー行動アクティビティをサポートしていません。Azure NetApp Files はエントロピーフォレンジックもサポートしていません。
+* Azure NetApp Files は FPolicy やユーザー行動検出をサポートしていません。Azure NetApp Files はエントロピーフォレンジックもサポートしていません。
 * 保護戦略を選択するときは、スナップショットスケジュールがAzure NetApp Filesと互換性があることを確認してください。Azure NetApp Filesで利用できる最も頻繁なスナップショットスケジュールは1時間ごとです。
 * Azure NetApp Files では、Azure NetApp Files API が自動操作をブロックするため、link:reference-soar.html["SOARプレイブック"]を使用しないことをお勧めします。
 * 一部のイベントデータは、Azure NetApp Files 構成のlink:task-siem.html["SIEMレポート"]には含まれていません。
@@ -50,6 +50,6 @@ Azure NetApp Files には以下の制限事項が適用されます：
 
 Google Cloud NetApp Volumes には以下の制限事項が適用されます：
 
-* 現在、Google Cloud NetApp Volumes ワークロードに適用できる保護戦略は、暗号化と FPolicy に基づくものに限られています。ユーザー行動アクティビティ保護戦略を適用することはできません。
+* 現在、Google Cloud NetApp Volumes ワークロードに適用できる保護戦略は、暗号化と FPolicy に基づくものに限られています。ユーザー行動保護戦略を適用することはできません。
 * レプリケーションを使用した保護戦略は、現在Google Cloud NetApp Volumesではサポートされていません
 
