@@ -106,11 +106,10 @@ NOTE: 管理者以外の資格情報を使用してONTAPクラスターをコン
 +
 参照 https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html["AWS、Azure、またはS3の権限リスト"^]詳細については。
 
-* システムでNetApp Backup and Recovery を有効にする必要はありません。
-+
-Ransomware Resilience は、設定オプションを通じてバックアップ先を構成するのに役立ちます。link:task-backup-destination.html["バックアップ先を追加する"]を参照してください。
 
 
+
+NOTE: link:task-backup-destination.html["Ransomware Resilienceでバックアップ先を設定する"]できます。ワークロードがNetApp Backup and Recoveryで保護されている場合、Ransomware Resilienceは、スナップショットやバックアップ先などの保護の詳細を自動的に認識します。Ransomware Resilienceを使用するために、Backup and Recoveryは必須ではありません。
 
 
 

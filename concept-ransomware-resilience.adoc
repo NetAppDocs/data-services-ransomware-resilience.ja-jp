@@ -108,7 +108,7 @@ NetApp Consoleの使用を開始するためにライセンスやサブスクリ
 
 == ランサムウェア耐性の仕組み
 
-Ransomware Resilienceは、NetApp Backup and Recoveryを使用して、ファイル共有ワークロードのスナップショットおよびバックアップポリシーを検出し、設定します。
+Ransomware Resilienceは、既存のConsoleおよびONTAPのセットアップと連携して、ランサムウェアの脅威を特定し、ワークロードを保護し、迅速な復旧を可能にします。
 
 image:diagram-rp-architecture-preview3.png["ランサムウェア耐性アーキテクチャを示す図"]
 
