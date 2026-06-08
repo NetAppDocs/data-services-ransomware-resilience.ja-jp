@@ -1609,7 +1609,6 @@
   <block id="9f1822f26663cadd0ea726defa3cca17" category="list-text">ダイアログで [**削除**] を選択して、除外リストからワークロードを削除することを確認します。</block>
   <block id="01e74a47d7af3692bf72faf95ffcd1a3" category="inline-image-macro">除外されたワークロードを正常に削除したスクリーンショット。</block>
   <block id="af77f82e6f94939c1b89727420b621ac" category="list-text">除外されたワークロード リストからワークロードが正常に削除されると、[除外されたワークロード] ページに成功メッセージが表示され、除外されたワークロードのリストにワークロードが表示されなくなります。アクションが失敗した場合はエラー メッセージが表示されるので、操作を再度実行してください。 <block ref="364f1d2f9b1485226ce83c7872b1bae0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b8b45f3c53a227dc5aa1d806ef340f06" category="list-text">**検出ポリシー** ランサムウェアの脅威を特定</block>
   <block id="68fc9b8869c6d23ecc7c4acaf4ef7761" category="list-text">**レプリケーション ポリシー** を使用すると、Ransomware Resilience からセカンダリ サイトにスナップショットをレプリケートできます。レプリケーション スケジュールは、時間ごと、日ごと、週ごと、または月ごとの頻度に設定できます。</block>
   <block id="3ed69b14426127876e3ab79ddc2e266e" category="paragraph">現在、スナップショットをレプリケートできるのはオンプレミスのONTAPストレージのみです。</block>
   <block id="6474bbda8f7c072686c6e020cf107ead" category="list-text">コンソールの左側のナビゲーションから、*保護* &gt; *ランサムウェア耐性*を選択します。</block>
@@ -1977,7 +1976,6 @@
   <block id="70a6131a6c77f1f9afbf85c23200dee6" category="list-text">ボリュームのスナップショットを作成する</block>
   <block id="a4431e17a1690b12df20e34bb2f4b744" category="list-text">脅威インテリジェンスでIPアドレスを強化</block>
   <block id="762279f864f96ffbe81b311754b74896" category="list-text">特定のエージェントとシステムのストレージ情報を拡充する</block>
-  <block id="b826f101cb377022bc455ad2020f2f86" category="list-text">インシデント対応のためにボリュームをオフラインにする</block>
   <block id="dbc85b383817f560c0d1b083f4449627" category="list-text">接続性をテストする</block>
   <block id="870d0fb8b0bf7879e6ada101131c6864" category="list-text">エンリッチメントジョブのステータスを確認する</block>
   <block id="5156f3fe3404db2816f53b4f01711a75" category="section-title">プレイブック</block>
@@ -2057,7 +2055,6 @@
   <block id="c81c8aac6cfb1c5f690b914eda6a69fd" category="inline-link-macro">ランサムウェア対策をSIEMに接続</block>
   <block id="dbdca0e081ed0b247153e35ce9b1c298" category="paragraph">詳細については、<block ref="d02df671c233387bf6b644be94acfdf7" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="7ee4b3a8392885d95b1b7c9f5a6c99e5" category="paragraph">データ侵害イベントに関するインサイトは、インシデント発生後13か月間保持されるようになり、レポートのニーズに応じてより長期間の記録保持が可能になりました。</block>
-  <block id="787e93d4c2f472a6434cd13d74f3f4d4" category="paragraph">詳細については、<block ref="1a6935dbce91cdb72e61e2f8c1313b36" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="ff1d8a11789570b9a7e5f2d8fa4b3245" category="list-text">他のサービス用のコンソールエージェントをまだ追加していない場合は、<block ref="51497621bfe4b6ebf6d24d0214cc9366" category="inline-link-macro-rx"></block>。</block>
   <block id="5ce927453063236746bf9f7b1ee339ed" category="list-text">*ライセンスの追加*を選択して、コンソールのLicenses and subscriptionsページに移動します。</block>
   <block id="5aacdcc38fb6938e8f7950fb8e5395fc" category="doc">NetApp Ransomware Resilienceでリカバリステータスを確認</block>
@@ -2344,7 +2341,6 @@
   <block id="23261131430f46ec6fb27110ac7f00fc" category="section-title">ユーザーのブロックに対するSOARサポート</block>
   <block id="e5b8f2d9ef7cdce04d260640283c68c6" category="paragraph">NetApp Ransomware Resilienceは、Google SecOpsおよびSplunk SOARプレイブックを使用した個々のユーザーのブロックをサポートするようになりました。この機能追加により、NetApp Ransomware Resilienceがデータ侵害や大量のデータ削除などの疑わしいユーザーアクティビティを検出した場合に、ユーザーを自動的にブロックできるようになります。</block>
   <block id="2f82a2e72d177e2d1d65a490cf072506" category="paragraph"><block ref="f63222f2dbc8e79c6867c1aa1bf7ad40" category="inline-link-macro-rx"></block>。</block>
-  <block id="cec6d1e77603c10f8f9b0c0c23a333f4" category="list-text">ユーザーをブロックする*</block>
   <block id="5e5e4d611b545e088600f1e94c227e02" category="list-text">「タイプ」セクションで、*Cleaning only* を選択します。</block>
   <block id="15133f0d70ddd9da0f0a4ccaf25d12f2" category="paragraph">セキュリティ情報およびイベント管理（SIEM）システムは、ログデータとイベントデータを一元管理することで、セキュリティイベントとコンプライアンスに関する洞察を提供します。NetApp Ransomware Resilienceは、SIEMへのデータ自動送信をサポートし、効率的な脅威分析と検出を実現します。</block>
   <block id="f6f2f1de81eb4c260d55918d831d8b4e" category="paragraph">NetApp Ransomware Resilienceは、以下のSIEMシステムをサポートしています：</block>
@@ -2486,11 +2482,8 @@
   <block id="d8e08662cf603a3c4ee9aaf071e19599" category="section-title">攻撃の種類</block>
   <block id="e4234a1d906d9cdc9c698d93ee4a1039" category="paragraph">NetApp Ransomware Resilienceは、5種類の攻撃を認識します：</block>
   <block id="fa56851239948098bf91b1314fa7effe" category="cell">攻撃タイプ</block>
-  <block id="0b890b1926b90387673882e6ccae7fdc" category="cell">定義</block>
   <block id="c4ffd36782688a65f942ba6948827e83" category="cell">暗号化（エントロピー）</block>
-  <block id="fd2cef800f88467f684f65a53518ac63" category="cell">Ransomware Resilienceは、異常なIOPSパターン、データエントロピー、および非標準のファイル拡張子を認識します。</block>
   <block id="403901db25c61c486833fc82dd2d7acd" category="cell">暗号化（ユーザーの動作）</block>
-  <block id="4ae2d9c30cc3f3a656abf5d6a3d16fa4" category="cell">ランサムウェア耐性機能は、特定のユーザーによって実行された異常なファイルの読み取り、書き込み、および名前変更アクティビティを識別します。</block>
   <block id="bf4ede30456e84ab02d9c068f99126f7" category="cell">NetApp Ransomware Resilienceは、特定のユーザーによって実行された異常なファイル読み取りアクセスパターンを検出します。</block>
   <block id="85205fe8e109c0311a7cc912374e07a9" category="cell">NetApp Ransomware Resilienceは、特定のユーザーによるファイルの大量削除を検出します。</block>
   <block id="9ad1cf824a5d301d8eb3668a3f64e5c9" category="cell">Ransomware Resilienceは、データ侵害、データ破壊、暗号化の範囲を超える異常な動作を特定します。</block>
@@ -2509,7 +2502,6 @@
   <block id="73ec7da766dca94cf1c4b669985cd2a5" category="list-text"><block ref="73ec7da766dca94cf1c4b669985cd2a5" category="inline-link-macro-rx"></block></block>
   <block id="f2947fbfc4001f394585c42e28740767" category="inline-link-macro">ユーザー行動エージェントと検出器を設定する</block>
   <block id="ad709ceaf0cfdbb15b5cbf9fdce90fd8" category="list-text"><block ref="ad709ceaf0cfdbb15b5cbf9fdce90fd8" category="inline-link-macro-rx"></block></block>
-  <block id="bd3c8dbfc7f9bd3854a71cfc2ee0f27e" category="paragraph">{asterisk}ユーザーのブロックは、SplunkおよびGoogle SecOps SOARプレイブックでのみサポートされています。ユーザーをブロックするには、サポートされているシステムで<block ref="1c8c6ad1b9f3fa5ec23ffb4b53fcc1e8" category="inline-link-macro-rx"></block>を設定しておく必要があります。</block>
   <block id="4a7bec04cbec6247858664ff561920a3" category="paragraph">ランサムウェア耐性では、オンプレミスONTAPシステム、およびAmazon FsxN for NetApp ONTAPとCloud Volumes ONTAPシステムのワークロードに対するユーザー行動検出がサポートされており、<block ref="12d7be4f3da31a90f0de3bba45ddeec1" category="inline-xref-macro-rx"></block>に準拠しています。</block>
   <block id="f79eb8967b3c8df9a5242b71bfa6765b" category="paragraph">ユーザー行動データは、AWSおよびAzureの以下のリージョンに保存できます：</block>
   <block id="f7d8c82b937f1272bcd68f037f70dcbb" category="list-text">Azure NetApp Files は FPolicy やユーザー行動検出をサポートしていません。Azure NetApp Files はエントロピーフォレンジックもサポートしていません。</block>
@@ -2549,4 +2541,25 @@
   <block id="ff6a5ffc05eb6e03c3063d043a5357eb" category="inline-link-macro">スーパー管理者</block>
   <block id="3a7fa73e20b4b1d037f90f17dc665f22" category="paragraph">*必須コンソールロール* このタスクを実行するには、<block ref="91fb5ef1173b6f41fdaa815d28743781" category="inline-link-macro-rx"></block>、Ransomware Resilience admin、またはRansomware Resilience viewerロールが必要です。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
   <block id="61c00724cddefbe4d1c796a3d8795e62" category="paragraph">*必須コンソールロール*：このタスクを実行するには、<block ref="91fb5ef1173b6f41fdaa815d28743781" category="inline-link-macro-rx"></block>またはRansomware Resilience管理者ロールが必要です。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
+  <block id="4b77ea6c402cb5104fd06a61c7376030" category="inline-link-macro">ユーザー行動検出について学ぶ</block>
+  <block id="85780f52607b54dbe81ff2c46d981a17" category="paragraph">詳細については、<block ref="371ae1c35fd8f1482622c079d0f009f9" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="ad047b692e58386490130db85fe198fd" category="doc">保護戦略の柔軟性の向上</block>
+  <block id="0492ddae19933de338f553ff06833c6f" category="paragraph">Ransomware Resilienceは、ランサムウェア検出戦略の選択において、より柔軟な選択肢を提供します。従来、ランサムウェア対策戦略にはすべて暗号化検出機能が含まれていなければなりませんでした。これで、ユーザー行動の検出のみでランサムウェア対策戦略を有効にできるようになりました。</block>
+  <block id="7238c31678a241cb872ee9d18f1e46a2" category="paragraph">保護戦略には、暗号化検出_と_不審なユーザー行動検出の両方を含めることができます。ファイル拡張子のブロックは、あらゆる保護戦略に追加できます。</block>
+  <block id="bd1924893d8fb00ed3c326b7af6243b5" category="paragraph">既存のポリシーの保護戦略の一部を無効にした場合、そのポリシーの以前のイテレーションで作成された既存のアラートは、「解決済み」としてのみマークでき、「却下済み」としてマークすることはできません。例えば、暗号化検出と不審なユーザー行動を含む保護戦略を設定していたが、暗号化検出を無効にした場合、そのワークロードに対する既存の暗号化アラートのみを解決できます。</block>
+  <block id="2b7a103134591ddcc36191e5b569a29b" category="paragraph">詳細については、<block ref="5b0b8f72704979749944145d24f2c6be" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="eac1000048fff271adb3d0d010dd86f5" category="section-title">SOARプレイブックの機能強化</block>
+  <block id="993b3419e78327c12451169533b8d701" category="paragraph">Ransomware Resilience SOARプレイブックでは、ユーザーをブロックしたりボリュームをオフラインにしたりした後の修復手順が提供されるようになりました。ランサムウェアの脅威ではないと判断された場合、ボリュームをオンラインに戻したり、ユーザーのブロックを解除したりできるようになりました。</block>
+  <block id="74ea76930b47f412faf2fb55e463038e" category="cell">ランサムウェア耐性機能は、異常なIOPSパターン、データエントロピー、および非標準のファイル拡張子を認識します。</block>
+  <block id="583ab768c1c1f45999e48e96c301cc48" category="cell">ランサムウェア耐性機能は、特定のユーザーによって実行された異常なファイルの読み取り、書き込み、および名前変更アクティビティを特定します。</block>
+  <block id="48c197e68b527d9bc2137bcea71c2e76" category="list-text">ユーザーをブロック／ブロック解除する*</block>
+  <block id="1943cfeff6e7967a7ab396ecab9a4c21" category="list-text">インシデント対応のためにボリュームをオフラインにするか、インシデント後にボリュームをオンラインにする</block>
+  <block id="46d3a8bf54f5d5c4058a1eba2e7daa4a" category="paragraph">{asterisk}ユーザーのブロック/ブロック解除は、SplunkおよびGoogle SecOps SOARプレイブックでのみサポートされています。ユーザーをブロックするには、サポートされているシステムで<block ref="1c8c6ad1b9f3fa5ec23ffb4b53fcc1e8" category="inline-link-macro-rx"></block>を設定しておく必要があります。</block>
+  <block id="495dc566c29577d14a3418e529c90d3c" category="list-text">**検出ポリシー**はランサムウェアの脅威を特定します。検出には3つのオプションがあります：</block>
+  <block id="b3b96411f9486bb0c2c8a4e2b07e7d35" category="list-text">暗号化検出</block>
+  <block id="2b694a9a00b006682bcbea870c2ca4fb" category="list-text">疑わしいファイル拡張子をブロックする</block>
+  <block id="a1c735fa1a87c7cfca09d994cfe02048" category="inline-link-macro">不審なユーザーアクティビティ（追加の設定が必要）</block>
+  <block id="262d414194517bdfa67b048201f2b424" category="paragraph">検出ポリシーには、3つのオプションすべてを含めることも、それらを組み合わせることも可能です。暗号化検出または<block ref="0c1271458a5eed3dcf0b345a743161db" category="inline-link-macro-rx"></block>のいずれかを含める必要があります。</block>
+  <block id="38cfc49361136d6f7410fbe2c3b7430a" category="list-text">*保護の変更*：30 日、60 日、90 日、または 1 年間の一定期間におけるワークロードの保護戦略の変更のレビューが含まれます。</block>
+  <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026年6月8日</block>
 </blocks>
