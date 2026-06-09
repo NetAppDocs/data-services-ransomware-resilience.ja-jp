@@ -69,13 +69,13 @@ NOTE: *user_name* と *user_id* フィールドは、xref:concept-user-behavior.
 
 == 脅威検出用に AWS Security Hub を構成する
 
-Ransomware ResilienceでAWS Security Hubを有効にする前に、AWS Security Hubで次の概要手順を実行する必要があります：
+Ransomware ResilienceでAWS Security Hubを有効にする前に、AWS Security Hubでセキュリティ設定を行う必要があります。
 
 * AWS Security Hub で権限を設定します。
 * AWS Security Hub で認証アクセスキーとシークレットキーを設定します。  (これらの手順はここでは説明しません。)
 
 
-.AWS Security Hubで権限を設定する手順
+.AWS Security Hubで権限を設定します
 . *AWS IAM コンソール* に移動します。
 . *ポリシー*を選択します。
 . 次の JSON 形式のコードを使用してポリシーを作成します。

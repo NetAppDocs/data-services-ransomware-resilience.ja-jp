@@ -521,7 +521,6 @@
   <block id="179e5ea4317177f519c688d15ef67987" category="paragraph"><block ref="179e5ea4317177f519c688d15ef67987" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e462715e9b155f4f9638da4f314c8aff" category="list-text">準備ドリルレポートをダウンロードするには、[*準備ドリル*] と [*ダウンロード*] を選択します。</block>
   <block id="4c8cd66676ad1c434108e699d9777408" category="paragraph">誤検知を無視するか、すぐにデータを回復することを決定できます。</block>
-  <block id="899157335f0c98105a8cbc92966ba06d" category="admonition">アラートを無視すると、Ransomware Resilience はこの動作を学習し、通常の操作と関連付けて、再度アラートを開始しなくなります。</block>
   <block id="a8fd9e3988acb841854762788963d815" category="paragraph">データの復旧を開始するには、アラートを復旧準備完了としてマークし、ストレージ管理者が復旧プロセスを開始できるようにします。</block>
   <block id="304b86572af1a03e438d6a3b86bfad43" category="paragraph">各アラートには、さまざまなボリュームとステータスの複数のインシデントが含まれる場合があります。すべてのインシデントを確認します。</block>
   <block id="271b5be554c7641bb10d05402276d05a" category="list-text">ファイル拡張子が作成または変更されました</block>
@@ -709,10 +708,6 @@
   <block id="4dc51b8615944f599801153cc7777840" category="list-text">このページから、ワークロードの保護の詳細を表示および変更できます。</block>
   <block id="cf077fd7afe54e3a0c2d1f4f171b9592" category="inline-link-macro">ランサムウェア対策戦略を追加する</block>
   <block id="ce4ef271bc40fcdcc146584fcac5d544" category="paragraph">*保護ステータス*: ワークロードは、ポリシーが適用されているかどうかを示す次のいずれかの保護ステータスを示します。</block>
-  <block id="463f5e1b668b83efc12cf4dbc90300ff" category="list-text">*保護済み*: ポリシーが適用されています。ワークロードに関連するすべてのボリュームで ARP (またはONTAPバージョンに応じて ARP/AI) が有効になっています。</block>
-  <block id="2849b9294b844719ab6e63ff0e8d64a0" category="list-text">*リスクあり*: ポリシーは適用されません。ワークロードでプライマリ検出ポリシーが有効になっていない場合、スナップショットおよびバックアップ ポリシーが有効になっていても、ワークロードは「危険にさらされている」状態になります。</block>
-  <block id="d8b2d86957c187231adaeb328cc57adb" category="list-text">*進行中*: ポリシーは適用中ですが、まだ完了していません。</block>
-  <block id="a6539f11a6b87c60fecf3f4d34dfb4d1" category="list-text">*失敗*: ポリシーは適用されましたが、機能していません。</block>
   <block id="0882532dc9eb74e24a8b137f1e6a0b39" category="paragraph">ランサムウェア耐性は、各ワークロードの分析に基づいて、検出中に各ワークロードに重要度または優先度を割り当てます。ワークロードの重要度は、次のスナップショット頻度によって決まります。</block>
   <block id="58adba48bf0678c3abb71d1fdf829602" category="paragraph">ワークロードの重要度に合わせて、次のランサムウェア耐性定義済みポリシーのいずれかを選択できます。</block>
   <block id="4d293abd3f96b37c9afdf90f01855f8b" category="admonition">**暗号化ユーザー拡張** ポリシーは、疑わしいユーザーの動作の検出をサポートする唯一の定義済みポリシーです。</block>
@@ -767,7 +762,6 @@
   <block id="e4574be2aa1d855d0a159fa734c028b7" category="list-text">各項目について、*下矢印*を選択します。</block>
   <block id="b77a56354e9e39a76b1a118e9bfa09d3" category="list-text">*検出ポリシー*:</block>
   <block id="949db64066489b0349a4ff1451832808" category="list-text">*ポリシー*: 事前に設計された検出ポリシーの 1 つを選択します。</block>
-  <block id="66ecff8104cfb8cf22c05ebdad07a66a" category="list-text">*疑わしいユーザー行動の検出*: ユーザー行動の検出を有効にすると、ユーザーアクティビティイベントが Ransomware Resilience に送信され、データ侵害などの疑わしいイベントが検出されます。</block>
   <block id="7c06fadd4f73e4b63eb519df7d9880fc" category="paragraph">ブロックされたファイル拡張子を変更する場合は、System Manager で編集します。</block>
   <block id="c8499d03897189696e5af26fc5ab9f45" category="list-text">*スナップショットポリシー*:</block>
   <block id="007ac2633329ecdb55692304050d9260" category="list-text">*スナップショット ポリシー ベース名*: ポリシーを選択するか、*作成* を選択してスナップショット ポリシーの名前を入力します。</block>
@@ -988,7 +982,6 @@
   <block id="0df177143ce12a3516098cd3329e85c2" category="section-title">脅威検出用に AWS Security Hub を構成する</block>
   <block id="de9b4f41a945df92e6c5b62f443f03f1" category="list-text">AWS Security Hub で権限を設定します。</block>
   <block id="5fd0d2c5fd8b96b7b7b69f69b942c559" category="list-text">AWS Security Hub で認証アクセスキーとシークレットキーを設定します。  (これらの手順はここでは説明しません。)</block>
-  <block id="12eef9b6a125a82d69978241dca88c07" category="list-title">AWS Security Hubで権限を設定する手順</block>
   <block id="66d20ba773065dfc079ca6feb04ef773" category="list-text">*AWS IAM コンソール* に移動します。</block>
   <block id="bf6953a41efa897b0862fca0fe547641" category="list-text">*ポリシー*を選択します。</block>
   <block id="2228b7980f61d80481608141744ecee0" category="list-text">次の JSON 形式のコードを使用してポリシーを作成します。</block>
@@ -1375,11 +1368,8 @@
   <block id="65a602dc25a2da85e0a1dfb15824b10b" category="paragraph-title">データをワークロードにどのように関連付けますか?</block>
   <block id="e2201c0935bcdfd14ed840897f30bcdc" category="paragraph">Ransomware Resilience はボリュームとファイル拡張子を検出し、適切なワークロードに関連付けます。</block>
   <block id="f7d49d845f0e8fd37a070e797785ddd2" category="paragraph-title">保護されたワークロードとは何ですか?</block>
-  <block id="7259cd6e0f46eebf9079f25f465a8c63" category="inline-link-macro">自律型ランサムウェア対策（ARP）</block>
-  <block id="7fd0dced59717f1ce225e83c1eba7879" category="paragraph">ランサムウェア耐性では、主要な検出ポリシーが有効になっているワークロードは「保護」ステータスを表示します。これは、 <block ref="f47b2a56bf7e72f952a180e4f688a755" category="inline-link-macro-rx"></block> ワークロードに関連するすべてのボリュームで有効になります。</block>
   <block id="a7728d009ece45c9ca2552ef1b9e83b5" category="paragraph-title">「リスクのある」ワークロードとは何ですか?</block>
   <block id="feb245a8019757951a6c89440c58dbd0" category="inline-link-macro">検出ポリシー</block>
-  <block id="073899b4550e086de0057b494471a8d5" category="paragraph">ワークロードでプライマリ検出ポリシーが有効になっていない場合、バックアップとスナップショット ポリシーが有効になっていても、「危険」というラベルが付けられます。ランサムウェア対策として、 <block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>。</block>
   <block id="77f988a37bbdd1881b090c55f9b830f1" category="paragraph-title">新しいボリュームを追加しましたが、まだ表示されません。どうすればいいですか？</block>
   <block id="2173d44554906f5f04303f8e155b7e0d" category="inline-link-macro">新しいボリュームを保護するために保護ポリシーを適用する</block>
   <block id="b79a0001646a8a21be92374c30d89073" category="paragraph">環境に新しいボリュームを追加した場合は、ワークロードの検出を再度開始します。巻物が発見された後、 <block ref="11d93ee27365ded5cd7b6061cdb7f916" category="inline-link-macro-rx"></block>。</block>
@@ -1622,8 +1612,6 @@
   <block id="aa9adfa847815670c9bd986dafc8c79c" category="cell">スナップショットコピーの最大数</block>
   <block id="cf9344351eb239ccd95661876c4d97ee" category="cell">*重要なレプリケーションポリシー*</block>
   <block id="ad53fda1a18da9db9d8aa1d460952aa5" category="list-text">ONTAPへのセカンダリレプリケーション</block>
-  <block id="8f6c5d8baaf38cda61b5392a06e30e68" category="list-text">*一次検出*: ランサムウェア耐性を有効にして、潜在的なランサムウェア攻撃を検出します。</block>
-  <block id="21fd87cf8a3d6f008657537a5cec6e82" category="list-text">*ファイル拡張子をブロック*: ランサムウェア耐性を有効にして、既知の疑わしいファイル拡張子をブロックします。ランサムウェア耐性は、プライマリ検出が有効になっている場合に自動スナップショット コピーを作成します。</block>
   <block id="50723c157cd9ea132a02f421411e273d" category="list-text">*レプリケーションポリシー*:</block>
   <block id="f84245dfb1fc8217e62c0934102ba606" category="list-text">*レプリケーション ポリシーのベース名*: 新しい名前を入力するか、既存の名前を選択します。ベース名は、すべてのスナップショットに追加されるプレフィックスです。</block>
   <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*レプリケーション スケジュール*: 有効にする頻度 (時間別、日次、週次、月次) を切り替え、有効にするスケジュールごとに保持値 (保持する複製スナップショットの数) を設定します。</block>
@@ -2346,7 +2334,6 @@
   <block id="f6f2f1de81eb4c260d55918d831d8b4e" category="paragraph">NetApp Ransomware Resilienceは、以下のSIEMシステムをサポートしています：</block>
   <block id="963e2ddcdebcdd0f6fcbd1dad696e580" category="admonition">Ransomware Resilienceには、<block ref="de8332ed81162473af5cb8a1551a7e36" category="inline-link-macro-rx"></block>も用意されています。</block>
   <block id="1d128c6086cbb73d30a6cbf3e127963d" category="list-text">*title*：検出されたアラートの表示名。</block>
-  <block id="bf49f7b724de055a76d11fee549a6a9c" category="paragraph">Ransomware ResilienceでAWS Security Hubを有効にする前に、AWS Security Hubで次の概要手順を実行する必要があります：</block>
   <block id="41b1238763de1c7569a52c2f6f418f26" category="list-title">Ransomware ResilienceでAWS Security Hubを認証</block>
   <block id="a9e57cc6ddc3d658ec2f623d0d9bc8a4" category="list-text">Ransomware Resilienceで、サイドバーの*Settings*を選択します。</block>
   <block id="d28cdccd0f4e99a6f4e0f91d5197063e" category="list-text">SIEMプロバイダとして*AWS Security Hub*を選択します。</block>
@@ -2562,4 +2549,18 @@
   <block id="262d414194517bdfa67b048201f2b424" category="paragraph">検出ポリシーには、3つのオプションすべてを含めることも、それらを組み合わせることも可能です。暗号化検出または<block ref="0c1271458a5eed3dcf0b345a743161db" category="inline-link-macro-rx"></block>のいずれかを含める必要があります。</block>
   <block id="38cfc49361136d6f7410fbe2c3b7430a" category="list-text">*保護の変更*：30 日、60 日、90 日、または 1 年間の一定期間におけるワークロードの保護戦略の変更のレビューが含まれます。</block>
   <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026年6月8日</block>
+  <block id="8301d3df17a7d3b229e97daa256bc551" category="paragraph">ランサムウェア耐性において、ワークロードに検出ポリシーが有効になっている場合、そのワークロードの状態は「保護済み」と表示されます。検出ポリシーは、暗号化検出または不審なユーザー行動検出（あるいはその両方）のいずれかで構成されている必要があります。これには、不審なファイル拡張子の検出機能も含まれます。詳細については、<block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="6c6097f9e44fb30ef0bc0a6e210dce9b" category="paragraph">ワークロードに検出ポリシーが有効になっていない場合、バックアップおよびスナップショット ポリシーが有効になっていても、「リスクあり」と表示されます。ランサムウェア対策として、<block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>を有効にする必要があります。</block>
+  <block id="fec111d809c49ffc75c21732e808fe2d" category="admonition">アラートを無視すると、Ransomware Resilienceはこの動作を学習し、それを通常の動作と関連付け、同様のイベントに関するアラートの送信を停止します。</block>
+  <block id="7f2998da36c9b089182a98b4c6ff6c5d" category="admonition">既存の保護戦略があり、その戦略上の検出方法のいずれかを無効にした場合、そのポリシーの以前のバージョンで作成されたアラートは、「解決済み」としてのみマークでき、「却下済み」としてマークすることはできません。例えば、暗号化検出と不審なユーザー行動を含む保護戦略に対してアクティブなアラートが発生していたが、その後暗号化検出を無効にした場合、そのアラートは「解決済み」としてしかマークできません。</block>
+  <block id="5e37428a91a220042e4764361ae6e656" category="list-text">*暗号化検出*：ランサムウェア耐性を有効にして、暗号化ベースの攻撃を検出します。</block>
+  <block id="83b90da4f4a4213417bbdd607b6813c9" category="list-text">*不審なユーザー行動の検出*：ユーザー行動の検出を有効にして、ユーザーアクティビティイベントをRansomware Resilienceに送信し、データ侵害やデータ破壊などの不審なイベントを検出します。</block>
+  <block id="8d9e80b9523ae8e43c09fee979fbfe13" category="list-text">*ファイル拡張子のブロック*：ランサムウェア耐性を有効にして、既知の疑わしいファイル拡張子をブロックします。</block>
+  <block id="87c5b70bcda4f0448400bb7245e5d975" category="admonition">検出ポリシーは任意の組み合わせで選択できます。検出ポリシーには、暗号化検出または不審なユーザー行動検出のいずれかを含める必要があります。</block>
+  <block id="18282a82722e35ec83f6634f6933e908" category="list-text">*保護対象*：検出ポリシーが適用されます。</block>
+  <block id="689a050b69b980dbe9c67ea9fdaeb981" category="list-text">*リスクあり*：ポリシーは適用されません。ワークロードに検出ポリシーが有効になっていない場合、スナップショットとバックアップ ポリシーが有効になっていても「リスクあり」の状態です。</block>
+  <block id="1c2f725024e8db3f57c9ffb6c1869a4f" category="list-text">*処理中*: ポリシーが適用されていますが、処理は完了していません。</block>
+  <block id="7f2fe4ecc84891950d87f953f70363aa" category="list-text">*Failed*: ポリシーは設定されましたが、エラーが発生しました。</block>
+  <block id="ed3c60417302240ba271d87f011c0f32" category="paragraph">Ransomware ResilienceでAWS Security Hubを有効にする前に、AWS Security Hubでセキュリティ設定を行う必要があります。</block>
+  <block id="6209d7a62e35781f2a36ba4149e80d90" category="list-title">AWS Security Hubで権限を設定します</block>
 </blocks>
