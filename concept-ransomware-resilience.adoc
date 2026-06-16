@@ -212,7 +212,7 @@ Ransomware Resilience は、次のバックアップ ターゲット、システ
 | 環境 | プロトコル | サポート対象のバージョン 
 
 
-| Amazon FSx for NetApp ONTAP* | CIFS、NFS、SAN | 該当なし 
+| Amazon FSx for NetApp ONTAP | CIFS、NFS、SAN | 該当なし 
 
 
 | Azure NetApp Files | CIFSとNFS | 該当なし 
@@ -244,8 +244,6 @@ Ransomware Resilience は、次のバックアップ ターゲット、システ
 
 | Google Cloud NetApp Volumes | CIFS、NFS、SAN（iSCSI および NVMe） | 該当なし 
 |===
-{アスタリスク} Amazon FSx for NetApp ONTAP は、 ARP/AI ではなく、Autonomous Ransomware Protection (ARP) を使用します。違いの詳細については、link:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai["ARP/AI"^] 。
-
 
 NOTE: Azure NetApp FilesまたはGoogle Cloud NetApp Volumesでは、ユーザーアクティビティ検出はサポートされていません。ユーザーアクティビティ検出のサポートの詳細については、link:reference-user-activity-requirements.html["ユーザアクティビティ検出要件"]を参照してください。
 
