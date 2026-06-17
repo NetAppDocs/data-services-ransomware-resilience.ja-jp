@@ -2561,4 +2561,6 @@
   <block id="0270ec13158ac8d81c5022ad41a38235" category="admonition">Amazon FSx for NetApp ONTAP および Azure NetApp Files の保護戦略を設定する場合は、<block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="b70244907e8a4cb4fbb47d6e9fdda53a" category="cell">クラウド：Amazon FSx for NetApp ONTAP</block>
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">Amazon FSx for NetApp ONTAP にデプロイされた IRE の場合、この情報を提供する必要はありません。</block>
+  <block id="f5b6822ed53c8f99c424ea0e8e011bf7" category="admonition">Ransomware Resilienceは、コンソールエージェント1つにつき最大3,000個のワークロードしか検出できません。</block>
+  <block id="bb4393b6187d55f98dbeb4c5bb8add00" category="list-text">コンソールエージェント1つあたり、ワークロードの上限は3,000です。</block>
 </blocks>
