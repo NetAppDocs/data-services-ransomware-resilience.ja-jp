@@ -738,9 +738,10 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 
 ワークロードにスナップショットまたはバックアップ ポリシーが存在しない場合は、このサービスで作成する次のポリシーを含めることができるランサムウェア保護戦略を作成できます。
 
-* スナップショットポリシー
-* バックアップ ポリシー
 * 検出ポリシー
+* バックアップ ポリシー
+* スナップショットポリシー
+* レプリケーションポリシー
 
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["ワークロードの保護について詳しく見る"] 。

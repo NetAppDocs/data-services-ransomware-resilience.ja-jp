@@ -242,7 +242,7 @@ Ransomware Resilience は、次のバックアップ ターゲット、システ
 | SAN（iSCSI および NVMe） | 9.17.1以降 
 
 
-| Google Cloud NetApp Volumes | CIFS、NFS、SAN（iSCSI および NVMe） | 該当なし 
+| Google Cloud NetApp Volumes | CIFSとNFS | 該当なし 
 |===
 
 NOTE: Azure NetApp FilesまたはGoogle Cloud NetApp Volumesでは、ユーザーアクティビティ検出はサポートされていません。ユーザーアクティビティ検出のサポートの詳細については、link:reference-user-activity-requirements.html["ユーザアクティビティ検出要件"]を参照してください。

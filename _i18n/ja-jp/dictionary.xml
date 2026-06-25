@@ -2405,7 +2405,6 @@
   <block id="c36975af9ca6baf7b5a05658605b577d" category="paragraph">特定のシステムにおける管理者以外のユーザーの権限を更新する必要がある場合は、以下の手順に従ってください：</block>
   <block id="3e24330471da607e91da657f3cdf7a39" category="list-text">コンソールにログインします。ダッシュボードで、ONTAP ユーザー権限を更新する必要があるシステムを特定します。</block>
   <block id="df790109011414a6034217652cd48d7c" category="inline-link-macro">クリーンリストア</block>
-  <block id="ff3968cf2fd662dd2275d75511ef33af" category="cell">CIFS、NFS、SAN（iSCSI および NVMe）</block>
   <block id="a1b7351b5e78c5f7b3c07f1f9b210761" category="doc">Google Cloud NetApp Volumes サポート（プレビュー）</block>
   <block id="d80af1c0606a32f418ab576db57cacc1" category="paragraph">Ransomware ResilienceがGoogle Cloud NetApp Volumesシステムをサポートするようになり、Google Cloud NetApp Volumesでランサムウェアの脅威を効率的に検出して対応できるようになりました。検出を実行すると、Ransomware ResilienceはGoogle Cloud NetApp Volumesシステムのワークロードを自動的に表示します。システムが検出されると、Ransomware Resilienceダッシュボードに表示されます。Ransomware ResilienceでのGoogle Cloud NetApp Volumesのサポートは現在プレビュー版です。</block>
   <block id="35b27350003f459df80234524883b5fc" category="inline-link-macro">ランサムウェアレジリエンスの制限事項</block>
@@ -2563,4 +2562,6 @@
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">Amazon FSx for NetApp ONTAP にデプロイされた IRE の場合、この情報を提供する必要はありません。</block>
   <block id="f5b6822ed53c8f99c424ea0e8e011bf7" category="admonition">Ransomware Resilienceは、コンソールエージェント1つにつき最大3,000個のワークロードしか検出できません。</block>
   <block id="bb4393b6187d55f98dbeb4c5bb8add00" category="list-text">コンソールエージェント1つあたり、ワークロードの上限は3,000です。</block>
+  <block id="8df5e57d843114bbbb53a4c85f76cb68" category="list-text">Google Cloud NetApp Volumes の SAN ワークロードは、現在ランサムウェア対策機能ではサポートされていません。</block>
+  <block id="afce532bad172bcef50d75935d2ed43b" category="list-text">レプリケーションポリシー</block>
 </blocks>

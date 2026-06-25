@@ -50,6 +50,7 @@ Azure NetApp Files には以下の制限事項が適用されます：
 
 Google Cloud NetApp Volumes には以下の制限事項が適用されます：
 
+* Google Cloud NetApp Volumes の SAN ワークロードは、現在ランサムウェア対策機能ではサポートされていません。
 * 現在、Google Cloud NetApp Volumes ワークロードに適用できる保護戦略は、暗号化と FPolicy に基づくものに限られています。ユーザー行動保護戦略を適用することはできません。
 * レプリケーションを使用した保護戦略は、現在Google Cloud NetApp Volumesではサポートされていません
 
