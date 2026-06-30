@@ -18,6 +18,18 @@ NetApp Ransomware Resilienceの新機能についてご確認ください。
 
 
 
+== 2026年6月29日
+
+
+
+=== ユーザーアクティビティアラートへの自動応答
+
+Ransomware Resilienceは、ユーザーアクティビティアラートが生成された際に、スナップショットの作成とユーザーのブロックを自動化する機能をサポートするようになりました。自動応答機能を使用すれば、警告が発生した時点でユーザーをブロックし、復旧用のスナップショットを作成できるため、手動介入なしでより迅速な対応が可能になります。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-automate-user-activity.html["ユーザーアクティビティアラートへの対応を自動化する"^]を参照してください。
+
+
+
 == 2026年6月8日
 
 

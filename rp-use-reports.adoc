@@ -50,3 +50,10 @@ image:screen-dashboard.png["[ダッシュボード]ページ"]
 image:screen-reports.png["準備訓練レポートを表示するレポートページ"]
 
 
+
+
+
+== 詳細情報
+
+* link:task-automate-user-activity.html["ユーザーアクティビティイベントへの応答を自動化する"]
+

@@ -56,6 +56,8 @@ sidebar:
           url: "/reference-user-activity-requirements.html"
         - title: エージェントとコレクターを設定する
           url: "/suspicious-user-activity.html"
+        - title: ユーザーアラートとブロックを管理する
+          url: "/task-users-manage.html"
       - title: 保護グループの管理
         url: "/task-protection-group.html"
       - title: 個人を特定できるデータをスキャンする
@@ -64,6 +66,8 @@ sidebar:
       entries:
       - title: 検出されたアラートに応答する
         url: "/rp-use-alert.html"
+      - title: ユーザーアクティビティアラートへの対応を自動化する
+        url: "/task-automate-user-activity.html"
       - title: 回復状況を確認する
         url: "/rp-use-recover.html"
       - title: クリーンな復元で復旧
