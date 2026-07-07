@@ -56,7 +56,7 @@ sidebar:
           url: "/reference-user-activity-requirements.html"
         - title: エージェントとコレクターを設定する
           url: "/suspicious-user-activity.html"
-        - title: ユーザーアラートとブロックを管理する
+        - title: アラートとブロックされたユーザーを管理する
           url: "/task-users-manage.html"
       - title: 保護グループの管理
         url: "/task-protection-group.html"

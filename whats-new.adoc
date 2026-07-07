@@ -18,6 +18,18 @@ NetApp Ransomware Resilienceの新機能についてご確認ください。
 
 
 
+== 2026年7月7日
+
+
+
+=== ユーザー行動アラートからファイルパスを除外する
+
+Ransomware Resilience は、ユーザー行動監視アラートから特定のファイルパスを除外する機能をサポートしています。リスクがないと分かっているファイルパス、またはアラートを発生させる可能性のあるボリューム内のファイルに対して作業を行っている場合は、それらのファイルパスを除外することができます。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-users-manage.html["アラートからファイルパスを除外する"^]を参照してください。
+
+
+
 == 2026年6月29日
 
 

@@ -1666,7 +1666,6 @@
   <block id="9dd5e919daf597022ca9ace5ebd739e9" category="list-text">**手動で選択**を選択した場合は、除外する特定のユーザーの名前の横にあるチェックボックスをオンにします。</block>
   <block id="bf7da00a56585a6a89ff8f8184dfd6fd" category="inline-link-macro">ランサムウェアの警告に応答する</block>
   <block id="face5a9388d96715a2df2a403febcfad" category="admonition">アラートからユーザーを直接除外することもできます。詳細については、<block ref="56429daef20ebac0c2b98002f6d61934" category="inline-link-macro-rx"></block>を参照してください。</block>
-  <block id="0b09185e7ecba92cf7f8f0712501db0b" category="section-title">除外ユーザーリストからユーザーを削除する</block>
   <block id="581c5c550f20f231f6c9e881e699829b" category="list-text">ダイアログで、**削除**を選択して、選択したユーザーを削除することを確認します。</block>
   <block id="90c78a95b0a3dffc0aa664d3139d1369" category="summary">NetApp Ransomware Resilienceから脅威の分析と検出のために、セキュリティおよびイベント管理システム（SIEM）にデータを自動的に送信できます。</block>
   <block id="03883d80013dc0b2b972eccd5b93b56f" category="list-text">AWS Security Hub</block>
@@ -1759,7 +1758,6 @@
   <block id="147fa6a15cbb387b90cd75ccc34d8cfe" category="list-text">データ破壊</block>
   <block id="9755e4a474d0024a8dcd40393e571716" category="list-text">疑わしいユーザー行動</block>
   <block id="f94e6cd450a12c55223329be07d15575" category="inline-link-macro">ユーザーアクティビティ検出</block>
-  <block id="09e9060a723336e7b5657759fccb4bbf" category="admonition">データ侵害、データ破壊、疑わしいユーザー行動のアラートについては、<block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>を設定する必要があります。</block>
   <block id="b413c7d063ce740207cbb531b68c46dc" category="section-title">アラートの種類とステータス</block>
   <block id="1405a7e68c0a63e640869ddcfd6a3c37" category="paragraph">アラートには、*新規*または*非アクティブ*の 2 つのステータスのいずれかがあります。</block>
   <block id="75a90d27a357c4859ab2e4e41a012d82" category="paragraph">アラートは次のいずれかのタイプに分類されます：</block>
@@ -2515,8 +2513,6 @@
   <block id="7e6d3cb777f931902eef28d721b391ad" category="list-text">Ransomware Resilience で、*設定*を選択します。</block>
   <block id="8e80013d454d77fa5da380a02985bf08" category="list-text">ユーザーアクティビティ監視タイルを見つけて、**管理**を選択します。</block>
   <block id="ca9b34b1ac8edb836cc31adfeb86da35" category="paragraph">また、<block ref="8cd568562744ebd2ad72f4d26b638c5b" category="inline-link-macro-rx"></block>。</block>
-  <block id="83019ea39039a789f3a1ef050322b3c6" category="inline-link-macro">NetApp Ransomware Resilienceにおけるユーザーのブロックとアラートの管理</block>
-  <block id="ab86c889344f48e6cc9a644f588de541" category="list-text"><block ref="ab86c889344f48e6cc9a644f588de541" category="inline-link-macro-rx"></block></block>
   <block id="0e5314dd9df9fd8758e118ce1e7ba897" category="summary">NetApp Ransomware Resilienceは、ユーザーアクティビティイベントへの自動応答の作成をサポートしており、スナップショットの自動作成やユーザーのブロックを自動的に実行できます。</block>
   <block id="da6a5c0ffdbef8b4ec186025eff8e43b" category="doc">NetApp Ransomware Resilienceにおけるユーザーアクティビティアラートへの対応を自動化します</block>
   <block id="11b56910cc00c324c49386ed5582988f" category="inline-link-macro">ユーザーアクティビティイベント</block>
@@ -2545,8 +2541,6 @@
   <block id="ffaa50c6810616dffe4f2fa3b11dd9d5" category="paragraph">回答を変更するには、**編集**を選択してください。</block>
   <block id="9190ef848f1a62966c143f87f9a3b16e" category="list-text">アラートの深刻度以外の設定はすべて変更できます。</block>
   <block id="60fb8ad171246036e201929bc65c1158" category="list-text">変更内容を保存するには、**保存**を選択してください。</block>
-  <block id="b1e9096bc5102d69a78befc70d41fe69" category="summary">NetApp Ransomware Resilienceでユーザーディレクトリコネクタを作成した後、ユーザーのブロックとブロック解除、アラート対象からのユーザー除外が可能です。</block>
-  <block id="728a9373b496fb3b49cccf8e1eb055c0" category="paragraph">NetApp Ransomware Resilienceでユーザー ディレクトリ コネクターを作成した後は、ランサムウェア イベントが発生してそれらを評価する際に、ユーザーをブロックおよびブロック解除できます。また、ユーザーの操作が攻撃ではないと確信できる場合は、そのユーザーをランサムウェア アラートから選択的に除外することもできます。</block>
   <block id="9594e6c0471983974b6adc193bd57d4e" category="paragraph">ユーザーをブロックするには、<block ref="c512b877bbe8303215878962f3edb05e" category="inline-link-macro-rx"></block>が必要です。</block>
   <block id="37bcec617eba318667a247a58bd99097" category="inline-link-macro">応答を自動化する</block>
   <block id="88450b9601513114d92202ed82d65469" category="admonition">ユーザーアクティビティ検出イベントに<block ref="5b864d1f7cea25f12e7a99e07202259f" category="inline-link-macro-rx"></block>ことができます。</block>
@@ -2564,16 +2558,12 @@
   <block id="e2d552c6afc3cd9e9e5367d429f832c4" category="list-text">変更を選択してください。ブロック期間を変更するには、「**ブロック対象ユーザーの期間**」を選択し、期間を変更します。ブロックされたユーザーリストからユーザーを削除するには、「**ユーザーのブロックを解除**」を選択してください。</block>
   <block id="4ecd815bab325d10795007a2e86d0a31" category="list-text">ステータスを変更したいブロック済みユーザーの名前の横にあるチェックボックスを選択してください。</block>
   <block id="8d5311b8775f8a9ea8945d76095bb698" category="list-text">**保存**を選択します。</block>
-  <block id="d90cde04b4a8cbf5c0f2097687b77bc8" category="section-title">ユーザーアラートを管理する</block>
   <block id="bf21122a37b943f2b70a86b30f0af377" category="list-text">**監視対象から除外**タブを選択します。</block>
   <block id="a5e15107d3aab04bc0c5f9ef6e7eafe8" category="list-text">**追加**を選択して、ユーザーを除外リストへの追加を完了します。</block>
   <block id="999d037bde1c176486633543cd03a250" category="list-text">**監視対象から除外**タブに、ユーザー行動検出アラートから削除されたユーザーの名前がダッシュボードに表示されるようになりました。</block>
-  <block id="0e1a585fedc96851082d7b2be641fb77" category="list-text">個々のユーザーをUIから除外するには、**手動で選択**を選択してください。</block>
-  <block id="2e1bb6ba10017caa1a34a9693a9495b0" category="list-text">除外ユーザーリストから削除するユーザーの名前を見つけます。ユーザー名の行のアクションメニュー（<block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>）を選択し、**削除**をクリックします。</block>
   <block id="f1d60a07f24fee746248e3b38e0d0891" category="inline-link-macro">ユーザーアクティビティ検出イベントへの応答を自動化する</block>
   <block id="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="list-text"><block ref="67f8bfb01063a7bf1e47bc5de6e7fcb9" category="inline-link-macro-rx"></block></block>
   <block id="f210e90dbf694c894759f78cc6d8b222" category="section-title">2026年6月29日</block>
-  <block id="97d60b3e7c986739c534cb2a3c8f2b99" category="sidebar">ユーザーアラートとブロックを管理する</block>
   <block id="acd27fc46144e7ce943b73180eb0d3a8" category="paragraph">NetApp Ransomware Resilienceでランサムウェア攻撃対策の訓練を実行し、実際のランサムウェア攻撃への備えをテストします。この対策訓練では、Ransomware Resilienceが新しいサンプル ワークロードに対する攻撃をシミュレートするため、実際の本番データに影響を与えることなく、シミュレートされた攻撃を調査してリカバリを実行できます。対策訓練は、アラート通知に慣れ、対応とリカバリの準備を整えるのに役立ちます。訓練は必要なときにいつでも何回でも実行できます。</block>
   <block id="537f8bf1cb00339aa74d0eb9f514b0df" category="list-text">準備訓練タイルで、**「構成」**を選択します。</block>
   <block id="58217f0a1f8bf12ba3006ea914fc528d" category="list-text">**準備訓練の種類**を選択してください。</block>
@@ -2618,4 +2608,28 @@
   <block id="e3b01c4848ac6d1626374e4dee0f0685" category="list-text">**データ侵害からの復旧**：このドリルタイプを有効にする前に、<block ref="ea7722fd5c2c373bdaffcbde2ca3bbf6" category="inline-link-macro-rx"></block>を設定しておく必要があります。</block>
   <block id="05d14520f5a3fd970bfca710b43ae17a" category="admonition">訓練実行中は、準備訓練の設定を編集することはできません。準備訓練を変更するには、「リセット」を選択してから、訓練を編集してください。</block>
   <block id="7820d7f245e7637e7833faccb183f36d" category="admonition">不審なユーザー行動に対する自動応答では、スナップショットしか取得できません。不審なユーザー行動に対する自動的な対応として、ユーザーをブロックすることはサポートされていません。</block>
+  <block id="ddebb8e31f83ddb3bde0b3a0292845dc" category="doc">ユーザー行動アラートからファイルパスを除外する</block>
+  <block id="33239db9e04a3b1473f3468fd2d9d99b" category="paragraph">Ransomware Resilience は、ユーザー行動監視アラートから特定のファイルパスを除外する機能をサポートしています。リスクがないと分かっているファイルパス、またはアラートを発生させる可能性のあるボリューム内のファイルに対して作業を行っている場合は、それらのファイルパスを除外することができます。</block>
+  <block id="f1780a3dd9362a514caa277752b942f2" category="inline-link-macro">アラートからファイルパスを除外する</block>
+  <block id="4cbd1bb5d6b8178b77b88be565a35c9b" category="paragraph">詳細については、<block ref="8c33118b4350e89c06a1a557095207c2" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="1d20fa647694e6811cd363111cf77538" category="inline-link-macro">特定のファイルパスとユーザー</block>
+  <block id="2e9d0337668c42840413047306ef5b57" category="admonition">データ侵害、データ破壊、および不審なユーザー行動のアラートについては、<block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>を設定する必要があります。また、<block ref="bd37368d247ac8892eb2f81e8ff6fc76" category="inline-link-macro-rx"></block>がアラートを生成しないようにすることもできます。</block>
+  <block id="75cd3815cc2e90d9679458215fb968dd" category="inline-link-macro">アラート設定とブロックされたユーザーを管理する</block>
+  <block id="84bc023659fbaeb1e92bb1563d94a709" category="list-text"><block ref="84bc023659fbaeb1e92bb1563d94a709" category="inline-link-macro-rx"></block></block>
+  <block id="0050dfe8b12d7f41e074b38a1584c2e0" category="summary">NetApp Ransomware Resilience でユーザーディレクトリコネクタを作成した後、ユーザーのブロックとブロック解除、アラート対象からのユーザー除外が可能です。ファイルパスをアラート生成の対象から除外することもできます。</block>
+  <block id="19355628ba4f308abb52b989d195cbf2" category="doc">NetApp Ransomware Resilienceにおけるアラートとブロックされたユーザーの管理</block>
+  <block id="ec80e76fb9a96ba31394caae7738733c" category="paragraph">ユーザー行動監視を NetApp Ransomware Resilience で設定した後、アラートをカスタマイズしたり、ブロックされたユーザーを管理したりできます。アラートをカスタマイズすることで、特定のユーザーやファイルパスをアラート生成の対象から除外できます。ユーザーのブロックは、ランサムウェアイベントに対応し、悪意のあるユーザー活動を防止することを目的としています。</block>
+  <block id="978942e6f751f778d0fea794ac36a5ed" category="list-title">除外ユーザーリストからユーザーを削除する</block>
+  <block id="0189c7f085ff5d22843080df2225281b" category="list-text">設定ダッシュボードで、ユーザーアクティビティカードを見つけて、**管理**を選択します。</block>
+  <block id="2a26cf4062a1ee4ec346c86574259847" category="list-text">UI から個々のユーザーを除外するには、**手動で選択**を選択します。</block>
+  <block id="144c603fbbde0985023a4ea73e22e35b" category="list-text">除外ユーザーの選択から削除するユーザーの名前を見つけます。ユーザー名の行のアクションメニュー（<block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>）を選択し、**削除**をクリックします。</block>
+  <block id="d6a20124c5d6d93a842f0081d06dac75" category="section-title">監視対象からファイルパスを除外する</block>
+  <block id="34b2f1838e031e0797b877cf1d2da3f4" category="paragraph">各ファイルパスはボリューム名で始まる必要があります。ボリュームには最大 3 つのサブディレクトリを含めることができます。たとえば、「volume/directory/subdirectory/subdirectory2」のように指定します。ファイルパスを除外するには、手動で入力するか、パスを一覧にした CSV ファイルをアップロードしてください。</block>
+  <block id="ba84271ee1ea783891cb6e404dfb3d53" category="list-text">「監視対象から除外」タブを選択します。</block>
+  <block id="b4a2bf9e81e72a625f2411631cceee8c" category="list-text">除外するファイルパスを入力するには、**追加**を選択します。</block>
+  <block id="2de7a68b6ff6ef34aae577dd6bfe5c03" category="list-text">UIにファイルパスを入力するには、「手動で入力」ラジオボタンを選択し、ファイルパスを入力します。たとえば、「volume/directory/subdirectory/」のように入力します。追加のファイルパスを入力するには、**ファイルパスを選択**を選択してください。</block>
+  <block id="3dac93d0e83abe331915c1ec220e04ac" category="list-text">ファイルパスのリストをアップロードするには、**アップロード**ラジオボタンを選択してください。アップロードボタンを選択して、CSV ファイルを選択してください。</block>
+  <block id="67510fe1e2eaace9d146396c21a7a119" category="paragraph">操作が正常に完了すると、Ransomware Resilience は、選択されたパス内のファイルを、不審なユーザー行動の監視対象から除外し始めます。設定メニューからいつでもパスの一覧を確認できます。ファイルパスの監視を再度有効にする必要がある場合は、リストからそれらを削除できます。</block>
+  <block id="ea1fca7315926f55d77bcab3ed051982" category="section-title">2026年7月7日</block>
+  <block id="4c0600f62cb13917f7a785731376b1cb" category="sidebar">アラートとブロックされたユーザーを管理する</block>
 </blocks>
