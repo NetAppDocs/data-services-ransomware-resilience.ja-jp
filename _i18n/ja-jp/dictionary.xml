@@ -2611,7 +2611,6 @@
   <block id="ddebb8e31f83ddb3bde0b3a0292845dc" category="doc">ユーザー行動アラートからファイルパスを除外する</block>
   <block id="33239db9e04a3b1473f3468fd2d9d99b" category="paragraph">Ransomware Resilience は、ユーザー行動監視アラートから特定のファイルパスを除外する機能をサポートしています。リスクがないと分かっているファイルパス、またはアラートを発生させる可能性のあるボリューム内のファイルに対して作業を行っている場合は、それらのファイルパスを除外することができます。</block>
   <block id="f1780a3dd9362a514caa277752b942f2" category="inline-link-macro">アラートからファイルパスを除外する</block>
-  <block id="4cbd1bb5d6b8178b77b88be565a35c9b" category="paragraph">詳細については、<block ref="8c33118b4350e89c06a1a557095207c2" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="1d20fa647694e6811cd363111cf77538" category="inline-link-macro">特定のファイルパスとユーザー</block>
   <block id="2e9d0337668c42840413047306ef5b57" category="admonition">データ侵害、データ破壊、および不審なユーザー行動のアラートについては、<block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>を設定する必要があります。また、<block ref="bd37368d247ac8892eb2f81e8ff6fc76" category="inline-link-macro-rx"></block>がアラートを生成しないようにすることもできます。</block>
   <block id="75cd3815cc2e90d9679458215fb968dd" category="inline-link-macro">アラート設定とブロックされたユーザーを管理する</block>
@@ -2632,4 +2631,5 @@
   <block id="67510fe1e2eaace9d146396c21a7a119" category="paragraph">操作が正常に完了すると、Ransomware Resilience は、選択されたパス内のファイルを、不審なユーザー行動の監視対象から除外し始めます。設定メニューからいつでもパスの一覧を確認できます。ファイルパスの監視を再度有効にする必要がある場合は、リストからそれらを削除できます。</block>
   <block id="ea1fca7315926f55d77bcab3ed051982" category="section-title">2026年7月7日</block>
   <block id="4c0600f62cb13917f7a785731376b1cb" category="sidebar">アラートとブロックされたユーザーを管理する</block>
+  <block id="5f2a57952e65084ab1bcb535d4662440" category="paragraph">詳細については、<block ref="8c33118b4350e89c06a1a557095207c2" category="inline-link-macro-rx"></block>を参照してください。</block>
 </blocks>
