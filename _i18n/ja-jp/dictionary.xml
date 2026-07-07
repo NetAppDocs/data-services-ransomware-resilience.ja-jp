@@ -435,9 +435,7 @@
   <block id="039a0f51fabaf695c33b745ebbd147bf" category="inline-link">コンソールエージェントを作成する方法</block>
   <block id="f9bf2b4f9267c7961cbfeea4412e4d63" category="paragraph">ランサムウェア耐性を使用してコンソールエージェントを作成するには、コンソールエージェントを作成する権限を持つコンソール組織管理者に連絡し、説明されているドキュメントを参照してください。<block ref="a747c66fa3a9e5a767b0d1460e988f0c" category="inline-link-rx"></block> 。</block>
   <block id="3b6afbed7c49d679fd061dcc03462ca9" category="admonition">コンソール エージェントが複数ある場合、Ransomware Resilience は、コンソールに現在表示されているエージェント以外のすべてのコンソール エージェントにわたってデータをスキャンします。このサービスは、この組織に関連付けられているすべてのプロジェクトとすべてのコンソール エージェントを検出します。</block>
-  <block id="427b8d3f96436f6a74500df89f6e5e4b" category="summary">新しく作成されたサンプル ワークロードに対するランサムウェア攻撃をシミュレートして、ランサムウェア対策訓練を実施します。次に、シミュレートされた攻撃を調査し、サンプルのワークロードを回復します。ランサムウェア対策訓練を複数回実行できます。</block>
   <block id="004823325f4227a58d03f7083e873d82" category="doc">NetApp Ransomware Resilienceでランサムウェア攻撃対策訓練を実施する</block>
-  <block id="1beda934b3626b55dcd019ee000eb5bb" category="admonition">実際のワークロード データは影響を受けません。</block>
   <block id="b308768da13f40be05907e77ea473622" category="paragraph">NFS および CIFS (SMB) ワークロードで準備ドリルを実行できます。</block>
   <block id="b6db234bfb48479bbe03939977a7b42c" category="section-title">ランサムウェア攻撃への備えの訓練を構成する</block>
   <block id="008b8b82922cab3483d70d8899f74b5c" category="inline-image-macro">準備ドリル実行ボタンが表示されているダッシュボードページ</block>
@@ -2579,12 +2577,8 @@
   <block id="acd27fc46144e7ce943b73180eb0d3a8" category="paragraph">NetApp Ransomware Resilienceでランサムウェア攻撃対策の訓練を実行し、実際のランサムウェア攻撃への備えをテストします。この対策訓練では、Ransomware Resilienceが新しいサンプル ワークロードに対する攻撃をシミュレートするため、実際の本番データに影響を与えることなく、シミュレートされた攻撃を調査してリカバリを実行できます。対策訓練は、アラート通知に慣れ、対応とリカバリの準備を整えるのに役立ちます。訓練は必要なときにいつでも何回でも実行できます。</block>
   <block id="537f8bf1cb00339aa74d0eb9f514b0df" category="list-text">準備訓練タイルで、**「構成」**を選択します。</block>
   <block id="58217f0a1f8bf12ba3006ea914fc528d" category="list-text">**準備訓練の種類**を選択してください。</block>
-  <block id="7b1c6c26786355a2591470660c65da62" category="inline-link-macro">カスタム復元</block>
-  <block id="0f17af467c79e20d3693f219481946ab" category="list-text">**カスタムリカバリ**: このドリルはアラートを作成し、リカバリポイントを設定する<block ref="03c74c192711f88b7d0a53dcc4c4539e" category="inline-link-macro-rx"></block>を実行できるようにします。</block>
   <block id="65b568f05372e5de535ad8c825aeb375" category="inline-link-macro">クリーン復元</block>
-  <block id="c4ea46b930e86e42d84d7d62143805bf" category="list-text">**クリーン復元**：この手順ではアラートが作成され、その後、最適な復旧ポイントへと案内する復旧プロセスである<block ref="d08d369745dba9c2b6dd002a205d6b5a" category="inline-link-macro-rx"></block>に移動します。</block>
   <block id="532361f2ad995113181b7cf1df1c5462" category="inline-link-macro">ユーザーアクティビティエージェント</block>
-  <block id="735dd28d475e0e047aa789767a8252e0" category="list-text">**データ侵害からの復旧**：この訓練では、ユーザーが開始したデータ侵害イベントに対するアラートを作成します。このドリルタイプを有効にする前に、<block ref="ea7722fd5c2c373bdaffcbde2ca3bbf6" category="inline-link-macro-rx"></block>を設定しておく必要があります。</block>
   <block id="74e66061c3c27ae398760dc1adda70dc" category="list-text">レディネスドリルテストを作成する環境を選択してください。</block>
   <block id="3026f14fd36d3165478399b611373fb8" category="list-text">**コンソールエージェント**と**システム**を選択します。</block>
   <block id="7cbdec3ae1628850b555ad8bb540d67e" category="list-text">**システム**を選択した後、あらかじめ表示されたリストから**ストレージVM**を選択してください。</block>
@@ -2595,7 +2589,6 @@
   <block id="022d85fe9248458ef65cf16481972329" category="list-text">訓練を開始するには：</block>
   <block id="81107e8f37cdb96dee7eb88d136b8e27" category="list-text">Ransomware Resilience ダッシュボードから、右上の「準備訓練を実行」ボタンを選択します。</block>
   <block id="b3833f107edd43c29b6874a2a10bef7a" category="list-text">または、**設定**に移動します。準備訓練タイルで、*開始*を選択します。</block>
-  <block id="f62bfcf4d7189e2ae5caf57497df14b5" category="admonition">訓練実行中は、準備訓練の設定を編集することはできません。準備訓練を変更するには、**リセット**を選択してから訓練を編集してください。</block>
   <block id="3798ead7c288ba8d157f0c0b116976de" category="list-text">「Readiness drill」の表示があるアラートを選択してください。</block>
   <block id="aa888903a6021760fd560a3f35a5fe39" category="paragraph">インシデントを確認する際には、以下の点を考慮してください。</block>
   <block id="aa823a078e061b627817667be59a3966" category="list-text">潜在的な攻撃の深刻度。</block>
@@ -2611,4 +2604,18 @@
   <block id="42caf31af7b0b287a88952c8986218ab" category="list-text">ステータスの横にある「編集」を選択して、ステータスを指定します。ステータスを以下のいずれかに変更します。</block>
   <block id="12c6663cbe23396ea86ae553869baab3" category="paragraph">準備訓練が完了したら、訓練に関するレポートを作成して保存できます。ドリルレポートは、検出ポリシー、アラートの種類とタイムスタンプ、攻撃の詳細、復旧状況などの情報を記録する JSON ファイルです。</block>
   <block id="4c5236fa54058c5de2620586b5275209" category="paragraph">ワークロードが「復元が必要」とマークされた後、NetApp Ransomware Resilience は、リカバリポイント実績値（RPA）を推奨し、クラッシュ耐性のあるリカバリのためのワークフローをオーケストレーションします。</block>
+  <block id="da60db99c4c18d3244ee8042d2e49214" category="summary">サンプルワークロードに対してランサムウェア攻撃をシミュレーションすることで、ランサムウェア対策訓練を実施します。次に、シミュレーションされた攻撃を調査し、サンプルワークロードを復元します。ランサムウェア対策訓練は複数回実施できます。</block>
+  <block id="bc057280e260f0d5b39e389c43a2b1d3" category="section-title">準備訓練の仕組み</block>
+  <block id="695e71e91ef5d7909ee4240515cabbc1" category="inline-link-macro">カスタムリカバリ</block>
+  <block id="01f2f9af50a7c029ac63c2cca055d4c6" category="inline-link-macro">データ侵害からの復旧</block>
+  <block id="ccfa1479deb2689401eb429cc06854de" category="paragraph">Ransomware Resilience は、<block ref="d08d369745dba9c2b6dd002a205d6b5a" category="inline-link-macro-rx"></block>、<block ref="aab2f7e4d863babb030e318d1d730c9b" category="inline-link-macro-rx"></block>、および <block ref="0a8d14a50d2701efa6ff6a56afe4b8f4" category="inline-link-macro-rx"></block> の3種類の訓練をサポートしています。クリーン復元とカスタムリカバリの訓練は、暗号化（エントロピー）に基づく攻撃をシミュレートし、提供するリカバリ方法が異なります。データ漏洩復旧訓練では、データに対する異常な読み取りパターンを用いて、データ流出をシミュレーションします。</block>
+  <block id="3e2cdf9795c074cd40ede70cbf85a9b9" category="paragraph">準備訓練を設定すると、Ransomware Resilience はテストボリュームを作成し、スナップショットポリシーを使用してボリュームにランサムウェア対策を適用し、接続性を検証し、ボリュームをマウントし、ベースラインデータをコピーし、ボリュームをアンマウントし、ベースラインスナップショットを作成します。</block>
+  <block id="fe2b3b951ec2ee39e3b94a78b27d6b96" category="paragraph">訓練を開始すると、Ransomware Resilienceはボリュームをマウントし、ランサムウェア攻撃をシミュレートします。準備訓練がカスタムリカバリまたはクリーンリストアのためのものである場合、テストボリュームのベースラインデータは、ランサムウェアであることが知られているファイル拡張子と、暗号化/エントロピー変更されたファイルに置き換えられます。データ侵害からの復旧訓練では、ファイルは置き換えられません。代わりに、Ransomware Resilienceは、攻撃者が体系的にデータを読み取り、持ち出す様子を模倣します。訓練の種類に関わらず、Ransomware Resilienceはアラートを発報し、アラートが正常に生成されたことを確認します。</block>
+  <block id="ec48be06a1fa5ff039c9c72596c427f2" category="paragraph">この訓練を実行すると、アラートへの対応をテストしたり、必要に応じて実際のデータに影響を与えることなく復旧プロセスを実行したりできます。</block>
+  <block id="5c443c5dabb6ec11bf27dce07c9fd377" category="inline-link-macro">カスタム復元</block>
+  <block id="e17d87cf10e73e1e3694a18b0b70c7af" category="list-text">**カスタムリカバリ**：暗号化（エントロピー）攻撃に対して、<block ref="80fac8a28dde36dd3a08a6d3cf5b9f5b" category="inline-link-macro-rx"></block>でリカバリポイントを設定します。</block>
+  <block id="22db649015dad497d63774a6e7d2af47" category="list-text">**クリーン復元**：暗号化（エントロピー）攻撃に対して、<block ref="d08d369745dba9c2b6dd002a205d6b5a" category="inline-link-macro-rx"></block>最適な復旧ポイントへと導く復旧プロセスで対応します。</block>
+  <block id="e3b01c4848ac6d1626374e4dee0f0685" category="list-text">**データ侵害からの復旧**：このドリルタイプを有効にする前に、<block ref="ea7722fd5c2c373bdaffcbde2ca3bbf6" category="inline-link-macro-rx"></block>を設定しておく必要があります。</block>
+  <block id="05d14520f5a3fd970bfca710b43ae17a" category="admonition">訓練実行中は、準備訓練の設定を編集することはできません。準備訓練を変更するには、「リセット」を選択してから、訓練を編集してください。</block>
+  <block id="7820d7f245e7637e7833faccb183f36d" category="admonition">不審なユーザー行動に対する自動応答では、スナップショットしか取得できません。不審なユーザー行動に対する自動的な対応として、ユーザーをブロックすることはサポートされていません。</block>
 </blocks>
