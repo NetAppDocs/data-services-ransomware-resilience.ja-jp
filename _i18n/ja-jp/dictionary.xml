@@ -2632,4 +2632,72 @@
   <block id="ea1fca7315926f55d77bcab3ed051982" category="section-title">2026年7月7日</block>
   <block id="4c0600f62cb13917f7a785731376b1cb" category="sidebar">アラートとブロックされたユーザーを管理する</block>
   <block id="5f2a57952e65084ab1bcb535d4662440" category="paragraph">詳細については、<block ref="8c33118b4350e89c06a1a557095207c2" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="088851556c5183ba62f78e52f665450d" category="summary">NetApp Ransomware Resilienceは、ユーザーアクティビティ監視を有効にすると、暗号化ベースのランサムウェア攻撃やデータ漏洩イベントをテストするためのスクリプトを提供します。</block>
+  <block id="f10a2790decd8276267a9325d2ec853c" category="doc">NetApp Ransomware Resilience で悪意のあるユーザーの行動をシミュレートする</block>
+  <block id="4e0329a11fc113704ab597dec933d4f9" category="paragraph">NetApp Ransomware Resilienceでユーザーアクティビティ監視を設定する場合、テストスクリプトを実行して不審なユーザー行動イベントをシミュレートできます。</block>
+  <block id="48870f5f7ec6a7cd18dda2260f3f863d" category="paragraph">このスクリプトは、既知のユーザーによって実行される暗号化ベースのランサムウェア攻撃をシミュレートするように設計されています。追加のコマンドを使用すれば、データ漏洩やデータ破壊攻撃をシミュレートすることも可能です。</block>
+  <block id="b61313cb99a86aa7c4af1cfa344ac6cd" category="section-title">スクリプトについて</block>
+  <block id="da3cedfecf043e3ceb03125c26fecc0d" category="paragraph">テストスクリプトは、マシン上でユーザーアクティビティ監視を有効にすると利用可能になります。スクリプトはシェルまたはPythonで実行できます。</block>
+  <block id="7e6f25d1d7385994a39a9ac6707d57d7" category="paragraph">データコレクターを作成したストレージVMのボリューム上でスクリプトを実行する必要があります。このスクリプトは、複数のサブディレクトリに少なくとも100個のファイルを含むテストデータのボリューム上で実行する必要があります。これらのファイルは、スクリプトを使用してプログラム的に生成できます。テストデータを作成する前にデータコレクターを一時停止し、作成後に再開してください。</block>
+  <block id="f2cd23a46c4739df7b265821b029b5e5" category="list-text">このスクリプトは、ユーザーによる暗号化イベントをシミュレートします。Linux システムでのみ実行できます。</block>
+  <block id="44be22ec8c354e86f26878a2e6869a6a" category="list-text">システムが NFSv4.1 を使用している場合は、ONTAP 9.15.1 以降を実行している必要があります。</block>
+  <block id="531cbc897b356bf21820a08095b8c1a8" category="list-text">このスクリプトは、シェルスクリプトとして実行することも、Pythonで実行することもできます。</block>
+  <block id="9a1b8a4eb3ef803a3599c362930c48b1" category="admonition">Python スクリプトを実行するには<block ref="d7c15ecbf1bd0b493d7d802a7d5593c8" category="inline-xref-macro-rx"></block>があります。</block>
+  <block id="bb6ebe7d3cdaa25ff6af3432f080a641" category="inline-link-macro">データコレクター</block>
+  <block id="8c03a22f9c95640c3bb8429f4bf5e109" category="paragraph">テストを実施するシステムで<block ref="25255e849fb901c2a60ef562973adcbd" category="inline-link-macro-rx"></block>を作成しておく必要があります。これには、ユーザーアクティビティエージェントを作成し、不審なユーザー行動検出を有効にしたランサムウェア対策戦略を設定する必要があります。</block>
+  <block id="0658a5d053bc56d26874c74f4f82eb95" category="section-title">Pythonスクリプトの要件</block>
+  <block id="aa4b3b0dd36ad2480f69ecbf85167a6f" category="paragraph">Pythonでスクリプトを実行するには、以下のものが必要です。</block>
+  <block id="8fae4712a65fdfaf48cbde542b2a9ade" category="inline-link-macro">Pythonバージョン3.5.2以降がインストールされています</block>
+  <block id="c16a7f3126c119e01f3735cfa03fcd14" category="list-text"><block ref="c16a7f3126c119e01f3735cfa03fcd14" category="inline-link-macro-rx"></block></block>
+  <block id="930c8d3ab7ccdfb89b6367f3e4c9e33a" category="inline-link-macro">pip をインストール済み</block>
+  <block id="05150bdac5efcf781bc7dc39187000ff" category="list-text"><block ref="05150bdac5efcf781bc7dc39187000ff" category="inline-link-macro-rx"></block></block>
+  <block id="c494a383b88b41e65ab6a667d5b86eab" category="list-text">PyCryptodome ライブラリをインストールしました：<block ref="194fc90597125afc86caf1d15cbf368c" prefix=" " category="inline-code"></block></block>
+  <block id="946a47fad0db31bcb1352814f354f62e" category="admonition">以下のコマンドでPythonのバージョンを確認できます<block ref="ac719163117fd79e0e5eddf5be2929c4" prefix=" " category="inline-code"></block>。pipのインストールは、以下のコマンドでテストできます<block ref="3327b3fc56e7d8a50b0df977a4c20e3b" prefix=" " category="inline-code"></block>。PyCryptodomeのインストールは、以下のコマンドでテストできます<block ref="ee7f1b491d78d8f365fc68f9f583d45a" prefix=" " category="inline-code"></block>。</block>
+  <block id="8f0b614002da860dc1e6531a85cb97f3" category="section-title">暗号化イベントをシミュレートする</block>
+  <block id="3eee06b6e6c02b14b6bf0a76a8e1ee71" category="list-title">システムの準備</block>
+  <block id="87e2110ce690ce81adb3e713b153b873" category="list-text">サンプルファイルが作成されるターゲットボリュームをLinuxマシンにマウントします。NFSまたはCIFSのエクスポートをマウントできます。</block>
+  <block id="1d1a594959ec615f56516f5d0f5e8ddb" category="open-title">NFS</block>
+  <block id="c6546b53840ec8245dd4d4d70fcdbc26" category="open-title">CIFS</block>
+  <block id="f50e5184fb8c928d7117d67711584443" category="inline-link-macro">ターゲットボリューム</block>
+  <block id="1673cf027945840c2811415d6232efdd" category="list-text"><block ref="3d3c2588c42d776cb353386bd6eee25e" category="inline-link-macro-rx"></block>を保護します。</block>
+  <block id="bc979566f738dcfe656a3b320c999839" category="list-text">データ収集を一時停止します。</block>
+  <block id="8c23ab446281c217db1cff12b27ccfd2" category="paragraph">Ransomware Resilienceで、**設定**を選択し、次にユーザー検出監視タイルで**管理**を選択します。データコレクタータブで、ストレージVMのデータコレクターを選択し、**一時停止**を選択します。</block>
+  <block id="a7a3e8f26a5ca674052385b91e2af3f9" category="list-text">暗号化するファイルを追加します。暗号化するファイルをターゲットフォルダまたはボリュームに手動でコピーするか、付属のスクリプトのいずれかを使用してプログラムでファイルを作成することができます。最低 100 個のファイルを追加する必要があります。</block>
+  <block id="7e82a47442c59e75e46f9fdd753262f1" category="paragraph">プログラムでファイルを作成するには：</block>
+  <block id="ea89b68c34ce4a63c0f77e17413c6e30" category="open-title">シェル</block>
+  <block id="c11cbcce6b0ad89ee99892b0be101ae0" category="list-text">ユーザーアクティビティエージェントを実行しているホストにログインします。</block>
+  <block id="2d58c6f19a717d43f32a96bdf10d6ea3" category="list-text">ファイラーのストレージVMから、NFSまたはCIFS共有をユーザーアクティビティエージェントを実行しているマシンにマウントします。テストに適したボリュームに作業ディレクトリを変更します。</block>
+  <block id="9b06fa9f212979fe62299f124d940ebb" category="list-text">ユーザーディレクトリのエージェントインストールディレクトリから、対象のマウント場所にスクリプトをコピーします。</block>
+  <block id="b3caaa68d416a8514777fe70cce61658" category="list-text">マウントされたディレクトリ内のスクリプトを使用して<block ref="ab2b6c413bb2ed5d0773bf72872cb574" prefix=" " category="inline-code"></block>コマンドを実行し、テストデータセットのフォルダとファイルを作成します。このコマンドは、マウントされたフォルダ内の「test_dataset」という名前のディレクトリに、拡張子の異なる100個の（空でない）ファイルを作成します。</block>
+  <block id="a7f5f35426b927411fc9231b56382173" category="open-title">Python</block>
+  <block id="81241013d4d86f41891746f6aa17b1cb" category="list-text">ユーザーディレクトリエージェントのインストールディレクトリから、スクリプトをターゲットボリュームにコピーします。</block>
+  <block id="6c9617bf31efa03703c1d95ebd8ae628" category="list-text">テストデータセットを作成します：<block ref="d9e54f0bcc3f9baa2eba11b3752679fa" prefix=" " category="inline-code"></block></block>
+  <block id="e334323c00387f9c7a97f89668f49278" category="paragraph">このコマンドは、マウントされたフォルダ内の「test_dataset」という名前のディレクトリに、拡張子の異なる100個の（空でない）ファイルを作成します。</block>
+  <block id="5f47ed0572459cd1bd9d24536a91b94f" category="list-text">コレクターを再開します。</block>
+  <block id="725f6a6f3ce0c97f02d177ac7f5837ea" category="paragraph">Ransomware Resilienceで、**設定**を選択し、次にユーザー検出監視タイルで**管理**を選択します。データコレクタータブで、ストレージVMのデータコレクターを選択し、**再開**を選択します。</block>
+  <block id="84777a8a48e5db1a305f8031c48714e7" category="paragraph-title">攻撃をシミュレートする</block>
+  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
+  <block id="a9d5986540c724cee5301f21be69fcdb" category="list-text">エージェントのインストールディレクトリからスクリプトをターゲットのマウント場所にコピーします：<block ref="494e32253615c0d68d99633322481510" prefix=" " category="inline-code"></block>。</block>
+  <block id="3691873db288ed4131190505aca1ca8b" category="list-text">マウントしたディレクトリでスクリプトを実行して、テストデータセットを暗号化してください：<block ref="63e7482ce629b80b8af855bab40816a3" prefix=" " category="inline-code"></block>。</block>
+  <block id="d4c261be6751956136d8899a67f73a3a" category="list-text">エージェントのインストールディレクトリからスクリプトをターゲットのマウント場所にコピーします：<block ref="384ad51ddad01da131e783aa5e8f11c5" prefix=" " category="inline-code"></block>。</block>
+  <block id="79f03c887a5b87f60dc11888eb1912c8" category="list-text">データを暗号化するスクリプトを実行してください：<block ref="fb27c7de1224eb6c593d86d443e08cba" prefix=" " category="inline-code"></block> 「test_dataset」内。</block>
+  <block id="c831854b6d1296b1799fcf60d7b7b23a" category="inline-link-macro">Ransomware Resilience Alerts メニューでアラートを確認してください</block>
+  <block id="a356ea555457a50fd1024b72eda469df" category="paragraph">スクリプトを実行した後、<block ref="947e5f30e76a2b5bc4762ca3a4aecff4" category="inline-link-macro-rx"></block>。</block>
+  <block id="ae5bda10485478daa986cdf30bc9e269" category="paragraph-title">Ransomware Resilienceで追加のアラートを生成する</block>
+  <block id="e05643c8bdde83ac8e66b25523f73c2e" category="paragraph">Ransomware Resilienceはユーザーの行動に適応するため、ユーザーが24時間以内に同じデータに対して同じ操作を繰り返した場合、後続のアラートは生成されません。したがって、単にデータを再暗号化して別のアラートを生成することはできません。追加のアラートを生成するには、テストデータを再作成してから暗号化するというプロセスを繰り返す必要があります。</block>
+  <block id="c7c8ba74ff4da532146fafc10096fb17" category="section-title">データ漏洩およびデータ破壊アラートをシミュレートする</block>
+  <block id="fa99409416aabd6f21788becebea7f8c" category="paragraph">Ransomware Resilienceは、データ侵害やデータ破壊イベントのシミュレーションもサポートしています。</block>
+  <block id="45bda3ef7e901d33873cbff1e6690379" category="admonition">ユーザーアラートが登録されるには、ユーザーがシステムに7日間以上アクティブである必要があります。</block>
+  <block id="cfad69f39333cee3e161b5244b11653e" category="list-text">保護ボリュームをマウントします。</block>
+  <block id="88f75a382c65ffd132afb22173b12253" category="list-text">データコレクターを一時停止する：</block>
+  <block id="60ce062ddaebd3a3bb4145e9ac9ec1cd" category="list-text">データセットを作成します。このコマンドは5,000個のファイルからなるデータセットを作成します。</block>
+  <block id="e50f2b72c469150557983c8e468853cd" category="list-text">データコレクターの操作を再開します</block>
+  <block id="7f9d9c534a11d35cdc123038548fbc5a" category="list-text">一括読み取りを実行する：</block>
+  <block id="a4d1f9df55cc0e951116c0a1ae2a8312" category="list-text">キャッシュをクリアする：</block>
+  <block id="12db011a51ee87b1a0fba45cff8aeca1" category="list-text">データ漏洩をシミュレートするために、すべてのファイルに対して読み取りを実行します。</block>
+  <block id="d70072b82ef29f9ccd9b78c13dcb0dd2" category="inline-link-macro">アラートダッシュボード</block>
+  <block id="30c987f189c1203506e252277c182117" category="list-text">データ漏洩の警告が表示されるまでお待ちください。アラートの存在を <block ref="cd880d4b431a9e359489824093adec00" category="inline-link-macro-rx"></block> で確認し、アラートの詳細を調査できます。</block>
+  <block id="92e8752dc37f12422b8f4598efa4f75e" category="list-text">アラートから必要な情報を判別したら、データを削除してください。</block>
+  <block id="b30a6af22c230e409ffe8e8aea6d40cd" category="sidebar">攻撃をシミュレーションする</block>
+  <block id="9146963b2f60b37c2a323f89b7563bb7" category="sidebar">悪意のあるユーザーイベントをシミュレートする</block>
 </blocks>

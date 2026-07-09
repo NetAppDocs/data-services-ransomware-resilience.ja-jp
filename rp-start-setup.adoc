@@ -16,6 +16,7 @@ NetApp Ransomware Resilience を簡単に導入できます。始める前に、
 
 
 
+[[prepare-the-backup-destination]]
 == バックアップ先を準備する
 
 次のいずれかのバックアップ先を準備します。
@@ -30,12 +31,14 @@ NetApp Ransomware Resilience を簡単に導入できます。始める前に、
 
 
 
+[[prepare-storagegrid-to-become-a-backup-destination]]
 === StorageGRIDをバックアップ先として準備する
 
 StorageGRIDをバックアップ先として使用する場合は、 https://docs.netapp.com/us-en/storagegrid-117/index.html["StorageGRIDドキュメント"^] StorageGRIDの詳細については、こちらをご覧ください。
 
 
 
+[[prepare-aws-to-become-a-backup-destination]]
 === AWSをバックアップ先として準備する
 
 * AWS にアカウントを設定します。
@@ -46,6 +49,7 @@ StorageGRIDをバックアップ先として使用する場合は、 https://doc
 
 
 
+[[prepare-azure-to-become-a-backup-destination]]
 === Azure をバックアップ先として準備する
 
 * Azure でアカウントを設定します。
@@ -56,6 +60,7 @@ StorageGRIDをバックアップ先として使用する場合は、 https://doc
 
 
 
+[[set-up-the-netapp-console]]
 == NetApp Consoleをセットアップする
 
 次のステップは、コンソールとランサムウェア耐性を設定することです。
@@ -64,6 +69,7 @@ StorageGRIDをバックアップ先として使用する場合は、 https://doc
 
 
 
+[[create-a-console-agent]]
 === コンソールエージェントを作成する
 
 このサービスを試用または使用するには、 NetApp の営業担当者にお問い合わせください。その後、コンソール エージェントを使用すると、ランサムウェア耐性のための適切な機能が含まれるようになります。

@@ -1,0 +1,220 @@
+---
+sidebar: sidebar 
+permalink: task-test-user-activity.html 
+keywords: readiness drill, data breach, data destruction, script, shell, python, user activity detection, simulation 
+summary: NetApp Ransomware Resilienceは、ユーザーアクティビティ監視を有効にすると、暗号化ベースのランサムウェア攻撃やデータ漏洩イベントをテストするためのスクリプトを提供します。 
+---
+= NetApp Ransomware Resilience で悪意のあるユーザーの行動をシミュレートする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilienceでユーザーアクティビティ監視を設定する場合、テストスクリプトを実行して不審なユーザー行動イベントをシミュレートできます。
+
+このスクリプトは、既知のユーザーによって実行される暗号化ベースのランサムウェア攻撃をシミュレートするように設計されています。追加のコマンドを使用すれば、データ漏洩やデータ破壊攻撃をシミュレートすることも可能です。
+
+
+
+[[about-the-script]]
+== スクリプトについて
+
+テストスクリプトは、マシン上でユーザーアクティビティ監視を有効にすると利用可能になります。スクリプトはシェルまたはPythonで実行できます。
+
+データコレクターを作成したストレージVMのボリューム上でスクリプトを実行する必要があります。このスクリプトは、複数のサブディレクトリに少なくとも100個のファイルを含むテストデータのボリューム上で実行する必要があります。これらのファイルは、スクリプトを使用してプログラム的に生成できます。テストデータを作成する前にデータコレクターを一時停止し、作成後に再開してください。
+
+
+
+[[considerations]]
+== 考慮事項
+
+* このスクリプトは、ユーザーによる暗号化イベントをシミュレートします。Linux システムでのみ実行できます。
+* システムが NFSv4.1 を使用している場合は、ONTAP 9.15.1 以降を実行している必要があります。
+* このスクリプトは、シェルスクリプトとして実行することも、Pythonで実行することもできます。
++
+
+NOTE: Python スクリプトを実行するには<<前提条件>>があります。
+
+
+
+
+
+[[before-you-begin]]
+== 開始する前に
+
+テストを実施するシステムでlink:suspicious-user-activity.html["データコレクター"]を作成しておく必要があります。これには、ユーザーアクティビティエージェントを作成し、不審なユーザー行動検出を有効にしたランサムウェア対策戦略を設定する必要があります。
+
+
+
+[[requirements-for-python-script]]
+[[prerequisites]]
+=== Pythonスクリプトの要件
+
+Pythonでスクリプトを実行するには、以下のものが必要です。
+
+* link:https://www.python.org/["Pythonバージョン3.5.2以降がインストールされています"^]
+* link:https://bootstrap.pypa.io/["pip をインストール済み"^]
+* PyCryptodome ライブラリをインストールしました： `pip install pycryptodome`
+
+
+
+TIP: 以下のコマンドでPythonのバージョンを確認できます `python --version`。pipのインストールは、以下のコマンドでテストできます `pip --version`。PyCryptodomeのインストールは、以下のコマンドでテストできます `pip show pycryptodome`。
+
+
+
+[[simulate-an-encryption-event]]
+== 暗号化イベントをシミュレートする
+
+.システムの準備
+. サンプルファイルが作成されるターゲットボリュームをLinuxマシンにマウントします。NFSまたはCIFSのエクスポートをマウントできます。
++
+[role="tabbed-block"]
+====
+.NFS
+--
+[code]
+----
+mount -t nfs -o vers=4.0 <SVM_data_LIF_IP>:/<export_path>/<mountPoint>
+mount -t nfs -o vers=4.0 <SVM_data_LIF_IP>:/<export_path>/<destinationLinuxFolder>
+----
+--
+.CIFS
+--
+[code]
+----
+mount -t cifs //<SVM_data_LIF_IP>/<share_name> /root/destinationfolder/ -o username=<username>
+----
+--
+====
+. link:suspicious-user-activity.html["ターゲットボリューム"]を保護します。
+. データ収集を一時停止します。
++
+Ransomware Resilienceで、**設定**を選択し、次にユーザー検出監視タイルで**管理**を選択します。データコレクタータブで、ストレージVMのデータコレクターを選択し、**一時停止**を選択します。
+
+. 暗号化するファイルを追加します。暗号化するファイルをターゲットフォルダまたはボリュームに手動でコピーするか、付属のスクリプトのいずれかを使用してプログラムでファイルを作成することができます。最低 100 個のファイルを追加する必要があります。
++
+プログラムでファイルを作成するには：
+
++
+[role="tabbed-block"]
+====
+.シェル
+--
+.. ユーザーアクティビティエージェントを実行しているホストにログインします。
+.. ファイラーのストレージVMから、NFSまたはCIFS共有をユーザーアクティビティエージェントを実行しているマシンにマウントします。テストに適したボリュームに作業ディレクトリを変更します。
+.. ユーザーディレクトリのエージェントインストールディレクトリから、対象のマウント場所にスクリプトをコピーします。
++
+[code]
+----
+cp <AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/create_dataset.sh
+----
+.. マウントされたディレクトリ内のスクリプトを使用して `./create_dataset.sh`コマンドを実行し、テストデータセットのフォルダとファイルを作成します。このコマンドは、マウントされたフォルダ内の「test_dataset」という名前のディレクトリに、拡張子の異なる100個の（空でない）ファイルを作成します。
+
+
+--
+.Python
+--
+.. ユーザーアクティビティエージェントを実行しているホストにログインします。
+.. ファイラーのストレージVMから、NFSまたはCIFS共有をユーザーアクティビティエージェントを実行しているマシンにマウントします。テストに適したボリュームに作業ディレクトリを変更します。
+.. ユーザーディレクトリエージェントのインストールディレクトリから、スクリプトをターゲットボリュームにコピーします。
++
+[code]
+----
+cp <AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/python/create_dataset.py
+----
+.. テストデータセットを作成します： `python create_dataset.py`
++
+このコマンドは、マウントされたフォルダ内の「test_dataset」という名前のディレクトリに、拡張子の異なる100個の（空でない）ファイルを作成します。
+
+
+
+--
+====
+. コレクターを再開します。
++
+Ransomware Resilienceで、**設定**を選択し、次にユーザー検出監視タイルで**管理**を選択します。データコレクタータブで、ストレージVMのデータコレクターを選択し、**再開**を選択します。
+
+
+
+.攻撃をシミュレートする
++
+
+[role="tabbed-block"]
+====
+.シェル
+--
+. エージェントのインストールディレクトリからスクリプトをターゲットのマウント場所にコピーします： `<AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/simulate_attack.sh`。
+. マウントしたディレクトリでスクリプトを実行して、テストデータセットを暗号化してください： `./simulate_attack.sh`。
+
+
+--
+.Python
+--
+. エージェントのインストールディレクトリからスクリプトをターゲットのマウント場所にコピーします： `<AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/simulate_attack.py`。
+. データを暗号化するスクリプトを実行してください： `python simulate_attack.py` 「test_dataset」内。
+
+
+--
+====
+.結果
+スクリプトを実行した後、link:rp-use-alert.html["Ransomware Resilience Alerts メニューでアラートを確認してください"]。
+
+.Ransomware Resilienceで追加のアラートを生成する
+Ransomware Resilienceはユーザーの行動に適応するため、ユーザーが24時間以内に同じデータに対して同じ操作を繰り返した場合、後続のアラートは生成されません。したがって、単にデータを再暗号化して別のアラートを生成することはできません。追加のアラートを生成するには、テストデータを再作成してから暗号化するというプロセスを繰り返す必要があります。
+
+
+
+[[simulate-data-breach-and-data-destruction-alerts]]
+== データ漏洩およびデータ破壊アラートをシミュレートする
+
+Ransomware Resilienceは、データ侵害やデータ破壊イベントのシミュレーションもサポートしています。
+
+
+NOTE: ユーザーアラートが登録されるには、ユーザーがシステムに7日間以上アクティブである必要があります。
+
+.手順
+. 保護ボリュームをマウントします。
++
+[code]
+----
+sudo mount -t nfs -o rw,hard,nfsvers=4.0,proto=tcp,noac,actimeo=0,lookupcache=none <SVM_data_LIF_IP>:/<export_path> /root/<volume>
+----
+. データコレクターを一時停止する：
++
+Ransomware Resilienceで、**設定**を選択し、次にユーザー検出監視タイルで**管理**を選択します。データコレクタータブで、ストレージVMのデータコレクターを選択し、**一時停止**を選択します。
+
+. データセットを作成します。このコマンドは5,000個のファイルからなるデータセットを作成します。
++
+[code]
+----
+mkdir -p ./data5k; seq -w 1 5000 | xargs -n1 -P2 -I{} bash -c 'sz=$((RANDOM%16+5)); LC_ALL=C tr -dc "A-Za-z0-9\n" < /dev/urandom | head -c "$((sz*1024))" > ./data5k/file_{}.txt'
+----
+. データコレクターの操作を再開します
++
+Ransomware Resilienceで、**設定**を選択し、次にユーザー検出監視タイルで**管理**を選択します。データコレクタータブで、ストレージVMのデータコレクターを選択し、**再開**を選択します。
+
+. 一括読み取りを実行する：
++
+.. キャッシュをクリアする：
++
+[code]
+----
+sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches >/dev/null
+----
+.. データ漏洩をシミュレートするために、すべてのファイルに対して読み取りを実行します。
++
+[code]
+----
+find ./data5k -type f -print0 | xargs -0 -n1 -P4 -I{} dd if={} of=/dev/null bs=1M iflag=direct status=none
+----
+
+
+. データ漏洩の警告が表示されるまでお待ちください。アラートの存在を link:rp-use-alert.html["アラートダッシュボード"] で確認し、アラートの詳細を調査できます。
+. アラートから必要な情報を判別したら、データを削除してください。
++
+[code]
+----
+ sudo setpriv --reuid 60001 --regid 60001 --groups 60001 bash -lc 'id -u; id -g; id -G; rm -rf ./data5k'
+----
+

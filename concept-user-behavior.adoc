@@ -25,6 +25,7 @@ IMPORTANT: 現在、SANワークロードにおけるユーザーアクティビ
 
 
 
+[[user-activity-forensics]]
 == ユーザーアクティビティのフォレンジック
 
 Ransomware Resilience は、ユーザーの行動に関するフォレンジックを提供します（疑わしいアクティビティが発生したときや通知が送信されたときを示すリストとグラフ）。これらは、ファイル、ディレクトリ、ボリューム、ワークロードにおける疑わしいアクティビティの頻度を経時的に詳細に示し、イベントのグラフ化に役立ちます。新しいファイル拡張子の出現も確認できます。
@@ -37,6 +38,7 @@ image:all-file-activity.png["すべてのファイルアクティビティビュ
 
 
 
+[[components]]
 == コンポーネント
 
 NetApp Ransomware Resilienceのユーザー行動検出には、3つの主要なコンポーネントがあります。
@@ -48,6 +50,7 @@ NetApp Ransomware Resilienceのユーザー行動検出には、3つの主要な
 
 
 
+[[ransomware-resilience-and-data-infrastructure-insights]]
 == ランサムウェア耐性とData Infrastructure Insights
 
 Ransomware Resilienceのユーザー行動検出は、Data Infrastructure Insights（DII）Workload Securityとの統合であり、link:reference-user-activity-requirements.html["DIIエンドポイント"]を使用します。Ransomware Resilienceでユーザー行動検出を有効にするために、DIIの設定は一切必要ありません。ユーザー行動検出を有効にするには、link:suspicious-user-activity.html["必要なエージェントとコレクターを作成し、適切なランサムウェア保護戦略を有効にする"]。
@@ -56,6 +59,7 @@ Ransomware Resilienceのユーザー行動検出は、Data Infrastructure Insigh
 
 
 
+[[next-steps]]
 == 次の手順
 
 * link:reference-user-activity-requirements.html["ユーザー行動検出の要件"]

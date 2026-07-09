@@ -4,6 +4,7 @@
 
 
 
+[[reporting-of-unsupported-working-environments-in-bluexp-ransomware-protection]]
 === BlueXP ransomware protectionにおけるサポートされていない作業環境の報告
 
 検出ワークフロー中に、サポートされているワークロードまたはサポートされていないワークロードにマウスを移動すると、 BlueXP ransomware protectionによって詳細が報告されます。これにより、一部のワークロードがBlueXP ransomware protectionサービスによって検出されない理由を理解するのに役立ちます。

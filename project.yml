@@ -78,8 +78,12 @@ sidebar:
           url: "/task-clean-restore-recover.html"
       - title: カスタムリストアで復旧
         url: "/rp-use-recover.html"
-    - title: 準備訓練を実施する
-      url: "/rp-start-simulate.html"
+    - title: 攻撃をシミュレーションする
+      entries:
+      - title: 準備訓練を実施する
+        url: "/rp-start-simulate.html"
+      - title: 悪意のあるユーザーイベントをシミュレートする
+        url: "/task-test-user-activity.html"
     - title: SIEMの設定
       url: "/task-siem.html"
     - title: SOARプレイブックを統合する

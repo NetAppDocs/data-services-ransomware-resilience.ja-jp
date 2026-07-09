@@ -28,6 +28,7 @@ Ransomware Resilienceプレイブックは、次の機能を提供します：
 
 
 
+[[playbooks]]
 == プレイブック
 
 Ransomware ResilienceはGoogle SecOps、Microsoft Sentinel、Splunk向けにプレイブックを提供しています。セットアップの詳細については、それぞれのGitHubページを確認してください。
