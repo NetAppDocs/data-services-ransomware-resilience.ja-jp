@@ -10,3 +10,12 @@
 Ransomware Resilience は、ユーザー行動監視アラートから特定のファイルパスを除外する機能をサポートしています。リスクがないと分かっているファイルパス、またはアラートを発生させる可能性のあるボリューム内のファイルに対して作業を行っている場合は、それらのファイルパスを除外することができます。
 
 詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-users-manage.html["アラートからファイルパスを除外する"^]を参照してください。
+
+
+
+[[arm-template-for-microsoft-sentinel]]
+=== Microsoft Sentinel の ARM テンプレート
+
+Ransomware Resilience は、Microsoft Sentinel を SIEM として接続するための Azure Resource Manager (ARM) テンプレートを提供するようになりました。これにより、デプロイを容易にするための二次的な方法が提供されます。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["脅威の検出と分析のためにSIEMに接続する"^]を参照してください。

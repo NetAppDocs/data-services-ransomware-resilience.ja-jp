@@ -17,10 +17,12 @@ NetApp Ransomware Resilienceは、以下のSIEMシステムをサポートして
 
 * AWS Security Hub
 * Google SecOps
-* Microsoft Sentinel
+* Microsoft Sentinel*
 * Splunk Cloud
 * Splunk Enterprise
 
+
+{asterisk} Ransomware Resilience は、Microsoft Sentinel 用の Azure Resource Manager (ARM) テンプレートも提供しています。
 
 
 TIP: Ransomware Resilienceには、link:reference-soar.html["セキュリティオーケストレーション、自動化、および対応（SOAR）プレイブック"^]も用意されています。

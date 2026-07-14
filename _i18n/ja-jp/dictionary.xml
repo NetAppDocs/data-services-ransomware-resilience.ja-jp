@@ -2700,4 +2700,10 @@
   <block id="92e8752dc37f12422b8f4598efa4f75e" category="list-text">アラートから必要な情報を判別したら、データを削除してください。</block>
   <block id="b30a6af22c230e409ffe8e8aea6d40cd" category="sidebar">攻撃をシミュレーションする</block>
   <block id="9146963b2f60b37c2a323f89b7563bb7" category="sidebar">悪意のあるユーザーイベントをシミュレートする</block>
+  <block id="edf20e41ca56535f9914b651d4176206" category="section-title">Microsoft Sentinel の ARM テンプレート</block>
+  <block id="7add8fc88b51e4a92eb3463aed73b61d" category="paragraph">Ransomware Resilience は、Microsoft Sentinel を SIEM として接続するための Azure Resource Manager (ARM) テンプレートを提供するようになりました。これにより、デプロイを容易にするための二次的な方法が提供されます。</block>
+  <block id="5b782deb754617d2be1da0beb60e5b16" category="inline-link-macro">脅威の検出と分析のためにSIEMに接続する</block>
+  <block id="861174940ee146accf84fbe687b7ff1c" category="paragraph">詳細については、<block ref="9ce2483ddf8d37cd167d593bafc6e6e7" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="ae00487184e64f3a5e5738cc82621c2c" category="list-text">Microsoft Sentinel*</block>
+  <block id="daea42ccacab5543f1ae62da54cc9877" category="paragraph">{asterisk} Ransomware Resilience は、Microsoft Sentinel 用の Azure Resource Manager (ARM) テンプレートも提供しています。</block>
 </blocks>
