@@ -1,0 +1,21 @@
+= ウェブフックを介してSIEMを設定する
+:allow-uri-read: 
+
+
+
+
+[[configure-siem-through-webhooks]]
+=== ウェブフックを介してSIEMを設定する
+
+Ransomware Resilienceは、Ransomware Resilience UIでWebhookを介してセキュリティ情報およびイベント管理（SIEM）システムを設定する機能をサポートするようになりました。Webhookを使用すれば、お好みのSIEMシステムを連携させてランサムウェアの監視を効率化できます。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["SIEMシステムを構成する"^]を参照してください。
+
+
+
+[[email-alerts-for-automated-responses-to-user-activity-events]]
+=== ユーザーアクティビティイベントに対する自動応答のメールアラート
+
+Ransomware Resilienceは、ユーザーアクティビティイベントによって自動応答がトリガーされた際にメール通知を送信するようになりました。これにより、Ransomware Resilienceおよびランサムウェアの活動状況に関する明確性と可視性が向上します。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-automate-user-activity.html["ユーザーアクティビティアラートへの対応を自動化する"^]を参照してください。
