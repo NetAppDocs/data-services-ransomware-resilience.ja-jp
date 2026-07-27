@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-user-activity-requirements.html 
-keywords: data breach detection, data breach, user activity, suspicious, anomalous, requirements, end points, operating systems, networking 
+keywords: data breach detection, data breach, user activity, suspicious, anomalous, requirements, endpoints, operating systems, networking 
 summary: ユーザーアクティビティエージェントやその他のコレクターを作成する前に、概説されているオペレーティングシステム、サーバー、およびネットワークの要件を満たしていることを確認する必要があります。 
 ---
 = NetApp Ransomware Resilienceのユーザーアクティビティ検出要件
@@ -14,14 +14,14 @@ summary: ユーザーアクティビティエージェントやその他のコ�
 [role="lead"]
 NetApp Ransomware Resilienceユーザー行動検出により、ユーザーレベルのランサムウェア イベントに対応できるようになります。ユーザーの動作検出を有効にするには、エージェントのセットを作成する必要があります。検出を有効にする前に、Ransomware Resilienceがイベントを適切に検出して報告できるように、概説されているオペレーティング システム、サーバー、およびネットワークの要件を満たしていることを確認する必要があります。
 
-オンプレミス ONTAP システム、Amazon FSx for NetApp ONTAP、および <<クラウドプロバイダのサポート>> に準拠する Cloud Volumes ONTAP システムのワークロードにおけるユーザー行動検出は、Ransomware Resilience でサポートされています。
 
 
+[[user-activity-agent-cloud-provider-support]]
+== ユーザーアクティビティエージェントクラウド プロバイダサポート
 
-[[cloud-provider-support]]
-== クラウドプロバイダのサポート
+ユーザー行動の検出を有効にするには、ユーザーアクティビティエージェントを作成する必要があります。ユーザーアクティビティエージェントは、データコレクターの実行可能な環境であり、ユーザーアクティビティイベントを Ransomware Resilience と共有します。
 
-ユーザー行動データは、AWSおよびAzureの以下のリージョンに保存できます：
+ユーザーアクティビティエージェントは、AWSおよびAzureの以下のリージョンにデプロイできます：
 
 |===
 | クラウド プロバイダ | リージョン 
@@ -37,6 +37,9 @@ NetApp Ransomware Resilienceユーザー行動検出により、ユーザーレ�
 
 | Azure | 米国東部 
 |===
+
+NOTE: ユーザーアクティビティエージェントの地域展開は、コンソールエージェントには影響を与えません。コンソールエージェントの展開は、これらのリージョンとは独立しています。
+
 
 
 [[operating-system-requirements]]
@@ -78,7 +81,7 @@ NetApp Ransomware Resilienceユーザー行動検出により、ユーザーレ�
 
 NOTE: ユーザー アクティビティ エージェントに使用するマシンは、他のアプリケーションレベルのソフトウェアを実行しないでください。専用サーバーをお勧めします。
 
-その `unzip` インストールにはコマンドが必要です。その `sudo su -` インストール、スクリプトの実行、アンインストールにはコマンドが必要です。
+ `unzip`コマンドはインストールに必要です。 `sudo su -`コマンドは、インストール、スクリプトの実行、およびアンインストールに必要です。
 
 
 
@@ -97,8 +100,8 @@ NOTE: ユーザー アクティビティ エージェントに使用するマシ
 [[server-recommendations]]
 === サーバーの推奨事項
 
-* ファイルシステムの作成を可能にするために追加のディスク領域を割り当てます。ファイルシステムに少なくとも 35 GB の空き領域があることを確認します。+ もし `/opt` NAS ストレージからマウントされたフォルダーであるため、ローカル ユーザーはこのフォルダーにアクセスできる必要があります。ローカル ユーザーに必要な権限がない場合、ユーザー アクティビティ エージェントの作成が失敗する可能性があります。
-* ユーザーアクティビティエージェントは、Ransomware Resilienceとは別のシステムにインストールすることを推奨します。同じマシンにインストールする場合は、50～55 GBのディスク容量を確保する必要があります。Linuxの場合は、 `/opt/netapp`に25～30 GBのスペースを割り当て、 `var/log/netapp`に25 GBを割り当てます。
+* ファイルシステムの作成に備えて、追加のディスク容量を確保してください。ファイルシステムに少なくとも 35 GB の空き容量があることを確認してください。+  `/opt` が NAS ストレージからマウントされたフォルダである場合、ローカルユーザーはこのフォルダへのアクセス権を持っている必要があります。ローカルユーザーに必要な権限がない場合、ユーザーアクティビティエージェントの作成が失敗する可能性があります。
+* ユーザーアクティビティエージェントは、Ransomware Resilience 環境とは別のシステムにインストールすることをお勧めします。エージェントと Ransomware Resilience を同じマシンにインストールする場合は、50～55 GB のディスク容量を確保してください。Linux の場合、 `/opt/netapp`に 25～30 GB のスペースを割り当て、 `var/log/netapp`に 25 GB を割り当ててください。
 * Network Time Protocol (NTP) または Simple Network Time Protocol (SNTP) を使用して、 ONTAPシステムとユーザー アクティビティ エージェント マシンの両方の時刻を同期することをお勧めします。
 
 
@@ -160,7 +163,7 @@ Ransomware Resilienceは、システム上で実行してイベントデータ�
 IMPORTANT: 初期インストール時に、 `<site_name>`をワイルドカード(`*`）権限に置き換えます。エージェントがアクティブ化され、完全に動作可能になったら、権限をサイト名に置き換えることができます。サイト名については、NetAppの担当者にお問い合わせください。
 
 
-NOTE: ユーザアクティビティエージェントはNetApp Data Infrastructure Insightsテクノロジを使用するため、 `cloudinsights`エンドポイントを使用します。詳細については、次を参照してください。
+NOTE: ユーザアクティビティエージェントはNetApp Data Infrastructure Insightsテクノロジを使用するため、 `cloudinsights`エンドポイントを使用します。詳細については、link:concept-user-behavior.html#user-activity-forensics["ランサムウェア耐性とData Infrastructure Insights"]を参照してください。
 
 
 
@@ -176,7 +179,7 @@ NOTE: ユーザアクティビティエージェントはNetApp Data Infrastruct
 * <site_name>.cs01-ap-1.cloudinsights.netapp.com
 * <site_name>.c01-ap-1.cloudinsights.netapp.com
 * <site_name>.c02-ap-1.cloudinsights.netapp.com
-* gentlogin.cs01-ap-1.cloudinsights.netapp.com
+* agentlogin.cs01-ap-1.cloudinsights.netapp.com
 
 | ランサムウェア耐性へのアクセス 
 |===
@@ -226,7 +229,7 @@ NOTE: ユーザアクティビティエージェントはNetApp Data Infrastruct
 | プロトコル | ポート | ソース | デスティネーション | 説明 
 
 
-| TCP | 389(LDAP) 636 (LDAP / start-tls) | ユーザーアクティビティエージェント | LDAP Server URL | LDAPに接続する 
+| TCP | 389（LDAP）636（LDAPS / start-tls） | ユーザーアクティビティエージェント | LDAP Server URL | LDAPに接続する 
 
 
 | HTTPS（TCP） | 443 | ユーザーアクティビティエージェント | クラスタまたは SVM 管理 IP アドレス (SVM コレクターの構成によって異なります) | ONTAPとのAPI通信 
@@ -234,7 +237,7 @@ NOTE: ユーザアクティビティエージェントはNetApp Data Infrastruct
 
 | TCP | 35000 - 55000  a| 
 SVMデータLIF IPアドレス
-| ユーザーアクティビティエージェント | Fpolicy イベントに関するONTAPからユーザー アクティビティ エージェントへの通信。ONTAP がイベントをユーザー アクティビティ エージェントに送信するには、ユーザー アクティビティ エージェントに対してこれらのポートを開く必要があります。これには、ユーザー アクティビティ エージェント自体のファイアウォール（存在する場合）も含まれます。+ **注意:** これらのポートをすべて予約する必要はありませんが、予約するポートはこの範囲内である必要があります。まずは 100 個のポートを予約し、必要に応じて増やすことをお勧めします。 
+| ユーザーアクティビティエージェント | Fpolicy イベントのユーザー アクティビティ エージェントへの ONTAP からの通信。これらのポートは、ユーザー アクティビティ エージェント自体のファイアウォール（存在する場合）を含め、ONTAP がイベントを送信できるよう、ユーザー アクティビティ エージェントに向けて開放されている必要があります。+ **注：** これらのポートの *すべて* を予約する必要はありませんが、予約するポートはこの範囲内である必要があります。まず 100 個のポートを予約し、必要に応じて増やすことをお勧めします。 
 
 
 | TCP | 35000-55000 | クラスタ管理IP | ユーザーアクティビティエージェント | ONTAPクラスタ管理 IP から *EMS イベント* のユーザ アクティビティ エージェントへの通信。ONTAP がEMS イベントを送信するには、ユーザ アクティビティ エージェント自体のファイアウォールも含めて、これらのポートをユーザ アクティビティ エージェントに対して開く必要があります。+ **注意:** これらのポートをすべて予約する必要はありませんが、予約するポートはこの範囲内である必要があります。まずは 100 個のポートを予約し、必要に応じて増やすことをお勧めします。 
