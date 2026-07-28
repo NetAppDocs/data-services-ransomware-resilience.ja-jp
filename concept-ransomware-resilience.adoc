@@ -172,7 +172,7 @@ image:diagram-rp-architecture-preview3.png["ランサムウェア耐性アーキ
 [[attack-types]]
 === 攻撃の種類
 
-NetApp Ransomware Resilienceは、5種類の攻撃を認識します：
+Ransomware Resilienceは、5種類のランサムウェア攻撃を認識します：
 
 [cols="25,75"]
 |===

@@ -34,12 +34,39 @@ Ransomware Resilience は、link:task-clean-restore-recover.html["クリーン�
 [[configure-a-ransomware-attack-readiness-drill]]
 == ランサムウェア攻撃への備えの訓練を構成する
 
+シミュレーションを実行する前に、準備訓練を設定する必要があります。特定の種類のランサムウェア攻撃に対応した準備訓練を作成する必要があります。Ransomware Resilienceは、5種類の攻撃を認識します：
+
+[cols="25,75"]
+|===
+| 攻撃タイプ | 説明 
+
+
+| 暗号化（エントロピー） | ランサムウェア耐性機能は、異常なIOPSパターン、データエントロピー、および非標準のファイル拡張子を認識します。 
+
+
+| 暗号化（ユーザーの動作） | ランサムウェア耐性機能は、特定のユーザーによって実行された異常なファイルの読み取り、書き込み、および名前変更アクティビティを特定します。 
+
+
+| データ侵害 | NetApp Ransomware Resilienceは、特定のユーザーによって実行された異常なファイル読み取りアクセスパターンを検出します。 
+
+
+| データ破壊 | NetApp Ransomware Resilienceは、特定のユーザーによるファイルの大量削除を検出します。 
+
+
+| 疑わしいユーザー行動 | Ransomware Resilienceは、データ侵害、データ破壊、暗号化の範囲を超える異常な動作を特定します。 
+|===
 *必須コンソールロール*：このタスクを実行するには、link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["スーパー管理者"^]またはRansomware Resilience管理者ロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^]。
 
 .手順
 . ランサムウェア耐性で、[**設定**] を選択します。
-. 準備訓練タイルで、**「構成」**を選択します。
-. **準備訓練の種類**を選択してください。
+. 設定ページの「準備訓練」カードで、*設定*を選択します。
++
+コンソールには「準備訓練の設定」ページが表示されます。
+
++
+image:screen-settings-alert-drill-configure.png["準備訓練ページの設定"]
+
+. *ランサムウェア攻撃の種類*を選択します。
 +
 ** **カスタムリカバリ**：暗号化（エントロピー）攻撃に対して、link:rp-use-recover.html["カスタム復元"]でリカバリポイントを設定します。
 ** **クリーン復元**：暗号化（エントロピー）攻撃に対して、link:task-clean-restore-recover.html["クリーン復元"]最適な復旧ポイントへと導く復旧プロセスで対応します。
@@ -52,16 +79,13 @@ Ransomware Resilience は、link:task-clean-restore-recover.html["クリーン�
 .. **システム**を選択した後、あらかじめ表示されたリストから**ストレージVM**を選択してください。
 .. **新しいテストワークロード**に名前を付けてください。テストワークロードの先頭に「rps_test_」が付加されます。
 .. 準備訓練がデータ侵害からの復旧に関するものである場合は、訓練環境の**ユーザーアクティビティエージェント**を選択してください。
-+
-image:screen-settings-alert-drill-configure.png["準備訓練の設定オプションのスクリーンショット。"]
-
 
 
 . *保存*を選択します。
 
 
 
-TIP: 準備ドリルの構成は、後で設定ページを使用して編集できます。
+TIP: 準備訓練の設定は、後で設定ページから編集できます。
 
 
 
@@ -73,15 +97,8 @@ TIP: 準備ドリルの構成は、後で設定ページを使用して編集で
 *必須コンソールロール*：このタスクを実行するには、link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["スーパー管理者"^]またはRansomware Resilience管理者ロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^]。
 
 .手順
-. 訓練を開始するには：
-+
-** Ransomware Resilience ダッシュボードから、右上の「準備訓練を実行」ボタンを選択します。
-+
-image:screen-dashboard.png["準備ドリル実行ボタンが表示されているダッシュボードページ"]
-
-** または、**設定**に移動します。準備訓練タイルで、*開始*を選択します。
-
-
+. ランサムウェア耐性で、[**設定**] を選択します。
+. 設定ページで「開始」を選択します。
 
 
 
@@ -98,13 +115,7 @@ NOTE: 訓練実行中は、準備訓練の設定を編集することはでき�
 
 .手順
 . ランサムウェア耐性メニューから、「アラート」を選択します。
-+
-コンソールにアラート ページが表示されます。アラート ID 列の ID の横に「準備ドリル」が表示されます。
-
-+
-image:screen-alerts-readiness.png["準備訓練の警告を表示するアラートページ"]
-
-. 「Readiness drill」の表示があるアラートを選択してください。
+. 「準備訓練」の表示があるアラートを選択してください。インシデントアラートの一覧は、「アラートの詳細」ページに表示されます。
 +
 image:screen-alerts-readiness-details.png["準備訓練アラートを表示するアラートの詳細ページ"]
 
@@ -121,8 +132,15 @@ image:screen-alerts-readiness-incidents2.png["準備訓練の警告を表示す�
 +
 重大度により、ユーザーが悪意のあるアクティビティを行っている疑いがあることが示されている場合は、ユーザー名を確認します。また、link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior["ユーザーをブロックします。"]
 
-* ファイルアクティビティと予想レートの比較。これには、読み取り / 書き込みレート、ファイル作成、ファイル名変更、および削除が含まれます。
-* 影響を受けるファイルのリスト。攻撃の原因となっている可能性のある拡張子を確認してください。
+* ファイルアクティビティと疑わしいプロセスを確認します。
++
+** 受信した検出データと期待されるデータを比較してください。
+** 検出されたファイルの作成率を、予想される作成率と比較して確認してください。
+** 検出されたファイル名変更率を、予想される変更率と比較して確認してください。
+** 削除率を予想削除率と比較してみてください。
+
+
+* 影響を受けるファイルのリストを確認してください。攻撃の原因となっている可能性のある拡張機能を確認してください。
 * 影響を受けるファイルとディレクトリの数を確認して、攻撃の影響と範囲を判断します。
 
 

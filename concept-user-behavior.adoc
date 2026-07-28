@@ -58,6 +58,9 @@ Ransomware Resilienceのユーザー行動検出は、Data Infrastructure Insigh
 すでにNetApp Data Infrastructure Insights（DII）Workload Security を使用している場合は、Ransomware Resilience に同じ Workload Security エージェントを使用することをお勧めします。Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナント間のペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。
 
 
+TIP: ワークロードセキュリティを設定済みであれば、link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_create_webhook.html#creating-a-webhook["DII ウェブフック"^]からアラートを設定できます。
+
+
 
 [[next-steps]]
 == 次の手順

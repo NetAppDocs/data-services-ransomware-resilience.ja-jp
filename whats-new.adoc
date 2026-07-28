@@ -18,6 +18,40 @@ NetApp Ransomware Resilienceの新機能についてご確認ください。
 
 
 
+[[27-july-2026]]
+== 2026年7月27日
+
+
+
+[[standardize-protection-groups-based-on-workload-and-system-type]]
+=== ワークロードとシステムタイプに基づいて保護グループを標準化する
+
+ランサムウェア対策機能では、保護グループにはワークロードの種類とシステムの種類がそれぞれ1つずつしか含まれないように強制されるようになりました。新しい保護グループを作成する際には、ワークロードの種類（ファイルシステムまたはブロック）と、ワークロードを実行するシステムの両方を指定する必要があります。この機能強化により、保護グループに対して選択されたランサムウェア対策戦略が、グループ内のすべてのワークロードに確実に適用できるようになります。
+
+システムタイプとワークロードタイプが混在する既存の保護グループがある場合は、引き続き使用できますが、保護グループにワークロードを追加することはできません。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-protection-group.html["保護グループを作成する"^]を参照してください。
+
+
+
+[[readiness-drill-enhancement]]
+=== 即応訓練の強化
+
+Ransomware Resilienceにより、攻撃の種類に基づいた準備訓練を実施できるようになりました。Ransomware Resilienceは5種類の攻撃を検知し、それぞれの攻撃に対する準備訓練を実施することで、攻撃と復旧のプロセスをシミュレーションし、ランサムウェア攻撃への備えを把握することができます。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html["準備訓練を実施する"^]を参照してください。
+
+
+
+[[pause-or-delete-a-siem-system]]
+=== SIEMシステムを一時停止または削除する
+
+Ransomware ResilienceのUIに、SIEMシステムを一時停止または削除するオプションが追加されました。この機能強化により、トラブルシューティングやメンテナンスのためにシステムを一時的に無効化したり、システムを完全に削除したりすることが容易になります。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html#disable-a-siem-system["SIEMシステムを無効にする"^]を参照してください。
+
+
+
 [[20-july-2026]]
 == 2026年7月20日
 
