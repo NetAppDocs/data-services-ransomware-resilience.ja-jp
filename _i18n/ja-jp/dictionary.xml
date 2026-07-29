@@ -197,7 +197,6 @@
   <block id="5fefe6c4ada89d95390ae77eba79e7db" category="cell">*回復する*</block>
   <block id="059d032d5bb8125e3e1681f7d9ce6023" category="list-text">バックアップとリカバリ、 ONTAP、自律型ランサムウェア保護 ( ONTAPのバージョンに応じて ARP または ARP/AI)、および FPolicy のテクノロジとサービスを使用して、最適なスナップショットまたはバックアップを決定し、最適な RPA (実際の復旧ポイント) を推奨します。</block>
   <block id="4ddd3abee434eb92eb13e6cac3e1ad1d" category="cell">*統治*</block>
-  <block id="cc4378b1dc9af2e69cb13a88397e2aa7" category="list-text">ランサムウェア対策戦略を割り当てる</block>
   <block id="4f743c093ec077920561596aa32a74f6" category="section-title">サポートされているバックアップターゲット、システム、ワークロードデータソース</block>
   <block id="b45c27598e81de132cbcf41c4f6124d9" category="paragraph">Ransomware Resilience は、次のバックアップ ターゲット、システム、およびデータ ソースをサポートします。</block>
   <block id="736ca911d7d143d01bd8cbfe0d4afbca" category="list-text">Amazon Web Services（AWS）S3</block>
@@ -521,7 +520,6 @@
   <block id="6faff9d182a89c619b1ad36913af4fa5" category="list-text">ワークロードの回復を開始するには、メッセージで「*ワークロードの回復*」を選択するか、「*回復*」タブを選択します。</block>
   <block id="dbb2ae89216b8dfda3662d01ab32469f" category="paragraph">アラートが復元対象としてマークされると、アラートは [アラート] タブから [回復] タブに移動します。</block>
   <block id="d3870301348c9947a819b7a9ed0c25df" category="section-title">潜在的な攻撃ではないインシデントを無視する</block>
-  <block id="5a5533258cfacee641d19f7f201b727f" category="paragraph">ワークロードを閉じると、潜在的なランサムウェア攻撃に応じて自動的に作成されたすべてのスナップショット コピーが完全に削除されます。</block>
   <block id="c4229f2836db3c8f0198619d853bad27" category="list-text">インシデントが脅威ではないと判断した場合は、誤検知として無視します。</block>
   <block id="a20ff2150b7b9f34f30c94111d0f2672" category="list-text">インシデントを選択します。</block>
   <block id="4c8220d9b08f6a99b99ca2a31e910796" category="list-text">表の上にある*ステータスの編集*ボタンを選択します。</block>
@@ -1446,8 +1444,6 @@
   <block id="be8cc003074f86f2bc2b3ef0d2f3a334" category="list-text">各ボリュームのNetAppスナップショット コピーとバックアップ ポリシーの現在の保護レベルと、オンボックス検出機能を検出します。ランサムウェア耐性は、バックアップとリカバリ、 ONTAPサービス、Autonomous Ransomware Protection ( ONTAP のバージョンに応じて ARP または ARP/AI)、FPolicy、バックアップ ポリシー、スナップショット ポリシーなどのNetAppテクノロジーを使用して、この保護態勢をワークロードに関連付けます。詳細はこちら<block ref="f30128629f1afb4b75b9a7fc6de548bc" category="inline-link-rx"></block>、<block ref="2b1b7f994c6938347657a18d8edc7db7" category="inline-link-rx"></block> 、 そして<block ref="591ebe16737e602cc342b68e859c040e" category="inline-link-rx"></block>。</block>
   <block id="ee1bc5da2dde4f02ef7aa47df921506a" category="doc">NetApp Ransomware Resilienceのアラートを管理する</block>
   <block id="6fe459ab097d6c4270e2ad317a017b93" category="paragraph">アラート インシデントには、次の状態があります。</block>
-  <block id="c95e7dd9856afddc701e5bf3b384f093" category="paragraph">インシデントを確認した後、そのインシデントが潜在的な攻撃であるかどうかを判断する必要があります。実際の脅威ではない場合は、無視できます。</block>
-  <block id="c73a9fafaefc34f0b97adbaba4200dc9" category="paragraph">誤検知を無視するか、すぐにデータを回復することを決定できます。アラートを無視すると、Ransomware Resilience はこの動作を学習し、通常の操作と関連付けて、そのような動作に対して再度アラートを開始しなくなります。</block>
   <block id="ea3cf0f8eb2106f78fd9e62d674bd7c0" category="list-text">1 つ以上のインシデントを選択します。または、表の左上にあるインシデント ID ボックスを選択して、すべてのインシデントを選択します。</block>
   <block id="845279243191f55592e2d4438456de67" category="list-text">[ステータスの編集] ボックスから、[*却下*] ステータスを選択します。</block>
   <block id="c66f0ec622b69a240be9821f2dbbb082" category="paragraph">ワークロードと削除されたスナップショット コピーに関する追加情報が表示されます。</block>
@@ -1881,7 +1877,6 @@
   <block id="dbc85b383817f560c0d1b083f4449627" category="list-text">接続性をテストする</block>
   <block id="870d0fb8b0bf7879e6ada101131c6864" category="list-text">エンリッチメントジョブのステータスを確認する</block>
   <block id="5156f3fe3404db2816f53b4f01711a75" category="section-title">プレイブック</block>
-  <block id="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="list-text"><block ref="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="inline-link-macro-rx"></block></block>
   <block id="4655146bfbabab7fd679c2d1ca7a8d15" category="list-text"><block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block></block>
   <block id="fcd13f38c6a87165a33577bfdd3654b4" category="inline-link-macro">Splunkbase</block>
   <block id="2a89449caab8a2ca7d825a1c6a44640c" category="admonition">Splunk Cloud では、プラットフォーム バージョン 7.0、7.1、7.2、8.0、または 8.4 を実行している必要があります。詳細については、<block ref="258077ff9a23292548ab7c25d009028a" category="inline-link-macro-rx"></block>を参照してください。</block>
@@ -1901,7 +1896,6 @@
   <block id="895dff905f51ff367d108afbf6e634a7" category="inline-link-macro">SOARプレイブック</block>
   <block id="d8fdc2681cdec613a02ac551c44a6e8c" category="section-title">2026年3月31日</block>
   <block id="d0c1ba6e120f697911d5bd92a51f0322" category="paragraph">Ransomware Resilienceは、<block ref="d942356c034f7ad3c314a5fae7d11e1d" category="inline-link-macro-rx"></block>のセキュリティオーケストレーション、自動化、およびレスポンス（SOAR）プレイブックを提供しています。このプレイブックにより、脅威対応管理が容易になり、タスクやテストが自動化されるほか、スナップショットの作成やボリュームのオフライン化など、ランサムウェア対策に不可欠な作業がサポートされます。</block>
-  <block id="dce0959f50faa93a47d141f615365404" category="paragraph">Ransomware ResilienceはGoogle SecOps、Microsoft Sentinel、Splunk向けにプレイブックを提供しています。セットアップの詳細については、それぞれのGitHubページを確認してください。</block>
   <block id="4f61a1c38b74708d0982090b3ace3f21" category="list-text">Azure NetApp Files では、Azure NetApp Files API が自動操作をブロックするため、<block ref="237628f5d72273fb0e39c8149431292e" category="inline-link-macro-rx"></block>を使用しないことをお勧めします。</block>
   <block id="3aecb1c0d4a2579d6c2b4487309b2cdc" category="admonition">攻撃を却下した後は、元に戻すことはできません。ワークロードを却下すると、ランサムウェア攻撃の可能性に対応して自動的に作成されたすべてのSnapshotコピーが完全に削除されます。アラートを却下すれば、準備訓練は完了とみなされます。</block>
   <block id="5dba46907e72d7502229329d2aafd8a2" category="list-text">Splunk Enterprise</block>
@@ -2752,4 +2746,12 @@
   <block id="4f453d8498e817d93a2c0554465ba5c9" category="list-text">停止したい SIEM システムのアクションメニュー（<block ref="2f43b42fd833d1e77420a8dae7419000" prefix="(" category="inline-code"></block>）を選択し、*一時停止* または *削除* を選択します。</block>
   <block id="38ddf84a5ab8383176b784d60f3f4942" category="paragraph">削除する場合は、確認ダイアログで*削除*を選択して操作を完了してください。</block>
   <block id="24cebcb9541a6a3a7ee2888a734c6961" category="section-title">2026年7月27日</block>
+  <block id="3ac6600c6085e72cacdcb1dd48274907" category="list-text">ユーザーの行動パターンを認識し、悪意のあるユーザー活動を特定します。</block>
+  <block id="cea7288c4707622a327049f1efc1f09a" category="list-text">ランサムウェア対策戦略を割り当てます。</block>
+  <block id="9853f1beb4647abf8719e30889039648" category="paragraph">Ransomware ResilienceはGoogle SecOps、Microsoft Sentinel、およびSplunkのプレイブックを提供しています。設定の詳細については、該当ページをご確認ください。</block>
+  <block id="3eea574b43f2f6412368381aa7e9dc8a" category="inline-link-macro">GitHubリンク</block>
+  <block id="29b5adbc7a04c877456d237755b1e5e1" category="list-text"><block ref="f35f69abcb839f30e64f7800ed807b52" category="inline-link-macro-rx"></block> | <block ref="c3163b3c34297c2188fd1502baa6be3c" category="inline-link-macro-rx"></block></block>
+  <block id="843273e8b4d640d7a2b23ee18e37263a" category="paragraph">インシデントをレビューした後、それらが潜在的な攻撃であるかどうかを判断する必要があります。実際の脅威でない場合は、無視しても構いません。アラートを破棄すると、ランサムウェア攻撃の可能性に対応して自動的に作成されたすべてのスナップショットコピーが完全に削除されます。</block>
+  <block id="16f166ba2ceaca92e52aea587fb0114f" category="inline-link-macro">その他のイベント</block>
+  <block id="b7c7e492cc2a239de36bc7e713a56532" category="paragraph">暗号化（エントロピー）イベントによって発生したアラートについては、Ransomware Resilience はユーザーがアラートを無視したことを学習し、そのアクティビティを通常の運用と関連付けます。そのため、今後はこの種のアクティビティに基づくアラートは受信されなくなります。これは、暗号化（エントロピー）イベントが ARP/AI によって管理されているためです。<block ref="69f4bf74babfcd1e97eceb84702fb4ae" category="inline-link-macro-rx"></block>によって発生したアラートについては、これらのアラートはユーザーのアクティビティパターンに基づいているため、Ransomware Resilience はアラートの却下から学習しません。</block>
 </blocks>
