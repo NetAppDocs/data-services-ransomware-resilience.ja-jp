@@ -195,6 +195,9 @@ Ransomware Resilienceは、5種類のランサムウェア攻撃を認識しま�
 | 疑わしいユーザー行動 | Ransomware Resilienceは、データ侵害、データ破壊、暗号化の範囲を超える異常な動作を特定します。 
 |===
 
+NOTE: link:concept-user-behavior.html["ユーザーアクティビティ検出"]を設定して、暗号化（ユーザーの行動）、データ漏洩、データ破壊、および不審なユーザー行動による攻撃を検出する必要があります。
+
+
 NOTE: 攻撃の原因となった特定のユーザーを特定するには、link:concept-user-behavior.html["ユーザー行動の検出。"]を設定する必要があります。link:rp-reference-limitations.html["制限事項"]を確認して、お使いのシステムがユーザーアクティビティ検出をサポートしているかどうかを確認してください。
 
 

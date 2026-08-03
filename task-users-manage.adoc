@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-users-manage.html 
-keywords: user activity detection, 
+keywords: user activity detection, block user, stop alerts, exclude users, alert management 
 summary: NetApp Ransomware Resilience でユーザーディレクトリコネクタを作成した後、ユーザーのブロックとブロック解除、アラート対象からのユーザー除外が可能です。ファイルパスをアラート生成の対象から除外することもできます。 
 ---
 = NetApp Ransomware Resilienceにおけるアラートとブロックされたユーザーの管理

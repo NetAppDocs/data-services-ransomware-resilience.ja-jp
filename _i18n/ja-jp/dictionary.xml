@@ -2529,12 +2529,7 @@
   <block id="f210e90dbf694c894759f78cc6d8b222" category="section-title">2026年6月29日</block>
   <block id="acd27fc46144e7ce943b73180eb0d3a8" category="paragraph">NetApp Ransomware Resilienceでランサムウェア攻撃対策の訓練を実行し、実際のランサムウェア攻撃への備えをテストします。この対策訓練では、Ransomware Resilienceが新しいサンプル ワークロードに対する攻撃をシミュレートするため、実際の本番データに影響を与えることなく、シミュレートされた攻撃を調査してリカバリを実行できます。対策訓練は、アラート通知に慣れ、対応とリカバリの準備を整えるのに役立ちます。訓練は必要なときにいつでも何回でも実行できます。</block>
   <block id="65b568f05372e5de535ad8c825aeb375" category="inline-link-macro">クリーン復元</block>
-  <block id="532361f2ad995113181b7cf1df1c5462" category="inline-link-macro">ユーザーアクティビティエージェント</block>
   <block id="74e66061c3c27ae398760dc1adda70dc" category="list-text">レディネスドリルテストを作成する環境を選択してください。</block>
-  <block id="3026f14fd36d3165478399b611373fb8" category="list-text">**コンソールエージェント**と**システム**を選択します。</block>
-  <block id="7cbdec3ae1628850b555ad8bb540d67e" category="list-text">**システム**を選択した後、あらかじめ表示されたリストから**ストレージVM**を選択してください。</block>
-  <block id="3db3fb74a2b36310b9059bb1932ec7ce" category="list-text">**新しいテストワークロード**に名前を付けてください。テストワークロードの先頭に「rps_test_」が付加されます。</block>
-  <block id="c30460d790febc2f1a11000f7e9dae5a" category="list-text">準備訓練がデータ侵害からの復旧に関するものである場合は、訓練環境の**ユーザーアクティビティエージェント**を選択してください。</block>
   <block id="aa888903a6021760fd560a3f35a5fe39" category="paragraph">インシデントを確認する際には、以下の点を考慮してください。</block>
   <block id="aa823a078e061b627817667be59a3966" category="list-text">潜在的な攻撃の深刻度。</block>
   <block id="993613047b942198cc7322f8e11f7420" category="list-text">テストワークロードを復元する必要がある場合は、**「復元が必要」**を選択し、確認ダイアログでそのボタンをもう一度選択してください。</block>
@@ -2556,9 +2551,6 @@
   <block id="fe2b3b951ec2ee39e3b94a78b27d6b96" category="paragraph">訓練を開始すると、Ransomware Resilienceはボリュームをマウントし、ランサムウェア攻撃をシミュレートします。準備訓練がカスタムリカバリまたはクリーンリストアのためのものである場合、テストボリュームのベースラインデータは、ランサムウェアであることが知られているファイル拡張子と、暗号化/エントロピー変更されたファイルに置き換えられます。データ侵害からの復旧訓練では、ファイルは置き換えられません。代わりに、Ransomware Resilienceは、攻撃者が体系的にデータを読み取り、持ち出す様子を模倣します。訓練の種類に関わらず、Ransomware Resilienceはアラートを発報し、アラートが正常に生成されたことを確認します。</block>
   <block id="ec48be06a1fa5ff039c9c72596c427f2" category="paragraph">この訓練を実行すると、アラートへの対応をテストしたり、必要に応じて実際のデータに影響を与えることなく復旧プロセスを実行したりできます。</block>
   <block id="5c443c5dabb6ec11bf27dce07c9fd377" category="inline-link-macro">カスタム復元</block>
-  <block id="e17d87cf10e73e1e3694a18b0b70c7af" category="list-text">**カスタムリカバリ**：暗号化（エントロピー）攻撃に対して、<block ref="80fac8a28dde36dd3a08a6d3cf5b9f5b" category="inline-link-macro-rx"></block>でリカバリポイントを設定します。</block>
-  <block id="22db649015dad497d63774a6e7d2af47" category="list-text">**クリーン復元**：暗号化（エントロピー）攻撃に対して、<block ref="d08d369745dba9c2b6dd002a205d6b5a" category="inline-link-macro-rx"></block>最適な復旧ポイントへと導く復旧プロセスで対応します。</block>
-  <block id="e3b01c4848ac6d1626374e4dee0f0685" category="list-text">**データ侵害からの復旧**：このドリルタイプを有効にする前に、<block ref="ea7722fd5c2c373bdaffcbde2ca3bbf6" category="inline-link-macro-rx"></block>を設定しておく必要があります。</block>
   <block id="05d14520f5a3fd970bfca710b43ae17a" category="admonition">訓練実行中は、準備訓練の設定を編集することはできません。準備訓練を変更するには、「リセット」を選択してから、訓練を編集してください。</block>
   <block id="7820d7f245e7637e7833faccb183f36d" category="admonition">不審なユーザー行動に対する自動応答では、スナップショットしか取得できません。不審なユーザー行動に対する自動的な対応として、ユーザーをブロックすることはサポートされていません。</block>
   <block id="ddebb8e31f83ddb3bde0b3a0292845dc" category="doc">ユーザー行動アラートからファイルパスを除外する</block>
@@ -2714,8 +2706,6 @@
   <block id="90c6a30d04a39029a6e718b3311fb6ab" category="inline-link-macro">SIEMシステムを無効にする</block>
   <block id="904e41b296efab284eaa1062cf1e6a27" category="paragraph">詳細については、<block ref="1d48f23238788ac75029406ac49f8f92" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="684a7ad3aa334bfb6a33e395013bd6dc" category="paragraph">Ransomware Resilienceは、5種類のランサムウェア攻撃を認識します：</block>
-  <block id="c561c7b7a5170672935dea9403fc0a6f" category="inline-link-macro">DII ウェブフック</block>
-  <block id="ce4bce909d8d6789b9f388dbbef0758a" category="admonition">ワークロードセキュリティを設定済みであれば、<block ref="23692858bbea3b07ede2665f2c7f119e" category="inline-link-macro-rx"></block>からアラートを設定できます。</block>
   <block id="c6bd820ffcfcad26c449f0454fae72c1" category="list-text">レプリケーションを使用した保護戦略は、現在 Google Cloud NetApp Volumes ではサポートされていません</block>
   <block id="392d723534b3a09775f3b6831eba4f37" category="section-title">SANストレージの制限</block>
   <block id="eecebb362641b58fec88bb08c4168447" category="paragraph">SAN（ブロックストレージ）ワークロードには、以下の制限事項が適用されます。</block>
@@ -2724,7 +2714,6 @@
   <block id="41bc5402792c9ae6e031743791c37485" category="list-text">SANワークロードは、<block ref="f4ee3b399c8cc5fca837364c0d9badb9" category="inline-link-macro-rx"></block>を使用してのみリストアできます。SANワークロードでは、クリーンリストアは現在利用できません。</block>
   <block id="2428514fe4a71be9aaa049c0588b7a22" category="paragraph">シミュレーションを実行する前に、準備訓練を設定する必要があります。特定の種類のランサムウェア攻撃に対応した準備訓練を作成する必要があります。Ransomware Resilienceは、5種類の攻撃を認識します：</block>
   <block id="e820571d07203de22d81bf2d3a43c57d" category="list-text">設定ページの「準備訓練」カードで、*設定*を選択します。</block>
-  <block id="5a6ea2c21bfdd4f145b28691ccbbba4f" category="paragraph">コンソールには「準備訓練の設定」ページが表示されます。</block>
   <block id="f39a3376d8471d16df7b03506f1e81b3" category="inline-image-macro">準備訓練ページの設定</block>
   <block id="4733f8632e3639026823ab315aa1fde4" category="paragraph"><block ref="4733f8632e3639026823ab315aa1fde4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="041d149b109ce93c233e52cd24f679bf" category="list-text">*ランサムウェア攻撃の種類*を選択します。</block>
@@ -2754,4 +2743,12 @@
   <block id="843273e8b4d640d7a2b23ee18e37263a" category="paragraph">インシデントをレビューした後、それらが潜在的な攻撃であるかどうかを判断する必要があります。実際の脅威でない場合は、無視しても構いません。アラートを破棄すると、ランサムウェア攻撃の可能性に対応して自動的に作成されたすべてのスナップショットコピーが完全に削除されます。</block>
   <block id="16f166ba2ceaca92e52aea587fb0114f" category="inline-link-macro">その他のイベント</block>
   <block id="b7c7e492cc2a239de36bc7e713a56532" category="paragraph">暗号化（エントロピー）イベントによって発生したアラートについては、Ransomware Resilience はユーザーがアラートを無視したことを学習し、そのアクティビティを通常の運用と関連付けます。そのため、今後はこの種のアクティビティに基づくアラートは受信されなくなります。これは、暗号化（エントロピー）イベントが ARP/AI によって管理されているためです。<block ref="69f4bf74babfcd1e97eceb84702fb4ae" category="inline-link-macro-rx"></block>によって発生したアラートについては、これらのアラートはユーザーのアクティビティパターンに基づいているため、Ransomware Resilience はアラートの却下から学習しません。</block>
+  <block id="7f45ddc4c3a6264fe6af09d0feee6f8d" category="admonition"><block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>を設定して、暗号化（ユーザーの行動）、データ漏洩、データ破壊、および不審なユーザー行動による攻撃を検出する必要があります。</block>
+  <block id="b9ccc4643a22220649cf7d8c1358ebd7" category="list-text">暗号化（エントロピー）以外のランサムウェア攻撃タイプに対する準備訓練を設定するには、<block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>を設定しておく必要があります。</block>
+  <block id="f0bfc00f8922a4e1668398e3aee15cb8" category="list-text">CIFSワークロードの準備訓練を作成する際には、ユーザー認証情報を入力する必要があります。準備訓練、特にユーザーアクティビティ攻撃の種類（つまり、データ漏洩）をテストする場合は、専用の非本番環境テストユーザーを作成する必要があります。実際の運用ユーザーを使用している場合、Ransomware Resilienceはそのユーザーをフラグ付けし、その結果、そのユーザーが運用データにアクセスできなくなる可能性があります。テストユーザーを使用した場合、すべてのユーザーはデータへの通常のアクセス権を維持します。</block>
+  <block id="19783acd6c7b7340a835a629f68c513c" category="list-text">**コンソールエージェント**と**プライマリシステム**を選択してください。</block>
+  <block id="304fbd9397bc28472932705b6e4b3a45" category="list-text">プライマリシステムを選択した後、あらかじめ表示されたリストから**ストレージVM**を選択します。</block>
+  <block id="ee17fa61bd4957effe2be9aad90f9b39" category="list-text">ストレージVMがCIFSプロトコルを使用している場合は、Active Directoryの認証情報を入力してください。**Active Directoryドメイン**は任意で入力できます。**ユーザー名**と**パスワード**は必ず入力してください。専用のテストユーザーの認証情報を入力することをお勧めします。</block>
+  <block id="2bc2801a047dbf24f0ad5f6ab66903a3" category="list-text">**新しいテストワークロード**に名前を付けてください。テストワークロードには、<block ref="4d57df3ec0851a6b7ee80abd6c45cb4f" prefix=" " category="inline-code"></block>が先頭に付加されます。</block>
+  <block id="bcb62c4e0257dc7f7e53d4080b48c067" category="list-text">準備訓練がユーザー活動攻撃タイプを対象としている場合は、訓練環境に対して**ユーザー活動エージェント**を選択してください。</block>
 </blocks>
