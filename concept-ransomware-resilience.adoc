@@ -227,7 +227,7 @@ Ransomware Resilience は、次のバックアップ ターゲット、システ
 | 環境 | プロトコル | サポート対象のバージョン 
 
 
-| Amazon FSx for NetApp ONTAP | CIFS、NFS、SAN | 該当なし 
+| Amazon FSx for NetApp ONTAP | CIFS、NFS、SAN（iSCSI & NVMe） | 該当なし 
 
 
 | Azure NetApp Files | CIFSとNFS | 該当なし 
@@ -257,7 +257,7 @@ Ransomware Resilience は、次のバックアップ ターゲット、システ
 | SAN（iSCSI および NVMe） | 9.17.1以降 
 
 
-| Google Cloud NetApp Volumes | CIFSとNFS | 該当なし 
+| Google Cloud NetApp Volumes | CIFS、NFS、SAN（iSCSI & NVMe） | 該当なし 
 |===
 
 NOTE: Azure NetApp FilesまたはGoogle Cloud NetApp Volumesでは、ユーザーアクティビティ検出はサポートされていません。ユーザーアクティビティ検出のサポートの詳細については、link:reference-user-activity-requirements.html["ユーザアクティビティ検出要件"]を参照してください。

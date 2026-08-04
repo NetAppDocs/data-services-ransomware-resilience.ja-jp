@@ -18,6 +18,29 @@ NetApp Ransomware Resilienceの新機能についてご確認ください。
 
 
 
+[[03-august-2026]]
+== 2026年8月3日
+
+
+
+[[san-support-for-google-cloud-netapp-volumes-preview]]
+=== Google Cloud NetApp VolumesのSANサポート（プレビュー）
+
+Ransomware Resilienceは、Google Cloud NetApp VolumesのSANワークロードをサポートするようになり、SANワークロードに対する暗号化ベースのランサムウェア攻撃を検出できるようになりました。Google Cloud NetApp VolumesにおけるSANのサポートは、現在プレビュー版です。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems["サポートされているシステム"^]およびlink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html#azure-netapp-files-limitations["ランサムウェア耐性におけるSANストレージ"^]を参照してください。
+
+
+
+[[streamlined-interface-for-user-blocking]]
+=== ユーザーブロック向けの合理化されたインターフェース
+
+Ransomware Resilienceは、ユーザーのブロックとブロックされたユーザーの管理を簡素化したユーザーエクスペリエンスを提供します。今回のアップデートにより、ブロックしたユーザーを簡単に確認・変更できるようになりました。ユーザーをブロックするには、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-user-behavior.html["ユーザーアクティビティ検出"^]を設定する必要があります。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-users-manage.html#manage-blocked-users["ブロックされたユーザーを管理"^]を参照してください。
+
+
+
 [[27-july-2026]]
 == 2026年7月27日
 

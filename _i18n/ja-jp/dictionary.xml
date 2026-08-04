@@ -1619,7 +1619,6 @@
   <block id="f31838bfd1a4d7d1cc348bb0e79249aa" category="sidebar">ユーザーアクティビティ検出について学ぶ</block>
   <block id="851ba516be036ed05e26d4e1aa17e994" category="sidebar">エージェントとコレクターを設定する</block>
   <block id="f00a921e7dbbed8405cd9ce5fce914d3" category="list-text">*VM SSH キー* - 次の形式で SSH キーを入力します：</block>
-  <block id="6180003c782f1663eb2df1464acac0bd" category="cell">CIFS、NFS、SAN</block>
   <block id="691a3e8e2059e924160a8104310f552d" category="paragraph">ランサムウェア耐性は、スナップショットのレプリケーションをセカンダリONTAPサイトに追加できるようになりました。レプリケーションポリシーを使用する保護グループを使用すると、ワークロードごとに同じ宛先または異なる宛先にレプリケートできます。レプリケーションを含むランサムウェア保護戦略を作成することも、定義済みの戦略を使用することもできます。</block>
   <block id="17dfbc312023bdd4da992d8e751e72ac" category="doc">Azure NetApp Files サポート</block>
   <block id="ea2f778dfb597a4b527dac7e944ad95b" category="paragraph">Ransomware Resilienceは、Azure NetApp Filesシステムをサポートするようになり、Azure NetApp Filesでランサムウェアの脅威を効率的に検出して対応できるようになりました。ワークロードを検出すると、Ransomware ResilienceはAzure NetApp Filesを表示し、保護ダッシュボードに表示します。Azure NetApp FilesのRansomware Resilienceサポートには、スナップショットのみを使用した検出および保護戦略が含まれます。Azure NetApp Filesのサポートは現在プレビュー段階です。</block>
@@ -2460,7 +2459,6 @@
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">Amazon FSx for NetApp ONTAP にデプロイされた IRE の場合、この情報を提供する必要はありません。</block>
   <block id="f5b6822ed53c8f99c424ea0e8e011bf7" category="admonition">Ransomware Resilienceは、コンソールエージェント1つにつき最大3,000個のワークロードしか検出できません。</block>
   <block id="bb4393b6187d55f98dbeb4c5bb8add00" category="list-text">コンソールエージェント1つあたり、ワークロードの上限は3,000です。</block>
-  <block id="8df5e57d843114bbbb53a4c85f76cb68" category="list-text">Google Cloud NetApp Volumes の SAN ワークロードは、現在ランサムウェア対策機能ではサポートされていません。</block>
   <block id="afce532bad172bcef50d75935d2ed43b" category="list-text">レプリケーションポリシー</block>
   <block id="fb9721f24a420ba827ac36665b13797e" category="doc">ユーザーアクティビティアラートへの自動応答</block>
   <block id="5b29c2b1307b96a1557ab05a56715041" category="paragraph">Ransomware Resilienceは、ユーザーアクティビティアラートが生成された際に、スナップショットの作成とユーザーのブロックを自動化する機能をサポートするようになりました。自動応答機能を使用すれば、警告が発生した時点でユーザーをブロックし、復旧用のスナップショットを作成できるため、手動介入なしでより迅速な対応が可能になります。</block>
@@ -2513,12 +2511,10 @@
   <block id="93e35e2f3f7138fcbfc327d758e1ec96" category="list-text">設定ダッシュボードで、「ユーザーアクティビティ監視」タイルを見つけて、**管理**を選択します。</block>
   <block id="2361358ff14122114e736beff61c48a2" category="list-text">**ユーザー**タブを選択します。</block>
   <block id="766067e25ac4a8f22dad6344937ca56d" category="list-text">「ユーザーをブロック」を選択します。</block>
-  <block id="b00b5ebe4a8164319e36e4bbef8f727f" category="list-text">ブロック期間を選択してください。1時間から24時間、または永久ブロックが可能です。</block>
   <block id="50d68502e7fbfa82f99e1abb688a948f" category="list-text">ブロックするユーザーの名前の横にあるチェックボックスを選択してください。</block>
   <block id="126b3c7582135a76321582de4bcad51d" category="list-text">**ブロック**を選択します。</block>
   <block id="23e9aa0fec2a06ec7f4b6f9076d62992" category="list-title">ブロックされたユーザーリストを変更する</block>
   <block id="3d06dabf3eaa23797059f7fffa998cfd" category="list-text">**ユーザーブロックの編集**を選択します。</block>
-  <block id="e2d552c6afc3cd9e9e5367d429f832c4" category="list-text">変更を選択してください。ブロック期間を変更するには、「**ブロック対象ユーザーの期間**」を選択し、期間を変更します。ブロックされたユーザーリストからユーザーを削除するには、「**ユーザーのブロックを解除**」を選択してください。</block>
   <block id="4ecd815bab325d10795007a2e86d0a31" category="list-text">ステータスを変更したいブロック済みユーザーの名前の横にあるチェックボックスを選択してください。</block>
   <block id="8d5311b8775f8a9ea8945d76095bb698" category="list-text">**保存**を選択します。</block>
   <block id="bf21122a37b943f2b70a86b30f0af377" category="list-text">**監視対象から除外**タブを選択します。</block>
@@ -2709,7 +2705,6 @@
   <block id="c6bd820ffcfcad26c449f0454fae72c1" category="list-text">レプリケーションを使用した保護戦略は、現在 Google Cloud NetApp Volumes ではサポートされていません</block>
   <block id="392d723534b3a09775f3b6831eba4f37" category="section-title">SANストレージの制限</block>
   <block id="eecebb362641b58fec88bb08c4168447" category="paragraph">SAN（ブロックストレージ）ワークロードには、以下の制限事項が適用されます。</block>
-  <block id="aff0472c8383011d738831a8c39c42c6" category="list-text">Ransomware Resilience は現在、Google Cloud NetApp Volumes の SAN ワークロードをサポートしていません。</block>
   <block id="2d2a397baa743b0954cf57d074ff1a05" category="list-text">Ransomware ResilienceがSANワークロードに対して警告を生成する場合、それは高エントロピーのみに基づいています。</block>
   <block id="41bc5402792c9ae6e031743791c37485" category="list-text">SANワークロードは、<block ref="f4ee3b399c8cc5fca837364c0d9badb9" category="inline-link-macro-rx"></block>を使用してのみリストアできます。SANワークロードでは、クリーンリストアは現在利用できません。</block>
   <block id="2428514fe4a71be9aaa049c0588b7a22" category="paragraph">シミュレーションを実行する前に、準備訓練を設定する必要があります。特定の種類のランサムウェア攻撃に対応した準備訓練を作成する必要があります。Ransomware Resilienceは、5種類の攻撃を認識します：</block>
@@ -2745,10 +2740,23 @@
   <block id="b7c7e492cc2a239de36bc7e713a56532" category="paragraph">暗号化（エントロピー）イベントによって発生したアラートについては、Ransomware Resilience はユーザーがアラートを無視したことを学習し、そのアクティビティを通常の運用と関連付けます。そのため、今後はこの種のアクティビティに基づくアラートは受信されなくなります。これは、暗号化（エントロピー）イベントが ARP/AI によって管理されているためです。<block ref="69f4bf74babfcd1e97eceb84702fb4ae" category="inline-link-macro-rx"></block>によって発生したアラートについては、これらのアラートはユーザーのアクティビティパターンに基づいているため、Ransomware Resilience はアラートの却下から学習しません。</block>
   <block id="7f45ddc4c3a6264fe6af09d0feee6f8d" category="admonition"><block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>を設定して、暗号化（ユーザーの行動）、データ漏洩、データ破壊、および不審なユーザー行動による攻撃を検出する必要があります。</block>
   <block id="b9ccc4643a22220649cf7d8c1358ebd7" category="list-text">暗号化（エントロピー）以外のランサムウェア攻撃タイプに対する準備訓練を設定するには、<block ref="9403988536e87b1b5fabe2157e11581a" category="inline-link-macro-rx"></block>を設定しておく必要があります。</block>
-  <block id="f0bfc00f8922a4e1668398e3aee15cb8" category="list-text">CIFSワークロードの準備訓練を作成する際には、ユーザー認証情報を入力する必要があります。準備訓練、特にユーザーアクティビティ攻撃の種類（つまり、データ漏洩）をテストする場合は、専用の非本番環境テストユーザーを作成する必要があります。実際の運用ユーザーを使用している場合、Ransomware Resilienceはそのユーザーをフラグ付けし、その結果、そのユーザーが運用データにアクセスできなくなる可能性があります。テストユーザーを使用した場合、すべてのユーザーはデータへの通常のアクセス権を維持します。</block>
   <block id="19783acd6c7b7340a835a629f68c513c" category="list-text">**コンソールエージェント**と**プライマリシステム**を選択してください。</block>
   <block id="304fbd9397bc28472932705b6e4b3a45" category="list-text">プライマリシステムを選択した後、あらかじめ表示されたリストから**ストレージVM**を選択します。</block>
   <block id="ee17fa61bd4957effe2be9aad90f9b39" category="list-text">ストレージVMがCIFSプロトコルを使用している場合は、Active Directoryの認証情報を入力してください。**Active Directoryドメイン**は任意で入力できます。**ユーザー名**と**パスワード**は必ず入力してください。専用のテストユーザーの認証情報を入力することをお勧めします。</block>
   <block id="2bc2801a047dbf24f0ad5f6ab66903a3" category="list-text">**新しいテストワークロード**に名前を付けてください。テストワークロードには、<block ref="4d57df3ec0851a6b7ee80abd6c45cb4f" prefix=" " category="inline-code"></block>が先頭に付加されます。</block>
   <block id="bcb62c4e0257dc7f7e53d4080b48c067" category="list-text">準備訓練がユーザー活動攻撃タイプを対象としている場合は、訓練環境に対して**ユーザー活動エージェント**を選択してください。</block>
+  <block id="25d6353f95c07b9bbb1938a285d3c2ec" category="cell">CIFS、NFS、SAN（iSCSI &amp; NVMe）</block>
+  <block id="ae5d941662c7f934b5502d0e4416f1af" category="doc">Google Cloud NetApp VolumesのSANサポート（プレビュー）</block>
+  <block id="6d44daef9f0109d0d9941a1214218bd6" category="paragraph">Ransomware Resilienceは、Google Cloud NetApp VolumesのSANワークロードをサポートするようになり、SANワークロードに対する暗号化ベースのランサムウェア攻撃を検出できるようになりました。Google Cloud NetApp VolumesにおけるSANのサポートは、現在プレビュー版です。</block>
+  <block id="b49d323c627c43fecd97c8db6ea7f66c" category="inline-link-macro">サポートされているシステム</block>
+  <block id="fa83a4a163069ca1ab2dcb9be3c41063" category="inline-link-macro">ランサムウェア耐性におけるSANストレージ</block>
+  <block id="2f244f2c363848263100f25323c23895" category="paragraph">詳細については、<block ref="3a3cd00a16a1bca6c18ece5051fc5ba1" category="inline-link-macro-rx"></block>および<block ref="740b3aa4325052238b6cf8ff4cb1a868" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="053cc8d4a507db8f7d33d7c9eb844923" category="section-title">ユーザーブロック向けの合理化されたインターフェース</block>
+  <block id="16d39f5d27761daa66696ada0758791c" category="paragraph">Ransomware Resilienceは、ユーザーのブロックとブロックされたユーザーの管理を簡素化したユーザーエクスペリエンスを提供します。今回のアップデートにより、ブロックしたユーザーを簡単に確認・変更できるようになりました。ユーザーをブロックするには、<block ref="0a9171a9aac1e029e209b0c543045273" category="inline-link-macro-rx"></block>を設定する必要があります。</block>
+  <block id="21d100db43907eec54cab4e115af7c6b" category="inline-link-macro">ブロックされたユーザーを管理</block>
+  <block id="9d82773616a9fd5b52190dd3b03a9d0d" category="paragraph">詳細については、<block ref="c715c16e5dd5464a8f58103938ef0f46" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="32b39b7e5c37ca140c51e2bebb918db4" category="list-text">CIFSワークロードの準備訓練を作成する際には、ユーザー認証情報を入力する必要があります。準備訓練、特にユーザーアクティビティ攻撃タイプ（つまり、データ漏洩）をテストする場合は、専用の非本番環境テストユーザーを作成することをお勧めします。実際の本番環境ユーザーを使用している場合、そのユーザーが他の本番環境ボリュームで不審な動作をすると、実際のアラートが生成される代わりに、準備訓練の下にそれらのアラートが表示される可能性があります。</block>
+  <block id="a4eaf16125aa6fca833d794fb9973715" category="list-text">ブロック期間を選択してください。ユーザーを永久にブロックすることも、1時間から24時間の間でブロック期間を指定することもできます。</block>
+  <block id="13c987b30f267e394b26e24839fb92c5" category="list-text">変更したいユーザーブロックの種類を選択してください。ブロック期間を変更するには、**ブロック対象ユーザーの期間**を選択し、次に**期間**を変更します。ブロックされたユーザーリストからユーザーを削除するには、**ユーザーのブロックを解除**を選択してください。</block>
+  <block id="91d90ea5487ed9ed44e834f42f272ccb" category="section-title">2026年8月3日</block>
 </blocks>
