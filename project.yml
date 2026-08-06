@@ -58,6 +58,8 @@ sidebar:
           url: "/suspicious-user-activity.html"
         - title: アラートとブロックされたユーザーを管理する
           url: "/task-users-manage.html"
+        - title: ユーザーアクティビティエージェントのトラブルシューティング
+          url: "/troubleshoot-user-activity.html"
       - title: 保護グループの管理
         url: "/task-protection-group.html"
       - title: 個人を特定できるデータをスキャンする

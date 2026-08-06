@@ -178,4 +178,5 @@ image:screenshot-user-directory-connection.png["ユーザーディレクトリ�
 == 次の手順
 
 * link:task-users-manage.html["アラート設定とブロックされたユーザーを管理する"]
+* link:troubleshoot-user-activity.html["ユーザーアクティビティエージェントのトラブルシューティング"]
 

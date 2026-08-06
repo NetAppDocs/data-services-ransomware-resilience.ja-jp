@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: troubleshoot-user-activity.html 
+keywords: user activity detection, troubleshoot 
+summary: NetApp Ransomware Resilience でユーザーアクティビティエージェントのインストール中に問題が発生した場合は、以下の一般的なシナリオと解決策を確認してください。 
+---
+= NetApp Ransomware Resilienceのユーザーアクティビティエージェントの問題をトラブルシューティングする
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilience でユーザーアクティビティエージェントのインストールまたは実行中に問題が発生した場合は、以下の一般的なシナリオと解決策を確認してください。
+
+
+
+[[installation-issues]]
+== インストールに関する問題
+
+[cols="20,80"]
+|===
+
+
+| 問題 | 解決策 
+
+
+| ユーザーアクティビティエージェントのインストールで、/opt/netapp/cloudsecure/agent/logs/agent.logフォルダが作成されず、install.logファイルにも関連情報がありません。 | このエラーは、エージェントのブートストラップ中に発生します。このエラーは初期化前に発生するため、ログファイルには記録されません。エラーは標準出力にリダイレクトされます。コマンド `journalctl -u cloudsecure-agent.service`を使用してエラーを確認してください。 
+
+
+| ユーザーアクティビティ エージェントのインストールが「この Linux ディストリビューションはサポートされていません。インストールを終了します。」というエラーで失敗します。 | このエラーは、お使いのシステムがシステム要件を満たしていないことを示しています。インストールを試みる前に、システム要件を確認し、必要なアップデートを行ってください。 
+
+
+| ユーザーアクティビティエージェントのインストールが「-bash: unzip: command not found.」というエラーで失敗します。 | unzip がインストールされていることを確認してください。Yum がインストールされている場合は、 `yum install unzip` を実行して unzip をインストールしてください。その後、再度インストールを試みてください。 
+
+
+| ユーザーアクティビティエージェントの VM は Zscaler プロキシの背後にあり、インストールが失敗しています。 | Zscaler プロキシで、*.cloudinsights.netapp.com URL の SSL 検査を無効にします。 
+
+
+| エージェントのインストール時に、解凍後にインストールが停止します。 |  `chmod 755 -Rf`コマンドがエージェントのインストール中に失敗する場合、非root `sudo`ユーザーが作業ディレクトリ内の別のユーザーに属するファイルを使用して実行しており、そのファイルのアクセス許可を変更できない状態です。その結果、インストールが失敗します。解決するには、「cloudsecure」という名前の新しいディレクトリを作成し、そのディレクトリに移動して、完全な `token=... ./cloudsecure-agent-install.sh`インストールコマンドをコピーして貼り付け、Enterキーを押してください。インストールが続行されます。それでもインストールが失敗する場合は、サポートケースを開いてください。 
+
+
+| cloudsecure-agent-symptom-collector.sh スクリプトが「ERROR: Failed to create /tmp/cloudsecure-agent-symptoms.zip」というエラーで失敗します。 | コマンド `yum install zip`でzipツールをインストールし、再度 `cloudsecure-agent-symptom-collector.sh`を実行してください。 
+
+
+| ユーザーアクティビティエージェントのインストールが「useradd: cannot create directory /home/cssys」というエラーで失敗します。 | 権限エラーのため、/home ディレクトリの下にユーザーのログインディレクトリを作成できません。cssys ユーザーを作成し、コマンド `sudo useradd <user_name> -m -d HOME_DIR`を使用してログインディレクトリを手動で追加します。このコマンドでは、 `-m`はホームディレクトリが存在しない場合に作成し、 `-d`は HOME_DIR をログインディレクトリとして指定します。 
+|===
+
+
+[[post-installation-issues]]
+== インストール後の問題
+
+[cols="20,80"]
+|===
+
+
+| 問題 | 解決策 
+
+
+ a| 
+インストール後、ユーザーアクティビティエージェントが実行されません。コマンドを実行した後 `systemctl status cloudsecure-agent.service`、出力結果は以下のとおりです。
+
+[source]
+----
+[root@demo ~]# systemctl status cloudsecure-agent.service +
+agent.service - Workload Security Agent Daemon Service
+Loaded: loaded (/usr/lib/systemd/system/cloudsecure-agent.service; enabled; vendor preset: disabled) +
+Active: activating (auto-restart) (Result: exit-code) since Tue 2021-08-03 21:12:26 PDT; 2s ago +
+Process: 25889 ExecStart=/bin/bash /opt/netapp/cloudsecure/agent/bin/cloudsecure-agent (code=exited status=126) +
+Main PID: 25889 (code=exited, status=126), +
+Aug 03 21:12:26 demo systemd[1]: cloudsecure-agent.service: main process exited, code=exited, status=126/n/a +
+Aug 03 21:12:26 demo systemd[1]: Unit cloudsecure-agent.serve
+---- a| 
+/opt/netappがNFSマウントであり、かつcssysユーザーがこのフォルダへのアクセス権を持っていない場合、インストールは失敗します。ユーザーcssysは、ユーザーアクティビティエージェントインストーラーによって作成されたローカルユーザーであり、マウントされた共有にアクセスする権限がない可能性があります。
+
+cssys ユーザーを使用して `/opt/netapp/cloudsecure/agent/bin/cloudsecure-agent`へのアクセスを試みることで、権限を確認できます。「Permission denied」と表示される場合は、適切なアクセス権限が設定されていません。マウントされたフォルダではなく、マシン上のローカルディレクトリにインストールしてください。
+
+
+
+| エージェントはプロキシ サーバ経由で接続されていましたが、インストール後にプロキシ サーバが変更されました。プロキシ設定を変更するにはどうすればよいですか？  a| 
+agent.properties のプロキシ設定を編集します：
+
+.手順
+. プロパティファイルを含むフォルダに移動します： `cd /opt/netapp/cloudsecure/conf`
+. テキストエディタでagent.propertiesファイルを開きます。
+. 以下の行を追加または変更してください。
++
+[source]
+----
+AGENT_PROXY_HOST=<proxy.vm.url> +
+AGENT_PROXY_PORT=<portValue> +
+AGENT_PROXY_USER=<user> +
+AGENT_PROXY_PASSWORD=<password>
+----
+. ファイルを保存します。
+. エージェントを再起動します： `sudo systemctl restart cloudsecure-agent.service`。
+
+
+
+
+| エージェントは正常にインストールされ、稼働していましたが、予期せず停止しました。  a| 
+.手順
+. エージェントマシン上でSSH経由で認証を行い、サービスのステータスを確認してください。エージェントサービスのステータスを確認するには、 `sudo systemctl status cloudsecure-agent.service`を使用してください。
+. ログに「Failed to start Workload Security daemon service.」というメッセージがないか確認してください。
+. ユーザーアクティビティエージェントマシン上にcssysユーザーが存在するかどうかを確認してください。以下のコマンドを実行して、cssysユーザーとグループが存在するかどうかをそれぞれ確認してください： `sudo id cssys`それから `sudo groups cssys`。
+. ユーザーまたはグループが存在しない場合、集中監視ポリシーによってcssysユーザーが削除された可能性があります。以下のコマンドを実行して、cssysユーザーとグループを手動で作成します： `sudo useradd cssys`次に `sudo groupadd cssys`。
+. エージェントサービスを再起動します： `sudo systemctl restart cloudsecure-agent.service`。
+
+
+
+
+| ユーザーアクティビティエージェントの状態は接続されていません | エージェントを再起動してください。SSH経由でユーザーアクティビティエージェントマシンに認証し、コマンド `sudo systemctl restart cloudsecure-agent.service`でエージェントを再起動してください。再起動後、コマンド `sudo systemctl status cloudsecure-agent.service`でエージェントのステータスを確認してください。再起動操作が成功した場合、出力には「CONNECTED」と表示されます。 
+|===
