@@ -1,0 +1,12 @@
+= データコレクターを削除する
+:allow-uri-read: 
+
+
+
+
+[[delete-a-data-collector]]
+=== データコレクターを削除する
+
+Ransomware Resilienceは、データコレクターの削除をサポートするようになりました。ワークロードでユーザーアクティビティ検出を有効にすると、データコレクターが自動的に作成されます。データコレクターが古くなった場合は、手動で削除できます。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#delete-a-data-collector["データコレクターを削除する"^]を参照してください。

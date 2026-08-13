@@ -18,6 +18,20 @@ NetApp Ransomware Resilienceの新機能についてご確認ください。
 
 
 
+[[13-august-2026]]
+== 2026年8月13日
+
+
+
+[[delete-a-data-collector]]
+=== データコレクターを削除する
+
+Ransomware Resilienceは、データコレクターの削除をサポートするようになりました。ワークロードでユーザーアクティビティ検出を有効にすると、データコレクターが自動的に作成されます。データコレクターが古くなった場合は、手動で削除できます。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#delete-a-data-collector["データコレクターを削除する"^]を参照してください。
+
+
+
 [[03-august-2026]]
 == 2026年8月3日
 
