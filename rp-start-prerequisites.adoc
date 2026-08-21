@@ -12,9 +12,9 @@ summary: 環境、ネットワーク アクセス、ログイン、Web ブラウ
 
 
 [role="lead"]
-NetApp Ransomware Resilienceの導入を確実に成功させるには、運用環境の準備状況、ネットワーク アクセス、およびWebブラウザを確認してください。
+NetApp Ransomware Resilienceを展開する前に、お客様の環境、ネットワーク アクセス、およびブラウザが要件を満たしていることを確認してください。
 
-以下の要件を確認し、満たしていることを確認してください。
+以下の要件を確認してください。
 
 
 
@@ -93,7 +93,7 @@ NOTE: SAN ワークロードで Ransomware Resilience を使用するには、 O
 [[ontap-requirements]]
 == ONTAPの要件
 
-* オンプレミスのONTAPインスタンスでONTAP One ライセンスが有効になっているONTAP 9.11.1 以降を実行している必要があります。  ONTAPサポートの詳細については、以下を参照してください。link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自律型ランサムウェア対策 - 概要"^] 。
+* オンプレミス ONTAP クラスタで ONTAP One ライセンスを有効にした状態で、ONTAP 9.11.1 以降を実行している必要があります。ONTAP サポートの詳細については、link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["自律型ランサムウェア対策 - 概要"^]を参照してください。
 * 保護構成（自律型ランサムウェア保護の有効化など）を適用するには、Ransomware Resilience にONTAPクラスターに対する管理者権限が必要です。ONTAPクラスタは、 ONTAPクラスタ管理者のユーザー認証情報のみを使用してオンボードされている必要があります。
 
 

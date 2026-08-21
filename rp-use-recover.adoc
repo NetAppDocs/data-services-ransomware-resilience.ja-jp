@@ -12,9 +12,9 @@ summary: '攻撃後、 NetApp Ransomware Resilience はセカンダリ ストレ
 
 
 [role="lead"]
-ワークロードが「復元が必要」とマークされた後、NetApp Ransomware Resilience は、リカバリポイント実績値（RPA）を推奨し、クラッシュ耐性のあるリカバリのためのワークフローをオーケストレーションします。
+ワークロードが「復元が必要」とマークされた後、NetApp Ransomware Resilienceは、実際のリカバリポイント（RPA）を推奨し、リカバリワークフローをガイドします。
 
-* VMがNetApp Backup and RecoveryまたはRansomware Resilienceで管理されている場合、Ransomware Resilienceは「crash consistent state（障害など予期しないシャットダウン時と同様）」の状態のリストアを実行します。これは、システムがクラッシュした場合などに、ボリューム内の同じ時点のすべてのデータがリストアされることを意味します。
+* VMがNetApp Backup and RecoveryまたはNetApp Ransomware Resilienceによって管理されている場合、Ransomware Resilienceは「crash consistent state（障害など予期しないシャットダウン時と同様）」の状態での復元を実行し、システムクラッシュ後と同様に、同じ時点のすべてのデータが復元されます。
 +
 すべてのボリューム、特定のボリューム、または特定のファイルを選択してワークロードを復元できます。
 

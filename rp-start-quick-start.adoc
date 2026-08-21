@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-quick-start.html 
 keywords: get started, ransomware protection, quick start, resilience, quickstart 
-summary: わずか数ステップでNetApp Ransomware Resilienceを開始できます。 
+summary: 数ステップで NetApp Ransomware Resilience を使い始めましょう。 
 ---
 = NetApp Ransomware Resilienceのクイックスタート
 :hardbreaks:
@@ -12,7 +12,7 @@ summary: わずか数ステップでNetApp Ransomware Resilienceを開始でき�
 
 
 [role="lead"]
-ランサムウェア耐性を設定し、ワークロードを保護するために従う必要がある大まかな手順を理解します。
+このクイックスタートを使用して、NetApp Ransomware Resilienceのセットアップ、ワークロードの検出、および保護の設定を行います。
 
 詳しい情報については、各ステップのリンクを参照してください。
 
@@ -27,7 +27,7 @@ summary: わずか数ステップでNetApp Ransomware Resilienceを開始でき�
 ** また、link:reference-user-activity-requirements.html["不審なユーザー行動の検出"]とlink:task-clean-restore.html["クリーンリストア"]の要件も確認してください。
 
 
-* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["ランサムウェア耐性のユーザーロールを確認し、ランサムウェア耐性にアクセスするユーザーに権限を割り当てます。"]
+* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["Ransomware Resilienceのユーザーロールを確認し、サービスにアクセスするユーザーに権限を割り当てます。"]
 * link:rp-start-licenses.html["ライセンスの設定"]
 
 
@@ -43,7 +43,7 @@ summary: わずか数ステップでNetApp Ransomware Resilienceを開始でき�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三つ"]ランサムウェア耐性における保護と検出の設定
 [role="quick-margin-para"]
-これらのタスクには、_Ransomware Resilience admin_ロールが必要です。ユーザー動作検出を設定するには、追加の_Ransomware Resilience user behavior admin_ロールが必要です。
+これらのタスクには、_Ransomware Resilience admin_ ロールが必要です。ユーザー行動検出を設定するには、_Ransomware Resilience user behavior admin_ ロールも必要です。
 
 [role="quick-margin-list"]
 * link:rp-use-protect.html["ワークロードを保護する"]
@@ -63,7 +63,7 @@ summary: わずか数ステップでNetApp Ransomware Resilienceを開始でき�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4"]次は何?
 [role="quick-margin-para"]
-NetApp Ransomware Resilienceで保護を設定した後、以下の操作が可能になります。
+保護を設定した後、以下の操作が可能になります：
 
 [role="quick-margin-list"]
 * link:task-classify.html["データ分類を有効にしてガバナンスとセキュリティリスクを特定します"]

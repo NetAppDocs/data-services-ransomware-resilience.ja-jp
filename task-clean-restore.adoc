@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-clean-restore.html 
 keywords: clean room, clean restore, secure recovery, restore, isolated recovery environment 
-summary: NetApp Ransomware Resilienceでクリーンリストアを実行する前に、環境を隔離してクリーンアップするための隔離されたリカバリ環境を作成する必要があります。 
+summary: NetApp Ransomware Resilienceでクリーンな復元を実行する前に、環境を隔離してクリーンアップするための隔離された復旧環境を作成する必要があります。 
 ---
 = NetApp Ransomware Resilienceでクリーンリストアの環境を設定
 :hardbreaks:
@@ -23,7 +23,7 @@ NetApp Ransomware Resilienceはクリーンリストアを提供し、ランサ�
 [[learn-about-clean-restores]]
 == クリーンリストアについて
 
-クリーンリストアを実行すると、NetApp Ransomware Resilienceがリカバリを最適化する複数ステップのプロセスをガイドします。
+クリーンな復元を実行する際、NetApp Ransomware Resilienceは、復旧を最適化するための複数ステップのプロセスをガイドします。
 
 * **セットアップ**：クリーンなリストアを実行するには、まず IRE を作成し、次にリストアするワークロードを選択する必要があります。Ransomware Resilience は、ワークロードに関するすべてのアクションが実行されるクリーンルームを作成します。
 * **分析**：クリーンルームでは、NetApp Ransomware Resilienceがすべてのスナップショットを分析し、暗号化が存在するかどうかを確認します。クリーンな復元は、最適な復旧計画を決定するための復旧マップを作成します。
@@ -44,7 +44,7 @@ NetApp Ransomware Resilienceはクリーンリストアを提供し、ランサ�
 
 * **クリーンアップ**：NetApp Ransomware Resilience は、リカバリポイントからマルウェアを削除します。クリーンアップできないファイルがある場合は、復元対象から除外され、別の場所に隔離されます。
 * **復元**：NetApp Ransomware Resilienceは、クリーンなデータをソース環境に復元します。
-* **終了**：NetApp Ransomware Resilience はプロセスの詳細な概要を提供し、クリーンルームを閉じ、セットアップ中にプロビジョニングされたリソースを解放して、将来の従量課金コストを排除します。
+* **終了**：NetApp Ransomware Resilience はプロセスの詳細な概要を提供し、クリーンルームを閉じ、セットアップ中にプロビジョニングされたリソースを解放して、将来の従量課金コストをなくします。
 
 
 
@@ -604,7 +604,7 @@ TIP: IRE の詳細を変更する必要がある場合は、ランサムウェ�
 復元操作がアクティブな状態では、IREを削除することはできません。復元操作をキャンセルするか、復元が完了するまで待ってからIREを削除してください。
 
 
-IMPORTANT: IREを削除すると、クリーンルームSVMとメタデータボリュームも削除されます。これらのアセットが削除されると、クリーンリストアに関するレポートを生成することはできなくなります。
+IMPORTANT: IREを削除すると、クリーンルームSVMとメタデータボリュームも削除されます。これらのアセットが削除されると、クリーンな復元に関するレポートを生成できなくなります。
 
 . **設定**に移動します。
 . 隔離クリーニングとリカバリのカードで、**管理**を選択します。

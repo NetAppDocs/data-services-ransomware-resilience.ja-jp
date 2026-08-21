@@ -11,7 +11,7 @@ summary: SOARプレイブックを統合して使用し、NetApp Ransomware Resi
 
 
 [role="lead"]
-Ransomware Resilience は、脅威への対応などのタスクを自動化できるセキュリティ オーケストレーション、自動化、対応（SOAR）プレイブックを提供します。
+NetApp Ransomware Resilienceは、脅威対応などのタスクを自動化できるセキュリティオーケストレーション、自動化、およびレスポンス（SOAR）プレイブックを提供します。
 
 Ransomware Resilienceプレイブックは、次の機能を提供します：
 

@@ -9,7 +9,7 @@ summary: Ransomware Resilienceは、データ内のプライバシー侵害を�
 
 
 [role="lead"]
-NetApp Ransomware Resilienceでは、NetApp Data Classificationを使用してプライバシーの露出を特定し、データをプロアクティブに保護できます。プライバシーの露出を特定することで、データセットに個人を特定できる情報（PII）が含まれているかどうかが明らかになります。プライバシーの露出は、セキュリティリスクを高め、ワークロードの重要度の指定を変更する可能性があります。
+NetApp Ransomware Resilience で NetApp Data Classification を使用して、プライバシーの露出を特定し、個人識別情報（PII）を検出し、それらの露出がワークロードの重要性にどのように影響するかを把握します。
 
 *必須コンソールロール*：このタスクを実行するには、link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["スーパー管理者"^]またはRansomware Resilience管理者ロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^]。
 

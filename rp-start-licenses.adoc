@@ -12,9 +12,9 @@ summary: ワークロードを保護するために、Ransomware Resilienceの�
 
 
 [role="lead"]
-NetApp Ransomware Resilience ではさまざまなライセンス プランを提供しており、組織にとって適切なサービスに加入できます。
+トライアル、PAYGO、BYOLのライセンスオプションから選択して、お客様の組織に最適なNetApp Ransomware Resilienceをご利用ください。
 
-ライセンスを設定するには、組織管理者、フォルダー管理者、またはプロジェクト管理者のロールが必要です https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["コンソールアクセスロールについて学ぶ"^]。
+ライセンスを設定するには、組織管理者、フォルダ管理者、またはプロジェクト管理者の役割が必要です。 https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["コンソールアクセスロールについて学ぶ"^]。
 
 
 
@@ -176,7 +176,7 @@ NOTE: Ransomware Resilience のシリアル番号が記載され、Ransomware Re
 +
 image:screen-license-dw-add-license.png["ライセンスの追加ページのスクリーンショット。"]
 
-. 「ライセンスの追加」ページで、「*シリアル番号を入力*」を選択し、送信された電子メールに記載されているシリアル番号を入力します。  *ライセンスの追加*を選択します。
+. ライセンスの追加ページで、「シリアル番号を入力」を選択し、お客様に送信されたメールに記載されているシリアル番号を入力してください。「ライセンスを追加」を選択してください。
 . Licenses and subscriptionsでライセンスの詳細を表示するには、コンソールの左側のナビゲーションから、*ガバナンス* > *Licenses and subscriptions*を選択します。
 +
 ** サブスクリプション情報を表示するには、[*サブスクリプション*] を選択します。
@@ -259,7 +259,7 @@ image:screen-license-dw-add-license.png["ライセンスの追加ページのス
 +
 NetAppサポートサイトのアカウントがドロップダウンリストから選択できない場合は、 https://docs.netapp.com/us-en/console-setup-admin/task-adding-nss-accounts.html["NSSアカウントをコンソールに追加する"^] 。
 
-** zvondolr ライセンス ファイル (ダーク サイトにインストールする場合に必要) がある場合は、[ライセンス ファイルのアップロード] オプションを選択し、プロンプトに従ってファイルを添付します。
+** ライセンスファイルをお持ちの場合（ダークサイトにインストールする場合に必要）、*ライセンスファイルのアップロード*オプションを選択し、プロンプトに従ってファイルを添付してください。
 
 
 . *ライセンスの追加*を選択します。

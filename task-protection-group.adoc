@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-protection-group.html 
-keywords: ransomware protection, protection group, modify, create, 
+keywords: ransomware protection, protection group, modify, create 
 summary: NetApp Ransomware Resilienceでワークロードにポリシーを割り当てることで、ランサムウェア攻撃からワークロードを保護できます。 
 ---
 = NetApp Ransomware Resilience で保護グループを管理する
@@ -12,7 +12,7 @@ summary: NetApp Ransomware Resilienceでワークロードにポリシーを割�
 
 
 [role="lead"]
-NetApp Ransomware Resilienceは、データ資産の管理を容易にするために保護グループを提供します。保護グループは、ワークロードを論理的にまとめたグループです。Ransomware Resilienceは、1つの保護戦略で保護グループ内のすべてのボリュームを同時に保護できるため、各ワークロードごとに戦略を適用する手間が省けます。
+NetApp Ransomware Resilience の保護グループを使用して、関連するワークロードをまとめて管理し、グループ内のワークロード全体に単一の保護ポリシーを適用します。
 
 *必須コンソールロール*：このタスクを実行するには、link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["スーパー管理者"^]またはRansomware Resilience管理者ロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^]。
 
@@ -21,7 +21,7 @@ NetApp Ransomware Resilienceは、データ資産の管理を容易にするた�
 [[create-a-protection-group]]
 == 保護グループを作成する
 
-保護ステータスに関係なく（つまり、保護されていないグループと保護されているグループ）、グループを作成できます。保護グループに保護ポリシーを追加すると、新しい保護ポリシーは、NetApp Backup and Recoveryで管理されているポリシーを含む既存のポリシーをすべて置き換えます。
+グループを作成する際は、追加するワークロードの保護状態に関係なく作成できます。保護グループに保護ポリシーを追加すると、新しいポリシーは、NetApp Backup and Recovery によって管理されるポリシーを含む既存のポリシーに取って代わります。
 
 保護グループ内のワークロードは、同じワークロードタイプである必要があります。つまり、ブロックワークロードとファイルシステムワークロードを混在させることはできません。ワークロードは同じシステムタイプに属している必要があります。たとえば、保護グループにはすべてのオンプレミス ONTAP ファイルシステムワークロードを含めることができますが、Amazon FSx for NetApp ONTAP ワークロードを同じ保護グループに追加することはできません。
 

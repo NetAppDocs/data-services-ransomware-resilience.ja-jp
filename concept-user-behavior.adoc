@@ -12,13 +12,13 @@ summary: NetApp Ransomware Resilienceで異常なユーザーアクティビテ�
 
 
 [role="lead"]
-ユーザーアクティビティ検出機能により、NetApp Ransomware Resilienceにより、ユーザー レベルでランサムウェア イベントに対処し、データ侵害や大規模な削除などのイベントを阻止できます。
+NetApp Ransomware Resilienceにおけるユーザー アクティビティ検出は、データ侵害や大規模な削除を含む、不審なユーザーの行動を特定して阻止するのに役立ちます。
 
-NetApp Ransomware Resilienceは、AIを活用した検出機能と、不審なユーザー行動の監視機能を提供します。読み取り活動の急激な増加や異常なアクセスパターンは、悪意のある意図を判断するために用いられます。検出されると、Ransomware Resilienceは自動的にNetApp Console、Eメール、および設定済みのセキュリティエコシステム（例：SIEM）でアラートを生成します。
+NetApp Ransomware Resilienceは、AIを活用した検出機能を提供し、不審なユーザー行動を監視します。読み取りアクティビティの急激な増加や異常なネットワーク アクセスパターンは、悪意のある意図を示している可能性があります。検出されると、Ransomware Resilienceは、NetApp Console、電子メール、およびSIEMなどの設定済みセキュリティエコシステムに自動的にアラートを生成します。
 
-ユーザー行動の検出とアラート機能により、NetApp Ransomware Resilienceは、データ侵害やデータ破壊の試み、および不審なパターンを検知してアラートを発します。NetApp Ransomware Resilienceは、各アラートにおいて、ブロック可能なユーザーを特定します。
+Ransomware Resilienceは、ユーザー行動の検出とアラート機能により、不審なパターンやデータ侵害、データ破壊の試みを警告します。Ransomware Resilienceは、各アラートにおいて、ブロック可能なユーザーを特定します。
 
-Ransomware Resilience は、 ONTAPの FPolicy によって生成されたユーザー アクティビティ イベントを分析して、疑わしいユーザー アクティビティを検出します。ユーザー アクティビティ データを収集するには、1 つ以上のユーザー アクティビティ エージェントを展開する必要があります。エージェントは、テナント上のデバイスに接続できる Linux サーバーまたは VM です。
+Ransomware Resilience は、ONTAP の FPolicy によって生成されたユーザーアクティビティイベントを分析することにより、疑わしいユーザーアクティビティを検出します。ユーザーアクティビティデータを収集するには、1つ以上のユーザーアクティビティエージェントをデプロイする必要があります。ユーザーアクティビティエージェントとは、テナント内のデバイスに接続できる Linux サーバーまたは仮想マシンです。
 
 
 IMPORTANT: 現在、SANワークロードにおけるユーザーアクティビティ検出はサポートされていません。Amazon FSx for NetApp ONTAP、Cloud Volumes ONTAP、およびONTAPのNASワークロードでユーザーアクティビティ検出を使用できます。
@@ -44,7 +44,7 @@ image:all-file-activity.png["すべてのファイルアクティビティビュ
 NetApp Ransomware Resilienceのユーザー行動検出には、3つの主要なコンポーネントがあります。
 
 * **ユーザーアクティビティエージェント**は、データコレクター用の実行可能環境です。ユーザーアクティビティエージェントを設定する必要があります。
-* **データコレクタ**は、ユーザーアクティビティイベントをRansomware Resilienceと共有します。データコレクタは、link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["ユーザー行動検出機能を備えたランサムウェア対策戦略を有効にする"]ときに自動的に作成されます。
+* **データコレクター**は、ユーザーのアクティビティイベントを Ransomware Resilience と共有します。データコレクターは、link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies["ユーザー行動検出機能を備えたランサムウェア対策戦略を有効にする"]と自動的に作成されます。
 * **ユーザーディレクトリコネクタ**を使用すると、ユーザー名とユーザーID間のマッピングが可能になり、疑わしいユーザーの行動への対応がより明確になります。ユーザーディレクトリコネクタを設定する必要があります。
 
 
@@ -55,7 +55,7 @@ NetApp Ransomware Resilienceのユーザー行動検出には、3つの主要な
 
 Ransomware Resilienceのユーザー行動検出は、Data Infrastructure Insights（DII）Workload Securityとの統合であり、link:reference-user-activity-requirements.html["DIIエンドポイント"]を使用します。Ransomware Resilienceでユーザー行動検出を有効にするために、DIIの設定は一切必要ありません。ユーザー行動検出を有効にするには、link:suspicious-user-activity.html["必要なエージェントとコレクターを作成し、適切なランサムウェア保護戦略を有効にする"]。
 
-すでにNetApp Data Infrastructure Insights（DII）Workload Security を使用している場合は、Ransomware Resilience に同じ Workload Security エージェントを使用することをお勧めします。Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナント間のペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。
+すでに NetApp Data Infrastructure Insights (DII) Workload Security をご利用の場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用します。Ransomware Resilience 用に個別の Workload Security エージェントをデプロイする必要はありません。ただし、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナントの間のペアリング関係が必要になります。このペアリングを有効にするには、担当の営業代表者にお問い合わせください。
 
 
 

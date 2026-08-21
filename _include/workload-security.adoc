@@ -2,4 +2,4 @@
 :allow-uri-read: 
 
 
-すでにNetApp Data Infrastructure Insights（DII）Workload Security を使用している場合は、Ransomware Resilience に同じ Workload Security エージェントを使用することをお勧めします。Ransomware Resilience 用に個別の Workload Security エージェントを展開する必要はありませんが、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナント間のペアリング関係が必要です。このペアリングを有効にするには、アカウント担当者にお問い合わせください。
+すでに NetApp Data Infrastructure Insights (DII) Workload Security をご利用の場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用します。Ransomware Resilience 用に個別の Workload Security エージェントをデプロイする必要はありません。ただし、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナントの間のペアリング関係が必要になります。このペアリングを有効にするには、担当の営業代表者にお問い合わせください。

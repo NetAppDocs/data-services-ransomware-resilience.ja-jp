@@ -12,7 +12,7 @@ summary: NetApp Ransomware Resilienceに関するよくある質問への回答�
 
 
 [role="lead"]
-この FAQ は、NetApp Ransomware Resilienceに関する質問への簡単な回答を探している場合に役立ちます。
+このFAQを利用して、NetApp Ransomware Resilienceに関するよくある質問への回答をご確認ください。
 
 
 
@@ -28,7 +28,7 @@ summary: NetApp Ransomware Resilienceに関するよくある質問への回答�
 
 
 .ランサムウェア耐性をどのように有効にするのですか?
-NetApp Consoleから Ransomware Resilience にアクセスできます。必ず link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["アクセスロール"] そして link:rp-start-prerequisites.html["前提条件"]。コンソールエージェントの設定に成功したら、 link:rp-start-discover.html["ワークロードを発見する"]。
+Ransomware Resilience には、NetApp Console からアクセスできます。必要なlink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["アクセスロール"]があることを確認し、link:rp-start-prerequisites.html["前提条件"]を満たしていることを確認してください。Console エージェントの設定が完了したら、link:rp-start-discover.html["ワークロードを発見する"]できます。
 
 詳細については、link:rp-start-login.html["ランサムウェア耐性にアクセス"]そしてlink:rp-start-quick-start.html["ランサムウェア耐性クイックスタートガイド"]。
 

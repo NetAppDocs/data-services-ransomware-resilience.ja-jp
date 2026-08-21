@@ -12,7 +12,7 @@ summary: Ransomware Resilience を使用するには、いくつかの手順を�
 
 
 [role="lead"]
-NetApp Ransomware Resilience を簡単に導入できます。始める前に、link:rp-start-prerequisites.html["前提条件"]環境の準備ができていることを確認します。
+バックアップ先の準備、前提条件の確認、NetApp Console およびコンソールエージェントの設定を行うことで、NetApp Ransomware Resilience をセットアップします。
 
 
 
@@ -63,7 +63,7 @@ StorageGRIDをバックアップ先として使用する場合は、 https://doc
 [[set-up-the-netapp-console]]
 == NetApp Consoleをセットアップする
 
-次のステップは、コンソールとランサムウェア耐性を設定することです。
+次のステップは、NetApp Console と NetApp Ransomware Resilience を設定することです。
 
 レビュー https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-standard-mode.html["標準モードのコンソール要件"^]。
 
@@ -72,9 +72,9 @@ StorageGRIDをバックアップ先として使用する場合は、 https://doc
 [[create-a-console-agent]]
 === コンソールエージェントを作成する
 
-このサービスを試用または使用するには、 NetApp の営業担当者にお問い合わせください。その後、コンソール エージェントを使用すると、ランサムウェア耐性のための適切な機能が含まれるようになります。
+NetAppの営業担当者にお問い合わせいただき、このサービスをお試しいただくか、ご利用ください。さらに、Console エージェントには、Ransomware Resilience に必要な機能が含まれています。
 
-ランサムウェア耐性を使用してコンソールエージェントを作成するには、コンソールエージェントを作成する権限を持つコンソール組織管理者に連絡し、説明されているドキュメントを参照してください。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コンソールエージェントを作成する方法"^] 。
+NetApp Ransomware Resilience 用の Console エージェントを作成するには、Console エージェントを作成する権限を持つ Console 組織管理者に連絡し、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コンソールエージェントを作成する方法"^]を参照してください。
 
 
-NOTE: コンソール エージェントが複数ある場合、Ransomware Resilience は、コンソールに現在表示されているエージェント以外のすべてのコンソール エージェントにわたってデータをスキャンします。このサービスは、この組織に関連付けられているすべてのプロジェクトとすべてのコンソール エージェントを検出します。
+NOTE: コンソールエージェントが複数ある場合、NetApp Ransomware Resilienceは、コンソールに現在表示されているエージェントだけでなく、すべてのコンソールエージェントのデータをスキャンします。このサービスは、組織に関連付けられているすべてのプロジェクトとコンソールエージェントのデータをスキャンします。
