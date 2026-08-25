@@ -1579,7 +1579,6 @@
   <block id="1cb54935f05151077e45294fd0acda40" category="list-text"><block ref="1cb54935f05151077e45294fd0acda40" category="inline-link-macro-rx"></block></block>
   <block id="6a3ad50557786ed110b2cefa2a2be7bd" category="list-text">システムを選択して詳細を表示します。</block>
   <block id="6872a6ef5ae2db047b6effa74304d0af" category="list-text">そのユーザーの既存のロールを表示します：</block>
-  <block id="67c903793b6bf8b730fee76339b93672" category="list-text">検出設定として*不審なユーザー行動の検出*を選択した場合は、ユーザーアクティビティエージェントまたは<block ref="0fcb9e48262f104799fbf49d6c09d7d5" category="inline-link-macro-rx"></block>を選択します。</block>
   <block id="a7045f65a60246a57662a00a9dc6dc73" category="inline-link-macro">オペレーティングシステム、サーバ、およびネットワークの要件</block>
   <block id="72ae3905ad051e75d558266df8b1e63a" category="list-text"><block ref="4535d4c19297d046165dc98674d914e8" category="inline-link-macro-rx"></block>を満たしていることを確認してください。</block>
   <block id="59ad45573dbf4296a202cefa7894c118" category="section-title">ユーザーアクティビティエージェントを作成する</block>
@@ -2569,8 +2568,6 @@
   <block id="7add8fc88b51e4a92eb3463aed73b61d" category="paragraph">Ransomware Resilience は、Microsoft Sentinel を SIEM として接続するための Azure Resource Manager (ARM) テンプレートを提供するようになりました。これにより、デプロイを容易にするための二次的な方法が提供されます。</block>
   <block id="5b782deb754617d2be1da0beb60e5b16" category="inline-link-macro">脅威の検出と分析のためにSIEMに接続する</block>
   <block id="861174940ee146accf84fbe687b7ff1c" category="paragraph">詳細については、<block ref="9ce2483ddf8d37cd167d593bafc6e6e7" category="inline-link-macro-rx"></block>を参照してください。</block>
-  <block id="ae00487184e64f3a5e5738cc82621c2c" category="list-text">Microsoft Sentinel*</block>
-  <block id="daea42ccacab5543f1ae62da54cc9877" category="paragraph">{asterisk} Ransomware Resilience は、Microsoft Sentinel 用の Azure Resource Manager (ARM) テンプレートも提供しています。</block>
   <block id="59ad121b0ef1b561c2f96f9b5fbd50f8" category="doc">ウェブフックを介してSIEMを設定する</block>
   <block id="43a14127ca7c560502e3232122f8748a" category="paragraph">Ransomware Resilienceは、Ransomware Resilience UIでWebhookを介してセキュリティ情報およびイベント管理（SIEM）システムを設定する機能をサポートするようになりました。Webhookを使用すれば、お好みのSIEMシステムを連携させてランサムウェアの監視を効率化できます。</block>
   <block id="777ce6dfcc1db686d2520e63a7141ce2" category="inline-link-macro">SIEMシステムを構成する</block>
@@ -2613,7 +2610,6 @@
   <block id="2c04ca6afac47fae351d7176c354ba9b" category="admonition">ユーザアクティビティエージェントはNetApp Data Infrastructure Insightsテクノロジを使用するため、<block ref="08f7b82cf54cd7bdcab171ad9bd445cc" prefix=" " category="inline-code"></block>エンドポイントを使用します。詳細については、<block ref="12c485f306c08c5a6939aa54065b62ed" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="012f0abca78822d24d27455403c3d089" category="list-text">agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="dcac1ae04e45c773239f95ecd0c5f082" category="cell">389（LDAP）636（LDAPS / start-tls）</block>
-  <block id="c44e1219325e37378db9611536ddafc3" category="cell">Fpolicy イベントのユーザー アクティビティ エージェントへの ONTAP からの通信。これらのポートは、ユーザー アクティビティ エージェント自体のファイアウォール（存在する場合）を含め、ONTAP がイベントを送信できるよう、ユーザー アクティビティ エージェントに向けて開放されている必要があります。+ **注：** これらのポートの *すべて* を予約する必要はありませんが、予約するポートはこの範囲内である必要があります。まず 100 個のポートを予約し、必要に応じて増やすことをお勧めします。</block>
   <block id="752cfb7f100699ed10b934470fc8824c" category="doc">ワークロードとシステムタイプに基づいて保護グループを標準化する</block>
   <block id="3a53d7e702e0596f76d0deb9f8cc03ea" category="paragraph">ランサムウェア対策機能では、保護グループにはワークロードの種類とシステムの種類がそれぞれ1つずつしか含まれないように強制されるようになりました。新しい保護グループを作成する際には、ワークロードの種類（ファイルシステムまたはブロック）と、ワークロードを実行するシステムの両方を指定する必要があります。この機能強化により、保護グループに対して選択されたランサムウェア対策戦略が、グループ内のすべてのワークロードに確実に適用できるようになります。</block>
   <block id="372c0699ee751a2658f1b4a897349a47" category="paragraph">システムタイプとワークロードタイプが混在する既存の保護グループがある場合は、引き続き使用できますが、保護グループにワークロードを追加することはできません。</block>
@@ -2812,4 +2808,40 @@
   <block id="cb93ad4589e6e6834d2627d2ef8c8456" category="section-title">マルチ管理者認証</block>
   <block id="c77edebaabc370e372cc7bd8a3946ec4" category="inline-link-macro">ONTAPのマルチ管理者検証</block>
   <block id="4fe568bb5fe11f3f2a80f6dbbcb77a58" category="paragraph">マルチ管理者検証は、ランサムウェア耐性または NetApp Console ではサポートされていません。<block ref="67e9d4830abb18c6f9ecab2abb6d5c08" category="inline-link-macro-rx"></block> を設定している場合、ランサムウェア耐性において一部のワークフローが期待どおりに動作しない可能性があります。</block>
+  <block id="aa1680de6fa426cea529c4dfecdc015e" category="doc">コンソールエージェントを介したSIEMイベント配信</block>
+  <block id="64cbd2542074b8251a3a9a4207763f2a" category="paragraph">Ransomware Resilience は、NetApp Console を通じてイベントを配信する既存のオプションに加えて、Console エージェントを通じて SIEM イベントを配信する機能をサポートするようになりました。</block>
+  <block id="bb6efadd7c4367d935879bb3d0cb1872" category="paragraph">コンソールエージェントを介してSIEMイベントを配信する場合、SIEMイベントの配信をネットワーク境界内に留めることができます。これにより、厳格なIPアドレス許可リストを持つオンプレミス環境へのデプロイが簡素化され、既存のセキュリティ制御との整合性も高まります。このオプションを使用するには、コンソールエージェントがファイアウォールやプロキシ制御を経由して、必要なポートでSIEMエンドポイントの名前解決および接続を行えることを確認してください。</block>
+  <block id="b5c84596d34fbfb280405940a634b156" category="cell">FPolicy イベントに関する ONTAP からユーザーアクティビティエージェントへの通信。これらのポートは、ONTAP がイベントをユーザーアクティビティエージェントに送信できるよう、ユーザーアクティビティエージェント自体のファイアウォール（存在する場合）を含め、ユーザーアクティビティエージェントに向けて開放されている必要があります。+ **注：** これらのポートの *すべて* を予約する必要はありませんが、予約するポートはこの範囲内である必要があります。まず 100 ポートを予約し、必要に応じて増やすことをお勧めします。</block>
+  <block id="49e0f8b47eab0f640ee82845d459cd21" category="list-text">検出設定として「不審なユーザー行動の検出」を選択した場合は、ユーザーアクティビティエージェントまたは<block ref="0fcb9e48262f104799fbf49d6c09d7d5" category="inline-link-macro-rx"></block>を選択してください。</block>
+  <block id="08fa66584afbf1283c833b5a59619296" category="section-title">イベント配送ルート</block>
+  <block id="eb60dc6e31962c5336f25788a8e1f1f5" category="paragraph">Ransomware Resilience は、NetApp Console とコンソールエージェントを通じた SIEM イベントの配信をサポートします。設定時に、希望の配信ルートを選択できます。</block>
+  <block id="5e923011beb7826bf2187ff51e405217" category="paragraph">コンソール経由の配信では、イベントはコンソールからSIEMエンドポイントに直接送信されます。イベントを受信するには、SIEMエンドポイントがパブリックインターネットからアクセス可能である必要があります。</block>
+  <block id="487502d64c87de0bf58cf8c8f21ee31e" category="paragraph">コンソールエージェント経由で配信する場合、イベントはネットワーク内に存在するコンソールエージェントを経由してルーティングされます。このオプションは、厳格なIPアドレス許可リストが設定されたオンプレミス環境に最適であり、受信接続は不要です。コンソールエージェントは、ネットワーク経由でSIEMエンドポイントに到達できる必要があります。これは、エンドポイントのホスト名を解決し、必要なポートに接続し、ファイアウォールやプロキシの制御を通過できることを意味します。</block>
+  <block id="8386085def2fede12478cf5afdbee821" category="paragraph">コンソールエージェントを介したイベント配信は、Google SecOps、Splunk、およびWebhookベースのSIEM構成でサポートされています。</block>
+  <block id="d1b3fd776afd07332548e4d913309b68" category="list-text"><block ref="7c24413a9fb1121268fc7c0edd9d6982" category="inline-xref-macro-rx"></block>を選択します。SIEMイベントをSIEMエンドポイントに配信するには、**「Deliver via NetApp Console」**を選択します。すでにネットワーク上にあるConsoleエージェント経由でイベントをルーティングするには、**「Deliver via Console agent」**を選択します。</block>
+  <block id="f95fb63626ed79b78f5d3a1ad9a62d64" category="paragraph">「Console エージェント経由で配信する」を選択した場合は、ドロップダウンメニューから使用する Console エージェントを選択してください。</block>
+  <block id="9752c650ea880ea8e1a024c804a5c14e" category="paragraph">Microsoft Sentinel SIEMの場合、自動展開を選択すると、お客様が指定した権限に基づいてランサムウェア耐性機能がリソースを展開します。あるいは、提供された ARM テンプレートに基づいてリソースをデプロイする手動デプロイを実行することもできます。</block>
+  <block id="91a6bec146982c32e97bb762cd319c04" category="open-title">自動展開</block>
+  <block id="158166321b0b3b2ffc06a280380a29e2" category="list-text">デプロイ方法として「自動」を選択します。</block>
+  <block id="18e4d85c126b46658b30f374a3613db8" category="open-title">手動展開</block>
+  <block id="52bc37cd407c4f3a7762592cf269346a" category="list-text">展開方法として「手動」を選択します。</block>
+  <block id="5acac8850756ffd34bc3983aeb65394e" category="list-text">*ARM Template Deployment* セクションを展開します。</block>
+  <block id="21f04d26e40277d66043b4ec676de8f0" category="list-text">Monitoring Metrics Publisher ロールを割り当てます。</block>
+  <block id="03910ec5bc06c69d06b09a7d2ce91dd2" category="list-text">Azure サブスクリプションで、「アクセス制御 （IAM）」に移動します。</block>
+  <block id="44cff8f384052e6f5b1f4fafc23ef4d5" category="list-text">「ロールの割り当ての追加」を選択します。</block>
+  <block id="e6ec36efa0bbdf10fd60a8a6852a644c" category="list-text">「Monitoring Metrics Publisher」を検索して選択します。</block>
+  <block id="73e02342b0fefad869141a2cc487f962" category="list-text">登録手順で作成したアプリケーション登録のサービスプリンシパルに、役割割り当てを追加します。</block>
+  <block id="b0802f3f26bd5c4a23f49c39d352174a" category="list-text">「確認と割り当て」</block>
+  <block id="6f1c2a09c472f2a1bfe8859795a99f57" category="list-text">Ransomware Resilience UIに戻ります。ARM テンプレートの JSON をコピーして、Azure 環境に Log Analytics カスタムテーブル、データ収集エンドポイント（DCE）、データ収集ルール（DCR）、および Sentinel 分析ルールを作成します。</block>
+  <block id="a7656865ad634af8f75799041e4e11e9" category="list-text">Azure ポータルで、「カスタム テンプレートのデプロイ」を検索します。</block>
+  <block id="c5fc6c378447cbf81248f4df4fa19d5c" category="list-text">エディターで「独自のテンプレートを作成する」を選択します。</block>
+  <block id="0e50b795f9b35da566dbb3463a0e930d" category="list-text">コピーしたJSONをエディタに貼り付けます。*保存*を選択します。</block>
+  <block id="512403a60546e796987c3af08cfbd513" category="list-text">Log Analytics ワークスペースの名前である *Workspace name* を入力してください。これは、Azure ポータルのワークスペース概要ページから取得できます。</block>
+  <block id="038a50e17d148f59cac701ab03d6d0ea" category="list-text">「レビュー＋作成」を選択します。選択内容を確認し、「作成」をクリックしてデプロイします。</block>
+  <block id="a8ef5813cf743d24398f43c7163807f7" category="list-text">展開後、Ransomware Resilience での認証のために、以下の情報を収集してください。</block>
+  <block id="c99d0a8dcbcd4fa540ecde6fbbf6341c" category="list-text">*ログ取り込みエンドポイント*：データ収集エンドポイントリソースを開き（<block ref="a32cb302e889e4d4ed48e3100cf9e4a6" prefix="(" category="inline-code"></block>）、概要ページに表示されているログ取り込みの値をコピーします。</block>
+  <block id="a9a44bec09a56231aababf62f1d0a543" category="list-text">*DCR Immutable ID*: データ収集ルール リソースを開き（<block ref="9d7e8a93c4309a2f6e9e1c88f401edc8" prefix="(" category="inline-code"></block>）、概要ページで Immutable ID をコピーします。</block>
+  <block id="31181df1565380de486e372742d4ec62" category="list-text">以前コピーした「ログ取り込みエンドポイント」と「DCR不変ID」を入力します。</block>
+  <block id="38ed29f4cd44c37378781f175f5b1752" category="list-text">接続を作成するには、*接続*を選択してください。</block>
+  <block id="f6bbe5efd3f2141104f822ac01ed3102" category="section-title">2026年8月25日</block>
 </blocks>

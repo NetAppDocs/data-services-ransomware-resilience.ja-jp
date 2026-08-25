@@ -1,0 +1,14 @@
+= コンソールエージェントを介したSIEMイベント配信
+:allow-uri-read: 
+
+
+
+
+[[siem-event-delivery-through-the-console-agent]]
+=== コンソールエージェントを介したSIEMイベント配信
+
+Ransomware Resilience は、NetApp Console を通じてイベントを配信する既存のオプションに加えて、Console エージェントを通じて SIEM イベントを配信する機能をサポートするようになりました。
+
+コンソールエージェントを介してSIEMイベントを配信する場合、SIEMイベントの配信をネットワーク境界内に留めることができます。これにより、厳格なIPアドレス許可リストを持つオンプレミス環境へのデプロイが簡素化され、既存のセキュリティ制御との整合性も高まります。このオプションを使用するには、コンソールエージェントがファイアウォールやプロキシ制御を経由して、必要なポートでSIEMエンドポイントの名前解決および接続を行えることを確認してください。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["SIEMシステムを構成する"^]を参照してください。
