@@ -2809,4 +2809,7 @@
   <block id="c0bdc8b4b8a3be2684cfe6108f6978ae" category="paragraph">NetApp Ransomware Resilienceでユーザーアクティビティ監視を設定する場合、検証やテストのために、疑わしいユーザー行動イベントをシミュレートするテストスクリプトを実行できます。</block>
   <block id="c120d673c7fb209814b49c9420ea9cee" category="paragraph">ユーザーアクティビティ検出を NetApp Ransomware Resilience で設定した後、ブロックされたユーザーを管理したり、アラートをカスタマイズしたりできます。特定のユーザーやファイルパスをアラートの対象から除外したり、ランサムウェアイベントへの対応としてユーザーをブロックして悪意のある活動を防止したりすることができます。</block>
   <block id="89decfaa1b470ead2915f39754702fde" category="paragraph">NetApp Ransomware Resilience でユーザーアクティビティエージェントのインストールまたは実行に問題がある場合は、よくあるシナリオと解決策を確認してください。</block>
+  <block id="cb93ad4589e6e6834d2627d2ef8c8456" category="section-title">マルチ管理者認証</block>
+  <block id="c77edebaabc370e372cc7bd8a3946ec4" category="inline-link-macro">ONTAPのマルチ管理者検証</block>
+  <block id="4fe568bb5fe11f3f2a80f6dbbcb77a58" category="paragraph">マルチ管理者検証は、ランサムウェア耐性または NetApp Console ではサポートされていません。<block ref="67e9d4830abb18c6f9ecab2abb6d5c08" category="inline-link-macro-rx"></block> を設定している場合、ランサムウェア耐性において一部のワークフローが期待どおりに動作しない可能性があります。</block>
 </blocks>

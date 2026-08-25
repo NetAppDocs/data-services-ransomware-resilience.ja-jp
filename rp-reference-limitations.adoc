@@ -68,3 +68,10 @@ SAN（ブロックストレージ）ワークロードには、以下の制限�
 * Ransomware ResilienceがSANワークロードに対して警告を生成する場合、それは高エントロピーのみに基づいています。
 * SANワークロードは、link:task-custom-restore.html["カスタム復元"]を使用してのみリストアできます。SANワークロードでは、クリーンリストアは現在利用できません。
 
+
+
+
+[[multi-admin-verification]]
+== マルチ管理者認証
+
+マルチ管理者検証は、ランサムウェア耐性または NetApp Console ではサポートされていません。link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["ONTAPのマルチ管理者検証"^] を設定している場合、ランサムウェア耐性において一部のワークフローが期待どおりに動作しない可能性があります。
