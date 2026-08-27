@@ -89,7 +89,7 @@ Ransomware ResilienceでAWS Security Hubを有効にする前に、AWS Security 
 . *ポリシー*を選択します。
 . 次の JSON 形式のコードを使用してポリシーを作成します。
 +
-[listing]
+[source, json]
 ----
 {
   "Version": "2012-10-17",
@@ -113,9 +113,6 @@ Ransomware ResilienceでAWS Security Hubを有効にする前に、AWS Security 
 
 .Ransomware ResilienceでAWS Security Hubを認証
 . Ransomware Resilienceで、サイドバーの*Settings*を選択します。
-+
-image:screen-settings2.png["設定ページ"]
-
 . 設定ページで、SIEM接続タイルの*Connect*を選択し、ドロップダウンメニューから*AWS Security Hub*を選択します。
 +
 image:screen-settings-threat-detection-3options.png["脅威検出の詳細ページを有効にする"]
@@ -162,9 +159,6 @@ NETAPP_RANSOMWARE_RESILIENCEログタイプを使用することをお勧めし�
 
 .Ransomware ResilienceでGoogle SecOpsを認証する
 . Ransomware Resilienceで、サイドバーの*Settings*を選択します。
-+
-image:screen-settings2.png["設定ページ"]
-
 . 設定ページで、SIEM接続タイルの「接続」を選択し、ドロップダウンメニューから「Google SecOps」を選択します。
 +
 image:screen-settings-threat-detection-3options.png["脅威検出の詳細ページを有効にする"]
@@ -212,7 +206,7 @@ Ransomware ResilienceでMicrosoft Sentinelを有効にする前に、Microsoft S
 . カスタム ロール名を入力します。  *Ransomware Resilience Sentinel Configurator* という名前を使用します。
 . 次の JSON をコピーして、*JSON* タブに貼り付けます。
 +
-[listing]
+[source, json]
 ----
 {
   "roleName": "Ransomware Resilience Sentinel Configurator",
@@ -335,7 +329,7 @@ image:screen-settings-threat-detection-3options.png["脅威検出の詳細ペー
 .. 「確認と割り当て」
 
 
-. Ransomware Resilience UIに戻ります。ARM テンプレートの JSON をコピーして、Azure 環境に Log Analytics カスタムテーブル、データ収集エンドポイント（DCE）、データ収集ルール（DCR）、および Sentinel 分析ルールを作成します。
+. ランサムウェア対策のページに戻る。ARM テンプレートの JSON をコピーして、Azure 環境に Log Analytics カスタムテーブル、データ収集エンドポイント （DCE）、データ収集ルール （DCR）、および Sentinel 分析ルールを作成します。
 . Azure ポータルで、「カスタム テンプレートのデプロイ」を検索します。
 . エディターで「独自のテンプレートを作成する」を選択します。
 . コピーしたJSONをエディタに貼り付けます。*保存*を選択します。
@@ -393,9 +387,6 @@ NOTE: Splunk Enterprise の場合、Ransomware Resilience が提供された HTT
 
 .Splunk を NetApp Ransomware Resilience で認証する
 . Ransomware Resilienceで、サイドバーの*Settings*を選択します。
-+
-image:screen-settings2.png["設定ページ"]
-
 . [設定] ページで、SIEM 接続タイルの [*接続*] を選択します。
 +
 image:screen-settings-threat-detection-3options.png["脅威検出の詳細ページを有効にする"]
