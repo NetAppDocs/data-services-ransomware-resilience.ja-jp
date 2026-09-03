@@ -523,7 +523,6 @@
   <block id="2711b34ed6f854164ab28f6ba7d757fc" category="list-text">コンソールがワークロードを検出すると、ランサムウェア耐性ダッシュボードにワークロード データ保護の健全性が表示されます。</block>
   <block id="1de66de0484295c7b0e311cd3746dab8" category="inline-image-macro">[ダッシュボード]ページ</block>
   <block id="1541b6face8479b500e3accafb066eee" category="paragraph"><block ref="1541b6face8479b500e3accafb066eee" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5cf652b0493bef09f6f5bcbd5925413f" category="list-text">*ワークロード データ保護*: [保護] ページで、危険にさらされている、または保護されているすべてのワークロードを表示するには、[すべて表示] を選択します。保護レベルが保護ポリシーと一致しない場合、ワークロードは危険にさらされます。。 <block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block> 。</block>
   <block id="7946ca9134fecb1e363f88a194b4e259" category="inline-link-macro">検出されたアラートに応答する</block>
   <block id="3e68731452668c74a209b358c132dbaa" category="list-text">*アラートとワークロード データの回復*: [すべて表示] を選択すると、ワークロードに影響を与えたアクティブなインシデント、インシデントが解決された後に回復の準備ができているアクティブなインシデント、または回復中のアクティブなインシデントが表示されます。。 <block ref="a57b82018dcad508c33f5a5c54351028" category="inline-link-macro-rx"></block> 。</block>
   <block id="8cdbaff59230fdce1ca498813a54b0c1" category="list-text">インシデントは次のいずれかの状態に分類されます。</block>
@@ -1840,7 +1839,6 @@
   <block id="450000aaa83625b4284af1b1791c4576" category="list-text"><block ref="450000aaa83625b4284af1b1791c4576" category="inline-link-macro-rx"></block></block>
   <block id="462a6e98fbd2a13cda63645b676477e3" category="section-title">2026年3月12日</block>
   <block id="cb4ae29d8762239c8dfdfc76bdb65d37" category="paragraph">Ransomware Resilienceは、<block ref="8ab0c1a60a7c0ca7e1eee721cf8a8924" category="inline-link-macro-rx"></block>および<block ref="4655146bfbabab7fd679c2d1ca7a8d15" category="inline-link-macro-rx"></block>向けのセキュリティオーケストレーション、自動化、対応（SOAR）プレイブックを提供するようになりました。このプレイブックにより、脅威対応の管理が容易になり、タスクのテストや、スナップショットの作成やボリュームのオフライン化などの重要なランサムウェア対応作業が自動化されます。</block>
-  <block id="7a62bbe1752bad34a2882c1488855472" category="paragraph">ワークロードが保護対象として分類されると、購入済みの容量または従量課金制のサブスクリプションに対してカウントされます。Ransomware Resilienceは、少なくとも1つのスナップショットまたはバックアップポリシーで検出ポリシーが有効になっている場合、ワークロードを保護されていると分類します。検出ポリシーによって検出されたワークロードのうち、バックアップポリシーやスナップショットポリシーが設定されていないワークロードは、リスクがあると分類されます。リスクのあるワークロードは、購入済みの容量にはカウントされません。</block>
   <block id="0a444369e66f3a256a69eec8c1934071" category="paragraph">サイジングを検討する際、ライセンス費用はアクティブ ファイル システムの論理容量に基づいて決定されます（つまり、スナップショットが消費する容量は含まれません）。</block>
   <block id="ed300adca180c1e33d800707367434a6" category="doc">Google SecOps向けSOARプレイブック</block>
   <block id="d6e96acd595d94a4f4fd9727f77f8f89" category="inline-link-macro">Google SecOps</block>
@@ -2364,16 +2362,12 @@
   <block id="262d414194517bdfa67b048201f2b424" category="paragraph">検出ポリシーには、3つのオプションすべてを含めることも、それらを組み合わせることも可能です。暗号化検出または<block ref="0c1271458a5eed3dcf0b345a743161db" category="inline-link-macro-rx"></block>のいずれかを含める必要があります。</block>
   <block id="38cfc49361136d6f7410fbe2c3b7430a" category="list-text">*保護の変更*：30 日、60 日、90 日、または 1 年間の一定期間におけるワークロードの保護戦略の変更のレビューが含まれます。</block>
   <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026年6月8日</block>
-  <block id="8301d3df17a7d3b229e97daa256bc551" category="paragraph">ランサムウェア耐性において、ワークロードに検出ポリシーが有効になっている場合、そのワークロードの状態は「保護済み」と表示されます。検出ポリシーは、暗号化検出または不審なユーザー行動検出（あるいはその両方）のいずれかで構成されている必要があります。これには、不審なファイル拡張子の検出機能も含まれます。詳細については、<block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>を参照してください。</block>
-  <block id="6c6097f9e44fb30ef0bc0a6e210dce9b" category="paragraph">ワークロードに検出ポリシーが有効になっていない場合、バックアップおよびスナップショット ポリシーが有効になっていても、「リスクあり」と表示されます。ランサムウェア対策として、<block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>を有効にする必要があります。</block>
   <block id="fec111d809c49ffc75c21732e808fe2d" category="admonition">アラートを無視すると、Ransomware Resilienceはこの動作を学習し、それを通常の動作と関連付け、同様のイベントに関するアラートの送信を停止します。</block>
   <block id="7f2998da36c9b089182a98b4c6ff6c5d" category="admonition">既存の保護戦略があり、その戦略上の検出方法のいずれかを無効にした場合、そのポリシーの以前のバージョンで作成されたアラートは、「解決済み」としてのみマークでき、「却下済み」としてマークすることはできません。例えば、暗号化検出と不審なユーザー行動を含む保護戦略に対してアクティブなアラートが発生していたが、その後暗号化検出を無効にした場合、そのアラートは「解決済み」としてしかマークできません。</block>
   <block id="5e37428a91a220042e4764361ae6e656" category="list-text">*暗号化検出*：ランサムウェア耐性を有効にして、暗号化ベースの攻撃を検出します。</block>
   <block id="83b90da4f4a4213417bbdd607b6813c9" category="list-text">*不審なユーザー行動の検出*：ユーザー行動の検出を有効にして、ユーザーアクティビティイベントをRansomware Resilienceに送信し、データ侵害やデータ破壊などの不審なイベントを検出します。</block>
   <block id="8d9e80b9523ae8e43c09fee979fbfe13" category="list-text">*ファイル拡張子のブロック*：ランサムウェア耐性を有効にして、既知の疑わしいファイル拡張子をブロックします。</block>
   <block id="87c5b70bcda4f0448400bb7245e5d975" category="admonition">検出ポリシーは任意の組み合わせで選択できます。検出ポリシーには、暗号化検出または不審なユーザー行動検出のいずれかを含める必要があります。</block>
-  <block id="18282a82722e35ec83f6634f6933e908" category="list-text">*保護対象*：検出ポリシーが適用されます。</block>
-  <block id="689a050b69b980dbe9c67ea9fdaeb981" category="list-text">*リスクあり*：ポリシーは適用されません。ワークロードに検出ポリシーが有効になっていない場合、スナップショットとバックアップ ポリシーが有効になっていても「リスクあり」の状態です。</block>
   <block id="1c2f725024e8db3f57c9ffb6c1869a4f" category="list-text">*処理中*: ポリシーが適用されていますが、処理は完了していません。</block>
   <block id="7f2fe4ecc84891950d87f953f70363aa" category="list-text">*Failed*: ポリシーは設定されましたが、エラーが発生しました。</block>
   <block id="ed3c60417302240ba271d87f011c0f32" category="paragraph">Ransomware ResilienceでAWS Security Hubを有効にする前に、AWS Security Hubでセキュリティ設定を行う必要があります。</block>
@@ -2844,4 +2838,12 @@
   <block id="38ed29f4cd44c37378781f175f5b1752" category="list-text">接続を作成するには、*接続*を選択してください。</block>
   <block id="f6bbe5efd3f2141104f822ac01ed3102" category="section-title">2026年8月25日</block>
   <block id="bb23df37e6fe74c9adce400b2dce40db" category="list-text">ランサムウェア対策のページに戻る。ARM テンプレートの JSON をコピーして、Azure 環境に Log Analytics カスタムテーブル、データ収集エンドポイント （DCE）、データ収集ルール （DCR）、および Sentinel 分析ルールを作成します。</block>
+  <block id="625e7b50d0584bc4bde48651c8cfc7ee" category="paragraph">ワークロードが保護対象として分類されると、購入済みの容量または従量課金制のサブスクリプションに対してカウントされます。ランサムウェア耐性機能は、暗号化ポリシーまたはユーザーアクティビティ検出ポリシーのいずれかが有効になっている場合に、ワークロードを保護対象として分類します。これらの検出ポリシーのうち少なくとも1つが適用されない場合、ワークロードはリスクありと分類されます。リスクのあるワークロードは、購入済みの容量にはカウントされません。</block>
+  <block id="f6a2fb2a5374a593874b657ed729f82b" category="paragraph">ランサムウェア耐性において、ワークロードに検出ポリシーが有効になっている場合、そのワークロードの状態は「保護済み」と表示されます。検出ポリシーは、暗号化検出または不審なユーザー行動検出（あるいはその両方）のいずれかで構成されている必要があります。詳細については、<block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="2850e23cea54ee88036b5a17e51dc5dd" category="paragraph">ワークロードが保護されているとみなされるには、暗号化検出またはユーザー行動検出が有効になったランサムウェア保護ポリシーが必要です。これらの検出戦略のうち少なくとも1つがない場合、ワークロードはリスクありとラベル付けされます。ワークロードにバックアップまたはスナップショットポリシーが設定されていても、暗号化検出またはユーザー行動検出が有効になっていない場合は、リスクありとみなされます。</block>
+  <block id="6320d906c420ff6393e8f0fd47eaf876" category="paragraph">Ransomware Resilienceは、不審なファイル拡張子の検出機能も提供しています。不審なファイル拡張子の検出が唯一有効な検出ポリシーである場合、ワークロードはリスクありとラベル付けされます。</block>
+  <block id="eca582e2a6a980264db3e5c92d632da6" category="paragraph">ランサムウェア対策として、<block ref="ffe6233ab872c39a610f87efd1e90b37" category="inline-link-macro-rx"></block>を有効にする必要があります。</block>
+  <block id="15970e7cc58cf4e7b2b7962f63826587" category="list-text">*ワークロードのデータ保護*： *すべて表示*を選択すると、保護ページでリスクにさらされているワークロードと保護されているワークロードがすべて表示されます。暗号化検出機能もユーザーアクティビティ検出機能も備えていない場合、ワークロードはリスクにさらされているとみなされます。<block ref="2b2daeeb32402291362fa9fa843a5c7e" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="345292bfa93053446c9594b577a0b1d6" category="list-text">*保護済み*：暗号化またはユーザーアクティビティ検出ポリシーが有効になっています。</block>
+  <block id="79563997a2b58683d0d7ab2eb9e9f1fb" category="list-text">*危険*：ワークロードに、暗号化検出またはユーザーアクティビティ検出のいずれかが有効になった保護ポリシーがない場合、そのワークロードはリスクありとしてラベル付けされます。ワークロードにスナップショットやバックアップの保護、ファイル拡張子のブロック機能が備わっていても、暗号化検出やユーザー行動検出が有効になっていない場合は、依然としてリスクありとみなされます。</block>
 </blocks>
