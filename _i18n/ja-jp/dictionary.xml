@@ -226,7 +226,6 @@
   <block id="665acc6d2ee48d5efd698763b6fbf735" category="list-text"><block ref="665acc6d2ee48d5efd698763b6fbf735" category="inline-link-rx"></block></block>
   <block id="6890b4587dca6f7e9bc67d8336265387" category="summary">既知の制限事項では、この製品リリースでサポートされていないプラットフォーム、デバイス、または機能が特定されます。</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="paragraph">今回のリリースでサポートされていない、または今回のリリースでは正常に機能しないプラットフォーム、デバイス、機能が記載されています。これらの制限事項をよく確認してください。</block>
-  <block id="e742b92803487dd57d41c5028236224e" category="section-title">準備訓練のリセットオプションの問題</block>
   <block id="20fd4e2b91312c8ee1419aa853c936e1" category="paragraph">ランサムウェア攻撃対策ドリル用にONTAP 9.11.1 ボリュームを選択すると、Ransomware Resilience によってアラートが送信されます。  「ボリュームへのクローン」オプションを使用してデータを回復し、ドリルをリセットすると、リセット操作は失敗します。</block>
   <block id="4662983aa04c5f2df5dded885a7f15c5" category="section-title">Amazon FSx for NetApp ONTAP の制限</block>
   <block id="ae06555bf1899a4ef9c10d46f1e1d5ab" category="list-text">復元操作はスナップショットからのみ実行されます。</block>
@@ -1598,7 +1597,6 @@
   <block id="628cc6a9c569438d880eccc1e4a778da" category="paragraph">詳細については、<block ref="dfd47d5e016db97d5fa8c5e4a7bd25f8" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="3393700830226a018a19341bd00d6fa7" category="paragraph">Ransomware Resilience保護グループは、疑わしいユーザーの行動を検出するための検出ポリシーをサポートするようになりました。保護グループにランサムウェア保護戦略を適用すると、ワークロード全体にポリシーが適用され、サイバーセキュリティ体制の管理が効率化されます。</block>
   <block id="e37ee5388292007ad9d3935327219122" category="paragraph">詳細については、<block ref="5988324edfd7d92a7675cb7a08ac2a7e" category="inline-link-macro-rx"></block>を参照してください。</block>
-  <block id="58c30bd4c949be43357ab1b7557703b5" category="list-text">Amazon FSx for ONTAP ではバックアップポリシーはサポートされていません。この環境では、Amazon FSx for ONTAP のバックアップ機能を使用してバックアップ操作を実行する必要があります。NetApp Ransomware Resilience を使用してこれらのワークロードを復元できます。</block>
   <block id="2a0c2a157bd80927f000333567138b57" category="section-title">Azure NetApp Files の制限事項</block>
   <block id="b285edab772b215df16e97f47e6cf852" category="list-text">バックアップポリシーを使用したランサムウェア保護戦略は、Azure NetApp Files ではサポートされていません。代わりに、Azure NetApp Files バックアップを使用できます。</block>
   <block id="af5eb4e584c938e9f8b3531d944e3a59" category="list-text">レプリケーションを使用したランサムウェア保護戦略は Azure NetApp Files ではサポートされていません。</block>
@@ -2615,10 +2613,8 @@
   <block id="90c6a30d04a39029a6e718b3311fb6ab" category="inline-link-macro">SIEMシステムを無効にする</block>
   <block id="904e41b296efab284eaa1062cf1e6a27" category="paragraph">詳細については、<block ref="1d48f23238788ac75029406ac49f8f92" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="684a7ad3aa334bfb6a33e395013bd6dc" category="paragraph">Ransomware Resilienceは、5種類のランサムウェア攻撃を認識します：</block>
-  <block id="c6bd820ffcfcad26c449f0454fae72c1" category="list-text">レプリケーションを使用した保護戦略は、現在 Google Cloud NetApp Volumes ではサポートされていません</block>
   <block id="392d723534b3a09775f3b6831eba4f37" category="section-title">SANストレージの制限</block>
   <block id="eecebb362641b58fec88bb08c4168447" category="paragraph">SAN（ブロックストレージ）ワークロードには、以下の制限事項が適用されます。</block>
-  <block id="2d2a397baa743b0954cf57d074ff1a05" category="list-text">Ransomware ResilienceがSANワークロードに対して警告を生成する場合、それは高エントロピーのみに基づいています。</block>
   <block id="41bc5402792c9ae6e031743791c37485" category="list-text">SANワークロードは、<block ref="f4ee3b399c8cc5fca837364c0d9badb9" category="inline-link-macro-rx"></block>を使用してのみリストアできます。SANワークロードでは、クリーンリストアは現在利用できません。</block>
   <block id="2428514fe4a71be9aaa049c0588b7a22" category="paragraph">シミュレーションを実行する前に、準備訓練を設定する必要があります。特定の種類のランサムウェア攻撃に対応した準備訓練を作成する必要があります。Ransomware Resilienceは、5種類の攻撃を認識します：</block>
   <block id="e820571d07203de22d81bf2d3a43c57d" category="list-text">設定ページの「準備訓練」カードで、*設定*を選択します。</block>
@@ -2800,7 +2796,6 @@
   <block id="89decfaa1b470ead2915f39754702fde" category="paragraph">NetApp Ransomware Resilience でユーザーアクティビティエージェントのインストールまたは実行に問題がある場合は、よくあるシナリオと解決策を確認してください。</block>
   <block id="cb93ad4589e6e6834d2627d2ef8c8456" category="section-title">マルチ管理者認証</block>
   <block id="c77edebaabc370e372cc7bd8a3946ec4" category="inline-link-macro">ONTAPのマルチ管理者検証</block>
-  <block id="4fe568bb5fe11f3f2a80f6dbbcb77a58" category="paragraph">マルチ管理者検証は、ランサムウェア耐性または NetApp Console ではサポートされていません。<block ref="67e9d4830abb18c6f9ecab2abb6d5c08" category="inline-link-macro-rx"></block> を設定している場合、ランサムウェア耐性において一部のワークフローが期待どおりに動作しない可能性があります。</block>
   <block id="aa1680de6fa426cea529c4dfecdc015e" category="doc">コンソールエージェントを介したSIEMイベント配信</block>
   <block id="64cbd2542074b8251a3a9a4207763f2a" category="paragraph">Ransomware Resilience は、NetApp Console を通じてイベントを配信する既存のオプションに加えて、Console エージェントを通じて SIEM イベントを配信する機能をサポートするようになりました。</block>
   <block id="bb6efadd7c4367d935879bb3d0cb1872" category="paragraph">コンソールエージェントを介してSIEMイベントを配信する場合、SIEMイベントの配信をネットワーク境界内に留めることができます。これにより、厳格なIPアドレス許可リストを持つオンプレミス環境へのデプロイが簡素化され、既存のセキュリティ制御との整合性も高まります。このオプションを使用するには、コンソールエージェントがファイアウォールやプロキシ制御を経由して、必要なポートでSIEMエンドポイントの名前解決および接続を行えることを確認してください。</block>
@@ -2846,4 +2841,9 @@
   <block id="345292bfa93053446c9594b577a0b1d6" category="list-text">*保護済み*：暗号化またはユーザーアクティビティ検出ポリシーが有効になっています。</block>
   <block id="79563997a2b58683d0d7ab2eb9e9f1fb" category="list-text">*危険*：ワークロードに、暗号化検出またはユーザーアクティビティ検出のいずれかが有効になった保護ポリシーがない場合、そのワークロードはリスクありとしてラベル付けされます。ワークロードにスナップショットやバックアップの保護、ファイル拡張子のブロック機能が備わっていても、暗号化検出やユーザー行動検出が有効になっていない場合は、依然としてリスクありとみなされます。</block>
   <block id="cfd46dfb75021812402788d3b95a0a9d" category="paragraph">サイジングを検討する際、ライセンス費用はアクティブ ファイル システムの論理容量に基づいて決定されます。データがホットストレージ層にあるかコールドストレージ層にあるかに関わらず。スナップショットが消費する容量は、たとえそれらのスナップショットがコールドティアに保存されていても、この計算には含まれません。</block>
+  <block id="79323cfaf7a1abd803eef4f39c121798" category="section-title">準備訓練リセットオプションの問題</block>
+  <block id="c77b77b4154b5c5fa7446ee87f2d5169" category="list-text">バックアップポリシーは Amazon FSx for ONTAP ではサポートされていません。この環境では、Amazon FSx バックアップを使用してバックアップ操作を実行してください。これらのワークロードは、Ransomware Resilience を使用して復元できます。</block>
+  <block id="a30aeba8ba2c25a2b618d315e085ffc3" category="list-text">レプリケーションを使用した保護戦略は、現在 Google Cloud NetApp Volumes ではサポートされていません。</block>
+  <block id="f893ad58389f4e0375b875c84e5cfbf4" category="list-text">Ransomware ResilienceがSANワークロードに対して警告を生成する場合、それらの警告は高エントロピーのみに基づいています。</block>
+  <block id="093dd5295e9562a1e47c2e57b91a5d58" category="paragraph">マルチ管理者認証は、ランサムウェア耐性または NetApp Console ではサポートされていません。<block ref="67e9d4830abb18c6f9ecab2abb6d5c08" category="inline-link-macro-rx"></block> を設定している場合、保護機能を有効にしたり、準備訓練を実施したり、復元操作を実行したりすることはできません。これらの操作を試みる前に、マルチ管理者認証を無効にする必要があります。</block>
 </blocks>

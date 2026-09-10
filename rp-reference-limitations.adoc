@@ -17,7 +17,7 @@ summary: 既知の制限事項では、この製品リリースでサポート�
 
 
 [[readiness-drill-reset-option-issue]]
-== 準備訓練のリセットオプションの問題
+== 準備訓練リセットオプションの問題
 
 ランサムウェア攻撃対策ドリル用にONTAP 9.11.1 ボリュームを選択すると、Ransomware Resilience によってアラートが送信されます。  「ボリュームへのクローン」オプションを使用してデータを回復し、ドリルをリセットすると、リセット操作は失敗します。
 
@@ -28,7 +28,7 @@ summary: 既知の制限事項では、この製品リリースでサポート�
 
 Amazon FSx for ONTAPには以下の制限が適用されます：
 
-* Amazon FSx for ONTAP ではバックアップポリシーはサポートされていません。この環境では、Amazon FSx for ONTAP のバックアップ機能を使用してバックアップ操作を実行する必要があります。NetApp Ransomware Resilience を使用してこれらのワークロードを復元できます。
+* バックアップポリシーは Amazon FSx for ONTAP ではサポートされていません。この環境では、Amazon FSx バックアップを使用してバックアップ操作を実行してください。これらのワークロードは、Ransomware Resilience を使用して復元できます。
 * 復元操作はスナップショットからのみ実行されます。
 
 
@@ -55,7 +55,7 @@ Azure NetApp Files には以下の制限事項が適用されます：
 Google Cloud NetApp Volumes には以下の制限事項が適用されます：
 
 * 現在、Google Cloud NetApp Volumes ワークロードに適用できる保護戦略は、暗号化と FPolicy に基づくものに限られています。ユーザー行動保護戦略を適用することはできません。
-* レプリケーションを使用した保護戦略は、現在 Google Cloud NetApp Volumes ではサポートされていません
+* レプリケーションを使用した保護戦略は、現在 Google Cloud NetApp Volumes ではサポートされていません。
 
 
 
@@ -65,7 +65,7 @@ Google Cloud NetApp Volumes には以下の制限事項が適用されます：
 
 SAN（ブロックストレージ）ワークロードには、以下の制限事項が適用されます。
 
-* Ransomware ResilienceがSANワークロードに対して警告を生成する場合、それは高エントロピーのみに基づいています。
+* Ransomware ResilienceがSANワークロードに対して警告を生成する場合、それらの警告は高エントロピーのみに基づいています。
 * SANワークロードは、link:task-custom-restore.html["カスタム復元"]を使用してのみリストアできます。SANワークロードでは、クリーンリストアは現在利用できません。
 
 
@@ -74,4 +74,4 @@ SAN（ブロックストレージ）ワークロードには、以下の制限�
 [[multi-admin-verification]]
 == マルチ管理者認証
 
-マルチ管理者検証は、ランサムウェア耐性または NetApp Console ではサポートされていません。link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["ONTAPのマルチ管理者検証"^] を設定している場合、ランサムウェア耐性において一部のワークフローが期待どおりに動作しない可能性があります。
+マルチ管理者認証は、ランサムウェア耐性または NetApp Console ではサポートされていません。link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/["ONTAPのマルチ管理者検証"^] を設定している場合、保護機能を有効にしたり、準備訓練を実施したり、復元操作を実行したりすることはできません。これらの操作を試みる前に、マルチ管理者認証を無効にする必要があります。
