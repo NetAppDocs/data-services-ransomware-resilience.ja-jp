@@ -2,4 +2,4 @@
 :allow-uri-read: 
 
 
-*必要なコンソール ロール* このタスクを実行するには、ランサムウェア耐性ユーザー ビヘイビアー管理者ロールが必要です。ランサムウェア耐性管理者ロールではこのタスクを実行できません。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^] 。
+*必要なコンソールロール* このタスクを実行するには、Ransomware Resilience ユーザー動作管理者ロールが必要です。このタスクは、link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["スーパー管理者"^] または Ransomware Resilience 管理者ロールでは実行できません。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^]。

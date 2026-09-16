@@ -1,11 +1,11 @@
-= Google Cloud NetApp Volumes サポート（プレビュー）
+= Google Cloud NetApp Volumes の保護グループのサポート（プレビュー）
 :allow-uri-read: 
 
 
 
 
-[[google-cloud-netapp-volumes-support-preview]]
-=== Google Cloud NetApp Volumes サポート（プレビュー）
+[[protection-groups-in-google-cloud-netapp-volumes-support-preview]]
+=== Google Cloud NetApp Volumes の保護グループのサポート（プレビュー）
 
 Ransomware Resilience は、Google Cloud NetApp Volumes システムのワークロードに対して保護グループを作成する機能をサポートするようになりました。これにより、複数のワークロードを1つのポリシーの下に整理して管理を効率化できます。
 

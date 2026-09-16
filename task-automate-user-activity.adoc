@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-automate-user-activity.html 
-keywords: data breach detection, data breach, user activity, automated response 
+keywords: data breach detection, data breach, user activity, automated response, block user, automate, ransomware response 
 summary: NetApp Ransomware Resilienceは、ユーザーアクティビティイベントへの自動応答の作成をサポートしており、スナップショットの自動作成やユーザーのブロックを自動的に実行できます。 
 ---
 = NetApp Ransomware Resilienceにおけるユーザーアクティビティアラートへの対応を自動化します
@@ -12,9 +12,16 @@ summary: NetApp Ransomware Resilienceは、ユーザーアクティビティイ�
 
 
 [role="lead"]
-NetApp Ransomware Resilience を使用すると、link:concept-user-behavior.html["ユーザーアクティビティイベント"]への対応を自動化できます。自動応答機能により、Ransomware Resilience は攻撃や警告が検出された際にスナップショットを作成したり、ユーザーをブロックしたりすることができ、ランサムウェアの事象に対してより迅速な対応が可能になります。
+NetApp Ransomware Resilience を使用すると、link:concept-user-behavior.html["ユーザーアクティビティイベント"]への応答を自動化できます。ユーザーアクティビティアラートがトリガーされると、Ransomware Resilience は次のことができます：
+
+* ユーザーをブロックする
+* スナップショットを作成する
+
 
 暗号化（ユーザーの行動）、データ漏洩、およびデータ破壊イベントに対して、自動応答がサポートされています。自動応答を作成する前に、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["ユーザーアクティビティエージェントを設定し、ユーザーアクティビティ検出を含むポリシーを有効にし、ユーザーディレクトリコネクタを作成しました"]必要があります。自動応答がトリガーされると、Ransomware Resilience はメールアラートを送信します。
+
+
+NOTE: アラートが不審なユーザー行動によってトリガーされた場合、スナップショットしか取得できません。不審なユーザー行動に対する自動対応として、ユーザーをブロックする機能は提供されていません。
 
 
 
@@ -22,9 +29,6 @@ NetApp Ransomware Resilience を使用すると、link:concept-user-behavior.htm
 == 自動応答を作成する
 
 不審なユーザー行動検出ポリシーで保護されているワークロードが少なくとも1つ存在するストレージVMは、1つしか保護できません。
-
-
-NOTE: 不審なユーザー行動に対する自動応答では、スナップショットしか取得できません。不審なユーザー行動に対する自動的な対応として、ユーザーをブロックすることはサポートされていません。
 
 .手順
 . ランサムウェア耐性で、[**設定**] を選択します。
@@ -84,3 +88,10 @@ NOTE: 不審なユーザー行動に対する自動応答では、スナップ�
 . アラートの深刻度以外の設定はすべて変更できます。
 . 変更内容を保存するには、**保存**を選択してください。
 
+
+
+
+[[next-steps]]
+== 次の手順
+
+link:task-users-manage.html["ブロックされたユーザーを管理する"]

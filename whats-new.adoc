@@ -18,6 +18,29 @@ NetApp Ransomware Resilienceの新機能についてご確認ください。
 
 
 
+[[16-september-2026]]
+== 2026年9月16日
+
+
+
+[[enhanced-support-for-clean-restores]]
+=== クリーンな復元に対するサポートの強化
+
+不審なユーザー行動やユーザーベースの暗号化攻撃後の復旧のために、クリーンな復元機能が利用可能になりました。この機能強化により、暗号化（エントロピー）に基づく攻撃に対する既存のサポートがさらに強化されます。この強化された機能により、クリーンリストアのガイド付きアプローチを活用し、最適なリストアポイントを特定することで、データ損失を最小限に抑え、復旧を迅速化できます。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["クリーンな復元のための隔離されたリカバリ環境を作成する"^]を参照してください。
+
+
+
+[[san-support-for-google-cloud-netapp-volumes]]
+=== Google Cloud NetApp Volumes の SAN サポート
+
+NetApp Ransomware ResilienceでGoogle Cloud NetApp VolumesのSANワークロードがサポートされるようになり、SANワークロードに対する暗号化ベースのランサムウェア攻撃を検出できるようになりました。Google Cloud NetApp VolumesにおけるSANのサポートが一般提供（GA）されました。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems["サポートされているシステム"^]およびlink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["ランサムウェア耐性におけるSANストレージ"^]を参照してください。
+
+
+
 [[25-august-2026]]
 == 2026年8月25日
 
@@ -159,7 +182,7 @@ Ransomware Resilience は、Microsoft Sentinel を SIEM として接続するた
 [[automated-responses-to-user-activity-alerts]]
 === ユーザーアクティビティアラートへの自動応答
 
-Ransomware Resilienceは、ユーザーアクティビティアラートが生成された際に、スナップショットの作成とユーザーのブロックを自動化する機能をサポートするようになりました。自動応答機能を使用すれば、警告が発生した時点でユーザーをブロックし、復旧用のスナップショットを作成できるため、手動介入なしでより迅速な対応が可能になります。
+Ransomware Resilienceは、ユーザーアクティビティイベントに対する自動応答をサポートするようになりました。ユーザーアクティビティアラートが生成された際に、ユーザーを自動的にブロックし、スナップショットを作成できます。これらの措置により、手動による介入なしに迅速な対応が可能になります。
 
 詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-automate-user-activity.html["ユーザーアクティビティアラートへの対応を自動化する"^]を参照してください。
 
@@ -197,8 +220,8 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference
 
 
 
-[[google-cloud-netapp-volumes-support-preview]]
-=== Google Cloud NetApp Volumes サポート（プレビュー）
+[[protection-groups-in-google-cloud-netapp-volumes-support-preview]]
+=== Google Cloud NetApp Volumes の保護グループのサポート（プレビュー）
 
 Ransomware Resilience は、Google Cloud NetApp Volumes システムのワークロードに対して保護グループを作成する機能をサポートするようになりました。これにより、複数のワークロードを1つのポリシーの下に整理して管理を効率化できます。
 
