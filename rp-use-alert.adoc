@@ -117,7 +117,7 @@ NOTE: 既存の保護戦略があり、その戦略上の検出方法のいず�
 *必須コンソールロール* このタスクを実行するには、link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-platform-roles.html#super-admin-roles["スーパー管理者"^]、Ransomware Resilience admin、またはRansomware Resilience viewerロールが必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^]。
 
 .手順
-. NetApp Ransomware Resilienceダッシュボードで、[アラート]ペインを確認します。
+. ランサムウェア耐性ダッシュボードで、「アラート」ペインを確認します。
 . いずれかのステータスの下にある*すべて表示*を選択します。
 . アラートを選択して、アラートごとに各ボリュームのすべてのインシデントを確認します。
 . 追加のアラートを確認するには、左上のパンくずリストで [*アラート*] を選択します。

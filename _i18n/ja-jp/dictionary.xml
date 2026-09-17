@@ -638,7 +638,6 @@
   <block id="ce4ef271bc40fcdcc146584fcac5d544" category="paragraph">*保護ステータス*: ワークロードは、ポリシーが適用されているかどうかを示す次のいずれかの保護ステータスを示します。</block>
   <block id="0882532dc9eb74e24a8b137f1e6a0b39" category="paragraph">ランサムウェア耐性は、各ワークロードの分析に基づいて、検出中に各ワークロードに重要度または優先度を割り当てます。ワークロードの重要度は、次のスナップショット頻度によって決まります。</block>
   <block id="58adba48bf0678c3abb71d1fdf829602" category="paragraph">ワークロードの重要度に合わせて、次のランサムウェア耐性定義済みポリシーのいずれかを選択できます。</block>
-  <block id="4d293abd3f96b37c9afdf90f01855f8b" category="admonition">**暗号化ユーザー拡張** ポリシーは、疑わしいユーザーの動作の検出をサポートする唯一の定義済みポリシーです。</block>
   <block id="a2c5d5541ff19f8df63922963356ec16" category="cell">ポリシーレベル</block>
   <block id="d4e2713d1b1725a1592f9268589f990d" category="cell">Snapshot</block>
   <block id="7cf395303ce3665a9834721d4b748e4b" category="cell">頻度</block>
@@ -1503,7 +1502,6 @@
   <block id="0bec43abfdb99f043ac56e20931d1899" category="list-text">*重要*: スナップショットのコピーは、1時間ごとよりも頻度は低いですが、毎日よりも頻繁に作成されます。</block>
   <block id="890ca6db61a7d84b3c2f7e8b21560ff7" category="list-text">*標準*: スナップショットコピーは1日に複数回作成されます</block>
   <block id="da4aa80a5402fe8991327699e5421e28" category="section-title">定義済みの検出ポリシー</block>
-  <block id="b267816a1724e79c894aa7e4509e18b2" category="paragraph">+ **クリティカル レプリケーション ポリシー** は、 ONTAPへのスナップショットのレプリケーションをサポートする唯一の定義済みポリシーです。</block>
   <block id="0d6a90889ade51e4252ba8bbf1ad155e" category="cell">保持期間（日数）</block>
   <block id="b5b7fab63026325a379913c2a05751c2" category="cell">スナップショットコピーの数</block>
   <block id="aa9adfa847815670c9bd986dafc8c79c" category="cell">スナップショットコピーの最大数</block>
@@ -1532,7 +1530,6 @@
   <block id="49c6535c126789c87c5cd609fbdb3a3f" category="paragraph">各ロールが組織レベルで適用されていることを確認します。</block>
   <block id="426b9957bbb31fa730d0ddd4241a548c" category="paragraph">Ransomware Resilienceが攻撃の可能性を検知すると、NetApp Consoleの通知設定に通知が表示され、設定されたアドレスにメールが送信されます。メールには、深刻度、影響を受けるワークロード、Ransomware Resilienceの*アラート*タブにあるアラートへのリンクが含まれます。</block>
   <block id="ea6028617b2209ac986a738b1b26840a" category="admonition">SAN 環境の場合、警告は高エントロピーのみに基づきます。</block>
-  <block id="53140a5b1fd2965a3ae256fca48ef979" category="paragraph">Ransomware Resilienceは潜在的な攻撃を検出すると、NetApp Console設定で設定されたサブスクリプション通知設定に基づいて、登録ユーザーにメール通知を送信します。メールには、重大度や影響を受けるリソースなど、アラートに関する情報が記載されています。</block>
   <block id="a2079b2871fe8072cb3a3a5245ad0458" category="admonition">コンソールで電子メール通知を設定するには、<block ref="7a8deb9a674d2246166ab2113d0b6247" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="22b921337bb720d655059859772c0131" category="paragraph">攻撃を停止した後、データの準備ができたことをストレージ管理者に通知し、リカバリプロセスを開始できるようにします。</block>
   <block id="e7d932b2a7bf9471a38ac8c68fbf83ad" category="list-text">&lt;site_name&gt;.cs01-ap-1.cloudinsights.netapp.com</block>
@@ -1729,7 +1726,6 @@
   <block id="91437eaac9ac7d1f1da9a4e4751cbaa6" category="paragraph">はい、Ransomware Resilienceは、ONTAPで設定されたスナップショットスケジュールを検出します。また、検出されたワークロード内のすべてのボリュームでARPとFPolicyが有効になっているかどうかも検出します。Ransomware Resilienceダッシュボードに表示される情報は、他のNetAppソリューションと製品から集約されたものです。</block>
   <block id="c4550c3db972a64a4938aff3fdcc3f3d" category="paragraph">バックアップ先自体でオプションを構成した後、後でNetApp Ransomware Resilienceでバックアップ先として構成します。NetApp Ransomware Resilienceにおけるバックアップ先の設定方法の詳細については、<block ref="e0972ac2b24cae233c2035120c295c6d" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="bc46a0ba0f385a3e46fe17c4f792de15" category="summary">Ransomware Resilience が攻撃の可能性を検出すると、Ransomware Resilience ダッシュボードに潜在的な攻撃を示すアラートが表示されます。この時点で、Ransomware Resilience Alerts タブで潜在的なリスクを確認する必要があります。</block>
-  <block id="0b24c011fc6a43f772b1630fb31bc484" category="list-text">NetApp Ransomware Resilienceダッシュボードで、[アラート]ペインを確認します。</block>
   <block id="e29621dc2c0ac79f9d5888f0d3d7b097" category="summary">NetApp Ransomware Resilienceを使用して、保護または注意が必要なワークロードを特定し、保護されているストレージまたは危険にさらされているストレージの量を確認して保護の範囲を評価します。</block>
   <block id="e094e26183004c53cd65819096b01e61" category="section-title">ダッシュボードを使用してワークロードの健全性を確認する</block>
   <block id="43373e9864a15885db684cef91b5ba4b" category="inline-link-macro">ダッシュボードで保護の提案を確認する</block>
@@ -2680,7 +2676,6 @@
   <block id="3b3ea4b9d9acd87513a766f3da2c5f19" category="cell">cloudsecure-agent-symptom-collector.sh スクリプトが「ERROR: Failed to create /tmp/cloudsecure-agent-symptoms.zip」というエラーで失敗します。</block>
   <block id="8f5c411082a9edb45e09aae7eb113f08" category="cell">コマンド<block ref="50a148cc0ca623b1f92ea86676730f9c" prefix=" " category="inline-code"></block>でzipツールをインストールし、再度<block ref="eac544ce8c128848269701508d796823" prefix=" " category="inline-code"></block>を実行してください。</block>
   <block id="dfe80d67171c6864a41131519bde31c6" category="cell">ユーザーアクティビティエージェントのインストールが「useradd: cannot create directory /home/cssys」というエラーで失敗します。</block>
-  <block id="6ebfb63994f720f414d7cd0c1ce9394b" category="cell">権限エラーのため、/home ディレクトリの下にユーザーのログインディレクトリを作成できません。cssys ユーザーを作成し、コマンド<block ref="d5ba9a9474fc171d7c8d8e0ad71f99d9" prefix=" " category="inline-code"></block>を使用してログインディレクトリを手動で追加します。このコマンドでは、<block ref="67dd1c0d4e68c367b980f8723c781cb1" prefix=" " category="inline-code"></block>はホームディレクトリが存在しない場合に作成し、<block ref="9b017020b9d48d433ec90c548e6b5c70" prefix=" " category="inline-code"></block>は HOME_DIR をログインディレクトリとして指定します。</block>
   <block id="42d43cc689659f07ff3b2ee6aefe325f" category="section-title">インストール後の問題</block>
   <block id="df68cb1932706c8ebd7f20481ae974ea" category="paragraph">インストール後、ユーザーアクティビティエージェントが実行されません。コマンドを実行した後<block ref="67e0ddefd3ec3e28b4e12105cb34b420" prefix=" " category="inline-code"></block>、出力結果は以下のとおりです。</block>
   <block id="ddfe2967e6e4d9a543ac7c4fb69565f8" category="paragraph">/opt/netappがNFSマウントであり、かつcssysユーザーがこのフォルダへのアクセス権を持っていない場合、インストールは失敗します。ユーザーcssysは、ユーザーアクティビティエージェントインストーラーによって作成されたローカルユーザーであり、マウントされた共有にアクセスする権限がない可能性があります。</block>
@@ -2791,7 +2786,6 @@
   <block id="aa1680de6fa426cea529c4dfecdc015e" category="doc">コンソールエージェントを介したSIEMイベント配信</block>
   <block id="64cbd2542074b8251a3a9a4207763f2a" category="paragraph">Ransomware Resilience は、NetApp Console を通じてイベントを配信する既存のオプションに加えて、Console エージェントを通じて SIEM イベントを配信する機能をサポートするようになりました。</block>
   <block id="bb6efadd7c4367d935879bb3d0cb1872" category="paragraph">コンソールエージェントを介してSIEMイベントを配信する場合、SIEMイベントの配信をネットワーク境界内に留めることができます。これにより、厳格なIPアドレス許可リストを持つオンプレミス環境へのデプロイが簡素化され、既存のセキュリティ制御との整合性も高まります。このオプションを使用するには、コンソールエージェントがファイアウォールやプロキシ制御を経由して、必要なポートでSIEMエンドポイントの名前解決および接続を行えることを確認してください。</block>
-  <block id="b5c84596d34fbfb280405940a634b156" category="cell">FPolicy イベントに関する ONTAP からユーザーアクティビティエージェントへの通信。これらのポートは、ONTAP がイベントをユーザーアクティビティエージェントに送信できるよう、ユーザーアクティビティエージェント自体のファイアウォール（存在する場合）を含め、ユーザーアクティビティエージェントに向けて開放されている必要があります。+ **注：** これらのポートの *すべて* を予約する必要はありませんが、予約するポートはこの範囲内である必要があります。まず 100 ポートを予約し、必要に応じて増やすことをお勧めします。</block>
   <block id="49e0f8b47eab0f640ee82845d459cd21" category="list-text">検出設定として「不審なユーザー行動の検出」を選択した場合は、ユーザーアクティビティエージェントまたは<block ref="0fcb9e48262f104799fbf49d6c09d7d5" category="inline-link-macro-rx"></block>を選択してください。</block>
   <block id="08fa66584afbf1283c833b5a59619296" category="section-title">イベント配送ルート</block>
   <block id="eb60dc6e31962c5336f25788a8e1f1f5" category="paragraph">Ransomware Resilience は、NetApp Console とコンソールエージェントを通じた SIEM イベントの配信をサポートします。設定時に、希望の配信ルートを選択できます。</block>
@@ -2838,7 +2832,6 @@
   <block id="a30aeba8ba2c25a2b618d315e085ffc3" category="list-text">レプリケーションを使用した保護戦略は、現在 Google Cloud NetApp Volumes ではサポートされていません。</block>
   <block id="f893ad58389f4e0375b875c84e5cfbf4" category="list-text">Ransomware ResilienceがSANワークロードに対して警告を生成する場合、それらの警告は高エントロピーのみに基づいています。</block>
   <block id="093dd5295e9562a1e47c2e57b91a5d58" category="paragraph">マルチ管理者認証は、ランサムウェア耐性または NetApp Console ではサポートされていません。<block ref="67e9d4830abb18c6f9ecab2abb6d5c08" category="inline-link-macro-rx"></block> を設定している場合、保護機能を有効にしたり、準備訓練を実施したり、復元操作を実行したりすることはできません。これらの操作を試みる前に、マルチ管理者認証を無効にする必要があります。</block>
-  <block id="3ce27a742d1f48d7e244df4e0153e8bf" category="list-text">暗号化に基づく攻撃（ユーザーの行動とエントロピーの両方）および疑わしいユーザーの行動に基づく攻撃に対してのみ、クリーンリストアを実行できます。データ侵害およびデータ破壊攻撃の場合、クリーンリストアはサポートされていません。</block>
   <block id="c683448e4869d680e8543440db43e3ab" category="paragraph">*必要なコンソールロール* このタスクを実行するには、Ransomware Resilience ユーザー動作管理者ロールが必要です。このタスクは、<block ref="91fb5ef1173b6f41fdaa815d28743781" category="inline-link-macro-rx"></block> または Ransomware Resilience 管理者ロールでは実行できません。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
   <block id="96176a5ef40ffd580483770b758cb2b9" category="doc">Google Cloud NetApp Volumes の保護グループのサポート（プレビュー）</block>
   <block id="bf243787cd494f22987c64c448019324" category="paragraph">Ransomware Resilienceは、ユーザーアクティビティイベントに対する自動応答をサポートするようになりました。ユーザーアクティビティアラートが生成された際に、ユーザーを自動的にブロックし、スナップショットを作成できます。これらの措置により、手動による介入なしに迅速な対応が可能になります。</block>
@@ -2861,4 +2854,10 @@
   <block id="dc33acebba1d27abf28977cc5a12db48" category="admonition">アラートが不審なユーザー行動によってトリガーされた場合、スナップショットしか取得できません。不審なユーザー行動に対する自動対応として、ユーザーをブロックする機能は提供されていません。</block>
   <block id="15033b064af1493a291f43131186f596" category="paragraph"><block ref="15033b064af1493a291f43131186f596" category="inline-link-macro-rx"></block></block>
   <block id="9d26347bf9049c082d482aa87b79d702" category="section-title">2026年9月16日</block>
+  <block id="fb35058960a1e35968261f71b2bf3883" category="list-text">暗号化に基づく攻撃（ユーザーの行動とエントロピーの両方）および不審なユーザーの行動に基づく攻撃に対してのみ、クリーンリストアを実行できます。データ漏洩やデータ破壊攻撃の場合、クリーンリストアはサポートされていません。</block>
+  <block id="f162f526fe9a4312ce833ccc6262c43c" category="cell">FPolicy イベントに関する ONTAP からユーザーアクティビティエージェントへの通信。これらのポートは、ONTAP がイベントをユーザーアクティビティエージェントに送信できるよう、ユーザーアクティビティエージェント自体のファイアウォール（存在する場合）を含め、ユーザーアクティビティエージェントに向けて開放されている必要があります。+ **注：** これらのポートの *すべて* を予約する必要はありませんが、予約するポートはこの範囲内である必要があります。まず 100 ポートを予約し、必要に応じて増やすことをお勧めします。</block>
+  <block id="836e56ef7ecb008a36ab89b0620d32b3" category="list-text">ランサムウェア耐性ダッシュボードで、「アラート」ペインを確認します。</block>
+  <block id="2bf784d30957b3ec7d6ebc12ece51af1" category="paragraph">Ransomware Resilienceは潜在的な攻撃を検出すると、NetApp Console設定で設定されたサブスクリプション通知設定に基づいて、登録ユーザーにメール通知を送信します。メールには、重大度や影響を受けるリソースなど、アラートに関する情報が記載されています。</block>
+  <block id="f642b6f4e49c47514e5e24cda6578784" category="admonition">**暗号化ユーザー拡張機能**ポリシーは、不審なユーザー行動の検出をサポートする唯一の事前定義済みポリシーです。+ **クリティカルレプリケーションポリシー**は、スナップショットの ONTAP へのレプリケーションをサポートする唯一の事前定義済みポリシーです。</block>
+  <block id="a7cc27b78a2a959c7d443e41e9734a78" category="cell">権限エラーのため、/home ディレクトリの下にユーザーのログインディレクトリを作成できません。cssys ユーザーを作成し、コマンド<block ref="d5ba9a9474fc171d7c8d8e0ad71f99d9" prefix=" " category="inline-code"></block>を使用してログインディレクトリを手動で追加してください。このコマンドでは、<block ref="67dd1c0d4e68c367b980f8723c781cb1" prefix=" " category="inline-code"></block>はホームディレクトリが存在しない場合に作成し、<block ref="9b017020b9d48d433ec90c548e6b5c70" prefix=" " category="inline-code"></block>は HOME_DIR をログインディレクトリとして指定します。</block>
 </blocks>

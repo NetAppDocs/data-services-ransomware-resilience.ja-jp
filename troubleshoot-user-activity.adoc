@@ -43,7 +43,7 @@ NetApp Ransomware Resilience でユーザーアクティビティエージェン
 | cloudsecure-agent-symptom-collector.sh スクリプトが「ERROR: Failed to create /tmp/cloudsecure-agent-symptoms.zip」というエラーで失敗します。 | コマンド `yum install zip`でzipツールをインストールし、再度 `cloudsecure-agent-symptom-collector.sh`を実行してください。 
 
 
-| ユーザーアクティビティエージェントのインストールが「useradd: cannot create directory /home/cssys」というエラーで失敗します。 | 権限エラーのため、/home ディレクトリの下にユーザーのログインディレクトリを作成できません。cssys ユーザーを作成し、コマンド `sudo useradd <user_name> -m -d HOME_DIR`を使用してログインディレクトリを手動で追加します。このコマンドでは、 `-m`はホームディレクトリが存在しない場合に作成し、 `-d`は HOME_DIR をログインディレクトリとして指定します。 
+| ユーザーアクティビティエージェントのインストールが「useradd: cannot create directory /home/cssys」というエラーで失敗します。 | 権限エラーのため、/home ディレクトリの下にユーザーのログインディレクトリを作成できません。cssys ユーザーを作成し、コマンド `sudo useradd <user_name> -m -d HOME_DIR`を使用してログインディレクトリを手動で追加してください。このコマンドでは、 `-m`はホームディレクトリが存在しない場合に作成し、 `-d`は HOME_DIR をログインディレクトリとして指定します。 
 |===
 
 
