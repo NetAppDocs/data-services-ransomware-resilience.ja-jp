@@ -32,15 +32,6 @@ NetApp Ransomware Resilienceの新機能についてご確認ください。
 
 
 
-[[san-support-for-google-cloud-netapp-volumes]]
-=== Google Cloud NetApp Volumes の SAN サポート
-
-NetApp Ransomware ResilienceでGoogle Cloud NetApp VolumesのSANワークロードがサポートされるようになり、SANワークロードに対する暗号化ベースのランサムウェア攻撃を検出できるようになりました。Google Cloud NetApp VolumesにおけるSANのサポートが一般提供（GA）されました。
-
-詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems["サポートされているシステム"^]およびlink:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html["ランサムウェア耐性におけるSANストレージ"^]を参照してください。
-
-
-
 [[25-august-2026]]
 == 2026年8月25日
 
