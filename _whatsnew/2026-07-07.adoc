@@ -18,4 +18,4 @@ Ransomware Resilience は、ユーザー行動監視アラートから特定の�
 
 Ransomware Resilience は、Microsoft Sentinel を SIEM として接続するための Azure Resource Manager (ARM) テンプレートを提供するようになりました。これにより、デプロイを容易にするための二次的な方法が提供されます。
 
-詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["脅威の検出と分析のためにSIEMに接続する"^]を参照してください。
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-sentinel.html["Ransomware ResilienceにおけるMicrosoft Sentinel SIEMの設定"^]を参照してください。

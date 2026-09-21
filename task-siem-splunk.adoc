@@ -1,0 +1,80 @@
+---
+sidebar: sidebar 
+permalink: task-siem-splunk.html 
+keywords: ransomware protection, SIEM, security event management system, orchestration, event management, splunk cloud, splunk enterprise, splunk 
+summary: NetApp Ransomware Resilience において、Splunk Cloud または Splunk Enterprise を SIEM として接続することで、脅威分析とイベント管理を効率化できます。 
+---
+= NetApp Ransomware ResilienceでSplunk SIEMを構成する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilienceは、Splunk CloudおよびSplunk Enterpriseを使用したセキュリティ情報およびイベント管理（SIEM）のネイティブサポートを提供します。Ransomware ResilienceをSplunk SIEMに接続することで、脅威分析と検出のためにイベントデータを自動的に送信し、ランサムウェア対策とイベント管理を効率化できます。
+
+
+
+[[configure-splunk-cloud-and-splunk-enterprise-for-threat-detection]]
+== 脅威検出のためのSplunk CloudとSplunk Enterpriseの設定
+
+Ransomware Resilience で SIEM システムを認証する前に、Splunk Cloud または Splunk Enterprise で設定を行う必要があります。
+
+.開始する前に
+Ransomware ResilienceはSplunk CloudおよびSplunk Enterpriseによる脅威検出をサポートします。Ransomware ResilienceでSplunk接続を有効にする前に、次の作業が必要です：
+
+* Splunk Cloud または Enterprise で HTTP Event Collector を有効にして、Console から HTTP または HTTPS 経由でイベントデータを受信します。
+* Splunk Cloud または Enterprise でイベントコレクタトークンを作成します。
+* *Splunk Enterprise* の場合、*Deliver via NetApp Console* を選択すると、Ransomware Resilience がイベントを HTTP イベントコレクターにプッシュできるように、受信パブリックインターネットトラフィックを許可してください。*Deliver via Console agent* を選択した場合、Console agent は HTTP イベントコレクターにアクセスできる必要があります。
+
+
+.Splunk で HTTP イベントコレクターを有効にする
+. Splunk Cloud またはエンタープライズで、*設定* > *データ入力* を選択します。
+. *HTTP イベント コレクター* > *グローバル設定* を選択します。
+. [すべてのトークン] トグルで、[有効] を選択します。
+. イベント コレクターが HTTP ではなく HTTPS 経由でリッスンして通信するようにするには、[SSL を有効にする] を選択します。
+. HTTP Event Collectorの*HTTPポート番号*にポートを入力します。認証プロセスのためにポート番号を保存します。
+
+
+.Splunk でイベントコレクタートークンを作成します
+. Splunk Cloud またはエンタープライズで、「Settings」＞「Add Data」を選択します。
+. *モニター* > *HTTP イベント コレクター* を選択します。
+. トークンの *名前* を入力し、*次へ* を選択してください。
+. イベントがプッシュされる *デフォルト インデックス* を選択し、*レビュー* を選択します。
+. エンドポイントのすべての設定が正しいことを確認してください。変更を加える場合は「戻る」ボタンを選択し、変更しない場合は「送信」を選択してください。
+. トークンをコピーして別のドキュメントに貼り付け、認証手順の準備を整えます。
+
+
+
+
+[[authenticate-splunk-with-ransomware-resilience]]
+== Splunk を NetApp Ransomware Resilience で認証する
+
+. Ransomware Resilienceで、サイドバーの*Settings*を選択します。
+. [設定] ページで、SIEM 接続タイルの [*接続*] を選択します。
++
+image:screen-settings-threat-detection-3options.png["SIEM接続オプションのスクリーンショット"]
+
+. SIEMプロバイダとして*Splunk*を選択します。
+. *Event collector* セクションと *Token* セクションを確認し、正しい情報が入力されていることを確認してください。
+. * 認証 * セクションを展開します。
++
+.. HTTP Event Collector の *Protocol* を選択します。HTTPS の使用を推奨しますが、HTTP Event Collector で SSL が有効になっていない場合は、*HTTP* を選択してください。
+.. HTTP イベントコレクターを実行する Splunk インスタンスの*ホスト*と*ポート*を入力してください。ポート番号は、HTTP イベントコレクタープロセスで入力した番号と一致している必要があります。
+.. Splunk で作成したイベントコレクタートークンを入力してください。
+
+
+. link:task-siem.html#event-delivery-route["イベント配送ルート"]を選択してください。SIEMイベントをSIEMエンドポイントに配信するには、*NetApp Console経由で配信*を選択します。ネットワーク上に既に存在するコンソールエージェント経由でイベントをルーティングするには、*コンソールエージェント経由で配信*を選択します。
++
+「Console エージェント経由で配信する」を選択した場合は、ドロップダウンメニューから使用する Console エージェントを選択してください。
+
+. *接続*を選択して、SIEMデータの送信を開始します。
+
+
+
+
+[[next-steps]]
+== 次の手順
+
+* link:reference-soar.html["SOARプレイブックを統合する"]
+

@@ -9,7 +9,7 @@
 
 Ransomware Resilienceは、Ransomware Resilience UIでWebhookを介してセキュリティ情報およびイベント管理（SIEM）システムを設定する機能をサポートするようになりました。Webhookを使用すれば、お好みのSIEMシステムを連携させてランサムウェアの監視を効率化できます。
 
-詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["SIEMシステムを構成する"^]を参照してください。
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-webhook.html["SIEMシステムをWebhookで構成する"^]を参照してください。
 
 
 

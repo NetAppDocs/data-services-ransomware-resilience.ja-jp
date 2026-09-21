@@ -129,7 +129,7 @@ Ransomware ResilienceのUIに、SIEMシステムを一時停止または削除�
 
 Ransomware Resilienceは、Ransomware Resilience UIでWebhookを介してセキュリティ情報およびイベント管理（SIEM）システムを設定する機能をサポートするようになりました。Webhookを使用すれば、お好みのSIEMシステムを連携させてランサムウェアの監視を効率化できます。
 
-詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["SIEMシステムを構成する"^]を参照してください。
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-webhook.html["SIEMシステムをWebhookで構成する"^]を参照してください。
 
 
 
@@ -161,7 +161,7 @@ Ransomware Resilience は、ユーザー行動監視アラートから特定の�
 
 Ransomware Resilience は、Microsoft Sentinel を SIEM として接続するための Azure Resource Manager (ARM) テンプレートを提供するようになりました。これにより、デプロイを容易にするための二次的な方法が提供されます。
 
-詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["脅威の検出と分析のためにSIEMに接続する"^]を参照してください。
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-sentinel.html["Ransomware ResilienceにおけるMicrosoft Sentinel SIEMの設定"^]を参照してください。
 
 
 
@@ -264,7 +264,7 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clea
 
 Ransomware Resilienceは、Google SecOpsとのセキュリティ情報およびイベント管理（SIEM）をサポートするようになりました。これにより、効率的な脅威分析と検出のために、データを自動的にGoogle SecOpsに送信できるようになります。
 
-設定情報については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["ランサムウェア対策をSIEMに接続"^]を参照してください。
+設定情報については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-secops.html["Ransomware ResilienceでGoogle SecOps SIEMを設定する"^]を参照してください。
 
 
 
@@ -305,7 +305,7 @@ Ransomware Resilienceは、クリーンリストアをサポートするよう�
 
 Ransomware Resilience は、Splunk Enterprise のセキュリティ情報イベント管理（SIEM）サポートを提供し、ログデータとイベントデータを一元管理して、脅威分析と検出を効率化できます。
 
-詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["ランサムウェア対策をSIEMに接続"^]を参照してください。
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-splunk.html["Splunk SIEMの設定"^]を参照してください。
 
 
 
@@ -801,7 +801,7 @@ BlueXP ransomware protectionにおける PII データのスキャンは、 Blue
 
 Microsoft Sentinel を使用して脅威の分析と検出を行うために、データをセキュリティおよびイベント管理システム (SIEM) に送信できるようになりました。以前は、SIEM として AWS Security Hub または Splunk Cloud を選択できました。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["BlueXP ransomware protection設定の構成について詳しくは、こちらをご覧ください。"]。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-sentinel.html["BlueXP ransomware protection設定の構成について詳しくは、こちらをご覧ください。"]。
 
 
 

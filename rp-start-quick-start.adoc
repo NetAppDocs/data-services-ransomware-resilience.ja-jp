@@ -53,7 +53,6 @@ summary: 数ステップで NetApp Ransomware Resilience を使い始めまし�
 
 * 必要に応じて、バックアップの保存先を構成します。
 +
-** link:rp-start-setup.html["NetApp StorageGRID、Amazon Web Services、Google Cloud Platform、または Microsoft Azure をバックアップ先として準備します。"] 。
 ** link:rp-start-setup.html["バックアップ先を設定する"]
 
 

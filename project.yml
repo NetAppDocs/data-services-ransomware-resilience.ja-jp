@@ -87,7 +87,19 @@ sidebar:
       - title: 悪意のあるユーザーイベントをシミュレートする
         url: "/task-test-user-activity.html"
     - title: SIEMの設定
-      url: "/task-siem.html"
+      entries:
+      - title: SIEMサポートについて
+        url: "/task-siem.html"
+      - title: AWS Security Hub の設定
+        url: "/task-siem-security-hub.html"
+      - title: Google SecOps を設定する
+        url: "/task-siem-secops.html"
+      - title: Microsoft Sentinel の構成
+        url: "/task-siem-sentinel.html"
+      - title: Splunk Cloud & Enterprise を設定する
+        url: "/task-siem-splunk.html"
+      - title: SIEMをWebhookで構成する
+        url: "/task-siem-webhook.html"
     - title: SOARプレイブックを統合する
       url: "/reference-soar.html"
     - title: レポートをダウンロード

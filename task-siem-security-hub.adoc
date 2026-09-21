@@ -1,0 +1,84 @@
+---
+sidebar: sidebar 
+permalink: task-siem-security-hub.html 
+keywords: ransomware protection, SIEM, security event management system, orchestration, event management, amazon web services, aws, security hub 
+summary: AWS Security Hub SIEMを接続することで、NetApp Ransomware Resilienceにおける脅威分析とイベント管理を効率化します。 
+---
+= NetApp Ransomware ResilienceでAWS Security Hub SIEMを構成する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilienceは、AWS Security Hubとの連携によるセキュリティ情報およびイベント管理（SIEM）のネイティブサポートを提供します。Ransomware ResilienceをAWS Security Hubに接続することで、脅威分析と検出のためのイベントデータを自動的に送信し、ランサムウェア対策とイベント管理を効率化できます。
+
+
+
+[[before-you-begin]]
+== 開始する前に
+
+Ransomware ResilienceでAWS Security Hubを有効にする前に、AWS Security Hubでセキュリティ設定を行う必要があります。
+
+* AWS Security Hub で権限を設定します。
+* 認証のために、AWS IAMの設定でアクセスキーとシークレットキーを設定してください。（これらの手順はここでは説明されていません。）
+
+
+
+
+[[set-up-permissions-in-aws-security-hub]]
+== AWS Security Hubで権限を設定します
+
+. *AWS IAM コンソール* に移動します。
+. *ポリシー*を選択します。
+. 次の JSON 形式のコードを使用してポリシーを作成します。
++
+[source, json]
+----
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "NetAppSecurityHubFindings",
+      "Effect": "Allow",
+      "Action": [
+        "securityhub:BatchImportFindings",
+        "securityhub:BatchUpdateFindings"
+      ],
+      "Resource": [
+        "arn:aws:securityhub:*:*:product/*/default",
+        "arn:aws:securityhub:*:*:hub/default"
+      ]
+    }
+  ]
+}
+----
+
+
+
+
+[[authenticate-aws-security-hub-in-ransomware-resilience]]
+== Ransomware ResilienceでAWS Security Hubを認証
+
+. Ransomware Resilienceで、サイドバーの*Settings*を選択します。
+. 設定ページで、SIEM接続タイルの*Connect*を選択し、ドロップダウンメニューから*AWS Security Hub*を選択します。
++
+image:screen-settings-threat-detection-3options.png["SIEM接続オプションのスクリーンショット"]
+
+. *権限*セクションを確認してください。
+. * 認証 * セクションを展開します。
++
+.. AWS *アカウント*を入力し、そのアカウントの*AWSリージョン*を選択します。
+.. AWS Security Hubから*アクセスキー*と*シークレットキー*を入力します。
+
+
+. *接続*を選択して、SIEMデータの送信を開始します。
+
+
+
+
+[[next-steps]]
+== 次の手順
+
+* link:reference-soar.html["SOARプレイブックを統合する"]
+

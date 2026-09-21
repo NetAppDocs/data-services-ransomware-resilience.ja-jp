@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: task-siem-secops.html 
+keywords: ransomware protection, SIEM, security event management system, orchestration, event management, google, secops, security operations 
+summary: Google SecOps SIEMを接続することで、NetApp Ransomware Resilienceにおける脅威分析とイベント管理を効率化します。 
+---
+= NetApp Ransomware ResilienceでGoogle SecOps SIEMを設定する
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilienceは、Google SecOpsとのセキュリティ情報およびイベント管理（SIEM）をネイティブでサポートします。Ransomware ResilienceをGoogle SecOpsに接続することで、脅威分析と検出のためのイベントデータを自動的に送信し、ランサムウェア対策とイベント管理を効率化できます。
+
+
+
+[[before-you-begin]]
+== 開始する前に
+
+NetApp Ransomware Resilienceで Google SecOps を有効にする前に、サービス間の接続を有効にするためにGoogle SecOps にログタイプとWebhookを登録する必要があります。
+
+
+
+[[configure-google-secops]]
+== Google SecOps を設定する
+
+Google SecOps で以下の手順を実行してください：
+
+.ログタイプを作成する
+. Google SecOps で、「設定」>「SIEM設定」>「利用可能なログの種類」に移動します。
++
+NETAPP_RANSOMWARE_RESILIENCEログタイプを使用することをお勧めします。これを使用しない場合は、カスタムログタイプを作成してください。
+
+. NETAPP_RANSOMWARE_RESILIENCEログタイプを使用する場合、あらかじめ構築されたパーサーが含まれているため、それ以上の操作は必要ありません。
++
+カスタムログタイプを使用する場合は、パーサーを作成する必要があります。*SIEM Settings* > *Parsers* > *Create Parser* に移動してパーサーを作成します。
+
+
+
+.Webhook を登録する
+. Google SecOps で、「設定」 > 「SIEM設定」 > 「フィード」に移動します。
+. *Add new feed* を選択します。
+. 「ログタイプの作成」ワークフローで使用したログタイプを選択します。
+. *ソースタイプ*をWebhookに設定してから、フィードを保存します。
+. *詳細*タブを開きます。NetApp Ransomware Resilienceで認証する際に使用する*WebhookエンドポイントURL*をコピーします。
+. *Secret key*タブを開きます。秘密鍵を生成するか、既に作成済みの場合はコピーしてください。NetApp Ransomware Resilienceで認証を行う際に使用するキーを保存してください。
+. 組織のGoogle APIキー作成プロセスを使用して、*APIキー*を作成してください。
+
+
+
+
+[[authenticate-google-secops-in-ransomware-resilience]]
+== Ransomware ResilienceでGoogle SecOpsを認証する
+
+. Ransomware Resilienceで、サイドバーの*Settings*を選択します。
+. 設定ページで、SIEM接続タイルの「接続」を選択し、ドロップダウンメニューから「Google SecOps」を選択します。
++
+image:screen-settings-threat-detection-3options.png["SIEM接続オプションのスクリーンショット"]
+
+. *前提条件*および*Webhookフィード*のセクションを確認してください。
+. * 認証 * セクションを展開します。
++
+.. Google SecOps からコピーした *Webhook URL* を入力してください。
+.. Google SecOpsから*シークレットキー*と*APIキー*を入力します。
+
+
+. link:task-siem.html#event-delivery-route["イベント配送ルート"]を選択してください。SIEMイベントをSIEMエンドポイントに配信するには、*NetApp Console経由で配信*を選択します。ネットワーク上に既に存在するコンソールエージェント経由でイベントをルーティングするには、*コンソールエージェント経由で配信*を選択します。
++
+「Console エージェント経由で配信する」を選択した場合は、ドロップダウンメニューから使用する Console エージェントを選択してください。
+
+. *接続*を選択して、SIEMデータの送信を開始します。
+
+
+
+
+[[next-steps]]
+== 次の手順
+
+* link:reference-soar.html["SOARプレイブックを統合する"]
+

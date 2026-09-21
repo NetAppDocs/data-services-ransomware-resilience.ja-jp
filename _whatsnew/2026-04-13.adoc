@@ -18,7 +18,7 @@ Ransomware Resilienceは、クリーンリストアをサポートするよう�
 
 Ransomware Resilience は、Splunk Enterprise のセキュリティ情報イベント管理（SIEM）サポートを提供し、ログデータとイベントデータを一元管理して、脅威分析と検出を効率化できます。
 
-詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["ランサムウェア対策をSIEMに接続"^]を参照してください。
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-splunk.html["Splunk SIEMの設定"^]を参照してください。
 
 
 
