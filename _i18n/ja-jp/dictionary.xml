@@ -2870,4 +2870,7 @@
   <block id="b4432b2cbe32a1565ba15c5575ec34aa" category="sidebar">AWS Security Hub の設定</block>
   <block id="ece99177ef46def4743253388748336e" category="sidebar">Microsoft Sentinel の構成</block>
   <block id="373bd242e28dd9ed5ab41176e809e7db" category="sidebar">Splunk Cloud &amp; Enterprise を設定する</block>
+  <block id="e9cbe0aaa0ffb3834bf6a16e6c4f6881" category="inline-link-macro">ワークロードを復元する</block>
+  <block id="1b4c5e5585c892abb8e8dd8b4b4145d8" category="list-text">Azure NetApp Files に対して<block ref="825823111b1491b7b84194a9322124b7" category="inline-link-macro-rx"></block>場合、ファイルレベルのリストアは使用できません。</block>
+  <block id="be477216a2a05782605c951939d5638a" category="section-title">Azure でロールを追加し、ランサムウェアレジリエンスで Microsoft Sentinel を認証する</block>
 </blocks>

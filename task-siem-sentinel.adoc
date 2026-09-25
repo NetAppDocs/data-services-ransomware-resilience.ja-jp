@@ -150,8 +150,8 @@ TIP: クライアントシークレットの有効期間は2年（24ヶ月）以
 
 
 
-[[authenticate-microsoft-sentinel-in-ransomware-resilience]]
-== NetApp Ransomware ResilienceでMicrosoft Sentinelを認証
+[[add-roles-in-azure-and-authenticate-microsoft-sentinel-in-ransomware-resilience]]
+== Azure でロールを追加し、ランサムウェアレジリエンスで Microsoft Sentinel を認証する
 
 Microsoft Sentinel SIEMの場合、自動展開を選択すると、お客様が指定した権限に基づいてRansomware Resilienceがリソースを展開します。あるいは、提供されたARMテンプレートに基づいてリソースをデプロイする手動デプロイを実行することもできます。どちらのオプションでも、Azure ポータルでアクセス許可を設定し、その後 Ransomware Resilience で接続を認証する必要がありますが、手順は異なります。ニーズに最適なワークフローを選択してください。
 
