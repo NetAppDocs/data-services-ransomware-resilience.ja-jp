@@ -24,10 +24,10 @@ summary: 数ステップで NetApp Ransomware Resilience を使い始めまし�
 * link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation["コンソールエージェントがインストールされていることを確認してください"^]
 * link:rp-start-prerequisites.html["システムが要件を満たしていることを確認する"]
 +
-** また、link:reference-user-activity-requirements.html["不審なユーザー行動の検出"]とlink:task-clean-restore.html["クリーンリストア"]の要件も確認してください。
+** link:reference-user-activity-requirements.html["不審なユーザー行動の検出"]とlink:task-clean-restore.html["クリーンリストア"]の要件を確認してください。
 
 
-* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["Ransomware Resilienceのユーザーロールを確認し、サービスにアクセスするユーザーに権限を割り当てます。"]
+* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html["Ransomware Resilienceのユーザーロールを確認し、サービスにアクセスするユーザーに権限を割り当てます。"^]
 * link:rp-start-licenses.html["ライセンスの設定"]
 
 
