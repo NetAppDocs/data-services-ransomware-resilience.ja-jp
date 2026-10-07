@@ -32,6 +32,11 @@ Ransomware Resilience には、NetApp Console からアクセスできます。�
 
 詳細については、link:rp-start-login.html["ランサムウェア耐性にアクセス"]そしてlink:rp-start-quick-start.html["ランサムウェア耐性クイックスタートガイド"]。
 
+.ランサムウェア対策において、コンソールエージェントにはどのような要件がありますか？
+link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["ユーザーに対する適切な権限を確認し、設定してください。"]コンソール組織内のアクティブなコンソールエージェントのうち、少なくとも1つがサポート対象システムに接続されていることを確認してください。コンソールエージェントの `cloudmanager-ransomware-protection`コンテナはアクティブな状態である必要があります。
+
+さらに、コンソールエージェント1つあたり、ワークロードの上限は3,000件です。この制限の延長を申請することができます。
+
 .Ransomware Resilience は、標準モード、制限モード、プライベート モードで使用できますか?
 ランサムウェア耐性は現在、標準モードでのみ利用可能です。
 
@@ -56,7 +61,7 @@ Ransomware Resilience を 30 日間無料でお試しいただけます。NetApp
 * 試用期間中またはライセンスに基づいて作成されたすべてのスケジュールされた操作を実行します
 
 
-NetApp Ransomware Resilienceのサービスを終了するには、サポートリクエストを送信してください。リクエストには組織IDを含め、サービスの廃止を希望する旨を明記してください。
+Ransomware Resilienceのサービスを終了するには、サポートリクエストを送信してください。申請書には組織IDを含め、サービスの廃止を希望する旨を明記してください。
 
 
 
@@ -111,7 +116,7 @@ Ransomware Resilience はボリュームとファイル拡張子を検出し、�
 ランサムウェア耐性において、ワークロードに検出ポリシーが有効になっている場合、そのワークロードの状態は「保護済み」と表示されます。検出ポリシーは、暗号化検出または不審なユーザー行動検出（あるいはその両方）のいずれかで構成されている必要があります。詳細については、link:rp-use-protect.html#add-a-ransomware-protection-strategy["検出ポリシー"]を参照してください。
 
 .「リスクのある」ワークロードとは何ですか?
-ワークロードが保護されているとみなされるには、暗号化検出またはユーザー行動検出が有効になったランサムウェア保護ポリシーが必要です。これらの検出戦略のうち少なくとも1つがない場合、ワークロードはリスクありとラベル付けされます。ワークロードにバックアップまたはスナップショットポリシーが設定されていても、暗号化検出またはユーザー行動検出が有効になっていない場合は、リスクありとみなされます。
+保護されていると見なされるには、ワークロードに、暗号化検出またはユーザー行動検出が有効になっているランサムウェア保護ポリシーが設定されている必要があります。これらの検出戦略の少なくとも1つがない場合、ワークロードはリスクありとラベル付けされます。ワークロードにバックアップポリシーまたはスナップショットポリシーがあっても、暗号化検出またはユーザー行動検出が有効になっていない場合、リスクがあると見なされます。
 
 Ransomware Resilienceは、不審なファイル拡張子の検出機能も提供しています。不審なファイル拡張子の検出が唯一有効な検出ポリシーである場合、ワークロードはリスクありとラベル付けされます。
 
@@ -155,13 +160,13 @@ link:concept-ransomware-resilience.html#attack-types["攻撃タイプ"]の詳細
 はい、Ransomware Resilienceは、ONTAPで設定されたスナップショットスケジュールを検出します。また、検出されたワークロード内のすべてのボリュームでARPとFPolicyが有効になっているかどうかも検出します。Ransomware Resilienceダッシュボードに表示される情報は、他のNetAppソリューションと製品から集約されたものです。
 
 .ランサムウェア耐性は、NetApp Backup and Recoveryですでに作成されたポリシーを認識しますか？
-はい、Backup and Recoveryで管理されているワークロードがある場合、それらの製品によって管理されているポリシーはRansomware Resilienceに取り込まれます。
+はい、Backup and Recoveryで管理されているワークロードがある場合、それらのポリシーはRansomware Resilienceに取り込まれます。
 
 .NetApp Backup and Recoveryから引き継いだポリシーを変更できますか？
 いいえ、Ransomware ResilienceからNetApp Backup and Recoveryで管理されているポリシーを変更することはできません。これらのポリシーへの変更は、NetApp Backup and Recoveryで管理します。
 
-.ONTAPからのポリシー (ARP、FPolicy、スナップショットなど) が存在する場合、それらは Ransomware Resilience で変更されますか?
-いいえ。Ransomware Resilience は、 ONTAPの既存の検出ポリシー (ARP、FPolicy 設定) を変更しません。
+.ONTAPにポリシー（ARP、FPolicy、スナップショットなど）が存在する場合、Ransomware Resilienceはそれらを変更しますか？
+Ransomware Resilienceは、ONTAPの既存の検出ポリシー（ARP、FPolicy設定）を変更しません。Ransomware Resilienceで設定を変更すると、ONTAPの設定を上書きできます。
 
 .Ransomware Resilience にサインアップした後、 NetApp Backup and Recovery に新しいポリシーを追加するとどうなりますか？
 ランサムウェア耐性は、NetApp Backup and Recoveryで新しく作成されたポリシーとポリシーの変更を認識します。
