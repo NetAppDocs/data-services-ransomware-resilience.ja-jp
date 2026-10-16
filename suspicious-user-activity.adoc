@@ -22,9 +22,6 @@ NetApp Ransomware Resilience のユーザー行動検出を使用して、ラン
 
 ユーザー アクティビティ エージェント、データ コレクター、ユーザー ディレクトリ コネクタはすべて、Ransomware Resilience 設定ダッシュボードから管理できます。
 
-
-NOTE: すでに NetApp Data Infrastructure Insights (DII) Workload Security をご利用の場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用します。Ransomware Resilience 用に個別の Workload Security エージェントをデプロイする必要はありません。ただし、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナントの間のペアリング関係が必要になります。このペアリングを有効にするには、担当の営業代表者にお問い合わせください。
-
 DIIを使用していない場合は、こちらの設定手順に従ってください。
 
 
@@ -38,6 +35,13 @@ DIIを使用していない場合は、こちらの設定手順に従ってく�
 *必要なコンソールロール* ユーザー行動検出を有効にするには、**組織管理者ロール**が必要です。以降のユーザー行動検出設定を行うには、**ランサムウェア耐性ユーザー行動管理者ロール**が必要です。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html["NetApp Consoleのランサムウェア耐性ロールについて学ぶ"^]。
 
 各ロールが組織レベルで適用されていることを確認します。
+
+
+
+[[considerations-for-data-infrastructure-insights-dii-workload-security-users]]
+=== Data Infrastructure Insights（DII）ワークロードセキュリティユーザー向けの考慮事項
+
+すでに NetApp Data Infrastructure Insights (DII) Workload Security をご利用の場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用します。Ransomware Resilience 用に個別の Workload Security エージェントをデプロイする必要はありません。ただし、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナントの間のペアリング関係が必要になります。このペアリングを有効にするには、担当の営業代表者にお問い合わせください。
 
 
 

@@ -47,7 +47,7 @@ BYOL を設定するか、PAYGO サブスクリプションを購入すると、
 [[other-licenses]]
 == その他のライセンス
 
-Ransomware Resilience ライセンスには、追加のNetApp製品は含まれません。ただし、バックアップとリカバリ用の個別のライセンスがない場合でも、Ransomware Resilience はNetApp Backup and Recoveryと統合できます。
+ランサムウェア耐性ライセンスには、追加のNetApp製品は含まれていません。
 
 
 NOTE: バックアップとリカバリとランサムウェア耐性の両方をお持ちの場合、両方の製品で保護されている共通データについては、ランサムウェア耐性に対してのみ課金されます。

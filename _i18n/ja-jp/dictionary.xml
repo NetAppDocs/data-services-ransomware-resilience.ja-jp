@@ -1170,7 +1170,6 @@
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">FAQ</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
   <block id="51fecb5d19a6637dea83445678fd4ffa" category="section-title">データのバックアップ</block>
-  <block id="4fa0264ac4080dbcb96449b3dd2eff57" category="paragraph">Ransomware Resilience ライセンスには、追加のNetApp製品は含まれません。ただし、バックアップとリカバリ用の個別のライセンスがない場合でも、Ransomware Resilience はNetApp Backup and Recoveryと統合できます。</block>
   <block id="6ff0e20f052119502398978ae7712412" category="paragraph">詳しい情報については、各ステップのリンクを参照してください。</block>
   <block id="220434cdb736458843fe145fbd4b9ca9" category="inline-link-macro">コンソールエージェントがインストールされていることを確認してください</block>
   <block id="ff6929fd02a6e7a1c0faa4152fe13ffe" category="list-text"><block ref="ff6929fd02a6e7a1c0faa4152fe13ffe" category="inline-link-macro-rx"></block></block>
@@ -1340,7 +1339,6 @@
   <block id="5c024c0f8096e0fba857f661afe2dbd0" category="list-text">ヨーロッパ (フランクフルト) (eu-central-1)</block>
   <block id="d605e764d56b8615ebf6dd5f87998855" category="list-text">米国東部（バージニア北部）（us-east-1）</block>
   <block id="a55a22032fc9fd630abe933324e9d4b9" category="paragraph-title">Ransomware Resilience はONTAPの保護設定を認識しますか?</block>
-  <block id="1c8f51534c2fc10dfef26d32d61c7ed3" category="paragraph">ライセンスと課金に関しては、バックアップとリカバリ用の個別のライセンスがない場合でも、Ransomware Resilience をバックアップとリカバリと統合できます。バックアップとリカバリとランサムウェア耐性の両方をお持ちの場合、両方の製品で保護されている共通データについては、ランサムウェア耐性に対してのみ課金されます。</block>
   <block id="6b62768f3f94df043ea31bf9c43b2a42" category="paragraph">Ransomware Resilience は、Oracle、ファイル共有、ブロック ストレージ、VM、VM データストアなどのワークロードを識別できます。</block>
   <block id="897c29783a147c6c7b7844f2d4a9e81a" category="paragraph">プレビュー バージョンでは、このサービスは、Oracle、VM データストア、オンプレミスの NAS ストレージ上のファイル共有、およびBlueXP組織全体のCloud Volumes ONTAP on AWS (NFS プロトコルを使用) のアプリケーション ベースのワークロードを個別に保護し、データを Amazon Web Services クラウド ストレージにバックアップします。</block>
   <block id="f075180c986e3a7a8e0bad4fcec7c485" category="cell">15.3 (64 ビット) から 15.6 (64 ビット)</block>
@@ -1728,7 +1726,6 @@
   <block id="b720eb62a1de68d6cb9c9dbea3c63907" category="list-text">RPO ポリシーを満たすようにキュレートされたリカバリを適用します。ランサムウェアレジリエンスは、NetApp Backup and Recovery によるランサムウェアインシデントからのリカバリを調整します。</block>
   <block id="5d81d4b181b1f6e47c262988038cd67d" category="paragraph">Ransomware Resilienceは、現在のバックアップ保護、スナップショットコピー、およびNetApp Autonomous Ransomware Protectionオプションをチェックします。Ransomware Resilienceは、ファイル共有およびVMファイル共有に対するNetApp Backup and Recoveryからの保護情報も検出します。その後、ランサムウェア保護を強化するための方法を推奨します。</block>
   <block id="c048f8419f5606e294e716a232b223a2" category="paragraph-title">ランサムウェア耐性はNetApp Backup and Recoveryとどのように相互作用しますか？</block>
-  <block id="eadde9be35eb975c3bbd5558937ea6ce" category="paragraph">Ransomware Resilience は、Backup and Recovery と連携して、ファイル共有ワークロードのスナップショットおよびバックアップポリシーを検出して設定します。Ransomware Resilience は、Backup and Recovery と連携して、ファイルおよびワークロードの一貫性のあるリカバリを実行します。</block>
   <block id="79b8a65e3601fc128a20382435361146" category="paragraph-title">ランサムウェア耐性は、NetApp Backup and Recoveryですでに作成されたポリシーを認識しますか？</block>
   <block id="f88bf8ade397c623545ba47ce5394409" category="paragraph-title">NetApp Backup and Recoveryから引き継いだポリシーを変更できますか？</block>
   <block id="dd9161665fa6e8f8df843bd9c2b959be" category="paragraph">いいえ、Ransomware ResilienceからNetApp Backup and Recoveryで管理されているポリシーを変更することはできません。これらのポリシーへの変更は、NetApp Backup and Recoveryで管理します。</block>
@@ -2877,4 +2874,11 @@
   <block id="33770507195ff31d97a8192589460055" category="paragraph">Ransomware Resilienceは、ONTAPの既存の検出ポリシー（ARP、FPolicy設定）を変更しません。Ransomware Resilienceで設定を変更すると、ONTAPの設定を上書きできます。</block>
   <block id="73f9341af639bb7291bbf568f90c32a7" category="list-text">コンソールエージェント1つあたり、ワークロードの上限は3,000です。この制限の延長を申請することができます。</block>
   <block id="450c303d7338ae99abb9140e57f1802f" category="paragraph">コンソールエージェントをデプロイして権限を割り当てるには、_スーパー管理者_または_組織管理者_の役割が必要です。</block>
+  <block id="8c6998a19384eedc205556ec1d5a77b6" category="paragraph-title">ランサムウェア耐性ライセンスには、追加のNetApp製品が含まれていますか？</block>
+  <block id="46b0217d78ea89c9c081b6abcf978050" category="paragraph">いいえ、ランサムウェア耐性ライセンスには追加のNetApp製品は含まれていません。</block>
+  <block id="2017d158145a1f82958e603226f6511f" category="paragraph">有効なBackup and RecoveryライセンスとRansomware Resilienceをお持ちの場合、Ransomware ResilienceはBackup and Recoveryで設定されたスナップショットおよびバックアップポリシーを検出します。Ransomware ResilienceではBackup and Recoveryのポリシーを編集することはできませんが、置き換えることは可能です。</block>
+  <block id="e7a03cecb86b19d317d9b0b42a7c67fc" category="paragraph">Ransomware Resilienceは、Backup and Recoveryと連携して、ファイルおよびワークロードに整合性のあるリカバリを実行します。Ransomware ResilienceとBackup and Recoveryの両方で検出および保護されているワークロードについては、どちらのサービスからでもリカバリを実行できます。</block>
+  <block id="a8e75ad6008293b62f2f0e9d9831a35d" category="paragraph-title">Data Infrastructure Insights Workload Securityで以前にユーザーアクティビティ検出を有効にしていた場合、何を知っておく必要がありますか？</block>
+  <block id="1d1aa737543f7a38b5529fc14884bb9a" category="paragraph">ランサムウェア耐性ライセンスには、追加のNetApp製品は含まれていません。</block>
+  <block id="806ec63eaaf32091114d52559b568902" category="section-title">Data Infrastructure Insights（DII）ワークロードセキュリティユーザー向けの考慮事項</block>
 </blocks>

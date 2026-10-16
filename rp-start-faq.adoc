@@ -88,10 +88,18 @@ Ransomware Resilience に推奨されるデバイス解像度は 1920x1080 以�
 .Ransomware Resilience はONTAPの保護設定を認識しますか?
 はい、Ransomware Resilience はONTAPで設定されたスナップショット スケジュールを検出します。
 
-.ランサムウェア耐性はNetApp Backup and Recoveryとどのように相互作用しますか？
-Ransomware Resilience は、Backup and Recovery と連携して、ファイル共有ワークロードのスナップショットおよびバックアップポリシーを検出して設定します。Ransomware Resilience は、Backup and Recovery と連携して、ファイルおよびワークロードの一貫性のあるリカバリを実行します。
+.ランサムウェア耐性ライセンスには、追加のNetApp製品が含まれていますか？
+いいえ、ランサムウェア耐性ライセンスには追加のNetApp製品は含まれていません。
 
-ライセンスと課金に関しては、バックアップとリカバリ用の個別のライセンスがない場合でも、Ransomware Resilience をバックアップとリカバリと統合できます。バックアップとリカバリとランサムウェア耐性の両方をお持ちの場合、両方の製品で保護されている共通データについては、ランサムウェア耐性に対してのみ課金されます。
+.ランサムウェア耐性はNetApp Backup and Recoveryとどのように相互作用しますか？
+有効なBackup and RecoveryライセンスとRansomware Resilienceをお持ちの場合、Ransomware ResilienceはBackup and Recoveryで設定されたスナップショットおよびバックアップポリシーを検出します。Ransomware ResilienceではBackup and Recoveryのポリシーを編集することはできませんが、置き換えることは可能です。
+
+Ransomware Resilienceは、Backup and Recoveryと連携して、ファイルおよびワークロードに整合性のあるリカバリを実行します。Ransomware ResilienceとBackup and Recoveryの両方で検出および保護されているワークロードについては、どちらのサービスからでもリカバリを実行できます。
+
+バックアップとリカバリとランサムウェア耐性の両方をお持ちの場合、両方の製品で保護されている共通データについては、ランサムウェア耐性に対してのみ課金されます。
+
+.Data Infrastructure Insights Workload Securityで以前にユーザーアクティビティ検出を有効にしていた場合、何を知っておく必要がありますか？
+すでに NetApp Data Infrastructure Insights (DII) Workload Security をご利用の場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用します。Ransomware Resilience 用に個別の Workload Security エージェントをデプロイする必要はありません。ただし、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナントの間のペアリング関係が必要になります。このペアリングを有効にするには、担当の営業代表者にお問い合わせください。
 
 
 
