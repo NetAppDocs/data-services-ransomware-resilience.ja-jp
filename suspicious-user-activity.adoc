@@ -43,6 +43,8 @@ DIIを使用していない場合は、こちらの設定手順に従ってく�
 
 すでに NetApp Data Infrastructure Insights (DII) Workload Security をご利用の場合は、Ransomware Resilience にも同じ Workload Security エージェントを使用します。Ransomware Resilience 用に個別の Workload Security エージェントをデプロイする必要はありません。ただし、同じ Workload Security エージェントを使用するには、Ransomware Resilience Console 組織と DII Storage Workload Security テナントの間のペアリング関係が必要になります。このペアリングを有効にするには、担当の営業代表者にお問い合わせください。
 
+Ransomware Resilienceでユーザーアクティビティ検出を有効にすると、現在Consoleに保存されている認証情報を使用してデータコレクターを管理します。以前にData Infrastructure Insights（DII）Workload Securityを通じてユーザーアクティビティ検出を有効にしていた場合、Consoleの認証情報が、データコレクターを管理するために以前DIIで使用していた認証情報を置き換えます。
+
 
 
 [[create-a-user-activity-agent]]

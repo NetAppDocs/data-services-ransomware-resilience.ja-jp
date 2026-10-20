@@ -2881,4 +2881,6 @@
   <block id="a8e75ad6008293b62f2f0e9d9831a35d" category="paragraph-title">Data Infrastructure Insights Workload Securityで以前にユーザーアクティビティ検出を有効にしていた場合、何を知っておく必要がありますか？</block>
   <block id="1d1aa737543f7a38b5529fc14884bb9a" category="paragraph">ランサムウェア耐性ライセンスには、追加のNetApp製品は含まれていません。</block>
   <block id="806ec63eaaf32091114d52559b568902" category="section-title">Data Infrastructure Insights（DII）ワークロードセキュリティユーザー向けの考慮事項</block>
+  <block id="7d20abced2097011f465f4a9fe86d1f4" category="paragraph">Ransomware Resilienceでユーザーアクティビティ検出を有効にすると、現在Consoleに保存されている認証情報を使用してデータコレクターを管理します。以前にData Infrastructure Insights（DII）Workload Securityを通じてユーザーアクティビティ検出を有効にしていた場合、Consoleの認証情報が、データコレクターを管理するために以前DIIで使用していた認証情報を置き換えます。</block>
+  <block id="cbb0b1774db28ef79ba2a2fa819d9cfb" category="list-text">Google Cloud NetApp VolumesのFlexサービスレベルのサポートは現在プレビュー版です。</block>
 </blocks>
