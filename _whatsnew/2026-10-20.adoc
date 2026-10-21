@@ -1,0 +1,19 @@
+= 強化された隔離リカバリ環境構成
+:allow-uri-read: 
+
+
+
+
+[[enhanced-isolated-recovery-environment-configuration]]
+=== 強化された隔離リカバリ環境構成
+
+Ransomware Resilienceは、強化された隔離型復旧環境の構成ワークフローを提供するようになりました。新しいワークフローにより、クラウドまたはオンプレミス環境用の隔離されたリカバリ環境をセットアップするプロセスが明確化され、簡素化されます。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["クリーンな復元のための隔離されたリカバリ環境を作成する"^]を参照してください。
+
+
+
+[[google-cloud-netapp-volumes-flex-service-level-generally-available]]
+=== Google Cloud NetApp Volumes Flexサービスレベルの一般提供開始
+
+Ransomware ResilienceにおけるGoogle Cloud NetApp VolumesのFlexサービスレベルのサポートが一般提供（GA）となりました。
