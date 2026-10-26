@@ -1869,17 +1869,14 @@
   <block id="d08d6f8d7a531831181b973c3132aaef" category="paragraph">NetApp Ransomware Resilienceはクリーンリストアを提供し、ランサムウェア攻撃後のガイド付きリカバリを実現します。クリーンリストアを実行するには、まずオンプレミスまたはサポートされているクラウド環境に、隔離されたリカバリ環境（IRE）を作成する必要があります。IRE内にクリーンルームを作成します。そこでRansomware Resilienceはワークロードを隔離し、どのファイルがクリーンで、どのファイルがランサムウェアの影響を受けているかを特定します。</block>
   <block id="f6ee05d779160a7db74d926e2bb640f7" category="section-title">クリーンリストアについて</block>
   <block id="3f2567a86f8c54d04ec6273cdb7e3a90" category="list-text">**セットアップ**：クリーンなリストアを実行するには、まず IRE を作成し、次にリストアするワークロードを選択する必要があります。Ransomware Resilience は、ワークロードに関するすべてのアクションが実行されるクリーンルームを作成します。</block>
-  <block id="c3763704f64261ad7b74c0b6ece3a5e7" category="list-text">**分析**：クリーンルームでは、NetApp Ransomware Resilienceがすべてのスナップショットを分析し、暗号化が存在するかどうかを確認します。クリーンな復元は、最適な復旧計画を決定するための復旧マップを作成します。</block>
   <block id="5cdee73c83008a843d9dbb0a991b8307" category="paragraph">影響を受けるファイルを含まない復元ポイントが検出されると、それ以前のすべての復元ポイントはスキップされます。例えば、ランサムウェア攻撃が10月10日に発生し、10月7日午前10：21に影響を受けていない復元ポイントが見つかった場合、10月7日午前10：21より前のすべての復元ポイントはスキップされます。</block>
   <block id="82e75ee1827478564b33a5410c9eb863" category="paragraph">分析ステップでは、レビューされたファイルの数も表示され、影響を受けるファイルと影響を受けないファイルが示されます。</block>
   <block id="3ad61c0b3a3d27855f2b93882effa895" category="list-text">**プラン**：提供されている復旧オプションから選択してください。</block>
-  <block id="bcec21f7634632270763ec4fbec096be" category="paragraph">計画段階でファイル履歴を表示することで、ランサムウェア攻撃がファイルに影響を与えた時期や、復旧ポイントがその攻撃と時間的にどのように関連しているかを確認することもできます。</block>
   <block id="d4b88ae7112ba206532c2177bf4d3ee7" category="list-text">**クリーンアップ**：NetApp Ransomware Resilience は、リカバリポイントからマルウェアを削除します。クリーンアップできないファイルがある場合は、復元対象から除外され、別の場所に隔離されます。</block>
   <block id="df2aee92cf409d5307ab1b2587c12b51" category="list-text">**復元**：NetApp Ransomware Resilienceは、クリーンなデータをソース環境に復元します。</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">サポートされている構成</block>
   <block id="01c81fea09d285ebadc2362452091509" category="list-text">ランサムウェア対策アカウントごとに作成できるIREは1つだけです。各IREには3つのクリーンルームを設置できます。</block>
   <block id="582cfdbdcce499f277827ab3d0e7be89" category="list-text">クリーン リストアは現在、 NAS ファイル共有（ NFS / CIFS ）でのみサポートされています。</block>
-  <block id="9c69ad94c9075f0b7cad75c76d595107" category="list-text">ソース環境にクリーン リストアを実行する必要があります。</block>
   <block id="3f1675c8b59091961a73a7cb3f4ccc76" category="list-text">クラウドまたはオンプレミスでIREを作成できます。現在、以下の構成がサポートされています：</block>
   <block id="9937b29fcbc513990ee3a11d520463ec" category="cell">Destination（IRE）</block>
   <block id="936e18cf7bf36043950dc2aaedf4d3e0" category="cell">サポートされている宛先リージョン</block>
@@ -1897,7 +1894,6 @@
   <block id="fc9897437d0058f47163b41933bf7218" category="list-text">同じセキュリティ識別子（SID）を使用すると、認証およびセキュリティ上の競合が発生します。</block>
   <block id="b8a224e639154658d903c119ad01f115" category="list-text">同じコンピュータ名（CN）を使用すると、ネットワークの競合が発生します。</block>
   <block id="42d5a005352158447d080ff821694db4" category="list-text">同じマシン ID を使用すると、ライセンスとアクティベーションに関する問題が発生します。</block>
-  <block id="2b973fe4e18c7b4ee211cfe2a2373d41" category="paragraph">これらの競合を回避するため、Ransomware ResilienceはクローンVMに対してsysprepを実行し、SID、CN、およびマシンIDをリセットします。これらの値をリセットすることで、クローンVMがソースVMに干渉することなく、独自の独立したインスタンスとして動作することが保証されます。</block>
   <block id="c94b2ef9dde0531d36cb0d4e5d7b4b72" category="section-title">セカンダリ ソース</block>
   <block id="4a03772068b579d9b09ff0433b7acadd" category="paragraph">クリーンリストアプロセスは、デフォルトではソース環境のスナップショットを分析します。ソース環境が利用できない場合、またはソース上の暗号化されていないスナップショットが利用できない場合、クリーンリストアは、セカンダリ システムを設定済みの場合はそのスナップショットを分析します。</block>
   <block id="bf6aff190124dd12362477474eddaf9b" category="paragraph">クリーン リストアは Ransomware Resilience の一部として提供されます。クリーン リストアの実行や IRE の作成に追加ライセンスは必要ありません。</block>
@@ -1906,25 +1902,17 @@
   <block id="b8e0a8b93f5e303e66c1913fea32d6c2" category="list-text">AWSにIREがデプロイされ、クリーンリストアを開始すると、暗号化とマルウェアをクリーンアップするために、IRE内のクリーンルームに2つのt3.medium AWS EC2インスタンスがデプロイされます。</block>
   <block id="c21b1c1f109ee448ac505029595363ff" category="list-text">Cloud Volumes ONTAPでは、クリーン リストアによって、メタデータ ボリュームと分析用のSnapshotクローン用のクリーン ルーム ストレージVMが作成されます。</block>
   <block id="794fbe3384113d14f1fdcd8989bf96c9" category="paragraph">選択したクリーン リストア導入タイプの前提条件が完了していることを確認してください。選択したIRE構成のタブを選択します。</block>
-  <block id="97b3465a0840a995756be84349359712" category="admonition">IREを作成する際には、IRE作成時のシステム選択ステップで、分析に使用するすべてのシステム（プライマリまたはセカンダリ）を追加する必要があります。</block>
   <block id="f936c9befadd0c2d8782d30172d6b01c" category="open-title">クラウド間</block>
   <block id="a398547216c8a6f879cf6f1f9ece192b" category="paragraph">この図は、クラウド間クリーンリストア構成の例を示しています。IREを作成する前に、図と構成する必要のあるリソースを確認してください。</block>
   <block id="e4c9c1fbddfacd425e4392d01cc2e86d" category="image-alt">クラウド間クリーンリストアの図</block>
-  <block id="ab667ad4c2c05508cbadf5243680d8f5" category="paragraph">この図は、オンプレミス環境からクラウド環境へのクリーンな復元構成の例を示しています。IREを作成する前に、図と構成する必要のあるリソースを確認してください。</block>
-  <block id="e2089e21752dabbd3ef51ff9a49553db" category="inline-image-macro">クラウドからオンプレミスへのクリーン リストアの図</block>
-  <block id="e625cf867c975ae8e97fac00f8ea41e7" category="paragraph"><block ref="e625cf867c975ae8e97fac00f8ea41e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="57983f59ac18dd6402d0d93159c0e4f3" category="paragraph">この図は、オンプレミスからオンプレミスへのクリーン リストア構成の例を示しています。IREを作成する前に、図と構成する必要のあるリソースを確認してください。</block>
-  <block id="4d3cce2603ee3aa9f3e68180c988fecb" category="paragraph"><block ref="4d3cce2603ee3aa9f3e68180c988fecb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1bd140cbc0c8258678984fa95a11c4e7" category="list-text">ワークロードを復元するためにIREに接続するよう選択した各システムには、Storage Virtual Machine（SVM）が作成されます。クリーンルームSVMのデータLIFとして使用される各システムには、専用のIPアドレスを指定する必要があります。</block>
   <block id="dddae7341366d21d7817814cf5648201" category="list-title">ホストとvCenter</block>
   <block id="4c83fbda122cce9ae58d211347f6ad57" category="list-text">vCenterのバージョンは7.0以降で、少なくとも1つのデータセンターが必要です。</block>
-  <block id="de09cac8955fbf4a538227b1a500f1ea" category="list-text">ESXi ホストは ESXi バージョン 7.0 以降である必要があり、少なくとも 1 台のホストには VM をクローンするのに十分な CPU とメモリリソースが利用可能でなければなりません。</block>
   <block id="d60d7d94a2b0fa737cc49124079ae916" category="list-text">提供されたvCenter認証情報には、リソースを検出して VM をクローニングするための権限が必要です。</block>
   <block id="583b10215b97e432386097ad4ec74fba" category="list-title">ベース VM（Windows または Linux）</block>
-  <block id="8e43f7e3e1b14cfafc8b3e06e57ce8f7" category="list-text">クリーンリストアによる復旧時には、ベースとなる仮想マシンが選択されたデータセンターにクローンされ、選択されたESXiコンピューティング上に配置され、指定されたデータストアにマッピングされ、指定されたネットワークに接続されます。VMがクローンされると、2つのvCPUと4GBのRAM（LinuxまたはWindows VMの場合）、およびベースVMと同じ量のディスク容量を持つように構成されます。各クリーンリストアセッションでは、指定されたCIDR範囲から2つのIPアドレスが使用されます。</block>
   <block id="8cf10fd69a4fd984472b32ac076fd294" category="list-text">複数のクリーンルームセッションを同時に処理できるよう、十分なIPアドレス範囲を指定する必要があります。IPアドレスは復旧完了後に解放されます。</block>
   <block id="5de22c7c2e6d79be9397c6ce6e52329d" category="list-text">データストアには、仮想マシンのクローン作成に対応できる十分な空き容量が必要です。</block>
-  <block id="f57c45eba65afff0aceb3a08fcbcb844" category="list-text">IP アドレス範囲は CIDR 形式で指定する必要があります（例：100.100.0.0/24）</block>
   <block id="907c95835e464d0d2873ade7ea1a6aa0" category="list-text">Linux VMの場合：</block>
   <block id="544db10e10ef5df6ce60a5904860672f" category="list-text">オペレーティング システムは Ubuntu Linux 20.04 以降である必要があります。</block>
   <block id="406c1681779df816214c3844edb2bea6" category="list-text">オンプレミス システムの電源を入れる必要があります。</block>
@@ -1933,12 +1921,7 @@
   <block id="e1be34a58f3251e0469bedfad3e4788d" category="list-text">nfs-commonをインストールする必要があります。</block>
   <block id="66ed64c9284af661b30715d4eca9f181" category="list-text">最低40GBの空き容量が必要です。</block>
   <block id="300cc7d3b66cf666cb37df412b0cc68b" category="list-text">Windows VMの場合：</block>
-  <block id="21755314d24463f2d188ab45bb05c0c0" category="list-text">Windows 仮想マシンには 20 GB の空き容量が必要です。</block>
-  <block id="90d564042949a5f93242647a2eebfa5a" category="list-text">OS は Windows Server 2022 または 2025 である必要があります。</block>
-  <block id="f4202e7e0c5094531b708b50600cc832" category="list-text">VMware Tools がインストールされ、実行されている必要があります。</block>
   <block id="09b7c2aa37556075a97e0692779f37aa" category="list-text">WinRMを有効にする必要があります。</block>
-  <block id="3150667c3111f1fed62e5265ad610aa2" category="list-text">IP を設定する必要があります。</block>
-  <block id="8521641d0ead625e5ab746c26c3df774" category="list-text">ベースVMのクローニングを許可する適切なライセンスがあることを確認してください。</block>
   <block id="b69e202d94775b8134a93d5f20d13c9e" category="list-text">VM の電源をオンにする必要があります。</block>
   <block id="eec89088ee408b80387155272b113256" category="list-title">ネットワーク</block>
   <block id="5d1a1ff59e66d0bc9d1daac52f5b90db" category="list-text">VLAN リソースを次のアクセス権限で設定します：</block>
@@ -1953,10 +1936,7 @@
   <block id="c0d06f34f409c88591b7f6400fe18f79" category="list-title">専用NetApp Consoleエージェント</block>
   <block id="7ceddaa8655f37336fb68de0bd913377" category="inline-link-macro">オンプレミスに Console エージェントを導入する</block>
   <block id="aa147883aef6768d6c780bb0a1c8f82b" category="list-text">IRE 用の専用NetApp Console エージェントを導入します。Console エージェントは、クリーン ルーム VLAN にアクセスできる宛先vCenterに導入する必要があります。導入プロセスの詳細については、<block ref="8982c6b7b71ee0cfe0da7587be46f6b1" category="inline-link-macro-rx"></block>を参照してください。</block>
-  <block id="fcbb0e1baa9ae5913c0059a3babc98ba" category="paragraph">クリーンな復元を実行する前に、隔離されたリカバリ ルームを作成する必要があります。</block>
-  <block id="90f9f1ae9aae8bda3367df6cbbd98883" category="paragraph">隔離されたリカバリ ルームを作成するプロセスは、環境がクラウドにあるかオンプレミスにあるかによって異なります。正しい場所の手順に従ってください。</block>
   <block id="c8e2277ecfb1427838c488c217f99466" category="open-title">クラウド</block>
-  <block id="be33043acadffab164c32971cd856af7" category="inline-image-macro">システム選択インターフェイスのスクリーンショット。</block>
   <block id="c2b8af5a06c2ce8a91c4861ae659df43" category="inline-image-macro">IRE 認証設定のスクリーンショット。</block>
   <block id="f0e69ccbb7ad96f546f7924206944bfa" category="open-title">オンプレミス</block>
   <block id="9f1d53078d7f9d9907fb2e5042915794" category="list-text">「クリーン復元」カードで、これが最初の環境の場合は **追加** を選択し、既に作成済みの場合は **管理** を選択します。</block>
@@ -1988,7 +1968,6 @@
   <block id="8a6858555f085685f5bb427c4dbd4219" category="paragraph">Ransomware Resilienceは、追加を選択した後に接続テストを実行します。これには数分かかる場合があります。IREのステータスが「deployed」と表示されれば、IREの展開は成功です。</block>
   <block id="72fe6d9d17dfd2ab74965b68d4ad7d09" category="list-text">VM を導入する *Datacenter* と *Cluster* を選択します。</block>
   <block id="3e00060a376e7413a4ebadfd06157d94" category="list-text">ESXiホストの*データストア*と*ネットワーク*を選択します。</block>
-  <block id="30329b19b858d26d073ea4ab5feeed6f" category="list-text">VMの*IPアドレス範囲*をCIDR形式（例：10.0.0.1/24）、*サブネットマスク*、および*ゲートウェイ*を入力します。</block>
   <block id="1a65a52eeaaaf2a882bf42fa7b872483" category="list-text">NetApp Ransomware Resilienceがランサムウェアのスキャンに使用するLinux VMについては、ドロップダウンメニューからVMを選択し、VMの*ユーザー名*と*パスワード*を入力してください。</block>
   <block id="3c4a04ceaab48b61f17ab0bd613644c0" category="list-text">スキャンに使用するWindows VMについては、ドロップダウンメニューからVMを選択し、VMの*ユーザー名*と*パスワード*を入力します。</block>
   <block id="13291e241521a2260f7ae5746544e195" category="list-text">**追加**を選択してIREを作成します。Ransomware Resilienceは、追加を選択した後に接続をテストします。この処理には数分かかることがあります。IREのステータスが「deployed」と表示されると、IREは正常に導入されています。</block>
@@ -2135,7 +2114,6 @@
   <block id="0d82e39ef01b66f1049f774775f69a57" category="inline-image-macro">代替復旧先のスクリーンショット</block>
   <block id="84c03f1b38aa942e542555e111083674" category="paragraph"><block ref="84c03f1b38aa942e542555e111083674" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f5cfed6a695ca584c4de91e043cec8df" category="list-text">**リソースを解放して終了**を選択して、リソースを解放し、クリーンルームを閉じます。確認するには、**終了**を選択します。</block>
-  <block id="ee9eb963788511d80fc2e4d572229dfc" category="paragraph">プライマリ ソースが利用できず、セカンダリ ソースを設定している場合は、クリーン リストアはセカンダリ ソースにリストアされます。</block>
   <block id="1ed548d363a0d2a6ce0c5db113b94db8" category="paragraph">IREを作成する際に、セカンダリソースを追加するオプションがあります。</block>
   <block id="61fcfe4267994f7a09ac2c0eac28d82e" category="admonition">単一のコンソール組織に複数のコンソールエージェントがある場合、ランサムウェア耐性は、コンソールUIで現在選択されているエージェント以外の、すべてのコンソールエージェントにわたるONTAPリソースをスキャンします。</block>
   <block id="8c2c19111935f9243c0b70cc9147c7f6" category="list-text">ONTAPまたはCloud Volumes ONTAPクラスタの場合、ランサムウェア耐性にはONTAPバージョン9.11.1以降が必要です。</block>
@@ -2872,24 +2850,47 @@
   <block id="70f3cf57a8612bb7c7ed814b764ffe7b" category="paragraph">Ransomware ResilienceにおけるGoogle Cloud NetApp VolumesのFlexサービスレベルのサポートが一般提供（GA）となりました。</block>
   <block id="eee605177fdd37df13557f2e5a708a3e" category="list-text">クラウドベースのIREの場合は、場所として**Amazon Web Services**を選択してください。</block>
   <block id="4310001295e1d1db81585fc985cdb925" category="list-text">環境の **Name** を入力します。</block>
-  <block id="58f6785310712567477337dc13a12c26" category="list-text">*Systems*セクションを展開します。IREに接続するシステムを選択します。選択した各システムについて。各システムはIREへのネットワーク接続を備えている必要があります。クリーンなリストアリカバリポイントを確立するために、各システムにデータLIF IPアドレスを指定する必要がある場合があります。</block>
   <block id="770bb8eb8b16b38f394137430a939c09" category="list-text">Amazon FSx for NetApp ONTAP以外の追加した各システムについて、*ストレージVMの編集*を選択します。ポップアップで、*ストレージVMのIPアドレス*と*ストレージVMのサブネットマスク*を入力します。*ブロードキャストドメイン*には、デフォルトまたは管理を選択します。必要に応じて、*ストレージVMゲートウェイ*を入力できます。</block>
   <block id="b437d56d52049ed55249efaeb9aff257" category="list-text">*認証*セクションで、クラウドの**アカウント** IDを入力し、ドロップダウンメニューからアカウントの**リージョン**を選択します。IREはサポートされているリージョンにのみデプロイできます。</block>
   <block id="f1bf93d681f0d253588359efb73f2e2d" category="admonition">アカウントには、Ransomware ResilienceがConsoleエージェントを展開し、オンデマンドのクリーンルームを作成できるようにするための必要な権限が必要です。</block>
   <block id="266bb5e81c63787b058d80199faaa22e" category="list-text">*Amazon VPC*セクションを展開します。IREをデプロイする仮想プライベートクラウドのIDを入力してください。（これは前提条件で設定したVPCです。）</block>
   <block id="cd40948356df51e6137e1790bfc4cffa" category="list-text">設定内容を確認するには、*次へ*を選択します。</block>
   <block id="b4f8a430d9a16d108360d1e973ff987f" category="list-text">設定を確認します。IREを作成するには、*Add*を選択します。</block>
-  <block id="e0cd70b5f1ef7aaf1987c21f01b085ec" category="list-text">*隔離復旧環境名*を入力してください。</block>
   <block id="8d3a4e5cee284fdb67453a248ff48de9" category="list-text">*Systems*セクションを展開します。IREに接続するシステムを選択します。</block>
   <block id="77acf99c95b57ba6e73764570d38fbc9" category="list-text">追加した各システムについて、*ストレージVMの編集*を選択します。ポップアップで、*ストレージVMのIPアドレス*と*ストレージVMのサブネットマスク*を入力します。*ブロードキャストドメイン*には、defaultまたはmanagementを選択します。オプションで*ストレージVMゲートウェイ*を入力できます。</block>
-  <block id="8bc9b6176ff2c39127e3ed21725523ba" category="list-text">IRE にデプロイされている Console agent をドロップダウンメニューから選択します。</block>
-  <block id="20798b94b33c0c5f219632c2bcc586c8" category="list-text">vCenterサーバーを認証するための資格情報を指定してください：*IPアドレスまたは完全修飾ドメイン名（FQDN）*、*ポート*、*ユーザー名*、および*パスワード*。</block>
-  <block id="54b513ce48479811874932d2e8f5bdc2" category="list-text">*クリーンルームコンピューティングセクション*を展開してください。</block>
-  <block id="e3ab54ceb75e6b462d073f1d905675a2" category="list-text">復旧プロセス中にクローン作成のベースとなる仮想マシンとして使用される、ESXiホスト上の仮想マシンを選択します。</block>
   <block id="d3b51a13c8511879c5378f17bd12c127" category="section-title">2026年10月20日</block>
   <block id="07405e58de7ae5291e2723155a5869b4" category="section-title">ユーザーアクティビティ監視を可能にするためのワークフローの強化</block>
   <block id="dd9dd4a4b292f36f08cee46f9ba3ffa3" category="paragraph">Ransomware Resilienceは、ユーザーアクティビティ監視を有効にするためのワークフローを改善しました。従来、Ransomware Resilienceは、ワークロード上でユーザーアクティビティ監視を含むランサムウェア対策戦略を有効にするたびに、データコレクターの接続をテストしていました。このアップデートにより、ストレージVMにデータコレクターが存在し、「実行中」の状態であれば、そのチェックはスキップされるようになり、保護ワークフローが高速化されます。</block>
   <block id="b79c3e2214dfd55d5e8b57ef1d6ae5bb" category="inline-link-macro">ワークロードを保護する</block>
   <block id="5f705092fbb64e2adcc5b83793eed660" category="paragraph">詳細については、<block ref="f5df6f8f09e7648e9d6889e3e6e725cb" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="d64a907f57f420b81a119fce287ff09f" category="paragraph">ランサムウェア対策戦略は、NetApp Ransomware Resilienceの主要な機能です：検出、保護、レプリケーションをサポートします。ランサムウェア攻撃を検知し、復旧のための保護基準を確保するために、ランサムウェア対策戦略を有効にしてください。</block>
+  <block id="233adc8ca42f7a8097ed29533bfab815" category="list-text">**分析**：クリーンルームでは、Ransomware Resilienceがすべてのスナップショットを分析し、暗号化が存在するかどうかを確認します。クリーンリストアは、最適な復旧プランを含む復旧マップを決定します。</block>
+  <block id="3cfd0b2a1a1f7eb6f8f17ddc0f73fc96" category="paragraph">計画段階でファイル履歴を表示することで、ランサムウェア攻撃がファイルに影響を与えた時期や、復旧ポイントがその攻撃と時間的にどのように関連しているかを確認することもできます。</block>
+  <block id="2167a2d55f36099e0735c5707e3b71bb" category="list-text">クリーンな復元では、元の環境にのみ復元できます。</block>
+  <block id="b1210ce3e5b669a69cc79e2b0ee6c53f" category="paragraph">これらの競合を回避するため、Ransomware ResilienceはクローンされたVMに対してsysprepを実行し、SID、CN、およびマシンIDをリセットします。これらの値をリセットすることで、クローンされたVMがソースVMに干渉することなく、独自の独立したインスタンスとして動作することが保証されます。</block>
+  <block id="24026e872b9b407496cb872d2956b369" category="paragraph">プライマリソースが利用できない場合で、セカンダリソースを設定している場合は、データはセカンダリソースに復元されます。</block>
+  <block id="170723e001c3b4c37b841a3f81011c7c" category="admonition">IREを作成する際には、システム選択ステップで、解析に使用するすべてのシステム（プライマリシステムまたはセカンダリシステム）を追加する必要があります。</block>
+  <block id="0a7a4ac55a8faa38afb9d12ee25be847" category="paragraph">この図は、オンプレミスからクラウドへのクリーンリストア構成の例を示しています。IREを作成する前に、図と構成する必要があるリソースを確認してください。</block>
+  <block id="b7998766936b85b4a19c6a8ce96f8daf" category="inline-image-macro">オンプレミスからクラウドへのクリーンリストアの図。</block>
+  <block id="777ecc60e5d0df1c0fbb57ce32c7fcb1" category="paragraph"><block ref="777ecc60e5d0df1c0fbb57ce32c7fcb1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5c49749bcd142ca611dfc21e5e83f9b1" category="inline-image-macro">オンプレミスからオンプレミスへのクリーンリストアの図</block>
+  <block id="b7b2f08d033bd4e095de0548c5b32eaa" category="paragraph"><block ref="b7b2f08d033bd4e095de0548c5b32eaa" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ac93a92b9033f0f62304a21c085a836d" category="list-text">ESXiホストはESXiバージョン7.0以降である必要があり、少なくとも1台のホストにはVMをクローンするのに十分なCPUとメモリリソースが利用可能でなければなりません。</block>
+  <block id="8c52ce58e25980d6fdbee1f92a5d9afe" category="list-text">クリーンリストアでのリカバリ中、ベースVMは選択したデータセンターにクローンされ、選択したESXiコンピュートに配置され、指定したデータストアにマッピングされ、指定したネットワークに接続されます。VMがクローンされると、2 vCPUおよび4 GB RAM（LinuxまたはWindows VMの場合）、ならびにベースVMと同じディスク容量を持つように構成されます。各クリーンリストアセッションでは、指定されたCIDR範囲から2つのIPアドレスが使用されます。</block>
+  <block id="bd6c8f7567873b15c9f691c416c18707" category="list-text">IPアドレス範囲はCIDR形式で指定する必要があります（例：100.100.0.0/24）。</block>
+  <block id="b57bdeccce93b2ecc2066f787cd74d4f" category="list-text">Windows VMsには、少なくとも20 GBの空き容量が必要です。</block>
+  <block id="e09b8e3f85818d7f9e3a08d6532a5639" category="list-text">オペレーティングシステムはWindows Server 2022または2025である必要があります。</block>
+  <block id="ae6d9c2f9d0a025898324167828d8826" category="list-text">IPアドレスを設定する必要があります。</block>
+  <block id="eb61d4d93a82475a40addbd68d7d3e71" category="list-text">ベースVMのクローン作成を許可する適切なライセンスを所有していることを確認してください。</block>
+  <block id="9925caf8454b969f1ee8e209df33db48" category="paragraph">クリーンな復元を実行する前に、隔離された復旧環境を作成する必要があります。</block>
+  <block id="ce7fd323c56d7f5d7af58d11c1739fbb" category="paragraph">隔離されたリカバリ環境を作成するプロセスは、環境がクラウドにあるかオンプレミスにあるかによって異なります。該当する場所の手順に従ってください。</block>
+  <block id="acd8197fec775912b2ac19261b65c663" category="list-text">*Systems*セクションを展開します。IREに接続するシステムを選択します。各システムはIREへのネットワーク接続を備えている必要があります。クリーンなリストアリカバリポイントを確立するために、各システムにデータLIF IPアドレスを指定する必要がある場合があります。</block>
+  <block id="81277c6ade4e4126fbd4d5e0defe5b20" category="image-alt">システム選択画面のスクリーンショット。</block>
+  <block id="ed2ab939413d03b3e3c5532b1e383562" category="list-text">*隔離された復旧環境名*を入力してください。</block>
+  <block id="4b63388778a428645c62b46e098fb762" category="list-text">ドロップダウンメニューから、IREにデプロイされている*コンソールエージェント*を選択します。</block>
+  <block id="6505ccdfc30aa0f2d3dc272bda2cb3ec" category="list-text">vCenterサーバーを認証するための資格情報を指定してください：*IPアドレスまたは完全修飾ドメイン名（FQDN）*、*ポート*、*ユーザー名*、および*パスワード*。</block>
+  <block id="393e58657e131f2b72649ed0cf5217cd" category="list-text">*クリーンルームコンピューティング*セクションを展開します。</block>
+  <block id="6f4030f935741207e6077271ec4c7fcd" category="list-text">VMの*IPアドレス範囲*（CIDR形式、例：100.100.0.0/24）、*サブネットマスク*、および*ゲートウェイ*を入力してください。</block>
+  <block id="0ad38e8473db5155eec04c6689ae2fed" category="list-text">ESXiホスト上に存在する仮想マシンを選択します。これらの仮想マシンは、復旧プロセス中にクローンを作成する際のベースとなる仮想マシンとして使用されます。</block>
+  <block id="41195e5d1530c08998754564c86f0814" category="image-alt">クリーンな復元処理におけるコンピューティング構成の手順のスクリーンショット。</block>
 </blocks>
