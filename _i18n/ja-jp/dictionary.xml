@@ -615,11 +615,8 @@
   <block id="f5bfc54a73042ca571add47438fea77e" category="cell">標準または重要から重大への変更</block>
   <block id="903c9d0250ec5956f3a9e1f0a3469c20" category="summary">NetApp Ransomware Resilienceでワークロードにポリシーを割り当てることで、ランサムウェア攻撃からワークロードを保護できます。</block>
   <block id="54a418aa76c7e9afaa77a58a34a3d3ed" category="doc">NetApp Ransomware Resilience保護戦略でワークロードを保護する</block>
-  <block id="9d76fd8cddbcb128567856bd698d409e" category="section-title">ランサムウェア対策戦略を理解する</block>
   <block id="b5728c1f0d5859e4bf3e89712b5ddbdf" category="list-text">**保護ポリシー** には、スナップショット ポリシーとバックアップ ポリシーが含まれます。保護戦略には検出およびスナップショット ポリシーが必要です。バックアップ ポリシーはオプションです。</block>
   <block id="7646c296ea1b221cbb826893afaa224e" category="paragraph">ワークロードを保護するために他のNetApp製品を使用している場合、Ransomware Resilience はそれらを検出し、次のいずれかのオプションを提供します。</block>
-  <block id="0e468f869572effeac4af4bbea21ed06" category="list-text">ランサムウェア検出ポリシーを使用し、他のNetAppツールによって作成されたスナップショットおよびバックアップポリシーを引き続き使用するか、</block>
-  <block id="47751183709636889e320f1a849dd584" category="list-text">Ransomware Resilience を使用して、検出、スナップショット、およびバックアップを管理します。</block>
   <block id="be96aa820e4d4c79150a1ea86f47ceb0" category="section-title">他のNetAppマネージド サービスとの保護ポリシー</block>
   <block id="f37d79a56cb20cdcf206acc1cfa8be14" category="paragraph">ランサムウェア検出ポリシーがONTAPの Autonomous Ransomware Protection（ ONTAP のバージョンに応じて ARP または ARP/AI）と FPolicy によって管理されている場合、それらのワークロードは保護され、引き続き ARP と FPolicy によって管理されます。</block>
   <block id="d62f06f1ca9fb020be7953fe3101f0a3" category="section-title">NetAppアプリケーションによって保護されていないワークロードの保護ポリシー</block>
@@ -656,11 +653,9 @@
   <block id="072b030ba126b2f4b2374f342be9ed44" category="cell">60</block>
   <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
   <block id="f543761d662a5051911ae04c98a64d2a" category="cell">*重要なワークロードポリシー*</block>
-  <block id="a99b6d6970ec523cbdaf4eef268b8c6f" category="cell">30分ごと</block>
   <block id="0a09c8844ba8f0936c20bd791130d6b6" category="cell">144</block>
   <block id="9766527f2b5d3e95d4a733fcfb77bd7e" category="cell">165</block>
   <block id="48a3fd80fe94fd5fab8bd8b5d0983950" category="cell">*標準作業負荷ポリシー*</block>
-  <block id="f4e76e01f80db61a6180d7fa5d9656c3" category="cell">30分ごと</block>
   <block id="32bb90e8976aab5298d5da10fe66f21d" category="cell">72</block>
   <block id="98dce83da57b0395e163467c9dae521b" category="cell">93</block>
   <block id="0396743cd11b926055aa9c4e3fc5eb14" category="cell">*暗号化ユーザー拡張機能*</block>
@@ -681,22 +676,8 @@
   <block id="197c283a01f19c77a4081693cf2ef5bf" category="list-text">ランサムウェア保護戦略ページで、[*追加*] を選択します。</block>
   <block id="a5be5d648ce22c25337cedcc760abd3c" category="inline-image-macro">スナップショットセクションを表示する戦略ページを追加します</block>
   <block id="3c47a09fd51a5bf078b6b75c88195ad8" category="paragraph"><block ref="3c47a09fd51a5bf078b6b75c88195ad8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2eaf03a47e19fb4342355aea7247f987" category="list-text">新しい戦略名を入力するか、既存の名前を入力してコピーします。既存の名前を入力する場合は、コピーする名前を選択し、「コピー」を選択します。</block>
-  <block id="2b83c0c36fa2002a1fbc43f8f9192b43" category="admonition">既存の戦略をコピーして変更することを選択した場合、Ransomware Resilience は元の名前に「_copy」を追加します。名前と少なくとも 1 つの設定を変更して、一意の名前にする必要があります。</block>
   <block id="e4574be2aa1d855d0a159fa734c028b7" category="list-text">各項目について、*下矢印*を選択します。</block>
-  <block id="b77a56354e9e39a76b1a118e9bfa09d3" category="list-text">*検出ポリシー*:</block>
-  <block id="949db64066489b0349a4ff1451832808" category="list-text">*ポリシー*: 事前に設計された検出ポリシーの 1 つを選択します。</block>
   <block id="7c06fadd4f73e4b63eb519df7d9880fc" category="paragraph">ブロックされたファイル拡張子を変更する場合は、System Manager で編集します。</block>
-  <block id="c8499d03897189696e5af26fc5ab9f45" category="list-text">*スナップショットポリシー*:</block>
-  <block id="007ac2633329ecdb55692304050d9260" category="list-text">*スナップショット ポリシー ベース名*: ポリシーを選択するか、*作成* を選択してスナップショット ポリシーの名前を入力します。</block>
-  <block id="db1a1db15ec89ce3f1720ebaa5e16708" category="list-text">*スナップショットのロック*: これを有効にすると、プライマリ ストレージ上のスナップショット コピーがロックされ、ランサムウェア攻撃がバックアップ ストレージの保存先に侵入した場合でも、一定期間スナップショット コピーを変更または削除できなくなります。これは、_不変ストレージ_とも呼ばれます。これにより、復元時間が短縮されます。</block>
-  <block id="adffa2f644199b61c95070a8e5f0b6a4" category="paragraph">スナップショットがロックされている場合、ボリュームの有効期限はスナップショット コピーの有効期限に設定されます。</block>
-  <block id="2a81a6cd6ac2a1bf9226055bf00ceada" category="inline-link">ONTAPのSnapLock</block>
-  <block id="df0d3afa881e0dbd0a73d2a79b4d08de" category="paragraph">スナップショット コピー ロックは、 ONTAP 9.12.1 以降で使用できます。  SnapLockの詳細については、以下を参照してください。<block ref="4a9cf5e778f625195d7ada1c294fe592" category="inline-link-rx"></block> 。</block>
-  <block id="32d9d253b967fa9a09765582b443ab9f" category="list-text">*スナップショット スケジュール*: スケジュール オプション、保持するスナップショット コピーの数を選択し、スケジュールを有効にするかどうかを選択します。</block>
-  <block id="bec83ad5f3237718ad523140fca8ac2b" category="list-text">*バックアップポリシー*:</block>
-  <block id="4c2335d5c61b4722f3bc7508bd4a0ada" category="list-text">*バックアップ ポリシーのベース名*: 新しい名前を入力するか、既存の名前を選択します。</block>
-  <block id="589d15d214feb500a590692bf3a50f04" category="list-text">*バックアップ スケジュール*: セカンダリ ストレージのスケジュール オプションを選択し、スケジュールを有効にします。</block>
   <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">*追加*を選択します。</block>
   <block id="1a068d6a85d666ea306209409d3e8bca" category="section-title">既存のバックアップまたはスナップショット ポリシーを持つワークロードに検出ポリシーを追加する</block>
   <block id="8ffd4321390a5a9174c14e023f8f68f8" category="inline-xref">ランサムウェア耐性で保護</block>
@@ -711,7 +692,6 @@
   <block id="df03f91b3a74d5ec2baa41276e3a16de" category="inline-xref">保護ポリシーを作成する</block>
   <block id="6254fbe0af1c355b3b21ba0edff9f802" category="list-text">保護ポリシーを選択します。保護ポリシーが存在しない場合は、[**追加**] を選択して新しいポリシーを作成します。ポリシーの作成方法については、以下を参照してください。<block ref="176be3a772dd966966fe67b132b5ec7b" category="inline-xref-macro-rx"></block> 。**次へ**を選択します。</block>
   <block id="375396793fa0187dd9b04e12d4a0a7b3" category="list-text">バックアップ先を選択するか、新しいバックアップ先を作成します。**次へ**を選択します。</block>
-  <block id="1f47983fe74a4f8bc9fa8a9706708fe6" category="list-text">保護戦略にユーザー行動の検出が含まれている場合は、環境内でユーザー アクティビティ エージェントを選択して、新しいデータ コレクターをホストします。Ransomware Resilience は、データ コレクターを自動的に作成し、ユーザー アクティビティ イベントを Ransomware Resilience に送信して、異常なユーザー動作を検出します。</block>
   <block id="bd320a2d0a55e1edf2c57054719c7c15" category="list-text">新しい保護戦略を確認し、[**保護**] を選択して適用します。</block>
   <block id="82f3ca7fa2e1f82d7f077e15af9747a4" category="section-title">別のポリシーを割り当てる</block>
   <block id="0fd65377e78b78ae68af3a3a26d93972" category="paragraph">既存のポリシーを別のポリシーに置き換えることができます。</block>
@@ -746,17 +726,7 @@
   <block id="05d9024c9e1747e3e7428ac3d6598aec" category="list-text">ワークロードを削除することを確認し、[削除] を選択します。</block>
   <block id="45a84df973de2cf5ebebbbb483cfdc19" category="list-text">選択した保護グループのページの右上にある [*保護グループの削除*] を選択します。</block>
   <block id="923d9e45e363794e64a67b73838142ac" category="list-text">グループを削除することを確認し、[削除] を選択します。</block>
-  <block id="f3d0cde08790f065a5bc8c494e512b95" category="section-title">ランサムウェア対策戦略の管理</block>
-  <block id="e299818a27e1f0221ee8f26b09166030" category="paragraph">ランサムウェア戦略を削除することができます。</block>
-  <block id="b7c78f5e474c6b8d64bb9440e0c2207c" category="section-title">ランサムウェア保護戦略によって保護されているワークロードを表示する</block>
-  <block id="74c3d5e9f3c5f4a3eb1732ac96ae76d8" category="paragraph">ランサムウェア保護戦略を削除する前に、その戦略によって保護されているワークロードを確認することをお勧めします。</block>
-  <block id="ce1be6d505f661c5110f1445e0bf19ba" category="paragraph">ワークロードは、戦略のリストから、または特定の戦略を編集しているときに表示できます。</block>
-  <block id="8e872201a9f1d2d9ce53cb5399ef0085" category="list-title">戦略を表示する手順</block>
   <block id="90f081941b9ec4d54a22065d524e3c77" category="list-text">[保護] ページで、[保護戦略の管理] を選択します。</block>
-  <block id="5c5c4c2893639638b243a5ebcf096a91" category="paragraph">ランサムウェア保護戦略ページには、戦略のリストが表示されます。</block>
-  <block id="b4591df76e4afaf6201f5ab62904e7c9" category="inline-image-macro">ランサムウェア保護戦略画面に戦略のリストが表示されている</block>
-  <block id="41bd5eb706037d556691ac8ba68c41a4" category="paragraph"><block ref="41bd5eb706037d556691ac8ba68c41a4" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b4f3b22ae011fb04bce785386b9d1062" category="list-text">「ランサムウェア保護戦略」ページの「保護されたワークロード」列で、行の末尾にある下矢印を選択します。</block>
   <block id="ccf23ad1bfca8f3c51caa8c9d8745378" category="section-title">ランサムウェア対策戦略を削除する</block>
   <block id="1eade84fa2646ea13dc54a4b35f61c1c" category="paragraph">現在どのワークロードにも関連付けられていない保護戦略を削除できます。</block>
   <block id="571f33f6eea9a8d4cbc40d9ea733c1e9" category="list-text">戦略管理ページで*アクション*を選択します<block ref="c25b92b317848c2a66dcfecc2a02ad99" category="inline-image-macro-rx" type="image"></block>削除する戦略のオプションを選択します。</block>
@@ -1456,15 +1426,11 @@
   <block id="705d8898c1c055eb3bff9939a87b6812" category="list-text">*重大*: 1 時間あたり 1 回以上のスナップショット コピーが作成される (非常に積極的な保護スケジュール)</block>
   <block id="0bec43abfdb99f043ac56e20931d1899" category="list-text">*重要*: スナップショットのコピーは、1時間ごとよりも頻度は低いですが、毎日よりも頻繁に作成されます。</block>
   <block id="890ca6db61a7d84b3c2f7e8b21560ff7" category="list-text">*標準*: スナップショットコピーは1日に複数回作成されます</block>
-  <block id="da4aa80a5402fe8991327699e5421e28" category="section-title">定義済みの検出ポリシー</block>
   <block id="0d6a90889ade51e4252ba8bbf1ad155e" category="cell">保持期間（日数）</block>
   <block id="b5b7fab63026325a379913c2a05751c2" category="cell">スナップショットコピーの数</block>
   <block id="aa9adfa847815670c9bd986dafc8c79c" category="cell">スナップショットコピーの最大数</block>
   <block id="cf9344351eb239ccd95661876c4d97ee" category="cell">*重要なレプリケーションポリシー*</block>
   <block id="ad53fda1a18da9db9d8aa1d460952aa5" category="list-text">ONTAPへのセカンダリレプリケーション</block>
-  <block id="50723c157cd9ea132a02f421411e273d" category="list-text">*レプリケーションポリシー*:</block>
-  <block id="f84245dfb1fc8217e62c0934102ba606" category="list-text">*レプリケーション ポリシーのベース名*: 新しい名前を入力するか、既存の名前を選択します。ベース名は、すべてのスナップショットに追加されるプレフィックスです。</block>
-  <block id="d230465858c85552b6c5a5b1ef3bb21f" category="list-text">*レプリケーション スケジュール*: 有効にする頻度 (時間別、日次、週次、月次) を切り替え、有効にするスケジュールごとに保持値 (保持する複製スナップショットの数) を設定します。</block>
   <block id="447fce6406d4a8e99de98a2d5d107536" category="list-text">戦略にレプリケーションが含まれている場合は、**宛先システム** と **宛先ストレージ VM** を選択します。**次へ**を選択します。</block>
   <block id="6f540707e47351a26c8e3c79ccce18ea" category="list-text">*保護*: 保護されているワークロードとリスクのあるワークロードの合計数など、すべてのワークロードのステータスと詳細が含まれます。</block>
   <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
@@ -1498,7 +1464,6 @@
   <block id="ce47b0513e6a5635f603be8cc52f392d" category="list-text">&lt;site_name&gt;.c01.cloudinsights.netapp.com</block>
   <block id="906a7644c76f341f29012680a39f7225" category="list-text">&lt;site_name&gt;.c02.cloudinsights.netapp.com</block>
   <block id="142b47c359d647af9faff9ef084152c7" category="list-text">agentlogin.cs01.cloudinsights.netapp.com</block>
-  <block id="9d710e8874b82a90107c10683350b48a" category="paragraph">ランサムウェア保護戦略には、_検出_、_保護_、および_複製_のポリシーが含まれます。</block>
   <block id="7923de3f0c836263e77d3ef5585b2ee7" category="cell">HTTPS（TCP）</block>
   <block id="27db5f7ea4fbef607be3e5580d6023dd" category="paragraph">NetApp Consoleの使用を開始するためにライセンスやサブスクリプションは必要ありません。ストレージシステムまたはNetAppデータサービスへの接続を確保するためにクラウドにConsoleエージェントを導入した場合にのみ料金が発生します。ただし、Consoleからアクセスできる一部のNetAppデータサービスは、ライセンスまたはサブスクリプションベースです。</block>
   <block id="354ccfdcbf26f407e895a47f9d8a503b" category="section-title">主要な用語</block>
@@ -1570,9 +1535,6 @@
   <block id="c7508e265b893e4d518594502d79c380" category="list-text">ワークロードを積極的に監視し、識別された各ワークロードにポリシーを適用することで、NetApp Backup and Recovery と ONTAP API の使用を調整します。</block>
   <block id="e47b008a3c9b07db3a7f7c525eeccc5a" category="cell">各ワークロードにポリシーを割り当てます。<block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>を参照してください。<block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>を参照してください。<block ref="cc10c371e1aab359fa44a886d5e79433" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="402b250b6b0cd33bf0396353ed30be82" category="inline-link-macro">グループのワークロード</block>
-  <block id="c35d66439764aa49afc7babd31dd817e" category="admonition">データ資産の管理と保護を強化するために、<block ref="f976640ede437bd07da0e62885caa3e9" category="inline-link-macro-rx"></block>を作成して、1つの戦略の下でボリュームをまとめて保護できます。</block>
-  <block id="32fcd2ee690f5f3556594e0a5c86b657" category="paragraph">NetApp Ransomware Resilience以外にも、NetApp Backup and Recoveryを使用して、ファイル共有、VMファイル共有の保護を管理できます。</block>
-  <block id="19df373c6eb28e440c7376f7b6153ac6" category="paragraph">NetApp Backup and Recoveryサービスからの保護情報は、NetApp Ransomware Resilienceに表示されます。NetApp Ransomware Resilienceを使用して、これらのサービスに検出ポリシーを追加できます。NetApp Ransomware Resilienceで保護ポリシーを追加すると、既存の保護ポリシーが置き換えられます。</block>
   <block id="5faff4d5da024e537f30a6f61e63b11d" category="paragraph">ワークロードがNetApp Backup and RecoveryまたはNetApp Ransomware Resilienceによって管理されていない場合は、ONTAPまたはその他の製品の一環としてスナップショットが取得される可能性があります。ONTAP FPolicy保護が設定されている場合は、ONTAPを使用してFPolicy保護を変更できます。</block>
   <block id="294bdeaab3c13eeb5476a96b2a4d7991" category="list-text">**Backup and Recovery保護の既存のスナップショットまたはバックアップポリシーを、Ransomware Resilienceによって管理される保護戦略に置き換えます。**</block>
   <block id="f9dbe879fedc698e4cd50df0431ab680" category="section-title">Backup and Recoveryで管理されている既存のSnapshotポリシーとバックアップポリシーを使用しているワークロードに検出ポリシーを追加</block>
@@ -2239,8 +2201,6 @@
   <block id="495dc566c29577d14a3418e529c90d3c" category="list-text">**検出ポリシー**はランサムウェアの脅威を特定します。検出には3つのオプションがあります：</block>
   <block id="b3b96411f9486bb0c2c8a4e2b07e7d35" category="list-text">暗号化検出</block>
   <block id="2b694a9a00b006682bcbea870c2ca4fb" category="list-text">疑わしいファイル拡張子をブロックする</block>
-  <block id="a1c735fa1a87c7cfca09d994cfe02048" category="inline-link-macro">不審なユーザーアクティビティ（追加の設定が必要）</block>
-  <block id="262d414194517bdfa67b048201f2b424" category="paragraph">検出ポリシーには、3つのオプションすべてを含めることも、それらを組み合わせることも可能です。暗号化検出または<block ref="0c1271458a5eed3dcf0b345a743161db" category="inline-link-macro-rx"></block>のいずれかを含める必要があります。</block>
   <block id="38cfc49361136d6f7410fbe2c3b7430a" category="list-text">*保護の変更*：30 日、60 日、90 日、または 1 年間の一定期間におけるワークロードの保護戦略の変更のレビューが含まれます。</block>
   <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026年6月8日</block>
   <block id="fec111d809c49ffc75c21732e808fe2d" category="admonition">アラートを無視すると、Ransomware Resilienceはこの動作を学習し、それを通常の動作と関連付け、同様のイベントに関するアラートの送信を停止します。</block>
@@ -2256,7 +2216,6 @@
   <block id="7eba97a8ef53163c9fd30177df926301" category="admonition">Amazon FSx for NetApp ONTAP にソースを持つ IRE を設定している場合は、このクリーンルーム SVM データ LIF IP 要件をスキップしてください。</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="cell">Amazon FSx for NetApp ONTAP</block>
   <block id="7e04984fc8cb78806e36cbf9552342fd" category="admonition">現在、SANワークロードにおけるユーザーアクティビティ検出はサポートされていません。Amazon FSx for NetApp ONTAP、Cloud Volumes ONTAP、およびONTAPのNASワークロードでユーザーアクティビティ検出を使用できます。</block>
-  <block id="0270ec13158ac8d81c5022ad41a38235" category="admonition">Amazon FSx for NetApp ONTAP および Azure NetApp Files の保護戦略を設定する場合は、<block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="b70244907e8a4cb4fbb47d6e9fdda53a" category="cell">クラウド：Amazon FSx for NetApp ONTAP</block>
   <block id="b4bada7d854e6650f9cc28e404fe40fb" category="admonition">Amazon FSx for NetApp ONTAP にデプロイされた IRE の場合、この情報を提供する必要はありません。</block>
   <block id="f5b6822ed53c8f99c424ea0e8e011bf7" category="admonition">Ransomware Resilienceは、コンソールエージェント1つにつき最大3,000個のワークロードしか検出できません。</block>
@@ -2725,7 +2684,6 @@
   <block id="f162f526fe9a4312ce833ccc6262c43c" category="cell">FPolicy イベントに関する ONTAP からユーザーアクティビティエージェントへの通信。これらのポートは、ONTAP がイベントをユーザーアクティビティエージェントに送信できるよう、ユーザーアクティビティエージェント自体のファイアウォール（存在する場合）を含め、ユーザーアクティビティエージェントに向けて開放されている必要があります。+ **注：** これらのポートの *すべて* を予約する必要はありませんが、予約するポートはこの範囲内である必要があります。まず 100 ポートを予約し、必要に応じて増やすことをお勧めします。</block>
   <block id="836e56ef7ecb008a36ab89b0620d32b3" category="list-text">ランサムウェア耐性ダッシュボードで、「アラート」ペインを確認します。</block>
   <block id="2bf784d30957b3ec7d6ebc12ece51af1" category="paragraph">Ransomware Resilienceは潜在的な攻撃を検出すると、NetApp Console設定で設定されたサブスクリプション通知設定に基づいて、登録ユーザーにメール通知を送信します。メールには、重大度や影響を受けるリソースなど、アラートに関する情報が記載されています。</block>
-  <block id="f642b6f4e49c47514e5e24cda6578784" category="admonition">**暗号化ユーザー拡張機能**ポリシーは、不審なユーザー行動の検出をサポートする唯一の事前定義済みポリシーです。+ **クリティカルレプリケーションポリシー**は、スナップショットの ONTAP へのレプリケーションをサポートする唯一の事前定義済みポリシーです。</block>
   <block id="a7cc27b78a2a959c7d443e41e9734a78" category="cell">権限エラーのため、/home ディレクトリの下にユーザーのログインディレクトリを作成できません。cssys ユーザーを作成し、コマンド<block ref="d5ba9a9474fc171d7c8d8e0ad71f99d9" prefix=" " category="inline-code"></block>を使用してログインディレクトリを手動で追加してください。このコマンドでは、<block ref="67dd1c0d4e68c367b980f8723c781cb1" prefix=" " category="inline-code"></block>はホームディレクトリが存在しない場合に作成し、<block ref="9b017020b9d48d433ec90c548e6b5c70" prefix=" " category="inline-code"></block>は HOME_DIR をログインディレクトリとして指定します。</block>
   <block id="dafa465aa4f684cd34125edc375ebf59" category="paragraph"><block ref="2a4fc232baf441f054526df5220063f3" category="inline-link-rx"></block>。</block>
   <block id="bab7cd99622d9058ad65108d51915a15" category="inline-link-macro">Splunk SIEMの設定</block>
@@ -2862,8 +2820,6 @@
   <block id="07405e58de7ae5291e2723155a5869b4" category="section-title">ユーザーアクティビティ監視を可能にするためのワークフローの強化</block>
   <block id="dd9dd4a4b292f36f08cee46f9ba3ffa3" category="paragraph">Ransomware Resilienceは、ユーザーアクティビティ監視を有効にするためのワークフローを改善しました。従来、Ransomware Resilienceは、ワークロード上でユーザーアクティビティ監視を含むランサムウェア対策戦略を有効にするたびに、データコレクターの接続をテストしていました。このアップデートにより、ストレージVMにデータコレクターが存在し、「実行中」の状態であれば、そのチェックはスキップされるようになり、保護ワークフローが高速化されます。</block>
   <block id="b79c3e2214dfd55d5e8b57ef1d6ae5bb" category="inline-link-macro">ワークロードを保護する</block>
-  <block id="5f705092fbb64e2adcc5b83793eed660" category="paragraph">詳細については、<block ref="f5df6f8f09e7648e9d6889e3e6e725cb" category="inline-link-macro-rx"></block>を参照してください。</block>
-  <block id="d64a907f57f420b81a119fce287ff09f" category="paragraph">ランサムウェア対策戦略は、NetApp Ransomware Resilienceの主要な機能です：検出、保護、レプリケーションをサポートします。ランサムウェア攻撃を検知し、復旧のための保護基準を確保するために、ランサムウェア対策戦略を有効にしてください。</block>
   <block id="233adc8ca42f7a8097ed29533bfab815" category="list-text">**分析**：クリーンルームでは、Ransomware Resilienceがすべてのスナップショットを分析し、暗号化が存在するかどうかを確認します。クリーンリストアは、最適な復旧プランを含む復旧マップを決定します。</block>
   <block id="3cfd0b2a1a1f7eb6f8f17ddc0f73fc96" category="paragraph">計画段階でファイル履歴を表示することで、ランサムウェア攻撃がファイルに影響を与えた時期や、復旧ポイントがその攻撃と時間的にどのように関連しているかを確認することもできます。</block>
   <block id="2167a2d55f36099e0735c5707e3b71bb" category="list-text">クリーンな復元では、元の環境にのみ復元できます。</block>
@@ -2893,4 +2849,51 @@
   <block id="6f4030f935741207e6077271ec4c7fcd" category="list-text">VMの*IPアドレス範囲*（CIDR形式、例：100.100.0.0/24）、*サブネットマスク*、および*ゲートウェイ*を入力してください。</block>
   <block id="0ad38e8473db5155eec04c6689ae2fed" category="list-text">ESXiホスト上に存在する仮想マシンを選択します。これらの仮想マシンは、復旧プロセス中にクローンを作成する際のベースとなる仮想マシンとして使用されます。</block>
   <block id="41195e5d1530c08998754564c86f0814" category="image-alt">クリーンな復元処理におけるコンピューティング構成の手順のスクリーンショット。</block>
+  <block id="a2796a8db571ead965c0a0f1d62135a3" category="paragraph">詳細については、<block ref="092a9715a1fcee9c7af4662f48f0f290" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="140820d94a267dbe5867680c67a5798d" category="summary">NetApp Ransomware Resilienceのランサムウェア保護戦略について説明します。保護戦略により、検出機能に加え、スナップショット、バックアップ、レプリケーションが可能になり、復旧のためのベースラインを作成できます。</block>
+  <block id="de38341d386aac0e035b857d1e5a3ccd" category="doc">NetApp Ransomware Resilienceの保護戦略について学ぶ</block>
+  <block id="bc92d7f1a44cfd18f7c5f445b25d55b9" category="paragraph">NetApp Ransomware Resilienceでは、保護戦略はランサムウェア防御体制の不可欠な要素です。保護戦略には_検出_、_保護_、_レプリケーション_が含まれ、ランサムウェア攻撃を検出し、攻撃から保護し、リカバリのためのベースラインを確立することができます。</block>
+  <block id="b742b0ec247c3cdcc191f1d822fb5b29" category="section-title">保護戦略の要素</block>
+  <block id="1dcd854bf756bc93beadebb594120427" category="paragraph">保護戦略は3つの要素で構成されます：検出、保護、レプリケーション。</block>
+  <block id="ac1b8bba2f610b7935e7424342a0ec1f" category="inline-link-macro">不審なユーザーアクティビティ（追加設定が必要）</block>
+  <block id="a3a4bfca25ee9bd823c50f83c3b1cdb0" category="paragraph">検出ポリシーには、3つのオプションすべてを含めることも、それらを組み合わせることも可能です。暗号化検出または<block ref="abbfcb2a99b09ad39603d2f80be3fec7" category="inline-link-macro-rx"></block>のいずれかを含める必要があります。</block>
+  <block id="a08b60b067cfccd8d9f87d57ea4bf995" category="list-text">ランサムウェア検出ポリシーを使用し、他のNetAppツールで作成されたSnapshotおよびバックアップポリシーを引き続き使用する、または</block>
+  <block id="9c864d59c7a41fa01f3cfe3c8f413487" category="list-text">Ransomware Resilienceを使用して、検出、スナップショット、およびバックアップを管理します。</block>
+  <block id="aacfe2994af49daf45b1e3f0121af4bf" category="admonition">Amazon FSx for NetApp ONTAP または Azure NetApp Files の保護戦略を構成する場合は、<block ref="f35eaad9edb95ec2be22c4403bf0d360" category="inline-link-macro-rx"></block> を参照してください。</block>
+  <block id="c90079c45ff924b0cb15b35d000c9ade" category="admonition">データ資産の管理と保護を強化するために、<block ref="f976640ede437bd07da0e62885caa3e9" category="inline-link-macro-rx"></block>単一の戦略の下でボリュームをまとめて保護することができます。</block>
+  <block id="eb0f013f3748a5c33bbc7b5948baf26e" category="paragraph">ランサムウェア耐性に加えて、NetApp Backup and Recoveryを使用してファイル共有の保護を管理できます。</block>
+  <block id="c036804c8db0bc110afe05b3cdd5b86c" category="paragraph">Backup and Recoveryサービスからの保護情報は、Ransomware Resilienceに表示されます。既存のBackup and Recoveryポリシーに、ランサムウェア検出ポリシーを追加できます。また、Ransomware Resilienceを通じてバックアップポリシーを追加することもできます。これにより、Backup and Recoveryの既存の保護ポリシーが置き換えられます。</block>
+  <block id="172504408a355f366017244a5b384ba8" category="section-title">事前定義されたポリシー</block>
+  <block id="54b0e51980ebec464c2fd19bbec7d8a9" category="admonition">**暗号化ユーザー拡張機能**ポリシーは、不審なユーザーアクティビティの検出をサポートする唯一の事前定義済みポリシーです。+ **クリティカルレプリケーションポリシー**は、ONTAPへのスナップショットのレプリケーションをサポートする唯一の事前定義済みポリシーです。</block>
+  <block id="7e0b491310b68d825e272ba1bb842550" category="paragraph">30分ごと</block>
+  <block id="4f6969a7095a445329e6510879d4e23a" category="cell">30分ごと</block>
+  <block id="5c8ced3e31f752b34df3c4592d6ab71f" category="list-text"><block ref="5c8ced3e31f752b34df3c4592d6ab71f" category="inline-link-macro-rx"></block></block>
+  <block id="d2965551e1afdc691102350337341b9c" category="inline-link-macro">保護戦略</block>
+  <block id="6e67000bd0dfb478ab8f86ae1400fcf0" category="paragraph">NetApp Ransomware Resilienceでワークロードを検出したあとは、ランサムウェアの検出、保護、レプリケーションの組み合わせを構成するために、ワークロードに<block ref="816a63b3c576ffe370f29988014c79a0" category="inline-link-macro-rx"></block>を適用することが不可欠です。ランサムウェア攻撃を検出し、リカバリのための保護ベースラインを確保するために、ランサムウェア保護戦略を有効にしてください。</block>
+  <block id="c805a7ccdfbefcb95c3e5d3eb799559f" category="inline-link-macro">必要な設定を実行しました</block>
+  <block id="a5305c2f9c4859bf06df996bb447f1a0" category="paragraph">不審なユーザーの行動検出を含む保護ポリシーを作成する場合は、ユーザーアクティビティ監視のために<block ref="d7ebceebd961973af1512cc719357652" category="inline-link-macro-rx"></block>していることを確認してください。</block>
+  <block id="f5ef2630931c51549af3e623d4f63fcd" category="list-text">新しい戦略名を入力してください。戦略名にはスペースを含めることはできません。</block>
+  <block id="344f7e8a6617b537a56be4e2326d7628" category="list-text">必要に応じて、既存の保護戦略を新しい戦略の基礎として選択することもできます。「既存のRansomware Resilience戦略からコピー」で、「選択」を選択します。既存の戦略を選択し、「コピー」を選択します。</block>
+  <block id="b99ea56cd0937e71402758b90941afba" category="list-text">*検出ポリシー*の設定を選択します：</block>
+  <block id="368cc5f046a5decdd8a63b189def027d" category="inline-link-macro">事前定義されたポリシー</block>
+  <block id="35818e1bdf8572310be62fbe70d83fbd" category="list-text">*Snapshotポリシー* を設定します。<block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block> からスナップショット設定をインポートするには、*Select* ラジオボタンを選択し、ドロップダウンからポリシーを選択します。ポリシーをインポートする場合、その他のスナップショット構成は必要ありません。</block>
+  <block id="cb67299b59d7a0a794b01e3933723fc2" category="paragraph">独自の設定を構成するには、*作成*を選択し、*Snapshotベース名*を入力します。ベース名は、各Snapshotに付加されるプレフィックスです。</block>
+  <block id="3f1b170bc65d3a2a562b87c762c823cf" category="list-text">独自のスナップショット設定を構成する場合は、*スナップショットのロック*を有効にすることができます。スナップショットのロックを有効にする場合は、*ロック保持日数*（つまり、スナップショットがロックされる期間）の値を設定します。</block>
+  <block id="227b3727877936fe36a5c3408d154e37" category="paragraph">スナップショットロックは、プライマリストレージ上のスナップショットコピーをロックして変更不可能なストレージを作成します。これにより、ランサムウェア攻撃がバックアップ ストレージの宛先に到達した場合でも、一定期間スナップショットコピーを変更または削除できなくなります。これにより、復旧時間を短縮できます。スナップショットがロックされると、ボリュームの有効期限はスナップショットコピーの有効期限に設定されます。</block>
+  <block id="70f359f752aadf5bf7a021c260016eae" category="inline-link-macro">SnapLock向けのONTAPドキュメント</block>
+  <block id="e2c8c1fbfb2e418d03e83af4d5e791b3" category="paragraph">Snapshotコピーのロックは、ONTAP 9.12.1以降で利用できます。SnapLockの詳細については、<block ref="4ca7d4cccee9eba6047bb73bae1d4bb0" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="d07faab816e99d4553ba7bf5cb72f7bd" category="paragraph">独自のスナップショット設定を構成する場合は、スナップショットのスケジュールオプションを設定してください。スナップショットを取得する頻度を、分、時間、日、週、または月単位で選択してください。「毎日」以外のオプションでは、スナップショットを取得する時間、曜日、または日にちを選択してください。また、*Retention*フィールドで、各スナップショットタイプのコピーをいくつ保持するかを選択してください。</block>
+  <block id="99cf9bfc9df3b53a2612d01dea4a5f59" category="inline-image-macro">Snapshotポリシーオプションのスクリーンショット。</block>
+  <block id="b0a1cedd2277ba2ec3327d537c1e0a4b" category="paragraph"><block ref="b0a1cedd2277ba2ec3327d537c1e0a4b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="199641835a7fed0b2247051b07a065cc" category="list-text">オンプレミスのワークロードでは、必要に応じて*レプリケーションポリシー*を設定し、ワークロードをONTAPストレージにレプリケートできます。</block>
+  <block id="4978e3b9001301d839fc0946f4ba3f67" category="paragraph">システム定義ポリシーをインポートするには、*Select*ラジオボタンを選択し、ドロップダウンメニューから<block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block>を選択します。</block>
+  <block id="60e573bc37b98bd9fd792830cf42a815" category="paragraph">独自のレプリケーション設定を作成するには、*作成*を選択し、すべてのスナップショットに追加される接頭辞である*レプリケーションポリシーのベース名*を入力します。*レプリケーションスケジュール*を設定します。有効にする頻度（1時間ごと、1日ごと、1週間ごと、1ヶ月ごと）を切り替え、有効にする各スケジュールごとに保持値（保持する複製スナップショットの数）を設定します。</block>
+  <block id="0ac700a6fce8da97bdad86b3f0e2e13d" category="list-text">必要に応じて、*バックアップポリシー*を設定します。既存のものをインポートするには、*選択*ラジオボタンを選択し、ドロップダウンメニューから<block ref="acb8cd429652c09fe35d5de4c302f2ae" category="inline-link-macro-rx"></block>を選択します。</block>
+  <block id="c7915346ee91e7b7da0689c8b96c3c65" category="paragraph">独自のポリシーを作成するには、*作成*を選択し、*バックアップ ポリシーのベース名*を入力します。*バックアップスケジュール*を設定するには、さまざまな頻度（1時間ごと、毎日、毎週、毎月）を切り替え、それぞれの保持回数を設定します。</block>
+  <block id="9830c7d8e813511d60d4ac7532561b5d" category="list-text">保護戦略にユーザー行動検出が含まれている場合は、環境内で新しいデータコレクターをホストする*ユーザーアクティビティエージェント*を選択してください。Ransomware Resilienceは、異常なユーザー行動を検出するために、ユーザーアクティビティイベントをRansomware Resilienceに送信するデータコレクターを自動的に作成します。</block>
+  <block id="9e22bb022357fb45ccf2d21570594214" category="inline-link-macro">保護戦略について学ぶ</block>
+  <block id="ca8c59331fa4e2672fad0627fd8a1afc" category="list-text"><block ref="ca8c59331fa4e2672fad0627fd8a1afc" category="inline-link-macro-rx"></block></block>
+  <block id="16cc2aca7cc498abeffc42549cad2598" category="inline-link-macro">バックアップ先を管理する</block>
+  <block id="25b72bfc4abf024dd9a87b63b6ca2a88" category="list-text"><block ref="25b72bfc4abf024dd9a87b63b6ca2a88" category="inline-link-macro-rx"></block></block>
+  <block id="b41cfa2f28f2dfb717d6f9b7ebc066af" category="list-text"><block ref="b41cfa2f28f2dfb717d6f9b7ebc066af" category="inline-link-macro-rx"></block></block>
 </blocks>

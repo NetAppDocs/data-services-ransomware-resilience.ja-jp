@@ -1,0 +1,196 @@
+---
+sidebar: sidebar 
+permalink: concept-strategy.html 
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware 
+summary: NetApp Ransomware Resilienceのランサムウェア保護戦略について説明します。保護戦略により、検出機能に加え、スナップショット、バックアップ、レプリケーションが可能になり、復旧のためのベースラインを作成できます。 
+---
+= NetApp Ransomware Resilienceの保護戦略について学ぶ
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Ransomware Resilienceでは、保護戦略はランサムウェア防御体制の不可欠な要素です。保護戦略には_検出_、_保護_、_レプリケーション_が含まれ、ランサムウェア攻撃を検出し、攻撃から保護し、リカバリのためのベースラインを確立することができます。
+
+
+
+[[protection-strategy-elements]]
+== 保護戦略の要素
+
+保護戦略は3つの要素で構成されます：検出、保護、レプリケーション。
+
+* **検出ポリシー**はランサムウェアの脅威を特定します。検出には3つのオプションがあります：
++
+** 暗号化検出
+** 不審なユーザーアクティビティ
+** 疑わしいファイル拡張子をブロックする
++
+検出ポリシーには、3つのオプションすべてを含めることも、それらを組み合わせることも可能です。暗号化検出またはlink:suspicious-user-activity.html["不審なユーザーアクティビティ（追加設定が必要）"]のいずれかを含める必要があります。
+
+
+
+* **保護ポリシー** には、スナップショット ポリシーとバックアップ ポリシーが含まれます。保護戦略には検出およびスナップショット ポリシーが必要です。バックアップ ポリシーはオプションです。
++
+ワークロードを保護するために他のNetApp製品を使用している場合、Ransomware Resilience はそれらを検出し、次のいずれかのオプションを提供します。
+
++
+** ランサムウェア検出ポリシーを使用し、他のNetAppツールで作成されたSnapshotおよびバックアップポリシーを引き続き使用する、または
+** Ransomware Resilienceを使用して、検出、スナップショット、およびバックアップを管理します。
+
+
+* **レプリケーション ポリシー** を使用すると、Ransomware Resilience からセカンダリ サイトにスナップショットをレプリケートできます。レプリケーション スケジュールは、時間ごと、日ごと、週ごと、または月ごとの頻度に設定できます。
++
+現在、スナップショットをレプリケートできるのはオンプレミスのONTAPストレージのみです。
+
+
+
+
+NOTE: Amazon FSx for NetApp ONTAP または Azure NetApp Files の保護戦略を構成する場合は、link:rp-reference-limitations.html["各サービスの制限"] を参照してください。
+
+
+TIP: データ資産の管理と保護を強化するために、link:task-protection-group.html["グループのワークロード"]単一の戦略の下でボリュームをまとめて保護することができます。
+
+
+
+[[protection-policies-with-other-netapp-managed-services]]
+== 他のNetAppマネージド サービスとの保護ポリシー
+
+ランサムウェア耐性に加えて、NetApp Backup and Recoveryを使用してファイル共有の保護を管理できます。
+
+Backup and Recoveryサービスからの保護情報は、Ransomware Resilienceに表示されます。既存のBackup and Recoveryポリシーに、ランサムウェア検出ポリシーを追加できます。また、Ransomware Resilienceを通じてバックアップポリシーを追加することもできます。これにより、Backup and Recoveryの既存の保護ポリシーが置き換えられます。
+
+ランサムウェア検出ポリシーがONTAPの Autonomous Ransomware Protection（ ONTAP のバージョンに応じて ARP または ARP/AI）と FPolicy によって管理されている場合、それらのワークロードは保護され、引き続き ARP と FPolicy によって管理されます。
+
+
+NOTE: バックアップ先は、Amazon FSx for NetApp ONTAP または Azure NetApp Files のワークロードでは使用できません。FSx for ONTAP バックアップサービスを使用してバックアップ操作を実行します。FSx for ONTAP のワークロードのバックアップポリシーは、Ransomware Resilience ではなく AWS で設定します。バックアップポリシーは Ransomware Resilience に表示され、AWS から変更されません。
+
+
+
+[[protection-policies-for-workloads-not-protected-by-netapp-applications]]
+=== NetAppアプリケーションによって保護されていないワークロードの保護ポリシー
+
+ワークロードがNetApp Backup and RecoveryまたはNetApp Ransomware Resilienceによって管理されていない場合は、ONTAPまたはその他の製品の一環としてスナップショットが取得される可能性があります。ONTAP FPolicy保護が設定されている場合は、ONTAPを使用してFPolicy保護を変更できます。
+
+
+
+[[predefined-policies]]
+== 事前定義されたポリシー
+
+ワークロードの重要度に合わせて、次のランサムウェア耐性定義済みポリシーのいずれかを選択できます。
+
+
+NOTE: **暗号化ユーザー拡張機能**ポリシーは、不審なユーザーアクティビティの検出をサポートする唯一の事前定義済みポリシーです。+ **クリティカルレプリケーションポリシー**は、ONTAPへのスナップショットのレプリケーションをサポートする唯一の事前定義済みポリシーです。
+
+[cols="10,15a,20,15,15,15"]
+|===
+| ポリシーレベル | Snapshot | 頻度 | 保持期間（日数） | スナップショットコピーの数 | スナップショットコピーの最大数 
+
+
+.4+| *重要なワークロードポリシー*  a| 
+15分ごと
+| 15分ごと | 3 | 288 | 309 
+
+
+| 日次  a| 
+1日ごと
+| 14 | 14 | 309 
+
+
+| 週次  a| 
+1週間ごと
+| 35 | 5 | 309 
+
+
+| 毎月  a| 
+30日ごと
+| 60 | 2 | 309 
+
+
+.4+| *重要なワークロードポリシー*  a| 
+30分ごと
+| 30分ごと | 3 | 144 | 165 
+
+
+| 日次  a| 
+1日ごと
+| 14 | 14 | 165 
+
+
+| 週次  a| 
+1週間ごと
+| 35 | 5 | 165 
+
+
+| 毎月  a| 
+30日ごと
+| 60 | 2 | 165 
+
+
+.4+| *標準作業負荷ポリシー*  a| 
+30分ごと
+| 30分ごと | 3 | 72 | 93 
+
+
+| 日次  a| 
+1日ごと
+| 14 | 14 | 93 
+
+
+| 週次  a| 
+1週間ごと
+| 35 | 5 | 93 
+
+
+| 毎月  a| 
+30日ごと
+| 60 | 2 | 93 
+
+
+.4+| *暗号化ユーザー拡張機能*  a| 
+30分ごと
+| 30分ごと | 3 | 72 | 93 
+
+
+| 日次  a| 
+1日ごと
+| 14 | 14 | 93 
+
+
+| 週次  a| 
+1週間ごと
+| 35 | 5 | 93 
+
+
+| 毎月  a| 
+30日ごと
+| 60 | 2 | 93 
+
+
+.4+| *重要なレプリケーションポリシー*  a| 
+15分ごと
+| 15分ごと | 3 | 288 | 309 
+
+
+| 日次  a| 
+1日ごと
+| 14 | 14 | 309 
+
+
+| 週次  a| 
+1週間ごと
+| 35 | 5 | 309 
+
+
+| 毎月  a| 
+30日ごと
+| 60 | 2 | 309 
+|===
+
+
+[[next-steps]]
+== 次の手順
+
+* link:rp-use-protect.html["ランサムウェア耐性でワークロードを保護する"]
+

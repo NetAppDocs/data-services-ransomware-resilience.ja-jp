@@ -46,6 +46,8 @@ sidebar:
         url: "/task-review-protection.html"
       - title: バックアップ先を設定する
         url: "/task-backup-destination.html"
+      - title: 保護戦略について学ぶ
+        url: "/concept-strategy.html"
       - title: ワークロードを保護する
         url: "/rp-use-protect.html"
       - title: ユーザーアクティビティ検出を設定する

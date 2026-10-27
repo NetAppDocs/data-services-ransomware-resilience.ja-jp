@@ -18,7 +18,7 @@ Ransomware Resilienceは、強化された隔離型復旧環境の構成ワー�
 
 Ransomware Resilienceは、ユーザーアクティビティ監視を有効にするためのワークフローを改善しました。従来、Ransomware Resilienceは、ワークロード上でユーザーアクティビティ監視を含むランサムウェア対策戦略を有効にするたびに、データコレクターの接続をテストしていました。このアップデートにより、ストレージVMにデータコレクターが存在し、「実行中」の状態であれば、そのチェックはスキップされるようになり、保護ワークフローが高速化されます。
 
-詳細については、link:link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["ワークロードを保護する"^]を参照してください。
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["ワークロードを保護する"^]を参照してください。
 
 
 
