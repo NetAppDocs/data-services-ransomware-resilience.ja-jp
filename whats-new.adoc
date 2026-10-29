@@ -18,6 +18,20 @@ NetApp Ransomware Resilienceの新機能についてご確認ください。
 
 
 
+[[26-october-2026]]
+== 2026年10月26日
+
+
+
+[[new-manual-workflow-for-creating-a-user-activity-agent]]
+== ユーザーアクティビティエージェントを作成するための新しい手動ワークフロー
+
+Ransomware Resilienceは、ユーザーアクティビティエージェントを手動で作成するワークフローを提供するようになり、VM上でユーザーアクティビティエージェントを作成する方法をより詳細に制御できるようになりました。この新しいワークフローでは、VMのSSHキーを提供することなく、ユーザーアクティビティエージェントを直接インストールし、プロキシ設定を構成できます。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent["ユーザーアクティビティエージェントを作成する"^]を参照してください。
+
+
+
 [[20-october-2026]]
 == 2026年10月20日
 
@@ -32,8 +46,8 @@ Ransomware Resilienceは、強化された隔離型復旧環境の構成ワー�
 
 
 
-[[enhanced-workflow-for-enabling-user-activity-monitoring]]
-=== ユーザーアクティビティ監視を可能にするためのワークフローの強化
+[[improved-workflow-for-enabling-user-activity-monitoring]]
+=== ユーザーアクティビティ監視を有効にするためのワークフローの改善
 
 Ransomware Resilienceは、ユーザーアクティビティ監視を有効にするためのワークフローを改善しました。従来、Ransomware Resilienceは、ワークロード上でユーザーアクティビティ監視を含むランサムウェア対策戦略を有効にするたびに、データコレクターの接続をテストしていました。このアップデートにより、ストレージVMにデータコレクターが存在し、「実行中」の状態であれば、そのチェックはスキップされるようになり、保護ワークフローが高速化されます。
 
@@ -53,8 +67,8 @@ Ransomware ResilienceにおけるGoogle Cloud NetApp VolumesのFlexサービス�
 
 
 
-[[enhanced-support-for-clean-restores]]
-=== クリーンな復元に対するサポートの強化
+[[clean-restore-support-for-suspicious-user-behavior-and-user-based-encryption-attacks]]
+=== 不審なユーザー行動やユーザーベースの暗号化攻撃に対するクリーンな復元サポート
 
 不審なユーザー行動やユーザーベースの暗号化攻撃後の復旧のために、クリーンな復元機能が利用可能になりました。この機能強化により、暗号化（エントロピー）に基づく攻撃に対する既存のサポートがさらに強化されます。この強化された機能により、クリーンリストアのガイド付きアプローチを活用し、最適なリストアポイントを特定することで、データ損失を最小限に抑え、復旧を迅速化できます。
 

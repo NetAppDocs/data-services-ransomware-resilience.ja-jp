@@ -13,8 +13,8 @@ Ransomware Resilienceは、強化された隔離型復旧環境の構成ワー�
 
 
 
-[[enhanced-workflow-for-enabling-user-activity-monitoring]]
-=== ユーザーアクティビティ監視を可能にするためのワークフローの強化
+[[improved-workflow-for-enabling-user-activity-monitoring]]
+=== ユーザーアクティビティ監視を有効にするためのワークフローの改善
 
 Ransomware Resilienceは、ユーザーアクティビティ監視を有効にするためのワークフローを改善しました。従来、Ransomware Resilienceは、ワークロード上でユーザーアクティビティ監視を含むランサムウェア対策戦略を有効にするたびに、データコレクターの接続をテストしていました。このアップデートにより、ストレージVMにデータコレクターが存在し、「実行中」の状態であれば、そのチェックはスキップされるようになり、保護ワークフローが高速化されます。
 

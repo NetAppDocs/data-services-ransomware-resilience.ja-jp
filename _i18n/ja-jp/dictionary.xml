@@ -2649,7 +2649,6 @@
   <block id="c683448e4869d680e8543440db43e3ab" category="paragraph">*必要なコンソールロール* このタスクを実行するには、Ransomware Resilience ユーザー動作管理者ロールが必要です。このタスクは、<block ref="91fb5ef1173b6f41fdaa815d28743781" category="inline-link-macro-rx"></block> または Ransomware Resilience 管理者ロールでは実行できません。<block ref="d9cbbacd5ef5cff6a1660fdb9d259f2f" category="inline-link-macro-rx"></block>。</block>
   <block id="96176a5ef40ffd580483770b758cb2b9" category="doc">Google Cloud NetApp Volumes の保護グループのサポート（プレビュー）</block>
   <block id="bf243787cd494f22987c64c448019324" category="paragraph">Ransomware Resilienceは、ユーザーアクティビティイベントに対する自動応答をサポートするようになりました。ユーザーアクティビティアラートが生成された際に、ユーザーを自動的にブロックし、スナップショットを作成できます。これらの措置により、手動による介入なしに迅速な対応が可能になります。</block>
-  <block id="5beb9d1a7ce3f39235bef552e08036ab" category="doc">クリーンな復元に対するサポートの強化</block>
   <block id="172d1622c102d2a3f2038156f02696fb" category="paragraph">不審なユーザー行動やユーザーベースの暗号化攻撃後の復旧のために、クリーンな復元機能が利用可能になりました。この機能強化により、暗号化（エントロピー）に基づく攻撃に対する既存のサポートがさらに強化されます。この強化された機能により、クリーンリストアのガイド付きアプローチを活用し、最適なリストアポイントを特定することで、データ損失を最小限に抑え、復旧を迅速化できます。</block>
   <block id="c67951798c697d04f7da1518cc49d789" category="inline-link-macro">クリーンな復元のための隔離されたリカバリ環境を作成する</block>
   <block id="00fb2a4960c9f2eed3f3d4165ea6d95a" category="paragraph">詳細については、<block ref="d2e686618a401b494c34aa9b2103f129" category="inline-link-macro-rx"></block>を参照してください。</block>
@@ -2801,7 +2800,6 @@
   <block id="8d3a4e5cee284fdb67453a248ff48de9" category="list-text">*Systems*セクションを展開します。IREに接続するシステムを選択します。</block>
   <block id="77acf99c95b57ba6e73764570d38fbc9" category="list-text">追加した各システムについて、*ストレージVMの編集*を選択します。ポップアップで、*ストレージVMのIPアドレス*と*ストレージVMのサブネットマスク*を入力します。*ブロードキャストドメイン*には、defaultまたはmanagementを選択します。オプションで*ストレージVMゲートウェイ*を入力できます。</block>
   <block id="d3b51a13c8511879c5378f17bd12c127" category="section-title">2026年10月20日</block>
-  <block id="07405e58de7ae5291e2723155a5869b4" category="section-title">ユーザーアクティビティ監視を可能にするためのワークフローの強化</block>
   <block id="dd9dd4a4b292f36f08cee46f9ba3ffa3" category="paragraph">Ransomware Resilienceは、ユーザーアクティビティ監視を有効にするためのワークフローを改善しました。従来、Ransomware Resilienceは、ワークロード上でユーザーアクティビティ監視を含むランサムウェア対策戦略を有効にするたびに、データコレクターの接続をテストしていました。このアップデートにより、ストレージVMにデータコレクターが存在し、「実行中」の状態であれば、そのチェックはスキップされるようになり、保護ワークフローが高速化されます。</block>
   <block id="b79c3e2214dfd55d5e8b57ef1d6ae5bb" category="inline-link-macro">ワークロードを保護する</block>
   <block id="233adc8ca42f7a8097ed29533bfab815" category="list-text">**分析**：クリーンルームでは、Ransomware Resilienceがすべてのスナップショットを分析し、暗号化が存在するかどうかを確認します。クリーンリストアは、最適な復旧プランを含む復旧マップを決定します。</block>
@@ -2917,4 +2915,7 @@
   <block id="56b59ea299a0aa6c6c6d07266e0f0a6b" category="section-title">ドキュメントへのリンク</block>
   <block id="de399b8f07a705ace3ccaaa7ca6f0353" category="paragraph">UIでドキュメントへの直接リンクを利用できるようになりました。このドキュメントには、ダッシュボードの縦の「アクション」<block ref="03b376f37073f981f38dc4d6f450c046" category="inline-image-macro-rx" type="image"></block>オプションからアクセスできます。リリースノートの詳細を表示するには「新機能」を、BlueXPランサムウェア保護ドキュメントのホームページを表示するには「ドキュメント」を選択します。</block>
   <block id="bf114687a1c7cc9650a084e46a559b26" category="paragraph">復旧プロセスが強化されました。1度に1つのボリューム、またはすべてのボリュームを一度にリカバリできるようになりました。<block ref="2db5667b5f183f51656a41f32740d8f2" category="inline-link-rx"></block>。</block>
+  <block id="3ad4695931eb8cc46e884ebecdae3a28" category="doc">不審なユーザー行動やユーザーベースの暗号化攻撃に対するクリーンな復元サポート</block>
+  <block id="7e994762285a2c4bb93358fe2d00e1e4" category="section-title">ユーザーアクティビティ監視を有効にするためのワークフローの改善</block>
+  <block id="b0609734250ba6ba4d0839963ce55146" category="section-title">2026年10月26日</block>
 </blocks>
