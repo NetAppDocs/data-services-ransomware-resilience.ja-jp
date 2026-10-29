@@ -905,7 +905,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 [[threat-detection-with-splunk-cloud]]
 === Splunk Cloudによる脅威検出
 
-脅威の分析と検出のために、データをセキュリティおよびイベント管理システム (SIEM) に自動的に送信できます。以前のリリースでは、SIEM として AWS Security Hub のみを選択できました。このリリースでは、SIEM として AWS Security Hub または Splunk Cloud を選択できるようになりました。
+脅威分析と検出のために、データをセキュリティおよびイベント管理システム（SIEM）に自動的に送信できます。以前のリリースでは、SIEMとしてAWS Security Hubのみを選択することができました。今回のリリースでは、SIEMとしてAWS Security HubまたはSplunk Cloudを選択できます。
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["BlueXP ransomware protection設定の構成について詳しくは、こちらをご覧ください。"]。
 
@@ -985,7 +985,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 
 AWS およびNetApp StorageGRIDに加えて、Microsoft Azure をバックアップ先として追加できるようになりました。
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["保護設定を構成する方法について詳しくは、こちらをご覧ください。"]。
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html["保護設定の構成方法を確認する"]。
 
 
 
@@ -1037,7 +1037,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 [[threat-detection]]
 === 脅威検出
 
-サードパーティのセキュリティおよびイベント管理 (SIEM) システムを使用して、脅威検出を有効にできるようになりました。ダッシュボードには、「脅威検出を有効にする」という新しい推奨事項が表示されるようになりました。これは設定ページで構成できます。
+サードパーティ製のセキュリティおよびイベント管理（SIEM）システムを使用することで、脅威検出が可能になりました。ダッシュボードに「脅威検出を有効にする」という新しい推奨事項が表示されるようになりました。これは設定ページで構成できます。
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html["設定オプションの構成について詳しくは"]。
 
@@ -1064,16 +1064,16 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 [[download-csv-files]]
 === CSVファイルをダウンロード
 
-保護、アラート、回復のページから CSV ファイル* をダウンロードできます。
+CSVファイルは、「保護」、「アラート」、「復旧」の各ページからダウンロードできます。
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["ダッシュボードやその他のページからCSVファイルをダウンロードする方法について詳しくは、こちらをご覧ください。"] 。
 
 
 
-[[documentation-link]]
-=== ドキュメントリンク
+[[documentation-links]]
+=== ドキュメントへのリンク
 
-ドキュメントの表示リンクが UI に含まれるようになりました。このドキュメントにはダッシュボードの「アクション」からアクセスできます。image:button-actions-vertical.png["垂直アクションオプション"]オプション。リリース ノートの詳細を表示するには *新機能* を選択し、 BlueXP ransomware protectionドキュメントのホーム ページを表示するには *ドキュメント* を選択してください。
+UIでドキュメントへの直接リンクを利用できるようになりました。このドキュメントには、ダッシュボードの縦の「アクション」image:button-actions-vertical.png["垂直アクションオプション"]オプションからアクセスできます。リリースノートの詳細を表示するには「新機能」を、BlueXPランサムウェア保護ドキュメントのホームページを表示するには「ドキュメント」を選択します。
 
 
 
@@ -1129,7 +1129,7 @@ AWSの使用に加えて、StorageGRIDをバックアップ先として選択で
 [[recovery-process]]
 === 回復プロセス
 
-回復プロセスが強化されました。これで、ワークロードのボリュームごとに、またはすべてのボリュームを回復できるようになりました。 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["ランサムウェア攻撃からの復旧（インシデントが中和された後）について詳しくは、こちらをご覧ください。"] 。
+復旧プロセスが強化されました。1度に1つのボリューム、またはすべてのボリュームを一度にリカバリできるようになりました。 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html["ランサムウェア攻撃からの復旧（インシデントが中和された後）について詳しくは、こちらをご覧ください。"]。
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html["BlueXP ransomware protectionについて学ぶ"] 。
 
