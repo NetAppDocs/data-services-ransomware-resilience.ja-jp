@@ -12,7 +12,7 @@ summary: 数ステップで NetApp Ransomware Resilience を使い始めまし�
 
 
 [role="lead"]
-このクイックスタートを使用して、NetApp Ransomware Resilienceのセットアップ、ワークロードの検出、および保護の設定を行います。
+NetApp Ransomware Resilienceをセットアップし、ワークロードを検出して、ランサムウェア攻撃から保護するための設定を行います。
 
 詳しい情報については、各ステップのリンクを参照してください。
 
@@ -21,8 +21,8 @@ summary: 数ステップで NetApp Ransomware Resilience を使い始めまし�
 コンソールエージェントをデプロイして権限を割り当てるには、_スーパー管理者_または_組織管理者_の役割が必要です。
 
 [role="quick-margin-list"]
-* link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation["コンソールエージェントがインストールされていることを確認してください"^]
-* link:rp-start-prerequisites.html["システムが要件を満たしていることを確認する"]
+* link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation["Consoleエージェントをインストールしたことを確認してください"^]
+* link:rp-start-prerequisites.html["システムが要件を満たしていることを確認してください"]
 +
 ** link:reference-user-activity-requirements.html["不審なユーザー行動の検出"]とlink:task-clean-restore.html["クリーンリストア"]の要件を確認してください。
 

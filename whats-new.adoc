@@ -40,7 +40,7 @@ Ransomware Resilienceは、ユーザーアクティビティエージェント�
 [[enhanced-isolated-recovery-environment-configuration]]
 === 強化された隔離リカバリ環境構成
 
-Ransomware Resilienceは、強化された隔離型復旧環境の構成ワークフローを提供するようになりました。新しいワークフローにより、クラウドまたはオンプレミス環境用の隔離されたリカバリ環境をセットアップするプロセスが明確化され、簡素化されます。
+Ransomware Resilienceは、強化された隔離型復旧環境の構成ワークフローを提供するようになりました。新しいワークフローにより、クラウド環境またはオンプレミス環境に隔離型復旧環境をセットアップするプロセスが明確になり、簡素化されます。
 
 詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html["クリーンな復元のための隔離されたリカバリ環境を作成する"^]を参照してください。
 
@@ -49,7 +49,7 @@ Ransomware Resilienceは、強化された隔離型復旧環境の構成ワー�
 [[improved-workflow-for-enabling-user-activity-monitoring]]
 === ユーザーアクティビティ監視を有効にするためのワークフローの改善
 
-Ransomware Resilienceは、ユーザーアクティビティ監視を有効にするためのワークフローを改善しました。従来、Ransomware Resilienceは、ワークロード上でユーザーアクティビティ監視を含むランサムウェア対策戦略を有効にするたびに、データコレクターの接続をテストしていました。このアップデートにより、ストレージVMにデータコレクターが存在し、「実行中」の状態であれば、そのチェックはスキップされるようになり、保護ワークフローが高速化されます。
+Ransomware Resilienceは、ユーザーアクティビティ監視を有効にするためのワークフローを改善しました。従来、Ransomware Resilienceは、ワークロード上でユーザーアクティビティ監視を含むランサムウェア対策戦略を有効にするたびに、データコレクターの接続をテストしていました。今回のアップデートにより、Ransomware Resilienceは、ストレージVMにデータコレクターが存在し、「実行中」の状態にある場合、そのチェックをスキップするようになり、保護ワークフローが高速化されます。
 
 詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html["ワークロードを保護する"^]を参照してください。
 
@@ -283,7 +283,7 @@ Ransomware ResilienceがGoogle Cloud NetApp Volumesシステムをサポート�
 
 クリーン復元機能がレポートをサポートするようになりました。レポートを使用すると、クリーンな復元状況を確認・評価し、その情報をCSVファイルとしてオフラインで保存できます。
 
-クリーンリストア機能で、分析の停止もサポートされるようになりました。分析を停止した場合は、クリーンリストアを最初からやり直す必要があります。
+クリーンリストアで、分析の停止もサポートされるようになりました。分析を停止した場合は、クリーンリストアを最初からやり直す必要があります。
 
 レポートの詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html["ランサムウェア耐性レポートをダウンロード"^]を参照してください。リカバリの詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html["クリーンリストアでワークロードをリカバリする"^]を参照してください。
 
@@ -347,7 +347,7 @@ Ransomware Resilienceは、クリーンリストアをサポートするよう�
 [[siem-support-for-splunk-enterprise]]
 === Splunk EnterpriseのSIEMサポート
 
-Ransomware Resilience は、Splunk Enterprise のセキュリティ情報イベント管理（SIEM）サポートを提供し、ログデータとイベントデータを一元管理して、脅威分析と検出を効率化できます。
+Ransomware Resilienceは、Splunk Enterprise向けのセキュリティ情報およびイベント管理（SIEM）サポートを提供するようになりました。これにより、ログとイベントのデータを一元化し、脅威の分析と検出を効率化できます。
 
 詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-splunk.html["Splunk SIEMの設定"^]を参照してください。
 

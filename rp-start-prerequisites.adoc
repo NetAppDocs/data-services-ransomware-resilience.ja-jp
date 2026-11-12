@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: rp-start-prerequisites.html 
 keywords: bluexp ransomware protection, ransomware protection prerequisites, resilience 
-summary: 環境、ネットワーク アクセス、ログイン、Web ブラウザーのサポートを確認して、 NetApp Ransomware Resilienceを開始してください。 
+summary: NetApp Ransomware Resilienceを展開する前に、システム、NetApp Console、ONTAP、バックアップ、およびユーザー行動検出の要件を確認してください。 
 ---
 = NetApp Ransomware Resilienceの前提条件
 :hardbreaks:
@@ -12,7 +12,7 @@ summary: 環境、ネットワーク アクセス、ログイン、Web ブラウ
 
 
 [role="lead"]
-NetApp Ransomware Resilienceを展開する前に、お客様の環境、ネットワーク アクセス、およびブラウザが要件を満たしていることを確認してください。
+NetApp Ransomware Resilienceを展開する前に、システム、NetApp Consoleの構成、ONTAPのバージョン、およびバックアップターゲットが要件を満たしていることを確認してください。
 
 以下の要件を確認してください。
 
@@ -21,7 +21,7 @@ NetApp Ransomware Resilienceを展開する前に、お客様の環境、ネッ�
 [[supported-systems]]
 == サポートされているシステム
 
-サポートされているシステムを使用していることを確認してください。
+サポートされているシステムを使用していることを確認してください：
 
 |===
 | 環境 | プロトコル | サポート対象のバージョン 
@@ -75,13 +75,13 @@ NetApp Consoleの構成には次のものが必要です。
 ** オンプレミス ONTAP クラスタまたは Cloud Volumes ONTAP システムが NetApp Console で設定されていない場合は、link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html["コンソールエージェントの設定方法を学ぶ"^]およびlink:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["標準コンソール要件"^]を参照してください。
 +
 
-NOTE: 単一のコンソール組織に複数のコンソールエージェントがある場合、ランサムウェア耐性は、コンソールUIで現在選択されているエージェント以外の、すべてのコンソールエージェントにわたるONTAPリソースをスキャンします。
+NOTE: 単一のConsole組織に複数のConsoleエージェントがある場合、Ransomware Resilienceは、Console UIで現在選択されているエージェントだけでなく、すべてのConsoleエージェントにわたってONTAPリソースをスキャンします。
 
 
 
 * コンソールエージェントには、 `cloudmanager-ransomware-protection`アクティブな状態のコンテナ。
 * コンソールエージェント1つあたり、ワークロードの上限は3,000です。この制限の延長を申請することができます。
-* ONTAPまたはCloud Volumes ONTAPクラスタの場合、ランサムウェア耐性にはONTAPバージョン9.11.1以降が必要です。
+* ONTAPまたはCloud Volumes ONTAPクラスターの場合、Ransomware ResilienceにはONTAPバージョン9.11.1以降が必要です。
 +
 
 NOTE: SAN ワークロードで Ransomware Resilience を使用するには、 ONTAP 9.17.1 以降を実行している必要があります。
@@ -119,7 +119,7 @@ NOTE: link:task-backup-destination.html["Ransomware Resilienceでバックアッ
 [[user-behavior-detection-requirements]]
 == ユーザー行動検出の要件
 
-NetApp Ransomware Resilienceがユーザーの行動に関するアラートを提供するには、ユーザーアクティビティエージェントを設定する必要があります。ユーザーアクティビティエージェントをインストールするには、システムがlink:reference-user-activity-requirements.html["要件"]を満たしていることを確認してください。
+Ransomware Resilienceがユーザーの行動に関するアラートを提供するには、ユーザーアクティビティエージェントを設定する必要があります。ユーザーアクティビティエージェントをインストールするには、システムがlink:reference-user-activity-requirements.html["要件"]を満たしていることを確認してください。
 
 
 
