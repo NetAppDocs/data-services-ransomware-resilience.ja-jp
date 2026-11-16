@@ -18,6 +18,36 @@ NetApp Ransomware Resilienceの新機能についてご確認ください。
 
 
 
+[[16-november-2026]]
+== 2026年11月16日
+
+
+
+[[metrocluster-support]]
+=== MetroClusterのサポート
+
+Ransomware ResilienceはMetroClusterをサポートするようになり、ミラーリングされたMetroCluster構成でのランサムウェアの保護、検出、およびリカバリが可能になりました。MetroCluster構成でランサムウェア保護を有効にする場合、MetroClusterペアの両方のシステムをConsoleに追加する必要があります。ペアの一方の側を検出して保護を有効にすると、もう一方の側でも自動的に有効になります。
+
+MetroClusterワークロードに対するランサムウェア攻撃から復旧する場合、現在はカスタム復元のみを使用できます。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html#metrocluster-discovery["MetroClusterの検出"]を参照してください。
+
+
+
+[[09-november-2026]]
+== 2026年11月9日
+
+
+
+[[managed-blocked-file-extensions]]
+=== 管理対象のブロックされたファイル拡張子
+
+Ransomware Resilienceでは、「疑わしいファイル拡張子をブロックする」保護オプションを有効にしている場合、ワークロード上で許可またはブロックするファイル拡張子のリストをカスタマイズできるようになりました。この機能強化により、ワークロードを設定して、ストレージVM（SVM）上で特定のファイルタイプのみを許可したり、特定のファイル拡張子をブロックしたりすることが可能になります。FPolicyを使用して疑わしいファイル拡張子をブロックする既存のワークロードをRansomware Resilienceに移行する場合、デフォルトではより厳選された拡張子リストが使用されますが、リストをカスタマイズすることも可能です。この機能強化により、ファイル拡張子オプションをより細かく制御できるようになり、また、異なるSVMごとに異なるリストを作成することも可能になります。
+
+詳細については、link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-file-extensions.html["Ransomware Resilience でブロックされたファイル拡張子を管理する"]を参照してください。
+
+
+
 [[26-october-2026]]
 == 2026年10月26日
 

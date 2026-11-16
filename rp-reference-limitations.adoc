@@ -72,6 +72,14 @@ SAN（ブロックストレージ）ワークロードには、以下の制限�
 
 
 
+[[metrocluster-limitations]]
+== MetroClusterの制限
+
+* クリーンリストアは、現在MetroClusterワークロードではサポートされていません。
+
+
+
+
 [[multi-admin-verification]]
 == マルチ管理者認証
 

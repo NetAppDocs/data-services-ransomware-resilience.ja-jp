@@ -176,7 +176,7 @@ link:concept-ransomware-resilience.html#attack-types["攻撃タイプ"]の詳細
 いいえ、Ransomware ResilienceからNetApp Backup and Recoveryで管理されているポリシーを変更することはできません。これらのポリシーへの変更は、NetApp Backup and Recoveryで管理します。
 
 .ONTAPにポリシー（ARP、FPolicy、スナップショットなど）が存在する場合、Ransomware Resilienceはそれらを変更しますか？
-Ransomware Resilienceは、ONTAPの既存の検出ポリシー（ARP、FPolicy設定）を変更しません。Ransomware Resilienceで設定を変更すると、ONTAPの設定を上書きできます。
+自動的には行われません。Ransomware Resilience は、Ransomware Resilience でそれらの設定を手動で変更しない限り、ONTAP の既存の検出ポリシー（ARP、FPolicy 設定）を変更しません。
 
 .Ransomware Resilience にサインアップした後、 NetApp Backup and Recovery に新しいポリシーを追加するとどうなりますか？
 ランサムウェア耐性は、NetApp Backup and Recoveryで新しく作成されたポリシーとポリシーの変更を認識します。

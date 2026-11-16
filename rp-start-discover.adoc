@@ -25,6 +25,18 @@ Ransomware Resilienceは、現在のバックアップ保護、スナップシ�
 
 
 
+[[metrocluster-discovery]]
+== MetroClusterの検出
+
+Ransomware Resilienceは、検出のためにMetroCluster構成を自動的にロードします。検出を正常に実行するには、MetroClusterペアの両方のシステムをConsoleに追加しておく必要があります。
+
+MetroClusterペアの両方のシステムがConsole組織に正常に追加されている場合、両方のシステムが検出の選択肢に表示されます。検出対象として選択するシステムは1つだけで済みます。ミラーリングされたペアは自動的に追加されます。
+
+
+TIP: MetroClusterシステムは、ディスカバリーダッシュボードで**+1**と表示されます。**+1**にカーソルを合わせると、ペア内のすべてのシステムが表示されます。
+
+
+
 [[select-workloads-to-discover]]
 == 検出するワークロードを選択
 

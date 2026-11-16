@@ -64,6 +64,8 @@ sidebar:
           url: "/troubleshoot-user-activity.html"
       - title: 保護グループの管理
         url: "/task-protection-group.html"
+      - title: ブロックされたファイル拡張子を管理する
+        url: "/task-file-extensions.html"
       - title: 個人を特定できるデータをスキャンする
         url: "/task-classify.html"
     - title: 対応と回復
