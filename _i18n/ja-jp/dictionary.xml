@@ -2911,7 +2911,6 @@
   <block id="a914cb406bfedd0ff4a4c2892ad21daa" category="paragraph">+ ONTAPでブロックするファイル拡張子のリストを設定している場合、*ONTAPリストをRansomware Resilienceリストに置き換える*を選択することで、それらのリストを上書きできます。次に、SVMで*ブロックされたリストを除くすべてのファイル拡張子を許可する*か、*許可されたリストを除くすべてのファイル拡張子をブロックする*のどちらを実行するかを選択します。次に、ドロップダウンメニューからリストを選択します。ワークロード上のすべてのストレージVM（SVM）がそのリストを使用します。後で、ワークロード上の異なるSVMに異なるリストを適用することもできます。</block>
   <block id="6607faee2b9ec1c5d1cd49893a3ba90f" category="list-text">MetroClusterまたはSANワークロードでは、クリーンリストアは現在サポートされていません。</block>
   <block id="c4d3491ad5baf6cb6ea2a67196542971" category="doc">管理対象のブロックされたファイル拡張子</block>
-  <block id="c8e63e51c8e0acaacf08d2ec2d4a9f72" category="paragraph">Ransomware Resilienceでは、「疑わしいファイル拡張子をブロックする」保護オプションを有効にしている場合、ワークロード上で許可またはブロックするファイル拡張子のリストをカスタマイズできるようになりました。この機能強化により、ワークロードを設定して、ストレージVM（SVM）上で特定のファイルタイプのみを許可したり、特定のファイル拡張子をブロックしたりすることが可能になります。FPolicyを使用して疑わしいファイル拡張子をブロックする既存のワークロードをRansomware Resilienceに移行する場合、デフォルトではより厳選された拡張子リストが使用されますが、リストをカスタマイズすることも可能です。この機能強化により、ファイル拡張子オプションをより細かく制御できるようになり、また、異なるSVMごとに異なるリストを作成することも可能になります。</block>
   <block id="714e7021c144cf0abe82a4c6f2c4f93e" category="inline-link-macro">Ransomware Resilience でブロックされたファイル拡張子を管理する</block>
   <block id="746947620a1677afde977abf37019b8c" category="paragraph">詳細については、<block ref="c1197af6ca574421271b30600de07a8f" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="c6afc2a7c10cd55aed74c7ec88063113" category="doc">MetroClusterのサポート</block>
@@ -2968,26 +2967,19 @@
   <block id="43967ca7f7379783a36a21c9372ff96d" category="list-text">MetroCluster構成の自動応答を設定する場合は、MetroClusterペア内のワークロードを1つだけ選択してください。自動応答は、MetroCluster構成全体に自動的に適用されます。</block>
   <block id="ab8da75ef54f835244e0cc741b41365a" category="summary">保護プロファイルをカスタマイズするには、NetApp Ransomware Resilienceでサポートまたはブロックするファイル拡張子のリストを設定します。</block>
   <block id="4a65f367204ffd6fd4ab926ea37d53e6" category="doc">NetApp Ransomware Resilienceでブロックまたは許可されたファイル拡張子を管理する</block>
-  <block id="0c664bcb6179de48322aa9935b70cc86" category="paragraph">NetApp Ransomware Resilienceは、疑わしいファイル拡張子をブロックする保護戦略の設定をサポートしています。Ransomware Resilienceは、ランサムウェア攻撃を防ぐためにブロックすべき、既知の疑わしいファイル拡張子のデフォルトリストを提供します。ファイル拡張子のリストはカスタマイズ可能で、必要に応じて項目を追加または削除できます。</block>
-  <block id="2799a437c4f4049d0b8275dee5d6566f" category="paragraph">疑わしいファイル拡張子をブロックする保護設定を行う場合、それはワークロードレベルで設定されます。ただし、ストレージVM（SVM）レベルでファイル拡張子をカスタマイズできるため、同じワークロード内の異なるSVMで異なるリストを使用できます。</block>
   <block id="94b03a907598af455bb0ecbf1a55643c" category="section-title">ファイル拡張子ブロックの仕組み</block>
   <block id="e7d014a4c27dbcb74d2ae4f414c5c59d" category="paragraph">ファイル拡張子リストを設定するには、2つの方法があります：</block>
   <block id="bb2ef45a4d6652611b702059d867b0ed" category="list-text">*ファイル拡張子をブロック* - リストに含まれるすべてのファイル拡張子はブロックされ、ランサムウェアの脅威としてマークされます。</block>
   <block id="db806b600e53b706978ac2b0d72f803c" category="list-text">*許可するファイル拡張子* - このリストにある拡張子を持つファイルのみが許可されます。リストに記載されていない拡張子を持つファイルはすべてブロックされ、ランサムウェアの脅威とみなされます。</block>
   <block id="fd1a22c57931d6eb055b9a14e08085f6" category="section-title">ONTAPからのファイル拡張子ブロック</block>
-  <block id="4996212a318d706569e3c987f2959c1e" category="paragraph">ONTAPでブロックする特定のファイル拡張子を設定している場合、Ransomware Resilienceはその設定を認識します。Ransomware Resilienceで疑わしいファイル拡張子をブロックするように<block ref="7fe4ee5a6fb50faf1d1032b2174bc3d8" category="inline-link-macro-rx"></block>を設定した場合、別のデフォルトを設定していない限り、Ransomware Resilienceはより厳選されたデフォルトのファイル拡張子リストを使用するように移行します。</block>
   <block id="5eb7d90dee7d59509c11a98fc25eafc7" category="section-title">デフォルトのファイル拡張子</block>
-  <block id="629611abd14f29d5927f077a0cab10a7" category="paragraph">Ransomware Resilienceは、「NetApp」という名前のブロック対象ファイル拡張子のデフォルトリストを提供します。デフォルトでは、疑わしいファイル拡張子をブロックするように設定されているすべてのワークロードは、3,900種類以上の既知の悪意のあるファイル拡張子を含むこのリストを使用します。このリストは変更することも、コピーしてカスタムリストのベースとして使用することもできます。</block>
   <block id="17a19323b32464dcac5cf1db4948f8de" category="paragraph">別のリストをデフォルトとして設定できます。リストをデフォルトとして設定すると、その後ファイルブロッキングが有効になったすべてのワークロードは、手動で別のリストを選択しない限り、そのリストを使用します。</block>
-  <block id="7e8010136fa515dd066c9b0cb70278a6" category="section-title">ファイル拡張子リストを作成する</block>
   <block id="7573f5768a565ed9afd948f97fc7a3a0" category="list-text">「ファイル拡張子」の見出しの下で、**管理**を選択します。</block>
   <block id="70360a69b59acee42a6a9ff305127bce" category="list-text">リストの*名前*を入力してください。</block>
   <block id="b0dfbe61374a62d5f3d055c3565c097a" category="list-text">リストの動作方法を選択してください：</block>
   <block id="263ef959735e66d8ec5e18d94f228673" category="list-text">*拡張子をブロック*を選択すると、リストにあるすべてのファイル拡張子がランサムウェアの脅威として自動的にフラグ付けされます。</block>
-  <block id="5ae3e87d8c97bddf4ad846a71ce8ecf0" category="list-text">「拡張子を許可する」を選択すると、リストにあるファイル拡張子からのリクエストのみが許可されます。</block>
   <block id="fbf576bdb9ef857e6b04e3d42a9831d1" category="list-text">リストの作成方法を選択してください：</block>
   <block id="a938b7a7cf0540d4f93c3a1b26a872ac" category="list-text">既存のリストから作成するには、*リストをコピー*タブを選択してください。</block>
-  <block id="303672b4703844b946a73d360bf29e1f" category="paragraph">ファイル拡張子の一覧を確認します。拡張子を削除するには、ファイル拡張子の種類の横にある「X」を選択します。さらに拡張子を追加するには、*+ リストに追加*を選択します。これにより、*手動で入力*タブに移動します。</block>
   <block id="7b1d5b2fcb741d6a8a6c84da928854a8" category="list-text">*アップロード*タブを選択して、CSVファイルからファイル拡張子のリストを追加します。</block>
   <block id="7765dbbb015ea64aebe448e16be9ff88" category="paragraph">「アップロード」を選択し、ブロックまたは許可するファイル拡張子のリストを含むCSVファイルを選択します。</block>
   <block id="82759c88e82b056c26665205466b28ce" category="list-text">リストに入力するには、*手動で入力*を選択します。たとえば「vvv, xyz, zzz」のように、リストをカンマ区切りの値のセットとして入力します。</block>
@@ -2995,11 +2987,9 @@
   <block id="8af750587aefed18451823d6acd997cf" category="inline-image-macro">ブロックされたファイル拡張子のスクリーンショット。</block>
   <block id="955f680b4a481a7e4a65bb37bd6832db" category="paragraph"><block ref="955f680b4a481a7e4a65bb37bd6832db" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2baa53ac51d9ae25d4a0bc17475268a5" category="section-title">SVMにファイル拡張子リストを適用する</block>
-  <block id="a951322414e62a3bd1fad9bf4db515f9" category="paragraph">疑わしいファイル拡張子をブロックするポリシーを含むランサムウェア対策戦略を割り当てる場合、ワークロード全体に対して特定のファイル拡張子リストを指定できます。保護ポリシーを適用したあと、異なるSVMに異なるリストを適用できます。</block>
   <block id="6d992eefa47db0ab0f860dd18b04902c" category="inline-link-macro">ランサムウェア対策戦略を構成する</block>
   <block id="e52cc9f572c9c2f2fd02284925ceff5e" category="paragraph">このタスクを実行するには、ワークロードに疑わしいファイル拡張子をブロックする検出ポリシーが含まれている必要があります。方法については、<block ref="0b739c8831a5afcaed3f6a6b877079c9" category="inline-link-macro-rx"></block>をご覧ください。各SVMには、ファイル拡張子のリストを1つだけ割り当てることができます。</block>
   <block id="43fb91a088ff411781a83737cf7e1a16" category="list-text">*Storage VM*タブを選択します。</block>
-  <block id="fe2e034319847cfd6789329192101680" category="list-text">疑わしいファイル拡張子のブロック保護が有効になっているSVMのリストを確認します。どのSVMがどのリストを使用しているかを確認できます。リストを変更するには、*リストの変更*を選択します。</block>
   <block id="69ba23031fb23bdbcd001de43a287072" category="list-text">ダイアログで、ドロップダウンメニューから新しいリストを選択し、*保存*を選択します。</block>
   <block id="2df05df26eaab6725098e57e6e1731f3" category="section-title">ファイル拡張子リストを管理する</block>
   <block id="b2bf97e43ad5c99c7df0ffb5d4cba62d" category="paragraph">ファイル拡張子リストの内容はいつでも変更できます。リストを削除したり、不審ファイルのブロックを有効にする際のデフォルトリストを変更したりできます。</block>
@@ -3017,8 +3007,6 @@
   <block id="3e10b870e9cd64a845f38223f73d75cf" category="list-text">その後、そのリストはデフォルトとしてタグ付けされます。ブロック対象ファイル拡張子リストで保護されているワークロードのうち、特定のリストでマークされていないワークロードは、新しいデフォルト設定に基づいてファイル拡張子をブロックまたは許可します。</block>
   <block id="dd4befc74292fbe20fe2db73037ca880" category="paragraph-title">ファイル拡張子リストを削除する</block>
   <block id="db5eae2b9c9dbfbd47823e0986e11353" category="inline-xref">SVMに関連付けられたリストを変更する</block>
-  <block id="45fbdc6507efb6d3257035fdf838a02e" category="paragraph">SVMに適用されたリストは削除できません。まず<block ref="90336a7b5ebc96973344e57563a353c4" category="inline-xref-macro-rx"></block>。</block>
-  <block id="1c4059bb733b0c09e63fea5c68654a4e" category="paragraph">NetAppリストは削除できません。</block>
   <block id="c70d3f3a3fcd26cbae1f885a784375b0" category="list-text">削除するリストのアクションメニューを選択し、*リストを削除*を選択します。</block>
   <block id="eb071099d30ab98da5cdb525a72d67e1" category="list-text">ダイアログで削除を確認してください。</block>
   <block id="436ec310622ce3582750b040e6a74f96" category="inline-link-macro">ランサムウェア対策戦略を構成する</block>
@@ -3028,4 +3016,18 @@
   <block id="444d7501b3cc1feab5560e903adad61c" category="section-title">2026年11月16日</block>
   <block id="e370f8f4d5db9e4f93257ac02adddec3" category="section-title">2026年11月9日</block>
   <block id="156671b1191174246bb45697a8cff8a4" category="sidebar">ブロックされたファイル拡張子を管理する</block>
+  <block id="d8a7fd7644a3770509948debea790466" category="paragraph">Ransomware Resilienceでは、「疑わしいファイル拡張子をブロックする」保護オプションを有効にしている場合、ワークロード上で許可またはブロックするファイル拡張子のリストをカスタマイズできるようになりました。この機能強化により、ワークロードを設定して、ストレージVM（SVM）上で特定のファイルタイプのみを許可したり、特定のファイル拡張子をブロックしたりすることが可能になります。この機能強化により、ファイル拡張子オプションをより細かく制御できるようになり、また、異なるSVMごとに異なるリストを作成することも可能になります。</block>
+  <block id="9aa1dc642273552bfbe5668d11c95ab0" category="paragraph">NetApp Ransomware Resilienceは、疑わしいファイル拡張子をブロックする保護戦略の設定をサポートしています。Ransomware Resilienceは、既知の疑わしいファイル拡張子のデフォルトリストを提供し、疑わしいファイルが作成された時点でそれをブロックして、ランサムウェア攻撃を防止します。ファイル拡張子のリストはカスタマイズ可能で、必要に応じて項目を追加または削除できます。</block>
+  <block id="dbd5f2a0234cc7c79ededa5580b18dd7" category="paragraph">疑わしいファイル拡張子をブロックする保護設定を行う場合、それはワークロードレベルで設定されます。ただし、ストレージVM（SVM）レベルでファイル拡張子のリストをカスタマイズできるため、同じワークロード内の異なるSVMで異なるリストを使用できます。</block>
+  <block id="ad0aced67135f3966be71335a3dbf0ae" category="paragraph">ONTAPでブロックする特定のファイル拡張子を設定している場合、Ransomware Resilienceはそのリストを認識します。Ransomware Resilienceで疑わしいファイルのブロックを有効にしようとしてブロックされた場合は、有効になっているブロック対象のファイル拡張子リストが多すぎます。続行するには、ONTAPでリストの1つを削除してください。</block>
+  <block id="a7c3d158860e568044dbf49c4ffa2cc9" category="paragraph">Ransomware Resilienceが提供するデフォルトのリストは、ONTAPよりも厳選された、マルウェアやランサムウェアによって作成されたファイル拡張子のリストです。</block>
+  <block id="577c70515cf60ffdfe6c65a25f1e37ee" category="inline-xref">また、別のデフォルトリストを設定する</block>
+  <block id="d9d538109d1836e9a8edace57f4fa3fb" category="paragraph">Ransomware Resilienceは、「NetApp」という名前のブロック対象ファイル拡張子のデフォルトリストを提供します。このリストを疑わしいファイル拡張子のブロック用に選択すると、Ransomware Resilienceはリスト上の拡張子を持つファイルをブロックします。このリストを変更したり、コピーしてカスタムリストのベースとして使用したりできます。<block ref="86f8ab6126124e42b599c1f1dd7bbd6b" category="inline-xref-macro-rx"></block>ことができます。</block>
+  <block id="ea8ca64a2855e65d2598169ed89c371a" category="section-title">ファイル拡張子リストを作成する</block>
+  <block id="68d7079c1f6b65537009591a4c9f3cb9" category="list-text">リストにある拡張子を持つファイルのみを許可するには、*Allow extensions* を選択します。</block>
+  <block id="54189b2b9bfb36e06813645ed3167822" category="paragraph">ファイル拡張子の一覧を確認してください。ファイル拡張子の横にある「X」を選択すると、拡張子を削除できます。拡張子を追加するには、*+ リストに追加*を選択してください。この選択を行うと、*手動で入力*タブに移動します。</block>
+  <block id="e8b0ea8ba4238f182cc0e9571e8185aa" category="paragraph">疑わしいファイル拡張子をブロックするポリシーを含むランサムウェア対策戦略を割り当てる場合、ワークロード全体に対して特定のファイル拡張子リストを指定できます。保護ポリシーを適用したあと、異なるSVMに異なるリストを適用できます。</block>
+  <block id="c0062521587f0627efacd75f75346a70" category="list-text">疑わしいファイル拡張子のブロック保護が有効になっているSVMのリストを確認します。どのSVMがどのリストを使用しているかを確認できます。リストを変更するには、*リストの変更*を選択します。</block>
+  <block id="0838f82be2f27550128e5538479f4329" category="paragraph">SVMに適用されたリストは削除できません。まず<block ref="90336a7b5ebc96973344e57563a353c4" category="inline-xref-macro-rx"></block>する必要があります。</block>
+  <block id="ce60d8ca89677d54bbe0ffc235212685" category="paragraph">NetAppリストは削除できません。</block>
 </blocks>
