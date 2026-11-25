@@ -1445,7 +1445,6 @@
   <block id="3156b4b992dec700b60fedaa2eca010c" category="paragraph">疑わしいユーザー行動の検出は、次のオペレーティングシステムでサポートされています：</block>
   <block id="92adf790b863484fc83be969039ec890" category="section-title">サーバーの推奨事項</block>
   <block id="b81a18d778d8d2491614ae90532db84f" category="admonition">初期インストール時に、<block ref="50cff7c5933e29331b88e32e4f2a101d" prefix=" " category="inline-code"></block>をワイルドカード<block ref="3389dae361af79b04c9c8e7057f60cc6" prefix="(" category="inline-code"></block>）権限に置き換えます。エージェントがアクティブ化され、完全に動作可能になったら、権限をサイト名に置き換えることができます。サイト名については、NetAppの担当者にお問い合わせください。</block>
-  <block id="c4f09ee186bb94e99b8c3f938adf8816" category="section-title">APACベースのユーザーアクティビティエージェントの導入</block>
   <block id="869af1b4577e081268bf8ee592a6018e" category="section-title">ヨーロッパを拠点とするユーザーアクティビティエージェントの導入</block>
   <block id="ae6cc9c44044939bcbbefd693857f742" category="section-title">米国ベースのユーザアクティビティエージェントの導入</block>
   <block id="c290a5941ad6eb0d5fe8752c15c5fd78" category="section-title">次のステップ</block>
@@ -3002,9 +3001,6 @@
   <block id="0838f82be2f27550128e5538479f4329" category="paragraph">SVMに適用されたリストは削除できません。まず<block ref="90336a7b5ebc96973344e57563a353c4" category="inline-xref-macro-rx"></block>する必要があります。</block>
   <block id="ce60d8ca89677d54bbe0ffc235212685" category="paragraph">NetAppリストは削除できません。</block>
   <block id="d1911ce26de45f2d2605b10b84369117" category="summary">ユーザーアクティビティエージェントを作成する前に、記載されているオペレーティングシステム、サーバー、およびネットワークの要件を満たしていることを確認する必要があります。</block>
-  <block id="16c57e5f4f0b7d7b3708ae5054805ed5" category="paragraph">NetApp Ransomware Resilienceのユーザー行動検出により、ユーザーレベルのランサムウェアイベントに対応できるようになります。ユーザー行動検出を有効にするには、テナントとエージェントのセットを作成する必要があります。検出機能を有効にする前に、Ransomware Resilienceがイベントを適切に検出および報告できるように、記載されているオペレーティングシステム、サーバー、およびネットワークの要件を満たしていることを確認する必要があります。</block>
-  <block id="fc36a1ad1399ea3c897ac2b166f590bc" category="section-title">クラウドプロバイダのサポート</block>
-  <block id="46d0eaec023b0432189234ee0117aefe" category="paragraph">ユーザー行動の検出を有効にするには、ユーザーアクティビティイベントをRansomware Resilienceと共有するデータコレクター用の実行可能環境を作成する必要があります。</block>
   <block id="c754f70b24546d3b7ea308ec0a266819" category="admonition">テナントの地域展開は、Consoleエージェントに影響しません。Consoleエージェントの展開は、これらの地域とは無関係です。</block>
   <block id="c4e4893f8021b34fa3230fef41affd05" category="paragraph">テナントは、AWSおよびAzureの以下のリージョンにデプロイできます：</block>
   <block id="c73bbd3786350b0a8d3577d82afdf489" category="cell">Red Hat Enterprise Linux</block>
@@ -3018,7 +3014,6 @@
   <block id="11a1b759509cbc306f2770f25a884b8c" category="paragraph">ユーザーイベントを収集する際は、ユーザーアクティビティエージェントをホストするマシンが、イベント発生頻度に対応できる十分なサイジングになっていることを確認してください。つまり、ユーザーアクティビティエージェントをホストするマシンに、1秒あたりのイベント数を処理するのに十分なデータコレクタ、CPU、およびRAMが確保されていることを確認します。データコレクタの数を増やすには、RAMまたはCPUの容量を増やす必要がある場合があります。Ransomware Resilienceは、ユーザーアクティビティエージェントごとに最大50個のデータコレクタをサポートします。</block>
   <block id="9e307da13f4fbc1f93630e31169402ff" category="cell">4コア、16GB</block>
   <block id="d8eb539beebfd86b0e5458fd6893fe26" category="cell">4コア、32GB</block>
-  <block id="fc6f065ae34f83ecff5902aa52ae5b24" category="example-title">Ransomware Resilienceにおけるイベントデータレートを計算します。</block>
   <block id="a9648406f04c3e2716ce48b7fa2d5192" category="paragraph">Ransomware Resilienceは、システム上で実行してイベントデータレートを計算できるスクリプトを提供します。デフォルトでは、スクリプトは最大5つのSVMに対して実行されます。環境に5つを超えるSVMが含まれている場合は、それに応じてスクリプトを変更できます。SVMの数に関係なく、スクリプトが平均イベントレートの読み取り値を取得するのに約5分かかります。スクリプトを実行する前に、以下を用意する必要があります：</block>
   <block id="c1b56e09cd3b4327ae7a5af63c46a8e4" category="list-text">Linuxマシンにインストール済み<block ref="2fa62e05d832f87969a8d99226be5a74" prefix=" " category="inline-code"></block>（コマンド<block ref="bd20ec476e804fab40ab36d6175d1936" prefix=" " category="inline-code"></block>を使用してインストールできます）</block>
   <block id="6d7d602708c503dfdb5b58c7cfb129ef" category="list-text">ユーザーアクティビティエージェントが稼働しているマシンから、管理者権限でスクリプトを実行します：<block ref="3b9c122b681f59f04f03105e338591ce" prefix=" " category="inline-code"></block></block>
@@ -3029,4 +3024,12 @@
   <block id="b0e8f71425f234ca2f061a0c485640c3" category="cell">クラスタ管理IP</block>
   <block id="a1b557c5fe6dcfec9f24e02db3bf04ef" category="cell">ユーザーアクティビティエージェント</block>
   <block id="5e845144086b1a54c1c4dd3a9e2169d7" category="cell">*EMSイベント*のための、ONTAPクラスタ管理IPからユーザーアクティビティエージェントへの通信。ONTAPがEMSイベントを送信できるようにするには、ユーザーアクティビティエージェント自体のファイアウォールを含め、ユーザーアクティビティエージェントに向けてこれらのポートを開放する必要があります。+ **注：**これらのポートの*すべて*を予約する必要はありませんが、予約するポートはこの範囲内である必要があります。まずは100ポートを予約し、必要に応じて増やすことをお勧めします。</block>
+  <block id="07e4c03c13f6b5da296dfd1e6b67c352" category="paragraph">NetApp Ransomware Resilienceのユーザーアクティビティ検出機能により、ユーザーレベルのランサムウェアイベントに対応できます。ユーザーアクティビティ検出を有効にするには、テナントとエージェントのセットを作成する必要があります。検出機能を有効にする前に、Ransomware Resilienceがイベントを適切に検出して報告できるよう、記載されているオペレーティングシステム、サーバー、およびネットワークの要件を満たしていることを確認する必要があります。</block>
+  <block id="f451214989539191fc4ce664be56280d" category="section-title">ユーザーアクティビティテナント</block>
+  <block id="a573617370c0046fea2fc1d6d3e124fd" category="paragraph">ユーザーアクティビティの検出を有効にするために、ユーザーアクティビティイベントをRansomware Resilienceと共有できるようにするテナントが設定されます。Ransomware Resilienceがテナントをデプロイする地域とクラウド プロバイダを選択できます。</block>
+  <block id="660bab89ad300bad0bf7f20f46e5c3a3" category="section-title">ユーザーアクティビティエージェントの要件</block>
+  <block id="f431152e4d18e6c70ad5859550b7dbfc" category="paragraph">テナント作成後、ユーザーアクティビティ検出を有効にするには、ユーザーアクティビティエージェントを作成する必要があります。ユーザーアクティビティエージェントはConsoleエージェントではありません。ユーザーアクティビティエージェントは、別のコンピューティングインスタンスとしてデプロイする必要があります。</block>
+  <block id="a49273673c8a9345469d7e992d85038e" category="paragraph">ユーザーアクティビティエージェントが以下の要件を満たし、推奨事項を遵守していることを確認してください。</block>
+  <block id="a543ceb615fbbd830a521dc1f498b0c6" category="example-title">Ransomware Resilienceでイベントデータレートを計算する</block>
+  <block id="6617d9fa7ab8a50760603157d306a320" category="section-title">アジア太平洋地域におけるユーザーアクティビティエージェントの展開</block>
 </blocks>
