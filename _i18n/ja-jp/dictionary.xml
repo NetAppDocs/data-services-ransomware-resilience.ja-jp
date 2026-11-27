@@ -1244,15 +1244,12 @@
   <block id="a1123cd59d7bd876c080c33906ae65ce" category="list-text">*サービス*: 問題が関連付けられているサービスを選択します。たとえば、* NetApp Console* は、コンソール内のワークフローまたは機能に関するテクニカル サポートの問題に固有の場合です。</block>
   <block id="987df7518e2afb50a860647c832afd13" category="list-text">*システム*: ストレージに該当する場合は、* Cloud Volumes ONTAP* または *On-Prem* を選択し、関連する作業環境を選択します。</block>
   <block id="8f8e8a86e5f52b6186a37bdf266c4320" category="paragraph">システムのリストは、コンソール組織と、上部のバナーで選択したコンソール エージェントの範囲内にあります。</block>
-  <block id="77c89527ec8a9f89b24c5579d19b3b4b" category="paragraph"><block ref="77c89527ec8a9f89b24c5579d19b3b4b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="178fdaf97b1d1577437f11ee9d5e5229" category="paragraph">このエラーは、NSS アカウントとそれに関連付けられているレコード会社が、NetApp Consoleアカウントのシリアル番号のレコード会社と同じではないことを意味している可能性があります (つまり、960xxxx) または作業環境のシリアル番号。次のいずれかのオプションを使用してサポートを求めることができます。</block>
   <block id="e1100b46295d42ed50ba7a4630710164" category="section-title">サポートケースを管理する</block>
   <block id="316508a3483178100806a9d44b49aba2" category="paragraph">アクティブなサポート ケースと解決済みのサポート ケースをコンソールから直接表示および管理できます。NSS アカウントおよび会社に関連付けられたケースを管理できます。</block>
   <block id="9163e8bca6fd93c080d35ab49e3efdfa" category="list-text">NetApp Consoleで、[ヘルプ] &gt; [サポート] を選択します。</block>
   <block id="2019fd19051c3ef493dbbb9ca65bab87" category="list-text">*ケース管理*を選択し、プロンプトが表示されたら、NSS アカウントをコンソールに追加します。</block>
   <block id="75e54e3a6fdbf43ed890669e079d7594" category="paragraph">*ケース管理* ページには、コンソール ユーザー アカウントに関連付けられている NSS アカウントに関連するオープン ケースが表示されます。これは、*NSS 管理* ページの上部に表示される NSS アカウントと同じです。</block>
-  <block id="8ac6be88c1aa79062825a147fb263b0e" category="list-text">表に表示される列を変更するには、<block ref="500a336e7ba1c54bcffba4e27bda4eb6" category="inline-image-macro-rx" type="image"></block>次に、表示する列を選択します。</block>
-  <block id="049b7b9fab1242f5e715952973c9474d" category="list-text">既存のケースを管理するには、<block ref="7381d9baeaf62eb099ce84f1a21ed5ca" category="inline-image-macro-rx" type="image"></block>利用可能なオプションのいずれかを選択します。</block>
   <block id="776abbf4d80cbef17bd3c86ff37b2257" category="paragraph">NetApp Consoleとそのストレージ ソリューションおよびデータ サービスに固有のテクニカル サポートを受けるには、サポート登録が必要です。Cloud Volumes ONTAPシステムの主要なワークフローを有効にするには、サポート登録も必要です。</block>
   <block id="ba4e23e03f4354a0f1ef2781272c8477" category="paragraph">サポートに登録しても、クラウド プロバイダー ファイル サービスに対するNetAppサポートは有効になりません。クラウド プロバイダーのファイル サービス、そのインフラストラクチャ、またはサービスを使用するソリューションに関連するテクニカル サポートについては、その製品のドキュメントの「ヘルプの取得」を参照してください。</block>
   <block id="869a868c87f6fb61410cfd773b4f1bab" category="list-text">NetApp Consoleアカウントのシリアル番号 (コンソールの [サポート リソース] ページにある 20 桁の 960xxxxxxxxx シリアル番号) を登録します。</block>
@@ -1395,10 +1392,6 @@
   <block id="ad53fda1a18da9db9d8aa1d460952aa5" category="list-text">ONTAPへのセカンダリレプリケーション</block>
   <block id="447fce6406d4a8e99de98a2d5d107536" category="list-text">戦略にレプリケーションが含まれている場合は、**宛先システム** と **宛先ストレージ VM** を選択します。**次へ**を選択します。</block>
   <block id="6f540707e47351a26c8e3c79ccce18ea" category="list-text">*保護*: 保護されているワークロードとリスクのあるワークロードの合計数など、すべてのワークロードのステータスと詳細が含まれます。</block>
-  <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7019a39846e9a2c7f7a80eaba91e4a41" category="paragraph"><block ref="7019a39846e9a2c7f7a80eaba91e4a41" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">これは、メールにマッピングされるシステム生成の ID です。*NSS管理*ページでは、<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
-  <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">ログイン認証トークンを更新する必要がある場合は、<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>メニュー。</block>
   <block id="667dffcf5676fe0bd645082d2a512fef" category="section-title">2026年1月12日</block>
   <block id="49fa679e35a13dc09de6805c384904d1" category="list-text">バックアップ ポリシーを構成するには、いずれかを選択して [**次へ**] を選択します。</block>
   <block id="389e0c39aeda061370262a9fa330d865" category="doc">サポートされていないボリューム</block>
@@ -3032,4 +3025,11 @@
   <block id="a49273673c8a9345469d7e992d85038e" category="paragraph">ユーザーアクティビティエージェントが以下の要件を満たし、推奨事項を遵守していることを確認してください。</block>
   <block id="a543ceb615fbbd830a521dc1f498b0c6" category="example-title">Ransomware Resilienceでイベントデータレートを計算する</block>
   <block id="6617d9fa7ab8a50760603157d306a320" category="section-title">アジア太平洋地域におけるユーザーアクティビティエージェントの展開</block>
+  <block id="6a01d74a3f012349cadafc7f0c97c86d" category="paragraph"><block ref="6a01d74a3f012349cadafc7f0c97c86d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e461a14ef18284f75a2b6063d614da64" category="list-text">テーブルに表示される列を変更するには、<block ref="561341289de713dd5ea2cd49d1743cab" category="inline-image-macro-rx" type="image"></block>を選択してから、表示する列を選択します。</block>
+  <block id="cb70a108f4a6413201209cb4b6024938" category="list-text"><block ref="babe7781192bcd33c63a8532a0937e8b" category="inline-image-macro-rx" type="image"></block>を選択し、利用可能なオプションのいずれかを選択して、既存のケースを管理します：</block>
+  <block id="9c0825883c050c64e9b59af470120939" category="paragraph"><block ref="9c0825883c050c64e9b59af470120939" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="357be4e47fe6e7132dca092006062510" category="paragraph"><block ref="357be4e47fe6e7132dca092006062510" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="848755f433bd66788db4d5c6e554252d" category="paragraph">これはシステムによって生成されたIDで、お客様のメールアドレスにマッピングされます。*NSS管理*ページの<block ref="6a3f89871d33c6cbc194f4f6a8275a65" category="inline-image-macro-rx" type="image"></block>メニューからメールアドレスを表示できます。</block>
+  <block id="5c680c883d2069f8039766ada41f7c1f" category="list-text">ログイン資格情報トークンを更新する必要がある場合は、<block ref="6a3f89871d33c6cbc194f4f6a8275a65" category="inline-image-macro-rx" type="image"></block> メニューに*資格情報の更新*オプションもあります。</block>
 </blocks>
